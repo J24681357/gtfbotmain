@@ -1,0 +1,1090 @@
+{
+  "arcade": {
+    "name": "arcade",
+    "description": "🏁 Participate in single races, drift trials, and speed tests.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select a mode in the Arcade menu.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "Single Race",
+            "value": "1"
+          },
+          {
+            "name": "Drift Trial | A",
+            "value": "2"
+          },
+          {
+            "name": "Speed Test | A",
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "name": "singlerace_league",
+        "description": "(Single Race) Select a difficulty for Single Race.",
+        "type": 3,
+        "required": false,
+        "choices": [
+          {
+            "name": "Beginner",
+            "value": "1"
+          },
+          {
+            "name": "Amateur | Lv.10",
+            "value": "2"
+          },
+          {
+            "name": "Professional | Lv.20",
+            "value": "3"
+          },
+          {
+            "name": "Endurance | Lv.30",
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "name": "drifttrial_league",
+        "description": "(Drift Trial) Select a difficulty for Drift Trial.",
+        "type": 3,
+        "required": false,
+        "choices": [
+          {
+            "name": "Beginner | A",
+            "value": "1"
+          },
+          {
+            "name": "Professional | IC",
+            "value": "2"
+          }
+        ]
+      },
+      {
+        "name": "speedtest_length",
+        "description": "(Speed Test) Select a distance of the Speed Test.",
+        "type": 3,
+        "required": false,
+        "choices": [
+          {
+            "name": "400m | A",
+            "value": "1"
+          },
+          {
+            "name": "1,000m | A",
+            "value": "2"
+          },
+          {
+            "name": "10,000m | A",
+            "value": "3"
+          }
+        ]
+      },
+      {
+        "name": "trackselect",
+        "description": "(Single Race & Drift Trial) Select a track type.",
+        "type": 3,
+        "required": false,
+        "choices": [
+          {
+            "name": "GT Tarmac Course (Random)",
+            "value": "1"
+          },
+          {
+            "name": "GT Dirt Course (Random)",
+            "value": "2"
+          },
+          {
+            "name": "GT Snow Course (Random)",
+            "value": "3"
+          },
+          {
+            "name": "Course Maker (Random)",
+            "value": "4"
+          },
+          {
+            "name": "Select From My Courses",
+            "value": "5"
+          }
+        ]
+      }
+    ]
+  },
+  "car": {
+    "name": "car",
+    "description": "🏁 Displays the list of manufacturers you can purchase from.",
+    "channels": "",
+    "options": ""
+  },
+  "career": {
+    "name": "career",
+    "description": "🏁 Participate in Career races from different levels.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select an option to choose a league.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "❗ Menu",
+            "value": "list"
+          },
+          {
+            "name": "C Level",
+            "value": "c"
+          },
+          {
+            "name": "B Level | B",
+            "value": "b"
+          },
+          {
+            "name": "A Level | A",
+            "value": "a"
+          },
+          {
+            "name": "IC Level | IC",
+            "value": "ic"
+          },
+          {
+            "name": "IB Level | IB",
+            "value": "ib"
+          },
+          {
+            "name": "IA Level | IA",
+            "value": "ia"
+          },
+          {
+            "name": "S Level | S",
+            "value": "s"
+          },
+          {
+            "name": "⭐ Kart | Lv.4",
+            "value": "kart"
+          },
+          {
+            "name": "⭐ Rally | IC",
+            "value": "rally"
+          },
+          {
+            "name": "⭐ GTF Grand Tour | Lv.23",
+            "value": "grandtour"
+          },
+          {
+            "name": "⭐ GT Academy | Lv.30",
+            "value": "gtacademy"
+          },
+          {
+            "name": "⭐ Formula | Lv.35",
+            "value": "formula"
+          }
+        ]
+      },
+      {
+        "name": "number",
+        "description": "Pick a number associated with the list in the menu.",
+        "type": 4,
+        "required": false
+      }
+    ]
+  },
+  "course": {
+    "name": "course",
+    "description": "IC | 🏁 View, create, & save procedurally generated race tracks.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select an option.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "❗ Open My Courses",
+            "value": "list"
+          },
+          {
+            "name": "Generate Course [type]",
+            "value": "create"
+          },
+          {
+            "name": "View Course [number]",
+            "value": "view"
+          },
+          {
+            "name": "Rename Course [number] [name]",
+            "value": "rename"
+          },
+          {
+            "name": "Delete Course [number]",
+            "value": "delete"
+          },
+          {
+            "name": "Clear All Courses",
+            "value": "clear"
+          }
+        ]
+      },
+      {
+        "name": "type",
+        "description": "Generate Course: Select a type of course to generate.",
+        "type": 3,
+        "required": false,
+        "choices": [
+          {
+            "name": "Circuit",
+            "value": "circuit"
+          },
+          {
+            "name": "Sprint",
+            "value": "sprint"
+          }
+        ]
+      },
+      {
+        "name": "location",
+        "description": "Generate Course: Select a location for the course.",
+        "type": 3,
+        "required": false,
+        "choices": [
+          {
+            "name": "None",
+            "value": "Blank"
+          },
+            {
+            "name": "Asphalt",
+            "value": "Asphalt"
+          },
+          {
+            "name": "Grass",
+            "value": "Grass"
+          },
+            {
+            "name": "Forest",
+            "value": "Forest"
+          },
+          {
+            "name": "Desert",
+            "value": "Desert"
+          },
+          {
+            "name": "Mountain",
+            "value": "Mountain"
+          },
+          {
+            "name": "Snow",
+            "value": "Snow"
+          }
+        ]
+      },
+      {
+        "name": "surface",
+        "description": "Generate Course: Select a type of track surface for the course.",
+        "type": 3,
+        "required": false,
+        "choices": [
+          {
+            "name": "Tarmac",
+            "value": "Tarmac"
+          },
+          {
+            "name": "Gravel",
+            "value": "Dirt"
+          },
+          {
+            "name": "Snow",
+            "value": "Snow"
+          }
+        ]
+      },
+      {
+        "name": "name",
+        "description": "Generate/Rename Course: Sets a course name (1-32 characters).",
+        "type": 3,
+        "required": false
+      },
+        {
+        "name": "roadwidth",
+        "description": "Generate Course: Sets the road width for the course. (2-8)",
+        "type": 4,
+        "required": false
+      },
+      {
+        "name": "allsegments",
+        "description": "Generate Course: Sets the segment length for all segments. (2-20)",
+        "type": 4,
+        "required": false
+      },
+      {
+        "name": "minsegment",
+        "description": "Generate Course: Minimum segment length to generate. (2-20)",
+        "type": 4,
+        "required": false
+      },
+      {
+        "name": "maxsegment",
+        "description": "Generate Course: Max segment length to generate. (2-20).",
+        "type": 4,
+        "required": false
+      },
+      {
+        "name": "curviness",
+        "description": "Generate Course: Curviness for each turn. (0.0-1.0)",
+        "type": 3,
+        "required": false
+      },
+      {
+        "name": "maxangle",
+        "description": "Generate Course: Maximum angle (degrees) for each turn. (50-150).",
+        "type": 4,
+        "required": false
+      },
+      {
+        "name": "number",
+        "description": "View/Rename Course: Pick a number associated with your course list.",
+        "type": 3,
+        "required": false
+      }
+    ]
+  },
+  "customrace": {
+    "name": "customrace",
+    "description": "Lv.40 | 🏁 Create your own custom races with event settings and regulations.",
+    "required": "false",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select an option.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "❗ Custom Race Menu",
+            "value": "list"
+          },
+          {
+            "name": "🏁 Start Race",
+            "value": "start"
+          },
+          {
+            "name": "Create New Event",
+            "value": "random"
+          },
+          {
+            "name": "Create New Event (No Regulations)",
+            "value": "random_free"
+          },
+          {
+            "name": "Edit Event Settings [settings|regulations]",
+            "value": "set"
+          },
+          {
+            "name": "Load Saved Event",
+            "value": "load"
+          },
+          {
+            "name": "Delete Event [number]",
+            "value": "delete"
+          },
+          {
+            "name": "View Grid",
+            "value": "grid"
+          },
+          {
+            "name": "View Regulations",
+            "value": "regulations"
+          }
+        ]
+      },
+      {
+        "name": "settings",
+        "description": "Select a type of current setting to change.",
+        "type": 3,
+        "required": false,
+        "choices": [
+          {
+            "name": "Event Name [name]",
+            "value": "roomname"
+          },
+          {
+            "name": "Track",
+            "value": "track"
+          },
+          {
+            "name": "Laps",
+            "value": "laps"
+          },
+          {
+            "name": "Endurance Time Limit",
+            "value": "endurance"
+          },
+          {
+            "name": "Time",
+            "value": "time"
+          },
+          {
+            "name": "Weather",
+            "value": "weather"
+          },
+          {
+            "name": "Surface Water",
+            "value": "wetsurface"
+          },
+          {
+            "name": "Number of Cars",
+            "value": "gridcount"
+          },
+          {
+            "name": "Difficulty",
+            "value": "difficulty"
+          }
+        ]
+      },
+      {
+        "name": "regulations",
+        "description": "Select a type of regulations to change.",
+        "type": 3,
+        "required": false,
+        "choices": [
+          {
+            "name": "FPP Limit [number]",
+            "value": "fpplimit"
+          },
+          {
+            "name": "Power Limit [number]",
+            "value": "powerlimit"
+          },
+          {
+            "name": "Weight Limit [number]",
+            "value": "weightlimit"
+          },
+          {
+            "name": "Minimum FPP (AI) [number]",
+            "value": "lowerfpp"
+          },
+          {
+            "name": "Maximum Tire Grade",
+            "value": "tires"
+          },
+          {
+            "name": "Makes",
+            "value": "makes"
+          },
+          {
+            "name": "Types",
+            "value": "types"
+          },
+          {
+            "name": "Countries",
+            "value": "types"
+          },
+          {
+            "name": "Drivetrains",
+            "value": "drivetrains"
+          },
+          {
+            "name": "Engine Aspirations",
+            "value": "engines"
+          }
+        ]
+      },
+      {
+        "name": "name",
+        "description": "The name argument.",
+        "type": 3,
+        "required": false
+      },
+      {
+        "name": "number",
+        "description": "The number argument.",
+        "type": 4,
+        "required": false
+      }
+    ]
+  },
+  "daily": {
+    "name": "daily",
+    "description": "B | 🏁 Earn credits and cars from daily workouts. (42.1km/26.2mi)",
+    "channels": "",
+    "options": []
+  },
+  "database": {
+    "name": "database",
+    "description": "🏁 Information about data used for the GT Fitness bot.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select an option.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "❗ Menu",
+            "value": "list"
+          },
+          {
+            "name": "Engine Swap Catalog",
+            "value": "engineswap"
+          },
+          {
+            "name": "EXP Levels",
+            "value": "exp"
+          },
+          {
+            "name": "Track List",
+            "value": "tracks"
+          },
+          {
+            "name": "Licenses",
+            "value": "licenses"
+          },
+          {
+            "name": "GTF Rewards",
+            "value": "rewards"
+          }
+        ]
+      },
+      {
+        "name": "number",
+        "description": "Pick a number/id associated with the list from one of the options menus.",
+        "type": 3,
+        "required": false
+      }
+    ]
+  },
+  "debug": {
+    "name": "debug",
+    "description": "🔒 Debug for admins only.",
+    "channels": "",
+    "options": [
+      {
+        "name": "args",
+        "description": "None",
+        "type": 3,
+        "required": true
+      },
+      {
+        "name": "user",
+        "description": "None",
+        "type": 6,
+        "required": true
+      },
+      {
+        "name": "options",
+        "description": "None",
+        "type": 3,
+        "required": false,
+        "choices": [
+          {
+            "name": "announceupdate [string] [string2]",
+            "value": "announceupdate"
+          },
+        {
+            "name": "announceseasonal",
+            "value": "announceseasonal"
+          },
+          {
+            "name": "announcenewcars",
+            "value": "announcenewcars"
+          },
+          {
+            "name": "auditcars",
+            "value": "auditcars"
+          },
+          
+          {
+            "name": "auditparts",
+            "value": "auditparts"
+          },
+          
+          {
+            "name": "restartbot",
+            "value": "restartbot"
+          }
+        ]
+      },
+      {
+        "name": "string",
+        "description": "None",
+        "type": 3,
+        "required": false
+      },
+      {
+        "name": "string2",
+        "description": "None",
+        "type": 3,
+        "required": false
+      },
+      {
+        "name": "number",
+        "description": "None",
+        "type": 3,
+        "required": false
+      },
+      {
+        "name": "object",
+        "description": "None",
+        "type": 4,
+        "required": false
+      }
+    ]
+  },
+  "driver": {
+    "name": "driver",
+    "description": "B | 🏁 Customize the helmet and visor paints of your driving gear.",
+    "options": [{
+      "name": "options",
+      "description": "Select an option.",
+      "type": 3,
+      "required": true,
+      "choices": [
+        {
+            "name": "❗ Menu",
+            "value": "list"
+        },
+        {
+            "name": "Visor Color",
+            "value": "visor"
+      },
+      {
+            "name": "Helmet Color",
+            "value": "helmet"
+      }
+      ]
+      },
+      {
+      "name": "number",
+      "description": "Pick a number associated with the paint [type] list in the menu.",
+      "type": 4,
+      "required": false
+      },
+      {
+      "name": "link",
+      "description": ".",
+      "type": 3,
+      "required": false
+      }]
+},
+  "garage": {
+    "name": "garage",
+    "description": "🏁 Displays your garage cars.",
+    "channels": "",
+    "options": []
+  },
+  "gtf": {
+    "name": "gtf",
+    "description": "Sends a random fact about GT Fitness and the server.",
+    "channels": "",
+    "options": []
+  },
+  "home": {
+    "name": "home",
+    "description": "🏁 Opens the GTF Main Menu with a command selection.",
+    "channels": "",
+    "options": []
+  },
+  "gifts": {
+    "name": "gifts",
+    "description": "🏁 Manage & redeem your gifts and prizes.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select an option.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "❗ Menu",
+            "value": "list"
+          },
+          {
+            "name": "Redeem Latest Item",
+            "value": "latest"
+          },
+          {
+            "name": "Redeem Item",
+            "value": "redeem"
+          },
+          {
+            "name": "Redeem Last 10 Items",
+            "value": "redeemten"
+          },
+          {
+            "name": "Clear All Items",
+            "value": "clear"
+          }
+        ]
+      },
+      {
+        "name": "number",
+        "description": "Pick a number associated with the list in the menu.",
+        "type": 4,
+        "required": false
+      }
+    ]
+  },
+  "license": {
+    "name": "license",
+    "description": "🏁 Earn licenses in the License Center.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select an option to choose a type of license tests.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "❗ Menu",
+            "value": "list"
+          },
+          {
+            "name": "B License",
+            "value": "b"
+          },
+          {
+            "name": "A License | B",
+            "value": "a"
+          },
+          {
+            "name": "IC License | A",
+            "value": "ic"
+          },
+          {
+            "name": "IB License | IC",
+            "value": "ib"
+          },
+          {
+            "name": "IA License | IB",
+            "value": "ia"
+          },
+          {
+            "name": "S License | IA",
+            "value": "s"
+          }
+        ]
+      },
+      {
+        "name": "number",
+        "description": "Pick a number associated with the list in the menu.",
+        "type": 4,
+        "required": false
+      }
+    ]
+  },
+  "manual": {
+    "name": "manual",
+    "description": "🏁 Open the link to the manual for GTF 2 Unleahsed.",
+    "channels": "",
+    "options": []
+  },
+  "paint": {
+    "name": "paint",
+    "description": "B | 🏁 View & purchase paints in GTF Auto for your current car.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select an option to choose the paint type.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "❗ Menu",
+            "value": "list"
+          },
+          {
+            "name": "Gloss Paint",
+            "value": "gloss"
+          },
+          {
+            "name": "Metallic Paint",
+            "value": "metallic"
+          },
+          {
+            "name": "Pearlescent Paint",
+            "value": "pearl"
+          },
+          {
+            "name": "Matte Paint",
+            "value": "matte"
+          },
+          {
+            "name": "Chrome Paint",
+            "value": "chrome"
+          },
+          {
+            "name": "Special Paint | Lv.8",
+            "value": "special"
+          },
+          {
+            "name": "Liveries | Lv.16",
+            "value": "livery"
+          }
+        ]
+      },
+      {
+        "name": "number",
+        "description": "Pick a number associated with the paint [type] list in the menu.",
+        "type": 4,
+        "required": false
+      }
+    ]
+  },
+  "profile": {
+    "name": "profile",
+    "description": "🏁 Displays your information, stats, and career progression.",
+    "channels": "",
+    "options": []
+  },
+  "seasonal": {
+    "name": "seasonal",
+    "description": "A | 🏁 Participate in limited time & randomized Seasonal events from different levels.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select an option.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "❗ Menu",
+            "value": "list"
+          },
+          {
+            "name": "A Level | A",
+            "value": "A"
+          },
+            {
+            "name": "IB Level | IB",
+            "value": "IB"
+          },
+          
+            {
+            "name": "IA Level | IA",
+            "value": "IA"
+          },
+          
+          
+            {
+            "name": "S Level | S",
+            "value": "S"
+          }
+        ]
+      },
+      {
+        "name": "number",
+        "description": "Pick a number associated with the list in the menu.",
+        "type": 4,
+        "required": false
+      }
+    ]
+  },
+  "settings": {
+    "name": "settings",
+    "description": "🏁 Configure settings for GT Fitness 2: Unleahsed game.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select an option.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "❗ Open My Settings",
+            "value": "list"
+          },
+          {
+            "name": "Embed Color",
+            "value": "1"
+          },
+          {
+            "name": "Dealership Sorting Type",
+            "value": "2"
+          },
+          {
+            "name": "Garage Sorting Type",
+            "value": "3"
+          },
+          {
+            "name": "Grid Display Names",
+            "value": "4"
+          },
+          {
+            "name": "Menu Icons",
+            "value": "5"
+          },
+          {
+            "name": "Menu Selector",
+            "value": "6"
+          },
+          {
+            "name": "Metric Units",
+            "value": "7"
+          },
+          {
+            "name": "Time Zone Setting",
+            "value": "8"
+          },
+          {
+            "name": "Messages",
+            "value": "9"
+          },
+          {
+            "name": "🔁 Reset To Default Settings",
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "name": "number",
+        "description": "Pick a number associated with setting's list in the menu.",
+        "type": 4,
+        "required": false
+      }
+    ]
+  },
+  "setup": {
+    "name": "setup",
+    "description": "A | 🏁 Setup custom tuning parts in your current car.",
+    "channels": "",
+    "options": [
+      {
+        "name": "type",
+        "description": "Select the part type.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "❗ Menu",
+            "value": "list"
+          },
+          {
+            "name": "Transmission",
+            "value": "transmission"
+          },
+          {
+            "name": "Suspension",
+            "value": "suspension"
+          },
+          {
+            "name": "Aerodynamics",
+            "value": "aero"
+          },
+            {
+            "name": "Ballast Weight",
+            "value": "ballast"
+          }
+        ]
+      }
+    ]
+  },
+  "tune": {
+    "name": "tune",
+    "description": "🏁 Purchase tuning parts, repair cars, & install other accessories.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select an option to tune/repair.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "❗ Menu",
+            "value": "list"
+          },
+          {
+            "name": "Engine",
+            "value": "engine"
+          },
+          {
+            "name": "Transmission",
+            "value": "transmission"
+          },
+          {
+            "name": "Suspension",
+            "value": "suspension"
+          },
+          {
+            "name": "Tires",
+            "value": "tires"
+          },
+          {
+            "name": "Weight Reduction",
+            "value": "weight"
+          },
+          {
+            "name": "Turbo Kits",
+            "value": "turbo"
+          },
+          {
+            "name": "Brakes",
+            "value": "brakes"
+          },
+          {
+            "name": "Aero Kits | A",
+            "value": "aero"
+          },
+          {
+            "name": "Maintenance / Repair",
+            "value": "maintenance"
+          },
+          {
+            "name": "Other Accessories | A",
+            "value": "other"
+          },
+          {
+            "name": "Car Engines | S",
+            "value": "carengine"
+          }
+        ]
+      },
+      {
+        "name": "number",
+        "description": "Pick a number associated with the part type list in the menu.",
+        "type": 4,
+        "required": false
+      }
+    ]
+  },
+  "status": {
+    "name": "status",
+    "description": "🏁 View the status of your active session.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select an option.",
+        "type": 3,
+        "required": true,
+        "choices": [
+          {
+            "name": "❗ View Session",
+            "value": "status"
+          },
+          {
+            "name": "Exit Current Session",
+            "value": "exit"
+          }
+        ]
+      }
+    ]
+  },
+  "wheels": {
+    "name": "wheels",
+    "description": "B | 🏁 View the list of wheels to purchase for your current car.",
+    "channels": "",
+    "options": ""
+  }
+}

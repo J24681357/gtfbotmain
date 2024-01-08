@@ -1,0 +1,263 @@
+{
+  "cotd": {
+    "name": "cotd",
+    "description": "Information and ranking history of the GTF Car of The Day.",
+    "options": [{
+      "name": "options",
+      "description": "Select an option.",
+      "type": 3,
+      "required": true,
+      "choices": [{
+            "name": "Show Rankings [sort/month/year]",
+            "value": "list"
+      },
+        {
+            "name": "Show Rankings (Current Month)",
+            "value": "latest_month"
+      },
+      {
+            "name": "📊 Show Statistics",
+            "value": "info"
+      }]
+      },
+    {
+      "name": "sort",
+      "description": "Choose the ordering/filtering of the ranking list.",
+      "type": 3,
+      "required": false,
+      "choices": [
+      {
+            "name": "Newest",
+            "value": "newest"
+      },
+        {
+            "name": "Oldest",
+            "value": "oldest"
+      },
+      {
+            "name": "Most Upvotes",
+            "value": "most_upvotes"
+      },
+      {
+            "name": "Least Upvotes",
+            "value": "least_upvotes"
+      }, 
+      {
+            "name": "Most Downvotes",
+            "value": "most_downvotes"
+      },
+      {
+            "name": "Least Downvotes",
+            "value": "least_downvotes"
+      },
+      {
+            "name": "Highest Rated",
+            "value": "highest_rating"
+      },   
+      {
+            "name": "Lowest Rated",
+            "value": "lowest_rating"
+      },   
+      {
+            "name": "Sub-Zero",
+            "value": "Sub-Zero"
+      },  
+      {
+            "name": "Cool",
+            "value": "Cool"
+      },
+      {
+            "name": "Uncool",
+            "value": "Uncool"
+      },
+      {
+            "name": "Seriously Uncool",
+            "value": "Seriously Uncool"
+      }
+      ]
+      },
+      {"name": "month",
+      "description": "Choose the month to filter the rankings.",
+      "type": 3,
+      "required": false,
+      "choices": [     
+      {
+            "name": "March",
+            "value": "3"
+      },
+      {
+            "name": "April",
+            "value": "4"
+      },
+      {
+            "name": "May",
+            "value": "5"
+      },
+      {
+            "name": "June",
+            "value": "6"
+      },
+      {
+            "name": "July",
+            "value": "7"
+      },
+      {
+            "name": "August",
+            "value": "8"
+      },
+      {
+            "name": "September",
+            "value": "9"
+      },
+      {
+            "name": "October",
+            "value": "10"
+      },
+      {
+            "name": "November",
+            "value": "11"
+      },
+      {
+            "name": "December",
+            "value": "12"
+      }]
+      },
+    {
+      "name": "year",
+      "description": "Choose a year to filter the rankings.",
+      "type": 3,
+      "required": false,
+      "choices": [{
+            "name": "2022",
+            "value": "2022"
+      },
+      {
+            "name": "2023",
+            "value": "2023"
+      },
+      {
+            "name": "2024",
+            "value": "2024"
+      },
+      {
+            "name": "2025",
+            "value": "2025"
+      }
+    ]
+    },
+      {
+      "name": "number",
+      "description": "The rank number of a car in a list based on your month/year/sort parameters.",
+      "type": 4,
+      "required": false
+      }
+    ]
+},
+  "penalty": {
+    "name": "penalty",
+    "description": "Moderators Only | Gives a user a penalty/timeout for a short time",
+    "options": [{
+      "name": "user",
+      "description": "Select a user you want to give a penalty",
+      "type": 6,
+      "required": true
+      },
+      {
+      "name": "seconds",
+      "description": "Pick a number between 10 and 120 seconds",
+      "type": 4,
+      "required": true
+      }
+      ]
+},
+  "rcar": {
+    "name": "rcar",
+    "description": "Send a random car from the GT Fitness car list.",
+    "options": [
+      {
+      "name": "options",
+      "description": "Select an option.",
+      "type": 3,
+      "required": false,
+      "choices": [
+      {
+            "name": "📊 Show statistics",
+            "value": "info"
+      }]
+      
+      },
+        {
+      "name": "type",
+      "description": "Select a type to choose a randomized car from.",
+      "type": 3,
+      "required": false,
+      "choices": [
+      {
+            "name": "Production",
+            "value": "Production"
+        },
+            {
+            "name": "Race Car",
+            "value": "Race Car"
+        },
+          {
+            "name": "Concept",
+            "value": "Concept"
+        }
+      ]
+    }
+        
+        ]
+  },
+  "rtrack": {
+    "name": "rtrack",
+    "description": "Send a random track from the Gran Turismo track list.",
+    "options": [
+      {
+      "name": "options",
+      "description": "Select an option.",
+      "type": 3,
+      "required": false,
+      "choices": [
+      {
+            "name": "📊 Show statistics",
+            "value": "info"
+      }]
+    }
+        
+        ]
+  },
+  "sr": {
+    "name": "sr",
+    "description": "Calculates the sportsmanship rating (SR) from any message/image.",
+    "options": [{
+      "name": "options",
+      "description": "Select an option.",
+      "type": 3,
+      "required": false,
+      "choices": [{
+            "name": "📊 View Statistics",
+            "value": "info"
+      }]
+      },
+      {
+      "name": "message",
+      "description": "Input your message.",
+      "type": 3,
+      "required": false
+      },
+      {
+      "name": "image",
+      "description": "Input your image.",
+      "type": 11,
+      "required": false
+      },
+        {
+      "name": "image_url",
+      "description": "Input your image URL.",
+      "type": 3,
+      "required": false
+      }
+    ]
+  }
+}

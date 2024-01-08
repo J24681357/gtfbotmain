@@ -1,0 +1,652 @@
+{
+	"channels": [
+		{
+			"position": 0,
+			"channelposition": 0,
+			"id": "403299166383767552",
+			"name": "GT Fitness",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 0,
+			"channelposition": 0,
+			"id": "424247409699192833",
+			"name": "📅丨updates",
+			"type": 5,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 1,
+			"channelposition": 1,
+			"id": "389497470062821386",
+			"name": "GTF Lobbies 🌐",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 1,
+			"channelposition": 1,
+			"id": "687872420933271577",
+			"name": "📅丨gtf-game-updates丨🏁",
+			"type": 5,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 2,
+			"channelposition": 0,
+			"id": "938156042087456808",
+			"name": "🌏丨open-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 2,
+			"channelposition": 2,
+			"id": "1060821029389340723",
+			"name": "GTF World Tour",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 3,
+			"channelposition": 3,
+			"id": "859206761549922325",
+			"name": "GTF Brand Central 🏛",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 3,
+			"channelposition": 1,
+			"id": "508820132513054720",
+			"name": "🤓丨meme-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 4,
+			"channelposition": 2,
+			"id": "560741220213587968",
+			"name": "🎮丨game-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 4,
+			"channelposition": 4,
+			"id": "824109774178222081",
+			"name": "GTF Games 🎮",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 5,
+			"channelposition": 3,
+			"id": "937218532838629376",
+			"name": "💻丨tech-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 5,
+			"channelposition": 5,
+			"id": "360598515019415555",
+			"name": "GTF Community 🌏",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 6,
+			"channelposition": 4,
+			"id": "679590180742496361",
+			"name": "👥丨vent-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 6,
+			"channelposition": 6,
+			"id": "730661523634257932",
+			"name": "GTF Photo Stream 📷",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 7,
+			"channelposition": 7,
+			"id": "360598968113168385",
+			"name": "GTF Modes 🏁",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 7,
+			"channelposition": 5,
+			"id": "755468331074453710",
+			"name": "🔞丨freedom-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 8,
+			"channelposition": 8,
+			"id": "360600463110045707",
+			"name": "GTF Party Chat 👥",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 8,
+			"channelposition": 0,
+			"id": "1058807546883866684",
+			"name": "🇸🇪丨sweden",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 9,
+			"channelposition": 9,
+			"id": "687917605154979852",
+			"name": "GTF Feeds 📰",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 9,
+			"channelposition": 0,
+			"id": "1005950053552226435",
+			"name": "📅丨car-of-the-day",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 10,
+			"channelposition": 1,
+			"id": "842913425053974579",
+			"name": "🚗丨automotive-cars",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 10,
+			"channelposition": 10,
+			"id": "360599229061660682",
+			"name": "GTF TV 🖵",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 11,
+			"channelposition": 2,
+			"id": "927095230879109161",
+			"name": "🚗丨marketplace-cars",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 11,
+			"channelposition": 11,
+			"id": "755323666522439690",
+			"name": "Archives🗄",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 12,
+			"channelposition": 12,
+			"id": "360600034942648321",
+			"name": "GTF Server Options 🛠",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 12,
+			"channelposition": 3,
+			"id": "986158060164751400",
+			"name": "🚗丨antique-cars丨🇧",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 13,
+			"channelposition": 4,
+			"id": "1045028751513223269",
+			"name": "🚗丨renewable-cars丨🇧",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 13,
+			"channelposition": 13,
+			"id": "409042399625478145",
+			"name": "Secret Menu ❓",
+			"type": 4,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 14,
+			"channelposition": 5,
+			"id": "859207004543385600",
+			"name": "🚗丨latest-cars丨🇧",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 15,
+			"channelposition": 6,
+			"id": "860222476197953546",
+			"name": "🚗丨motorsport-cars丨🇧",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 16,
+			"channelposition": 0,
+			"id": "824106832070705202",
+			"name": "🏎丨assetto-corsa-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 17,
+			"channelposition": 1,
+			"id": "1056700367422881858",
+			"name": "🏎丨beamng-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 18,
+			"channelposition": 2,
+			"id": "739026589291118622",
+			"name": "🏎丨forza-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 19,
+			"channelposition": 3,
+			"id": "367099991862411265",
+			"name": "🏎丨gran-turismo-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 20,
+			"channelposition": 4,
+			"id": "778712498006261780",
+			"name": "🏎丨gran-turismo-7",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 21,
+			"channelposition": 5,
+			"id": "998427835964334110",
+			"name": "🏎丨nfs-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 22,
+			"channelposition": 6,
+			"id": "937961989085462568",
+			"name": "🏎丨racing-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 23,
+			"channelposition": 0,
+			"id": "323132515596500992",
+			"name": "🎶丨gtf-music",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 24,
+			"channelposition": 1,
+			"id": "644052910334017556",
+			"name": "🤝丨gtf-partnerships",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 26,
+			"channelposition": 2,
+			"id": "992293416958431383",
+			"name": "📹丨gtf-moments丨🇧",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 27,
+			"channelposition": 3,
+			"id": "529376959239815168",
+			"name": "🏅丨gtf-medals丨🇦",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 28,
+			"channelposition": 0,
+			"id": "1022014854594310165",
+			"name": "🖼丨art-photos丨🇧",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 29,
+			"channelposition": 1,
+			"id": "883568878221942805",
+			"name": "📷丨game-photos丨🇧",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 30,
+			"channelposition": 2,
+			"id": "367099567612755969",
+			"name": "📷丨irl-photos丨🇧",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 31,
+			"channelposition": 3,
+			"id": "824107462814728202",
+			"name": "📸丨media-photos丨🇧",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 32,
+			"channelposition": 4,
+			"id": "889239232755925002",
+			"name": "🔞丨nsfw-photos",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 33,
+			"channelposition": 0,
+			"id": "878046068384862218",
+			"name": "🤖丨bot-mode丨🤖",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 34,
+			"channelposition": 1,
+			"id": "432667283031195648",
+			"name": "🏁丨gtf-mode丨🤖",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 35,
+			"channelposition": 0,
+			"id": "993182113094438943",
+			"name": "💬丨meeting-room-chat",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 36,
+			"channelposition": 1,
+			"id": "706260954249166939",
+			"name": "💬丨party-chat",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 37,
+			"channelposition": 0,
+			"id": "953900679393583136",
+			"name": "📰丨gt-official-news",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 38,
+			"channelposition": 1,
+			"id": "310599531777622017",
+			"name": "📰丨gtplanet-news",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 39,
+			"channelposition": 2,
+			"id": "1067576826882441339",
+			"name": "🏁丨traxion-news丨🇧",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 40,
+			"channelposition": 3,
+			"id": "694367801967902802",
+			"name": "🐦丨forza-twitter丨🇦",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 41,
+			"channelposition": 4,
+			"id": "360871750461947905",
+			"name": "🐦丨gt-twitter丨🇦",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 42,
+			"channelposition": 5,
+			"id": "361638649718374411",
+			"name": "🚙丨jalopnik-news丨🇮-🇧",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 43,
+			"channelposition": 6,
+			"id": "760412129680424961",
+			"name": "🚘丨motor1-news丨🇮-🇦",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 44,
+			"channelposition": 0,
+			"id": "449962974883610630",
+			"name": "📺丨gran-turismo-tv",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 45,
+			"channelposition": 1,
+			"id": "805941333688188958",
+			"name": "📺丨gtplanet",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 46,
+			"channelposition": 2,
+			"id": "937221304875114516",
+			"name": "📺丨forza丨🇧",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 47,
+			"channelposition": 3,
+			"id": "318848057531695125",
+			"name": "📺丨ᴊ24681357丨🇦",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 48,
+			"channelposition": 4,
+			"id": "845345325743865856",
+			"name": "📺丨pasquaplays丨🇦",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 49,
+			"channelposition": 0,
+			"id": "239493425131552778",
+			"name": "🌎丨open-lobby丨i",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 50,
+			"channelposition": 1,
+			"id": "518240957137944596",
+			"name": "🌍丨open-lobby丨ii",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 51,
+			"channelposition": 2,
+			"id": "704032951175741541",
+			"name": "🌏丨open-lobby丨iii",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 52,
+			"channelposition": 3,
+			"id": "772705155048538132",
+			"name": "🎂丨gt5-10th-anniversary",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 53,
+			"channelposition": 4,
+			"id": "689280426610917435",
+			"name": "🦠丨ᴄᴏᴠɪᴅ-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 54,
+			"channelposition": 5,
+			"id": "348854157698138112",
+			"name": "🔞丨freedom-lobby丨i",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 55,
+			"channelposition": 0,
+			"id": "704114222690336800",
+			"name": "📄丨manual",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 56,
+			"channelposition": 1,
+			"id": "437070477157072898",
+			"name": "🛠丨settings",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 58,
+			"channelposition": 2,
+			"id": "327526878791598080",
+			"name": "⚙丨system-cache",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 59,
+			"channelposition": 3,
+			"id": "829404376413765642",
+			"name": "📊丨statistics丨🇦",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 60,
+			"channelposition": 4,
+			"id": "429025543329939476",
+			"name": "🎨丨color-picker丨🇯",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 61,
+			"channelposition": 0,
+			"id": "665477242553630720",
+			"name": "🧍丨human-comedy丨🇮-🇦",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 62,
+			"channelposition": 1,
+			"id": "381603318193061898",
+			"name": "🎬丨credits丨🇸",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 63,
+			"channelposition": 2,
+			"id": "992998695358447676",
+			"name": "🕵丨exclusives丨🇸",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 64,
+			"channelposition": 3,
+			"id": "449267579396161556",
+			"name": "🛡丨moderator-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 65,
+			"channelposition": 4,
+			"id": "480755110453051392",
+			"name": "testing᲼lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 66,
+			"channelposition": 5,
+			"id": "1017677331629887518",
+			"name": "debug-lobby",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 67,
+			"channelposition": 6,
+			"id": "1056757457378099271",
+			"name": "🇯🇵丨japan",
+			"type": 0,
+			"permissions": "2199023255551"
+		},
+		{
+			"position": 68,
+			"channelposition": 7,
+			"id": "1056758389503438958",
+			"name": "🇩🇪丨germany",
+			"type": 0,
+			"permissions": "2199023255551"
+		}
+	]
+}

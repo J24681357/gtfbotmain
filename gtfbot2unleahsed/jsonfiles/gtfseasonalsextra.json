@@ -1,0 +1,195 @@
+{
+  "title": "🚘 Limited Time Event",
+  "eventid": "SEASONALLIMITED-1",
+  "require": "",
+  "positions": [
+    {
+      "place": "1st",
+      "credits": 20000
+    },
+    {
+      "place": "2nd",
+      "credits": 16250
+    },
+    {
+      "place": "3rd",
+      "credits": 12520
+    },
+    {
+      "place": "4th",
+      "credits": 11270
+    },
+    {
+      "place": "5th",
+      "credits": 10140
+    },
+    {
+      "place": "6th",
+      "credits": 9130
+    },
+    {
+      "place": "7th",
+      "credits": 8210
+    },
+    {
+      "place": "8th",
+      "credits": 7390
+    },
+    {
+      "place": "9th",
+      "credits": 6650
+    },
+    {
+      "place": "10th",
+      "credits": 5990
+    },
+    {
+      "place": "11th",
+      "credits": 5390
+    },
+    {
+      "place": "12th",
+      "credits": 4850
+    },
+    {
+      "place": "13th",
+      "credits": 4370
+    },
+    {
+      "place": "14th",
+      "credits": 3930
+    },
+    {
+      "place": "15th",
+      "credits": 3540
+    },
+    {
+      "place": "16th",
+      "credits": 3190
+    },
+    {
+      "place": "17th",
+      "credits": 2870
+    },
+    {
+      "place": "18th",
+      "credits": 2580
+    },
+    {
+      "place": "19th",
+      "credits": 2320
+    },
+    {
+      "place": "20th",
+      "credits": 2090
+    },
+    {
+      "place": "21st",
+      "credits": 2090
+    },
+    {
+      "place": "22nd",
+      "credits": 1360
+    },
+    {
+      "place": "23rd",
+      "credits": 1050
+    },
+    {
+      "place": "24th",
+      "credits": 940
+    },
+    {
+      "place": "25th",
+      "credits": 850
+    },
+    {
+      "place": "26th",
+      "credits": 770
+    },
+    {
+      "place": "27th",
+      "credits": 690
+    },
+    {
+      "place": "28th",
+      "credits": 620
+    },
+    {
+      "place": "29th",
+      "credits": 560
+    },
+    {
+      "place": "30th",
+      "credits": 500
+    }
+  ],
+  "startposition": 6,
+  "tracks": [
+    [
+      1,
+      "Grand Valley East Reverse",
+      20
+    ],
+    [
+      2,
+      "Special Stage Route 5",
+      15
+    ]
+  ],
+  "type": "LAPS",
+  "time": [
+    "Sunset"
+  ],
+  "timeprogression": 1,
+  "weather": [
+    "Overcast"
+  ],
+  "weatherwetsurface": 0,
+  "weatherchange": 0,
+  "tireconsumption": 1,
+  "fuelconsumption": 0,
+  "grid": [15],
+  "gridstart": "ROLLINGSTART",
+  "difficulty": 45,
+  "damage": true,
+  "bop": true,
+  "championship": false,
+  "car": "GARAGE",
+  "regulations": {
+    "tires": "Racing: Soft",
+    "fpplimit": 450,
+    "upperfpp": 450,
+    "lowerfpp": 300,
+    "upperpower": 9999,
+    "lowerpower": 0,
+    "upperweight": 9999,
+    "lowerweight": 0,
+    "upperyear": 9999,
+    "loweryear": 0,
+    "countries": ["Japan"],
+    "makes": [],
+    "models": [],
+    "engines": [],
+    "drivetrains": [
+    ],
+    "types": [],
+    "special": [],
+    "prohibited": []
+  },
+  "prize": {
+    "id": -1,
+    "name": "",
+    "type": "RANDOMCAR",
+    "item": {
+      "makes": [
+        "Acura"
+      ],
+      "fullnames": [
+        "Acura Integra Type-S 2024"
+      ]
+    }
+  },
+  "mode": "CAREER",
+  "start": "2962023"
+}

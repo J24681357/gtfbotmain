@@ -1,0 +1,29 @@
+name: GTF 2 Unleahsed Game Manual
+title: null
+author:
+  name: J24681357 
+remote_theme: jekyll/minima
+minima:
+  skin: dark
+  date_format: "%b %-d, %Y"
+  social_links:
+    - { platform: youtube,  user_url: "https://www.youtube.com/c/J24681357" }
+plugins:
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
+header_pages:
+  - README.md
+
+
+
+
+

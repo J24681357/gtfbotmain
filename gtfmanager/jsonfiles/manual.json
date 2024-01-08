@@ -1,0 +1,111 @@
+{
+  "manual": [
+    {
+      "title": "__**Welcome To The World Of GT Fitness!**__",
+      "description": [
+        "(Rules may change over time)",
+        "In this Gran Turismo/Cars/Racing related server, you are able to gain points in the chat to earn new licenses (leveled roles) in GT Fitness. You can also use my custom GT Fitness bot to extra fun, related to Gran Turismo!",
+        "You can view your points by typing **/rank** in the bot commands channel.",
+        ":warning: This is an English server!",
+        "Main Invite link: https://discord.gg/rxfRYQTgvh",
+        "❗ We also have a Playstation message group for voice chats & media sharing. If you want to join the Playstation group, send your PSN name."
+      ],
+      "color": "0x0151b0"
+    },
+    {
+      "title": "__**Reminder: This Is A Gran Turismo Server**__",
+      "description": [
+        "If you do not have interest in Gran Turismo, racing games, or cars, you will be asked to leave the server."
+      ],
+      "color": "0xFF0000"
+    },
+    {
+      "title": "__**FAQs**__",
+      "description": [
+        "**How can you earn points for new licenses?**",
+        "1. Typing in the chat. You earn 45-55 points in a message every minute.\n2. Any giveaways announced in <#424247409699192833>.",
+        "**How can I get roles?**",
+        "1. Find them in the Channels & Roles option on top of the server."
+      ],
+      "color": "0x0151b0"
+    },
+     {
+      "title": "__**FAQs - Part 2**__",
+      "description": [
+        "**Why can't I post X in this channel?**",
+        "1. Look at the channel description.",
+        "**How do users have different colors in their username?**",
+        "1. If you have a GTF License, you can have customizable role colors.",
+        "**I'm unable to get any roles in the settings, why is that?**",
+       "1. The GTF bot may be down at the moment or you may be clicking the reactions too quickly; try clicking again.",
+        "**I really want to advertise something important, is there an appropriate place?**",
+       "1. If you have an IB License, you can post your advertisements in <#644052910334017556>.",
+        "**Have any more questions/suggestions/issues?**",
+        "1. Create a post in <#1022368959900692500>!"
+      ],
+      "color": "0x0151b0"
+    },
+    {
+      "title": "__**License Rewards**__",
+      "description": [
+        "__**B License | 500pts**__\n<#1067576826882441339>\n<#367099567612755969>\n<#824107462814728202>\n<#1022014854594310165>\n<#883568878221942805>\n<#992293416958431383>\n<#1022015172530937857>\n<#859207004543385600>\n<#860222476197953546>\n<#986158060164751400>\nScreen Sharing in VC\nDyno - Tags",
+        "__**A License | 1,500pts**__\n<#829404376413765642>\n<#529376959239815168>\n<#361638649718374411>\nDyno - Polls **/poll**\nSoundboard\nAmateur (VC)",
+        "__**IB License | 4,000pts**__\n<#1116729756336017408>\n<#760412129680424961>\nAdvertise in <#644052910334017556>\nPro (VC)",
+        "__**IA License | 8,000pts**__\n<#665477242553630720>\nEndurance (VC)",
+        "__**S License | 20,000pts**__\n<#992998695358447676>\n<#381603318193061898>\nEligible for Moderator",
+        "__**GTF License | 40,000pts**__\n<#429025543329939476>\nAccess to Audit Log in server settings",
+        "__**GTF Veteran | 100,000pts**__\nHappiness"
+      ],
+      "color": "0x0151b0"
+    },
+   {"title": "__**Rules**__",
+      "description": [
+        ":one: __No Self Promoting / Advertising__\nDiscord server invites and self-promoting are not allowed, except for in <#644052910334017556>. Contributing your content to the conversation is okay, but don't immediately ask people to subscribe, like, etc, to your content.",
+        ":two: __No NSFW Content In Channels__\nNSFW not allowed in open lobbies or **any channel** except for channels with a 🔞 label. Some NSFW examples are:\n- Extreme blood/gore\n- Graphic/Sexual activity\n- Extremely offensive content\n- Other NSFW conversations/pictures\n:warning: Spoilers also applies to this rule. ||don't even try|| Even <#508820132513054720> applies this rule. Even your profile applies to this rule.",
+":three: __No Politics In Channels__\nFor discussing controversial news/politics, use <#679590180742496361>.",
+        ":four: __No Spamming__\nThe moderation bot will give you a warning, and then a mute if you persist.",
+        ":five: __No Duplicate Accounts__\nThey are prohibited without logical reasons (i.e. temporary account, 2-Step authentication loss, etc).\n:warning: You will not get your points/credits/progress back.",
+        ":six: __No Account Sharing__\nSharing account information publicly in any channel is prohibited. DMs are okay.",
+        ":seven: __Role Pings__\nOnce you have gaming or car roles, you commit of any pings by GTF members. Remove them if it bothers you.\n:warning: Do not spam mention roles either because Rule 4.",
+        ":eight: __Drama__\nLimit the amount of drama in lobbies. Any disrespect or ignorance against the rules will be consequenced."
+      ],
+      "color": "0x0151b0"
+    },
+        {
+      "title": "__**Rules - Part 2**__",
+      "description": [
+":nine: __No  Inappropriate Offensive Content In Profiles__\nYou will be asked to adjust your profile if your profile is too offensive (such as racial slurs). If not, you will get a warning or kick.",
+        ":keycap_ten: __No Mute Rejoins__\nWhen you are muted, **do not rejoin the server to avoid a mute.** You will have an automatic temporary/permanent ban.",
+        ":one::one: __Channel Descriptions__\nRead the channel descriptions from each channel. They may save you a lot of time.",
+        ":one::two: __R E S P E C T__\nRespect each other and people's backgrounds. Enough said.\n:warning: Any complaints can be reported by pinging Moderator or Adminstrator roles.",
+        ":one::three: __Moderators__\nListen to moderators when they are doing their duties. Respect the moderators' orders or you may receive warnings.",
+ ":one::four: __Disboard, Public Server Listings, etc__\nDo not add this server to public server listings such as Disboard and other non-car related advertisement threads such as r/DiscordServers. This will result in an immediate kick/ban and the server link will become invalid.",
+        ":one::five: __Discord Community Guildlines Apply Here!__\n:warning: You will be kicked/banned from the server if you are under the age requirements for Discord.",
+        ":question: **Violating important GTF rules may result first with some warnings. If any more problems continues, this may result in a mute, kick, ban, or other consequences.**"
+      ],
+      "color": "0x0151b0"
+    },
+      {"title": "__**Want to be a GT Fitness Moderator?**__",
+      "description": [
+"In order to qualify as a moderator:",
+        "- You must have at least an **S License** to show your engagement in the server.\n- You must DM a request an administrator and answer in a few sentences about why you want to be a GTF moderator.",
+ "❗ **The admins and moderators will then inform the person whether the request is accepted or denied.**"
+      ],
+      "color": "0x0151b0"
+    },
+    {
+      "title": "__**Etiquettes**__",
+      "description": [
+        "<#508820132513054720>\nIn this lobby, generally many memes such as edgy, dank, funny content can be posted here except for the following:\n- NSFW content (belongs in #freedom-lobby)\n- Dark humor (especially involving death or intentional hatred against a certain group) (belongs in #freedom-lobby)\n- Sensitive/Offensive Content (belongs practically nowhere)\n\n:warning: If a certain meme gets too controversial from others, mods are allowed to delete the meme and/or provide warnings.", "<#778712498006261780><#367099991862411265>\nDo not send any data mined cars/tracks for Gran Turismo 7 in the channel (even if it's a spoiler). This will be lifted when its live service support has ended."
+      ],
+      "color": "0x0151b0"
+    },
+        {
+      "title": "__**Youtube Channels**__",
+      "description": [
+        "[GT Fitness Racing Team](https://www.youtube.com/channel/UC8djG5nPff-GeaD_Z0re3_g)", "**JOIN THE FITNESS RACE!**"
+      ],
+      "color": "0x0151b0"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "files": {
+    "functions/misc/f_extras.js": [
+      {
+        "id": "ff8f1b47-6cc6-4153-8ab3-49a6e90a7b7f",
+        "line": 51,
+        "version": 557,
+        "index": 1930
+      }
+    ],
+    "functions/misc/f_tools.js": [
+      {
+        "id": "a949f05a-b004-4fb9-9dc0-2a835bcf5ec8",
+        "line": 22,
+        "version": 396,
+        "index": 814
+      }
+    ],
+    "interactions.txt": [
+      {
+        "id": "7afac9ba-ca32-4ec3-ba59-7b7ee0bc5f63",
+        "line": 23,
+        "version": 1,
+        "index": 521
+      }
+    ]
+  }
+}

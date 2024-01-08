@@ -1,0 +1,49 @@
+{
+  "name": "gtfmain",
+  "version": "3.0.0",
+  "main": "main.js",
+  "restart": {
+    "include": [
+      ".js$",
+      ".json$"
+    ]
+  },
+  "scripts": {
+    "start": "node main.js"
+  },
+  "engines": {
+    "node": "v20.10.0",
+    "npm": "v10.2.3"
+  },
+  "dependencies": {
+    "@discordjs/rest": "latest",
+    "@napi-rs/canvas": "latest",
+    "discord.js": "14.14.0",
+    "discord.js-rate-limiter": "latest",
+    "forever": "latest",
+    "json-format": "latest",
+    "jstat": "1.9.6",
+    "mongodb": "latest",
+    "node-random-name": "^1.0.1",
+    "pkg.json": "latest",
+    "shelljs": "latest",
+    "undici": "latest",
+    "yy-random": "^1.10.2"
+  },
+  "devDependencies": {
+    "node": "^20.10.0",
+    "nodemon": "^1.19.4"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J24681357/gtfnews.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/J24681357/gtfnews/issues"
+  },
+  "homepage": "https://github.com/J24681357/gtfnews#readme",
+  "description": ""
+}

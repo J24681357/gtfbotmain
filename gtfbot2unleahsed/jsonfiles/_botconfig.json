@@ -1,0 +1,22 @@
+{
+	"version": 1,
+	"maintenance": false,
+	"maintenancetime": "",
+	"totalmsg": 0,
+	"msglimit": false,
+	"versiondate": "12/17/2023",
+	"seasonaldate": "72024",
+	"seasonallimitedeventprize": {
+		"id": -1,
+		"name": "",
+		"type": "RANDOMCAR",
+		"item": {
+			"makes": [
+				"Gran Turismo"
+			],
+			"fullnames": [
+				"Gran Turismo Red Bull X2014 Fan Car 2014"
+			]
+		}
+	}
+}
