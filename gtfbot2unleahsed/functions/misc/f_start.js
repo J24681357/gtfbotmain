@@ -28,7 +28,7 @@ module.exports.intro = function (userdata, command, msg) {
     embed.setAuthor({name: user, iconURL: avatar});
 
     embed.setTitle("⚠️ __**" + "Before You Start" + "**__ ⚠️");
-    embed.setThumbnail("https://github.com/J24681357/gtfbotmain/gtfbot2unleahsed/raw/master/images/logo/gtfgamelogo.png");
+    embed.setThumbnail("https://raw.githubusercontent.com/J24681357/gtfbotmain/master/gtfbot2unleahsed/images/logo/gtfgamelogo.png");
     embed.setDescription("Welcome to the world of GT Fitness! This is the second release codenamed Unleahsed!\n\nYou may start on your career and find other cool features by using **/home** or looking through the slash commands for the GTF bot." + "\n\n" + 
     "You will be given your first car; you can check it out in your garage (**/garage**)! You can participate in many other events such as Career (**/career**) & Arcade (**/arcade**). You can unlock modes along the way as a GTF driver." + "\n\n" + 
     "There is a manual for the GTF game. Click the link button below to access it!" +
@@ -149,7 +149,7 @@ module.exports.intro = function (userdata, command, msg) {
           
         embed.setTitle("__**Setup Complete**__");
         embed.setColor(0x216c2a);
-        embed.setImage("https://github.com/J24681357/gtfbotmain/gtfbot2unleahsed/raw/master/images/logo/gtfgamelogo.png")
+        embed.setImage("https://raw.githubusercontent.com/J24681357/gtfbotmain/master/gtfbot2unleahsed/images/logo/gtfgamelogo.png")
         embed.setDescription("**✅ Join The Fitness Race!**");
         msg.edit({embeds:[embed]}).then(function(msg) { 
         gtf_DISCORD.delete(msg, {seconds:5})
@@ -188,7 +188,7 @@ module.exports.introEnthu = function (userdata, command, msg) {
     embed.setAuthor({name: user, iconURL: avatar});
 
     embed.setTitle("⚠ __**" + "Before You Start" + "**__ ⚠");
-    embed.setThumbnail("https://github.com/J24681357/gtfbotmain/gtfbot2unleahsed/raw/master/images/logo/fithusimlogo.png");
+    embed.setThumbnail("https://raw.githubusercontent.com/J24681357/gtfbotmain/master/gtfbot2unleahsed/images/logo/fithusimlogo.png");
     embed.setDescription("Welcome to Fithusim!" +
     "\n\n**❗ Click the " + gtf_EMOTE.yes + " button to create your save.**");
 
