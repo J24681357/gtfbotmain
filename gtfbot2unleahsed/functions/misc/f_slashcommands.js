@@ -6,7 +6,13 @@ const { REST } = require('@discordjs/rest');
 
 module.exports.createslashcommands = function() {
   var fs = require("fs")
-var slashcommands = JSON.parse(fs.readFileSync((__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfmanager") || (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfbot2unleahsed") ? __dirname.split("/").slice(0, 4).join("/") + "/" : __dirname.split("/").slice(0, 5).join("/") + "/" + "jsonfiles/slashcommands.json", "utf8"))
+  var n = __dirname.split("/").slice(0, 4).join("/") + "/"
+    if (n.includes("gtfmanager") || n.includes("gtfbot2unleahsed"))  {
+      var home = __dirname.split("/").slice(0, 4).join("/") + "/"
+     } else {
+       var home = __dirname.split("/").slice(0, 5).join("/") + "/"
+     }
+  var slashcommands = JSON.parse(fs.readFileSync(home + "jsonfiles/slashcommands.json", "utf8"))
   
 const rest = new REST({ version: '10' }).setToken(process.env.SECRET);
 const commands = []
