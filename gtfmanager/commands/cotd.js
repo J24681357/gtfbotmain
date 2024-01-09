@@ -125,9 +125,9 @@ module.exports = {
       var rating = calculaterating(select)
       results = "**Car:** " + select["carname"] + "\n" +
         "**Rating:** " + "⭐ " + rating[0] + "% " + "`" + rating[1] + "`" + "\n\n" +
-        "**Upvotes:** " + gtm_EMOTE.upvote + " " + select["upvote"] + "\n" +
-        "**Middle:** " + gtm_EMOTE.middlevote + " " + select["middlevote"] + "\n" +
-        "**Downvotes:** " + gtm_EMOTE.downvote + " " + select["downvote"] + "\n\n" + "**Last Updated:** " + select["lastupdated"]
+        "**Upvotes:** " + gtf_EMOTE.upvote + " " + select["upvote"] + "\n" +
+        "**Middle:** " + gtf_EMOTE.middlevote + " " + select["middlevote"] + "\n" +
+        "**Downvotes:** " + gtf_EMOTE.downvote + " " + select["downvote"] + "\n\n" + "**Last Updated:** " + select["lastupdated"]
       embed.setDescription(results)
       gtf_DISCORD.send(msg, { embeds: [embed] })
       return
@@ -144,7 +144,7 @@ module.exports = {
       list = list.map(function(x) {
         var rating = calculaterating(x)
         return "`" + x["date"] + "` " + "**" + x["carname"] + "**" + "\n" +
-          gtm_EMOTE.upvote + x["upvote"] + " " + gtm_EMOTE.middlevote + " " + x["middlevote"] + gtm_EMOTE.downvote + x["downvote"] + " `⭐" + rating[0] + "% | " + rating[1] + "`"
+          gtf_EMOTE.upvote + x["upvote"] + " " + gtf_EMOTE.middlevote + " " + x["middlevote"] + gtf_EMOTE.downvote + x["downvote"] + " `⭐" + rating[0] + "% | " + rating[1] + "`"
       })
 
       pageargs["list"] = list;

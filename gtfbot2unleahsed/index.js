@@ -10,6 +10,7 @@ const client = new Client({
 });
 ////////////////////////////////////////////////////
 var fs = require("fs");
+require(__dirname + "/" + "files/directories");
 var gtfbot = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/_botconfig.json", "utf8"));
 /////
 var checklogin = false;
@@ -59,7 +60,7 @@ setTimeout(function() {
 }, 30000);
 
 client.on("ready", () => {
-  require(__dirname + "/" + "files/directories");
+  
   gtf_SLASHCOMMANDS.createslashcommands();
   global.gtf_SERVERGUILD = client.guilds.cache.get(gtf_SERVERID)
   
@@ -396,7 +397,7 @@ client.destroy().then(function () {
       keys.length
     );
 
-    //gtf_EXTRA.checkerrors(client)
+    //gtm_EXTRA.checkerrors(client)
   }, 20000);
 
   try {

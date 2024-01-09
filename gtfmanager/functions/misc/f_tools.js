@@ -55,16 +55,16 @@ module.exports.interval = function interval(func, wait, times) {
 module.exports.toEmoji = function (text) {
   var list = {
     nlicense: "⬛",
-    blicense: gtm_EMOTE.blicense,
-    alicense: gtm_EMOTE.alicense,
-    iclicense: gtm_EMOTE.iclicense,
-    iblicense: gtm_EMOTE.iblicense,
-    ialicense: gtm_EMOTE.ialicense,
-    slicense: gtm_EMOTE.slicense,
-    blank: gtm_EMOTE.transparent,
-    playercar: gtm_EMOTE.carright,
-    playercarup: gtm_EMOTE.carup,
-    playercardown: gtm_EMOTE.cardown,
+    blicense: gtf_EMOTE.blicense,
+    alicense: gtf_EMOTE.alicense,
+    iclicense: gtf_EMOTE.iclicense,
+    iblicense: gtf_EMOTE.iblicense,
+    ialicense: gtf_EMOTE.ialicense,
+    slicense: gtf_EMOTE.slicense,
+    blank: gtf_EMOTE.transparent,
+    playercar: gtf_EMOTE.carright,
+    playercarup: gtf_EMOTE.carup,
+    playercardown: gtf_EMOTE.cardown,
 
     "N/A": "N/A",
     austria: "🇦🇹",
@@ -87,7 +87,7 @@ module.exports.toEmoji = function (text) {
     sweden: "🇸🇪",
     usa: "🇺🇸",
     canada: "🇨🇦",
-    pdi: gtm_EMOTE.pdiflag,
+    pdi: gtf_EMOTE.pdiflag,
     up: "⬆",
     down: "⬇",
     left: "⬅",
@@ -206,14 +206,14 @@ embed.setFields([{ name: gtm_STATS.menuFooter(userdata), value: gtm_STATS.curren
       })
       .slice(0, currentpagelength);
     emojilist.unshift({
-      emoji: gtm_EMOTE.rightarrow,
+      emoji: gtf_EMOTE.rightarrow,
       emoji_name: "rightarrow",
       name: "",
       extra: "",
       button_id: 1,
     });
     emojilist.unshift({
-      emoji: gtm_EMOTE.leftarrow,
+      emoji: gtf_EMOTE.leftarrow,
       emoji_name: "leftarrow",
       name: args["page"] + 1 + "/" + Math.ceil(args["list"].length / args["rows"]),
       extra: "",
@@ -221,30 +221,30 @@ embed.setFields([{ name: gtm_STATS.menuFooter(userdata), value: gtm_STATS.curren
     });
   } else {
     var emojilist = [
-      { emoji: gtm_EMOTE.yes, emoji_name: "Yes", name: args["page"] + 1 + "/" + Math.ceil(args["list"].length / args["rows"]), extra: "", button_id: 0 },
+      { emoji: gtf_EMOTE.yes, emoji_name: "Yes", name: args["page"] + 1 + "/" + Math.ceil(args["list"].length / args["rows"]), extra: "", button_id: 0 },
       {
-        emoji: gtm_EMOTE.leftarrow,
+        emoji: gtf_EMOTE.leftarrow,
         emoji_name: "leftarrow",
         name: "",
         extra: "",
         button_id: 1,
       },
       {
-        emoji: gtm_EMOTE.rightarrow,
+        emoji: gtf_EMOTE.rightarrow,
         emoji_name: "rightarrow",
         name: "",
         extra: "",
         button_id: 2,
       },
       {
-        emoji: gtm_EMOTE.uparrow,
+        emoji: gtf_EMOTE.uparrow,
         emoji_name: "uparrow",
         name: "",
         extra: "",
         button_id: 3,
       },
       {
-        emoji: gtm_EMOTE.downarrow,
+        emoji: gtf_EMOTE.downarrow,
         emoji_name: "downarrow",
         name: "",
         extra: "",
@@ -705,11 +705,11 @@ module.exports.prepareButtons = function (emojilist, msg, userdata) {
       finalindex++;
       newlist = new ActionRowBuilder();
     }
-    if (emojilist[i]["emoji"] == gtm_EMOTE.yes) {
+    if (emojilist[i]["emoji"] == gtf_EMOTE.yes) {
       color = 1;
-    } else if (emojilist[i]["emoji"] == gtm_EMOTE.flag) {
+    } else if (emojilist[i]["emoji"] == gtf_EMOTE.flag) {
       color = 3;
-    } else if (emojilist[i]["emoji"] == gtm_EMOTE.exit) {
+    } else if (emojilist[i]["emoji"] == gtf_EMOTE.exit) {
       color = 4;
     } else {
       color = 2;
@@ -918,7 +918,7 @@ module.exports.updateallsaves = async function (name, json) {
               ////////
       if (typeof json["partupdate"] !== 'undefined') {
         var gtfcar = userdata["garage"][i]
-        var ocar = gtm_CARS.get({ make: gtfcar["make"], fullname: gtfcar["name"]})
+        var ocar = gtf_CARS.get({ make: gtfcar["make"], fullname: gtfcar["name"]})
         var perf = gtm_PERF.perf(ocar, "DEALERSHIP")
         var parts = ["engine","suspension", "tires","weightreduction","turbo"]
         for (var j = 0; j < parts.length; j++) {
@@ -1049,9 +1049,9 @@ module.exports.createReactions = function(emojilist, msg, id) {
 
   function filter(i) {
     var emote = emojilist[i][0];
-    if (gtm_EMOTE.includes("<:")) {
-      emote = gtm_EMOTE.split(":")[2]
-      emote = gtm_EMOTE.slice(0, gtm_EMOTE.length-1)
+    if (gtf_EMOTE.includes("<:")) {
+      emote = gtf_EMOTE.split(":")[2]
+      emote = gtf_EMOTE.slice(0, gtf_EMOTE.length-1)
     }
     var name = emojilist[i][1];
     var func = emojilist[i][2];

@@ -48,6 +48,7 @@ global.gtf_TOOLS = require(home + "functions/misc/f_tools");
 
 
 global.gtf_EMOTE = {
+  "hi": "<:hi:434455411408502784>",
   "update": "<:update:419605168510992394>",
   "gtflogo": "<:gtfitness:912928750851752016>",
   "flag": "<:flag:646244286635180033>",

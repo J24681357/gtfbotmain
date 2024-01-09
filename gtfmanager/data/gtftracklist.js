@@ -138,7 +138,7 @@ module.exports.random = function (args, num) {
     delete args["seed"]
   }
   var rlist = [];
-  var list = gtm_TRACKS.find(args);
+  var list = gtf_TRACKS.find(args);
   for (var i = 0; i < num; i++) {
     if (seed == -1) {
     rlist.push(list[Math.floor(Math.random() * list.length)]);

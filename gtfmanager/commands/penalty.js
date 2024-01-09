@@ -65,7 +65,7 @@ module.exports = {
       return
     }
 
-    embed.setDescription(gtm_EMOTE.slowdown1 + gtm_EMOTE.slowdown2 + " **" + "<@" + user.id + "> " + "| Penalty +" + time + ".000" + "** " + gtm_EMOTE.slowdown1 + gtm_EMOTE.slowdown2)
+    embed.setDescription(gtf_EMOTE.slowdown1 + gtf_EMOTE.slowdown2 + " **" + "<@" + user.id + "> " + "| Penalty +" + time + ".000" + "** " + gtf_EMOTE.slowdown1 + gtf_EMOTE.slowdown2)
     gtm_MAIN.bot["penalty"]++
     msg.channel.send({ content: "<@" + user.id + ">", embeds: [embed] })
 

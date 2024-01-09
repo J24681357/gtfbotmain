@@ -75,7 +75,7 @@ client.once(Events.ClientReady, c => {
 
   //gtm_EXTRA.rainbowcolors(c)
   //gtm_EXTRA.gtcolors(c)
-  gtm_EXTRA.checkgallery(c)
+  
   
   //gtm_TOOLS.downloadGTFFiles(client)
   
@@ -239,6 +239,7 @@ client.login(process.env.SECRET2).then(function() {
     //gtm_EXTRA.test(client.guilds.cache.get("239493425131552778"))
   
    setTimeout(function() {
+     gtm_EXTRA.checkgallery(client)
   //gtm_EXTRA.caroftheday(client)
   //gtm_EXTRA.carofthedaystats(client)
  },10000)

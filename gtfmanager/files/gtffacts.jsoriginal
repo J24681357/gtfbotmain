@@ -95,7 +95,7 @@ module.exports = {
       "GT Fitness 2 is coming to the PS5.",
     ];
     var rfact = facts[Math.floor(Math.random() * facts.length)];
-    embed.setDescription(gtm_EMOTE.gtflogo + " **" + rfact + "**");
+    embed.setDescription(gtf_EMOTE.gtflogo + " **" + rfact + "**");
     gtf_DISCORD.send(msg, { embeds: [embed] })
   }
 

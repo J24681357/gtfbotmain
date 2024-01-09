@@ -40,41 +40,41 @@ module.exports = {
     /* Setup */
     if ("options" in query) {
       if (query["options"] == "info") {
-        embed.setTitle(gtm_EMOTE.tracklogo + " __GTF Track Randomizer: Info__");
+        embed.setTitle(gtf_EMOTE.tracklogo + " __GTF Track Randomizer: Info__");
         results = "**Total Tracks:** " +
-          gtm_TRACKS.find({}).length
+          gtf_TRACKS.find({}).length
         embed.setFields([{
           name: "Type", value: "**Original Tracks:** " +
-            gtm_TRACKS.find({ types: ["Original"] }).length +
+            gtf_TRACKS.find({ types: ["Original"] }).length +
             "\n" +
             "**Real Tracks:** " +
-            gtm_TRACKS.find({ types: ["Real"] }).length +
+            gtf_TRACKS.find({ types: ["Real"] }).length +
             "\n" +
             "**City Tracks:** " +
-            gtm_TRACKS.find({ types: ["City"] }).length +
+            gtf_TRACKS.find({ types: ["City"] }).length +
             "\n" +
             "**Dirt Tracks:** " +
-            gtm_TRACKS.find({ types: ["Dirt"] }).length, inline: true
+            gtf_TRACKS.find({ types: ["Dirt"] }).length, inline: true
         }, {
           name: "By Latest Version", value: "**Gran Turismo 2:** " +
-            gtm_TRACKS.find({ "versions": ["Gran Turismo 2"] }).length +
+            gtf_TRACKS.find({ "versions": ["Gran Turismo 2"] }).length +
             "\n" +
             "**Gran Turismo 3:** " +
-            gtm_TRACKS.find({ "versions": ["Gran Turismo 3"] }).length +
+            gtf_TRACKS.find({ "versions": ["Gran Turismo 3"] }).length +
             "\n" +
             "**Gran Turismo 4:** " +
-            gtm_TRACKS.find({ "versions": ["Gran Turismo 4"] }).length +
+            gtf_TRACKS.find({ "versions": ["Gran Turismo 4"] }).length +
             "\n" +
             "**Gran Turismo 5:** " +
-            gtm_TRACKS.find({ "versions": ["Gran Turismo 5"] }).length +
+            gtf_TRACKS.find({ "versions": ["Gran Turismo 5"] }).length +
             "\n" +
             "**Gran Turismo 6:** " +
-            gtm_TRACKS.find({ "versions": ["Gran Turismo 6"] }).length +
+            gtf_TRACKS.find({ "versions": ["Gran Turismo 6"] }).length +
             "\n" +
             "**Gran Turismo Sport:** " +
-            gtm_TRACKS.find({ "versions": ["Gran Turismo Sport"] }).length +
+            gtf_TRACKS.find({ "versions": ["Gran Turismo Sport"] }).length +
             "\n" + "**Gran Turismo 7:** " +
-            gtm_TRACKS.find({ "versions": ["Gran Turismo 7"] }).length +
+            gtf_TRACKS.find({ "versions": ["Gran Turismo 7"] }).length +
             "\n", inline: true
         }])
 
@@ -84,8 +84,8 @@ module.exports = {
       }
     }
 
-    embed.setTitle(gtm_EMOTE.tracklogo + " __GTF Track Randomizer__");
-    var track = gtm_TRACKS.random({}, 1)[0];
+    embed.setTitle(gtf_EMOTE.tracklogo + " __GTF Track Randomizer__");
+    var track = gtf_TRACKS.random({}, 1)[0];
     var imagestyle = 0
     var extra = ""
     embed.setDescription("**" + track["name"] + "**" + " `" + track["type"] + "`\n\n" +

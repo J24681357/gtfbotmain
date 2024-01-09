@@ -96,7 +96,7 @@ options.push({
   ],
 });
   //   
-var list = gtm_CARS.list("makes");
+var list = gtf_CARS.list("makes");
 var choices = [];
 var indexcarcommand = 1;
 var label = ["abcdef", "fghijklm", "mnopqrs", "stvwxyz"];
@@ -141,7 +141,7 @@ for (var i = 0; i < list2.length; i++) {
 }
 options.push({ name: name.toString(), description: "(Select All) Select a type (1 Only).", type: 3, required: false, choices: choices });
 
-var list22 = gtm_CARS.list("countries");
+var list22 = gtf_CARS.list("countries");
 choices = [];
 name = "country1";
 for (var i = 0; i < list22.length; i++) {

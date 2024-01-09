@@ -77,7 +77,7 @@ module.exports.list = function (args) {
 
 module.exports.stats = function (embed) {
   var results = ""
-      var list = gtm_CARS.list("all")
+      var list = gtf_CARS.list("all")
       var countries = {}
       var types = {}
       var total = 0
@@ -462,12 +462,12 @@ module.exports.find = function (args) {
       } else if (sort == "fppdesc"|| sort == "Highest FPP") {
         return gtm_PERF.perf(b, "DEALERSHIP")["fpp"] - gtm_PERF.perf(a, "DEALERSHIP")["fpp"];
       } else if (sort == "costasc"|| sort == "Lowest Price") {
-        a = gtm_CARS.costCalcRaw(a, gtm_PERF.perf(a, "DEALERSHIP")["fpp"]);
-        b = gtm_CARS.costCalcRaw(b, gtm_PERF.perf(b, "DEALERSHIP")["fpp"]);
+        a = gtf_CARS.costCalcRaw(a, gtm_PERF.perf(a, "DEALERSHIP")["fpp"]);
+        b = gtf_CARS.costCalcRaw(b, gtm_PERF.perf(b, "DEALERSHIP")["fpp"]);
         return a - b;
       } else if (sort == "costdesc"|| sort == "Highest Price") {
-        a = gtm_CARS.costCalcRaw(a, gtm_PERF.perf(a, "DEALERSHIP")["fpp"]);
-        b = gtm_CARS.costCalcRaw(b, gtm_PERF.perf(b, "DEALERSHIP")["fpp"]);
+        a = gtf_CARS.costCalcRaw(a, gtm_PERF.perf(a, "DEALERSHIP")["fpp"]);
+        b = gtf_CARS.costCalcRaw(b, gtm_PERF.perf(b, "DEALERSHIP")["fpp"]);
         return b - a;
       } else {
         return a["name"].toString().localeCompare(b["name"]);
@@ -495,7 +495,7 @@ module.exports.get = function (args) {
 
 module.exports.random = function (args, num) {
   var rlist = [];
-  var list = gtm_CARS.find(args);
+  var list = gtf_CARS.find(args);
   for (var i = 0; i < num; i++) {
     rlist.push(list[Math.floor(Math.random() * list.length)]);
   }

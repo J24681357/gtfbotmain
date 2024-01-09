@@ -298,7 +298,7 @@ module.exports.loadfeeds = function(client) {
   channelid: "953900679393583136",
   amount: 12,
   type: "https",
-  reverse: true, emoji: gtm_EMOTE.gtlogowhite
+  reverse: true, emoji: gtf_EMOTE.gtlogowhite
   }]
 
   var i = 0
@@ -341,7 +341,7 @@ module.exports.galleryreacts = function(emojis, msg) {
       msg.content.match(/gran turismo6/ig) ||
       msg.content.match(/granturismo 6/ig) || 
       msg.content.match(/gran turismo 6/ig)) {
-    emojis.unshift(gtm_EMOTE.gt6tpe)
+    emojis.unshift(gtf_EMOTE.gt6tpe)
   }
   */
   
@@ -354,7 +354,7 @@ module.exports.galleryreacts = function(emojis, msg) {
       msg.content.match(/gran turismo7/ig) ||
       msg.content.match(/granturismo 7/ig) || 
       msg.content.match(/gran turismo 7/ig)) {
-    emojis.unshift(gtm_EMOTE.gt7)
+    emojis.unshift(gtf_EMOTE.gt7)
   }
   */
     /*
@@ -366,24 +366,24 @@ module.exports.galleryreacts = function(emojis, msg) {
       msg.content.match(/gran turismofitness/ig) ||
       msg.content.match(/granturismo fitness/ig) || 
       msg.content.match(/gran turismo fitness/ig)) {
-    emojis.unshift(gtm_EMOTE.gtlogoblue)
+    emojis.unshift(gtf_EMOTE.gtlogoblue)
   }
   */
   
   
   if (channel.includes('meme-lobby') && (msg.attachments.size >= 1 || msg.content.includes("https://") || msg.content.includes("http://"))) {
-    emojis.unshift(gtm_EMOTE.upvote)
-    emojis.unshift(gtm_EMOTE.downvote)
+    emojis.unshift(gtf_EMOTE.upvote)
+    emojis.unshift(gtf_EMOTE.downvote)
     return
   }
   if (channel.includes('car-of-the-day')) {
-    emojis.unshift(gtm_EMOTE.upvote)
-    emojis.unshift(gtm_EMOTE.middlevote)
-    emojis.unshift(gtm_EMOTE.downvote)
+    emojis.unshift(gtf_EMOTE.upvote)
+    emojis.unshift(gtf_EMOTE.middlevote)
+    emojis.unshift(gtf_EMOTE.downvote)
     return
   }
     if (channel.includes('gtf-moments') && (msg.attachments.size >= 1 || msg.content.includes("https://") || msg.content.includes("http://"))) {
-    emojis.unshift(gtm_EMOTE.gtflogo)
+    emojis.unshift(gtf_EMOTE.gtflogo)
     return
   }
   if (channel.includes('music') && (msg.attachments.size >= 1 || msg.content.includes("https://") || msg.content.includes("http://"))) {
@@ -395,7 +395,7 @@ module.exports.galleryreacts = function(emojis, msg) {
     return
   }
   if (channel.includes('photos') && (msg.attachments.size >= 1 || msg.content.includes("https://") || msg.content.includes("http://"))) {
-    //emojis.unshift(gtm_EMOTE.gtsophy)
+    //emojis.unshift(gtf_EMOTE.gtsophy)
     emojis.unshift('❤');
     return
   } else {
@@ -411,7 +411,7 @@ module.exports.checkgallery = async function(client) {
     var name = channel.name
     
   if (name.includes('gtf-moments')) {
-    addreactions([gtm_EMOTE.gtflogo], channel);
+    addreactions([gtf_EMOTE.gtflogo], channel);
     return
   }
 if (name.includes('photos')) {
@@ -421,10 +421,10 @@ if (name.includes('photos')) {
     addreactions(["🎵"], channel);
   }
   if (name.includes('meme-lobby')) {
-    addreactions([gtm_EMOTE.upvote,gtm_EMOTE.downvote], channel);
+    addreactions([gtf_EMOTE.upvote,gtf_EMOTE.downvote], channel);
   }
   if (name.includes('car-of-the-day')) {
-    addreactions([gtm_EMOTE.upvote,gtm_EMOTE.middlevote, gtm_EMOTE.downvote], channel);
+    addreactions([gtf_EMOTE.upvote,gtf_EMOTE.middlevote, gtf_EMOTE.downvote], channel);
   }
   if (name.includes('updates')) {
     addreactions(["star"], channel);
@@ -564,10 +564,10 @@ module.exports.feed = function(json, client) {
 module.exports.checkmedals = function(emojis, client, message) {
   
   var list = [
-    [gtm_EMOTE.platinummedal, 'platinum', 0x91cae1, gtm_EMOTE.platinummedal + ' __**Platinum Medal**__ ' + gtm_EMOTE.platinummedal, '**Platinum Medal**', 8],
-    [gtm_EMOTE.goldmedal, 'gold', 0xffd700, gtm_EMOTE.goldmedal + ' __**Gold Medal**__ ' + gtm_EMOTE.goldmedal, '**Gold Medal**', 6],
-    [gtm_EMOTE.silvermedal, 'silver', 0xaaa9ad, gtm_EMOTE.silvermedal + ' __**Silver Medal**__ ' + gtm_EMOTE.silvermedal, '**Silver Medal**', 4],
-    [gtm_EMOTE.bronzemedal, 'bronze', 0xd2825f, gtm_EMOTE.bronzemedal + ' __**Bronze Medal**__ ' + gtm_EMOTE.bronzemedal, '**Bronze Medal**', 3],
+    [gtf_EMOTE.platinummedal, 'platinum', 0x91cae1, gtf_EMOTE.platinummedal + ' __**Platinum Medal**__ ' + gtf_EMOTE.platinummedal, '**Platinum Medal**', 8],
+    [gtf_EMOTE.goldmedal, 'gold', 0xffd700, gtf_EMOTE.goldmedal + ' __**Gold Medal**__ ' + gtf_EMOTE.goldmedal, '**Gold Medal**', 6],
+    [gtf_EMOTE.silvermedal, 'silver', 0xaaa9ad, gtf_EMOTE.silvermedal + ' __**Silver Medal**__ ' + gtf_EMOTE.silvermedal, '**Silver Medal**', 4],
+    [gtf_EMOTE.bronzemedal, 'bronze', 0xd2825f, gtf_EMOTE.bronzemedal + ' __**Bronze Medal**__ ' + gtf_EMOTE.bronzemedal, '**Bronze Medal**', 3],
   ];
   var index = Math.floor(Math.random() * list.length);
   var select = list[index];
@@ -783,11 +783,11 @@ module.exports.gtfstats = function(client) {
 
 module.exports.hi = function(emojis, msg) {
   if (msg.content.length == 2 && (msg.content == "hi" || msg.content == "Hi")) {
-    emojis.push(gtm_EMOTE.hi)
+    emojis.push(gtf_EMOTE.hi)
     return
   }
   if (msg.content.length == 3 && (msg.content == "hi!" || msg.content == "Hi!")) {
-    emojis.push(gtm_EMOTE.hi)
+    emojis.push(gtf_EMOTE.hi)
     return
   }
 };
@@ -903,7 +903,7 @@ embed.setImage("https://raw.githubusercontent.com/J24681357/gtfbotimages777/mast
     if (Object.keys(options).length != 0) {
       theme = "\n" + "`Theme: " + Object.values(options).join(", ") + "`"
     }
-    var car = gtm_CARS.random(options,1)[0]
+    var car = gtf_CARS.random(options,1)[0]
     /*
 var car = [{
 			"make": "PAL-V",
@@ -929,7 +929,7 @@ var car = [{
     */
   
     while (prevcarlist.includes(car["name"] + " " + car["year"])) {
-      car = gtm_CARS.random(options,1)[0]
+      car = gtf_CARS.random(options,1)[0]
     }
 
      var currentdate = new Date();
@@ -944,7 +944,7 @@ var car = [{
     embed.setColor(0x0151b0)
     var channel = client.channels.cache.find(channel => channel.id === cotdchannelid);
     var emojilist = [
-  { emoji: gtm_EMOTE.google, 
+  { emoji: gtf_EMOTE.google, 
   emoji_name: "google", 
   name: 'Car Info', 
   extra: "https://www.google.com/search?q=" + car["name"].replace(/ /ig, "+") + "+" + car["year"],

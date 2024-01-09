@@ -46,7 +46,7 @@ module.exports = {
 
       embed.setTitle("__GTF Car Randomizer: Info__");
 
-      gtm_CARS.stats(embed)
+      gtf_CARS.stats(embed)
       gtf_DISCORD.send(msg, { embeds: [embed] });
       return;
     }
@@ -56,7 +56,7 @@ module.exports = {
       embed.setTitle("__**" + query["type"] + "**__")
     }
 
-    var car = gtm_CARS.random(filter, 1)[0];
+    var car = gtf_CARS.random(filter, 1)[0];
     var imagestyle = 0
     var extra = ""
     if (car["image"].length >= 2) {
@@ -68,12 +68,12 @@ module.exports = {
         imagestyle = 0
       }
     }
-    embed.setDescription(gtm_EMOTE.gtflogo + " **" + car["name"] + " " + car["year"] + "** " + gtm_TOOLS.toEmoji(car["country"]) + " `" + car["type"] + "`\n" + gtf_MATH.numFormat(car["power"]) + " hp | " + gtf_MATH.numFormat(car["weight"]) + " lbs | " + car["drivetrain"] + " | " + car["engine"] + " " + extra);
+    embed.setDescription(gtf_EMOTE.gtflogo + " **" + car["name"] + " " + car["year"] + "** " + gtm_TOOLS.toEmoji(car["country"]) + " `" + car["type"] + "`\n" + gtf_MATH.numFormat(car["power"]) + " hp | " + gtf_MATH.numFormat(car["weight"]) + " lbs | " + car["drivetrain"] + " | " + car["engine"] + " " + extra);
     embed.setImage(car["image"][imagestyle]);
 
     var emojilist = [
       {
-        emoji: gtm_EMOTE.google,
+        emoji: gtf_EMOTE.google,
         emoji_name: "google",
         name: 'Car Info',
         extra: "https://www.google.com/search?q=" + car["name"].replace(/ /ig, "+") + "+" + car["year"],

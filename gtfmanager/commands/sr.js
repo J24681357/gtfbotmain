@@ -39,7 +39,7 @@ module.exports = {
     var rating = ratings[Math.floor(Math.random() * ratings.length)];
 
     if (query["options"] == "info") {
-      embed.setTitle(gtm_EMOTE.gtlogoblue + " __Sportmanship Rating Calculator - Chances__");
+      embed.setTitle(gtf_EMOTE.gtlogoblue + " __Sportmanship Rating Calculator - Chances__");
       results =
         "**E:** " +
         (Math.round(1000 * (ratings.filter(x => x == "E").length / ratings.length)) / 1000) * 100 +
@@ -70,12 +70,12 @@ module.exports = {
       return;
     }
 
-    embed.setTitle(gtm_EMOTE.gtlogoblue + " __Sportmanship Rating Calculator__");
+    embed.setTitle(gtf_EMOTE.gtlogoblue + " __Sportmanship Rating Calculator__");
     var content = query["message"]
     if (typeof content === 'undefined') {
       content = "`None`";
     }
-    results = "**Message:** " + content + "\n" + "**Sportsmanship Rating:** " + gtm_EMOTE.loading;
+    results = "**Message:** " + content + "\n" + "**Sportsmanship Rating:** " + gtf_EMOTE.loading;
     embed.setDescription(results);
     if (typeof query["image"] !== 'undefined') {
       embed.setImage(query["image"]);
