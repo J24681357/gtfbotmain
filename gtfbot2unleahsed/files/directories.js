@@ -41,7 +41,6 @@ global.gtf_DATETIME = require(home + "functions/misc/f_datetime");
 global.gtf_MATH = require(home + "functions/misc/f_math");
 global.gtf_DISCORD = require(home + "functions/misc/f_discord");
 global.gtf_SLASHCOMMANDS = require(home + "functions/misc/f_slashcommands");
-global.gtf_EXTRA = require(home + "functions/misc/f_extras");
 
 global.gtf_SETTINGS = require(home + "functions/profile/f_settings");
 global.gtf_STATS = require(home + "functions/profile/f_stats");

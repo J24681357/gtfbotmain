@@ -96,7 +96,7 @@ module.exports = {
     ];
     var rfact = facts[Math.floor(Math.random() * facts.length)];
     embed.setDescription(gtm_EMOTE.gtflogo + " **" + rfact + "**");
-    gtm_DISCORD.send(msg, { embeds: [embed] })
+    gtf_DISCORD.send(msg, { embeds: [embed] })
   }
 
 }

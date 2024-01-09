@@ -1,5 +1,5 @@
 var fs = require("fs")
-process.env["SECRET2"] = JSON.parse(fs.readFileSync(__dirname + "/" + "keys.json", "utf8"))["SECRET2"];
+process.env["SECRET2"] = JSON.parse(fs.readFileSync(__dirname + "/" + ".keys.json", "utf8"))["SECRET2"];
 
 const {  Client, Events, GatewayIntentBits, Discord, EmbedBuilder, ActionRowBuilder, AttachmentBuilder, ButtonBuilder, SelectMenuBuilder } = require("discord.js");
 
@@ -65,7 +65,6 @@ var executions = 0;
 
 client.once(Events.ClientReady, c => {
   gtm_SLASHCOMMANDS.createslashcommands()
-  
   updatebotstatus()
   
     setInterval(function() {
@@ -103,7 +102,7 @@ client.on("messageCreate", msg => {
           usernames.push(r.user.username)
         })
 
-        gtm_DISCORD.send(msg, { content: msg.content.replace(/@someone/, "**" + usernames[Math.floor(Math.random() * usernames.length)] + "**") })
+        gtf_DISCORD.send(msg, { content: msg.content.replace(/@someone/, "**" + usernames[Math.floor(Math.random() * usernames.length)] + "**") })
       })
 
     }
@@ -160,7 +159,7 @@ client.on("interactionCreate", async interaction => {
     return
   } catch (error) {
     embed = new EmbedBuilder();
-    gtm_EMBED.alert({ name: "❌ Unexpected Error", description: "Oops, an unexpected error has occurred.\n" + "**" + error + "**", embed: "", seconds: 0 }, interaction, { id: interaction.author.id, garage: [], settings: gtm_defaultsettings });
+    gtf_EMBED.alert({ name: "❌ Unexpected Error", description: "Oops, an unexpected error has occurred.\n" + "**" + error + "**", embed: "", seconds: 0 }, interaction, { id: interaction.author.id, garage: [], settings: gtm_defaultsettings });
     console.error(error);
   }
   return;
@@ -195,12 +194,12 @@ client.on("interactionCreate", async interaction => {
           if (msg.channel.type == 11) {
             if (!command.channels.some(name => msg.channel.parent.name.includes(name))) {
               
-              gtm_EMBED.alert({ name: "❌ Incorrect Channel", description: "Commands are not allowed in this channel.", embed: "", seconds: 0 }, msg, userdata);
+              gtf_EMBED.alert({ name: "❌ Incorrect Channel", description: "Commands are not allowed in this channel.", embed: "", seconds: 0 }, msg, userdata);
               return;
             }
           } else {
             if (!command.channels.some(name => msg.channel.name.includes(name))) {
-              gtm_EMBED.alert({ name: "❌ Incorrect Channel", description: "Commands are not allowed in this channel.", embed: "", seconds: 0 }, msg, userdata);
+              gtf_EMBED.alert({ name: "❌ Incorrect Channel", description: "Commands are not allowed in this channel.", embed: "", seconds: 0 }, msg, userdata);
               return;
             }
           }
@@ -214,7 +213,7 @@ client.on("interactionCreate", async interaction => {
       return
     }
     var embed = new EmbedBuilder();
-    gtm_EMBED.alert({ name: "❌ Unexpected Error", description: "Oops, an unexpected error has occurred.\n" + "**" + error + "**", embed: "", seconds: 0 }, msg, userdata);
+    gtf_EMBED.alert({ name: "❌ Unexpected Error", description: "Oops, an unexpected error has occurred.\n" + "**" + error + "**", embed: "", seconds: 0 }, msg, userdata);
     console.error(error);
   }
     }

@@ -66,7 +66,7 @@ module.exports = {
         "%" +
         "\n";
       embed.setDescription(results);
-      gtm_DISCORD.send(msg, { embeds: [embed] });
+      gtf_DISCORD.send(msg, { embeds: [embed] });
       return;
     }
 
@@ -82,7 +82,7 @@ module.exports = {
     } else if (typeof query["image_url"] !== 'undefined') {
       embed.setImage(query["image"]);
     }
-    gtm_DISCORD.send(msg, { embeds: [embed] }, sr)
+    gtf_DISCORD.send(msg, { embeds: [embed] }, sr)
 
     function sr(msg) {
       gtm_TOOLS.interval(

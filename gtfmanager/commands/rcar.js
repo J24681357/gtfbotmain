@@ -47,7 +47,7 @@ module.exports = {
       embed.setTitle("__GTF Car Randomizer: Info__");
 
       gtm_CARS.stats(embed)
-      gtm_DISCORD.send(msg, { embeds: [embed] });
+      gtf_DISCORD.send(msg, { embeds: [embed] });
       return;
     }
 
@@ -62,13 +62,13 @@ module.exports = {
     if (car["image"].length >= 2) {
       var choose = ["B", "B", "B", "B", "B", "B", "B", "B", "B", "B", "B", "B", "B", "B", "B", "B", "B", "B", "B"]
       if (choose[Math.floor(Math.random() * choose.length)] == "A") {
-        imagestyle = gtm_MATH.randomInt(1, car["image"].length - 1)
+        imagestyle = gtf_MATH.randomInt(1, car["image"].length - 1)
         extra = " | `⭐" + imagestyle + "`"
       } else {
         imagestyle = 0
       }
     }
-    embed.setDescription(gtm_EMOTE.gtflogo + " **" + car["name"] + " " + car["year"] + "** " + gtm_TOOLS.toEmoji(car["country"]) + " `" + car["type"] + "`\n" + gtm_MATH.numFormat(car["power"]) + " hp | " + gtm_MATH.numFormat(car["weight"]) + " lbs | " + car["drivetrain"] + " | " + car["engine"] + " " + extra);
+    embed.setDescription(gtm_EMOTE.gtflogo + " **" + car["name"] + " " + car["year"] + "** " + gtm_TOOLS.toEmoji(car["country"]) + " `" + car["type"] + "`\n" + gtf_MATH.numFormat(car["power"]) + " hp | " + gtf_MATH.numFormat(car["weight"]) + " lbs | " + car["drivetrain"] + " | " + car["engine"] + " " + extra);
     embed.setImage(car["image"][imagestyle]);
 
     var emojilist = [
@@ -81,6 +81,6 @@ module.exports = {
       }
     ]
     var buttons = gtm_TOOLS.prepareButtons(emojilist, msg, userdata);
-    gtm_DISCORD.send(msg, { embeds: [embed], components: buttons });
+    gtf_DISCORD.send(msg, { embeds: [embed], components: buttons });
   }
 }

@@ -225,7 +225,7 @@ module.exports = {
         }
       }
         embed.setTitle("🏁 __Seasonal Events - " + query["options"].toUpperCase() + " (" + ids.length + " Events)" + "__");
-        pageargs["image"].push( "https://github.com/J24681357/gtfbot2unleahsed/raw/master/images/career/" + query["options"].toUpperCase() + "_level.png")
+        pageargs["image"].push( "https://github.com/J24681357/gtfbotmain/gtfbot2unleahsed/raw/master/images/career/" + query["options"].toUpperCase() + "_level.png")
         pageargs["list"] = results;
         pageargs["selector"] = "number"
         pageargs["query"] = query

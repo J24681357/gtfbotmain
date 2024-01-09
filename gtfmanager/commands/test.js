@@ -55,7 +55,7 @@ module.exports = {
         server.stickers.resolve(gt7car.id).delete()
       } else {
         server.stickers.create(image).then(sticker => {
-          gtm_DISCORD.send(msg, { content: "D", stickers: sticker }, deletee)
+          gtf_DISCORD.send(msg, { content: "D", stickers: sticker }, deletee)
           function deletee() {
             //var id = server.stickers.cache.find(s => s.name === "Gran Turismo 7 Car")
             // server.stickers.resolve(id).delete()

@@ -27,11 +27,7 @@ global.gtm_TRACKS = require(home + "data/gtftracklist");
 
 global.gtm_LISTS = require(home + "index");
 global.gtm_MAIN = require(home + "index");
-global.gtm_EMBED = require(home + "functions/misc/f_embeds");
 
-global.gtm_DATETIME = require(home + "functions/misc/f_datetime");
-global.gtm_MATH = require(home + "functions/misc/f_math");
-global.gtm_DISCORD = require(home + "functions/misc/f_discord");
 global.gtm_SLASHCOMMANDS = require(home + "functions/misc/f_slashcommands");
 global.gtm_EXTRA = require(home + "functions/misc/f_extras");
 

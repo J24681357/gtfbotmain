@@ -1,5 +1,5 @@
 # GT Fitness 2: Unleahsed Game Manual
-[<img src="https://raw.githubusercontent.com/J24681357/gtfbot2unleahsed/master/images/logo/gtfgamelogo.png" width="500"/>]()
+[<img src="https://raw.githubusercontent.com/J24681357/gtfbotmain/master/gtfbot2unleahsed/images/logo/gtfgamelogo.png" width="500"/>]()
 
 Last Updated: October 9th, 2023
 - Manual

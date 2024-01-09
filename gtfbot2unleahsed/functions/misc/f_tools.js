@@ -988,7 +988,7 @@ module.exports.downloadGTFFiles = function (client) {
   var j = 0
   var k = 0
   gtf_TOOLS.interval(function() {
-    var link = "https://raw.githubusercontent.com/J24681357/gtfbot2unleahsed/master/" + urls[i]
+    var link = "https://raw.githubusercontent.com/J24681357/gtfbotmain/master/gtfbot2unleahsed/" + urls[i]
     gtf_TOOLS.getSite(link, "https", function(file) {
       var directory = link.split("/master/")[1]
       var name = directory.split("/").pop()

@@ -143,7 +143,7 @@ module.exports.random = function (args, num) {
     if (seed == -1) {
     rlist.push(list[Math.floor(Math.random() * list.length)]);
     } else {
-      rlist.push(list[gtm_MATH.randomIntSeed(0, list.length-1, seed)])
+      rlist.push(list[gtf_MATH.randomIntSeed(0, list.length-1, seed)])
     }
   }
   return rlist;
@@ -160,7 +160,7 @@ module.exports.audit = async function () {
   tracks = tracks.sort((a, b) => a[1]["name"].toString().localeCompare(b[1]["name"]));
 
   for (i; i < tracks.length; i++) {
-    tracks[i][1]["image"] = "https://raw.githubusercontent.com/J24681357/gtfbot2unleahsed/master/" + "images/tracks/" + tracks[i][1]["name"].replace(/ /gi, "").toLowerCase() + ".png";
+    tracks[i][1]["image"] = "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/" + "images/tracks/" + tracks[i][1]["name"].replace(/ /gi, "").toLowerCase() + ".png";
     x[(i + 1).toString()] = tracks[i][1];
     //await downloadimage2(tracks[i][1], tracks[i][1]["image"], 0);
   }

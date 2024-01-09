@@ -300,19 +300,6 @@ var emojilist = [
             gtf_STATS.checkRewards("gtfauto", item, userdata);
         }
           gtf_STATS.addCredits(-cost, userdata);
-          /*
-          if (type1 == "Car Wash") {
-            embed.setThumbnail("https://github.com/J24681357/gtfbot2unleahsed/raw/master/images/gtauto/carwash/bubbles.gif")
-            embed.setColor(0x2069a9)
-            embed.setDescription("**🚿 Car Wash Successful! " + "-" + gtf_MATH.numFormat(cost) + gtf_EMOTE.credits + "**")
-            gtf_PERF.carclean(100, userdata)
-            embed.fields = []
-            embed.setFields([{name:gtf_STATS.menuFooter(userdata), value: gtf_STATS.currentCarFooter(userdata)}]);
-            msg.edit({ embeds: [embed]})
-            gtf_STATS.save(userdata);
-            return
-          }
-          */
           successmessage = "Installed **" + name + "** on **" + gtfcar["name"] + "**." + " **-" + gtf_MATH.numFormat(cost) + "**" + gtf_EMOTE.credits;
         }
         require(dir + "commands/tune").execute(msg, {options:"list", extra:successmessage}, userdata);

@@ -40,11 +40,11 @@ module.exports = {
     /* Setup */
     var author = msg.channel.guild.members.cache.get(userdata["id"])
     if (gtm_MAIN.bot["penalty"] >= 1) {
-      gtm_EMBED.alert({ name: "❌ One Penalty At A Time", description: "A penalty is already in progress.", embed: "", seconds: 0 }, msg, userdata);
+      gtf_EMBED.alert({ name: "❌ One Penalty At A Time", description: "A penalty is already in progress.", embed: "", seconds: 0 }, msg, userdata);
       return
     }
     if (!author.roles.cache.find(r => r.name === "Moderators")) {
-      gtm_EMBED.alert({ name: "❌ Penalty Invalid", description: "Only moderators can give out penalities.", embed: "", seconds: 0 }, msg, userdata);
+      gtf_EMBED.alert({ name: "❌ Penalty Invalid", description: "Only moderators can give out penalities.", embed: "", seconds: 0 }, msg, userdata);
       return
     }
     var user = msg.guild.members.cache.get(query["user"])
@@ -52,16 +52,16 @@ module.exports = {
 
     if (user.roles.cache.find(r => r.name === "Moderators")) {
 
-      gtm_EMBED.alert({ name: "❌ Penalty Invalid", description: "Penalties can not be given to moderators.", embed: "", seconds: 0 }, msg, userdata);
+      gtf_EMBED.alert({ name: "❌ Penalty Invalid", description: "Penalties can not be given to moderators.", embed: "", seconds: 0 }, msg, userdata);
       return
     }
     if (user.user.bot) {
-      gtm_EMBED.alert({ name: "❌ Penalty Invalid", description: "Penalties can not be given to bots.", embed: "", seconds: 0 }, msg, userdata);
+      gtf_EMBED.alert({ name: "❌ Penalty Invalid", description: "Penalties can not be given to bots.", embed: "", seconds: 0 }, msg, userdata);
       return
     }
     embed.setColor(0xff0000);
-    if (!gtm_MATH.betweenInt(time, 10, 300)) {
-      gtm_EMBED.alert({ name: "❌ Penalty Invalid", description: "Penalties must be between 10 and 300 seconds.", embed: "", seconds: 0 }, msg, userdata);
+    if (!gtf_MATH.betweenInt(time, 10, 300)) {
+      gtf_EMBED.alert({ name: "❌ Penalty Invalid", description: "Penalties must be between 10 and 300 seconds.", embed: "", seconds: 0 }, msg, userdata);
       return
     }
 

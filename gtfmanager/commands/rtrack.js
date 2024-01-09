@@ -79,7 +79,7 @@ module.exports = {
         }])
 
         embed.setDescription(results);
-        gtm_DISCORD.send(msg, { embeds: [embed] });
+        gtf_DISCORD.send(msg, { embeds: [embed] });
         return;
       }
     }
@@ -89,10 +89,10 @@ module.exports = {
     var imagestyle = 0
     var extra = ""
     embed.setDescription("**" + track["name"] + "**" + " `" + track["type"] + "`\n\n" +
-      "**Length:** " + track["length"] + "km | " + gtm_MATH.round((track["length"] * 0.62137119), 2) + "mi " + "\n" +
+      "**Length:** " + track["length"] + "km | " + gtf_MATH.round((track["length"] * 0.62137119), 2) + "mi " + "\n" +
       "**Latest Version:** " + track["version"] + "\n" +
       "**Corners:** " + track["corners"] + extra);
 
-    gtm_DISCORD.send(msg, { embeds: [embed] });
+    gtf_DISCORD.send(msg, { embeds: [embed] });
   },
 };

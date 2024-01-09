@@ -40,7 +40,7 @@ module.exports = {
   { emoji: gtf_EMOTE.gtlogoblue,
   emoji_name: "gtlogoblue",
   name: 'Manual',
-  extra: "https://j24681357.github.io/gtfbot2unleahsed/",
+  extra: "https://j24681357.github.io/gtfbotmain/",
   button_id: 0 }
 ]
     

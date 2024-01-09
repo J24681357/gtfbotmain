@@ -81,7 +81,7 @@ module.exports = {
         "**69%-50%:** Uncool `" + rate["Uncool"] + " Times`\n" +
         "**49%-0%:** Seriously Uncool `" + rate["Seriously Uncool"] + " Times`" + "\n\n" + "❓ **Middle votes influence the rating. If there is more upvotes for a car than downvotes, middle votes will decrease the rating and vice versa.**"
       embed.setDescription(results)
-      gtm_DISCORD.send(msg, { embeds: [embed] })
+      gtf_DISCORD.send(msg, { embeds: [embed] })
       return
     }
 
@@ -129,7 +129,7 @@ module.exports = {
         "**Middle:** " + gtm_EMOTE.middlevote + " " + select["middlevote"] + "\n" +
         "**Downvotes:** " + gtm_EMOTE.downvote + " " + select["downvote"] + "\n\n" + "**Last Updated:** " + select["lastupdated"]
       embed.setDescription(results)
-      gtm_DISCORD.send(msg, { embeds: [embed] })
+      gtf_DISCORD.send(msg, { embeds: [embed] })
       return
     }
 
@@ -138,7 +138,7 @@ module.exports = {
       delete pageargs["query"]["number"]
 
       if (list.length == 0) {
-        gtm_EMBED.alert({ name: "❌ No records found.", description: "There are no records for that sort/month/year", embed: "", seconds: 0 }, msg, userdata);
+        gtf_EMBED.alert({ name: "❌ No records found.", description: "There are no records for that sort/month/year", embed: "", seconds: 0 }, msg, userdata);
         return
       }
       list = list.map(function(x) {
@@ -156,7 +156,7 @@ module.exports = {
     }
 
 
-    gtm_EMBED.alert({ name: "❌ Invalid Arguments", description: "Invalid arguments.", embed: "", seconds: 3 }, msg, userdata);
+    gtf_EMBED.alert({ name: "❌ Invalid Arguments", description: "Invalid arguments.", embed: "", seconds: 3 }, msg, userdata);
 
     function calculaterating(x) {
       var percentage = Math.round(

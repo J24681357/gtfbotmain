@@ -1,7 +1,7 @@
 //process.exit(1)
 var fs = require("fs")
-process.env["SECRET"] = JSON.parse(fs.readFileSync(__dirname + "/" + "keys.json", "utf8"))["SECRET"];
-process.env["MONGOURL"] = JSON.parse(fs.readFileSync(__dirname + "/" + "keys.json", "utf8"))["MONGOURL"];
+process.env["SECRET"] = JSON.parse(fs.readFileSync(__dirname + "/" + ".keys.json", "utf8"))["SECRET"];
+process.env["MONGOURL"] = JSON.parse(fs.readFileSync(__dirname + "/" + ".keys.json", "utf8"))["MONGOURL"];
     
 const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBuilder, ModalBuilder, TextInputBuilder, TextInputStyle, AttachmentBuilder, StringSelectMenuBuilder, ButtonBuilder, ActivityType, SelectMenuBuilder } = require("discord.js");
 const client = new Client({
@@ -63,74 +63,6 @@ client.on("ready", () => {
   gtf_SLASHCOMMANDS.createslashcommands();
   global.gtf_SERVERGUILD = client.guilds.cache.get(gtf_SERVERID)
   
-  var car2 = 	{
-			"make": "Nissan",
-			"name": "Nissan Skyline 2000GT-R (KPGC110)",
-			"year": "1973",
-			"type": "Production",
-			"country": "Japan",
-			"power": 157,
-			"weight": 2524,
-			"tires": "Comfort: Medium",
-			"engine": "NA",
-			"drivetrain": "FR",
-			"carcostm": 2.5,
-			"aerom": 1,
-			"discount": 0,
-			"special": [
-				"x2"
-			],
-			"livery": [],
-			"image": [
-				"https://bhauction.com/data/img/lots/1973-Nissan-SKYLINE-2000-GT-RKPGC110/DSC9203.jpg", "https://ig-model.online/cdn/shop/products/1803-1_1024x1024@2x.jpg?v=1586327801"
-			],
-			"_id": 676
-		}
-  var car3 = 	{
-			"make": "Alfa-Romeo",
-			"name": "Alfa Romeo Giulia Sprint GTA",
-			"year": "1967",
-			"type": "Production",
-			"country": "Italy",
-			"power": 117,
-			"weight": 1642,
-			"tires": "Comfort: Medium",
-			"engine": "NA",
-			"drivetrain": "FR",
-			"carcostm": 4.5,
-			"aerom": 1,
-			"discount": 0,
-			"special": [
-				"x3"
-			],
-			"livery": [],
-			"image": [
-				"https://raw.githubusercontent.com/J24681357/gtfbot2unleahsed/master/images/cars/alfa-romeo/alfaromeogiuliasprintgtveloce1967.png"
-			],
-			"_id": 20
-		}
-  var car4 = 	{
-      "make": "Chevrolet",
-      "name": "Chevrolet Corvette Sting Ray Sport Coupe (C2)",
-      "year": "1963",
-      "type": "Production",
-      "country": "USA",
-      "power": 359,
-      "weight": 3042,
-      "tires": "Comfort: Medium",
-      "engine": "NA",
-      "drivetrain": "FR",
-      "carcostm": 3,
-      "aerom": 1,
-      "discount": 0,
-      "special": [],
-      "livery": [],
-      "image": [
-        "https://www.corvsport.com/wp-content/uploads/2020/12/1966-Corvette.jpg", "https://vette-vues.com/wp-content/uploads/2018/07/21.-1965-Maco-replica-02.jpg", "https://external-preview.redd.it/AR_C2z2bDNlKfQCmGNuwlJlcuYMV3b4Z11ismoLGJw8.jpg?auto=webp&s=8bf72e24c2c6b451649a1bc4a83494162e78d53d", "https://i.pinimg.com/originals/9c/5c/78/9c5c789d0cfc7f085e437734fd5db43b.jpg"
-      ],
-      "_id": 121
-    }
-
   //gtf_TOOLS.updateallsaves("GTF2SAVES", {"fppupdate": true})
   timeelapsed = parseInt(new Date().getTime()) - parseInt(datebot);
   

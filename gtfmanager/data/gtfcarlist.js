@@ -686,7 +686,7 @@ module.exports.audit = async function () {
           } else {
             var extra = "";
           }
-          var urll = "https://raw.githubusercontent.com/J24681357/gtfbot2unleahsed/master/" + "images/cars/" + makee + "/" + name + "" + car["year"] + extra + ".png";
+          var urll = "https://raw.githubusercontent.com/J24681357/gtfbotmain/master/gtfbot2unleahsed/" + "images/cars/" + makee + "/" + name + "" + car["year"] + extra + ".png";
           car["image"][j] = urll;
         }
         delete car["id"];

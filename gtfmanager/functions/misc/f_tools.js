@@ -19,7 +19,7 @@ module.exports.randomItem = function (array, seed) {
   if (typeof seed === undefined) {
     return array[Math.floor(Math.random() * array.length)]
   } else {
-    var index = gtm_MATH.randomIntSeed(0, array.length-1, seed)
+    var index = gtf_MATH.randomIntSeed(0, array.length-1, seed)
     return array[index]
   }
 };
@@ -280,7 +280,7 @@ embed.setFields([{ name: gtm_STATS.menuFooter(userdata), value: gtm_STATS.curren
   //////
 
 
-  gtm_DISCORD.send(msg, { embeds: [embed], components: buttons, files: files }, createfunctions);
+  gtf_DISCORD.send(msg, { embeds: [embed], components: buttons, files: files }, createfunctions);
 
   function createfunctions(msg) {
 if (Object.keys(userdata) >= 5) {
@@ -384,7 +384,7 @@ if (Object.keys(userdata) >= 5) {
 return gtm_STATS.save(userdata);
         }
       } catch (error) {
-        gtm_EMBED.alert({ name: "❌ Unexpected Error", description: "Oops, an unexpected error has occurred.\n" + "**" + error + "**" + "\n\n" + "Check the Known Issues in <#687872420933271577> to see if this is documented." + "\n" + "Report any bugs in <#1117048664486051882>!", embed: "", seconds: 0 }, msg, userdata);
+        gtf_EMBED.alert({ name: "❌ Unexpected Error", description: "Oops, an unexpected error has occurred.\n" + "**" + error + "**" + "\n\n" + "Check the Known Issues in <#687872420933271577> to see if this is documented." + "\n" + "Report any bugs in <#1117048664486051882>!", embed: "", seconds: 0 }, msg, userdata);
         console.error(error);
       }
     }
@@ -779,7 +779,7 @@ module.exports.createButtons = function (buttons, emojilist, functionlist, msg, 
       if (gtm_MAIN.bot["maintenance"]) {
           if (userdata["id"] != "237450759233339393") {
             userdata = gtm_GTF.defaultuserdata(userdata["id"]);
-            gtm_EMBED.alert({ name: "���️ Maintenance", description: "This bot is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
+            gtf_EMBED.alert({ name: "���️ Maintenance", description: "This bot is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
             return;
           }
         }
@@ -994,7 +994,7 @@ module.exports.downloadGTFFiles = function (client) {
   var j = 0
   var k = 0
   gtm_TOOLS.interval(function() {
-    var link = "https://raw.githubusercontent.com/J24681357/gtfbot2unleahsed/master/" + urls[i]
+    var link = "https://raw.githubusercontent.com/J24681357/gtfbotmain/master/gtfbot2unleahsed/" + urls[i]
     gtm_TOOLS.getSite(link, "https", function(file) {
       var directory = link.split("/master/")[1]
       var name = directory.split("/").pop()

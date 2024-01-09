@@ -50,7 +50,7 @@ module.exports.updatemanual = function(client) {
   }
   gtm_TOOLS.interval(
     function() {
-      gtm_DISCORD.autoMessage(client, manual[index]['title'], manual[index]['description'].join('\n\n'), manual[index]['color'], manual[index]['image'], '704114222690336800', [], index + 1);
+      gtf_DISCORD.autoMessage(client, manual[index]['title'], manual[index]['description'].join('\n\n'), manual[index]['color'], manual[index]['image'], '704114222690336800', [], index + 1);
       index++;
     },
     2000,
@@ -212,7 +212,7 @@ module.exports.colorpickerjlicenseemotes = function(client) {
 :question: Once you selected roles, they will gradually be added to your profile.**
 :warning: Make sure that you don't have more than 2 color roles. They can overlap one another.`;
 
-  return gtm_DISCORD.autoMessage(client, title, message, '', '', '429025543329939476', emojilist, 1);
+  return gtf_DISCORD.autoMessage(client, title, message, '', '', '429025543329939476', emojilist, 1);
 };
 
 module.exports.loadfeeds = function(client) {
@@ -544,7 +544,7 @@ module.exports.feed = function(json, client) {
               }
               var index = 0;
               list.map(function(x) {
-               gtm_DISCORD.send(rsschannel, {content: '>>> ' + emoji + ' | __**' + x[0] + '**__\n' + x[1], type1: "CHANNEL"})
+               gtf_DISCORD.send(rsschannel, {content: '>>> ' + emoji + ' | __**' + x[0] + '**__\n' + x[1], type1: "CHANNEL"})
               })
               console.log(list.length + " news found for " + name + "!");
               if (list.length == 0) {
@@ -576,7 +576,7 @@ module.exports.checkmedals = function(emojis, client, message) {
     return
   }
   var activated = 0;
-  var chance = gtm_MATH.randomInt(1, 200);
+  var chance = gtf_MATH.randomInt(1, 200);
   
   if (message.channel.name.includes('debug')) {
     chance = 100
@@ -628,7 +628,7 @@ activated == 1;
           embed.setDescription(msg.toString());
           }
           embed.setColor(select[2])
-          var elapsed = gtm_DATETIME.getFormattedTime(new Date() - timer)
+          var elapsed = gtf_DATETIME.getFormattedTime(new Date() - timer)
           embed.setFields([{name: 'Author', value:'<@' + msg.author.id + '>', inline: true},
                          {name: 'Channel', value: '<#' + channelid + '>', inline: true},
                            {name: 'Time Elapsed', value:elapsed, inline: true},
@@ -640,7 +640,7 @@ activated == 1;
           embed2.setColor(select[2]);
           embed2.setDescription('Congrats, ' + userd.user.username + "'s message has earned the " + select[4] + '!'
             + "\n" + "**Time Elapsed:** " + elapsed);
-          gtm_DISCORD.send(channel, {embeds: [embed2], type1:"CHANNEL"})
+          gtf_DISCORD.send(channel, {embeds: [embed2], type1:"CHANNEL"})
           setTimeout(function() {
             client.guilds.cache
               .get(gtm_SERVERID)
@@ -670,7 +670,7 @@ activated == 1;
             embed.setTitle(select[3]);
             embed.setColor(select[2]);
 
-            var elapsed = gtm_DATETIME.getFormattedTime(new Date() - timer)
+            var elapsed = gtf_DATETIME.getFormattedTime(new Date() - timer)
              embed.setFields([{name: 'Author', value:'<@' + msg.author.id + '>', inline: true},
                            {name: 'Channel', value: '<#' + channelid + '>', inline: true},
                            {name: 'Time Elapsed', value:elapsed, inline: true},
@@ -681,7 +681,7 @@ activated == 1;
             embed2.setColor(select[2]);
             embed2.setDescription('Congrats, ' + userd.user.username + "'s message has earned the " + select[4] + '!'
               + "\n" + "**Time Elapsed:** " + elapsed);
-            gtm_DISCORD.send(channel, {embeds: [embed2], type1:"CHANNEL"})
+            gtf_DISCORD.send(channel, {embeds: [embed2], type1:"CHANNEL"})
             setTimeout(function() {
               client.guilds.cache
                 .get(gtm_SERVERID)
@@ -766,7 +766,7 @@ module.exports.gtfstats = function(client) {
     + currentdate.getUTCDate() + "/"
     + currentdate.getUTCFullYear() + "**"
 
-  gtm_DISCORD.autoMessage(client, "__📊 GT Fitness Stats__", list.map(x => x.join(" ")).join("\n") + "\n\n" + datetime, '', '', '829404376413765642',[], 1)
+  gtf_DISCORD.autoMessage(client, "__📊 GT Fitness Stats__", list.map(x => x.join(" ")).join("\n") + "\n\n" + datetime, '', '', '829404376413765642',[], 1)
   setTimeout(function() {
     var members = [...server.members.cache.values()]
     var latest = members.sort((a, b) => b.joinedAt - a.joinedAt)[0]
@@ -774,7 +774,7 @@ module.exports.gtfstats = function(client) {
     list = [
       ["**Latest Member:**", latest.user.toString()]
     ]
-    gtm_DISCORD.autoMessage(client, "__📊 GT Fitness Stats__", list.map(x => x.join(" ")).join("\n") + "\n\n" + datetime, '', '', '829404376413765642', [], 2)
+    gtf_DISCORD.autoMessage(client, "__📊 GT Fitness Stats__", list.map(x => x.join(" ")).join("\n") + "\n\n" + datetime, '', '', '829404376413765642', [], 2)
    
   }, 2000)
   })
@@ -809,7 +809,7 @@ module.exports.rainbowcolors = function(client) {
     return hex.length === 1 ? '0' + hex : hex;
   }
 
-  var place = gtm_MATH.randomInt(0,size-1)
+  var place = gtf_MATH.randomInt(0,size-1)
   setInterval(function() {
 
     role.edit({
@@ -839,7 +839,7 @@ module.exports.gtcolors = function(client) {
     return hex.length === 1 ? '0' + hex : hex;
   }
 
-  var place = gtm_MATH.randomInt(0,size-1)
+  var place = gtf_MATH.randomInt(0,size-1)
   setInterval(function() {
 
     role.edit({
@@ -939,7 +939,7 @@ var car = [{
 
     var embed = new EmbedBuilder()
     embed.setTitle("🚘 __**" + "Car Of The Day (" + datetime + ")**__")
-    embed.setDescription(gtm_TOOLS.toEmoji(car["country"]) + " **" + car["name"] + " " + car["year"] + "** " + " `" + car["type"] + "`\n" + gtm_MATH.numFormat(car["power"]) + " hp | " + gtm_MATH.numFormat(car["weight"]) + " lbs | " + car["drivetrain"] + " | " + car["engine"] + theme)
+    embed.setDescription(gtm_TOOLS.toEmoji(car["country"]) + " **" + car["name"] + " " + car["year"] + "** " + " `" + car["type"] + "`\n" + gtf_MATH.numFormat(car["power"]) + " hp | " + gtf_MATH.numFormat(car["weight"]) + " lbs | " + car["drivetrain"] + " | " + car["engine"] + theme)
     embed.setImage(car["image"][0])
     embed.setColor(0x0151b0)
     var channel = client.channels.cache.find(channel => channel.id === cotdchannelid);
@@ -951,7 +951,7 @@ var car = [{
   button_id: 0 }
     ]
 var buttons = gtm_TOOLS.prepareButtons(emojilist, channel, { id: gtm_USERID, garage: [], settings: gtm_defaultsettings });
-  gtm_DISCORD.send(channel, {embeds: [embed], type1: "CHANNEL", components:buttons})
+  gtf_DISCORD.send(channel, {embeds: [embed], type1: "CHANNEL", components:buttons})
   }
 }
 
