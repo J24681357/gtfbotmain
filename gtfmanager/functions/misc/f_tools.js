@@ -949,10 +949,10 @@ module.exports.updateallsaves = async function (name, json) {
           }
         })
         .then(x => {
-            gtm_CONSOLELOG.reverse();
-            gtm_CONSOLELOG.fill(0, 0, 255);
+            gtf_CONSOLELOG.reverse();
+            gtf_CONSOLELOG.fill(0, 0, 255);
             console.log("All saves updated", JSON.stringify(json));
-            gtm_CONSOLELOG.end();
+            gtf_CONSOLELOG.end();
 
         });
 
@@ -1159,5 +1159,14 @@ module.exports.limitRoles = function(roles, role_check, user) {
        i = setInterval(function() {repeat()}, 1000)
       }
 
+    }
+}
+
+module.exports.homedir = function() {
+  var dir = __dirname.split("/").slice(0, 4).join("/") + "/"
+    if (dir.includes("gtfmanager") || dir.includes("gtfbot2unleahsed"))  {
+      return __dirname.split("/").slice(0, 4).join("/") + "/"
+     } else {
+       return = __dirname.split("/").slice(0, 5).join("/") + "/"
     }
 }

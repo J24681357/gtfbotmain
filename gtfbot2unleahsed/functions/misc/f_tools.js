@@ -1186,3 +1186,12 @@ module.exports.limitRoles = function(roles, role_check, user) {
 
     }
 }
+
+module.exports.homedir = function() {
+  var dir = __dirname.split("/").slice(0, 4).join("/") + "/"
+    if (dir.includes("gtfmanager") || dir.includes("gtfbot2unleahsed"))  {
+      return __dirname.split("/").slice(0, 4).join("/") + "/"
+     } else {
+       return = __dirname.split("/").slice(0, 5).join("/") + "/"
+    }
+}

@@ -4,7 +4,6 @@ global.gtm_SERVERID = "239493425131552778";
 ///
 var home = (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfmanager") || (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfbot2unleahsed") ? __dirname.split("/").slice(0, 4).join("/") + "/" : __dirname.split("/").slice(0, 5).join("/") + "/"
 
-
 module.exports.defaultsettings = {
   MODE: "Simulation",
   GARAGESORT: "Oldest Added",
