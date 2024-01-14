@@ -64,7 +64,7 @@ module.exports = {
       sort = "highest_rating"
     }
 
-    var list = gtm_MAIN.caroftheday
+    var list = gtm_LIST_COTD
     if (query["options"] == "info") {
 
       var total = list.length

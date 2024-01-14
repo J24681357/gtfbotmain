@@ -69,7 +69,7 @@
 			"discount": 0,
 			"special": [
 				"Compact",
-				"x4"
+				"x4", "xstarter"
 			],
 			"offroad": 1,
 			"livery": [],
@@ -1673,7 +1673,7 @@
 			"discount": 0,
 			"special": [
 				"Hatch",
-				"x1.5"
+				"x1.5", "xstarter"
 			],
 			"offroad": 1,
 			"livery": [],
@@ -3665,7 +3665,7 @@
 			"aerom": 1,
 			"discount": 0,
 			"special": [
-				"Compact"
+				"Compact", "xstarter"
 			],
 			"offroad": 1,
 			"livery": [],
@@ -6504,7 +6504,7 @@
 			"aerom": 1,
 			"discount": 0,
 			"special": [
-				"Hatch"
+				"Hatch", "xstarter"
 			],
 			"offroad": 1,
 			"livery": [],
@@ -6889,7 +6889,7 @@
 			"aerom": 1,
 			"discount": 0,
 			"special": [
-				"Kei"
+				"Kei", "xstarter"
 			],
 			"offroad": 1,
 			"livery": [],
@@ -10268,8 +10268,7 @@
 			"aerom": 1,
 			"discount": 0,
 			"special": [
-				"Sports",
-				"xstarter"
+				"Sports"
 			],
 			"offroad": 1,
 			"livery": [],
@@ -12525,7 +12524,7 @@
 			"aerom": 1,
 			"discount": 0,
 			"special": [
-				"Compact"
+				"Compact", "xstarter"
 			],
 			"offroad": 1,
 			"livery": [],
@@ -13496,7 +13495,7 @@
 			"aerom": 1,
 			"discount": 0,
 			"special": [
-				"Sports"
+				"Sports", "xstarter"
 			],
 			"offroad": 1,
 			"livery": [],
@@ -16572,7 +16571,7 @@
 			"aerom": 1,
 			"discount": 0,
 			"special": [
-				"Kei"
+				"Kei", "xstarter"
 			],
 			"offroad": 1,
 			"livery": [],
@@ -17573,7 +17572,7 @@
 			"aerom": 1,
 			"discount": 0,
 			"special": [
-				"Sports"
+				"Sports", "xstarter"
 			],
 			"offroad": 1,
 			"livery": [],

@@ -138,11 +138,11 @@ module.exports = {
         return;
       }
     }
-      var races = [...gtf_CAREERRACES.find({types: [query["options"]] })].filter(function(x) {
+      var races = [...gtf_LIST_CAREERRACES.find({types: [query["options"]] })].filter(function(x) {
         if (x["require"].length == 0) {
           return true
         }
-        var race = gtf_MAIN.gtfcareerraces [x["require"][0].toLowerCase().replace("-", "")]
+        var race = gtf_LIST_CAREERRACES[x["require"][0].toLowerCase().replace("-", "")]
         var progress = gtf_STATS.raceEventStatus(race, userdata)
         if (progress == "⬛") {
           return false

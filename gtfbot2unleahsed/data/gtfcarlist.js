@@ -3,7 +3,7 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 ////////////////////////////////////////////////////
 
 module.exports.list = function(args) {
-  var gtfcars = gtf_LISTS.gtfcarlist;
+  var gtfcars = gtf_LIST_CARS;
   var results = "";
   if (args.length == 0) {
     return results;
@@ -159,7 +159,7 @@ module.exports.stats = function(embed) {
 }
 
 module.exports.find = function(args) {
-  var gtfcars = gtf_LISTS.gtfcarlist
+  var gtfcars = gtf_LIST_CARS
 
   if (args === undefined) {
     return "";
@@ -503,7 +503,7 @@ module.exports.find = function(args) {
 
 module.exports.get = function(args) {
   var make = args["make"].toLowerCase().replace(/ /g, "-")
-  var makelist = gtf_LISTS.gtfcarlist[make]
+  var makelist = gtf_LIST_CARS[make]
   var car = makelist.find(function(x) {
     var name = x["name"] + " " + x["year"]
     return name.includes(args["fullname"])
@@ -634,93 +634,6 @@ module.exports.addCar = function(car, arg, userdata) {
   }
 };
 
-module.exports.addCarEnthu = function (car, arg, userdata) {
-  var fullname = car["name"] + " " + car["year"];
-
-  if (arg != "LOAN") {
-    if (gtf_STATS.garage(userdata).length == 0) {
-      gtf_STATS.setCurrentCar(1, undefined, userdata);
-      userdata["currentcar"]++;
-    }
-  }
-  car["condition"] = 100
-
-  var tires = { current: car["tires"], list: [car["tires"]], tuning: [0, 0, 0] };
-  if (car["tires"].includes("Racing")) {
-    tires["list"].push("Racing: Intermediate");
-    tires["list"].push("Racing: Heavy Wet");
-  }
-  if (car["tires"].includes("Dirt")) {
-    tires["list"].push("Rally: Snow");
-    tires["list"].push("Racing: Hard");
-    tires["list"].push("Racing: Intermediate");
-    tires["list"].push("Racing: Heavy Wet");
-  }
-  if (car["tires"].includes("Snow")) {
-    tires["list"].push("Rally: Dirt");
-    tires["list"].push("Racing: Hard");
-    tires["list"].push("Racing: Intermediate");
-    tires["list"].push("Racing: Heavy Wet");
-  }
-  var engine = { current: "Default", list: [], tuning: [-999, -999, -999] };
-  var trans = { current: "Default", list: [], tuning: [-999, -999, -999] };
-  var susp = { current: "Default", list: [], tuning: [-999, -999, -999] };
-  var weight = { current: "Default", list: [], tuning: [-999, -999, -999] };
-  var turbo = { current: "Default", list: [], tuning: [-999, -999, -999] };
-  var brakes = { current: "Default", list: [], tuning: [-999, -999, -999] };
-  var aerokits = { current: "Default", list: [], tuning: [-999, -999, -999] };
-
-  var condition = {oil:car["condition"], clean:car["condition"], engine:car["condition"], transmission: car["condition"], suspension:car["condition"], body:car["condition"]}
-
-  var fpp = gtf_PERF.perf(car, "DEALERSHIP")["fpp"];
-  var sell = gtf_GTFAUTO.sellCalc(car);
-  if (arg != "LOAN") {
-    userdata["stats"]["numcarpurchases"]++;
-    var id1 = userdata["stats"]["numcarpurchases"];
-  } else {
-    var id1 = 0;
-  }
-  var newcar = {
-    id: id1,
-    name: fullname,
-    make: car["make"],
-    year: car["year"],
-    color: { current: "Default" },
-    livery: { current: "Default"},
-    fpp: fpp,
-    perf: {
-      level: 1,
-      points: 0,
-      engine: engine,
-      transmission: trans,
-      suspension: susp,
-      tires: tires,
-      weightreduction: weight,
-      turbo: turbo,
-      aerokits: aerokits,
-      brakes: brakes,
-      carengine: { current: "Default", list: [], tuning: [-999, -999, -999] },
-      nitrous: { current: "Default", tuning: [-999, -999, -999]},
-      items: []
-    },
-    rims: { current: "Default", list: [], tuning: [-999, -999, -999] },
-    condition: condition,
-    totalmileage: 0
-  };
-  newcar["fpp"] = gtf_PERF.perf(newcar, "GARAGE")["fpp"];
-
-
-  if (arg == "ITEM" || arg == "LOAN") {
-    return newcar;
-  } else {
-    userdata["garage"].push(newcar);
-    if (arg == "SORT") {
-      userdata["garage"] = gtf_STATS.sortGarage(userdata);
-    }
-    gtf_STATS.saveEnthu(userdata);
-    return;
-  }
-};
 
 module.exports.costCalc = function(car, fpp, discount) {
   if (car["carcostm"] <= 0.25) {
@@ -773,7 +686,7 @@ module.exports.costCalcRaw = function(car, fpp) {
 
 //////////////
 module.exports.audit = async function() {
-  var gtfcars = gtf_LISTS.gtfcarlist;
+  var gtfcars = gtf_LIST_CARS;
   var fs = require("fs");
   var newcars = [];
   var fppupdate = [];

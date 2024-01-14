@@ -2,7 +2,7 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 ////////////////////////////////////////////////////
 
 module.exports.list = function (args) {
-  var wheels = gtf_LISTS.gtfwheellist;
+  var wheels = gtf_LIST_WHEELS;
   var results = "";
   if (args.length == 0) {
     return results;
@@ -22,7 +22,7 @@ module.exports.find = function (args) {
   if (args === undefined) {
     return "";
   }
-  var wheels = gtf_LISTS.gtfwheellist;
+  var wheels = gtf_LIST_WHEELS;
   var final = [];
   var total = Object.keys(args).length;
 

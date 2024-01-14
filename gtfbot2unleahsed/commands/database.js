@@ -146,7 +146,7 @@ module.exports = {
     }
     
     if (query["options"] == "exp") {
-      var explevels = gtf_LISTS.gtfexp;
+      var explevels = gtf_LIST_EXP;
       var number = query["number"];
       embed.setTitle(gtf_EMOTE.exp + " __**GTF Level/EXP Database (" + Object.keys(explevels).length + " Levels)**__");
 
@@ -185,7 +185,7 @@ module.exports = {
     }
     
     if (query["options"] == "license" || query["options"] == "licenses") {
-      var licenses = gtf_LISTS.gtflicenses
+      var licenses = gtf_LIST_LICENSES
       var number = query["number"];
       embed.setTitle("💳" + " __**GTF License Database (" + Object.keys(licenses).length + " Licenses)**__");
 
@@ -222,7 +222,7 @@ module.exports = {
 
     if (query["options"] == "reward" || query["options"] == "rewards") {
       
-      var rewards = gtf_MAIN.gtfrewards["general"].concat(gtf_MAIN.gtfrewards["gtfauto"]).concat(gtf_MAIN.gtfrewards["gtfcar"])
+      var rewards = gtf_LIST_REWARDS["general"].concat(gtf_LIST_REWARDS["gtfauto"]).concat(gtf_LIST_REWARDS["gtfcar"])
       var number = query["number"]
       
     embed.setTitle("🏆" + " __**GTF Rewards (" + rewards.length + " Items)**__");

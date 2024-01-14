@@ -317,7 +317,7 @@ module.exports.licensecheck = function(racesettings, racedetails, finalgrid, emb
   var embed = new EmbedBuilder()
   var option = racesettings["eventid"].replace("LICENSE", "").toLowerCase().split("-")[0]
 
-  var licenses = [...gtf_CAREERRACES.find({ types: ["LICENSE" + option] })]
+  var licenses = [...gtf_LIST_CAREERRACES.find({ types: ["LICENSE" + option] })]
   var ids = Object.keys(licenses)
   var bronzecomplete = gtf_STATS.checkLicenseTests(option, "3rd", userdata);
   var goldcomplete = gtf_STATS.checkLicenseTests(option, "1st", userdata);
@@ -648,7 +648,7 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
     })
     ////nexttrack
 
-    racesettings = { ...gtf_LISTS.gtfcareerraces[racesettings["eventid"].toLowerCase().replace("-", "")] }
+    racesettings = { ...gtf_LIST_CAREERRACES[racesettings["eventid"].toLowerCase().replace("-", "")] }
 
     var carselect = racesettings["car"] == "GARAGE" ? gtf_STATS.currentCar(userdata) : gtf_CARS.addCar(gtf_CARS.find({ fullnames: [racesettings["car"]] })[0], "LOAN")
 

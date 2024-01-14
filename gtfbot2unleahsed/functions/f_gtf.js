@@ -991,7 +991,7 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
       }
       var item = finalgrid[index];
       var car = gtf_CARS.find({fullnames: [item["name"]]})[0]
-      gtf_CARS.addCarEnthu(car, "SORT", userdata);
+      gte_CARS.addCarEnthu(car, "SORT", userdata);
       embed.setDescription("You can now select a new car!" + "\n" + "**" + item["name"] + "**")
       embed.setImage(car["image"][0]);
       embed.setTitle("__CAR UNLOCKED!__");

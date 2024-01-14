@@ -4,7 +4,7 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 
 module.exports.send = function(msg, content, callback, force) {
   
-  var gtfbot = gtf_MAIN.bot
+  var gtfbot = gtf_LIST_BOT
   content["fetchReply"] = true
   if (content["type1"] == "CHANNEL") {             
     msg.send(content)
@@ -93,7 +93,7 @@ module.exports.send = function(msg, content, callback, force) {
 
 module.exports.edit = function(msg, content, callback) {
 
-  var gtfbot = gtf_MAIN.bot
+  var gtfbot = gtf_LIST_BOT
   if (typeof callback === "undefined") {
     callback = function() {}
   }
@@ -180,7 +180,7 @@ module.exports.delete = function(msg, content, callback) {
 }
 
 module.exports.sendModal = async function(msg) {
-  var gtfbot = gtf_MAIN.bot
+  var gtfbot = gtf_LIST_BOT
       const modal = new ModalBuilder()
 			.setCustomId('modal')
 			.setTitle('My Modal');
@@ -199,7 +199,7 @@ module.exports.sendModal = async function(msg) {
 }
 
 module.exports.role = function(msg, user, role, type, callback) {
-  var gtfbot = gtf_MAIN.bot
+  var gtfbot = gtf_LIST_BOT
   if (typeof callback === "undefined") {
     callback = function() {}
   }
@@ -246,7 +246,7 @@ module.exports.role = function(msg, user, role, type, callback) {
 }
 
 module.exports.autoMessage = function(client, title, text, color, image, channelid, elist, number) {
-  var gtfbot = gtf_MAIN.bot
+  var gtfbot = gtf_LIST_BOT
   var server = client.guilds.cache.get(gtf_SERVERID);
   var channel = server.channels.cache.get(channelid);
   var embed = new EmbedBuilder();

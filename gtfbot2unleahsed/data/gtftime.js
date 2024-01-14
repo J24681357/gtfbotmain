@@ -3,7 +3,7 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 
 /*
 module.exports.list = function (args) {
-  var gtftimes = gtf_LISTS.gtftime;
+  var gtftimes = gtf_LIST_TIME;
   var results = "";
   if (args.length == 0) {
     return results;
@@ -48,7 +48,7 @@ module.exports.find = function (args) {
     arg_hour_total = 1;
   }
   var total = Object.keys(args).length;
-  var gtftime = gtf_LISTS.gtftime;
+  var gtftime = gtf_LIST_TIME;
   var final = [];
   var times = Object.keys(gtftime);
 

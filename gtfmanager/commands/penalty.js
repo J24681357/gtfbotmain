@@ -39,7 +39,7 @@ module.exports = {
 
     /* Setup */
     var author = msg.channel.guild.members.cache.get(userdata["id"])
-    if (gtm_MAIN.bot["penalty"] >= 1) {
+    if (gtm_LIST_BOT["penalty"] >= 1) {
       gtf_EMBED.alert({ name: "❌ One Penalty At A Time", description: "A penalty is already in progress.", embed: "", seconds: 0 }, msg, userdata);
       return
     }
@@ -66,14 +66,14 @@ module.exports = {
     }
 
     embed.setDescription(gtf_EMOTE.slowdown1 + gtf_EMOTE.slowdown2 + " **" + "<@" + user.id + "> " + "| Penalty +" + time + ".000" + "** " + gtf_EMOTE.slowdown1 + gtf_EMOTE.slowdown2)
-    gtm_MAIN.bot["penalty"]++
+    gtm_LIST_BOT["penalty"]++
     msg.channel.send({ content: "<@" + user.id + ">", embeds: [embed] })
 
     setTimeout(function() {
       user.timeout(time * 1000, "")
 
       setTimeout(function() {
-        gtm_MAIN.bot["penalty"] = 0
+        gtm_LIST_BOT["penalty"] = 0
       }, time * 1000)
     }, 1 * 1000)
 

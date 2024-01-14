@@ -134,8 +134,8 @@ module.exports.formPage = function (args, userdata) {
 };
 module.exports.formPages = async function (args, embed, msg, userdata) {
   if (Object.keys(userdata).length >= 5) {
-  if (gtf_MAIN.bot["maintenancetime"].length >= 1) {
-  args["footer"] = "⚠️️ **Maintenance:" + "<t:" + gtf_MAIN.bot["maintenancetime"] + ":R>**"
+  if (gtf_LIST_BOT["maintenancetime"].length >= 1) {
+  args["footer"] = "⚠️️ **Maintenance:" + "<t:" + gtf_LIST_BOT["maintenancetime"] + ":R>**"
   }
   }
   var list = args["list"];
@@ -774,7 +774,7 @@ module.exports.createButtons = function (buttons, emojilist, functionlist, msg, 
 
     filter11.on("collect", r => {
       /////MAINTENANCE
-      if (gtf_MAIN.bot["maintenance"]) {
+      if (gtf_LIST_BOT["maintenance"]) {
           if (userdata["id"] != "237450759233339393") {
             userdata = gtf_GTF.defaultuserdata(userdata["id"]);
             gtf_EMBED.alert({ name: "⚠️️ Maintenance", description: "This bot is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
@@ -1116,40 +1116,10 @@ module.exports.limitReactions = function(emojis, msg) {
         msg.react(emojis[i])
         i--
       }, 1200 ,emojis.length)
-      /*
-      var timer;
-      var i;
-      var check = function() {
-        if (emojis.length == 0) {
-          clearInterval(timer)
-          clearInterval(i)
-          gtf_MAIN.gtfbotconfig["reactionslimit"] = false
-        }
-      }
-      
-      var repeat = function() {
-        if (gtf_MAIN.gtfbotconfig["reactionslimit"] == false) {
-
-        gtf_MAIN.gtfbotconfig["reactionslimit"] = true        
-         timer = setInterval(function() {
-            if (emojis.length != 0) {
-              var e = emojis.pop()
-        msg.react(e)
-           }
-        check()
-      }, 1200)
-      
-        }
-      }
-
-      if (gtf_MAIN.gtfbotconfig["reactionslimit"] == false) {
-        repeat()
-      } else {
-       i = setInterval(function() {repeat()}, 1000)
-      }*/
 
     }
 }
+
 module.exports.limitRoles = function(roles, role_check, user) {
     if (roles.length == 0) {
       return
@@ -1189,9 +1159,9 @@ module.exports.limitRoles = function(roles, role_check, user) {
 
 module.exports.homedir = function() {
   var dir = __dirname.split("/").slice(0, 4).join("/") + "/"
-    if (dir.includes("gtfmanager") || dir.includes("gtfbot2unleahsed"))  {
+    if (dir.includes("gtfmanager") || dir.includes("gtfbot2unleahsed") || dir.includes("gtffithusim"))  {
       return __dirname.split("/").slice(0, 4).join("/") + "/"
      } else {
-       return = __dirname.split("/").slice(0, 5).join("/") + "/"
+       return __dirname.split("/").slice(0, 5).join("/") + "/"
     }
 }

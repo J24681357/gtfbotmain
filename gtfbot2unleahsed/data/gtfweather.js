@@ -2,7 +2,7 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 ////////////////////////////////////////////////////
 
 module.exports.list = function (args) {
-  var gtfweathers = gtf_LISTS.gtfweather;
+  var gtfweathers = gtf_LIST_WEATHER;
   var results = "";
   if (args.length == 0) {
     return results;
@@ -47,7 +47,7 @@ module.exports.find = function (args) {
   }
   
   var total = Object.keys(args).length;
-  var gtfweather = gtf_LISTS.gtfweather;
+  var gtfweather = gtf_LIST_WEATHER;
   var final = [];
   var weathers = Object.keys(gtfweather);
 

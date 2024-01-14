@@ -10,30 +10,13 @@ const client = new Client({
 });
 ////////////////////////////////////////////////////
 var fs = require("fs");
-require(__dirname + "/" + "files/directories");
 var gtfbot = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/_botconfig.json", "utf8"));
 /////
 var checklogin = false;
 var cooldowns = new Set();
 var { MongoClient, ServerApiVersion } = require('mongodb');
 
-
-module.exports.announcer = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/announcer.json", "utf8"));
-module.exports.gtfmessages = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfmessages.json", "utf8"));
-module.exports.gtfcareerraces = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfcareerraces.json", "utf8"));
-module.exports.gtfcarlist = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfcarlist.json", "utf8")); 
-module.exports.gtftracklist = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtftracklist.json", "utf8"));
-module.exports.gtfweather = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfweather.json", "utf8"));
-module.exports.gtftime = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtftime.json", "utf8"));
-module.exports.gtfseasonals = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfseasonalsextra.json", "utf8"));
-module.exports.gtfpartlist = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfpartlist.json", "utf8"));
-module.exports.gtfpaintlist = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfpaints.json", "utf8"));
-module.exports.gtfwheellist = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfwheels.json", "utf8"));
-module.exports.gtfexp = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfexp.json", "utf8"));
-module.exports.gtflicenses = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtflicenses.json", "utf8"));
-module.exports.gtfrewards = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfrewards.json", "utf8"));
 module.exports.embedcounts = {};
-module.exports.bot = gtfbot;
 
 var listinmaint = [];
 client.commands = {};

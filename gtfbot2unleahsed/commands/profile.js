@@ -142,16 +142,16 @@ embed.setThumbnail(msg.user.displayAvatarURL({format: 'jpg', size: 1024}));
       }
       function careerprofile() {
         var list1 = [
-          ["__**B Level**__", gtf_CAREERRACES.find({types: ["b"] })],
-          ["__**A Level**__", gtf_CAREERRACES.find({types: ["a"] })],
-          ["__**IC Level**__", gtf_CAREERRACES.find({types: ["ic"] })],
-          ["__**IB Level**__", gtf_CAREERRACES.find({types: ["ib"] })],
-          ["__**IA Level**__",gtf_CAREERRACES.find({types: ["ia"] })],
-          ["__**S Level**__", gtf_CAREERRACES.find({types: ["s"] })],
-          ["__**Kart**__", gtf_CAREERRACES.find({types: ["kart"] })],
-          ["__**Rally**__", gtf_CAREERRACES.find({types: ["rally"] })],
-          ["__**Grand Tour**__", gtf_CAREERRACES.find({types: ["grandtour"] })],["__**GT Academy**__", gtf_CAREERRACES.find({types: ["gtacademy"] })],
-          ["__**Formula**__", gtf_CAREERRACES.find({types: ["formula"] })]
+          ["__**B Level**__", gtf_LIST_CAREERRACES.find({types: ["b"] })],
+          ["__**A Level**__", gtf_LIST_CAREERRACES.find({types: ["a"] })],
+          ["__**IC Level**__", gtf_LIST_CAREERRACES.find({types: ["ic"] })],
+          ["__**IB Level**__", gtf_LIST_CAREERRACES.find({types: ["ib"] })],
+          ["__**IA Level**__",gtf_LIST_CAREERRACES.find({types: ["ia"] })],
+          ["__**S Level**__", gtf_LIST_CAREERRACES.find({types: ["s"] })],
+          ["__**Kart**__", gtf_LIST_CAREERRACES.find({types: ["kart"] })],
+          ["__**Rally**__", gtf_LIST_CAREERRACES.find({types: ["rally"] })],
+          ["__**Grand Tour**__", gtf_LIST_CAREERRACES.find({types: ["grandtour"] })],["__**GT Academy**__", gtf_LIST_CAREERRACES.find({types: ["gtacademy"] })],
+          ["__**Formula**__", gtf_LIST_CAREERRACES.find({types: ["formula"] })]
         ];
         
         results2 = "";
@@ -190,12 +190,12 @@ embed.setThumbnail(msg.user.displayAvatarURL({format: 'jpg', size: 1024}));
       function licenseprofile() {
       
         var list1 = [
-          ["__B License__", gtf_CAREERRACES.find({types: ["LICENSEB"] })],
-          ["__A License__", gtf_CAREERRACES.find({types: ["LICENSEA"] })],
-          ["__IC License__", gtf_CAREERRACES.find({types: ["LICENSEIC"] })],
-          ["__IB License__", gtf_CAREERRACES.find({types: ["LICENSEIB"] })],
-          ["__IA License__",gtf_CAREERRACES.find({types: ["LICENSEIA"] })],
-          ["__S License__", gtf_CAREERRACES.find({types: ["LICENSES"] })]
+          ["__B License__", gtf_LIST_CAREERRACES.find({types: ["LICENSEB"] })],
+          ["__A License__", gtf_LIST_CAREERRACES.find({types: ["LICENSEA"] })],
+          ["__IC License__", gtf_LIST_CAREERRACES.find({types: ["LICENSEIC"] })],
+          ["__IB License__", gtf_LIST_CAREERRACES.find({types: ["LICENSEIB"] })],
+          ["__IA License__",gtf_LIST_CAREERRACES.find({types: ["LICENSEIA"] })],
+          ["__S License__", gtf_LIST_CAREERRACES.find({types: ["LICENSES"] })]
         ];
         
         results2 = "";

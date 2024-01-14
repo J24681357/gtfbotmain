@@ -1,0 +1,48 @@
+{  "home": {
+    "name": "home",
+    "description": "🎌 Opens the GTF Main Menu with a command selection.",
+    "channels": "",
+    "options": []
+  },
+"fithusimlife": {
+    "name": "fithusimlife",
+    "description": "🎌 Fithusim Life.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select a mode.",
+        "type": 3,
+        "required": false,
+        "choices": [
+          {
+            "name": "Go Race",
+            "value": "1"
+          },
+          {
+            "name": "Change Car",
+            "value": "2"
+          },
+          {
+            "name": "Rest",
+            "value": "3"
+          }
+        ]
+      }
+    ]
+  },
+  "drivingrevolution": {
+    "name": "drivingrevolution",
+    "description": "🎌 Driving Revolution.",
+    "channels": "",
+    "options": [
+      {
+        "name": "options",
+        "description": "Select a mode.",
+        "type": 3,
+        "required": false,
+        "choices": []
+      }
+    ]
+  }
+}

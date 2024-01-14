@@ -12,13 +12,9 @@ require(__dirname + "/" + "files/directories");
 var fs = require("fs");
 var cooldowns = new Set();
 
-var gtfbot = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/_botconfig.json", "utf8"));
+var gtfbot = 
 var cotd = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/carofthedaylist.json", "utf8"));
 
-
-module.exports.gtfcarlist = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfcarlist.json", "utf8"));
-module.exports.gtftracklist = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtftracklist.json", "utf8"));
-            
 module.exports.bot = gtfbot
 module.exports.caroftheday = cotd
 var checklogin = false
@@ -227,11 +223,11 @@ client.login(process.env.SECRET2).then(function() {
  //require("replit-dis-uniter")(client)
   checklogin = true
 
-  gtm_MAIN.bot["executions"] = 0;
-  gtm_MAIN.bot["penalty"] = 0
+  gtm_LIST_BOT["executions"] = 0;
+  gtm_LIST_BOT["penalty"] = 0
   fs.writeFileSync(
     __dirname + "/" + "jsonfiles/_botconfig.json",
-    JSON.stringify(gtm_MAIN.bot),
+    JSON.stringify(gtm_LIST_BOT),
     function(err, result) {
       if (err) console.log("GTM: error", err);
     }

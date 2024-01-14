@@ -77,7 +77,7 @@ embed.setAuthor({name: msg.guild.members.cache.get(userdata["id"]).user.displayN
       if (seconds > 0) {
         setTimeout(() => {
           gtf_DISCORD.delete(msg, {})
-          gtf_MAIN.embedcounts[userdata["id"]]--;
+          gtf_LIST_EMBEDCOUNTS[userdata["id"]]--;
           }, seconds * 1000)
       }
     });

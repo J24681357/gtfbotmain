@@ -1,0 +1,205 @@
+{
+	"engine": [
+		{
+			"type": "Engine",
+			"name": "Stage 1",
+			"cost": 2500,
+			"percent": 5,
+			"models": [],
+			"engines": [],
+			"types": [
+				"Production",
+				"Aftermarket"
+			],
+			"prohibited": [
+				"Electric"
+			],
+			"fpplimit": 1200,
+			"lowerweight": 0
+		},
+		{
+			"type": "Engine",
+			"name": "Stage 2",
+			"cost": 4000,
+			"percent": 10,
+			"models": [],
+			"engines": [
+				"NA",
+				"TB",
+				"SC",
+				"EV"
+			],
+			"types": [
+				"Production",
+				"Aftermarket"
+			],
+			"prohibited": [
+				"Electric"
+			],
+			"fpplimit": 700,
+			"lowerweight": 0
+		},
+		{
+			"type": "Engine",
+			"name": "Stage 3",
+			"cost": 6500,
+			"percent": 15,
+			"models": [],
+			"engines": [
+				"NA",
+				"TB",
+				"SC",
+				"EV"
+			],
+			"types": [
+				"Production",
+				"Aftermarket"
+			],
+			"prohibited": [
+				"Electric"
+			],
+			"fpplimit": 650,
+			"lowerweight": 0
+		}
+	],
+	"weight-reduction": [
+		{
+			"type": "Weight Reduction",
+			"name": "Stage 1",
+			"cost": 1000,
+			"percent": 5,
+			"models": [],
+			"engines": [
+				"NA",
+				"TB",
+				"SC",
+				"EV"
+			],
+			"types": [
+				"Production",
+				"Aftermarket"
+			],
+			"prohibited": [
+				"Electric"
+			],
+			"fpplimit": 1000,
+			"lowerweight": 1750
+		},
+		{
+			"type": "Weight Reduction",
+			"name": "Stage 2",
+			"cost": 2000,
+			"percent": 10,
+			"models": [],
+			"engines": [
+				"NA",
+				"TB",
+				"SC",
+				"EV"
+			],
+			"types": [
+				"Production",
+				"Aftermarket"
+			],
+			"prohibited": [
+				"Electric"
+			],
+			"fpplimit": 1000,
+			"lowerweight": 2500
+		},
+		{
+			"type": "Weight Reduction",
+			"name": "Stage 3",
+			"cost": 5000,
+			"percent": 12.5,
+			"models": [],
+			"engines": [
+				"NA",
+				"TB",
+				"SC",
+				"EV"
+			],
+			"types": [
+				"Production"
+			],
+			"prohibited": [
+				"Electric"
+			],
+			"fpplimit": 700,
+			"lowerweight": 3000
+		}
+	],
+  "suspension": [
+    {
+      "type": "Suspension",
+      "name": "Stage 1",
+      "cost": 2500,
+      "percent": 150,
+      "models": [],
+      "engines": [
+        "NA",
+        "TB",
+        "SC",
+        "EV"
+      ],
+      "types": [
+        "Production",
+        "Aftermarket",
+        "Race Car",
+        "Rally Car"
+      ],
+      "special": [],
+      "prohibited": [],
+      "min": -1,
+      "max": 1,
+      "fpplimit": 9999,
+      "lowerweight": 0
+    },
+    {
+      "type": "Suspension",
+      "name": "Stage 2",
+      "cost": 5000,
+      "percent": 300,
+      "models": [],
+      "engines": [
+        "NA",
+        "TB",
+        "SC",
+        "EV"
+      ],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": [],
+      "min": -3,
+      "max": 3,
+      "fpplimit": 9999,
+      "lowerweight": 0
+    },
+    {
+      "type": "Suspension",
+      "name": "Stage 3",
+      "cost": 8000,
+      "percent": 400,
+      "models": [],
+      "engines": [
+        "NA",
+        "TB",
+        "SC",
+        "EV"
+      ],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": [],
+      "min": -5,
+      "max": 5,
+      "fpplimit": 9999,
+      "lowerweight": 0
+    }
+  ]
+}

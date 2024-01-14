@@ -2,7 +2,7 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 ////////////////////////////////////////////////////
 
 module.exports.list = function(args) {
-  var gtfparts = gtf_LISTS.gtfpartlist;
+  var gtfparts = gtf_LIST_PARTS;
   var results = "";
   if (args.length == 0) {
     return results;
@@ -28,7 +28,7 @@ module.exports.find = function(args) {
   } else {
     var sort = "costasc"
   }
-  var gtfparts = gtf_LISTS.gtfpartlist;
+  var gtfparts = gtf_LIST_PARTS;
   var final = [];
   var total = Object.keys(args).length;
 
@@ -463,7 +463,7 @@ module.exports.costCalc = function(part, gtfcar, ocar) {
 
 //////////////
 module.exports.audit = async function() {
-  var parts = gtf_LISTS.gtfpartlist;
+  var parts = gtf_LIST_PARTS;
   var fs = require("fs");
 
   var names = Object.keys(parts);

@@ -20,7 +20,7 @@ module.exports.emote = function(name) {
 }
 
 module.exports.say = function(args) {
-  var announcer = require(__dirname.split("/").slice(0,4).join("/") + "/" + "index").announcer
+  var announcer = gtf_LIST_ANNOUNCER
   
   var start = [""]
   var end = [""]

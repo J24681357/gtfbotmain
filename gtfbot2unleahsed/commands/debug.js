@@ -111,7 +111,7 @@ module.exports = {
         }, 2000)
         }], 
         "announceseasonal": ["", function (query) {
-          var event = gtf_MAIN.gtfseaseassonals
+          var event = gtf_LIST_MESSAGES
         var car = gtf_CARS.get({make: event["prize"]["item"]["makes"][0], fullname: event["prize"]["item"]["fullnames"][0]})
         var message = "In Seasonal Events (**/seasonal**), complete all races in the limited time event in the upcoming rotation to earn the " + "**" + car["name"] + " " + car["year"] + "**" + " in your garage!" 
 

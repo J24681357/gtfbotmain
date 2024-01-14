@@ -3,13 +3,14 @@
 global.gtf_USERID = "1048417017083994142";
 global.gtf_SERVERID = "239493425131552778";
 ///
+var fs = require("fs")
 
-var home = (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfmanager") || (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfbot2unleahsed") ? __dirname.split("/").slice(0, 4).join("/") + "/" : __dirname.split("/").slice(0, 5).join("/") + "/"
+var home = (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfmanager") || (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfbot2unleahsed") || (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtffithusim") ? __dirname.split("/").slice(0, 4).join("/") + "/" : __dirname.split("/").slice(0, 5).join("/") + "/"
 global.gtf_CONSOLELOG = require(home + "files/colors")
 
 global.gtf_WEATHER = require(home + "data/gtfweather");
 global.gtf_TIME = require(home + "data/gtftime");
-global.gtf_CAREERRACES = require(home + "data/gtfcareerlist");
+global.gtf_LIST_CAREERRACES = require(home + "data/gtfcareerlist");
 global.gtf_FITHUSIMRACES = require(home + "data/gtfcareerlist");
 global.gtf_CARS = require(home + "data/gtfcarlist");
 global.gtf_TRACKS = require(home + "data/gtftracklist");
@@ -31,9 +32,23 @@ global.gtf_GTF = require(home + "functions/f_gtf");
 global.gtf_LOBBY = require(home + "functions/lobbies/f_lobby");
 global.gtf_COURSEMAKER = require(home + "functions/coursemaker/f_course");
 ///
-
-global.gtf_LISTS = require(home + "index");
-global.gtf_MAIN = require(home + "index");
+global.gtf_LIST_EMBEDCOUNTS = {};
+global.gtf_LIST_BOT = JSON.parse(fs.readFileSync(home + "jsonfiles/_botconfig.json", "utf8")); 
+global.gtf_LIST_ANNOUNCER = JSON.parse(fs.readFileSync(home + "jsonfiles/announcer.json", "utf8")); 
+global.gtf_LIST_CARS = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfcarlist.json", "utf8")); 
+global.gtf_LIST_TRACKS = JSON.parse(fs.readFileSync(home + "jsonfiles/gtftracklist.json", "utf8")); 
+global.gtf_LIST_WEATHER = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfweather.json", "utf8")); 
+global.gtf_LIST_TIME = JSON.parse(fs.readFileSync(home + "jsonfiles/gtftime.json", "utf8")); 
+global.gtf_LIST_PARTS = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfpartlist.json", "utf8")); 
+global.gtf_LIST_WHEELS = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfwheels.json", "utf8")); 
+global.gtf_LIST_PAINTS = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfpaints.json", "utf8"));
+global.gtf_LIST_EXP = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfexp.json", "utf8")); 
+global.gtf_LIST_REWARDS = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfrewards.json", "utf8")); 
+global.gtf_LIST_LICENSES = JSON.parse(fs.readFileSync(home + "jsonfiles/gtflicenses.json", "utf8"));
+global.gtf_LIST_CAREERRACES = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfcareerraces.json", "utf8")); 
+global.gtf_LIST_SEASONALEX = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfseasonalsextra.json", "utf8"));
+global.gtf_LIST_MESSAGES = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfmessages.json", "utf8")); 
+//global.gtf_MAIN = require(home + "index");
 global.gtf_EMBED = require(home + "functions/misc/f_embeds");
 
 global.gtf_EXP = require(home + "data/gtfexp");

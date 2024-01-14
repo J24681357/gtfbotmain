@@ -135,8 +135,8 @@ module.exports.formPage = function (args, userdata) {
 };
 module.exports.formPages = async function (args, embed, msg, userdata) {
   if (Object.keys(userdata).length >= 5) {
-  if (gtm_MAIN.bot["maintenancetime"].length >= 1) {
-  args["footer"] = "⚠️️ **Maintenance:" + "<t:" + gtm_MAIN.bot["maintenancetime"] + ":R>**"
+  if (gtm_LIST_BOT["maintenancetime"].length >= 1) {
+  args["footer"] = "⚠️️ **Maintenance:" + "<t:" + gtm_LIST_BOT["maintenancetime"] + ":R>**"
   }
   }
   var list = args["list"];
@@ -776,7 +776,7 @@ module.exports.createButtons = function (buttons, emojilist, functionlist, msg, 
 
     filter11.on("collect", r => {
       /////MAINTENANCE
-      if (gtm_MAIN.bot["maintenance"]) {
+      if (gtm_LIST_BOT["maintenance"]) {
           if (userdata["id"] != "237450759233339393") {
             userdata = gtm_GTF.defaultuserdata(userdata["id"]);
             gtf_EMBED.alert({ name: "���️ Maintenance", description: "This bot is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
@@ -1135,14 +1135,14 @@ module.exports.limitRoles = function(roles, role_check, user) {
         if (roles.length == 0) {
           clearInterval(timer)
           clearInterval(i)
-          gtm_MAIN.bot["reactionslimit"] = false
+          gtm_LIST_BOT["reactionslimit"] = false
         }
       }
 
       var repeat = function() {
-        if (gtm_MAIN.bot["reactionslimit"] == false) {
+        if (gtm_LIST_BOT["reactionslimit"] == false) {
 
-        gtm_MAIN.bot["reactionslimit"] = true        
+        gtm_LIST_BOT["reactionslimit"] = true        
          timer = setInterval(function() {
             if (emojis.length != 0) {
         msg.react(emojis.pop())
@@ -1153,7 +1153,7 @@ module.exports.limitRoles = function(roles, role_check, user) {
         }
       }
 
-      if (gtm_MAIN.bot["reactionslimit"] == false) {
+      if (gtm_LIST_BOT["reactionslimit"] == false) {
         repeat()
       } else {
        i = setInterval(function() {repeat()}, 1000)
@@ -1164,7 +1164,7 @@ module.exports.limitRoles = function(roles, role_check, user) {
 
 module.exports.homedir = function() {
   var dir = __dirname.split("/").slice(0, 4).join("/") + "/"
-    if (dir.includes("gtfmanager") || dir.includes("gtfbot2unleahsed"))  {
+    if (dir.includes("gtfmanager") || dir.includes("gtfbot2unleahsed") || dir.includes("gtffithusim"))  {
       return __dirname.split("/").slice(0, 4).join("/") + "/"
      } else {
        return = __dirname.split("/").slice(0, 5).join("/") + "/"

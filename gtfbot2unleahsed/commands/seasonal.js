@@ -37,12 +37,12 @@ module.exports = {
     var date = new Date()
     var mod = gtf_DATETIME.getCurrentDay() % 3
     if (mod == 0) {
-        if (typeof gtf_MAIN.bot["seasonaldate"] === 'undefined' || Math.abs((gtf_DATETIME.getCurrentDay() - parseInt( gtf_MAIN.bot["seasonaldate"].slice(0,-4)))) >= 3) {
+        if (typeof gtf_LIST_BOT["seasonaldate"] === 'undefined' || Math.abs((gtf_DATETIME.getCurrentDay() - parseInt( gtf_LIST_BOT["seasonaldate"].slice(0,-4)))) >= 3) {
           gtf_EMBED.alert({ name: "⚠️ Seasonal Events Unavailable", description: "Seasonal events are currently in a grace period. Please try again in a few moments.", embed: "", seconds: 0 }, msg, userdata);
           return
           /*
-      gtf_MAIN.bot["seasonaldate"] = gtf_DATETIME.getCurrentDay().toString() + date.getFullYear().toString()
-    require("fs").writeFile("./jsonfiles/_botconfig.json", require("json-format")(gtf_MAIN.bot), function (err) {
+      gtf_LIST_BOT["seasonaldate"] = gtf_DATETIME.getCurrentDay().toString() + date.getFullYear().toString()
+    require("fs").writeFile("./jsonfiles/_botconfig.json", require("json-format")(gtf_LIST_BOT), function (err) {
     if (err) {
       console.log(err);
     }
@@ -54,8 +54,8 @@ module.exports = {
 
     
 
-  if (gtf_MAIN.bot["seasonaldate"] != userdata["seasonalcheck"]) {
-      userdata["seasonalcheck"] = gtf_MAIN.bot["seasonaldate"]
+  if (gtf_LIST_BOT["seasonaldate"] != userdata["seasonalcheck"]) {
+      userdata["seasonalcheck"] = gtf_LIST_BOT["seasonaldate"]
       var careeraceskeys = Object.keys(userdata["careerraces"])
         for (var i = 0; i < careeraceskeys.length; i++) {
       if (careeraceskeys[i].toLowerCase().includes("seasonal")) {
@@ -65,7 +65,7 @@ module.exports = {
   }
 
     
-    var seed = parseInt(gtf_MATH.randomIntSeed(0, 1000000, gtf_MAIN.bot["seasonaldate"]))
+    var seed = parseInt(gtf_MATH.randomIntSeed(0, 1000000, gtf_LIST_BOT["seasonaldate"]))
 
     ///QUERIES
     if (query["options"] == "a" || query["options"] == "A" || parseInt(query["options"]) == 1) {
@@ -118,7 +118,7 @@ module.exports = {
       delete query["number"]
       delete query["track"]
        embed.setTitle("🎉" + " __Seasonal Events__");
-       var available = (Object.keys(gtf_MAIN.gtfseasonals).length >= 1 && gtf_MAIN.gtfseasonals["start"] == gtf_MAIN.bot['seasonaldate']) ? " `1 Event Available`" : ""
+       var available = (Object.keys(gtf_LIST_SEASONALEX).length >= 1 && gtf_LIST_SEASONALEX["start"] == gtf_LIST_BOT['seasonaldate']) ? " `1 Event Available`" : ""
       results =
         "__**A Level**__ " + gtf_EMOTE.alicense + "\n" + 
         "__**IB Level**__ " + gtf_EMOTE.iblicense + "\n" +
@@ -140,11 +140,11 @@ module.exports = {
 
     //COMMANDS
     if (query["options"] == "LIMITED") {
-      if (Object.keys(gtf_MAIN.gtfseasonals).length == 0 || gtf_MAIN.gtfseasonals["start"] != gtf_MAIN.bot['seasonaldate']) {
+      if (Object.keys(gtf_LIST_SEASONALEX).length == 0 || gtf_LIST_SEASONALEX["start"] != gtf_LIST_BOT['seasonaldate']) {
         gtf_EMBED.alert({ name: "❌ No Limited Time Events", description: "There are currently no limited time events at the moment.", embed: "", seconds: 0 }, msg, userdata);
            return
     }
-      var races = [gtf_MAIN.gtfseasonals]
+      var races = [gtf_LIST_SEASONALEX]
   races[0]["mode"] = "CAREER"
   races[0]["positions"] = gtf_RACE.creditsCalc(races[0])
     } 

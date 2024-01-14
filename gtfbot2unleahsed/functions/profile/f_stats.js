@@ -14,19 +14,19 @@ module.exports.userid = function(userdata) {
 
 ///COUNT
 module.exports.count = function(userdata) {
-  var num = gtf_MAIN.embedcounts[userdata["id"]];
+  var num = gtf_LIST_EMBEDCOUNTS[userdata["id"]];
   if (isNaN(num)) {
-    gtf_MAIN.embedcounts[userdata["id"]] = 0;
+    gtf_LIST_EMBEDCOUNTS[userdata["id"]] = 0;
     return 0;
   } else {
     return num;
   }
 };
 module.exports.addCount = function(userdata) {
-  gtf_MAIN.embedcounts[userdata["id"]]++;
+  gtf_LIST_EMBEDCOUNTS[userdata["id"]]++;
 };
 module.exports.removeCount = function(userdata) {
-  gtf_MAIN.embedcounts[userdata["id"]]--;
+  gtf_LIST_EMBEDCOUNTS[userdata["id"]]--;
 };
 ///CREDITS
 module.exports.credits = function(userdata) {
@@ -260,7 +260,7 @@ module.exports.checkMessages = function(command, callback, msg, userdata) {
 
   function next() {
     var name = command.name
-    var commandmessages = gtf_MAIN.gtfmessages[name]
+    var commandmessages = gtf_LIST_MESSAGES[name]
 
     if (userdata["settings"]["MESSAGES"] == 0) {
 
@@ -1205,7 +1205,7 @@ module.exports.raceInProgress = function(userdata) {
 
 ///MISC
 module.exports.checkRewards = function(type, extra, userdata) {
-  var rewards = gtf_MAIN.gtfrewards[type]
+  var rewards = gtf_LIST_REWARDS[type]
 
   for (var i = 0; i < rewards.length; i++) {
     var f = gtf_STATS.triggerReward(rewards[i]["name"], rewards[i], extra, userdata)

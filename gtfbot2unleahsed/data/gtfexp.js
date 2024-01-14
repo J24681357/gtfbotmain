@@ -21,11 +21,11 @@ module.exports.expBar = function (userdata) {
     if (nextlevel >= 50) {
       nextlevel = 50;
     }
-    var nextlevelexp = gtf_LISTS.gtfexp[nextlevel.toString()]["exp"];
+    var nextlevelexp = gtf_LIST_EXP[nextlevel.toString()]["exp"];
 
     var curr = gtf_STATS.level(userdata)
     var currexp = gtf_STATS.exp(userdata);
-    var currlevelexp = gtf_LISTS.gtfexp[curr.toString()]["exp"];
+    var currlevelexp = gtf_LIST_EXP[curr.toString()]["exp"];
     for (var i = 0; i < expbar.length; i++) {
       if (currlevelexp <= currexp) {
         currlevelexp += nextlevelexp / 10
@@ -40,7 +40,7 @@ module.exports.checkLevelUp = function (userdata) {
   var level = gtf_STATS.level(userdata);
   var levelup = 0;
   var leveldetails = [""];
-  var explevels = gtf_LISTS.gtfexp;
+  var explevels = gtf_LIST_EXP;
 
   for (var i = level; i < Object.keys(explevels).length; i++) {
     if (exp >= explevels[(i + 1).toString()]["exp"]) {

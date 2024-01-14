@@ -989,7 +989,7 @@ module.exports.carofthedaystats = async function(client) {
       list.unshift(vote)
      })
      
-     var olist = gtm_MAIN.caroftheday
+     var olist = gtm_LIST_COTD
      for (var i = 0; i < list.length; i++) {
        if (olist.filter(x => x["date"] == list[i]["date"]).length == 0) {
          olist.push(list[i])

@@ -2,7 +2,9 @@
 global.gtm_USERID = "709276654601633934";
 global.gtm_SERVERID = "239493425131552778";
 ///
-var home = (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfmanager") || (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfbot2unleahsed") ? __dirname.split("/").slice(0, 4).join("/") + "/" : __dirname.split("/").slice(0, 5).join("/") + "/"
+var fs = require("fs")
+
+var home = (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfmanager") || (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfbot2unleahsed") || (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtffithusim") ? __dirname.split("/").slice(0, 4).join("/") + "/" : __dirname.split("/").slice(0, 5).join("/") + "/"
 
 module.exports.defaultsettings = {
   MODE: "Simulation",
@@ -19,13 +21,13 @@ module.exports.defaultsettings = {
   MENUSELECT: 0,
   GRIDNAME: 0
 }
+///LISTS
+global.gtm_LIST_BOT = JSON.parse(fs.readFileSync( home + "jsonfiles/_botconfig.json", "utf8"));
+global.gtm_LIST_COTD = JSON.parse(fs.readFileSync( home + "jsonfiles/carofthedaylist.json", "utf8"));
 
-global.gtm_LISTS = require(home + "index");
-global.gtm_MAIN = require(home + "index");
 
 global.gtm_SLASHCOMMANDS = require(home + "functions/misc/f_slashcommands");
 global.gtm_EXTRA = require(home + "functions/misc/f_extras");
-global.gtm_MAIN = require(home + "index");
 global.gtm_TOOLS = require(home + "functions/misc/f_tools");
 
 global.gtm_defaultsettings = {

@@ -1,0 +1,1248 @@
+{
+  "stage-1": [
+    {
+      "title": "Stage 1-1",
+      "eventid": "dr-1",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Special Stage Route X",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": true,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [0, true] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Toyota Prius G 2009",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    },
+    {
+      "title": "Stage 1-2",
+      "eventid": "dr-2",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Special Stage Route X",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+
+              "brake": false,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [2, true] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Toyota Prius G 2009",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    },
+    {
+      "title": "Stage 1-3",
+      "eventid": "dr-3",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Special Stage Route X",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [2, false] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Volkswagen Beetle R-Line 2013",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    },
+    {
+      "title": "Stage 1-4",
+      "eventid": "dr-4",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Special Stage Route X",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+
+              "brake": false,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [2, true] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Mazda Roadster S (ND) 2015",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    }
+  ],
+  "stage-2": [
+    {
+      "title": "Stage 2-1",
+      "eventid": "dr-5",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Blue Moon Bay Speedway - Infield B Reverse",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [2, true] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Ford Focus ST 2015",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    },
+    {
+      "title": "Stage 2-2",
+      "eventid": "dr-6",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Blue Moon Bay Speedway - Infield B",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [2, true] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Ford Focus ST 2015",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    },
+    {
+      "title": "Stage 2-3",
+      "eventid": "dr-7",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Blue Moon Bay Speedway - Infield B",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [2, true] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Alpine A110 Premiere Edition 2017",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    },
+    {
+      "title": "Stage 2-4",
+      "eventid": "dr-7",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Blue Moon Bay Speedway - Infield A",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 4,
+
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 4,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": true,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [2, true] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Mini Cooper S 2014",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    }
+  ],
+  "stage-3": [
+    {
+      "title": "Stage 3-1",
+      "eventid": "dr-9",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Tsukuba Circuit",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [2, true] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Honda Fit Hybrid 2014",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    },
+  {
+      "title": "Stage 3-2",
+      "eventid": "dr-10",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Tsukuba Circuit",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [2, true] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Toyota MR2 GT-S 1997",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    },
+    {
+      "title": "Stage 3-3",
+      "eventid": "dr-11",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Tsukuba Circuit",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 4,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 0,
+
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 0,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": true,
+              "score": ""
+            },
+       {
+              "arrow": 4,
+
+              "brake": true,
+              "score": ""
+            },
+      {
+              "arrow": 4,
+              "brake": false,
+              "score": ""
+            },
+      {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [2, true] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Lotus Elise 111R 2004",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    },
+  {
+      "title": "Stage 3-4",
+      "eventid": "dr-12",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Tsukuba Circuit",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 4,
+
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 4,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+
+              "brake": false,
+              "score": ""
+            },
+       {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+             {
+              "arrow": 2,
+              "brake": true,
+              "score": ""
+            },
+      {
+              "arrow": 3,
+              "brake": true,
+              "score": ""
+            },
+        {
+              "arrow": 3,
+              "brake": false,
+              "score": ""
+            },
+        {
+              "arrow": 3,
+              "brake": false,
+              "score": ""
+            },
+      {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [2, true] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Lotus Elise 111R 2004",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    }
+  ]
+}

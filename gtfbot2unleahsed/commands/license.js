@@ -69,7 +69,7 @@ module.exports = {
     
     pageargs["image"].push( "https://github.com/J24681357/gtfbotmain/raw/master/gtfbot2unleahsed/images/career/" + query["options"].toUpperCase() + "_level.png")
     
-    var licenses = [...gtf_CAREERRACES.find({types: [ "LICENSE" + query["options"]] })]
+    var licenses = [...gtf_LIST_CAREERRACES.find({types: [ "LICENSE" + query["options"]] })]
 
     ///COMMANDS
     if (query["options"] == "list") {

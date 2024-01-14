@@ -352,7 +352,7 @@ var event = gtf_SEASONAL.randomSeasonal({}, "IA", 0, gtf_MATH.randomInt(0,999999
 event["eventid"] = "SEASONALLIMITED-1"
 event["title"] = "🚘 Limited Time Event"
 event["start"] = 0
-event["prize"] = gtf_MAIN.bot["seasonallimitedeventprize"]
+event["prize"] = gtf_LIST_BOT["seasonallimitedeventprize"]
   fs.writeFile("./jsonfiles/seasonallimitedevent_temp.json", require("json-format")(event), function (err) {
     if (err) {
       console.log(err);
@@ -366,17 +366,17 @@ module.exports.checkseasonals = function() {
     var mod = gtf_DATETIME.getCurrentDay() % 3
   //if (mod == 0) {
   console.log(
-    Math.abs((gtf_DATETIME.getCurrentDay() - parseInt(gtf_MAIN.bot["seasonaldate"].slice(0,-4))))
+    Math.abs((gtf_DATETIME.getCurrentDay() - parseInt(gtf_LIST_BOT["seasonaldate"].slice(0,-4))))
   )
-  if (typeof gtf_MAIN.bot["seasonaldate"] === 'undefined' || Math.abs((gtf_DATETIME.getCurrentDay() - parseInt( gtf_MAIN.bot["seasonaldate"].slice(0,-4)))) >= 3) {
-      gtf_MAIN.bot["seasonaldate"] = gtf_DATETIME.getCurrentDay().toString() + date.getFullYear().toString()
+  if (typeof gtf_LIST_BOT["seasonaldate"] === 'undefined' || Math.abs((gtf_DATETIME.getCurrentDay() - parseInt( gtf_LIST_BOT["seasonaldate"].slice(0,-4)))) >= 3) {
+      gtf_LIST_BOT["seasonaldate"] = gtf_DATETIME.getCurrentDay().toString() + date.getFullYear().toString()
       console.log("NEWROTATION")
-       if ((Object.keys(gtf_MAIN.gtfseasonals).length >= 1 && gtf_MAIN.gtfseasonals["start"] == gtf_MAIN.bot['seasonaldate']) && gtf_MAIN.gtfseasonals["start"] != 0) {
+       if ((Object.keys(gtf_LIST_SEASONALEX).length >= 1 && gtf_LIST_SEASONALEX["start"] == gtf_LIST_BOT['seasonaldate']) && gtf_LIST_SEASONALEX["start"] != 0) {
          console.log("NEWSEASONAL")
          announceseasonal()
          //
        }
-require("fs").writeFile("./jsonfiles/_botconfig.json", require("json-format")(gtf_MAIN.bot), function (err) {
+require("fs").writeFile("./jsonfiles/_botconfig.json", require("json-format")(gtf_LIST_BOT), function (err) {
     if (err) {
       console.log(err);
     }
@@ -387,7 +387,7 @@ require("fs").writeFile("./jsonfiles/_botconfig.json", require("json-format")(gt
  // }
     
   function announceseasonal() {
-    var event = gtf_MAIN.gtfseasonals
+    var event = gtf_LIST_SEASONALEX
     var car = gtf_CARS.get({make: event["prize"]["item"]["makes"][0], fullname: event["prize"]["item"]["fullnames"][0]})
         var message = "In Seasonal Events (**/seasonal**), complete all races in the limited time event to earn the " + "**" + car["name"] + " " + car["year"] + "**" + " in your garage!" 
 

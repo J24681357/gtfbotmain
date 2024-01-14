@@ -3,7 +3,7 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 ////////////////////////////////////////////////////
 
 module.exports.list = function (args) {
-  var gtftracks = gtf_LISTS.gtftracklist;
+  var gtftracks = gtf_LIST_TRACKS;
   var results = "";
   if (args.length == 0) {
     return results;
@@ -33,7 +33,7 @@ module.exports.find = function (args) {
     return "";
   }
   var total = Object.keys(args).length;
-  var gtftracks = gtf_LISTS.gtftracklist;
+  var gtftracks = gtf_LIST_TRACKS;
   var final = [];
   var ids = Object.keys(gtftracks);
 
@@ -173,7 +173,7 @@ module.exports.random = function (args, num) {
 };
 
 module.exports.audit = async function () {
-  var tracks = gtf_LISTS.gtftracklist;
+  var tracks = gtf_LIST_TRACKS;
   var x = {};
   var i = 0;
 

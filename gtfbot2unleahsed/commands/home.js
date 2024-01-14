@@ -106,7 +106,7 @@ module.exports = {
     buttons.unshift(menu);
 
     var car = gtf_CARS.random({}, 1)[0];
-    results = "**" + car["name"] + " " + car["year"] + " " + gtf_TOOLS.toEmoji(car["country"]) + "\n" + "🚘 Find this car using** __**/car Select [manufacturer/type] " + car["make"] + "**__**.**" + "\n\n" + gtf_EMOTE.gtlogoblue + " **Main Version Date: " + gtf_MAIN.bot["versiondate"] + "**";
+    results = "**" + car["name"] + " " + car["year"] + " " + gtf_TOOLS.toEmoji(car["country"]) + "\n" + "🚘 Find this car using** __**/car Select [manufacturer/type] " + car["make"] + "**__**.**" + "\n\n" + gtf_EMOTE.gtlogoblue + " **Main Version Date: " + gtf_LIST_BOT["versiondate"] + "**";
     embed.setDescription(message + results);
     embed.setThumbnail(car["image"][0]);
     embed.fields = [];
@@ -207,7 +207,7 @@ function createlist() {
             
             track["options"] = ["Drift"];
             track["author"] = "ARCADE";
-            results = "**🖼 " + track["name"] + "**\n" + "**Generate your own courses using __/course__ or in the Course Maker selection." + "**\n\n" + gtf_EMOTE.gtlogoblue + "**Main Version Date: " + gtf_MAIN.bot["versiondate"] + "**";
+            results = "**🖼 " + track["name"] + "**\n" + "**Generate your own courses using __/course__ or in the Course Maker selection." + "**\n\n" + gtf_EMOTE.gtlogoblue + "**Main Version Date: " + gtf_LIST_BOT["versiondate"] + "**";
             embed.setDescription(message + results);
             const attachment = new AttachmentBuilder(track["image"], { name: "course.png" });
             embed.setThumbnail("attachment://course.png");
@@ -222,7 +222,7 @@ function createlist() {
           embed.setTitle(gtf_EMOTE.gtflogo + " __My Home__");
           embed.image = "";
           var car = gtf_CARS.random({}, 1)[0];
-          results = "**" + car["name"] + " " + car["year"] + " " + gtf_TOOLS.toEmoji(car["country"]) + "\n" + "🚘 Find this car using** __**/car Select [manufacturer/type] " + car["make"] + "**__**.**" + "\n\n" + gtf_EMOTE.gtlogoblue + "**Main Version Date: " + gtf_MAIN.bot["versiondate"] + "**";
+          results = "**" + car["name"] + " " + car["year"] + " " + gtf_TOOLS.toEmoji(car["country"]) + "\n" + "🚘 Find this car using** __**/car Select [manufacturer/type] " + car["make"] + "**__**.**" + "\n\n" + gtf_EMOTE.gtlogoblue + "**Main Version Date: " + gtf_LIST_BOT["versiondate"] + "**";
           embed.setDescription(message + results);
           embed.setThumbnail(car["image"][0]);
           embed.fields = [];
@@ -247,7 +247,7 @@ function createlist() {
             gtf_EMOTE.tracklogo +
             " **Drive over many tracks from the Gran Turismo series in GT Fitness!**" +
             "\n\n" +
-            gtf_EMOTE.gtlogoblue + "**Main Version Date: " + gtf_MAIN.bot["versiondate"] + "**";
+            gtf_EMOTE.gtlogoblue + "**Main Version Date: " + gtf_LIST_BOT["versiondate"] + "**";
           embed.setDescription(message + results);
           embed.setThumbnail(track["image"]);
           embed.fields = [];

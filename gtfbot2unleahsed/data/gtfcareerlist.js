@@ -10,7 +10,7 @@ module.exports.find = function (args) {
     delete args["sort"];
   }
   var total = Object.keys(args).length;
-  var gtfcareerraces = gtf_LISTS.gtfcareerraces;
+  var gtfcareerraces = gtf_LIST_CAREERRACES;
   var final = [];
   var eventids = Object.keys(gtfcareerraces);
 
@@ -50,7 +50,7 @@ module.exports.get = function (args) {
   if (args === undefined) {
     return "";
   }
-   var gtfcareerraces = gtf_LISTS.gtfcareerraces;
+   var gtfcareerraces = gtf_LIST_CAREERRACES;
    var type = args["type"].toLowerCase()
    var number = args["number"]
    var eventid = type + "-" + number
