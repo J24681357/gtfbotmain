@@ -130,7 +130,7 @@ module.exports.prepRace = function(raceprep, gtfcar, embed, msg, userdata) {
 
         function flagstartrace() {
           if (userdata["raceinprogress"]["active"]) {
-            require((gtf_TOOLS.homedir() +  "commands/status").execute(msg, { options: "exit" }, userdata);
+            require(gtf_TOOLS.homedir() +  "commands/status").execute(msg, { options: "exit" }, userdata);
           } else {
             embed.spliceFields(0, 1);
             try {

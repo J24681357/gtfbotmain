@@ -583,7 +583,7 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
       }
     }
     else if (racesettings["mode"] == "ARCADE" || racesettings["mode"] == "DRIFT" || racesettings["mode"] == "SSRX") {
-      var command = require((gtf_TOOLS.homedir() +  "commands/arcade");
+      var command = require(gtf_TOOLS.homedir() +  "commands/arcade");
       command.execute(msg, { options: racesettings["mode"] }, userdata);
     }
   }
@@ -716,7 +716,7 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
       gtf_DISCORD.delete(m, { seconds: 2 })
     });
     var e = racesettings["eventid"].replace("LICENSE", "").split("-");
-    var command = require((gtf_TOOLS.homedir() +  "commands/license");
+    var command = require(gtf_TOOLS.homedir() +  "commands/license");
     var total = 7
     if (e[0] == "IC") {
       total = 5
