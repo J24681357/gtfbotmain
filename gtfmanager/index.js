@@ -17,10 +17,6 @@ var minute = 0
 setInterval(function() {
   minute = minute + 1
   if (minute >= 2) {
-  if (minute - parseInt(client.user.presence.activities[0].name.split(": ")[1].split(" ")[0]) >= 3) {
-    console.log("GTM: TOO LONG")
-    restartbot(client)
-  }
   }
   if (minute >= 240) {
   restartbot(client)
