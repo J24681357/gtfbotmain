@@ -15,8 +15,6 @@ var checklogin = false;
 var cooldowns = new Set();
 var { MongoClient, ServerApiVersion } = require('mongodb');
 
-module.exports.embedcounts = {};
-
 var listinmaint = [];
 client.commands = {};
 const commandFiles = fs.readdirSync(__dirname + "/" + "commands").filter(file => file.endsWith(".js"));
