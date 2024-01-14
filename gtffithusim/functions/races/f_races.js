@@ -135,7 +135,7 @@ module.exports.prepRace = function(raceprep, gtfcar, embed, msg, userdata) {
 
         function flagstartrace() {
           if (userdata["raceinprogress"]["active"]) {
-            require(__dirname.split("/").slice(0, 4).join("/") + "/" + "commands/status").execute(msg, { options: "exit" }, userdata);
+            require(gte_TOOLS.homedir() + "commands/status").execute(msg, { options: "exit" }, userdata);
           } else {
             embed.spliceFields(0, 1);
             try {
@@ -671,7 +671,7 @@ module.exports.creditsCalc = function(racesettings, raceprep) {
       if (racesettings["type"] == "TIME") {
         var fpp = gte_PERF.perfEnthu(racesettings["driver"]["car"], "GARAGE")["fpp"];
         var numx = gte_GTF.lengthAlpha(fpp, "0%", racesettings["track"]);
-        var speed111 = gte_PERF.speedCalcConstant(numx, racesettings["driver"]["car"]);
+        var speed111 = gtf_PERF.speedcalcConstant(numx, racesettings["driver"]["car"]);
         speed111[1] = Math.round(speed111[0] / 1.4)
         var km = Math.round((parseInt(racesettings["laps"].split("m")[0]) / 60) * speed111[1])
         positions[x]["credits"] = Math.round(parseFloat(positions[x]["credits"] * (km / 120)));
@@ -740,7 +740,7 @@ module.exports.creditsCalc = function(racesettings, raceprep) {
       if (racesettings["type"] == "TIME") {
         var fpp = gte_PERF.perfEnthu(racesettings["driver"]["car"], "GARAGE")["fpp"];
         var numx = gte_GTF.lengthAlpha(fpp, "0%", racesettings["track"]);
-        var speed111 = gte_PERF.speedCalcConstant(numx, racesettings["driver"]["car"]);
+        var speed111 = gtf_PERF.speedcalcConstant(numx, racesettings["driver"]["car"]);
         speed111[1] = Math.round(speed111[0] / 1.4)
         var km = Math.round((parseInt(racesettings["laps"].split("m")[0]) / 60) * speed111[1])
         temp["credits"] = Math.round(parseFloat(credits * (km / 80)));
@@ -878,7 +878,7 @@ module.exports.customRaceCreditsCalc = function(racesettings, raceprep, finalgri
       if (racesettings["type"] == "TIME") {
         var fpp = gte_PERF.perfEnthu(racesettings["driver"]["car"], "GARAGE")["fpp"];
         var numx = gte_GTF.lengthAlpha(fpp, racesettings["weather"], racesettings["track"]);
-        var speed111 = gte_PERF.speedCalcConstant(numx, racesettings["driver"]["car"]);
+        var speed111 = gtf_PERF.speedcalcConstant(numx, racesettings["driver"]["car"]);
         speed111[1] = Math.round(speed111[0] / 1.4)
         var km = Math.round((parseInt(racesettings["laps"].split("m")[0]) / 60) * speed111[1])
         var percentage = (1 - (fpp / 700)) / 5
@@ -1373,11 +1373,11 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
       }
       if (event["eventid"].includes("SEASONAL")) {
         functionlist.push(function() {
-          require(__dirname.split("/").slice(0, 4).join("/") + "/" + "commands/seasonal").execute(msg, { options: event["eventid"].split("SEASONAL")[1].split("-")[0] }, userdata);
+          require(gte_TOOLS.homedir() + "commands/seasonal").execute(msg, { options: event["eventid"].split("SEASONAL")[1].split("-")[0] }, userdata);
         })
       } else {
         functionlist.push(function() {
-          require(__dirname.split("/").slice(0, 4).join("/") + "/" + "commands/career").execute(msg, { options: event["eventid"].split("-")[0] }, userdata);
+          require(gte_TOOLS.homedir() + "commands/career").execute(msg, { options: event["eventid"].split("-")[0] }, userdata);
         })
       }
       gte_TOOLS.createButtons(buttons, emojilist, functionlist, msg, userdata)
@@ -1397,7 +1397,7 @@ module.exports.preRaceMenu = function(racesettings, embed, msg, userdata) {
   if (racesettings["type"] == "TIME") {
     var fpp = gte_PERF.perfEnthu(racesettings["driver"]["car"], "GARAGE")["fpp"];
     var numx = gte_GTF.lengthAlpha(fpp, "0%", racesettings["track"]);
-    var speed111 = gte_PERF.speedCalc(numx, racesettings["driver"]["car"]);
+    var speed111 = gtf_PERF.speedcalc(numx, racesettings["driver"]["car"]);
     speed111[0] = Math.round(speed111[0] / 1.4)
     racesettings["distance"]["km"] = Math.round((parseInt(racesettings["laps"].split("m")[0]) / 60) * speed111[0])
     racesettings["distance"]["mi"] = Math.round(racesettings["distance"]["km"] * 0.62137119)

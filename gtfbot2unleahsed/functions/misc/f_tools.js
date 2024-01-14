@@ -1130,14 +1130,14 @@ module.exports.limitRoles = function(roles, role_check, user) {
         if (roles.length == 0) {
           clearInterval(timer)
           clearInterval(i)
-          gtf_MAIN.gtfbotconfig["reactionslimit"] = false
+          gtf_LIST_BOT["reactionslimit"] = false
         }
       }
       
       var repeat = function() {
-        if (gtf_MAIN.gtfbotconfig["reactionslimit"] == false) {
+        if (gtf_LIST_BOT["reactionslimit"] == false) {
 
-        gtf_MAIN.gtfbotconfig["reactionslimit"] = true        
+        gtf_LIST_BOT["reactionslimit"] = true        
          timer = setInterval(function() {
             if (emojis.length != 0) {
         msg.react(emojis.pop())
@@ -1148,7 +1148,7 @@ module.exports.limitRoles = function(roles, role_check, user) {
         }
       }
 
-      if (gtf_MAIN.gtfbotconfig["reactionslimit"] == false) {
+      if (gtf_LIST_BOT["reactionslimit"] == false) {
         repeat()
       } else {
        i = setInterval(function() {repeat()}, 1000)

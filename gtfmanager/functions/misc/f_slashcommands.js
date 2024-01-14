@@ -19,16 +19,16 @@ for (var i = 0; i < keys.length; i++) {
   slashcommand.setName(c["name"])
   slashcommand.setDescription(c["description"])
   if (c["name"] == "garage") {
-    c = gtm_SLASHCOMMANDS.garageoptions()
+    c = gtf_SLASHCOMMANDS.garageoptions()
   }
   if (c["name"] == "car") {
-    c["options"] = gtm_SLASHCOMMANDS.caroptions()
+    c["options"] = gtf_SLASHCOMMANDS.caroptions()
   }
   if (c["name"] == "wheels") {
-    c["options"] = gtm_SLASHCOMMANDS.wheeloptions()
+    c["options"] = gtf_SLASHCOMMANDS.wheeloptions()
   }
   if (c["name"] == "home") {
-    c["options"] = gtm_SLASHCOMMANDS.homeoptions()
+    c["options"] = gtf_SLASHCOMMANDS.homeoptions()
   }
   for (var j = 0; j < c["options"].length; j++) {
     if (typeof c["options"][j]["required"] === 'undefined') {
@@ -204,7 +204,7 @@ options.push({
 };
 
 module.exports.garageoptions = function () {
-  var options = gtm_SLASHCOMMANDS.caroptions().slice(1)
+  var options = gtf_SLASHCOMMANDS.caroptions().slice(1)
   var garage = {
       name: "garage",
       description: "🏁 Displays your garage cars.",
@@ -257,7 +257,7 @@ module.exports.wheeloptions = function () {
             "name": "❗ Menu",
             "value": "list"
         }]
-  var list = gtm_WHEELS.list("makes")
+  var list = gtf_WHEELS.list("makes")
   for (var i = 0; i < list.length; i++) {
     choices.push({name:list[i].split(",").join(" "), value:list[i].split(",").join(" ")})
   }
@@ -285,7 +285,7 @@ module.exports.homeoptions = function () {
       "required": false,
       "choices": []
   }]
-  var list = gtm_GTF.commandlist
+  var list = gtf_GTF.commandlist
   for (var i = 0; i < list.length; i++) {
     choices.push({name:list[i][1], value:list[i][0]})
   }

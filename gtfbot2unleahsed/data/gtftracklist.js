@@ -238,7 +238,7 @@ module.exports.audit = async function () {
       fs.writeFileSync(filename, body);
     };
 
-    await download2(imagelink, "./images/tracks/" + name, function () {});
+    await download2(imagelink, "./gtfbot2unleahsed/images/tracks/" + name, function () {});
 
     //download2(imagelink, "", function () {});
   }

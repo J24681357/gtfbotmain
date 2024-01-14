@@ -273,7 +273,7 @@ embed.setFields([{ name: gtm_STATS.menuFooter(userdata), value: gtm_STATS.curren
   //////
   if (Object.keys(userdata).length >= 5) {
     var totallength = userdata["garage"].length;
-  garagemenuvars = gtm_GTF.garageMenu("", "", args, garagemenuvars, msg, embed, userdata);
+  garagemenuvars = gtf_GTF.garageMenu("", "", args, garagemenuvars, msg, embed, userdata);
   } else {
     var totallength = 0
   }
@@ -284,7 +284,7 @@ embed.setFields([{ name: gtm_STATS.menuFooter(userdata), value: gtm_STATS.curren
 
   function createfunctions(msg) {
 if (Object.keys(userdata) >= 5) {
-    garagemenuvars = gtm_GTF.garageMenuFunctions("", "", args, garagemenuvars, msg, embed, userdata);
+    garagemenuvars = gtf_GTF.garageMenuFunctions("", "", args, garagemenuvars, msg, embed, userdata);
 }
 
     function selectoption() {
@@ -778,7 +778,7 @@ module.exports.createButtons = function (buttons, emojilist, functionlist, msg, 
       /////MAINTENANCE
       if (gtm_LIST_BOT["maintenance"]) {
           if (userdata["id"] != "237450759233339393") {
-            userdata = gtm_GTF.defaultuserdata(userdata["id"]);
+            userdata = gtf_GTF.defaultuserdata(userdata["id"]);
             gtf_EMBED.alert({ name: "���️ Maintenance", description: "This bot is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
             return;
           }
@@ -1167,6 +1167,6 @@ module.exports.homedir = function() {
     if (dir.includes("gtfmanager") || dir.includes("gtfbot2unleahsed") || dir.includes("gtffithusim"))  {
       return __dirname.split("/").slice(0, 4).join("/") + "/"
      } else {
-       return = __dirname.split("/").slice(0, 5).join("/") + "/"
+       return __dirname.split("/").slice(0, 5).join("/") + "/"
     }
 }

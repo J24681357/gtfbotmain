@@ -292,7 +292,6 @@ module.exports.introEnthu = function (userdata, command, msg) {
         users.insertOne(userdata, (err, result) => {});
 
         gtf_DISCORD.delete(msg, {seconds:0})
-        var dir = __dirname.split("/").slice(0,4).join("/") + "/"
         var cmd = gte_TOOLS.homedir();
         cmd.execute(msg, {}, userdata);
 

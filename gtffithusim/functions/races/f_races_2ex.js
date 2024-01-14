@@ -20,7 +20,7 @@ module.exports.raceLengthCalc = function(racesettings, racedetails, finalgrid, c
 module.exports.speedtestresults = function(racelength, racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata) {
   var fpp = gte_PERF.perfEnthu(racesettings["driver"]["car"], "GARAGE")["fpp"];
 
-  var carspeed = gte_PERF.speedCalc(gte_GTF.lengthAlpha(fpp, racesettings["weather"], racesettings["track"]), racesettings["driver"]["car"]);
+  var carspeed = gtf_PERF.speedCalc(gtf_GTF.lengthAlpha(fpp, racesettings["weather"], racesettings["track"]), racesettings["driver"]["car"]);
 
   if (racesettings["title"].includes("400m")) {
     var speedkmh = Math.round(carspeed[0] / 1.6)
@@ -170,7 +170,7 @@ module.exports.driftresults = function(racesettings, racedetails, finalgrid, che
   var place2 = "4th"
   var places = ["3rd", "2nd", "1st"]
   var prize = 0
-  let final = require(__dirname.split("/").slice(0, 4).join("/") + "/" + "functions/races/f_races_2ex").driftsection(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata, true);
+  let final = require(gte_TOOLS.homedir() + "functions/races/f_races_2ex").driftsection(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata, true);
   racesettings["points"] += final[0];
   if (racesettings["points"] >= final[3]) {
     medal = gte_EMOTE.bronzemedal + " BRONZE";
@@ -685,7 +685,7 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
       gte_DISCORD.delete(m, { seconds: 2 })
     });
     var e = Math.ceil((parseInt(racesettings["eventid"].split("-")[1])) / 4)
-    var command = require(__dirname.split("/").slice(0, 4).join("/") + "/" + "commands/drivingrevolution");
+    var command = require(gte_TOOLS.homedir() + "commands/drivingrevolution");
     command.execute(msg, { options: e[0], number: (parseInt(e[1]) + 1) }, userdata);
   }
   if (racesettings["mode"] == "CAREER") {
@@ -720,7 +720,7 @@ module.exports.updateGrid = function(racesettings, racedetails, finalgrid, check
     ////
       
     var fpp = finalgrid[i]["fpp"]
-    var fppadj = gte_PERF.tires(fpp, finalgrid[i], weather, racesettings)
+    var fppadj = gtf_PERF.tires(fpp, finalgrid[i], weather, racesettings)
 
     finalgrid[i]["overtakes"] = 0
     finalgrid[i]["prevposition"] = finalgrid[i]["position"]
@@ -787,7 +787,7 @@ module.exports.updateGrid = function(racesettings, racedetails, finalgrid, check
       finalgrid[i]["tires"] = racesettings["driver"]["car"]["perf"]["tires"]["current"].slice()
       if (racesettings["tireconsumption"] >= 1) {
         finalgrid[i]["tirewear"] = gtf_MATH.round(
-          finalgrid[i]["tirewear"] - gte_PERF.tireWearCalc(racesettings, finalgrid[i]["tires"]), 2)
+          finalgrid[i]["tirewear"] - gtf_PERF.tirewearCalc(racesettings, finalgrid[i]["tires"]), 2)
         if (finalgrid[i]["tirewear"] <= 0) {
           finalgrid[i]["tirewear"] = 0
         }
@@ -804,7 +804,7 @@ module.exports.updateGrid = function(racesettings, racedetails, finalgrid, check
 
     if (racesettings["fuelconsumption"] >= 1) {
       finalgrid[i]["fuel"] = gtf_MATH.round(
-        finalgrid[i]["fuel"] - gte_PERF.fuelCalc(racesettings, finalgrid[i]["fueleco"]), 2)
+        finalgrid[i]["fuel"] - gtf_PERF.fuelCalc(racesettings, finalgrid[i]["fueleco"]), 2)
       if (finalgrid[i]["fuel"] <= 0) {
         finalgrid[i]["fuel"] = 0
       }

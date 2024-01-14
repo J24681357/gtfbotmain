@@ -802,7 +802,7 @@ module.exports.audit = async function() {
       fs.writeFileSync(filename, Buffer.from(body));
     };
 
-    await download2(imagelink, "./images/cars/" + make + "/" + name + "" + oldcar["year"], function() { });
+    await download2(imagelink, "./gtfbot2unleahsed/images/cars/" + make + "/" + name + "" + oldcar["year"], function() { });
 
     //download2(imagelink, "", function () {});
   }

@@ -3,7 +3,7 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 var Canvas = require("@napi-rs/canvas");
 
 module.exports.purchase = function (item, type, special, embed, query , msg, userdata) {
-  var dir = __dirname.split("/").slice(0,4).join("/") + "/"
+  var dir = gte_TOOLS.homedir()
 
   var image = ""
   var info = ""
@@ -300,19 +300,6 @@ var emojilist = [
             gte_STATS.checkRewards("gtfauto", item, userdata);
         }
           gte_STATS.addCredits(-cost, userdata);
-          /*
-          if (type1 == "Car Wash") {
-            embed.setThumbnail("https://github.com/J24681357/gtfbot2unleahsed/raw/master/images/gtauto/carwash/bubbles.gif")
-            embed.setColor(0x2069a9)
-            embed.setDescription("**🚿 Car Wash Successful! " + "-" + gtf_MATH.numFormat(cost) + gte_EMOTE.credits + "**")
-            gte_PERF.carclean(100, userdata)
-            embed.fields = []
-            embed.setFields([{name:gte_STATS.menuFooter(userdata), value: gte_STATS.currentCarFooter(userdata)}]);
-            msg.edit({ embeds: [embed]})
-            gte_STATS.save(userdata);
-            return
-          }
-          */
           successmessage = "Installed **" + name + "** on **" + gtfcar["name"] + "**." + " **-" + gtf_MATH.numFormat(cost) + "**" + gte_EMOTE.credits;
         }
         require(dir + "commands/tune").execute(msg, {options:"list", extra:successmessage}, userdata);
@@ -420,7 +407,7 @@ var emojilist = [
   }
 };
 module.exports.sell = function (item, type, special, embed, query, msg, userdata) {
-  var dir = __dirname.split("/").slice(0,4).join("/") + "/"
+  var dir = gte_TOOLS.homedir()
   var results = "";
   if (type == "CAR") {
     var id = item["ID"];

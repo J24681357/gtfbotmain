@@ -654,9 +654,9 @@ module.exports.loadCarImage = async function(gtfcar, embed, userdata, callback) 
 
   if (!gtfcar["color"]["current"].includes("Default")) {
     if (gtfcar["color"]["current"].includes("Special")) {
-      color = "./images/gtauto/paint/special/" + gtfcar["color"]["current"].split(" ").slice(1).join(" ") + ".png"
+      color = "./gtfbot2unleahsed/images/gtauto/paint/special/" + gtfcar["color"]["current"].split(" ").slice(1).join(" ") + ".png"
     } else {
-      color = "./images/gtauto/paint/" + gtfcar["color"]["current"].split(" ").slice(1).join(" ") + ".png"
+      color = "./gtfbot2unleahsed/images/gtauto/paint/" + gtfcar["color"]["current"].split(" ").slice(1).join(" ") + ".png"
     }
   }
 
@@ -665,7 +665,7 @@ module.exports.loadCarImage = async function(gtfcar, embed, userdata, callback) 
   var rim = gtfcar["rims"]["current"]
   if (!gtfcar["rims"]["current"].includes("Default")) {
     var wheel = gtf_WHEELS.find({ fullname: gtfcar["rims"]["current"] })[0]["make"]
-    wheel = "./images/gtauto/wheels/" + wheel + ".png"
+    wheel = "./gtfbot2unleahsed/images/gtauto/wheels/" + wheel + ".png"
 
   }
 
@@ -1106,11 +1106,11 @@ module.exports.checkNotifications = function(userdata) {
 module.exports.loadAvatarImage = async function(embed, userdata, callback) {
   var Canvas = require("@napi-rs/canvas");
   var { request } = require('undici');
-  var visor = await Canvas.loadImage("./images/gtauto/driver/visor.png")
-  var helmet = await Canvas.loadImage("./images/gtauto/driver/helmet.png")
+  var visor = await Canvas.loadImage("./gtfbot2unleahsed/images/gtauto/driver/visor.png")
+  var helmet = await Canvas.loadImage("./gtfbot2unleahsed/images/gtauto/driver/helmet.png")
 
-  var helmetcolorimage = await Canvas.loadImage("./images/gtauto/paint/" + userdata["driver"]["helmetcolor"] + ".png")
-  var visorcolorimage = await Canvas.loadImage("./images/gtauto/paint/" + userdata["driver"]["visorcolor"] + ".png")
+  var helmetcolorimage = await Canvas.loadImage("./gtfbot2unleahsed/images/gtauto/paint/" + userdata["driver"]["helmetcolor"] + ".png")
+  var visorcolorimage = await Canvas.loadImage("./gtfbot2unleahsed/images/gtauto/paint/" + userdata["driver"]["visorcolor"] + ".png")
 
   if (typeof userdata["driver"]["helmetlogo1"] === 'undefined') {
     userdata["driver"]["helmetlogo1"] = ""

@@ -10,7 +10,6 @@ const client = new Client({
 });
 ////////////////////////////////////////////////////
 var fs = require("fs");
-var gtfbot = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/_botconfig.json", "utf8"));
 /////
 var checklogin = false;
 var cooldowns = new Set();
@@ -162,7 +161,7 @@ client.on("interactionCreate", async interaction => {
         if (!command) return;
 
         // Profile
-        if (gtfbot["maintenance"]) {
+        if (gtf_LIST_BOT["maintenance"]) {
           if (msg.author.id != "237450759233339393" && !command.availinmaint) {
             userdata = gtf_GTF.defaultuserdata(msg.author.id);
             gtf_EMBED.alert({ name: "⚠️️ Maintenance", description: "This bot is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
@@ -206,7 +205,7 @@ client.on("interactionCreate", async interaction => {
         // Updates
 
         if (command.name != "update") {
-          if (userdata["version"] === undefined || userdata["version"] < gtfbot["version"]) {
+          if (userdata["version"] === undefined || userdata["version"] < gtf_LIST_BOT["version"]) {
             gtf_EMBED.alert({ name: "❌ Version Incompatible", description: "Your save data needs to be updated in order to use current features. Use **/update** to update your save to the latest version.", embed: "", seconds: 0 }, msg, userdata);
             return;
           }
@@ -341,7 +340,7 @@ client.destroy().then(function () {
 
   var index1 = 0;
   client.rest.on("rateLimited", info => {
-    gtfbot["msgtimeout"] = info["timeout"];
+    gtf_LIST_BOT["msgtimeout"] = info["timeout"];
 
     /*
     if (info["path"].includes("messages")) {
@@ -443,10 +442,10 @@ var executecommand = function(command, args, msg, userdata) {
 function updatebotstatus() {
 gtf_CONSOLELOG.reverse();
 gtf_CONSOLELOG.fill(255, 255, 0);
-console.log("Maintenance: " + gtfbot["maintenance"]);
+console.log("Maintenance: " + gtf_LIST_BOT["maintenance"]);
 gtf_CONSOLELOG.end();
  
-  if (gtfbot["maintenance"] && typeof gtfbot["maintenance"] === "boolean") {
+  if (gtf_LIST_BOT["maintenance"] && typeof gtf_LIST_BOT["maintenance"] === "boolean") {
     client.user.setPresence({ activities: [{ 
       type: ActivityType.Custom,
       name: "The bot is under maintenance. Commands are not available at the time.",

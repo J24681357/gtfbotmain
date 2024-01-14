@@ -138,7 +138,7 @@ module.exports = {
         return;
       }
     }
-      var races = [...gtf_LIST_CAREERRACES.find({types: [query["options"]] })].filter(function(x) {
+      var races = [...gtf_CAREERRACES.find({types: [query["options"]] })].filter(function(x) {
         if (x["require"].length == 0) {
           return true
         }

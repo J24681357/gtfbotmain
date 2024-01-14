@@ -88,19 +88,19 @@ module.exports.displayCourse = async function (course, callback) {
   var rint = 1
   //var rint = gtf_MATH.randomInt(1,2)
     if (course.location == "Black") {
-  var url = './images/coursemaker/backgrounds' + '/black' + rint.toString() + '.png'
+  var url = './gtfbot2unleahsed/images/coursemaker/backgrounds' + '/black' + rint.toString() + '.png'
   } else if (course.location == "Asphalt") {
-  var url = './images/coursemaker/backgrounds' + '/asphalt' + rint.toString() + '.png'
+  var url = './gtfbot2unleahsed/images/coursemaker/backgrounds' + '/asphalt' + rint.toString() + '.png'
   } else if (course.location == "Grass") {
-  var url = './images/coursemaker/backgrounds' + '/grass' + rint.toString() + '.png'
+  var url = './gtfbot2unleahsed/images/coursemaker/backgrounds' + '/grass' + rint.toString() + '.png'
   } else if (course.location == "Forest") {
-  var url = './images/coursemaker/backgrounds' + '/forest' + rint.toString() + '.png'
+  var url = './gtfbot2unleahsed/images/coursemaker/backgrounds' + '/forest' + rint.toString() + '.png'
   } else if (course.location == "Desert") {
-  var url = './images/coursemaker/backgrounds' +  '/desert' + rint.toString() + '.png'
+  var url = './gtfbot2unleahsed/images/coursemaker/backgrounds' +  '/desert' + rint.toString() + '.png'
   } else if (course.location == "Mountain") {
-  var url = './images/coursemaker/backgrounds' +  '/mountain' + rint.toString() + '.png'
+  var url = './gtfbot2unleahsed/images/coursemaker/backgrounds' +  '/mountain' + rint.toString() + '.png'
   } else if (course.location == "Snow") {
-  var url = './images/coursemaker/backgrounds' +  '/snow' + rint.toString() + '.png'
+  var url = './gtfbot2unleahsed/images/coursemaker/backgrounds' +  '/snow' + rint.toString() + '.png'
   } else {
     var url = ""
   }

@@ -7,16 +7,10 @@ var client = new Client({
   intents: 3276799
 })
 
-require(__dirname + "/" + "files/directories");
 ////////////////////////////////////////////////////
 var fs = require("fs");
 var cooldowns = new Set();
 
-var gtfbot = 
-var cotd = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/carofthedaylist.json", "utf8"));
-
-module.exports.bot = gtfbot
-module.exports.caroftheday = cotd
 var checklogin = false
 var minute = 0
 
@@ -226,7 +220,7 @@ client.login(process.env.SECRET2).then(function() {
   gtm_LIST_BOT["executions"] = 0;
   gtm_LIST_BOT["penalty"] = 0
   fs.writeFileSync(
-    __dirname + "/" + "jsonfiles/_botconfig.json",
+    gtm_TOOLS.homedir() + "jsonfiles/_botconfig.json",
     JSON.stringify(gtm_LIST_BOT),
     function(err, result) {
       if (err) console.log("GTM: error", err);

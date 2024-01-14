@@ -137,7 +137,7 @@ global.gte_EMOTE = {
   "enthudrorangemarker": "<:drorangemarker:1174590947804328006>",
     "enthuoffcourse": "<:offcourse:1171656980415385641>",
     "enthucollisionwall": "<:collisionwall:1171656978884468806>",
-    "enthucollisioncar": "<:collisioncar:1171656976221081701>"
-  "enthuyes": ""
+    "enthucollisioncar": "<:collisioncar:1171656976221081701>",
+  "enthuyes": "<:yesenthu:1195881102183772280>"
 }
 

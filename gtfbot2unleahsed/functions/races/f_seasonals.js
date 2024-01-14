@@ -376,7 +376,7 @@ module.exports.checkseasonals = function() {
          announceseasonal()
          //
        }
-require("fs").writeFile("./jsonfiles/_botconfig.json", require("json-format")(gtf_LIST_BOT), function (err) {
+require("fs").writeFile(gtf_TOOLS.homedir() + "jsonfiles/_botconfig.json", require("json-format")(gtf_LIST_BOT), function (err) {
     if (err) {
       console.log(err);
     }

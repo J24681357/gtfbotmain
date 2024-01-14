@@ -40,7 +40,7 @@ module.exports.addCarEnthu = function (car, arg, userdata) {
 
   var condition = {oil:car["condition"], clean:car["condition"], engine:car["condition"], transmission: car["condition"], suspension:car["condition"], body:car["condition"]}
 
-  var fpp = gte_PERF.perf(car, "DEALERSHIP")["fpp"];
+  var fpp = gte_PERF.perfEnthu(car, "DEALERSHIP")["fpp"];
   var sell = gte_GTFAUTO.sellCalc(car);
   if (arg != "LOAN") {
     userdata["stats"]["numcarpurchases"]++;
@@ -75,7 +75,7 @@ module.exports.addCarEnthu = function (car, arg, userdata) {
     condition: condition,
     totalmileage: 0
   };
-  newcar["fpp"] = gte_PERF.perf(newcar, "GARAGE")["fpp"];
+  newcar["fpp"] = gte_PERF.perfEnthu(newcar, "GARAGE")["fpp"];
 
 
   if (arg == "ITEM" || arg == "LOAN") {

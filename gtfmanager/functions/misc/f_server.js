@@ -2,7 +2,7 @@ const {  Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBu
 ////////////////////////////////////////////////////
 
 module.exports.savechannels = async function(client) {
-  var gtfbot = require(gtf.MAIN).bot
+  var gtfbot = gtf_LIST_BOT
   var fs = require("fs")
   //var channels_new = JSON.parse(fs.readFileSync('./jsonfiles/channels_new.json', 'utf8'))['channels'];
   var list = [];

@@ -10,8 +10,7 @@ global.gtf_CONSOLELOG = require(home + "files/colors")
 
 global.gtf_WEATHER = require(home + "data/gtfweather");
 global.gtf_TIME = require(home + "data/gtftime");
-global.gtf_LIST_CAREERRACES = require(home + "data/gtfcareerlist");
-global.gtf_FITHUSIMRACES = require(home + "data/gtfcareerlist");
+global.gtf_CAREERRACES = require(home + "data/gtfcareerlist");
 global.gtf_CARS = require(home + "data/gtfcarlist");
 global.gtf_TRACKS = require(home + "data/gtftracklist");
 global.gtf_PARTS = require(home + "data/gtfpartlist");

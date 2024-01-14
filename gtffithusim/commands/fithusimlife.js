@@ -390,7 +390,7 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
       if (!gte_STATS.checkEnthuPoints(embed, msg, userdata)) {
         return;
       }
-      require(__dirname.split("/").slice(0,4).join("/") + "/" + "commands/garage").execute(msg, {options:"list"}, userdata)
+      require(gte_TOOLS.homedir() + "commands/garage").execute(msg, {options:"list"}, userdata)
       return
     }
 
