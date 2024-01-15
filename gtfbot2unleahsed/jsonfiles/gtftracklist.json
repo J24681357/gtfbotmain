@@ -9,7 +9,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-testcourse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-testcourse.png"
 	},
 	"2": {
 		"name": "Alsace - Test Course Reverse",
@@ -21,7 +21,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-testcoursereverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-testcoursereverse.png"
 	},
 	"3": {
 		"name": "Alsace - Village",
@@ -33,7 +33,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-village.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-village.png"
 	},
 	"4": {
 		"name": "Alsace - Village Reverse",
@@ -45,7 +45,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-villagereverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-villagereverse.png"
 	},
 	"5": {
 		"name": "Apricot Hill Raceway",
@@ -57,7 +57,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/apricothillraceway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/apricothillraceway.png"
 	},
 	"6": {
 		"name": "Apricot Hill Raceway Reverse",
@@ -69,7 +69,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/apricothillracewayreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/apricothillracewayreverse.png"
 	},
 	"7": {
 		"name": "Ascari - Full Track",
@@ -81,7 +81,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/ascari-fulltrack.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/ascari-fulltrack.png"
 	},
 	"8": {
 		"name": "Autodrome Lago Maggiore - Center",
@@ -93,7 +93,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-center.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-center.png"
 	},
 	"9": {
 		"name": "Autodrome Lago Maggiore - Center Reverse",
@@ -105,7 +105,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-centerreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-centerreverse.png"
 	},
 	"10": {
 		"name": "Autodrome Lago Maggiore - East",
@@ -117,7 +117,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-east.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-east.png"
 	},
 	"11": {
 		"name": "Autodrome Lago Maggiore - East End",
@@ -129,7 +129,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-eastend.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-eastend.png"
 	},
 	"12": {
 		"name": "Autodrome Lago Maggiore - East End Reverse",
@@ -141,7 +141,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-eastendreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-eastendreverse.png"
 	},
 	"13": {
 		"name": "Autodrome Lago Maggiore - East Reverse",
@@ -153,7 +153,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-eastreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-eastreverse.png"
 	},
 	"14": {
 		"name": "Autodrome Lago Maggiore - GP",
@@ -165,7 +165,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-gp.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-gp.png"
 	},
 	"15": {
 		"name": "Autodrome Lago Maggiore - GP Reverse",
@@ -177,7 +177,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-gpreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-gpreverse.png"
 	},
 	"16": {
 		"name": "Autodrome Lago Maggiore - West",
@@ -189,7 +189,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-west.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-west.png"
 	},
 	"17": {
 		"name": "Autodrome Lago Maggiore - West End",
@@ -201,7 +201,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-westend.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-westend.png"
 	},
 	"18": {
 		"name": "Autodrome Lago Maggiore - West End Reverse",
@@ -213,7 +213,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-westendreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-westendreverse.png"
 	},
 	"19": {
 		"name": "Autodrome Lago Maggiore - West Reverse",
@@ -225,7 +225,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-westreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-westreverse.png"
 	},
 	"20": {
 		"name": "Autodromo De Interlagos",
@@ -237,7 +237,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromodeinterlagos.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromodeinterlagos.png"
 	},
 	"21": {
 		"name": "Autodromo Nazionale Monza",
@@ -249,7 +249,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromonazionalemonza.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromonazionalemonza.png"
 	},
 	"22": {
 		"name": "Autodromo Nazionale Monza (1980s)",
@@ -261,7 +261,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromonazionalemonza(1980s).png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromonazionalemonza(1980s).png"
 	},
 	"23": {
 		"name": "Autodromo Nazionale Monza (No Chicane)",
@@ -273,7 +273,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromonazionalemonza(nochicane).png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromonazionalemonza(nochicane).png"
 	},
 	"24": {
 		"name": "Autopolis - Full Course",
@@ -285,7 +285,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autopolis-fullcourse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autopolis-fullcourse.png"
 	},
 	"25": {
 		"name": "Autopolis - Shortcut Course",
@@ -297,7 +297,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autopolis-shortcutcourse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autopolis-shortcutcourse.png"
 	},
 	"26": {
 		"name": "Autumn Ring",
@@ -309,7 +309,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnring.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnring.png"
 	},
 	"27": {
 		"name": "Autumn Ring - Mini",
@@ -321,7 +321,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnring-mini.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnring-mini.png"
 	},
 	"28": {
 		"name": "Autumn Ring - Mini Reverse",
@@ -333,7 +333,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnring-minireverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnring-minireverse.png"
 	},
 	"29": {
 		"name": "Autumn Ring Reverse",
@@ -345,7 +345,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnringreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnringreverse.png"
 	},
 	"30": {
 		"name": "Blue Moon Bay Speedway",
@@ -357,7 +357,7 @@
 		"options": [
 			"N/A"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway.png"
 	},
 	"31": {
 		"name": "Blue Moon Bay Speedway - Infield A",
@@ -369,7 +369,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infielda.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infielda.png"
 	},
 	"32": {
 		"name": "Blue Moon Bay Speedway - Infield A Reverse",
@@ -381,7 +381,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infieldareverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infieldareverse.png"
 	},
 	"33": {
 		"name": "Blue Moon Bay Speedway - Infield B",
@@ -393,7 +393,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infieldb.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infieldb.png"
 	},
 	"34": {
 		"name": "Blue Moon Bay Speedway - Infield B Reverse",
@@ -405,7 +405,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infieldbreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infieldbreverse.png"
 	},
 	"35": {
 		"name": "Blue Moon Bay Speedway Reverse",
@@ -417,7 +417,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedwayreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedwayreverse.png"
 	},
 	"36": {
 		"name": "Brands Hatch - GP",
@@ -429,7 +429,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-gp.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-gp.png"
 	},
 	"37": {
 		"name": "Brands Hatch - GP (1980s)",
@@ -441,7 +441,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-gp(1980s).png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-gp(1980s).png"
 	},
 	"38": {
 		"name": "Brands Hatch - Indy",
@@ -453,7 +453,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-indy.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-indy.png"
 	},
 	"39": {
 		"name": "Brands Hatch - Indy (1980s)",
@@ -465,7 +465,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-indy(1980s).png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-indy(1980s).png"
 	},
 	"40": {
 		"name": "Broad Bean Raceway",
@@ -477,7 +477,7 @@
 		"options": [
 			"N/A"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/broadbeanraceway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/broadbeanraceway.png"
 	},
 	"41": {
 		"name": "Broad Bean Raceway Reverse",
@@ -489,7 +489,7 @@
 		"options": [
 			"N/A"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/broadbeanracewayreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/broadbeanracewayreverse.png"
 	},
 	"42": {
 		"name": "Cape Ring",
@@ -501,7 +501,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering.png"
 	},
 	"43": {
 		"name": "Cape Ring - Inside",
@@ -513,7 +513,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-inside.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-inside.png"
 	},
 	"44": {
 		"name": "Cape Ring - North",
@@ -525,7 +525,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-north.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-north.png"
 	},
 	"45": {
 		"name": "Cape Ring - Periphery",
@@ -537,7 +537,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-periphery.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-periphery.png"
 	},
 	"46": {
 		"name": "Cape Ring - South",
@@ -549,7 +549,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-south.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-south.png"
 	},
 	"47": {
 		"name": "Chamonix - East",
@@ -561,7 +561,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-east.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-east.png"
 	},
 	"48": {
 		"name": "Chamonix - Main",
@@ -573,7 +573,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-main.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-main.png"
 	},
 	"49": {
 		"name": "Chamonix - Mini",
@@ -585,7 +585,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-mini.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-mini.png"
 	},
 	"50": {
 		"name": "Chamonix - West",
@@ -597,7 +597,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-west.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-west.png"
 	},
 	"51": {
 		"name": "Chamonix (2000s)",
@@ -609,7 +609,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix(2000s).png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix(2000s).png"
 	},
 	"52": {
 		"name": "Circuit de Barcelona-Catalunya - Grand Prix",
@@ -621,7 +621,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-grandprix.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-grandprix.png"
 	},
 	"53": {
 		"name": "Circuit de Barcelona-Catalunya - Grand Prix (No Chicane)",
@@ -633,7 +633,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-grandprix(nochicane).png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-grandprix(nochicane).png"
 	},
 	"54": {
 		"name": "Circuit de Barcelona-Catalunya - National Layout",
@@ -645,7 +645,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-nationallayout.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-nationallayout.png"
 	},
 	"55": {
 		"name": "Circuit de Barcelona-Catalunya - Rallycross Layout",
@@ -657,7 +657,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-rallycrosslayout.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-rallycrosslayout.png"
 	},
 	"56": {
 		"name": "Circuit de la Sarthe",
@@ -669,7 +669,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdelasarthe.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdelasarthe.png"
 	},
 	"57": {
 		"name": "Circuit de la Sarthe (No Chicanes)",
@@ -681,7 +681,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdelasarthe(nochicanes).png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdelasarthe(nochicanes).png"
 	},
 	"58": {
 		"name": "Circuit de Sainte-Croix - A",
@@ -693,7 +693,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-a.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-a.png"
 	},
 	"59": {
 		"name": "Circuit de Sainte-Croix - A Reverse",
@@ -705,7 +705,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-areverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-areverse.png"
 	},
 	"60": {
 		"name": "Circuit de Sainte-Croix - B",
@@ -717,7 +717,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-b.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-b.png"
 	},
 	"61": {
 		"name": "Circuit de Sainte-Croix - B Reverse",
@@ -729,7 +729,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-breverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-breverse.png"
 	},
 	"62": {
 		"name": "Circuit de Sainte-Croix - C",
@@ -741,7 +741,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-c.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-c.png"
 	},
 	"63": {
 		"name": "Circuit de Sainte-Croix - C Reverse",
@@ -753,7 +753,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-creverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-creverse.png"
 	},
 	"64": {
 		"name": "Circuit de Spa-Francorchamps",
@@ -765,7 +765,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdespa-francorchamps.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdespa-francorchamps.png"
 	},
 	"65": {
 		"name": "Circuit de Valencia",
@@ -777,7 +777,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdevalencia.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdevalencia.png"
 	},
 	"66": {
 		"name": "Circuito de la Sierra",
@@ -789,7 +789,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodelasierra.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodelasierra.png"
 	},
 	"67": {
 		"name": "Circuito de Madrid",
@@ -801,7 +801,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadrid.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadrid.png"
 	},
 	"68": {
 		"name": "Circuito de Madrid - Mini",
@@ -813,7 +813,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadrid-mini.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadrid-mini.png"
 	},
 	"69": {
 		"name": "Circuito de Madrid – Mini Reverse",
@@ -825,7 +825,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadrid–minireverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadrid–minireverse.png"
 	},
 	"70": {
 		"name": "Circuito de Madrid Reverse",
@@ -837,7 +837,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadridreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadridreverse.png"
 	},
 	"71": {
 		"name": "Circuito di Roma",
@@ -849,7 +849,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodiroma.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodiroma.png"
 	},
 	"72": {
 		"name": "Citta di Aria",
@@ -861,7 +861,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/cittadiaria.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/cittadiaria.png"
 	},
 	"73": {
 		"name": "Colorado Springs - Lake",
@@ -873,7 +873,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/coloradosprings-lake.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/coloradosprings-lake.png"
 	},
 	"74": {
 		"name": "Colorado Springs - Lake Reverse",
@@ -885,7 +885,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/coloradosprings-lakereverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/coloradosprings-lakereverse.png"
 	},
 	"75": {
 		"name": "Complex String",
@@ -897,7 +897,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/complexstring.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/complexstring.png"
 	},
 	"76": {
 		"name": "Costa di Amalfi",
@@ -909,7 +909,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/costadiamalfi.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/costadiamalfi.png"
 	},
 	"77": {
 		"name": "Cote d'Azur",
@@ -921,7 +921,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/coted'azur.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/coted'azur.png"
 	},
 	"78": {
 		"name": "Daytona International Speedway",
@@ -933,7 +933,7 @@
 		"options": [
 			null
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/daytonainternationalspeedway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/daytonainternationalspeedway.png"
 	},
 	"79": {
 		"name": "Daytona Road Course",
@@ -945,7 +945,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/daytonaroadcourse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/daytonaroadcourse.png"
 	},
 	"80": {
 		"name": "Deep Forest Raceway",
@@ -957,7 +957,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestraceway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestraceway.png"
 	},
 	"81": {
 		"name": "Deep Forest Raceway (2010s)",
@@ -969,7 +969,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestraceway(2010s).png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestraceway(2010s).png"
 	},
 	"82": {
 		"name": "Deep Forest Raceway (2010s) Reverse",
@@ -981,7 +981,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestraceway(2010s)reverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestraceway(2010s)reverse.png"
 	},
 	"83": {
 		"name": "Deep Forest Raceway Reverse",
@@ -993,7 +993,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestracewayreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestracewayreverse.png"
 	},
 	"84": {
 		"name": "Dragon Trail - Gardens",
@@ -1005,7 +1005,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-gardens.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-gardens.png"
 	},
 	"85": {
 		"name": "Dragon Trail - Gardens Reverse",
@@ -1017,7 +1017,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-gardensreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-gardensreverse.png"
 	},
 	"86": {
 		"name": "Dragon Trail - Seaside",
@@ -1029,7 +1029,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-seaside.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-seaside.png"
 	},
 	"87": {
 		"name": "Dragon Trail - Seaside Reverse",
@@ -1041,7 +1041,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-seasidereverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-seasidereverse.png"
 	},
 	"88": {
 		"name": "Driving Park - Beginner Course",
@@ -1053,7 +1053,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/drivingpark-beginnercourse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/drivingpark-beginnercourse.png"
 	},
 	"89": {
 		"name": "Driving Park - Motorland",
@@ -1065,7 +1065,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/drivingpark-motorland.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/drivingpark-motorland.png"
 	},
 	"90": {
 		"name": "Driving Park - Test Course",
@@ -1077,7 +1077,7 @@
 		"options": [
 			"N/A"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/drivingpark-testcourse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/drivingpark-testcourse.png"
 	},
 	"91": {
 		"name": "Eiger Nordwand - Short Track",
@@ -1089,7 +1089,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/eigernordwand-shorttrack.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/eigernordwand-shorttrack.png"
 	},
 	"92": {
 		"name": "Eiger Nordwand - Short Track Reverse",
@@ -1101,7 +1101,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/eigernordwand-shorttrackreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/eigernordwand-shorttrackreverse.png"
 	},
 	"93": {
 		"name": "El Capitan",
@@ -1113,7 +1113,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/elcapitan.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/elcapitan.png"
 	},
 	"94": {
 		"name": "Fishermans Ranch",
@@ -1125,7 +1125,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fishermansranch.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fishermansranch.png"
 	},
 	"95": {
 		"name": "Fishermans Ranch Reverse",
@@ -1137,7 +1137,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fishermansranchreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fishermansranchreverse.png"
 	},
 	"96": {
 		"name": "Fuji International Speedway",
@@ -1149,7 +1149,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway.png"
 	},
 	"97": {
 		"name": "Fuji International Speedway - Short",
@@ -1161,7 +1161,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway-short.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway-short.png"
 	},
 	"98": {
 		"name": "Fuji International Speedway (1980s)",
@@ -1173,7 +1173,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway(1980s).png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway(1980s).png"
 	},
 	"99": {
 		"name": "Fuji International Speedway (1990s)",
@@ -1185,7 +1185,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway(1990s).png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway(1990s).png"
 	},
 	"100": {
 		"name": "George V Paris",
@@ -1197,7 +1197,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/georgevparis.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/georgevparis.png"
 	},
 	"101": {
 		"name": "Goodwood Motor Circuit",
@@ -1209,7 +1209,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/goodwoodmotorcircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/goodwoodmotorcircuit.png"
 	},
 	"102": {
 		"name": "Gran Turismo Arena",
@@ -1221,7 +1221,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/granturismoarena.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/granturismoarena.png"
 	},
 	"103": {
 		"name": "Gran Turismo Arena Reverse",
@@ -1233,7 +1233,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/granturismoarenareverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/granturismoarenareverse.png"
 	},
 	"104": {
 		"name": "Grand Valley - East",
@@ -1245,7 +1245,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-east.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-east.png"
 	},
 	"105": {
 		"name": "Grand Valley - Highway 1",
@@ -1257,7 +1257,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-highway1.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-highway1.png"
 	},
 	"106": {
 		"name": "Grand Valley - Highway 1 Reverse",
@@ -1269,7 +1269,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-highway1reverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-highway1reverse.png"
 	},
 	"107": {
 		"name": "Grand Valley - South",
@@ -1281,7 +1281,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-south.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-south.png"
 	},
 	"108": {
 		"name": "Grand Valley - South Reverse",
@@ -1293,7 +1293,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-southreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-southreverse.png"
 	},
 	"109": {
 		"name": "Grand Valley East Reverse",
@@ -1305,7 +1305,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalleyeastreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalleyeastreverse.png"
 	},
 	"110": {
 		"name": "Grand Valley Speedway",
@@ -1317,7 +1317,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalleyspeedway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalleyspeedway.png"
 	},
 	"111": {
 		"name": "Grand Valley Speedway Reverse",
@@ -1329,7 +1329,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalleyspeedwayreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalleyspeedwayreverse.png"
 	},
 	"112": {
 		"name": "Grindelwald",
@@ -1341,7 +1341,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grindelwald.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grindelwald.png"
 	},
 	"113": {
 		"name": "High Speed Ring",
@@ -1353,7 +1353,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedring.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedring.png"
 	},
 	"114": {
 		"name": "High Speed Ring (2010s)",
@@ -1365,7 +1365,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedring(2010s).png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedring(2010s).png"
 	},
 	"115": {
 		"name": "High Speed Ring (2010s) Reverse",
@@ -1377,7 +1377,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedring(2010s)reverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedring(2010s)reverse.png"
 	},
 	"116": {
 		"name": "High Speed Ring Reverse",
@@ -1389,7 +1389,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedringreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedringreverse.png"
 	},
 	"117": {
 		"name": "Hong Kong Circuit",
@@ -1401,7 +1401,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/hongkongcircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/hongkongcircuit.png"
 	},
 	"118": {
 		"name": "Indianapolis Motor Speedway",
@@ -1413,7 +1413,7 @@
 		"options": [
 			"N/A"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/indianapolismotorspeedway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/indianapolismotorspeedway.png"
 	},
 	"119": {
 		"name": "Indianapolis Road Course",
@@ -1425,7 +1425,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/indianapolisroadcourse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/indianapolisroadcourse.png"
 	},
 	"120": {
 		"name": "Infineon Raceway - Sports Car Course",
@@ -1437,7 +1437,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/infineonraceway-sportscarcourse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/infineonraceway-sportscarcourse.png"
 	},
 	"121": {
 		"name": "Infineon Raceway - Stock Car Course",
@@ -1449,7 +1449,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/infineonraceway-stockcarcourse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/infineonraceway-stockcarcourse.png"
 	},
 	"122": {
 		"name": "Kyoto Driving Park - Full Course",
@@ -1461,7 +1461,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-fullcourse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-fullcourse.png"
 	},
 	"123": {
 		"name": "Kyoto Driving Park - Full Course Reverse",
@@ -1473,7 +1473,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-fullcoursereverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-fullcoursereverse.png"
 	},
 	"124": {
 		"name": "Kyoto Driving Park - Miyabi",
@@ -1485,7 +1485,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-miyabi.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-miyabi.png"
 	},
 	"125": {
 		"name": "Kyoto Driving Park - Yamagiwa",
@@ -1497,7 +1497,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-yamagiwa.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-yamagiwa.png"
 	},
 	"126": {
 		"name": "Kyoto Driving Park - Yamagiwa Reverse",
@@ -1509,7 +1509,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-yamagiwareverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-yamagiwareverse.png"
 	},
 	"127": {
 		"name": "Lake Louise - Long Track",
@@ -1521,7 +1521,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-longtrack.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-longtrack.png"
 	},
 	"128": {
 		"name": "Lake Louise - Long Track Reverse",
@@ -1533,7 +1533,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-longtrackreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-longtrackreverse.png"
 	},
 	"129": {
 		"name": "Lake Louise - Short Track",
@@ -1545,7 +1545,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-shorttrack.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-shorttrack.png"
 	},
 	"130": {
 		"name": "Lake Louise - Short Track Reverse",
@@ -1557,7 +1557,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-shorttrackreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-shorttrackreverse.png"
 	},
 	"131": {
 		"name": "Lake Louise - Tri-Oval",
@@ -1569,7 +1569,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-tri-oval.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-tri-oval.png"
 	},
 	"132": {
 		"name": "Lake Louise - Tri-Oval Reverse",
@@ -1581,7 +1581,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-tri-ovalreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-tri-ovalreverse.png"
 	},
 	"133": {
 		"name": "London Circuit",
@@ -1593,7 +1593,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/londoncircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/londoncircuit.png"
 	},
 	"134": {
 		"name": "London Circuit Reverse",
@@ -1605,7 +1605,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/londoncircuitreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/londoncircuitreverse.png"
 	},
 	"135": {
 		"name": "Matterhorn - Dristelen",
@@ -1617,7 +1617,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-dristelen.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-dristelen.png"
 	},
 	"136": {
 		"name": "Matterhorn - Riffelsee",
@@ -1629,7 +1629,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-riffelsee.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-riffelsee.png"
 	},
 	"137": {
 		"name": "Matterhorn - Rotenboden",
@@ -1641,7 +1641,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-rotenboden.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-rotenboden.png"
 	},
 	"138": {
 		"name": "Matterhorn - Short",
@@ -1653,7 +1653,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-short.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-short.png"
 	},
 	"139": {
 		"name": "Michelin Raceway Road Atlanta",
@@ -1665,7 +1665,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/michelinracewayroadatlanta.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/michelinracewayroadatlanta.png"
 	},
 	"140": {
 		"name": "Mid-Field Raceway",
@@ -1677,7 +1677,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/mid-fieldraceway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/mid-fieldraceway.png"
 	},
 	"141": {
 		"name": "Mid-Field Raceway Reverse",
@@ -1689,7 +1689,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/mid-fieldracewayreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/mid-fieldracewayreverse.png"
 	},
 	"142": {
 		"name": "Mount Panorama Circuit",
@@ -1701,7 +1701,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/mountpanoramacircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/mountpanoramacircuit.png"
 	},
 	"143": {
 		"name": "New York Circuit",
@@ -1713,7 +1713,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/newyorkcircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/newyorkcircuit.png"
 	},
 	"144": {
 		"name": "Northern Isle Speedway",
@@ -1725,7 +1725,7 @@
 		"options": [
 			"N/A"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/northernislespeedway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/northernislespeedway.png"
 	},
 	"145": {
 		"name": "Nurburgring 24h",
@@ -1737,7 +1737,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgring24h.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgring24h.png"
 	},
 	"146": {
 		"name": "Nurburgring Endurance",
@@ -1749,7 +1749,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgringendurance.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgringendurance.png"
 	},
 	"147": {
 		"name": "Nurburgring GP",
@@ -1761,7 +1761,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgringgp.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgringgp.png"
 	},
 	"148": {
 		"name": "Nurburgring Nordschleife",
@@ -1773,7 +1773,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgringnordschleife.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgringnordschleife.png"
 	},
 	"149": {
 		"name": "Nurburgring Sprint",
@@ -1785,7 +1785,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgringsprint.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgringsprint.png"
 	},
 	"150": {
 		"name": "Opera Paris",
@@ -1797,7 +1797,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/operaparis.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/operaparis.png"
 	},
 	"151": {
 		"name": "Red Bull Ring",
@@ -1809,7 +1809,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/redbullring.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/redbullring.png"
 	},
 	"152": {
 		"name": "Red Bull Ring - Short Track",
@@ -1821,7 +1821,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/redbullring-shorttrack.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/redbullring-shorttrack.png"
 	},
 	"153": {
 		"name": "Red Rock Valley Speedway",
@@ -1833,7 +1833,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/redrockvalleyspeedway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/redrockvalleyspeedway.png"
 	},
 	"154": {
 		"name": "Rome Circuit",
@@ -1845,7 +1845,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/romecircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/romecircuit.png"
 	},
 	"155": {
 		"name": "Sardegna - Road Track A",
@@ -1857,7 +1857,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtracka.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtracka.png"
 	},
 	"156": {
 		"name": "Sardegna - Road Track A Reverse",
@@ -1869,7 +1869,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackareverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackareverse.png"
 	},
 	"157": {
 		"name": "Sardegna - Road Track B",
@@ -1881,7 +1881,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackb.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackb.png"
 	},
 	"158": {
 		"name": "Sardegna - Road Track B Reverse",
@@ -1893,7 +1893,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackbreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackbreverse.png"
 	},
 	"159": {
 		"name": "Sardegna - Road Track C",
@@ -1905,7 +1905,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackc.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackc.png"
 	},
 	"160": {
 		"name": "Sardegna - Road Track C Reverse",
@@ -1917,7 +1917,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackcreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackcreverse.png"
 	},
 	"161": {
 		"name": "Sardegna - Windmills",
@@ -1929,7 +1929,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-windmills.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-windmills.png"
 	},
 	"162": {
 		"name": "Sardegna - Windmills Reverse",
@@ -1941,7 +1941,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-windmillsreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-windmillsreverse.png"
 	},
 	"163": {
 		"name": "Seattle - Short Circuit",
@@ -1953,7 +1953,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/seattle-shortcircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/seattle-shortcircuit.png"
 	},
 	"164": {
 		"name": "Seattle Circuit",
@@ -1965,7 +1965,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/seattlecircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/seattlecircuit.png"
 	},
 	"165": {
 		"name": "Seoul Central",
@@ -1977,7 +1977,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/seoulcentral.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/seoulcentral.png"
 	},
 	"166": {
 		"name": "Silverstone - GP",
@@ -1989,7 +1989,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-gp.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-gp.png"
 	},
 	"167": {
 		"name": "Silverstone - International Circuit",
@@ -2001,7 +2001,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-internationalcircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-internationalcircuit.png"
 	},
 	"168": {
 		"name": "Silverstone - National Circuit",
@@ -2013,7 +2013,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-nationalcircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-nationalcircuit.png"
 	},
 	"169": {
 		"name": "Silverstone - Stowe Circuit",
@@ -2025,7 +2025,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-stowecircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-stowecircuit.png"
 	},
 	"170": {
 		"name": "Special Stage Route 11",
@@ -2037,7 +2037,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute11.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute11.png"
 	},
 	"171": {
 		"name": "Special Stage Route 5",
@@ -2049,7 +2049,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5.png"
 	},
 	"172": {
 		"name": "Special Stage Route 5 - Clubman",
@@ -2061,7 +2061,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5-clubman.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5-clubman.png"
 	},
 	"173": {
 		"name": "Special Stage Route 5 - Clubman Reverse",
@@ -2073,7 +2073,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5-clubmanreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5-clubmanreverse.png"
 	},
 	"174": {
 		"name": "Special Stage Route 5 Reverse",
@@ -2085,7 +2085,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5reverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5reverse.png"
 	},
 	"175": {
 		"name": "Special Stage Route 7",
@@ -2097,7 +2097,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute7.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute7.png"
 	},
 	"176": {
 		"name": "Special Stage Route X",
@@ -2109,7 +2109,7 @@
 		"options": [
 			"N/A"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroutex.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroutex.png"
 	},
 	"177": {
 		"name": "Super Speedway",
@@ -2121,7 +2121,7 @@
 		"options": [
 			"N/A"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/superspeedway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/superspeedway.png"
 	},
 	"178": {
 		"name": "Suzuka Circuit",
@@ -2133,7 +2133,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/suzukacircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/suzukacircuit.png"
 	},
 	"179": {
 		"name": "Suzuka Circuit - East",
@@ -2145,7 +2145,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/suzukacircuit-east.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/suzukacircuit-east.png"
 	},
 	"180": {
 		"name": "Suzuka Circuit - West",
@@ -2157,7 +2157,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/suzukacircuit-west.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/suzukacircuit-west.png"
 	},
 	"181": {
 		"name": "Tahiti Road",
@@ -2169,7 +2169,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tahitiroad.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tahitiroad.png"
 	},
 	"182": {
 		"name": "Tokyo Expressway - Central Clockwise",
@@ -2181,7 +2181,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-centralclockwise.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-centralclockwise.png"
 	},
 	"183": {
 		"name": "Tokyo Expressway - Central Counterclockwise",
@@ -2193,7 +2193,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-centralcounterclockwise.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-centralcounterclockwise.png"
 	},
 	"184": {
 		"name": "Tokyo Expressway - East Clockwise",
@@ -2205,7 +2205,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-eastclockwise.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-eastclockwise.png"
 	},
 	"185": {
 		"name": "Tokyo Expressway - East Counterclockwise",
@@ -2217,7 +2217,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-eastcounterclockwise.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-eastcounterclockwise.png"
 	},
 	"186": {
 		"name": "Tokyo Expressway - South Clockwise",
@@ -2229,7 +2229,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-southclockwise.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-southclockwise.png"
 	},
 	"187": {
 		"name": "Tokyo Expressway - South Counterclockwise",
@@ -2241,7 +2241,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-southcounterclockwise.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-southcounterclockwise.png"
 	},
 	"188": {
 		"name": "Tokyo R246",
@@ -2253,7 +2253,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyor246.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyor246.png"
 	},
 	"189": {
 		"name": "Tokyo R246 Reverse",
@@ -2265,7 +2265,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyor246reverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyor246reverse.png"
 	},
 	"190": {
 		"name": "Top Gear - Test Track",
@@ -2277,7 +2277,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/topgear-testtrack.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/topgear-testtrack.png"
 	},
 	"191": {
 		"name": "Toscana",
@@ -2289,7 +2289,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/toscana.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/toscana.png"
 	},
 	"192": {
 		"name": "Toscana Reverse",
@@ -2301,7 +2301,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/toscanareverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/toscanareverse.png"
 	},
 	"193": {
 		"name": "Trial Mountain Circuit",
@@ -2313,7 +2313,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuit.png"
 	},
 	"194": {
 		"name": "Trial Mountain Circuit (2010s)",
@@ -2325,7 +2325,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuit(2010s).png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuit(2010s).png"
 	},
 	"195": {
 		"name": "Trial Mountain Circuit (2010s) Reverse",
@@ -2337,7 +2337,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuit(2010s)reverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuit(2010s)reverse.png"
 	},
 	"196": {
 		"name": "Trial Mountain Circuit Reverse",
@@ -2349,7 +2349,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuitreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuitreverse.png"
 	},
 	"197": {
 		"name": "Tsukuba Circuit",
@@ -2361,7 +2361,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tsukubacircuit.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tsukubacircuit.png"
 	},
 	"198": {
 		"name": "Twin Ring Motegi - East",
@@ -2373,7 +2373,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-east.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-east.png"
 	},
 	"199": {
 		"name": "Twin Ring Motegi - Road Course",
@@ -2385,7 +2385,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-roadcourse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-roadcourse.png"
 	},
 	"200": {
 		"name": "Twin Ring Motegi - Super Speedway",
@@ -2397,7 +2397,7 @@
 		"options": [
 			"N/A"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-superspeedway.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-superspeedway.png"
 	},
 	"201": {
 		"name": "Twin Ring Motegi - West",
@@ -2409,7 +2409,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-west.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-west.png"
 	},
 	"202": {
 		"name": "Watkins Glen International",
@@ -2421,7 +2421,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/watkinsgleninternational.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/watkinsgleninternational.png"
 	},
 	"203": {
 		"name": "Watkins Glen International - Short Course",
@@ -2433,7 +2433,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/watkinsgleninternational-shortcourse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/watkinsgleninternational-shortcourse.png"
 	},
 	"204": {
 		"name": "WeatherTech Raceway Laguna Seca",
@@ -2445,7 +2445,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/weathertechracewaylagunaseca.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/weathertechracewaylagunaseca.png"
 	},
 	"205": {
 		"name": "Willow Springs - Big Willow",
@@ -2457,7 +2457,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-bigwillow.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-bigwillow.png"
 	},
 	"206": {
 		"name": "Willow Springs - Horse Thief Mile",
@@ -2469,7 +2469,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-horsethiefmile.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-horsethiefmile.png"
 	},
 	"207": {
 		"name": "Willow Springs - Horse Thief Mile Reverse",
@@ -2481,7 +2481,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-horsethiefmilereverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-horsethiefmilereverse.png"
 	},
 	"208": {
 		"name": "Willow Springs - Streets of Willow",
@@ -2493,7 +2493,7 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-streetsofwillow.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-streetsofwillow.png"
 	},
 	"209": {
 		"name": "Willow Springs - Streets of Willow Reverse",
@@ -2505,6 +2505,6 @@
 		"options": [
 			"Drift"
 		],
-		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-streetsofwillowreverse.png"
+		"pattern": ["⬛", "⬛"], "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-streetsofwillowreverse.png"
 	}
 }

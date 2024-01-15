@@ -873,15 +873,6 @@ module.exports.checkTireRegulations = function (gtfcar, regulations, func, embed
     return false;
   }
 };
-module.exports.loadingText = function (title, carname) {
-  if (carname === undefined) {
-    carname = "";
-  } else if (carname != "") {
-    carname = "\n\n🚘 " + "**" + carname + "**";
-  }
-
-  return title + "\n" + gte_EMOTE.loading + " **Loading** " + gte_EMOTE.loading + carname;
-};
 module.exports.garageMenu = function (regulations, func, args, [garagepage, gmenulist, gmenulistselect, gemojilist, namex, menu, functionlist2, buttons, hundredpage, totallength], msg, embed, userdata) {
   var sorting = userdata["settings"]["GARAGESORT"];
   var filterlist = [];

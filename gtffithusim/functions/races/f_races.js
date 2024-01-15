@@ -56,8 +56,7 @@ module.exports.prepRace = function(raceprep, gtfcar, embed, msg, userdata) {
     */
   }
 
-  var loading = gte_GTF.loadingText("__**" + racesettings["title"] + "**__" + "\n" +
-    "**" + racesettings["track"]["name"] + "\n" + "**", carname);
+  var loading = gte_EMOTE.fithusimlogo + " **Loading** " + gte_EMOTE.fithusimlogo;
 
   embed.setDescription(loading);
   var screen = true

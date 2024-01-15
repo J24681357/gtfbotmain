@@ -342,7 +342,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         var emojilist = [
   { emoji: gte_EMOTE.fithusimlogo, 
   emoji_name: "fithusimlogo", 
-  name: 'Race', 
+  name: 'Join', 
   extra: "",
   button_id: 0 }
 ] 
