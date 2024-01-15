@@ -190,23 +190,18 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         
       })
        embed.setTitle("__**" + league + "**__" + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")
-      var total = 6
+      var total = 7
       if (league == "RN") {
-        total = 4
+        total = 5
       } else if (league == "RS") {
-        total = 1
+        total = 2
       }
-      for (var i = 0; i < total; i++) {
+      for (var i = 1; i < total; i++) {
         var event = gte_TOOLS.randomItem(races, gte_STATS.week(userdata) + i)
         event["eventid"] = event["eventid"].split("-")[0] + "-" + (i)
         
       event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
-        
-      var rtrack = gtf_TRACKS.random(event["tracks"][0], 1)[0]
-        
-      var laps = gte_RACE.lapCalc(rtrack['length'], {"RN": 6, "RIV": 6, "RIII": 9, "RII": 10, "RI": 13, "RS": 28}[league])[0]
-        
-      event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
+          
       event["driver"] = {car: gtfcar}
 
       if (event["title"].includes("One-Make")) {
@@ -241,7 +236,6 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
           return fpp
         }))
         finalgrid = finalgrid.map(function(x) {
-
           var fpp = x["fpp"]
           if (x["user"]) {
             fpp = gte_PERF.perfEnthu(gtf_CARS.get({ make: gtfcar["make"], fullname: gtfcar["name"]}), "DEALERSHIP")["fpp"]
@@ -257,7 +251,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
           x["position"] = i+1
           return x
         })
-        var userodds = finalgrid.filter(x => x["user"] == true)[0]["odds"]
+        event["userodds"] = finalgrid.filter(x => x["user"] == true)[0]["odds"]
         var points = gte_RACE.creditsCalcEnthu(event).map(x => "**" + x["place"] + "**  " + Math.round(x["points"] * userodds) + " pts")
         var results = "**" + event["title"] + "**" + "\n" + points.slice(0,4).join("\n") + "\n\n" + finalgrid.map(function(x) {
           if (x["user"]) {
@@ -268,27 +262,37 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
           }
 
         })
-  
+
         allraces.push(event)
-         
-        list.push (
-            "__**" + event["title"] + "**__" + " " + rtrack["name"].replace(" Reverse", " 🔄") +
-            "/n" + "`" + userodds + "` " + rtrack["length"] + " km. \\ " + event["grid"][0] + " CARS \\ " + laps + " LAPS"
-        )
-        images.push(rtrack["image"])
-        
+
       }
-      if (typeof query["racenumber"] !== "undefined") {
-        var number = query["racenumber"]-1
-        
-        var event = {...allraces[number]}
-////
- 
-        event["eventid"] = event["eventid"].split("-")[0] + "-" + (number)
-        event["driver"] = {car: gte_STATS.currentCar(userdata)}
-        var points = gte_RACE.creditsCalcEnthu(event).map(x => "**" + x["place"] + "**  " + x["points"] + " pts")
+    allraces = [...allraces.sort(function(x,y) {return y["userodds"] - x["userodds"]})]
+      
+      list = allraces.map(function(event) {
+        var rtrack = gtf_TRACKS.random(event["tracks"][0], 1)[0]
 
         event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
+        var laps = gte_RACE.lapCalc(rtrack['length'], {"RN": 6, "RIV": 6, "RIII": 9, "RII": 10, "RI": 13, "RS": 28}[league])[0]
+
+        images.push(rtrack["image"])
+        
+      return "__**" + event["title"] + "**__" + " " + rtrack["name"].replace(" Reverse", " 🔄") +
+          "/n" + "`" + event["userodds"] + "` " + rtrack["length"] + " km. \\ " + event["grid"][0] + " CARS \\ " + laps + " LAPS"
+    })
+        
+      if (typeof query["racenumber"] !== "undefined") {
+        var number = query["racenumber"]-1
+        var id = allraces[number]["eventid"]
+        
+        var event = allraces.filter(x=> x["eventid"] == id)[0]
+////
+ 
+        //event["eventid"] = event["eventid"].split("-")[0] + "-" + (number)
+        event["driver"] = {car: gte_STATS.currentCar(userdata)}
+        var points = gte_RACE.creditsCalcEnthu(event).map(x => "**" + x["place"] + "**  " + x["points"] + " pts")
+        console.log(event["tracks"][0]["seed"])
+        event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
+        console.log(event["tracks"][0]["seed"])
          var rtrack = gtf_TRACKS.random(event["tracks"][0], 1)[0]
         event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
 
@@ -308,9 +312,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         finalgrid = finalgrid.map(function(x){
           var fpp = x["fpp"]
           if (x["user"]) {
-
             fpp = gte_PERF.perfEnthu(gtf_CARS.get({ make: gtfcar["make"], fullname: gtfcar["name"]}), "DEALERSHIP")["fpp"]
-          
           }
           var num = fpp - average
           

@@ -166,7 +166,7 @@ module.exports.random = function (args, num) {
     if (seed == -1) {
     rlist.push(list[Math.floor(Math.random() * list.length)]);
     } else {
-      rlist.push(list[gtf_MATH.randomIntSeed(0, list.length-1, seed)])
+      rlist.push(list[gtf_MATH.randomIntSeed(0, list.length-1, seed+i)])
     }
   }
   return rlist;

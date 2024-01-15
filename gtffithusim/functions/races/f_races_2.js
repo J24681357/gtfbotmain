@@ -129,12 +129,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
         if (racesettings["type"] == "TIMETRIAL") {
           var results2 = gte_RACEEX.timetrialresults(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata);
           embed.setDescription(results2);
-          embed.setFields([
-            {
-              name: gte_STATS.menuFooterEnthu(userdata),
-              value: "🚘 " + gtf_CARS.shortName(racesettings["driver"]["car"]["name"]) + " " + "**" + racesettings["driver"]["car"]["fpp"] + gte_EMOTE.fpp + "**",
-            },
-          ]);
+
           ////exit from session with no results
           gte_DISCORD.send(msg, { content: "<@" + userdata["id"] + "> **FINISH**", embeds: [embed] }, race2func);
           function race2func(msg) {
@@ -270,10 +265,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
                   var name = [gtf_CARS.shortName(x["name"]), x["drivername"]][userdata["settings"]["GRIDNAME"]];
                   var stops = x["pitstops"] >= 1 ? " " + gte_EMOTE.pit + "`" + x["pitstops"] + "`" : "";
 
-                  if (racesettings["mode"] == "ONLINE") {
-                    name = gtf_CARS.shortName(x["name"]) + " `" + x["drivername"] + "`";
-                    return x["position"] + ". " + gap + name + stops;
-                  }
+                
                   if (x["user"]) {
                     return "**" + x["position"] + ".** " + gap + " **" + name + "**" + stops;
                   } else {
@@ -477,17 +469,14 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
             embed.setThumbnail(thumbnail);
           }
 
-          racedetails = finalgrid
-            .slice()
-            .map(function (x) {
+          racedetails = finalgrid.map(function (x) {
               var gap = x["position"] == 1 ? "" : "`+" + x["gap"] + "`";
               if (x["user"]) {
                 return "**" + x["position"] + ". " + gtf_CARS.shortName(x["name"]) + "**" + " " + gap;
               } else {
                 return x["position"] + ". " + gtf_CARS.shortName(x["name"]) + " " + gap;
               }
-            })
-            .join("\n");
+            }).join("\n");
 
           if (racesettings["mode"] == "CAREER" || racesettings["mode"] == "LICENSE" || racesettings["mode"] == "ONLINE") {
             if (racesettings["type"] != "TIMETRIAL" && racesettings["type"] != "DRIFT") {
@@ -520,13 +509,12 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
             embed.setDescription(results2 + "\n\n" + racedetails);
           }
 
-          var field2 = racesettings["driver"]["car"] == "" ? gte_EMOTE.transparent : gtf_CARS.shortName(racesettings["driver"]["car"]["name"]) + " " + "**" + racesettings["driver"]["car"]["fpp"] + gte_EMOTE.fpp + "**";
+          
           var ping = "<@" + userdata["id"] + ">";
           var user = msg.user;
           if (racesettings["mode"] == "ONLINE") {
             ping = "@everyone";
           } else {
-            embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: field2 }]);
           }
 
           if (racesettings["mode"] == "CAREER") {
