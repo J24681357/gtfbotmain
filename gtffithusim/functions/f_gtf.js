@@ -15,13 +15,13 @@ module.exports.explimit = 1000000;
 module.exports.commandlist = [
   ["fithusimlife", "Fithusim Life", "🏁"],
   ["drivingrevolution", "Driving Revolution", "💳"],
-  ["generationselect", "Generation Select (Fithusim Life)", "🎉"],
+  ["generationselect", "Generation Select (Fithusim Life)", "🎉"], ["settings", "Settings", "⚙"],
 ];
 
 module.exports.defaultsettings = {
   MODE: "Neutral",
   GMODE: 0,
-  GARAGESORT: "Oldest Added",
+  GARAGESORT: "Highest FPP",
   DEALERSORT: "Lowest Price",
   RACEDM: 0,
   UNITS: 0,
@@ -120,7 +120,7 @@ module.exports.checkRegulations = function (gtfcar, racesettings, func, embed, m
       fppsuccess = true;
     }
     if (!fppsuccess) {
-      errors.push("**FPP Limit:** " + "**" + fpp + "**" + gte_EMOTE.fpp + " -> " + "**" + fpplimit + "**" + gte_EMOTE.fpp);
+      errors.push("**FPP Limit:** " + "**" + fpp + "**" + gtf_EMOTE.fpp + " -> " + "**" + fpplimit + "**" + gtf_EMOTE.fpp);
     }
   }
 
@@ -175,7 +175,7 @@ module.exports.checkRegulations = function (gtfcar, racesettings, func, embed, m
       minfppsuccess = true;
     }
     if (!minfppsuccess) {
-      errors.push("**Minimum FPP:** " + "**" + fpp + "**" + gte_EMOTE.fpp + " -> " + "**" + minfpplimit + "**" + gte_EMOTE.fpp);
+      errors.push("**Minimum FPP:** " + "**" + fpp + "**" + gtf_EMOTE.fpp + " -> " + "**" + minfpplimit + "**" + gtf_EMOTE.fpp);
     }
   }
 
@@ -311,7 +311,7 @@ module.exports.checkRegulations = function (gtfcar, racesettings, func, embed, m
 
   var conditionsuccess = false;
   if (gte_CONDITION.condition(gtfcar)["health"] <= 20) {
-    errors.push(gte_EMOTE.cardead + " The car condition is **Bad** and must be repaired in GTF Auto.");
+    errors.push(gtf_EMOTE.cardead + " The car condition is **Bad** and must be repaired in GTF Auto.");
   }
 
   if (typeof func == "string") {
@@ -357,7 +357,7 @@ module.exports.checkRegulations = function (gtfcar, racesettings, func, embed, m
       embed.setColor(0x460000);
       embed.setTitle("❌ Regulations Breached");
       embed.setDescription("Your **" + gtfcar["name"] + "** does not meet the regulations for **" + title + "**." + "\n\n" + errors.join("\n") + "\n\n" + "**❗ None of your garage cars are eligible.**");
-      gte_DISCORD.send(msg, { embeds: [embed], components: buttons }, func);
+      gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, func);
       function func(msg) {
         function gtfdealer() {
           require(gte_TOOLS.homedir() + "commands/car").execute(
@@ -376,7 +376,7 @@ module.exports.checkRegulations = function (gtfcar, racesettings, func, embed, m
     embed.setTitle("❌ Regulations Breached");
     embed.setDescription("Your **" + gtfcar["name"] + "** does not meet the regulations for **" + title + "**." + "\n\n" + errors.join("\n") + "\n\n" + "**❗ See the menu below for eligible cars in your garage.**");
 
-    gte_DISCORD.send(msg, { embeds: [embed], components: [menu] }, garagefunc);
+    gtf_DISCORD.send(msg, { embeds: [embed], components: [menu] }, garagefunc);
 
     function garagefunc(msg) {
       [garagepage, gmenulist, gmenulistselect, gemojilist, namex, menu, functionlist2, buttons, hundredpage, totallength] = gte_GTF.garageMenuFunctions(
@@ -471,7 +471,7 @@ module.exports.checkRegulationsEnthu = function (gtfcar, racesettings, func, emb
       fppsuccess = true;
     }
     if (!fppsuccess) {
-    errors.push("**FPP Limit:** " + "**" + fpp + "**" + gte_EMOTE.fpp + " -> " + "**" + fpplimit + "**" + gte_EMOTE.fpp);
+    errors.push("**FPP Limit:** " + "**" + fpp + "**" + gtf_EMOTE.fpp + " -> " + "**" + fpplimit + "**" + gtf_EMOTE.fpp);
   }
   }
   */
@@ -528,7 +528,7 @@ module.exports.checkRegulationsEnthu = function (gtfcar, racesettings, func, emb
       minfppsuccess = true;
     }
     if (!minfppsuccess) {
-    errors.push("**Minimum FPP:** " + "**" + fpp + "**" + gte_EMOTE.fpp + " -> " + "**" + minfpplimit + "**" + gte_EMOTE.fpp);
+    errors.push("**Minimum FPP:** " + "**" + fpp + "**" + gtf_EMOTE.fpp + " -> " + "**" + minfpplimit + "**" + gtf_EMOTE.fpp);
   }
   }
     */
@@ -665,7 +665,7 @@ module.exports.checkRegulationsEnthu = function (gtfcar, racesettings, func, emb
 
   var conditionsuccess = false;
   if (gte_CONDITION.condition(gtfcar)["health"] <= 20) {
-    errors.push(gte_EMOTE.cardead + " The car condition is **Bad** and must be repaired in GTF Auto.");
+    errors.push(gtf_EMOTE.cardead + " The car condition is **Bad** and must be repaired in GTF Auto.");
   }
 
   if (typeof func == "string") {
@@ -711,7 +711,7 @@ module.exports.checkRegulationsEnthu = function (gtfcar, racesettings, func, emb
       embed.setColor(0x460000);
       embed.setTitle("❌ Regulations Breached");
       embed.setDescription("Your **" + gtfcar["name"] + "** does not meet the regulations for **" + title + "**." + "\n\n" + errors.join("\n") + "\n\n" + "**❗ None of your garage cars are eligible.**");
-      gte_DISCORD.send(msg, { embeds: [embed], components: buttons }, func);
+      gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, func);
       function func(msg) {
         function gtfdealer() {
           require(gte_TOOLS.homedir() + "commands/car").execute(
@@ -730,7 +730,7 @@ module.exports.checkRegulationsEnthu = function (gtfcar, racesettings, func, emb
     embed.setTitle("❌ Regulations Breached");
     embed.setDescription("Your **" + gtfcar["name"] + "** does not meet the regulations for **" + title + "**." + "\n\n" + errors.join("\n") + "\n\n" + "**❗ See the menu below for eligible cars in your garage.**");
 
-    gte_DISCORD.send(msg, { embeds: [embed], components: [menu] }, garagefunc);
+    gtf_DISCORD.send(msg, { embeds: [embed], components: [menu] }, garagefunc);
 
     function garagefunc(msg) {
       [garagepage, gmenulist, gmenulistselect, gemojilist, namex, menu, functionlist2, buttons, hundredpage, totallength] = gte_GTF.garageMenuFunctions(
@@ -836,13 +836,13 @@ module.exports.checkTireRegulations = function (gtfcar, regulations, func, embed
     var menu = gte_TOOLS.prepareMenu("Change Tires " + "(" + gtfcar["perf"]["tires"]["current"] + ")", tmenulist, temojilist, msg, userdata);
 
     if (tmenulist.length == 0) {
-      var emojilist = [{ emoji: gte_EMOTE.gtauto, emoji_name: "gtauto", name: "GTF Auto - Tires", extra: "", button_id: 0 }];
+      var emojilist = [{ emoji: gtf_EMOTE.gtauto, emoji_name: "gtauto", name: "GTF Auto - Tires", extra: "", button_id: 0 }];
       var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
 
       embed.setColor(0x460000);
       embed.setTitle("❌ Tires Prohibited");
       embed.setDescription("Your **" + gtfcar["name"] + "** does not meet the regulations for this event." + "\n\n" + errors.join("\n") + "\n\n" + "**❗ There are no tires eligible.**");
-      gte_DISCORD.send(msg, { embeds: [embed], components: buttons }, func);
+      gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, func);
       function func(msg) {
         function gtfautotires() {
           require(gte_TOOLS.homedir() + "commands/tune").execute(msg, { options: "tires" }, userdata);
@@ -857,7 +857,7 @@ module.exports.checkTireRegulations = function (gtfcar, regulations, func, embed
     embed.setTitle("❌ Tires Prohibited");
     embed.setDescription("Your **" + gtfcar["name"] + "** does not meet the regulations for this event." + "\n\n" + errors.join("\n") + "\n\n" + "**❗ See the menu below to change tires.**");
 
-    gte_DISCORD.send(msg, { embeds: [embed], components: [menu] }, regfunc);
+    gtf_DISCORD.send(msg, { embeds: [embed], components: [menu] }, regfunc);
 
     function regfunc(msg) {
       var functionlist = [];
@@ -865,7 +865,7 @@ module.exports.checkTireRegulations = function (gtfcar, regulations, func, embed
         functionlist.push(function (int) {
           gtfcar["perf"]["tires"]["current"] = tireslist[int];
           func();
-          gte_DISCORD.delete(msg, { seconds: 2 });
+          gtf_DISCORD.delete(msg, { seconds: 2 });
         });
       }
       gte_TOOLS.createButtons(menu, temojilist, functionlist, msg, userdata);
@@ -1190,7 +1190,7 @@ module.exports.giftRoulette = function (title, results, prizes, special, embed, 
   embed.setTitle("__" + title + "__");
 
   embed.setDescription(results);
-  gte_DISCORD.send(msg, { embeds: [embed] }, giftsfunc);
+  gtf_DISCORD.send(msg, { embeds: [embed] }, giftsfunc);
 
   function giftsfunc(msg) {
     var index = 0;
@@ -1198,7 +1198,7 @@ module.exports.giftRoulette = function (title, results, prizes, special, embed, 
     var results1 = function (index) {
       var list = [];
       for (var j = 0; j < count; j++) {
-        var emote = j == index ? gte_EMOTE.rightarrow : gte_EMOTE.transparent;
+        var emote = j == index ? gtf_EMOTE.rightarrow : gtf_EMOTE.transparent;
         list.push(emote + " ||" + prizes[j]["name"] + "||");
       }
       return list.join("\n");
@@ -1251,9 +1251,9 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
         list.push("⬜" + " __" + finalgrid[j]["name"] + "__");
       } else {
         if (indexes.includes(j)) {
-          list.push(gte_EMOTE.transparent + " " + finalgrid[j]["name"]);
+          list.push(gtf_EMOTE.transparent + " " + finalgrid[j]["name"]);
         } else {
-          list.push(" ||" + gte_EMOTE.transparent + " " + finalgrid[j]["name"] + "||");
+          list.push(" ||" + gtf_EMOTE.transparent + " " + finalgrid[j]["name"] + "||");
         }
       }
     }
@@ -1266,7 +1266,7 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
 
     var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
     gte_STATS.saveEnthu(userdata);
-    gte_DISCORD.edit(msg, { embeds: [embed], components: buttons }, func);
+    gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, func);
 
     function func(msg) {
       function ok() {
@@ -1289,7 +1289,7 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
   }
 
   embed.setColor(0xFFFFFF)
-  gte_DISCORD.send(msg, { embeds: [embed] }, giftsfunc);
+  gtf_DISCORD.send(msg, { embeds: [embed] }, giftsfunc);
 
   function giftsfunc(msg) {
     var index = 0;
@@ -1319,7 +1319,7 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
 
         var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
         gte_STATS.saveEnthu(userdata);
-        gte_DISCORD.edit(msg, { embeds: [embed], components: buttons }, func);
+        gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, func);
 
         function func(msg) {
           function ok() {
@@ -1338,11 +1338,11 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
       embed.setImage(car["image"][0]);
       embed.setTitle("__CAR UNLOCKED!__");
 
-      var emojilist = [{ emoji: gte_EMOTE.fithusimlogo, emoji_name: "fithusimlogo", name: "OK", extra: "", button_id: 0 }];
+      var emojilist = [{ emoji: gtf_EMOTE.fithusimlogo, emoji_name: "fithusimlogo", name: "OK", extra: "", button_id: 0 }];
 
       var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
       gte_STATS.saveEnthu(userdata);
-      gte_DISCORD.edit(msg, { embeds: [embed], components: buttons }, func);
+      gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, func);
 
       function func(msg) {
         function ok() {
@@ -1413,7 +1413,7 @@ module.exports.resultsSummaryEnthu = function (racesettings, finalgrid, embed, m
     list.join("\n") + "\n" + "Your ranking has " + ranking + "\n\n" + "**Skill Points:** +" + latestrace["skillpoints"] + "pts" + " `-" + latestrace["damage"] + "pts`" + "\n" + levelstats + "\n" + carstats + "\n" + "**Enthu Points:** " + "Recovered **" + recoverypoints + " Enthu Points.**"
   );
 
-  var emojilist = [{ emoji: gte_EMOTE.fithusimlogo, emoji_name: "fithusimlogo", name: "OK", extra: "", button_id: 0 }];
+  var emojilist = [{ emoji: gtf_EMOTE.fithusimlogo, emoji_name: "fithusimlogo", name: "OK", extra: "", button_id: 0 }];
 
   var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
   gte_STATS.saveEnthu(userdata);
@@ -1422,7 +1422,7 @@ module.exports.resultsSummaryEnthu = function (racesettings, finalgrid, embed, m
     var files = [attachment];
     embed.setImage("attachment://bimage.png");
     embed.setColor(0xFFFFFF)
-    gte_DISCORD.send(msg, { embeds: [embed], components: buttons, files: files }, func);
+    gtf_DISCORD.send(msg, { embeds: [embed], components: buttons, files: files }, func);
   }
 
   function func(msg) {
@@ -1440,11 +1440,11 @@ module.exports.noEnthuPointsScreen = function (embed, msg, userdata) {
   embed.setDescription("You cannot earn skill points since you have no Enthu points.\nYou cannot join the next race.");
   embed.setTitle("__**You have lost all Enthu Points.**__");
 
-  var emojilist = [{ emoji: gte_EMOTE.fithusimlogo, emoji_name: "fithusimlogo", name: "OK", extra: "", button_id: 0 }];
+  var emojilist = [{ emoji: gtf_EMOTE.fithusimlogo, emoji_name: "fithusimlogo", name: "OK", extra: "", button_id: 0 }];
 
   var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
   gte_STATS.saveEnthu(userdata);
-  gte_DISCORD.send(msg, { embeds: [embed], components: buttons }, func);
+  gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, func);
 
   function func(msg) {
     function ok() {

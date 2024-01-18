@@ -7,9 +7,9 @@
           embed.setFields([{
           name:gte_STATS.menuFooterEnthu(userdata),
           value: "🚘 " +  gtf_CARS.shortName(racesettings["driver"]["car"]["name"]) +
-" " + "**" + racesettings["driver"]["car"]["fpp"] + gte_EMOTE.fpp + "**"}]);
+" " + "**" + racesettings["driver"]["car"]["fpp"] + gtf_EMOTE.fpp + "**"}]);
             ////exit from session with no results
-         gte_DISCORD.send(msg, {content: "<@" + userdata["id"] + "> **FINISH**", embeds: [embed]}, race2func)
+         gtf_DISCORD.send(msg, {content: "<@" + userdata["id"] + "> **FINISH**", embeds: [embed]}, race2func)
             function race2func(msg) {
           gte_RACEEX.createRaceButtons(racesettings, racedetails, finalgrid,  checkpoint, results2, buttons, emojilist, embed, msg, userdata);
 
@@ -17,7 +17,7 @@
          var complete = gte_STATS.checkEvent(racesettings, "1st", userdata);
                 if (complete) {
             gte_STATS.completeEvent(racesettings, userdata);
-              gte_STATS.redeemGift(gte_EMOTE.goldmedal + " Congrats! Completed " + racesettings["title"].split(" - ")[0] + " " + gte_EMOTE.goldmedal, racesettings["prize"], embed, msg, userdata);
+              gte_STATS.redeemGift(gtf_EMOTE.goldmedal + " Congrats! Completed " + racesettings["title"].split(" - ")[0] + " " + gtf_EMOTE.goldmedal, racesettings["prize"], embed, msg, userdata);
                 }
           } else if (racesettings["mode"] == "LICENSE") {
              var option = racesettings["eventid"].replace("LICENSE", "").toLowerCase().split("-")[0]

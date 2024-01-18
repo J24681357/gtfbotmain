@@ -136,7 +136,7 @@ client.on("threadMembersUpdate", (addedMembers, removedMembers, thread) => {
     results = "ℹ️ **" + "<@" + id + "> has joined the room.**"
     embed.setColor(0x808080);
     embed.setDescription(results);
-    gte_DISCORD.send(thread, { embeds: [embed], type1: "CHANNEL" })
+    gtf_DISCORD.send(thread, { embeds: [embed], type1: "CHANNEL" })
 
     gte_LOBBY.joinlobby(user, thread)
   }
@@ -148,7 +148,7 @@ client.on("threadMembersUpdate", (addedMembers, removedMembers, thread) => {
     results = "ℹ️ **" + "<@" + id + "> has left the room.**"
     embed.setColor(0x808080);
     embed.setDescription(results);
-    gte_DISCORD.send(thread, { embeds: [embed], type1: "CHANNEL" })
+    gtf_DISCORD.send(thread, { embeds: [embed], type1: "CHANNEL" })
     gte_LOBBY.leavelobby(user, thread)
   }
 
@@ -402,7 +402,7 @@ client.login(process.env.SECRET3).then(async function() {
       client.guilds.cache
         .get(gte_SERVERID)
         .members.cache.get("237450759233339393")
-        .send({ content: "**RATE LIMIT DETECTED**" + "\n\n" + "**Timeout:** " + gte_DATETIME.getFormattedTime(info["timeout"]) + "\n" + "**Message:** " + "https://discord.com/channels/" + gte_SERVERID + "/" + channelid + "/" + messageid + "\n\n" + JSON.stringify(info) });
+        .send({ content: "**RATE LIMIT DETECTED**" + "\n\n" + "**Timeout:** " + gtf_DATETIME.getFormattedTime(info["timeout"]) + "\n" + "**Message:** " + "https://discord.com/channels/" + gte_SERVERID + "/" + channelid + "/" + messageid + "\n\n" + JSON.stringify(info) });
     }
     */
   });

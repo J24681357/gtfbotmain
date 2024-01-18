@@ -31,7 +31,7 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
       userdata["weekseed"] = gtf_MATH.randomInt(0,9).toString() + gtf_MATH.randomInt(0,9).toString() +gtf_MATH.randomInt(0,9).toString() + gtf_MATH.randomInt(0,9).toString() + gtf_MATH.randomInt(0,9).toString()
       userdata["enthupoints"] = 300
       userdata["totalenthupoints"] = 300
-      require(__filename.split("/").slice(0,4).join("/") + "/" + "commands/settings").execute(msg, {options:"list", extra:"Mode has been changed to **" + pageargs["list"][query["number"] - 1] + "**." + " " + "Ranking, week, Enthu points, and starter car has been reset."}, userdata);
+      require(gte_TOOLS.homedir() + "commands/settings").execute(msg, {options:"list", extra:"Mode has been changed to **" + pageargs["list"][query["number"] - 1] + "**." + " " + "Ranking, week, Enthu points, and starter car has been reset."}, userdata);
       return "✅";
     };
   }
@@ -58,7 +58,7 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
     embed.setTitle("⚙ __GTF Settings - Embed Color (" + pageargs["list"].length + " Items)__");
     var applysetting = function () {
       userdata["settings"]["COLOR"] = pageargs["list"][query["number"] - 1].split(" | ")[1]
-      require(__filename.split("/").slice(0,4).join("/") + "/" + "commands/settings").execute(msg, {options:"list", extra:"Your **Embed Color** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
+      require(gte_TOOLS.homedir() + "commands/settings").execute(msg, {options:"list", extra:"Your **Embed Color** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
 
       return "✅";
     };
@@ -83,7 +83,7 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
     embed.setTitle("⚙ __GTF Settings - Dealership Catalog Sort (" + pageargs["list"].length + " Items)__");
     var applysetting = function () {
       userdata["settings"]["DEALERSORT"] = pageargs["list"][query["number"] - 1]
-      require(__filename.split("/").slice(0,4).join("/") + "/" + "commands/settings").execute(msg, {options:"list", extra:"Your **Dealership Sort** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
+      require(gte_TOOLS.homedir() + "commands/settings").execute(msg, {options:"list", extra:"Your **Dealership Sort** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
 
       return "✅";
     };
@@ -110,7 +110,7 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
     var applysetting = function () {
       userdata["settings"]["GARAGESORT"] = pageargs["list"][query["number"] - 1]
       gte_STATS.sortGarage(userdata)    
-      require(__filename.split("/").slice(0,4).join("/") + "/" + "commands/settings").execute(msg, {options:"list", extra:"Your **Garage Sort** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
+      require(gte_TOOLS.homedir() + "commands/settings").execute(msg, {options:"list", extra:"Your **Garage Sort** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
 
       return "✅";
     };
@@ -131,7 +131,7 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
 
     var applysetting = function () {
       userdata["settings"]["UNITS"] = query["number"] - 1;
-      require(__filename.split("/").slice(0,4).join("/") + "/" + "commands/settings").execute(msg, {options:"list", extra:"Your **Metric Units** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
+      require(gte_TOOLS.homedir() + "commands/settings").execute(msg, {options:"list", extra:"Your **Metric Units** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
       return "✅";
     };
   }
@@ -153,7 +153,7 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
       gte_STATS.setMileage(0, userdata);
       gte_STATS.addRaceMulti(-100, userdata)
       userdata["dailyworkout"] = true;
-      require(__filename.split("/").slice(0,4).join("/") + "/" + "commands/settings").execute(msg, {options:"list", extra:"Local time has been set to **" + pageargs["list"][query["number"] - 1] + "**." + "\n⚠️ Daily workout and race multiplier have been reset."}, userdata);
+      require(gte_TOOLS.homedir() + "commands/settings").execute(msg, {options:"list", extra:"Local time has been set to **" + pageargs["list"][query["number"] - 1] + "**." + "\n⚠️ Daily workout and race multiplier have been reset."}, userdata);
     };
     pageargs["list"] = []
     for (var index = 0; index < 24; index++) {
@@ -210,7 +210,7 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
       var select = bar[0]
 
       userdata["settings"]["ICONS"] = {select:select, bar: bar};
-      require(__filename.split("/").slice(0,4).join("/") + "/" + "commands/settings").execute(msg, {options:"list", extra:"Your **Menu Icons** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
+      require(gte_TOOLS.homedir() + "commands/settings").execute(msg, {options:"list", extra:"Your **Menu Icons** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
       return "✅";
     };
   }
@@ -229,7 +229,7 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
      embed.setTitle("⚙ __GTF Settings - Messages (" + pageargs["list"].length + " Items)__");
     var applysetting = function () {
       userdata["settings"]["MESSAGES"] = query["number"] - 1;
-      require(__filename.split("/").slice(0,4).join("/") + "/" + "commands/settings").execute(msg, {options:"list", extra:"Messages has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
+      require(gte_TOOLS.homedir() + "commands/settings").execute(msg, {options:"list", extra:"Messages has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
       return "✅";
     };
   }
@@ -269,13 +269,13 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
 
     var applysetting = function () {
       userdata["settings"]["GRIDNAME"] = query["number"] - 1;
-      require(__filename.split("/").slice(0,4).join("/") + "/" + "commands/settings").execute(msg, {options:"list", extra:"Your **Grid Display Names** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
+      require(gte_TOOLS.homedir() + "commands/settings").execute(msg, {options:"list", extra:"Your **Grid Display Names** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
       return "✅";
     };
   }
   if (query["options"] == "reset") {
       userdata["settings"] = gte_GTF.defaultsettings
-      require(__filename.split("/").slice(0,4).join("/") + "/" + "commands/settings").execute(msg, {options:"list", extra:"Settings has been reset to default."}, userdata);
+      require(gte_TOOLS.homedir() + "commands/settings").execute(msg, {options:"list", extra:"Settings has been reset to default."}, userdata);
       return "✅";
   }
 

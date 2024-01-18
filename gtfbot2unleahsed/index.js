@@ -31,8 +31,6 @@ var datebot = new Date().getTime();
 var date = new Date();
 var timeelapsed = 0;
 
-
-
 setTimeout(function() {
   if (!checklogin) {
     restartbot()

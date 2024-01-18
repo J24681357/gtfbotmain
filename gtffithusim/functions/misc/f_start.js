@@ -32,22 +32,22 @@ module.exports.intro = function (userdata, command, msg) {
     embed.setDescription("Welcome to the world of GT Fitness! This is the second release codenamed Unleahsed!\n\nYou may start on your career and find other cool features by using **/home** or looking through the slash commands for the GTF bot." + "\n\n" + 
     "You will be given your first car; you can check it out in your garage (**/garage**)! You can participate in many other events such as Career (**/career**) & Arcade (**/arcade**). You can unlock modes along the way as a GTF driver." + "\n\n" + 
     "There is a manual for the GTF game. Click the link button below to access it!" +
-    "\n\n**❗ Click the " + gte_EMOTE.yes + " button to complete the setup.**");
+    "\n\n**❗ Click the " + gtf_EMOTE.fithusimlogo + " button to complete the setup.**");
 
 
-     var emojilist = [{ emoji: gte_EMOTE.yes, 
-  emoji_name: "Yes", 
+     var emojilist = [{ emoji: gtf_EMOTE.fithusimlogo, 
+  emoji_name: "fithusimlogo", 
   name: '', 
   extra: "Once",
   button_id: 0 },
-  { emoji: gte_EMOTE.gtlogoblue,
+  { emoji: gtf_EMOTE.gtlogoblue,
   emoji_name: "gtlogoblue",
   name: 'Manual',
   extra: "https://j24681357.github.io/gtfbot2unleahsed/",
   button_id: 1 }             
   ]
     var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
-  gte_DISCORD.send(msg, {embeds:[embed], components: buttons}, startfunc)
+  gtf_DISCORD.send(msg, {embeds:[embed], components: buttons}, startfunc)
 
 
     function startfunc(msg) {
@@ -152,7 +152,7 @@ module.exports.intro = function (userdata, command, msg) {
         embed.setImage("https://github.com/J24681357/gtfbot2unleahsed/raw/master/images/logo/gtfgamelogo.png")
         embed.setDescription("**✅ Join The Fitness Race!**");
         msg.edit({embeds:[embed]}).then(function(msg) { 
-        gte_DISCORD.delete(msg, {seconds:5})
+        gtf_DISCORD.delete(msg, {seconds:5})
         return
       })
 
@@ -188,23 +188,23 @@ module.exports.introEnthu = function (userdata, command, msg) {
     embed.setAuthor({name: user, iconURL: avatar});
 
     embed.setTitle("⚠ __**" + "Before You Start" + "**__ ⚠");
-    embed.setThumbnail("https://github.com/J24681357/gtfbotmain/raw/master/gtfbot2unleahsed/images/logo/fithusimlogo.png");
-    embed.setDescription("Welcome to Fithusim! This game is heavily inspired by the 2005 video game, Enthusia Professional Racing. Those who are familiar with Enthusia would find the gameplay of GTF: Fithusim more comfortable." + "\nThis is the DEMO version of GTF: Fithusim. Demo saves will not be transferable in the full version." +
-    "\n\n**❗ Click the " + gte_EMOTE.yes + " button to create your save.**");
+    embed.setThumbnail("https://github.com/J24681357/gtfbotmain/raw/master/gtffithusim/images/logo/fithusimlogo.png");
+    embed.setDescription("Welcome to Fithusim! This game is heavily inspired by the 2005 video game, Enthusia Professional Racing. Those who are familiar with Enthusia would find the gameplay of GTF: Fithusim more comfortable." + "\n**❗ This is the DEMO version of GTF: Fithusim. Demo saves will not be transferable in the full version.**" +
+    "\n\n**❗ Click the " + gtf_EMOTE.fithusimlogo + " button to create your save.**");
 
-     var emojilist = [{ emoji: gte_EMOTE.yes, 
-  emoji_name: "Yes", 
+     var emojilist = [{ emoji: gtf_EMOTE.fithusimlogo, 
+  emoji_name: "fithusimlogo", 
   name: '', 
   extra: "Once",
   button_id: 0 },
-  { emoji: gte_EMOTE.fithusimlogo,
+  { emoji: gtf_EMOTE.fithusimlogo,
   emoji_name: "fithusimlogo",
   name: 'Manual',
   extra: "https://j24681357.github.io/gtfbotfithusim/",
   button_id: 1 }             
   ]
     var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
-  gte_DISCORD.send(msg, {embeds:[embed], components: buttons}, startfunc)
+  gtf_DISCORD.send(msg, {embeds:[embed], components: buttons}, startfunc)
 
 
     function startfunc(msg) {
@@ -289,7 +289,7 @@ module.exports.introEnthu = function (userdata, command, msg) {
 
         users.insertOne(userdata, (err, result) => {});
 
-        gte_DISCORD.delete(msg, {seconds:0})
+        gtf_DISCORD.delete(msg, {seconds:0})
         var dir = gte_TOOLS.homedir()
         var cmd = require(dir + "commands/home");
         cmd.execute(msg, {}, userdata);

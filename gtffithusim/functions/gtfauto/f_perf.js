@@ -9,7 +9,7 @@ module.exports.perfEnthu = function (gtfcar, condition) {
 
   if (condition == "DEALERSHIP") {
     var value = gtf_CARS.costCalc(gtfcar)
-    var sell = gte_GTFAUTO.sellCalc(value);
+    var sell = gtf_GTFAUTO.sellCalc(value);
 
     var offset = 3000 - weight;
     offset = Math.round(offset / 30);
@@ -115,7 +115,7 @@ module.exports.perfEnthu = function (gtfcar, condition) {
     drivetrain = ocar["drivetrain"];
 
     var value = gtf_CARS.costCalc(ocar)
-    var sell = gte_GTFAUTO.sellCalc(value,condition["health"]);
+    var sell = gtf_GTFAUTO.sellCalc(value,condition["health"]);
     if (sell <= 1000) {
       sell = 1000
     }
@@ -139,19 +139,19 @@ module.exports.perfEnthu = function (gtfcar, condition) {
       power = carengine["percent"]
       weight = weight + (weight * (carengine["weight"]))
       value += carengine["cost"]
-      sell += gte_GTFAUTO.sellCalc(carengine["cost"]);
+      sell += gtf_GTFAUTO.sellCalc(carengine["cost"]);
     }
     if (engine !== undefined) {
       var enginep = (100 + engine["percent"]) / 100;
       power = power * enginep;
       value += engine["cost"]
-      sell += gte_GTFAUTO.sellCalc(engine["cost"]);
+      sell += gtf_GTFAUTO.sellCalc(engine["cost"]);
     }
     if (suspension !== undefined) {
       var suspp = suspension["percent"] / 100;
       aero = aero * suspp;
       value += suspension["cost"]
-      sell += gte_GTFAUTO.sellCalc(suspension["cost"]);
+      sell += gtf_GTFAUTO.sellCalc(suspension["cost"]);
     }
     if (weightred !== undefined) {
       var weightredp = (100 - weightred["percent"]) / 100;
@@ -161,19 +161,19 @@ module.exports.perfEnthu = function (gtfcar, condition) {
       weight = weight * weightredp;
       }
       value += weightred["cost"]
-      sell += gte_GTFAUTO.sellCalc(weightred["cost"]);
+      sell += gtf_GTFAUTO.sellCalc(weightred["cost"]);
     }
     if (turbo !== undefined) {
       var turbop = (100 + turbo["percent"]) / 100;
       power = power * turbop;
       value += turbo["cost"]
-      sell += gte_GTFAUTO.sellCalc(turbo["cost"]);
+      sell += gtf_GTFAUTO.sellCalc(turbo["cost"]);
     }
     if (brakes !== undefined) {
       var brakesp = brakes["percent"] / 100;
       aero = aero * brakesp;
       value += brakes["cost"]
-      sell += gte_GTFAUTO.sellCalc(brakes["cost"]);
+      sell += gtf_GTFAUTO.sellCalc(brakes["cost"]);
     }
     if (aeropart !== undefined) {
       var aeropartp = (100 + aeropart["percent"]) / 100;
@@ -185,7 +185,7 @@ module.exports.perfEnthu = function (gtfcar, condition) {
         }
       }
       value += aeropart["cost"]
-      sell += gte_GTFAUTO.sellCalc(aeropart["cost"]);
+      sell += gtf_GTFAUTO.sellCalc(aeropart["cost"]);
     }
     ///////
     if (ballast !== undefined) {

@@ -45,33 +45,33 @@ module.exports.prepRace = function(raceprep, gtfcar, embed, msg, userdata) {
 
   if (racesettings["type"] == "TIMETRIAL") {
     gte_RACEEX.timetrialracelength(racesettings, racedetails, finalgrid, true, 50 - (racesettings["difficulty"] / 2), embed, msg, userdata);
-    //var prizemoney = [gte_EMOTE.goldmedal + " " + gte_DATETIME.getFormattedLapTime(racesettings["positions"][0]["time"] * 1000), gte_EMOTE.silvermedal + " " + gte_DATETIME.getFormattedLapTime(racesettings["positions"][1]["time"] * 1000), gte_EMOTE.bronzemedal + " " + gte_DATETIME.getFormattedLapTime(racesettings["positions"][2]["time"] * 1000)]
+    //var prizemoney = [gtf_EMOTE.goldmedal + " " + gtf_DATETIME.getFormattedLapTime(racesettings["positions"][0]["time"] * 1000), gtf_EMOTE.silvermedal + " " + gtf_DATETIME.getFormattedLapTime(racesettings["positions"][1]["time"] * 1000), gtf_EMOTE.bronzemedal + " " + gtf_DATETIME.getFormattedLapTime(racesettings["positions"][2]["time"] * 1000)]
   }
   else {
     /*
     var prizemoney = racesettings["positions"].slice(0, 3).map(function(x) {
       var credits = gtf_MATH.numFormat(x["credits"])
-      return x["place"] + " " + credits + gte_EMOTE.credits;
+      return x["place"] + " " + credits + gtf_EMOTE.credits;
     });
     */
   }
 
-  var loading = gte_EMOTE.fithusimlogo + " **Loading** " + gte_EMOTE.fithusimlogo;
+  var loading = gtf_EMOTE.fithusimlogo + " **Loading** " + gtf_EMOTE.fithusimlogo;
 
   embed.setDescription(loading);
   var screen = true
   var emojilist = [
     {
-      emoji: gte_EMOTE.flag,
+      emoji: gtf_EMOTE.flag,
       emoji_name: 'flag',
       name: 'Start',
       extra: "",
       button_id: 0
     },
     {
-      emoji: gte_EMOTE.tracklogo,
+      emoji: gtf_EMOTE.tracklogo,
       emoji_name: "trackgtfitness",
-      name: 'Grid/Session Details',
+      name: 'Grid',
       extra: "",
       button_id: 1
     }]
@@ -108,7 +108,7 @@ module.exports.prepRace = function(raceprep, gtfcar, embed, msg, userdata) {
   ////DEBUG
   ////DEBUG
 
-  gte_DISCORD.send(msg, msgjson, preracefunc, true)
+  gtf_DISCORD.send(msg, msgjson, preracefunc, true)
   function preracefunc(msg) {
     var results2 = ""
     setTimeout(function() {
@@ -162,7 +162,7 @@ module.exports.prepRace = function(raceprep, gtfcar, embed, msg, userdata) {
             }
             var bop = ""
             if (racesettings["bop"]) {
-              bop = " " + gte_EMOTE.bop
+              bop = " " + gtf_EMOTE.bop
             }
             results2 =
               "__**Starting Grid" +
@@ -1003,8 +1003,8 @@ module.exports.start = function(racesettings, racedetails, finalgrid, userdata) 
     }
   })
 
-  return [gte_EMOTE.goldmedal + " __**1st", gte_EMOTE.silvermedal + " __**2nd", gte_EMOTE.bronzemedal + " __**3rd", "__**4th", "__**5th", "__**6th", "__**7th", "__**8th", "__**9th", "__**10th", "__**11th", "__**12th", "__**13th", "__**14th", "__**15th", "__**16th", "__**17th", "__**18th", "__**19th", "__**20th", "21st", "__**22nd", "__**23rd", "__**24th", "__**25th", "__**26th", "__**27th", "__**28th", "__**29th", "__**30th", "__**31st", "__**32nd"][position - 1] + " Place**__ " + "**+" + gtf_MATH.numFormat(points) + " pts** " + "`" + odds + "`" + "\n" +
-    gte_EMOTE.enthuoffcourse + " " + ofdamage + " | " + gte_EMOTE.enthucollisionwall + " " + cwdamage + " | " + gte_EMOTE.enthucollisioncar + " " + ccdamage +
+  return [gtf_EMOTE.goldmedal + " __**1st", gtf_EMOTE.silvermedal + " __**2nd", gtf_EMOTE.bronzemedal + " __**3rd", "__**4th", "__**5th", "__**6th", "__**7th", "__**8th", "__**9th", "__**10th", "__**11th", "__**12th", "__**13th", "__**14th", "__**15th", "__**16th", "__**17th", "__**18th", "__**19th", "__**20th", "21st", "__**22nd", "__**23rd", "__**24th", "__**25th", "__**26th", "__**27th", "__**28th", "__**29th", "__**30th", "__**31st", "__**32nd"][position - 1] + " Place**__ " + "**+" + gtf_MATH.numFormat(points) + " pts** " + "`" + odds + "`" + "\n" +
+    gtf_EMOTE.enthuoffcourse + " " + ofdamage + " | " + gtf_EMOTE.enthucollisionwall + " " + cwdamage + " | " + gtf_EMOTE.enthucollisioncar + " " + ccdamage +
     championship;
 };
 
@@ -1060,11 +1060,11 @@ module.exports.startOnline = function(racesettings, racedetails, finalgrid, user
 
   for (var x = 0; x < finalgridwinners.length; x++) {
     if (x % 10 == 0 && x + 1 != 11) {
-      positions.push({ place: gte_EMOTE.goldmedal + " " + (x + 1) + "st", credits: prize });
+      positions.push({ place: gtf_EMOTE.goldmedal + " " + (x + 1) + "st", credits: prize });
     } else if (x % 10 == 1 && x + 1 != 12) {
-      positions.push({ place: gte_EMOTE.silvermedal + " " + (x + 1) + "nd", credits: prize });
+      positions.push({ place: gtf_EMOTE.silvermedal + " " + (x + 1) + "nd", credits: prize });
     } else if (x % 10 == 2 && x + 1 != 13) {
-      positions.push({ place: gte_EMOTE.bronzemedal + " " + (x + 1) + "rd", credits: prize });
+      positions.push({ place: gtf_EMOTE.bronzemedal + " " + (x + 1) + "rd", credits: prize });
     } else {
       positions.push({ place: x + 1 + "th", credits: prize });
     }
@@ -1088,9 +1088,9 @@ module.exports.startOnline = function(racesettings, racedetails, finalgrid, user
     }
 
     if (x["user"]) {
-      winners.push("**" + position + "** " + "<@" + x["id"] + ">" + " " + "**+" + prize + gte_EMOTE.credits + " +" + exp + gte_EMOTE.exp + "**" + "\n" + x["car"]["name"]);
+      winners.push("**" + position + "** " + "<@" + x["id"] + ">" + " " + "**+" + prize + gtf_EMOTE.credits + " +" + exp + gtf_EMOTE.exp + "**" + "\n" + x["car"]["name"]);
     } else {
-      winners.push("**" + position + "** `" + x["drivername"] + "` " + "**+" + prize + gte_EMOTE.credits + " +" + exp + gte_EMOTE.exp + "**" + "\n" + x["car"]["name"]);
+      winners.push("**" + position + "** `" + x["drivername"] + "` " + "**+" + prize + gtf_EMOTE.credits + " +" + exp + gtf_EMOTE.exp + "**" + "\n" + x["car"]["name"]);
     }
 
     if (x["user"]) {
@@ -1155,12 +1155,12 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
       results = results + numberlist[j] + " " + trackname + " **" + lapsx + "** " + gte_STATS.getRaceCompletion(event, raceid, userdata) + "\n";
     }
     if (event["type"] == "TIMETRIAL") {
-      var prizemoney = ["**" + gte_EMOTE.goldmedal + " " + gte_DATETIME.getFormattedLapTime(event["positions"][0]["time"] * 1000), gte_EMOTE.silvermedal + " " + gte_DATETIME.getFormattedLapTime(event["positions"][1]["time"] * 1000) + " ", gte_EMOTE.bronzemedal + " " + gte_DATETIME.getFormattedLapTime(event["positions"][2]["time"] * 1000) + "**"]
+      var prizemoney = ["**" + gtf_EMOTE.goldmedal + " " + gtf_DATETIME.getFormattedLapTime(event["positions"][0]["time"] * 1000), gtf_EMOTE.silvermedal + " " + gtf_DATETIME.getFormattedLapTime(event["positions"][1]["time"] * 1000) + " ", gtf_EMOTE.bronzemedal + " " + gtf_DATETIME.getFormattedLapTime(event["positions"][2]["time"] * 1000) + "**"]
     } else {
       /*
       var prizemoney = event["positions"].slice(0, 3).map(function(x) {
         var credits = gtf_MATH.numFormat(x["credits"]);
-        return "**" + x["place"] + "**" + " **" + credits + "**" + gte_EMOTE.credits;
+        return "**" + x["place"] + "**" + " **" + credits + "**" + gtf_EMOTE.credits;
       });
       */
     }
@@ -1169,7 +1169,7 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
       var prizename = "Mystery Car";
     }
     if (event["prize"]["type"] == "CREDITS") {
-      var prizename = "||" + "**" + gtf_MATH.numFormat(event["prize"]["item"]) + "**" + gte_EMOTE.credits + "||";
+      var prizename = "||" + "**" + gtf_MATH.numFormat(event["prize"]["item"]) + "**" + gtf_EMOTE.credits + "||";
     }
     var bop = ""
     var weather = ""
@@ -1178,13 +1178,13 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
     var requirement = ""
 
     if (event["require"].length != 0) {
-      requirement = gte_EMOTE.bronzemedal + " **Finish in at least 3rd place or Bronze overall to advance.**" + "\n"
+      requirement = gtf_EMOTE.bronzemedal + " **Finish in at least 3rd place or Bronze overall to advance.**" + "\n"
     }
     if (event["bop"]) {
-      bop = "\n" + gte_EMOTE.bop + " **BOP will be used for balanced gameplay.**"
+      bop = "\n" + gtf_EMOTE.bop + " **BOP will be used for balanced gameplay.**"
     }
     if (event["weatherchange"] > 0) {
-      weather = "\n" + gte_EMOTE.weather + " **There is ~" + event["weatherchange"] + "%" + " of weather changeability in this event.**"
+      weather = "\n" + gtf_EMOTE.weather + " **There is ~" + event["weatherchange"] + "%" + " of weather changeability in this event.**"
     }
     if (event["championship"]) {
       championship = "\n" + "🏆" + " **This championship must be fully completed in order to reward credits.**"
@@ -1193,15 +1193,15 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
       return func(0)
     } else {
       var limits = "**" +
-        event["regulations"]["fpplimit"].toString().replace("9999", "--") + gte_EMOTE.fpp + " " +
+        event["regulations"]["fpplimit"].toString().replace("9999", "--") + gtf_EMOTE.fpp + " " +
         event["regulations"]["upperpower"].toString().replace("9999", "--") + " hp" + " " + gtf_MATH.numFormat(event["regulations"]["upperweight"].toString().replace("9999", "--")) + " Lbs" + " " +
-        gte_EMOTE.tire + event["regulations"]["tires"] +
+        gtf_EMOTE.tire + event["regulations"]["tires"] +
         "**"
     }
 
     results = results + "\n" +
       limits +
-      bop + championship + weather + timetrial + "\n\n" + requirement + gte_EMOTE.goldmedal + " **Reward:** " + prizename
+      bop + championship + weather + timetrial + "\n\n" + requirement + gtf_EMOTE.goldmedal + " **Reward:** " + prizename
     if (userdata["settings"]["TIPS"] == 0) {
       results = results + "\n\n" +
         "**❓ React to one of the numbers below this message that corresponds to a specific race for entry.**"
@@ -1265,7 +1265,7 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
       index++
     }
     emojilist.push({
-      emoji: gte_EMOTE.exit,
+      emoji: gtf_EMOTE.exit,
       emoji_name: "gtfexit",
       name: "Back",
       extra: "Once",
@@ -1303,13 +1303,13 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
 
     var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
 
-    gte_DISCORD.send(msg, { embeds: [embed], components: buttons }, nextfunc)
+    gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, nextfunc)
     function nextfunc(msg) {
       setTimeout(function() {
         var complete = gte_STATS.checkEvent(event, "1st", userdata);
         if (complete) {
           gte_STATS.completeEvent(event, userdata);
-          gte_STATS.redeemGift(gte_EMOTE.goldmedal + " Congrats! Completed " + event["title"] + " " + gte_EMOTE.goldmedal, event["prize"], embed, msg, userdata);
+          gte_STATS.redeemGift(gtf_EMOTE.goldmedal + " Congrats! Completed " + event["title"] + " " + gtf_EMOTE.goldmedal, event["prize"], embed, msg, userdata);
         }
       }, 3000)
 
@@ -1318,7 +1318,7 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
         gte_CONDITION.updateCondition(100, "all", userdata)
         gte_STATS.addCredits(-repaircost, userdata);
 
-        embed.setDescription(results + "\n\n" + "✅ Car repaired. **" + gtf_MATH.numFormat(repaircost) + gte_EMOTE.credits + "**")
+        embed.setDescription(results + "\n\n" + "✅ Car repaired. **" + gtf_MATH.numFormat(repaircost) + gtf_EMOTE.credits + "**")
         embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: gte_STATS.currentCarFooterEnthu(userdata) }])
         gte_STATS.saveEnthu(userdata)
         repaircost = 0
@@ -1337,15 +1337,15 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
         results2 = event["positions"].slice(0, 6).map(function(x) {
           var credits = gtf_MATH.numFormat(x["credits"])
           if (x["place"] == "1st") {
-            return "**" + gte_EMOTE.goldmedal + " " + x["place"] + ":**" + " **" + credits + "**" + gte_EMOTE.credits;
+            return "**" + gtf_EMOTE.goldmedal + " " + x["place"] + ":**" + " **" + credits + "**" + gtf_EMOTE.credits;
           }
           if (x["place"] == "2nd") {
-            return "**" + gte_EMOTE.silvermedal + " " + x["place"] + ":**" + " **" + credits + "**" + gte_EMOTE.credits;
+            return "**" + gtf_EMOTE.silvermedal + " " + x["place"] + ":**" + " **" + credits + "**" + gtf_EMOTE.credits;
           }
           if (x["place"] == "3rd") {
-            return "**" + gte_EMOTE.bronzemedal + " " + x["place"] + ":**" + " **" + credits + "**" + gte_EMOTE.credits;
+            return "**" + gtf_EMOTE.bronzemedal + " " + x["place"] + ":**" + " **" + credits + "**" + gtf_EMOTE.credits;
           }
-          return "**" + x["place"] + ":**" + " **" + credits + "**" + gte_EMOTE.credits;
+          return "**" + x["place"] + ":**" + " **" + credits + "**" + gtf_EMOTE.credits;
         });
         results2.unshift("__Prizes__")
         results2 = results2.join("\n")

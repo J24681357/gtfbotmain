@@ -85,6 +85,12 @@ global.gtf_EMOTE = {
   "rightarrow": "<:rightarrow:973817070301118465>",
   "uparrow": "<:uparrow:973817070070427689>",
   "downarrow": "<:downarrow:973817070267539496>",
+
+  "leftarrowenthu": "<:arrowleftenthu:1197034925392670740>",
+  "rightarrowenthu": "<:arrowrightenthu:1197034927632429116>",
+  "uparrowenthu": "<:arrowupenthu:1197034929717002360>",
+  "downarrowenthu": "<:arrowdownenthu:1197034922637000784>",
+  
   "yes": "<:Yes:973817070418554881>",
   "exit": "<:exit:670134165806514206>",
   "google": "<:google:923485130490785802>",
@@ -154,5 +160,6 @@ global.gtf_EMOTE = {
   "enthudrorangemarker": "<:drorangemarker:1174590947804328006>",
     "enthuoffcourse": "<:offcourse:1171656980415385641>",
     "enthucollisionwall": "<:collisionwall:1171656978884468806>",
-    "enthucollisioncar": "<:collisioncar:1171656976221081701>"
+    "enthucollisioncar": "<:collisioncar:1171656976221081701>",
+  "enthuyes": "<:yesenthu:1195881102183772280>"
 }

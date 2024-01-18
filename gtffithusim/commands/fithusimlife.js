@@ -5,7 +5,7 @@ module.exports = {
   title: "Fithusim Life",
   license: "N",
   level: 0,
-  channels: ["testing"],
+  channels: ["gtf-fithusim-game", "testing"],
 
   availinmaint: false,
   requireuserdata: true,
@@ -39,7 +39,7 @@ module.exports = {
       userdata
     );
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
-    console.log(userdata["races"])
+    /*
   var racecheck = Object.keys(userdata["races"]).filter(function(key){
     if (userdata["races"][key] == 3) {
     return true
@@ -60,6 +60,7 @@ module.exports = {
 gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
     return
     }
+    */
 
 
     ////CHECK NEW GAME
@@ -80,6 +81,10 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
       query = {options:"rest"}
     }
 
+    if (query["number"] == 4 && gte_STATS.garage(userdata) != 0 && userdata["week"] != 0) {
+      query = {options:"garage"}
+    }
+    
     if (query["number"] == 5 && gte_STATS.garage(userdata) != 0 && userdata["week"] != 0) {
           query = {options:"records"}
     }
@@ -88,7 +93,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
 
 
     if (query["options"] == "new_game") {
-       embed.setTitle("__New Game - Choose First Car__");
+       embed.setTitle("__New Game - Select Your First Car__");
        var list = gtf_CARS.find({ 
          upperyear: [1989, 2005, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2006][userdata["settings"]["GMODE"]], special: ["xstarter"] });
        var carlist = [];
@@ -100,7 +105,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
           var image = list[i]["image"][0];
           
           carlist.push(gtf_CARS.shortName(name) + " ` " + classs + " `");
-          listsec.push(list[i]["year"] + " | " + gtf_MATH.numFormat(list[i]["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(list[i]["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + list[i]["type"])
+          listsec.push(list[i]["year"] + " | " + gtf_MATH.numFormat(list[i]["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(list[i]["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + list[i]["special"].join(", "))
           pageargs["image"].push(image);
         }
       if (query["number"] !== undefined) {
@@ -128,7 +133,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
 
     if (query["options"] == "list") {
       //gte_STATS.checkRanking(userdata)
-      embed.setTitle("__**Fithusim Life**__" + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")
+      embed.setTitle("__**Fithusim Life**__" + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")
       var ocar = gtf_CARS.get({ make: gtfcar["make"], fullname: gtfcar["name"] });
       pageargs["image"].push(ocar["image"][0])
       gte_STATS.loadAvatarImage2(embed, userdata, then2)
@@ -160,7 +165,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         gte_STATS.loadAvatarImage2(embed, userdata, then2)
         function then2(attachment) {
           pageargs["bimage"].push(attachment)
-         embed.setTitle("__**Leagues**__" + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")
+         embed.setTitle("__**Leagues**__" + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")
         pageargs["selector"] = "type";
         pageargs["query"] = query;
         pageargs["list"] = ["RN", "RIV `Rank 990`", "RIII `Rank 800`", "RII `Rank 500`", "RI `Rank 300`", "RS `Rank 50`"];
@@ -189,7 +194,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
       return gte_GTF.checkRegulationsEnthu(gtfcar, event, "", embed, msg, userdata)[0] && event["era"].indexOf(userdata["settings"]["GMODE"]+1) >= 0
         
       })
-       embed.setTitle("__**" + league + "**__" + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")
+       embed.setTitle("__**" + league + "**__" + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")
       var total = 7
       if (league == "RN") {
         total = 5
@@ -340,7 +345,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         ]
     
         var emojilist = [
-  { emoji: gte_EMOTE.fithusimlogo, 
+  { emoji: gtf_EMOTE.fithusimlogo, 
   emoji_name: "fithusimlogo", 
   name: 'Join', 
   extra: "",
@@ -351,7 +356,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         embed.setThumbnail(rtrack["image"])
 var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
         
-       gte_DISCORD.send(msg, {embeds:[embed], components:buttons}, next)
+       gtf_DISCORD.send(msg, {embeds:[embed], components:buttons}, next)
 
         function next(msg) {
        function startrace() {
@@ -392,16 +397,16 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
       if (!gte_STATS.checkEnthuPoints(embed, msg, userdata)) {
         return;
       }
-      require(gte_TOOLS.homedir() + "commands/garage").execute(msg, {options:"list"}, userdata)
+      require(gte_TOOLS.homedir() + "commands/garage").execute(msg, {options:"changecar"}, userdata)
       return
     }
 
     if (query["options"] == "rest" || query["options"] == 3) {
-      embed.setTitle("__**Rest**__" + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK");
+      embed.setTitle("__**Rest**__" + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK");
       embed.setDescription("Would you like to rest and gain Enthu points? One week will advance.")
 
          var emojilist = [
-      { emoji: gte_EMOTE.fithusimlogo, 
+      { emoji: gtf_EMOTE.fithusimlogo, 
       emoji_name: "fithusimlogo",  
       name: 'YES', 
       extra: "",
@@ -410,7 +415,7 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
 
       var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
             gte_STATS.saveEnthu(userdata);
-         gte_DISCORD.send(msg, {embeds:[embed], components:buttons}, func)
+         gtf_DISCORD.send(msg, {embeds:[embed], components:buttons}, func)
 
          function func(msg) {
           function ok() {
@@ -432,10 +437,44 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
         }
       return
     }
+
+    if (query["options"] == "garage" || query["options"] == 4) {
+      embed.setTitle("__Choose Class__");
+       var list = ["F Class", "E Class", "D Class", "C Class", "B Class", "A Class", "R Class"]
+      if (query["classnumber"] !== undefined) {
+          if (!gtf_MATH.betweenInt(query["classnumber"], 1, list.length)) {
+            gte_EMBED.alert({ name: "❌ Invalid Number", description: "This class does not exist.", embed: "", seconds: 5 }, msg, userdata);
+            return;
+          } else {
+            var number = parseInt(query["classnumber"]) - 1;
+            var types = []
+            if (number == 7) {
+            var fpplimit = 9999
+            var lowerfpp = 0
+              var types = ["Rally Car", "Race Car"]
+            }
+            fpplimit = [308, 388, 468, 548, 618, 9999][number]
+            lowerfpp = [0,   319, 389, 469, 549, 619][number]
+            require(gte_TOOLS.homedir() + "commands/garage").execute(msg, {options:"list", fpplimit: fpplimit, lowerfpp:lowerfpp, types: types}, userdata)
+            return
+          }
+      }
+        pageargs["selector"] = "classnumber";
+        pageargs["query"] = query;
+        pageargs["list"] = list;
+        pageargs["listsec"] = listsec
+
+        pageargs["text"] = gte_TOOLS.formPage(pageargs, userdata);
+        gte_TOOLS.formPages(pageargs, embed, msg, userdata);
+      return
+    }
     
     if (query["options"] == "records" || query["options"] == 5) {
-      embed.setTitle("__**Records**__" + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + " " + gte_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")
-      var list = gte_STATS.rankingHistory(userdata).reverse().map(x => "WEEK " + x["week"] + "\n" + x["title"] + " `" + x["place"] + "` **" + x["points"] + " pts**")
+      embed.setTitle("__**Records**__" + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")
+      var list = gte_STATS.rankingHistory(userdata).reverse().map(x => 
+        x["week"] + " WEEK **" + x["points"] + " pts**" + " `" + x["place"] + "`\n" + 
+        x["title"] + " " + x["league"] + "\n" +
+        x["car"])
 
       pageargs["selector"] = "";
       pageargs["query"] = query;

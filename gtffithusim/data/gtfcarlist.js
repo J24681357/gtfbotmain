@@ -41,7 +41,7 @@ module.exports.addCarEnthu = function (car, arg, userdata) {
   var condition = {oil:car["condition"], clean:car["condition"], engine:car["condition"], transmission: car["condition"], suspension:car["condition"], body:car["condition"]}
 
   var fpp = gte_PERF.perfEnthu(car, "DEALERSHIP")["fpp"];
-  var sell = gte_GTFAUTO.sellCalc(car);
+
   if (arg != "LOAN") {
     userdata["stats"]["numcarpurchases"]++;
     var id1 = userdata["stats"]["numcarpurchases"];

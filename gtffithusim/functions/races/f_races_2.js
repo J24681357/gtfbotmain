@@ -35,11 +35,11 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
   var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
 
   var lights = [
-    [gte_EMOTE.transparent, gte_EMOTE.transparent, gte_EMOTE.transparent, gte_EMOTE.transparent],
-    [gte_EMOTE.transparent, gte_EMOTE.transparent, gte_EMOTE.transparent, gte_EMOTE.transparent],
-    [gte_EMOTE.transparent, gte_EMOTE.transparent, gte_EMOTE.transparent, gte_EMOTE.transparent],
+    [gtf_EMOTE.transparent, gtf_EMOTE.transparent, gtf_EMOTE.transparent, gtf_EMOTE.transparent],
+    [gtf_EMOTE.transparent, gtf_EMOTE.transparent, gtf_EMOTE.transparent, gtf_EMOTE.transparent],
+    [gtf_EMOTE.transparent, gtf_EMOTE.transparent, gtf_EMOTE.transparent, gtf_EMOTE.transparent],
   ];
-  var ready = ["**READY**\n", gte_EMOTE.transparent + "**3,2,1...**" + gte_EMOTE.transparent, gte_EMOTE.transparent + "**GO**" + gte_EMOTE.transparent];
+  var ready = ["**READY**\n", gtf_EMOTE.transparent + "**3,2,1...**" + gtf_EMOTE.transparent, gtf_EMOTE.transparent + "**GO**" + gtf_EMOTE.transparent];
   var start = [progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, "🏁"];
   var results3 = start.join("");
 
@@ -72,7 +72,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
       }
     }
 
-    var currentcarinfo = racesettings["driver"]["car"].length == 0 ? "" : "\n**🚘 " + racesettings["driver"]["car"]["name"] + " " + racesettings["driver"]["car"]["fpp"] + gte_EMOTE.fpp + "**";
+    var currentcarinfo = racesettings["driver"]["car"].length == 0 ? "" : "\n**🚘 " + racesettings["driver"]["car"]["name"] + " " + racesettings["driver"]["car"]["fpp"] + gtf_EMOTE.fpp + "**";
 
     if (racesettings["type"] == "TIMETRIAL") {
       var racelength = gte_RACEEX.timetrialracelength(racesettings, racedetails, finalgrid, checkpoint, 50 - racesettings["difficulty"] / 2, embed, msg, userdata);
@@ -131,7 +131,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
           embed.setDescription(results2);
 
           ////exit from session with no results
-          gte_DISCORD.send(msg, { content: "<@" + userdata["id"] + "> **FINISH**", embeds: [embed] }, race2func);
+          gtf_DISCORD.send(msg, { content: "<@" + userdata["id"] + "> **FINISH**", embeds: [embed] }, race2func);
           function race2func(msg) {
             gte_RACEEX.createRaceButtons(racesettings, racedetails, finalgrid, checkpoint, results2, buttons, emojilist, embed, msg, userdata);
 
@@ -139,7 +139,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
               var complete = gte_STATS.checkEvent(racesettings, "1st", userdata);
               if (complete) {
                 gte_STATS.completeEvent(racesettings, userdata);
-                gte_STATS.redeemGift(gte_EMOTE.goldmedal + " Congrats! Completed " + racesettings["title"].split(" - ")[0] + " " + gte_EMOTE.goldmedal, racesettings["prize"], embed, msg, userdata);
+                gte_STATS.redeemGift(gtf_EMOTE.goldmedal + " Congrats! Completed " + racesettings["title"].split(" - ")[0] + " " + gtf_EMOTE.goldmedal, racesettings["prize"], embed, msg, userdata);
               }
             } else if (racesettings["mode"] == "LICENSE") {
               var option = racesettings["eventid"].replace("LICENSE", "").toLowerCase().split("-")[0];
@@ -186,9 +186,9 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
                   "%" +
                   " | " +
                   "⏳" +
-                  gte_DATETIME.getFormattedTime(racelength) +
+                  gtf_DATETIME.getFormattedTime(racelength) +
                   " left |" +
-                  gte_EMOTE.tire +
+                  gtf_EMOTE.tire +
                   "**" +
                   currentcar["tires"]
                     .split(" ")
@@ -198,7 +198,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
               : "";
           embed.setDescription(results(index) + starttime);
           embed.spliceFields(0, 1);
-          gte_DISCORD.edit(msg, { content: "ㅤ", embeds: [embed], components: buttons });
+          gtf_DISCORD.edit(msg, { content: "ㅤ", embeds: [embed], components: buttons });
           index++;
         },
         1500,
@@ -251,7 +251,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
               raceweather["emoji"] +
               " | " +
               "⏳" +
-              gte_DATETIME.getFormattedTime(totaltime - new Date().getTime()) +
+              gtf_DATETIME.getFormattedTime(totaltime - new Date().getTime()) +
               " left | " +
               currentlaptext +
               "\n\n" +
@@ -263,7 +263,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
                     gap = "";
                   }
                   var name = [gtf_CARS.shortName(x["name"]), x["drivername"]][userdata["settings"]["GRIDNAME"]];
-                  var stops = x["pitstops"] >= 1 ? " " + gte_EMOTE.pit + "`" + x["pitstops"] + "`" : "";
+                  var stops = x["pitstops"] >= 1 ? " " + gtf_EMOTE.pit + "`" + x["pitstops"] + "`" : "";
 
                 
                   if (x["user"]) {
@@ -281,9 +281,9 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
 
         if (racesettings["type"] == "DRIFT") {
           let drift1 = gte_RACEEX.driftsection(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata, false);
-          var icon = gte_EMOTE.transparent;
+          var icon = gtf_EMOTE.transparent;
           if (drift1[0] > 0) {
-            icon = gte_EMOTE.driftflag;
+            icon = gtf_EMOTE.driftflag;
           }
           racesettings["points"] += drift1[0];
           embed.setDescription(
@@ -304,10 +304,10 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
               "%" +
               " | " +
               "⏳" +
-              gte_DATETIME.getFormattedTime(totaltime - new Date().getTime()) +
+              gtf_DATETIME.getFormattedTime(totaltime - new Date().getTime()) +
               " left" +
               currentcarinfo +
-              gte_EMOTE.tire +
+              gtf_EMOTE.tire +
               "**" +
               currentcar["tires"]
                 .split(" ")
@@ -328,7 +328,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
               var bestlapobject = finalgrid[0]["laps"].filter(function (x) {
                 return x["best"] == true && x["medal"] != "FAIL";
               })[0];
-              bestlap = gte_EMOTE.tracklogo + "__**Best:**__ " + bestlapobject["medalemote"] + " " + gte_DATETIME.getFormattedLapTime(bestlapobject["time"]) + " `Lap " + bestlapobject["lapnum"] + "`";
+              bestlap = gtf_EMOTE.tracklogo + "__**Best:**__ " + bestlapobject["medalemote"] + " " + gtf_DATETIME.getFormattedLapTime(bestlapobject["time"]) + " `Lap " + bestlapobject["lapnum"] + "`";
               var laps = finalgrid[0]["laps"]
                 .map(function (x, index) {
                   /*
@@ -337,9 +337,9 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
           }
           */
                   if (x["best"] && x["medal"] != "FAIL") {
-                    return "__**Lap " + (index + 1) + ":**__ " + x["medalemote"] + " " + gte_DATETIME.getFormattedLapTime(x["time"]) + " ⭐";
+                    return "__**Lap " + (index + 1) + ":**__ " + x["medalemote"] + " " + gtf_DATETIME.getFormattedLapTime(x["time"]) + " ⭐";
                   }
-                  return "__**Lap " + (index + 1) + ":**__ " + x["medalemote"] + " " + gte_DATETIME.getFormattedLapTime(x["time"]).replace("01:00:00.000", "");
+                  return "__**Lap " + (index + 1) + ":**__ " + x["medalemote"] + " " + gtf_DATETIME.getFormattedLapTime(x["time"]).replace("01:00:00.000", "");
                 })
                 .reverse()
                 .slice(0, 5)
@@ -351,9 +351,9 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
             var laps = "__**Lap 1:**__ ";
           }
           var timeprizes = [
-            "**" + gte_EMOTE.goldmedal + " " + gte_DATETIME.getFormattedLapTime(racesettings["positions"][0]["time"] * 1000),
-            gte_EMOTE.silvermedal + " " + gte_DATETIME.getFormattedLapTime(racesettings["positions"][1]["time"] * 1000) + " ",
-            gte_EMOTE.bronzemedal + " " + gte_DATETIME.getFormattedLapTime(racesettings["positions"][2]["time"] * 1000) + "**",
+            "**" + gtf_EMOTE.goldmedal + " " + gtf_DATETIME.getFormattedLapTime(racesettings["positions"][0]["time"] * 1000),
+            gtf_EMOTE.silvermedal + " " + gtf_DATETIME.getFormattedLapTime(racesettings["positions"][1]["time"] * 1000) + " ",
+            gtf_EMOTE.bronzemedal + " " + gtf_DATETIME.getFormattedLapTime(racesettings["positions"][2]["time"] * 1000) + "**",
           ];
           embed.setDescription(
             results3 +
@@ -365,7 +365,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
               laps +
               "\n" +
               currentcarinfo +
-              gte_EMOTE.tire +
+              gtf_EMOTE.tire +
               "**" +
               currentcar["tires"]
                 .split(" ")
@@ -383,7 +383,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
           if (racesettings["type"] == "TIMETRIAL") {
             results2 = gte_RACEEX.timetrialresults(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata);
             embed.setDescription(results2);
-            gte_DISCORD.send(msg, { content: "<@" + userdata["id"] + ">" + " **FINISH**", embeds: [embed] });
+            gtf_DISCORD.send(msg, { content: "<@" + userdata["id"] + ">" + " **FINISH**", embeds: [embed] });
           }
           //gte_STATS.saveEnthu(userdata);
           return;
@@ -412,7 +412,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
             currenttime = new Date().getTime();
             if (finalgrid[0]["laps"].length % 5 != 0) {
               if (newlap["medal"] != "GOLD") {
-                return gte_DISCORD.send(msg, { content: "<@" + userdata["id"] + "> **" + newlap["medal"] + " " + gte_DATETIME.getFormattedLapTime(newlap["time"]) + " | " + "LAP " + finalgrid[0]["laps"].length + "**", embeds: [embed] }, repeat);
+                return gtf_DISCORD.send(msg, { content: "<@" + userdata["id"] + "> **" + newlap["medal"] + " " + gtf_DATETIME.getFormattedLapTime(newlap["time"]) + " | " + "LAP " + finalgrid[0]["laps"].length + "**", embeds: [embed] }, repeat);
               }
             }
             userdata["raceinprogress"]["expire"] = "EXIT";
@@ -445,7 +445,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
           /////
           var thumbnail = msg.embeds[0].thumbnail == null ? "" : msg.embeds[0].thumbnail.url;
 
-          gte_DISCORD.delete(msg, { seconds: 5 });
+          gtf_DISCORD.delete(msg, { seconds: 5 });
 
           if (racesettings["mode"] == "SSRX") {
             let ssrx2 = gte_RACEEX.speedtestresults(racelength, racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata);
@@ -459,7 +459,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
             var results2 = gte_RACEEX.timetrialresults(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata);
             //var results2 = "Test"
             embed.setDescription(results2);
-            //gte_DISCORD.send(msg, {embeds: [embed]})
+            //gtf_DISCORD.send(msg, {embeds: [embed]})
             //gte_STATS.saveEnthu(userdata);
             //return
           } else {
@@ -521,7 +521,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
             if (racesettings["championship"]) {
               var emojilist = [
                 {
-                  emoji: gte_EMOTE.tracklogo,
+                  emoji: gtf_EMOTE.tracklogo,
                   emoji_name: "trackgtfitness",
                   name: "Grid Results/Session",
                   extra: "",
@@ -530,13 +530,13 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
             } else {
               var emojilist = [
                 {
-                  emoji: gte_EMOTE.tracklogo,
+                  emoji: gtf_EMOTE.tracklogo,
                   emoji_name: "trackgtfitness",
                   name: "Grid Results/Session",
                   extra: "",
                 },
                 {
-                  emoji: gte_EMOTE.exit,
+                  emoji: gtf_EMOTE.exit,
                   emoji_name: "gtfexit",
                   name: "Exit",
                   extra: "Once",
@@ -561,13 +561,13 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
                   extra: "",
                 },
                 {
-                  emoji: gte_EMOTE.tracklogo,
+                  emoji: gtf_EMOTE.tracklogo,
                   emoji_name: "trackgtfitness",
                   name: "Grid Results/Session",
                   extra: "",
                 },
                 {
-                  emoji: gte_EMOTE.exit,
+                  emoji: gtf_EMOTE.exit,
                   emoji_name: "gtfexit",
                   name: "Exit",
                   extra: "Once",
@@ -588,13 +588,13 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
                   extra: "",
                 },
                 {
-                  emoji: gte_EMOTE.tracklogo,
+                  emoji: gtf_EMOTE.tracklogo,
                   emoji_name: "trackgtfitness",
                   name: "Grid Results/Session",
                   extra: "",
                 },
                 {
-                  emoji: gte_EMOTE.exit,
+                  emoji: gtf_EMOTE.exit,
                   emoji_name: "gtfexit",
                   name: "Exit",
                   extra: "Once",
@@ -610,7 +610,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
                 extra: "",
               },
               {
-                emoji: gte_EMOTE.tracklogo,
+                emoji: gtf_EMOTE.tracklogo,
                 emoji_name: "trackgtfitness",
                 name: "Grid Results/Session",
                 extra: "",
@@ -619,13 +619,13 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
           } else {
             var emojilist = [
               {
-                emoji: gte_EMOTE.tracklogo,
+                emoji: gtf_EMOTE.tracklogo,
                 emoji_name: "trackgtfitness",
                 name: "Grid Results/Session",
                 extra: "",
               },
               {
-                emoji: gte_EMOTE.exit,
+                emoji: gtf_EMOTE.exit,
                 emoji_name: "gtfexit",
                 name: "Exit",
                 extra: "Once",
@@ -650,7 +650,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
 
           buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
 
-          gte_DISCORD.send(msg, { content: ping + " **FINISH**", embeds: [embed], components: buttons }, race2func, true);
+          gtf_DISCORD.send(msg, { content: ping + " **FINISH**", embeds: [embed], components: buttons }, race2func, true);
           function race2func(msg) {
             gte_RACEEX.createRaceButtons(racesettings, racedetails, finalgrid, checkpoint, results2, buttons, emojilist, embed, msg, userdata);
 
@@ -658,7 +658,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
               var complete = gte_STATS.checkEvent(racesettings, "1st", userdata);
               if (complete) {
                 gte_STATS.completeEvent(racesettings, userdata);
-                gte_STATS.redeemGift(gte_EMOTE.goldmedal + " Congrats! Completed " + racesettings["title"].split(" - ")[0] + " " + gte_EMOTE.goldmedal, racesettings["prize"], embed, msg, userdata);
+                gte_STATS.redeemGift(gtf_EMOTE.goldmedal + " Congrats! Completed " + racesettings["title"].split(" - ")[0] + " " + gtf_EMOTE.goldmedal, racesettings["prize"], embed, msg, userdata);
               }
             } else if (racesettings["mode"] == "LICENSE") {
               var option = racesettings["eventid"].replace("LICENSE", "").toLowerCase().split("-")[0];
@@ -708,15 +708,15 @@ module.exports.driftresults2 = function (racesettings, racedetails, finalgrid, c
   let final = require(gte_TOOLS.homedir() + "/" + "functions/races/f_races_2ex").driftsection(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata, true);
   racesettings["points"] += final[0];
   if (racesettings["points"] >= final[3]) {
-    medal = gte_EMOTE.bronzemedal + " BRONZE";
+    medal = gtf_EMOTE.bronzemedal + " BRONZE";
     place = "3rd";
     var prize = racesettings["positions"][2]["credits"];
   } else if (racesettings["points"] >= final[2]) {
-    medal = gte_EMOTE.silvermedal + " SILVER";
+    medal = gtf_EMOTE.silvermedal + " SILVER";
     place = "2nd";
     var prize = racesettings["positions"][1]["credits"];
   } else if (racesettings["points"] >= final[1]) {
-    medal = gte_EMOTE.goldmedal + " GOLD";
+    medal = gtf_EMOTE.goldmedal + " GOLD";
     place = "1st";
     var prize = racesettings["positions"][0]["credits"];
   } else {
@@ -762,7 +762,7 @@ module.exports.driftresults2 = function (racesettings, racedetails, finalgrid, c
     }
   }
 
-  var results2 = "**" + medal + "**" + " " + "**+" + prize + gte_EMOTE.credits + racemultibonus + "**" + "\n" + "**Points:** " + racesettings["points"] + " pts";
+  var results2 = "**" + medal + "**" + " " + "**+" + prize + gtf_EMOTE.credits + racemultibonus + "**" + "\n" + "**Points:** " + racesettings["points"] + " pts";
 
   return results2;
 };
@@ -836,11 +836,11 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
   var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
 
   var lights = [
-    [gte_EMOTE.transparent, gte_EMOTE.transparent, gte_EMOTE.transparent, gte_EMOTE.transparent],
-    [gte_EMOTE.transparent, gte_EMOTE.transparent, gte_EMOTE.transparent, gte_EMOTE.transparent],
-    [gte_EMOTE.transparent, gte_EMOTE.transparent, gte_EMOTE.transparent, gte_EMOTE.transparent],
+    [gtf_EMOTE.transparent, gtf_EMOTE.transparent, gtf_EMOTE.transparent, gtf_EMOTE.transparent],
+    [gtf_EMOTE.transparent, gtf_EMOTE.transparent, gtf_EMOTE.transparent, gtf_EMOTE.transparent],
+    [gtf_EMOTE.transparent, gtf_EMOTE.transparent, gtf_EMOTE.transparent, gtf_EMOTE.transparent],
   ];
-  var ready = ["**READY**\n", gte_EMOTE.transparent + "**3,2,1...**" + gte_EMOTE.transparent, gte_EMOTE.transparent + "**START**" + gte_EMOTE.transparent];
+  var ready = ["**READY**\n", gtf_EMOTE.transparent + "**3,2,1...**" + gtf_EMOTE.transparent, gtf_EMOTE.transparent + "**START**" + gtf_EMOTE.transparent];
   var start = [progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, progressbarsec, "🏁"];
   var results3 = start.join("");
 
@@ -858,7 +858,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
     function () {
       embed.setDescription(results(index) + "\n" + emojilist[userarrow]["emoji"] + " " + (useraccel ? "`Accelerating...`" : "`Braking...`"));
       embed.spliceFields(0, 1);
-      gte_DISCORD.edit(msg, { content: "ㅤ", embeds: [embed], components: buttons });
+      gtf_DISCORD.edit(msg, { content: "ㅤ", embeds: [embed], components: buttons });
       index++;
     },
     1000,
@@ -992,10 +992,10 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
 
             if (y == markerdir[currpiece["arrow"]][1] && x == markerdir[currpiece["arrow"]][0]) {
               if (currpiece["brake"]) {
-                layoutx[y] = gte_EMOTE.enthudrorangemarker;
+                layoutx[y] = gtf_EMOTE.enthudrorangemarker;
                 continue;
               } else {
-                layoutx[y] = gte_EMOTE.enthudrgreenmarker;
+                layoutx[y] = gtf_EMOTE.enthudrgreenmarker;
                 continue;
               }
             }
@@ -1062,7 +1062,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
           //////ending race
           var thumbnail = msg.embeds[0].thumbnail == null ? "" : msg.embeds[0].thumbnail.url;
 
-          gte_DISCORD.delete(msg, { seconds: 5 });
+          gtf_DISCORD.delete(msg, { seconds: 5 });
 
           var results2 = gte_RACE.startDR(racesettings, racedetails, finalgrid, userdata);
 
@@ -1086,8 +1086,8 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
 
           embed.setDescription("__**FINISH**__ " + "Rank: " + rank + "\n\n" + racedetails);
           /*
-            var field2 = (racesettings["driver"]["car"] == "") ? gte_EMOTE.transparent : gtf_CARS.shortName(racesettings["driver"]["car"]["name"]) +
-        " " + "**" + racesettings["driver"]["car"]["fpp"] + gte_EMOTE.fpp + "**"
+            var field2 = (racesettings["driver"]["car"] == "") ? gtf_EMOTE.transparent : gtf_CARS.shortName(racesettings["driver"]["car"]["name"]) +
+        " " + "**" + racesettings["driver"]["car"]["fpp"] + gtf_EMOTE.fpp + "**"
 
         var user = msg.user
         */
@@ -1101,7 +1101,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
               extra: "Once",
             },
             {
-              emoji: gte_EMOTE.exit,
+              emoji: gtf_EMOTE.exit,
               emoji_name: "gtfexit",
               name: "Exit",
               extra: "Once",
@@ -1115,7 +1115,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
 
           buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
 
-          gte_DISCORD.send(msg, { content: ping + " **FINISH**", embeds: [embed], components: buttons }, race2func, true);
+          gtf_DISCORD.send(msg, { content: ping + " **FINISH**", embeds: [embed], components: buttons }, race2func, true);
 
           function race2func(msg) {
             gte_RACEEX.createRaceButtons(racesettings, racedetails, finalgrid, checkpoint, results2, buttons, emojilist, embed, msg, userdata);
@@ -1124,7 +1124,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
             /*
                 if (complete) {
                 gte_STATS.completeEvent(racesettings, userdata);
-                //gte_STATS.redeemGift(gte_EMOTE.goldmedal + " Congrats! Completed " + racesettings["title"].split(" - ")[0] + " " + gte_EMOTE.goldmedal, racesettings["prize"], embed, msg, userdata);
+                //gte_STATS.redeemGift(gtf_EMOTE.goldmedal + " Congrats! Completed " + racesettings["title"].split(" - ")[0] + " " + gtf_EMOTE.goldmedal, racesettings["prize"], embed, msg, userdata);
                 }
               gte_STATS.saveEnthu(userdata);
             }
@@ -1160,7 +1160,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
         currenttime = new Date().getTime()
         if (finalgrid[0]["laps"].length % 5 != 0) {
           if (newlap["medal"] != "GOLD") {
-          return gte_DISCORD.send(msg, {content: "<@" + userdata["id"] + "> **" + newlap["medal"] + " " + gte_DATETIME.getFormattedLapTime(newlap["time"]) + " | " + "LAP " + finalgrid[0]["laps"].length + "**", embeds: [embed]}, repeat)
+          return gtf_DISCORD.send(msg, {content: "<@" + userdata["id"] + "> **" + newlap["medal"] + " " + gtf_DATETIME.getFormattedLapTime(newlap["time"]) + " | " + "LAP " + finalgrid[0]["laps"].length + "**", embeds: [embed]}, repeat)
           }
       }
          userdata["raceinprogress"]["expire"] = "EXIT"
@@ -1184,7 +1184,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
     /////
         var thumbnail = msg.embeds[0].thumbnail == null ? "" : msg.embeds[0].thumbnail.url
 
-        gte_DISCORD.delete(msg, {seconds:5})
+        gtf_DISCORD.delete(msg, {seconds:5})
 
         if (racesettings["mode"] == "SSRX") {
           let ssrx2 = gte_RACEEX.speedtestresults(racelength, racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata);
@@ -1198,7 +1198,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
           var results2 = gte_RACEEX.timetrialresults(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata)
           //var results2 = "Test"
           embed.setDescription(results2)
-          //gte_DISCORD.send(msg, {embeds: [embed]})
+          //gtf_DISCORD.send(msg, {embeds: [embed]})
           //gte_STATS.saveEnthu(userdata);
           //return
         } else {
@@ -1233,8 +1233,8 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
           embed.setDescription(results2 + "\n\n" + racedetails.split("\n\n")[0]);
         }
 
-        var field2 = (racesettings["driver"]["car"] == "") ? gte_EMOTE.transparent : gtf_CARS.shortName(racesettings["driver"]["car"]["name"]) +
-" " + "**" + racesettings["driver"]["car"]["fpp"] + gte_EMOTE.fpp + "**"
+        var field2 = (racesettings["driver"]["car"] == "") ? gtf_EMOTE.transparent : gtf_CARS.shortName(racesettings["driver"]["car"]["name"]) +
+" " + "**" + racesettings["driver"]["car"]["fpp"] + gtf_EMOTE.fpp + "**"
         var ping = "<@" + userdata["id"] + ">";
         var user = msg.user
         if (racesettings["mode"] == "ONLINE") {
@@ -1256,7 +1256,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
       name: "Save Replay",
       extra: "",
     }, {
-    emoji: gte_EMOTE.tracklogo,
+    emoji: gtf_EMOTE.tracklogo,
     emoji_name: "trackgtfitness",
     name: 'Grid Results/Session',
     extra: "",
@@ -1274,12 +1274,12 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
       name: "Save Replay",
       extra: ""
     }, {
-    emoji: gte_EMOTE.tracklogo,
+    emoji: gtf_EMOTE.tracklogo,
     emoji_name: "trackgtfitness",
     name: 'Grid Results/Session',
     extra: "",
   }, {
-      emoji: gte_EMOTE.exit,
+      emoji: gtf_EMOTE.exit,
       emoji_name: "gtfexit",
       name: "Exit",
       extra: "Once"
@@ -1302,12 +1302,12 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
       name: "Save Replay",
       extra: ""
     }, {
-    emoji: gte_EMOTE.tracklogo,
+    emoji: gtf_EMOTE.tracklogo,
     emoji_name: "trackgtfitness",
     name: 'Grid Results/Session',
     extra: "",
   }, {
-      emoji: gte_EMOTE.exit,
+      emoji: gtf_EMOTE.exit,
       emoji_name: "gtfexit",
       name: "Exit",
       extra: "Once"
@@ -1330,12 +1330,12 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
       name: "Save Replay",
       extra: ""
     }, {
-    emoji: gte_EMOTE.tracklogo,
+    emoji: gtf_EMOTE.tracklogo,
     emoji_name: "trackgtfitness",
     name: 'Grid Results/Session',
     extra: "",
   }, {
-      emoji: gte_EMOTE.exit,
+      emoji: gtf_EMOTE.exit,
       emoji_name: "gtfexit",
       name: "Exit",
       extra: "Once"
@@ -1349,7 +1349,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
       name: "Save Replay",
       extra: ""
     }, {
-    emoji: gte_EMOTE.tracklogo,
+    emoji: gtf_EMOTE.tracklogo,
     emoji_name: "trackgtfitness",
     name: 'Grid Results/Session',
     extra: "",
@@ -1367,12 +1367,12 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
       name: "Save Replay",
       extra: ""
     },  {
-    emoji: gte_EMOTE.tracklogo,
+    emoji: gtf_EMOTE.tracklogo,
     emoji_name: "trackgtfitness",
     name: 'Grid Results/Session',
     extra: "",
   }, {
-      emoji: gte_EMOTE.exit,
+      emoji: gtf_EMOTE.exit,
       emoji_name: "gtfexit",
       name: "Exit",
       extra: "Once"
@@ -1397,7 +1397,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
 
   buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
 
-gte_DISCORD.send(msg, {content:ping + " **FINISH**",embeds: [embed], components:buttons}, race2func, true)
+gtf_DISCORD.send(msg, {content:ping + " **FINISH**",embeds: [embed], components:buttons}, race2func, true)
         function race2func(msg) {
           gte_RACEEX.createRaceButtons(racesettings, racedetails, finalgrid,  checkpoint, results2, buttons, emojilist, embed, msg, userdata);
 
@@ -1405,7 +1405,7 @@ gte_DISCORD.send(msg, {content:ping + " **FINISH**",embeds: [embed], components:
          var complete = gte_STATS.checkEvent(racesettings, "1st", userdata);
             if (complete) {
             gte_STATS.completeEvent(racesettings, userdata);
-              gte_STATS.redeemGift(gte_EMOTE.goldmedal + " Congrats! Completed " + racesettings["title"].split(" - ")[0] + " " + gte_EMOTE.goldmedal, racesettings["prize"], embed, msg, userdata);
+              gte_STATS.redeemGift(gtf_EMOTE.goldmedal + " Congrats! Completed " + racesettings["title"].split(" - ")[0] + " " + gtf_EMOTE.goldmedal, racesettings["prize"], embed, msg, userdata);
                 }
           }
           else if (racesettings["mode"] == "LICENSE") {

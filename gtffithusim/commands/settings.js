@@ -6,7 +6,7 @@ module.exports = {
   title: "GTF Settings",
   license: "N",
   level: 0,
-  channels: ["testing"],
+  channels: ["gtf-fithusim-game", "testing"],
 
   availinmaint: false,
   requireuserdata: false,
@@ -34,18 +34,11 @@ module.exports = {
     }, msg, userdata)
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
 
-    embed.setTitle("⚙ __Settings__");
+    embed.setTitle("__Settings__");
 
     if (query["options"] == "list") {
       delete query["number"]
-        var units = ["Kilometers", "Miles"];
-        var enabled = ["Disabled", "Enabled"]
-        var menutype = ["Arrows", "Numbers"]
-        var gridname = ["Car", "Driver"]
-      
-      var genselect = ["Generation 1 (1960 - 1989)", "Generation 2 (1990 - 2005)", "Generation 3 (2006 - Present)"]
       var list = [
-         "__**Generation**__ " + "`" + genselect[userdata["settings"]["GMODE"]] + "`",
         "⭕ __**Delete Save Data**__ ",
   ];
 
@@ -62,11 +55,11 @@ module.exports = {
     }
 
     if (!isNaN(query["options"])) {
-  query["options"] = ["generationselect", "deletesavedata"][parseInt(query["options"]) - 1]
+  query["options"] = ["deletesavedata"][parseInt(query["options"]) - 1]
     }
       if (query["options"] == "deletesavedata") {
       var emojilist = [
-  { emoji: gte_EMOTE.yes, 
+  { emoji: gtf_EMOTE.fithusimlogo, 
   emoji_name: 'Yes', 
   name: 'Confirm', 
   extra: "Once",
@@ -75,11 +68,11 @@ module.exports = {
 
         embed.setDescription("❌ Delete your save data for the game? This is permanent.");
         embed.setColor(0xff0000);
-        gte_DISCORD.send(msg, {embeds:[embed], components:buttons}, next)
+        gtf_DISCORD.send(msg, {embeds:[embed], components:buttons}, next)
 
         function next(msg) {
           function deletesave() {
-            gte_STATS.save(userdata, "DELETE");
+            gte_STATS.saveEnthu(userdata, "DELETE");
             gte_EMBED.alert({ name: "✅ Success", description: "Save data deleted.", embed: embed, seconds: 0 }, msg, userdata);
           }
           var functionlist = [deletesave]

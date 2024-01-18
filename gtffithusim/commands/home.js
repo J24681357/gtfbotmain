@@ -6,7 +6,7 @@ module.exports = {
   title: "Menu",
   license: "N",
   level: 0,
-  channels: ["testing"],
+  channels: ["gtf-fithusim-game", "testing"],
 
   availinmaint: false,
   requirecar: false,
@@ -53,9 +53,8 @@ module.exports = {
       return cmd.execute(msg, {}, userdata);
     }
     
-    var showcasenumber = 0;
-    var message = gte_STATS.checkNotifications(userdata)
-    embed.setTitle(gte_EMOTE.gtflogo + " __Menu__");
+    var message = "**It's Not What You Drive, It's How You Drive**" + "\n\n"
+    embed.setTitle(gtf_EMOTE.fithusimlogo + " __Main Menu__");
     embed.setDescription(message + results);
 
     var menulist = gte_GTF.commandlist.map(function(x, i) {
@@ -97,15 +96,16 @@ module.exports = {
     buttons.unshift(menu);
 
     var car = gtf_CARS.random({}, 1)[0];
-    results = results = "__**Fithusim Life**__" + "\n" + "__**Driving Revolution**__" + "\n" +
-        "__**Generation Select**__";
+    results = "__**Fithusim Life**__" + "\n" + "__**Driving Revolution**__" + "\n" +
+        "__**Generation Select**__" + "\n" +
+        "__**Settings**__";
     embed.setDescription(message + results);
     embed.setThumbnail("https://github.com/J24681357/gtfbotfithusim/raw/master/images/logo/fithusimlogo.png")
     embed.fields = [];
 
     //embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: gte_STATS.currentCarFooterEnthu(userdata) }]);
 
-    gte_DISCORD.send(msg, { embeds: [embed], components: buttons }, homefunc);
+    gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, homefunc);
 
     function homefunc(msg) {
       var functionlist = [];
@@ -159,7 +159,7 @@ module.exports = {
 function createlist() {
         var showcase0 = function() {
           msg.removeAttachments();
-          embed.setTitle(gte_EMOTE.gtflogo + " __My Home__");
+          embed.setTitle(gtf_EMOTE.gtflogo + " __My Home__");
           embed.image = "";
           var t = gte_COURSEMAKER.createCourse({
             min: 40,
@@ -177,7 +177,7 @@ function createlist() {
             
             track["options"] = ["Drift"];
             track["author"] = "ARCADE";
-            results = "**🖼 " + track["name"] + "**\n" + "**Generate your own courses using __/course__ or in the Course Maker selection." + "**\n\n" + gte_EMOTE.gtlogoblue + "**Main Version Date: " + gte_MAIN.bot["versiondate"] + "**";
+            results = "**🖼 " + track["name"] + "**\n" + "**Generate your own courses using __/course__ or in the Course Maker selection." + "**\n\n" + gtf_EMOTE.gtlogoblue + "**Main Version Date: " + gte_MAIN.bot["versiondate"] + "**";
             embed.setDescription(message + results);
             const attachment = new AttachmentBuilder(track["image"], { name: "course.png" });
             embed.setThumbnail("attachment://course.png");
@@ -189,7 +189,7 @@ function createlist() {
         }
         var showcase1 = function() {
           msg.removeAttachments();
-          embed.setTitle(gte_EMOTE.gtflogo + " __Menu__");
+          embed.setTitle(gtf_EMOTE.gtflogo + " __Menu__");
           embed.image = "";
           
           results = "__**Fithusim Life**__" + "\n" +
@@ -202,7 +202,7 @@ function createlist() {
         }
         var showcase2 = function() {
           msg.removeAttachments();
-          embed.setTitle(gte_EMOTE.gtflogo + " __My Home__");
+          embed.setTitle(gtf_EMOTE.gtflogo + " __My Home__");
           embed.image = "";
           var track = gtf_TRACKS.random({}, 1)[0];
           results =
@@ -214,10 +214,10 @@ function createlist() {
             "**Length:** " +
             [track["length"] + " km", gtf_MATH.round( (track["length"] * 0.62137119), 2) + " mi"].join(" | ") +
             "\n" +
-            gte_EMOTE.tracklogo +
+            gtf_EMOTE.tracklogo +
             " **Drive over many tracks from the Gran Turismo series in GT Fitness!**" +
             "\n\n" +
-            gte_EMOTE.gtlogoblue + "**Main Version Date: " + gte_MAIN.bot["versiondate"] + "**";
+            gtf_EMOTE.gtlogoblue + "**Main Version Date: " + gte_MAIN.bot["versiondate"] + "**";
           embed.setDescription(message + results);
           embed.setThumbnail(track["image"]);
           embed.fields = [];
@@ -227,7 +227,7 @@ function createlist() {
         }
         var showcase3 = function() {
           msg.removeAttachments();
-          embed.setTitle(gte_EMOTE.gtflogo + " __My Home__");
+          embed.setTitle(gtf_EMOTE.gtflogo + " __My Home__");
           var attachment = [];
 
           embed.fields = [];
@@ -244,7 +244,7 @@ function createlist() {
         }
         var showcase4 = function() {
           msg.removeAttachments();
-          embed.setTitle(gte_EMOTE.gtflogo + " __My Home__");
+          embed.setTitle(gtf_EMOTE.gtflogo + " __My Home__");
 
           embed.fields = [];
           var car = gte_STATS.currentCar(userdata);

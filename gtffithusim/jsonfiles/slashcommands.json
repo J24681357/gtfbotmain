@@ -6,12 +6,12 @@
   },
 "fithusimlife": {
     "name": "fithusimlife",
-    "description": "🎌 Fithusim Life.",
+    "description": "🎌 Fithusim Life: Participate in leagues & rank up to the top.",
     "channels": "",
     "options": [
       {
         "name": "options",
-        "description": "Select a mode.",
+        "description": "Select a mode in Fithusim Life.",
         "type": 3,
         "required": false,
         "choices": [
@@ -26,6 +26,14 @@
           {
             "name": "Rest",
             "value": "3"
+          },
+          {
+            "name": "Garage",
+            "value": "4"
+          },
+          {
+            "name": "Records",
+            "value": "5"
           }
         ]
       }
@@ -33,7 +41,7 @@
   },
   "drivingrevolution": {
     "name": "drivingrevolution",
-    "description": "🎌 Driving Revolution.",
+    "description": "🎌 Driving Revolution: Drive in interactive stages to hone your skills.",
     "channels": "",
     "options": [
       {

@@ -55,16 +55,16 @@ module.exports.interval = function interval(func, wait, times) {
 module.exports.toEmoji = function (text) {
   var list = {
     nlicense: "⬛",
-    blicense: gte_EMOTE.blicense,
-    alicense: gte_EMOTE.alicense,
-    iclicense: gte_EMOTE.iclicense,
-    iblicense: gte_EMOTE.iblicense,
-    ialicense: gte_EMOTE.ialicense,
-    slicense: gte_EMOTE.slicense,
-    blank: gte_EMOTE.transparent,
-    playercar: gte_EMOTE.carright,
-    playercarup: gte_EMOTE.carup,
-    playercardown: gte_EMOTE.cardown,
+    blicense: gtf_EMOTE.blicense,
+    alicense: gtf_EMOTE.alicense,
+    iclicense: gtf_EMOTE.iclicense,
+    iblicense: gtf_EMOTE.iblicense,
+    ialicense: gtf_EMOTE.ialicense,
+    slicense: gtf_EMOTE.slicense,
+    blank: gtf_EMOTE.transparent,
+    playercar: gtf_EMOTE.carright,
+    playercarup: gtf_EMOTE.carup,
+    playercardown: gtf_EMOTE.cardown,
     
     "N/A": "N/A",
     austria: "🇦🇹",
@@ -87,7 +87,7 @@ module.exports.toEmoji = function (text) {
     sweden: "🇸🇪",
     usa: "🇺🇸",
     canada: "🇨🇦",
-    pdi: gte_EMOTE.pdiflag,
+    pdi: gtf_EMOTE.pdiflag,
     up: "⬆",
     down: "⬇",
     left: "⬅",
@@ -206,15 +206,15 @@ module.exports.formPages = async function (args, embed, msg, userdata) {
       })
       .slice(0, currentpagelength);
     emojilist.unshift({
-      emoji: gte_EMOTE.rightarrow,
-      emoji_name: "rightarrow",
+      emoji: gtf_EMOTE.rightarrowenthu,
+      emoji_name: "rightarrowenthu",
       name: "",
       extra: "",
       button_id: 1,
     });
     emojilist.unshift({
-      emoji: gte_EMOTE.leftarrow,
-      emoji_name: "leftarrow",
+      emoji: gtf_EMOTE.leftarrowenthu,
+      emoji_name: "leftarrowenthu",
       name: args["page"] + 1 + "/" + Math.ceil(args["list"].length / args["rows"]),
       extra: "",
       button_id: 0,
@@ -223,29 +223,29 @@ module.exports.formPages = async function (args, embed, msg, userdata) {
     var emojilist = [
       { emoji: "", emoji_name: "", name: "OK | " + (args["page"] + 1) + "/" + Math.ceil(args["list"].length / args["rows"]), extra: "", button_id: 0 },
       {
-        emoji: gte_EMOTE.leftarrow,
-        emoji_name: "leftarrow",
+        emoji: gtf_EMOTE.leftarrowenthu,
+        emoji_name: "leftarrowenthu",
         name: "",
         extra: "",
         button_id: 1,
       },
       {
-        emoji: gte_EMOTE.rightarrow,
-        emoji_name: "rightarrow",
+        emoji: gtf_EMOTE.rightarrowenthu,
+        emoji_name: "rightarrowenthu",
         name: "",
         extra: "",
         button_id: 2,
       },
       {
-        emoji: gte_EMOTE.uparrow,
-        emoji_name: "uparrow",
+        emoji: gtf_EMOTE.uparrowenthu,
+        emoji_name: "uparrowenthu",
         name: "",
         extra: "",
         button_id: 3,
       },
       {
-        emoji: gte_EMOTE.downarrow,
-        emoji_name: "downarrow",
+        emoji: gtf_EMOTE.downarrowenthu,
+        emoji_name: "downarrowenthu",
         name: "",
         extra: "",
         button_id: 4,
@@ -274,7 +274,7 @@ module.exports.formPages = async function (args, embed, msg, userdata) {
   //garagemenuvars = gte_GTF.garageMenu("", "", args, garagemenuvars, msg, embed, userdata);
   //////
 
-  gte_DISCORD.send(msg, { embeds: [embed], components: buttons, files: files }, createfunctions);
+  gtf_DISCORD.send(msg, { embeds: [embed], components: buttons, files: files }, createfunctions);
 
   function createfunctions(msg) {
     
@@ -698,11 +698,11 @@ module.exports.prepareButtons = function (emojilist, msg, userdata) {
       finalindex++;
       newlist = new ActionRowBuilder();
     }
-    if (emojilist[i]["emoji"] == gte_EMOTE.yes || emojilist[i]["name"].includes("OK"))  {
+    if (emojilist[i]["emoji"] == gtf_EMOTE.fithusimlogo || emojilist[i]["name"].includes("OK"))  {
       color = 4;
-    } else if (emojilist[i]["emoji"] == gte_EMOTE.flag) {
+    } else if (emojilist[i]["emoji"] == gtf_EMOTE.flag) {
       color = 4;
-    } else if (emojilist[i]["emoji"] == gte_EMOTE.exit) {
+    } else if (emojilist[i]["emoji"] == gtf_EMOTE.exit) {
       color = 4;
     } else {
       color = 2;
@@ -1041,9 +1041,9 @@ module.exports.createReactions = function(emojilist, msg, id) {
   
   function filter(i) {
     var emote = emojilist[i][0];
-    if (gte_EMOTE.includes("<:")) {
-      emote = gte_EMOTE.split(":")[2]
-      emote = gte_EMOTE.slice(0, gte_EMOTE.length-1)
+    if (gtf_EMOTE.includes("<:")) {
+      emote = gtf_EMOTE.split(":")[2]
+      emote = gtf_EMOTE.slice(0, gtf_EMOTE.length-1)
     }
     var name = emojilist[i][1];
     var func = emojilist[i][2];

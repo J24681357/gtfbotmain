@@ -40,7 +40,7 @@ module.exports.speedtestresults = function(racelength, racesettings, racedetails
   gte_STATS.addCarTotalMileage(racesettings["distance"]["km"], userdata);
 
 
-  var results2 = "**Top Speed:** " + speeduser + "\n" + "**Car:** " + racesettings["driver"]["car"]["name"] + " **" + racesettings["driver"]["car"]["fpp"] + gte_EMOTE.fpp + "**";
+  var results2 = "**Top Speed:** " + speeduser + "\n" + "**Car:** " + racesettings["driver"]["car"]["name"] + " **" + racesettings["driver"]["car"]["fpp"] + gtf_EMOTE.fpp + "**";
   return results2;
 };
 ///CAREER///
@@ -173,17 +173,17 @@ module.exports.driftresults = function(racesettings, racedetails, finalgrid, che
   let final = require(gte_TOOLS.homedir() + "functions/races/f_races_2ex").driftsection(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata, true);
   racesettings["points"] += final[0];
   if (racesettings["points"] >= final[3]) {
-    medal = gte_EMOTE.bronzemedal + " BRONZE";
+    medal = gtf_EMOTE.bronzemedal + " BRONZE";
     place = 2
     place2 = "3rd"
   }
   if (racesettings["points"] >= final[2]) {
-    medal = gte_EMOTE.silvermedal + " SILVER";
+    medal = gtf_EMOTE.silvermedal + " SILVER";
     place = 1
     place2 = "2nd"
   }
   if (racesettings["points"] >= final[1]) {
-    medal = gte_EMOTE.goldmedal + " GOLD";
+    medal = gtf_EMOTE.goldmedal + " GOLD";
     place = 0
     place2 = "1st"
   }
@@ -246,7 +246,7 @@ module.exports.driftresults = function(racesettings, racedetails, finalgrid, che
   var mileage = [gtf_MATH.round(racesettings["distance"]["km"], 3), gtf_MATH.round(racesettings["distance"]["mi"], 2)]
 
   var results2 = "**Points: " + gtf_MATH.numFormat(racesettings["points"]) + "pts"
-    + " " + mileage[userdata["settings"]["UNITS"]] + ["km", "mi"][userdata["settings"]["UNITS"]] + gte_EMOTE.mileage + "**\n" + "**" + medal + " " + "+" + prize + gte_EMOTE.credits + racemultibonus + "**"
+    + " " + mileage[userdata["settings"]["UNITS"]] + ["km", "mi"][userdata["settings"]["UNITS"]] + gtf_EMOTE.mileage + "**\n" + "**" + medal + " " + "+" + prize + gtf_EMOTE.credits + racemultibonus + "**"
 
   return results2;
 }
@@ -365,7 +365,7 @@ var value = (racelength * 0.94) + ((racelength * 0.94) * (jstat.gamma.mean(11, b
   list.push(value)
 }
 
-  console.log("Level " + level + " Expected: " + gte_DATETIME.getFormattedLapTime(gtf_MATH.median(list)))
+  console.log("Level " + level + " Expected: " + gtf_DATETIME.getFormattedLapTime(gtf_MATH.median(list)))
 
   })
   */
@@ -414,7 +414,7 @@ module.exports.timetriallap = function(racesettings, racedetails, finalgrid, che
   newlap["medalemote"] = "⬛"
 
   var medals = ["GOLD", "SILVER", "BRONZE"]
-  var medalemotes = [gte_EMOTE.goldmedal, gte_EMOTE.silvermedal, gte_EMOTE.bronzemedal]
+  var medalemotes = [gtf_EMOTE.goldmedal, gtf_EMOTE.silvermedal, gtf_EMOTE.bronzemedal]
   for (var x = 0; x < medals.length; x++) {
     if (newlap["time"] == 3600000) {
       newlap["medal"] = "FAIL"
@@ -539,10 +539,10 @@ module.exports.timetrialresults = function(racesettings, racedetails, finalgrid,
   }
 
 
-  var results2 = "**Best Lap:** " + gte_DATETIME.getFormattedLapTime(bestlap["time"]) + " **" + mileage[userdata["settings"]["UNITS"]] + ["km", "mi"][userdata["settings"]["UNITS"]] + gte_EMOTE.mileage + "\n" +
-    gte_DATETIME.getFormattedLapTime(bestlap["medalemote"]) + " " + gte_DATETIME.getFormattedLapTime(bestlap["medal"]) + " +" + gtf_MATH.numFormat(prize) + gte_EMOTE.credits + " +" + gtf_MATH.numFormat(exp) + gte_EMOTE.exp + "**"
+  var results2 = "**Best Lap:** " + gtf_DATETIME.getFormattedLapTime(bestlap["time"]) + " **" + mileage[userdata["settings"]["UNITS"]] + ["km", "mi"][userdata["settings"]["UNITS"]] + gtf_EMOTE.mileage + "\n" +
+    gtf_DATETIME.getFormattedLapTime(bestlap["medalemote"]) + " " + gtf_DATETIME.getFormattedLapTime(bestlap["medal"]) + " +" + gtf_MATH.numFormat(prize) + gtf_EMOTE.credits + " +" + gtf_MATH.numFormat(exp) + gtf_EMOTE.exp + "**"
   /* else {
-    var results2 = "**Best Lap In Session: **" + gte_DATETIME.getFormattedLapTime(bestlap["time"]) +  " **+" + mileage[userdata["settings"]["UNITS"]] + " " + ["km", "mi"][userdata["settings"]["UNITS"]] + gte_EMOTE.mileage + "**"
+    var results2 = "**Best Lap In Session: **" + gtf_DATETIME.getFormattedLapTime(bestlap["time"]) +  " **+" + mileage[userdata["settings"]["UNITS"]] + " " + ["km", "mi"][userdata["settings"]["UNITS"]] + gtf_EMOTE.mileage + "**"
   }(/)
   */
 
@@ -669,7 +669,7 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
 
       embed.setDescription(results2.join("\n") + "\n\n" +
         racedetails + "\n" +
-        gte_EMOTE.loading + " Loading " + gte_EMOTE.loading)
+        gtf_EMOTE.loading + " Loading " + gtf_EMOTE.loading)
       msgjson.embeds[0].fields = []
       embed.fields = []
 
@@ -682,7 +682,7 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
     userdata["raceinprogress"] = { active: false, messageid: "", channelid: "", expire: '', gridhistory: [], timehistory: [], weatherhistory: [], msghistory: [], championshipnum: 0 }
     msg.channel.messages.fetch().then(messages => {
       var m = messages.filter(msge => msge.content.includes("**FINISH**") && msge.author.id == gte_USERID).first();
-      gte_DISCORD.delete(m, { seconds: 2 })
+      gtf_DISCORD.delete(m, { seconds: 2 })
     });
     var e = Math.ceil((parseInt(racesettings["eventid"].split("-")[1])) / 4)
     var command = require(gte_TOOLS.homedir() + "commands/drivingrevolution");
@@ -833,7 +833,7 @@ module.exports.updateGrid = function(racesettings, racedetails, finalgrid, check
       var gap = ((finalgrid[0]["score"] - x["score"]) / 1000)
       x["gap"] = ((Math.ceil(gap * 1000) / 1000) * 1.16).toFixed(3);
       if (parseFloat(x["gap"]) >= 60) {
-        x["gap"] = gte_DATETIME.getFormattedTime(parseInt(x["gap"]) * 1000)
+        x["gap"] = gtf_DATETIME.getFormattedTime(parseInt(x["gap"]) * 1000)
       }
     }
     if (x["user"]) {

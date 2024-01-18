@@ -6,7 +6,7 @@ module.exports = {
   title: "My Garage",
   license: "N", 
   level: 0,
-  channels: ["testing"],
+  channels: ["gtf-fithusim-game", "testing"],
 
   availinmaint: false,
   requireuserdata: true,
@@ -32,12 +32,16 @@ module.exports = {
       special: "",
       other: "",
     }, msg, userdata)
-    //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
+    //      //      //      //      //      //      //      //      //      //      //      //      //      //      /l/      //      //
+    console.log(query)
     
-    ///LOBBY
+    var listsec = []
 
     if (!isNaN(query["options"])) {
       query["number"] = parseInt(query["number"]);
+    }
+    if (typeof query["number"] !== 'undefined') {
+      query["options"] = "select"
     }
     
     var filterlist = []
@@ -72,6 +76,9 @@ module.exports = {
     }
     if (typeof query["fpplimit"] !== 'undefined') {
        filterlist.push(function(x) {return x["fpp"] <= query["fpplimit"]})
+    }
+    if (typeof query["lowerfpp"] !== 'undefined') {
+       filterlist.push(function(x) {return x["fpp"] >= query["lowerfpp"]})
     }
     if (typeof query["powerlimit"] !== 'undefined') {
        filterlist.push(function(x) {return gte_PERF.perfEnthu(x, "GARAGE")["power"] <= query["powerlimit"]})
@@ -120,7 +127,8 @@ module.exports = {
        filterlist.push(function(x) {return x["favorite"]})
     }
 
-    if (query["options"] == "list") {
+    if (query["options"] == "changecar") {
+
        delete query["number"]
         var cars = gte_STATS.garage(userdata).filter(x => filterlist.map(filter => filter(x)).every(p => p === true))
         if (cars.length == 0) {
@@ -132,18 +140,21 @@ module.exports = {
         list = cars.map(function(i, index) {
           var favorite = i["favorite"] ? " ⭐" : ""
           
-          var image = gtf_CARS.find({fullnames: [i["name"]]})[0]["image"][0]
+          var ocar = gtf_CARS.find({fullnames: [i["name"]]})[0]
+          var image = ocar["image"][0]
          pageargs["image"].push(image)
           
-          var name = gtf_CARS.shortName(i["name"])
+          var name = gtf_CARS.shortName(i["name"]).split(" ").slice(0, -1).join(" ")
            var level = i["perf"]["level"]
           carname = name + " `Lv." + level + "` ` " + gte_PERF.perfEnthu(i, "GARAGE")["class"] + " `" + favorite
           if (gte_STATS.currentCarNum(userdata) == index+1)  {
             carname = "**" + name + "**" + " `Lv." + level + "` ` " + gte_PERF.perfEnthu(i, "GARAGE")["class"] + " `" + favorite
           }
+           listsec.push(ocar["year"] + " | " + gtf_MATH.numFormat(ocar["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(ocar["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + ocar["special"].join(", "))
           return carname
-        })
+      })
       pageargs["list"] = list;
+      pageargs["listsec"] = listsec;
       if (typeof query["extra"] !== "undefined") {
         pageargs["footer"] = "✅ " + query["extra"]
         delete query["extra"]
@@ -155,27 +166,44 @@ module.exports = {
       return
     }
 
-    if (query["options"] == "sell") {
-      var number = query["number"];
-      var number2 = query["number"];
+    if (query["options"] == "list") {
+       delete query["number"]
+        var cars = gte_STATS.garage(userdata).filter(x => filterlist.map(filter => filter(x)).every(p => p === true))
+        if (cars.length == 0) {
+          gte_EMBED.alert({ name: "❌ No Cars", description: "There are no cars with this type in your garage.", embed: "", seconds: 5 }, msg, userdata);
+        return;
+        }
+      embed.setTitle("__Garage__ " + cars.length + " Cars (" + userdata["settings"]["GARAGESORT"] + ")" + makee + country + type + drivetrain + engine + special + name);
+      pageargs["image"] = []
+        list = cars.map(function(i, index) {
+          var favorite = i["favorite"] ? " ⭐" : ""
 
-      if (number <= 0 || isNaN(number) || number === undefined || number > cars.length) {
-        gte_EMBED.alert({ name: "❌ Invalid ID", description: "This ID does not exist in your garage.", embed: "", seconds: 5 }, msg, userdata);
-        return;
+          var ocar = gtf_CARS.find({fullnames: [i["name"]]})[0]
+          var image = ocar["image"][0]
+         pageargs["image"].push(image)
+
+          var name = gtf_CARS.shortName(i["name"]).split(" ").slice(0, -1).join(" ")
+           var level = i["perf"]["level"]
+          carname = name + " `Lv." + level + "` ` " + gte_PERF.perfEnthu(i, "GARAGE")["class"] + " `" + favorite
+          if (gte_STATS.currentCarNum(userdata) == index+1)  {
+            carname = "**" + name + "**" + " `Lv." + level + "` ` " + gte_PERF.perfEnthu(i, "GARAGE")["class"] + " `" + favorite
+          }
+          listsec.push(ocar["year"] + " | " + gtf_MATH.numFormat(ocar["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(ocar["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + ocar["special"].join(", "))
+          return carname
+        })
+      pageargs["list"] = list;
+      pageargs["listsec"] = listsec;
+      if (typeof query["extra"] !== "undefined") {
+        pageargs["footer"] = "✅ " + query["extra"]
+        delete query["extra"]
       }
-      if (number == gte_STATS.currentCarNum(userdata) || number2 == gte_STATS.currentCarNum(userdata)) {
-        gte_EMBED.alert({ name: "❌ Invalid ID", description: "You cannot sell your current car.", embed: "", seconds: 5 }, msg, userdata);
-        return;
-      }
-      if (number2 == number) {
-        var gtfcar = gte_STATS.garage(userdata).filter(x => filterlist.map(filter => filter(x)).every(p => p === true))[number - 1];
-        query = {options: query["options"], number: query["number"]}
-        gte_GTFAUTO.sell(gtfcar, "CAR", "", embed, query, msg, userdata);
-      } else {
-        gte_GTFAUTO.sell([number, number2], "CARS", embed, query, msg, userdata);
-      }
+      pageargs["selector"] = ""
+      pageargs["query"] = query
+      pageargs["text"] = gte_TOOLS.formPage(pageargs, userdata);
+      gte_TOOLS.formPages(pageargs, embed, msg, userdata);
       return
     }
+
     if (query["options"] == "view") {
       var number = query["number"];
       if (number <= 0 || isNaN(number) || number > cars.length) {
@@ -220,7 +248,7 @@ module.exports = {
   name: 'Condition', 
   extra: "",
   button_id: 3 },
-    { emoji: gte_EMOTE.credits, 
+    { emoji: gtf_EMOTE.credits, 
   emoji_name: "credits", 
   name: "", 
   extra: "",
@@ -232,7 +260,7 @@ module.exports = {
         
 var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
         
-       gte_DISCORD.send(msg, {embeds:[embed], components:buttons, files: [attachment]}, carfunc)
+       gtf_DISCORD.send(msg, {embeds:[embed], components:buttons, files: [attachment]}, carfunc)
        
        function carfunc(msg) {
         function favoritecar() {
@@ -276,18 +304,9 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
           msg.edit({embeds: [embed], components:buttons});
         }
          
-        function sellcar() {
-      if (gtfcar["id"] == gte_STATS.currentCar(userdata)["id"]) {
-        gte_EMBED.alert({ name: "❌ Cannot Sell Car", description: "You cannot sell your current car.", embed: "", seconds: 5 }, msg, userdata);
-        return;
-      }
-            if (condition["health"] < 45) {
-              return
-            }
-         gte_GTFAUTO.sell(gtfcar, "CAR", "silent", embed, query, msg, userdata);
-        }
+   
 
-        var functionlist = [favoritecar, changecar, view, carcondition, sellcar]
+        var functionlist = [favoritecar, changecar, view, carcondition]
         gte_TOOLS.createButtons(buttons, emojilist, functionlist, msg, userdata)
       }
       return;

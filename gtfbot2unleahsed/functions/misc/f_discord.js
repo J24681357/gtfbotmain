@@ -3,8 +3,8 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 ////////////////////////////////////////////////////
 
 module.exports.send = function(msg, content, callback, force) {
-  
-  var gtfbot = gtf_LIST_BOT
+  var gtfbot = gtf_LIST_EMBEDCOUNTS
+  var channelid = "c" + msg.channel.id
   content["fetchReply"] = true
   if (content["type1"] == "CHANNEL") {             
     msg.send(content)
@@ -17,24 +17,31 @@ module.exports.send = function(msg, content, callback, force) {
   if (typeof callback === "undefined") {
     callback = function() {}
   }
-  gtfbot["totalmsg"]++
-   if (gtfbot["totalmsg"] == 0) {
+  if (typeof gtfbot[channelid] === "undefined") {
+    gtfbot[channelid] = {}
+    gtfbot[channelid]["count"] = 1
+    gtfbot[channelid]["msglimit"] = false
+  } else {
+    gtfbot[channelid]["count"]++
+  }
+   if (gtfbot[channelid]["count"] == 0) {
       return
-    } else {
+    } 
+   else {
       var timer;
       var i;
       var check = function() {
           clearInterval(timer)
           clearInterval(i)
-          gtfbot["msglimit"] = false
+          gtfbot[channelid]["msglimit"] = false
       }
       
       var repeat = function() {
-        if (gtfbot["msglimit"] == false) {
-        gtfbot["msglimit"] = true        
+        if (gtfbot[channelid]["msglimit"] == false) {
+        gtfbot[channelid]["msglimit"] = true        
          timer = setInterval(function() {
-            if (gtfbot["totalmsg"] != 0) {
-              gtfbot["totalmsg"]--
+            if (gtfbot[channelid]["count"] != 0) {
+              gtfbot[channelid]["count"]--
               if (content["type1"] == "CHANNEL") {        
               msg.editReply(content).then(msgg => {
                 callback(msgg)}
@@ -50,14 +57,14 @@ module.exports.send = function(msg, content, callback, force) {
       
         }
       }
-
-      if (gtfbot["msglimit"] == false) {
+      
+      if (gtfbot[channelid]["msglimit"] == false) {
         repeat()
       } else {
        i = setInterval(function() {repeat()}, 4000)
       }
 }
-
+  
   async function sendtype(msg, force) {
     if (force) {
              try {          
@@ -93,12 +100,20 @@ module.exports.send = function(msg, content, callback, force) {
 
 module.exports.edit = function(msg, content, callback) {
 
-  var gtfbot = gtf_LIST_BOT
+  var gtfbot = gtf_LIST_EMBEDCOUNTS
+  var channelid = "c" + msg.channel.id
+
   if (typeof callback === "undefined") {
     callback = function() {}
   }
-  gtfbot["totalmsg"]++
-   if (gtfbot["totalmsg"] == 0) {
+  if (typeof gtfbot[channelid] === "undefined") {
+    gtfbot[channelid] = {}
+    gtfbot[channelid]["count"] = 1
+    gtfbot[channelid]["msglimit"] = false
+  } else {
+    gtfbot[channelid]["count"]++
+  }
+   if (gtfbot[channelid]["count"] == 0) {
       return
     } else {
       var timer;
@@ -106,15 +121,15 @@ module.exports.edit = function(msg, content, callback) {
       var check = function() {
           clearInterval(timer)
           clearInterval(i)
-          gtfbot["msglimit"] = false
+          gtfbot[channelid]["msglimit"] = false
       }
       
       var repeat = function() {
-        if (gtfbot["msglimit"] == false) {
-        gtfbot["msglimit"] = true        
+        if (gtfbot[channelid]["msglimit"] == false) {
+        gtfbot[channelid]["msglimit"] = true        
          timer = setInterval(function() {
-            if (gtfbot["totalmsg"] != 0) {
-              gtfbot["totalmsg"]--
+            if (gtfbot[channelid]["count"] != 0) {
+              gtfbot[channelid]["count"]--
               edittype(msg, false)
              /* msg.edit(content).then(msgg => {
                 msgg.user = msg.user
@@ -127,7 +142,7 @@ module.exports.edit = function(msg, content, callback) {
         }
       }
 
-      if (gtfbot["msglimit"] == false) {
+      if (gtfbot[channelid]["msglimit"] == false) {
         repeat()
       } else {
        i = setInterval(function() {repeat()}, 1500)

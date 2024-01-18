@@ -5,7 +5,7 @@ module.exports = {
   title: "Driving Revolution",
   license: "N",
   level: 0,
-  channels: ["testing"],
+  channels: ["gtf-fithusim-game", "testing"],
 
   availinmaint: false,
   requireuserdata: true,
@@ -39,8 +39,6 @@ module.exports = {
       userdata
     );
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
-
-    console.log(userdata["races"])
     ////CHECK NEW GAME
     if (gte_STATS.garage(userdata) == 0) {
       query["options"] = "new_game" 

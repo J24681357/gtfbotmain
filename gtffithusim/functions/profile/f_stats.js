@@ -82,7 +82,7 @@ module.exports.totalPlayTime = function (userdata, type) {
   if (type == "MILLISECONDS") {
     return userdata["totalplaytime"]
   } else {
-  return gte_DATETIME.getFormattedTime(userdata["totalplaytime"])
+  return gtf_DATETIME.getFormattedTime(userdata["totalplaytime"])
   }
 };
 module.exports.addPlayTime = function (number, userdata) {
@@ -224,8 +224,8 @@ module.exports.currentCarFooter = function (userdata) {
     var carcondition = gte_CONDITION.condition(gtfcar)
     return (
       "`" + userdata["currentcar"] + "` " + carcondition["emote"] + " `" + carcondition["health"] + "%`" + " " + gtf_CARS.shortName(gtfcar["name"]) +
-" " + "**" + gtfcar["fpp"] + gte_EMOTE.fpp +
-      gte_EMOTE.tire +
+" " + "**" + gtfcar["fpp"] + gtf_EMOTE.fpp +
+      gtf_EMOTE.tire +
       gtfcar["perf"]["tires"]["current"]
         .split(" ")
         .map(x => x[0])
@@ -237,7 +237,7 @@ module.exports.currentCarFooter = function (userdata) {
 module.exports.currentCarFooterEnthu = function (userdata) {
   var gtfcar = gte_STATS.currentCar(userdata);
   if (Object.keys(gtfcar).length == 0) {
-    return "Select your first car.";
+    return "None";
   } else {
     return gtfcar["name"] + " `Lv." + gtfcar["perf"]["level"] + "`"
   }
@@ -314,11 +314,11 @@ module.exports.checkMessages = function(command, callback, msg, userdata) {
           } else {
         var character = {
           "gtfitness":" __**GT Fitness**__",
-          "lewish":gte_EMOTE.lewish + " __**Lewis Hamilton**__", 
-          "igorf":gte_EMOTE.igorf + " __**Igor Fraga**__", 
-          "sebastienl":gte_EMOTE.sebastienl + " __**Sebastien Loeb**__", 
-          "jannm": gte_EMOTE.jannm + " __**Jann Mardenborough**__",
-      "jimmyb": gte_EMOTE.jimmyb + " __**Jimmy Broadbent**__"}[commandmessages[x]["emote"]]
+          "lewish":gtf_EMOTE.lewish + " __**Lewis Hamilton**__", 
+          "igorf":gtf_EMOTE.igorf + " __**Igor Fraga**__", 
+          "sebastienl":gtf_EMOTE.sebastienl + " __**Sebastien Loeb**__", 
+          "jannm": gtf_EMOTE.jannm + " __**Jann Mardenborough**__",
+      "jimmyb": gtf_EMOTE.jimmyb + " __**Jimmy Broadbent**__"}[commandmessages[x]["emote"]]
         }
         embed.setDescription(character + "\n" + commandmessages[x]["messages"].join("\n\n"));
         message = commandmessages[x]
@@ -338,7 +338,7 @@ module.exports.checkMessages = function(command, callback, msg, userdata) {
   button_id: 0,
   }]
    var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
-      gte_DISCORD.send(msg, {embeds: [embed], components:buttons}, acceptmessage)
+      gtf_DISCORD.send(msg, {embeds: [embed], components:buttons}, acceptmessage)
    function acceptmessage(msgg) {
     function accept() {
       gte_STATS.addMessage(name, message, userdata)
@@ -537,7 +537,7 @@ module.exports.viewCar = function (gtfcar, embed, userdata) {
     "\n" +
     "**" +
     gtf_MATH.numFormat(perf["fpp"]) +
-    gte_EMOTE.fpp +
+    gtf_EMOTE.fpp +
     " | " +
     gtf_MATH.numFormat(perf["power"]) +
     " hp" +
@@ -823,7 +823,7 @@ module.exports.redeemGift = function (title, gift, embed, msg, userdata) {
   if (gift["type"] == "CREDITS") {
     gte_STATS.addCredits(parseInt(gift["item"]), userdata);
     userdata["gifts"] = userdata["gifts"].filter(x => x["id"] !== gift["id"]);
-    description = "**Credits: +" + gtf_MATH.numFormat(gift["item"]) + gte_EMOTE.credits + "**";
+    description = "**Credits: +" + gtf_MATH.numFormat(gift["item"]) + gtf_EMOTE.credits + "**";
     if (embed != "") {
     gte_EMBED.alert({ name: title, description: description, embed: "", seconds: 0 }, msg, userdata);
     }
@@ -833,7 +833,7 @@ module.exports.redeemGift = function (title, gift, embed, msg, userdata) {
     gte_STATS.addExp(parseInt(gift["item"]), userdata);
     var levelup = gte_EXP.checkLevelUp(userdata);
     userdata["gifts"] = userdata["gifts"].filter(x => x["id"] !== gift["id"]);
-    description = "**Experience Points: +" + gtf_MATH.numFormat(gift["item"]) + " XP" + gte_EMOTE.exp + "**";
+    description = "**Experience Points: +" + gtf_MATH.numFormat(gift["item"]) + " XP" + gtf_EMOTE.exp + "**";
     if (embed != "") {
     gte_EMBED.alert({ name: title, description: description, embed: "", seconds: 0 }, msg, userdata);
     }
@@ -1350,9 +1350,6 @@ module.exports.addRankingRace = function (racesettings, place, points, damage, u
     skillpoints = skillpoints + {"1st": 10, "2nd": 6, "3rd": 4, "4th": 3, "5th": 2, "6th": 1}[place]
   }
 
-
-  
-
   ///fastest 
   
   if (gte_STATS.currentCar(userdata)["level"] == 10) {
@@ -1381,8 +1378,9 @@ var league = racesettings["eventid"].split("-")[0].toUpperCase()
 league: racesettings["eventid"].split("-")[0].toUpperCase(),
 week:userdata["week"], 
 place: place, 
-    points: Math.round(points), 
-      skillpoints:Math.round(skillpoints),
+car: racesettings["driver"]["car"] + " `Lv." + racesettings["driver"]["car"]["perf"]["level"] + "`",
+points: Math.round(points), 
+skillpoints:Math.round(skillpoints),
       damage: damage
       })
   userdata["rankingpoints"] += points
@@ -1461,11 +1459,11 @@ module.exports.raceEventStatus = function (event, userdata) {
   if (eventstatus[0] == "✅") {
       return "✅";
     } else if (eventstatus[0] == "1st") {
-      return gte_EMOTE.goldmedal
+      return gtf_EMOTE.goldmedal
     } else if (eventstatus[0] == "2nd") {
-      return gte_EMOTE.silvermedal
+      return gtf_EMOTE.silvermedal
     } else if (eventstatus[0] == "3rd") {
-      return gte_EMOTE.bronzemedal
+      return gtf_EMOTE.bronzemedal
     } else {
       return "⬛";
   }
@@ -1571,7 +1569,7 @@ module.exports.menuFooter = function (userdata) {
   }
   var gifts = gte_STATS.gifts(userdata).length >= 1 ? gte_STATS.gifts(userdata).length + " 🎁 " : "";
   var units = gte_STATS.mileageUnits(userdata);
-  var currdate = gte_DATETIME.getFormattedDate(new Date(), userdata);
+  var currdate = gtf_DATETIME.getFormattedDate(new Date(), userdata);
 
   if (userdata["lastonline"] != currdate) {
     userdata["dailyworkout"]["done"] = false;
@@ -1592,10 +1590,10 @@ module.exports.menuFooter = function (userdata) {
   }
   userdata["lastonline"] = currdate;
   gte_STATS.addRaceMulti(-100, userdata);
-  //gte_EMOTE.dailyworkout + "x" + gte_STATS.raceMulti(userdata) + " "
+  //gtf_EMOTE.dailyworkout + "x" + gte_STATS.raceMulti(userdata) + " "
 
-  return gifts + gtf_MATH.numFormat(gte_STATS.credits(userdata)) + " " + gte_EMOTE.credits + " " +
-    "Lv." + gte_STATS.level(userdata)+ " " + gte_EMOTE.exp + " " + gtf_MATH.numFormat(gte_STATS.exp(userdata)) + "  " + gte_EMOTE.dailyworkoutman + gtf_MATH.numFormat(gte_STATS.mileageUser(userdata)) + units + levelup;
+  return gifts + gtf_MATH.numFormat(gte_STATS.credits(userdata)) + " " + gtf_EMOTE.credits + " " +
+    "Lv." + gte_STATS.level(userdata)+ " " + gtf_EMOTE.exp + " " + gtf_MATH.numFormat(gte_STATS.exp(userdata)) + "  " + gtf_EMOTE.dailyworkoutman + gtf_MATH.numFormat(gte_STATS.mileageUser(userdata)) + units + levelup;
 };
 
 module.exports.menuFooterEnthu = function (userdata) {

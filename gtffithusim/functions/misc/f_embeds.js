@@ -17,12 +17,12 @@ module.exports.alert = function (object, msg, userdata) {
   if (name.includes("❌")) {
     color = 0xff0000;
   }
-  if (name.includes("✅") || name.includes("🎉") || name.includes(gte_EMOTE.goldmedal)) {
+  if (name.includes("✅") || name.includes("🎉") || name.includes(gtf_EMOTE.goldmedal)) {
     color = 0x216c2a;
   }
 
   var message = msg.content.split("***").join(" ");
-  if (message.length == 0 || name.includes("✅") || name.includes("🎉") || name.includes(gte_EMOTE.goldmedal)) {
+  if (message.length == 0 || name.includes("✅") || name.includes("🎉") || name.includes(gtf_EMOTE.goldmedal)) {
     message = "";
   } else {
     message = ' "' + message + '"'
@@ -40,7 +40,7 @@ embed.setAuthor({name: msg.guild.members.cache.get(userdata["id"]).user.displayN
     }
 
     embed.setColor(color);
-    if (["✅", "🎉", gte_EMOTE.goldmedal].indexOf(name) + 1) {
+    if (["✅", "🎉", gtf_EMOTE.goldmedal].indexOf(name) + 1) {
   embed.setFields([{name:name, value: desc + help_desc}]);
     } 
     else {
@@ -50,7 +50,7 @@ embed.setAuthor({name: msg.guild.members.cache.get(userdata["id"]).user.displayN
         msg.channel.send({ embeds: [embed] }).then(msg => {
       if (seconds > 0) {
         gte_STATS.addCount(userdata)
-          gte_DISCORD.delete(msg, {seconds: 5}, function() {
+          gtf_DISCORD.delete(msg, {seconds: 5}, function() {
              gte_STATS.removeCount(userdata)
           })
 
@@ -62,7 +62,7 @@ embed.setAuthor({name: msg.guild.members.cache.get(userdata["id"]).user.displayN
     msg.followUp({ embeds: [embed] }).then(msg => {
       if (seconds > 0) {
         gte_STATS.addCount(userdata)
-          gte_DISCORD.delete(msg, {seconds:5}, function() {
+          gtf_DISCORD.delete(msg, {seconds:5}, function() {
           gte_STATS.removeCount(userdata) 
           });
       }
@@ -76,7 +76,7 @@ embed.setAuthor({name: msg.guild.members.cache.get(userdata["id"]).user.displayN
   return msg.edit({ embeds: [embed] }).then(msg => {
       if (seconds > 0) {
         setTimeout(() => {
-          gte_DISCORD.delete(msg, {})
+          gtf_DISCORD.delete(msg, {})
           gte_MAIN.embedcounts[userdata["id"]]--;
           }, seconds * 1000)
       }

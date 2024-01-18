@@ -13,22 +13,22 @@ module.exports.condition = function (gtfcar) {
         })
   var weights = [0.06, 0.28, 0.13, 0.13, 0.2]
   var conditionavg = gtf_MATH.weightedAverage(conditions, weights)
-  var icon = gte_EMOTE.carexcellent
+  var icon = gtf_EMOTE.carexcellent
   var name = "Excellent"
   if (conditionavg < 70) {
-    icon = gte_EMOTE.carnormal
+    icon = gtf_EMOTE.carnormal
     name = "Normal"
   }
   if (conditionavg < 45) {
-    icon = gte_EMOTE.carworn
+    icon = gtf_EMOTE.carworn
     name = "Worn"
   }
   if (conditionavg < 20) {
-    icon = gte_EMOTE.carbad
+    icon = gtf_EMOTE.carbad
     name = "Bad"
   }
   if (conditionavg <= 5) {
-    icon = gte_EMOTE.cardead
+    icon = gtf_EMOTE.cardead
     name = "Wreaked"
   }
   var health = gtf_MATH.round(conditionavg, 1)
