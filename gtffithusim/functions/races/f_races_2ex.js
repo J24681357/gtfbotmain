@@ -311,6 +311,7 @@ module.exports.onlineracelength = function(racesettings, racedetails, finalgrid,
 };
 
 ////TIMETRIAL///
+/*
 module.exports.licensecheck = function(racesettings, racedetails, finalgrid, embed, msg, userdata) {
   var embed = new EmbedBuilder()
   var option = racesettings["eventid"].replace("LICENSE", "").toLowerCase().split("-")[0]
@@ -344,6 +345,7 @@ module.exports.licensecheck = function(racesettings, racedetails, finalgrid, emb
     }, userdata)
   }
 }
+*/
 
 ////
 
@@ -615,7 +617,7 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
     })
     ////nexttrack
 
-    racesettings = { ...gte_LISTS.fithusimraces[racesettings["eventid"].toLowerCase().replace("-", "")] }
+    racesettings = { ...gte_LIST_FITHUSIMRACES[racesettings["eventid"].toLowerCase().replace("-", "")] }
 
     var carselect = racesettings["car"] == "GARAGE" ? gte_STATS.currentCar(userdata) : gte_CARS.addCarEnthu(gtf_CARS.find({ fullnames: [racesettings["car"]] })[0], "LOAN")
 

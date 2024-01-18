@@ -1,9 +1,10 @@
 {
 	"version": 1,
-	"maintenance": false,
+	"maintenance": true,
 	"maintenancetime": "",
 	"totalmsg": 0,
 	"msglimit": false,
 	"versiondate": "8/20/2023",
+  "version": "8/20/2023",
 	"seasonaldate": "2322023"
 }

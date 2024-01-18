@@ -2,7 +2,7 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 ////////////////////////////////////////////////////
 
 module.exports.list = function (args) {
-  var gtfparts = gte_LISTS.gtfpartlist;
+  var gtfparts = gte_LIST_PARTS;
   var results = "";
   if (args.length == 0) {
     return results;
@@ -28,7 +28,7 @@ module.exports.find = function (args) {
   } else {
     var sort = "costasc"
   }
-  var gtfparts = gte_LISTS.gtfpartlist;
+  var gtfparts = gte_LIST_PARTS;
   var final = [];
   var total = Object.keys(args).length;
 
@@ -381,7 +381,7 @@ module.exports.costCalc = function (part, gtfcar, ocar) {
 
 //////////////
 module.exports.audit = async function () {
-  var parts = gte_LISTS.gtfpartlist;
+  var parts = gte_LIST_PARTS;
   var fs = require("fs");
 
   var names = Object.keys(parts);
@@ -392,10 +392,10 @@ module.exports.audit = async function () {
     }
    
   }
-      gte_CONSOLELOG.reverse();
-    gte_CONSOLELOG.fill(0, 0, 255);
+      gtf_CONSOLELOG.reverse();
+    gtf_CONSOLELOG.fill(0, 0, 255);
     console.log("Parts updated.")
-    gte_CONSOLELOG.end();
+    gtf_CONSOLELOG.end();
   fs.writeFile("./jsonfiles/gtfpartlist.json", require("json-format")(parts), function (err) {
     if (err) {
       console.log(err);

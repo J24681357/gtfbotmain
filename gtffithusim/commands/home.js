@@ -82,6 +82,7 @@ module.exports = {
     var menu = gte_TOOLS.prepareMenu("Select", gmenulistselect, [], msg, userdata);
 
     ///emojilist
+    ///DEMO
     var emojilist = [];
         emojilist.push({
             emoji: "📋",
@@ -90,15 +91,12 @@ module.exports = {
             extra: "",
             button_id: 0
       });
-
-    var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
+     var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
     ///
-    buttons.unshift(menu);
-
+   buttons.unshift(menu);
+///DEMO + "\n" + "__**Generation Select**__" + "\n" + "__**Settings**__";
     var car = gtf_CARS.random({}, 1)[0];
-    results = "__**Fithusim Life**__" + "\n" + "__**Driving Revolution**__" + "\n" +
-        "__**Generation Select**__" + "\n" +
-        "__**Settings**__";
+    results = "__**Fithusim Life**__" + "\n" + "__**Driving Revolution**__"
     embed.setDescription(message + results);
     embed.setThumbnail("https://github.com/J24681357/gtfbotfithusim/raw/master/images/logo/fithusimlogo.png")
     embed.fields = [];
@@ -154,109 +152,6 @@ module.exports = {
           }
         });
       }
-
-      
-function createlist() {
-        var showcase0 = function() {
-          msg.removeAttachments();
-          embed.setTitle(gtf_EMOTE.gtflogo + " __My Home__");
-          embed.image = "";
-          var t = gte_COURSEMAKER.createCourse({
-            min: 40,
-            max: 80,
-            minSegmentLength: 2,
-            maxSegmentLength: 10,
-            curviness: 0.3,
-            maxAngle: 120,
-            location: ["Grass", "Desert", "Mountain", "Snow", "Blank"][Math.floor(Math.random() * 5)],
-            type: "Circuit",
-          });
-          var track = gte_COURSEMAKER.displayCourse(t, callback);
-
-          function callback(track) {
-            
-            track["options"] = ["Drift"];
-            track["author"] = "ARCADE";
-            results = "**🖼 " + track["name"] + "**\n" + "**Generate your own courses using __/course__ or in the Course Maker selection." + "**\n\n" + gtf_EMOTE.gtlogoblue + "**Main Version Date: " + gte_MAIN.bot["versiondate"] + "**";
-            embed.setDescription(message + results);
-            const attachment = new AttachmentBuilder(track["image"], { name: "course.png" });
-            embed.setThumbnail("attachment://course.png");
-            embed.fields = [];
-            embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: gte_STATS.currentCarFooterEnthu(userdata) }]);
-            msg.edit({ embeds: [embed], files: [attachment] });
-          
-        }
-        }
-        var showcase1 = function() {
-          msg.removeAttachments();
-          embed.setTitle(gtf_EMOTE.gtflogo + " __Menu__");
-          embed.image = "";
-          
-          results = "__**Fithusim Life**__" + "\n" +
-            "__**Driving Revolution**__";
-          embed.setDescription(message + results);
-          //embed.setThumbnail(car["image"][0]);
-          embed.fields = [];
-          //embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: gte_STATS.currentCarFooterEnthu(userdata) }]);
-          msg.edit({ embeds: [embed], files: [] });
-        }
-        var showcase2 = function() {
-          msg.removeAttachments();
-          embed.setTitle(gtf_EMOTE.gtflogo + " __My Home__");
-          embed.image = "";
-          var track = gtf_TRACKS.random({}, 1)[0];
-          results =
-            "**" +
-            track["name"] +
-            "** `" +
-            track["version"] +
-            "`\n" +
-            "**Length:** " +
-            [track["length"] + " km", gtf_MATH.round( (track["length"] * 0.62137119), 2) + " mi"].join(" | ") +
-            "\n" +
-            gtf_EMOTE.tracklogo +
-            " **Drive over many tracks from the Gran Turismo series in GT Fitness!**" +
-            "\n\n" +
-            gtf_EMOTE.gtlogoblue + "**Main Version Date: " + gte_MAIN.bot["versiondate"] + "**";
-          embed.setDescription(message + results);
-          embed.setThumbnail(track["image"]);
-          embed.fields = [];
-        
-          embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: gte_STATS.currentCarFooterEnthu(userdata) }]);
-          msg.edit({ embeds: [embed], files: [] });
-        }
-        var showcase3 = function() {
-          msg.removeAttachments();
-          embed.setTitle(gtf_EMOTE.gtflogo + " __My Home__");
-          var attachment = [];
-
-          embed.fields = [];
-          var car = gte_STATS.currentCar(userdata);
-          results = gte_STATS.viewCar(car, embed, userdata);
-          gte_STATS.loadCarImage(car, embed, userdata, then);
-
-          function then(attachment) {
-            embed.setThumbnail("attachment://image.png");
-            embed.setDescription(message + results);
-            embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: gte_STATS.currentCarFooterEnthu(userdata) }]);
-            msg.edit({ embeds: [embed], files: [attachment] });
-          }
-        }
-        var showcase4 = function() {
-          msg.removeAttachments();
-          embed.setTitle(gtf_EMOTE.gtflogo + " __My Home__");
-
-          embed.fields = [];
-          var car = gte_STATS.currentCar(userdata);
-          results = ""
-      embed.setThumbnail("https://techraptor.net/sites/default/files/styles/image_header/public/2023-05/Gran%20Turismo%20Movie.jpg?itok=ChJwIPxd");
-            embed.setDescription("**Watch the Gran Turismo Movie - Exclusively In Movie Theaters** " + "\n" + "https://www.granturismo.movie/" + results);
-            //embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: gte_STATS.currentCarFooterEnthu(userdata) }]);
-            msg.edit({ embeds: [embed]});
-        }
-        return [showcase0, showcase1, showcase2, showcase3, showcase4]
-}
-      var showcaselist = createlist()
       var count = gte_STATS.count(userdata) + 1
       var times = 0
       /*var s = setInterval(function () {

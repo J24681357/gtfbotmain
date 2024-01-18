@@ -167,9 +167,11 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
     if (!checkpoint[0]) {
       gte_TOOLS.interval(
         function () {
+          /*
           if (racesettings["mode"] == "CAREER") {
             message = "\n" + gtf_ANNOUNCER.emote(racesettings["title"]) + " `" + gtf_ANNOUNCER.say({ name1: "race-start" }) + "`";
           }
+        */
           var starttime =
             index == 2
               ? racesettings["type"] == "TIMETRIAL"
@@ -499,7 +501,8 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
                       finalgrid.slice().sort((x, y) => y["score"] - x["score"])[0]["drivername"],
                     ][userdata["settings"]["GRIDNAME"]],
                     racesettings: racesettings,
-                  }) +
+                  })
+                +
                   "`"
               );
             } else {
@@ -687,85 +690,6 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
   }
 };
 
-module.exports.driftresults2 = function (racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata) {
-  var current = "4th";
-  var place = "4th";
-  var places = ["3rd", "2nd", "1st"];
-  var prize = 0;
-  var racemultibonus = "";
-
-  if (racesettings["mode"] == "CAREER") {
-    if (typeof userdata["careerraces"][eventid] !== "undefined") {
-      var current = userdata["careerraces"][eventid][0];
-    }
-
-    if (current == "✅") {
-      current = "1st";
-    }
-  }
-
-  var medal = "";
-  let final = require(gte_TOOLS.homedir() + "/" + "functions/races/f_races_2ex").driftsection(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata, true);
-  racesettings["points"] += final[0];
-  if (racesettings["points"] >= final[3]) {
-    medal = gtf_EMOTE.bronzemedal + " BRONZE";
-    place = "3rd";
-    var prize = racesettings["positions"][2]["credits"];
-  } else if (racesettings["points"] >= final[2]) {
-    medal = gtf_EMOTE.silvermedal + " SILVER";
-    place = "2nd";
-    var prize = racesettings["positions"][1]["credits"];
-  } else if (racesettings["points"] >= final[1]) {
-    medal = gtf_EMOTE.goldmedal + " GOLD";
-    place = "1st";
-    var prize = racesettings["positions"][0]["credits"];
-  } else {
-    medal = "COMPLETE";
-  }
-
-  prize = Math.round(parseFloat(prize * (racesettings["distance"]["km"] / 10)));
-
-  for (var i = 0; i < places.length; i++) {
-    if (parseInt(places[i].split(/[A-Z]/gi)[0]) < parseInt(current.split(/[A-Z]/gi)[0]) && place != "4th") {
-      prize = prize + racesettings["positions"][places.length - 1 - i]["credits"];
-    }
-    if (places[i] == place) {
-      break;
-    }
-  }
-  /*
-  if (gte_STATS.raceMulti(userdata) > 1) {
-    prize = Math.round(prize * gte_STATS.raceMulti(userdata))
-    racemultibonus = " `x" + gte_STATS.raceMulti(userdata).toString() + "`"
-  }
-  */
-
-  if (prize == 0) {
-    racemultibonus = "";
-  }
-  var exp = Math.round(prize / 80);
-
-  gte_STATS.addCredits(prize, userdata);
-  gte_STATS.addMileage(racesettings["distance"]["km"], userdata);
-  gte_STATS.addTotalMileage(racesettings["distance"]["km"], userdata);
-  //gte_STATS.addExp(exp, userdata);
-
-  if (racesettings["mode"] == "CAREER") {
-    if (place == "1st" || place == "2nd" || place == "3rd") {
-      if (racesettings["eventid"].includes("gtacademy")) {
-        gte_STATS.updateEvent(racesettings, place, userdata);
-      } else {
-        setTimeout(function () {
-          gte_STATS.redeemGift("🎉 Completed " + racesettings["title"] + " 🎉", racesettings["prize"], embed, msg, userdata);
-        }, 2000);
-      }
-    }
-  }
-
-  var results2 = "**" + medal + "**" + " " + "**+" + prize + gtf_EMOTE.credits + racemultibonus + "**" + "\n" + "**Points:** " + racesettings["points"] + " pts";
-
-  return results2;
-};
 
 module.exports.startDRevolution = function (racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata) {
   embed.setTitle("__" + racesettings["title"] + "__");

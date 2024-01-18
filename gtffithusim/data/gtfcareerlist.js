@@ -10,7 +10,7 @@ module.exports.find = function (args) {
     delete args["sort"];
   }
   var total = Object.keys(args).length;
-  var fithusimraces = gte_LISTS.fithusimraces;
+  var fithusimraces = gte_LIST_FITHUSIMRACES;
   var final = [];
   var eventids = Object.keys(fithusimraces);
 
@@ -50,7 +50,7 @@ module.exports.get = function (args) {
   if (args === undefined) {
     return "";
   }
-  var fithusimraces = gte_LISTS.fithusimraces;
+  var fithusimraces = gte_LIST_FITHUSIMRACES;
   var type = args["type"].toLowerCase();
   var number = args["number"];
   var eventid = type + "-" + number;
@@ -62,7 +62,7 @@ module.exports.get = function (args) {
 };
 
 module.exports.audit = async function () {
-  var list = gte_LISTS.fithusimraces;
+  var list = gte_LIST_FITHUSIMRACES;
   var fs = require("fs");
   var newlist = {};
 

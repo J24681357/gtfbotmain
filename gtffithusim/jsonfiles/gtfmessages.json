@@ -1,6 +1,7 @@
-{"fithusimlife":   {
+{
+  "fithusimlife":   {
       "id": 1,
-      "emote": "gtfitness",
+      "emote": "fithusimlogo",
       "unlock": [],
       "ignore": [
         []
@@ -11,4 +12,22 @@
       "messages": [
         "FITHUSIM"
       ]
-    }}
+    },
+  "drivingrevolution":   {
+    "id": 2,
+    "emote": "fithusimlogo",
+    "unlock": [],
+    "ignore": [
+      []
+    ],
+    "required": [
+      []
+    ],
+    "messages": [
+      "__**How To Play**__", "In Driving Revolution, match the arrows and throttle buttons on the grid, by using the buttons in the embed. While driving, there are driving indications, representing whether to accelerate or brake.", "() Brake: The car must be braking here.", 
+      "() Neutral: The car must be accelerating here (or at normal speeds).", 
+      "The earlier you match the pattern, the better score you will earn."
+    ]
+  }
+
+}

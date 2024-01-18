@@ -40,15 +40,12 @@ module.exports = {
     );
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
     ////CHECK NEW GAME
-    if (gte_STATS.garage(userdata) == 0) {
-      query["options"] = "new_game" 
-    }
     
     if (query["number"] == 1 && gte_STATS.garage(userdata) != 0) {
       query = {options:"races"}
     }
     var gtfcar = gte_STATS.currentCar(userdata);
-    var races = gte_LISTS.drraces
+    var races = gte_LIST_DRRACES
 
     var keys = Object.keys(races)
 
@@ -60,6 +57,25 @@ module.exports = {
       if (typeof query["stagenumber"] !== "undefined") {
         var number = query['stagenumber'] - 1
         var stage = races[keys[number]]
+        ///DEMO
+        /*
+        if (number >= 1) {
+          var pstage = races[keys[number-1]]
+          var pass = true
+          pstage.map(function(x) {
+            var score = userdata["drprogression"][x["eventid"]][0]
+            if (score >= 5 || score == 0) {
+              pass = false
+              return
+            }
+          })
+          if (!pass) {
+            gte_EMBED.alert({ name: "❌ Invalid Number", description: "You must earn at least a C score in Stage " + (number-1) + "in order to proceed.", embed: "", seconds: 0 }, msg, userdata);
+            return
+          }
+        }
+
+        */
 
         if (typeof query["racenumber"] !== "undefined") {
           var number = query['racenumber'] - 1
@@ -76,7 +92,6 @@ module.exports = {
           gte_RACE.prepRace(raceprep, gtfcar, embed, msg, userdata);
           return
         }
-
         
       var list = []
       var listsec = []

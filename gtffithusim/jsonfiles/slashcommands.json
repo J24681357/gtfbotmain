@@ -1,12 +1,12 @@
 {  "home": {
     "name": "home",
-    "description": "🎌 Opens the GTF Main Menu with a command selection.",
+    "description": "🎌 Opens the GTF Fithusim Main Menu with a command selection.",
     "channels": "",
     "options": []
   },
 "fithusimlife": {
     "name": "fithusimlife",
-    "description": "🎌 Fithusim Life: Participate in leagues & rank up to the top.",
+    "description": "🎌 (DEMO) Fithusim Life: Participate in leagues & rank up to the top.",
     "channels": "",
     "options": [
       {
@@ -41,7 +41,7 @@
   },
   "drivingrevolution": {
     "name": "drivingrevolution",
-    "description": "🎌 Driving Revolution: Drive in interactive stages to hone your skills.",
+    "description": "🎌 (DEMO) Driving Revolution: Drive in interactive stages to hone your skills.",
     "channels": "",
     "options": [
       {

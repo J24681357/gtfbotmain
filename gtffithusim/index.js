@@ -7,42 +7,18 @@ const client = new Client({
   intents: 3276799,
   partials: [Partials.Message, Partials.Channel, Partials.Reaction]
 });
-var dir = "./";
 ////////////////////////////////////////////////////
 var fs = require("fs");
-var gtfbot = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/_botconfig.json", "utf8"));
 /////
 var checklogin = false;
 var cooldowns = new Set();
 var { MongoClient, ServerApiVersion } = require('mongodb');
 
-var announcer = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/announcer.json", "utf8"));
-var gtfmessages = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfmessages.json", "utf8"));
-var fithusimraces = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/fithusimraces.json", "utf8"));
-var drraces = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/drraces.json", "utf8"));
-var gtfparts = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfpartlist.json", "utf8"));
-var gtfpaints = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfpaints.json", "utf8"));
-var gtfwheels = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfwheels.json", "utf8"));
 var gtfexp = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfexp.json", "utf8"));
-var gtflicenses = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtflicenses.json", "utf8"));
 var gtfrewards = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfrewards.json", "utf8"));
-var gtftime = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtftime.json", "utf8"));
-var gtfseasonals = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfseasonalsextra.json", "utf8"));
 
-module.exports.announcer = announcer;
-module.exports.gtfmessages = gtfmessages;
-module.exports.fithusimraces = fithusimraces;
-module.exports.drraces = drraces;
-module.exports.gtftime = gtftime;
-module.exports.gtfseasonals = gtfseasonals
-module.exports.gtfpartlist = gtfparts;
-module.exports.gtfpaintlist = gtfpaints;
-module.exports.gtfwheellist = gtfwheels;
 module.exports.gtfexp = gtfexp;
-module.exports.gtflicenses = gtflicenses
 module.exports.gtfrewards = gtfrewards
-module.exports.embedcounts = {};
-module.exports.bot = gtfbot;
 
 var listinmaint = [];
 client.commands = {};
@@ -57,7 +33,6 @@ for (const file of commandFiles) {
 }
 
 var datebot = new Date().getTime();
-var date = new Date();
 var timeelapsed = 0;
 
 console.log("Loading...");
@@ -88,11 +63,11 @@ client.on("ready", () => {
   }
   */
 
-gte_CONSOLELOG.reverse();
-gte_CONSOLELOG.fill(0, 0, 255);
+gtf_CONSOLELOG.reverse();
+gtf_CONSOLELOG.fill(0, 0, 255);
 
 console.log("Time elapsed: " + timeelapsed + " " + "ms");
-gte_CONSOLELOG.end();
+gtf_CONSOLELOG.end();
   console.log("OK")
 });
 
@@ -224,12 +199,14 @@ client.on("interactionCreate", async interaction => {
         if (!command) return;
 
         // Profile
-        if (gtfbot["maintenance"]) {
+        if (gte_LIST_BOT["maintenance"]) {
           if (msg.author.id != "237450759233339393" && !command.availinmaint) {
-            userdata = gte_GTF.defaultuserdata(msg.author.id);
-            gte_EMBED.alert({ name: "⚠️ Maintenance", description: "This bot is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
+            userdata = gtf_GTF.defaultuserdata(msg.author.id);
+            gtf_EMBED.alert({ name: "⚠️️ Maintenance", description: "GTF: Fithusim is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
             return;
           }
+
+          console.log(gte_LIST_BOT)
         }
         if (command.channels.length >= 1) {
           if (msg.channel != null) {
@@ -268,7 +245,7 @@ client.on("interactionCreate", async interaction => {
         // Updates
 
         if (command.name != "update") {
-          if (userdata["version"] === undefined || userdata["version"] < gtfbot["version"]) {
+          if (userdata["version"] === undefined || userdata["version"] < gte_LIST_BOT["version"]) {
             gte_EMBED.alert({ name: "❌ Version Incompatible", description: "Your save data needs to be updated in order to use current features. Use **/update** to update your save to the latest version.", embed: "", seconds: 0 }, msg, userdata);
             return;
           }
@@ -288,12 +265,7 @@ client.on("interactionCreate", async interaction => {
           }
         }
 
-      
-
-
-        if (!gte_EXP.checkLevel(command.level, embed, msg, userdata)) {
-          return;
-        }
+  
 
         if (command.requirecar) {
           if (gte_STATS.garage(userdata).length == 0) {
@@ -308,23 +280,13 @@ client.on("interactionCreate", async interaction => {
             return;
           }
         }
-        /*
-        if (msg.channel.type != 11 && msg.channel.type != 1) {
-          msg.channel.threads.fetchArchived({}).then(channels => {
-            channels.threads.forEach(function(channel) {
-              channel.delete();
-            });
-          });
-        }
-        */
 
         if (msg.author.displayName == "GTFITNESS") {
           gte_EMBED.alert({ name: "❌ Username Not Allowed", description: "Your username is not allowed from this bot. Please choose another username.", embed: "", seconds: 0 }, msg, userdata);
           return;
         }
         try {
-          gte_STATS.checkRewards("general", "", userdata);
-        
+          //gte_STATS.checkRewards("general", "", userdata);
           
           gte_STATS.checkMessages(command, execute, msg, userdata)
           function execute() {
@@ -385,7 +347,7 @@ client.login(process.env.SECRET3).then(async function() {
 
   var index1 = 0;
   client.rest.on("rateLimited", info => {
-    gtfbot["msgtimeout"] = info["timeout"];
+    gte_LIST_BOT["msgtimeout"] = info["timeout"];
 
     /*
     if (info["path"].includes("messages")) {
@@ -408,14 +370,10 @@ client.login(process.env.SECRET3).then(async function() {
   });
   setTimeout(function() {
 
-    //gtf_CARS.audit()
-    //gte_PARTS.audit()
     
-//gte_SEASONAL.randomLimitedSeasonal()
 
-    //gtf_TRACKS.audit()
     updatebotstatus();
-    //gtf_CARS.changecardiscounts();
+    
     /*
     gte_TOOLS.interval(
       function() {
@@ -435,7 +393,6 @@ client.login(process.env.SECRET3).then(async function() {
       {
         serverApi: ServerApiVersion.v1 
       })
-    console.log("DB good!")
   } catch (error) {
     console.log("Database error")
     restartbot()
@@ -489,13 +446,13 @@ var executecommand = function(command, args, msg, userdata) {
 ///FUNCTIONS
 
 function updatebotstatus() {
-gte_CONSOLELOG.reverse();
-gte_CONSOLELOG.fill(255, 255, 0);
-console.log("Maintenance: " + gtfbot["maintenance"]);
-gte_CONSOLELOG.end();
+gtf_CONSOLELOG.reverse();
+gtf_CONSOLELOG.fill(255, 255, 0);
+console.log("Maintenance: " + gte_LIST_BOT["maintenance"]);
+gtf_CONSOLELOG.end();
 
   /*
-  if (gtfbot["maintenance"] && typeof gtfbot["maintenance"] === "boolean") {
+  if (gte_LIST_BOT["maintenance"] && typeof gte_LIST_BOT["maintenance"] === "boolean") {
     client.user.setPresence({ activities: [{ 
       type: ActivityType.Custom,
       name: "The bot is under maintenance.",

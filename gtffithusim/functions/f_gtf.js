@@ -11,16 +11,15 @@ module.exports.creditslimit = 9999999;
 module.exports.explimit = 1000000;
 /////////////////////
 
-//
+///DEMO MENU,["generationselect", "Generation Select (Fithusim Life)", "🎉"], ["settings", "Settings", "⚙"],
 module.exports.commandlist = [
   ["fithusimlife", "Fithusim Life", "🏁"],
-  ["drivingrevolution", "Driving Revolution", "💳"],
-  ["generationselect", "Generation Select (Fithusim Life)", "🎉"], ["settings", "Settings", "⚙"],
+  ["drivingrevolution", "Driving Revolution", "💳"]
 ];
-
+///DEMO GMODE 0
 module.exports.defaultsettings = {
   MODE: "Neutral",
-  GMODE: 0,
+  GMODE: 1,
   GARAGESORT: "Highest FPP",
   DEALERSORT: "Lowest Price",
   RACEDM: 0,

@@ -165,10 +165,10 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         gte_STATS.loadAvatarImage2(embed, userdata, then2)
         function then2(attachment) {
           pageargs["bimage"].push(attachment)
-         embed.setTitle("__**Leagues**__" + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")
+         embed.setTitle("__**Leagues**__" + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")///DEMO , "RII `Rank 500`", "RI `Rank 300`", "RS `Rank 50`"
         pageargs["selector"] = "type";
         pageargs["query"] = query;
-        pageargs["list"] = ["RN", "RIV `Rank 990`", "RIII `Rank 800`", "RII `Rank 500`", "RI `Rank 300`", "RS `Rank 50`"];
+        pageargs["list"] = ["RN", "RIV `Rank 990`", "RIII `Rank 800`"];
         pageargs["listsec"] = []
         pageargs["image"] = images
 
@@ -179,11 +179,10 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         return
       }
       var league = ["RN", "RIV", "RIII", "RII", "RI", "RS"][query["type"]-1]
-      /*
+      
       if (!gte_STATS.checkLeague(league, embed, msg, userdata)) {
         return;
       }
-      */
       var races = gte_FITHUSIMRACES.find({types: [league.toLowerCase()]}).filter(function(event) {
         if (event["regulations"]["upperyear"] == 9999) {
 

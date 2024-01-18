@@ -134,9 +134,7 @@ module.exports.formPage = function (args, userdata) {
   return list;
 };
 module.exports.formPages = async function (args, embed, msg, userdata) {
-  if (gte_MAIN.bot["maintenancetime"].length >= 1) {
-  args["footer"] = "⚠️️ **Maintenance:" + "<t:" + gte_MAIN.bot["maintenancetime"] + ":R>**"
-  }
+  
   
   var list = args["list"];
   var currentpagelength = args["text"].length;
@@ -769,13 +767,13 @@ module.exports.createButtons = function (buttons, emojilist, functionlist, msg, 
 
     filter11.on("collect", r => {
       /////MAINTENANCE
-      if (gte_MAIN.bot["maintenance"]) {
-          if (userdata["id"] != "237450759233339393") {
-            userdata = gte_GTF.defaultuserdata(userdata["id"]);
-            gte_EMBED.alert({ name: "⚠️️ Maintenance", description: "This bot is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
-            return;
-          }
+      if (gte_LIST_BOT["maintenance"]) {
+        if (userdata["id"] != "237450759233339393") {
+          userdata = gtf_GTF.defaultuserdata(msg.author.id);
+          gtf_EMBED.alert({ name: "⚠️️ Maintenance", description: "This bot is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
+          return;
         }
+      }
       /////
       
       if (loop == 1) {
@@ -938,10 +936,10 @@ module.exports.updateallsaves = async function (name, json) {
           }
         })
         .then(x => {
-            gte_CONSOLELOG.reverse();
-            gte_CONSOLELOG.fill(0, 0, 255);
+            gtf_CONSOLELOG.reverse();
+            gtf_CONSOLELOG.fill(0, 0, 255);
             console.log("All saves updated", JSON.stringify(json));
-            gte_CONSOLELOG.end();
+            gtf_CONSOLELOG.end();
           
         });
     

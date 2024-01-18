@@ -8,19 +8,19 @@ module.exports.userid = function (userdata) {
 
 ///COUNT
 module.exports.count = function (userdata) {
-  var num = gte_MAIN.embedcounts[userdata["id"]];
+  var num = gtf_LIST_EMBEDCOUNTS[userdata["id"]];
   if (isNaN(num)) {
-    gte_MAIN.embedcounts[userdata["id"]] = 0;
+    gtf_LIST_EMBEDCOUNTS[userdata["id"]] = 0;
     return 0;
   } else {
     return num;
   }
 };
 module.exports.addCount = function (userdata) {
-  gte_MAIN.embedcounts[userdata["id"]]++;
+  gtf_LIST_EMBEDCOUNTS[userdata["id"]]++;
 };
 module.exports.removeCount = function (userdata) {
-  gte_MAIN.embedcounts[userdata["id"]]--;
+  gtf_LIST_EMBEDCOUNTS[userdata["id"]]--;
 };
 ///CREDITS
 module.exports.credits = function (userdata) {
@@ -279,82 +279,6 @@ module.exports.addMessage = function (name, message, userdata) {
       userdata["messages"][name] = {"ids": []}
   }
   userdata["messages"][name]["ids"].push(message["id"])
-}
-module.exports.checkMessages = function(command, callback, msg, userdata) {
-  if (["dw", "dw4", "rcar", "rtrack", "rcourse", "gtf", "sr"].indexOf(command) + 1) {
-    return next()
-  }
-
-  userdata["tutorial"] == "Complete" ? next() : callback()
-
-  function next() {
-    var name = command.name
-    var commandmessages = gte_MAIN.gtfmessages[name]
-    
-    if (userdata["settings"]["MESSAGES"] == 0) {
-      
-      callback()
-      return
-    }
-    if (typeof commandmessages === 'undefined') {
-      callback()
-      return
-    } else {
-    var embed = new EmbedBuilder();
-    var user = msg.author.displayName;
-    var avatar = msg.author.displayAvatarURL();
-
-    embed.setColor(userdata["settings"]["COLOR"]);
-    embed.setAuthor({name: user, iconURL: avatar});
-    var message = {}
-    for (var x = 0; x < commandmessages.length; x++) {
-        if (gte_STATS.triggerMessage(name, commandmessages[x], userdata)) {
-          if (commandmessages[x]["emote"].length == 0) {
-            var character = ""
-          } else {
-        var character = {
-          "gtfitness":" __**GT Fitness**__",
-          "lewish":gtf_EMOTE.lewish + " __**Lewis Hamilton**__", 
-          "igorf":gtf_EMOTE.igorf + " __**Igor Fraga**__", 
-          "sebastienl":gtf_EMOTE.sebastienl + " __**Sebastien Loeb**__", 
-          "jannm": gtf_EMOTE.jannm + " __**Jann Mardenborough**__",
-      "jimmyb": gtf_EMOTE.jimmyb + " __**Jimmy Broadbent**__"}[commandmessages[x]["emote"]]
-        }
-        embed.setDescription(character + "\n" + commandmessages[x]["messages"].join("\n\n"));
-        message = commandmessages[x]
-        break;
-        }
-    }
-
-  if (Object.keys(message).length == 0) {
-    return callback()
-  }
-
-  var emojilist = [
-  { emoji: "",
-  emoji_name: "",
-  name: 'OK',
-  extra: " ",
-  button_id: 0,
-  }]
-   var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
-      gtf_DISCORD.send(msg, {embeds: [embed], components:buttons}, acceptmessage)
-   function acceptmessage(msgg) {
-    function accept() {
-      gte_STATS.addMessage(name, message, userdata)
-      gte_STATS.saveEnthu(userdata)
-      msgg.delete({})
-      msg.type = 0
-      callback()
-    }
-
-    var functionlist = [accept]
-      gte_TOOLS.createButtons(buttons, emojilist, functionlist, msgg, userdata)
-  }
-    }
-  }
-
-
 }
 module.exports.triggerMessage = function(name, message, userdata) {
   if (typeof userdata["messages"][name] === 'undefined') {
@@ -1002,20 +926,6 @@ module.exports.setLicense = function (option, userdata) {
   userdata["license"] = option.toUpperCase()
 }
 
-module.exports.checkRankingLevel = function (ranking, embed, msg, userdata) {
-  ranking = ranking.toLowerCase()
-  var ranks = {"riii": 800, "rii": 500, "ri":300, "rs":50, "rfinal":10}
-
-  if (ranks[ranking] >= userdata["ranking"]) {
-    return true;
-  } else {
-    if (embed != "") {
-    gte_EMBED.alert({ name: "❌ " + "License " + license.toUpperCase() + " Required", description: "🔒 Your license does not meet the requirements." + "\n\n" + "**License "+ gte_STATS.license(userdata) +  " -> " + "License " + license.toUpperCase()  + "**", embed: "", seconds: 10 }, msg, userdata);
-    }
-    return false;
-  }
-};
-
 module.exports.checkLeague = function (league, embed, msg, userdata) {
   league = league.toLowerCase()
   var ranks = {"rn": 1000, "riv": 990, "riii":800, "rii":500, "ri":300, "rs":50, "rss": 6}
@@ -1171,11 +1081,6 @@ module.exports.addFavoriteCar = function (number, bool, filter, userdata) {
     id = gte_STATS.garage(userdata).findIndex(x => x["id"] == id);
     userdata["garage"][id]["favorite"] = bool;
   }
-};
-
-///SEASONALS
-module.exports.seasonalCheck = function (userdata) {
-  return userdata["seasonalcheck"];
 };
 
 module.exports.checkNotifications = function(userdata) {
@@ -1378,7 +1283,7 @@ var league = racesettings["eventid"].split("-")[0].toUpperCase()
 league: racesettings["eventid"].split("-")[0].toUpperCase(),
 week:userdata["week"], 
 place: place, 
-car: racesettings["driver"]["car"] + " `Lv." + racesettings["driver"]["car"]["perf"]["level"] + "`",
+car: racesettings["driver"]["car"]["name"] + " `Lv." + racesettings["driver"]["car"]["perf"]["level"] + "`",
 points: Math.round(points), 
 skillpoints:Math.round(skillpoints),
       damage: damage
@@ -1388,7 +1293,7 @@ skillpoints:Math.round(skillpoints),
   gte_STATS.addSkillPoints(Math.round(skillpoints - (0.8 * damage)), userdata)
   gte_STATS.addTuningPoints(Math.round(skillpoints - (0.8 * damage)), userdata)
 }
-
+///DEMO 800
 module.exports.checkRanking = function (userdata) {
   
   userdata["rankingpoints"] = gtf_MATH.sum(userdata["rankinghistory"].map(x => x["points"]).slice(0).slice(-12).sort(function(a, b) {
@@ -1414,8 +1319,12 @@ module.exports.checkRanking = function (userdata) {
   if (userdata["ranking"] <= 1) {
     userdata["ranking"] = 1
   }
+  if (userdata["ranking"] <= 800) {
+    userdata["ranking"] = 800
+  }
+  
 }
-
+///DEMO Skilllevel 6
 module.exports.checkSkillLevel = function (userdata) {
   var nextskillpoints = 0
   var levelup = false
@@ -1434,12 +1343,93 @@ module.exports.checkSkillLevel = function (userdata) {
   if (userdata["level"] >= 99) {
     userdata["level"] = 99
   }
+  if (userdata["level"] >= 6) {
+    userdata["level"] = 6
+  }
   return [levelup, levelo, userdata["level"], userdata["skillpoints"]]
 }
 
 ///MISC
+
+module.exports.checkMessages = function(command, callback, msg, userdata) {
+  if (["dw", "dw4", "rcar", "rtrack", "rcourse", "gtf", "sr"].indexOf(command) + 1) {
+    return next()
+  }
+
+  userdata["tutorial"] == "Complete" ? next() : callback()
+
+  function next() {
+    var name = command.name
+    var commandmessages = gte_LIST_MESSAGES[name]
+
+    if (userdata["settings"]["MESSAGES"] == 0) {
+
+      callback()
+      return
+    }
+    if (typeof commandmessages === 'undefined') {
+      callback()
+      return
+    } else {
+    var embed = new EmbedBuilder();
+    var user = msg.author.displayName;
+    var avatar = msg.author.displayAvatarURL();
+
+    embed.setColor(userdata["settings"]["COLOR"]);
+    embed.setAuthor({name: user, iconURL: avatar});
+    var message = {}
+    for (var x = 0; x < commandmessages.length; x++) {
+        if (gte_STATS.triggerMessage(name, commandmessages[x], userdata)) {
+          if (commandmessages[x]["emote"].length == 0) {
+            var character = ""
+          } else {
+        var character = {
+          "gtfitness":" __**GT Fitness**__",
+          "lewish":gtf_EMOTE.lewish + " __**Lewis Hamilton**__", 
+          "igorf":gtf_EMOTE.igorf + " __**Igor Fraga**__", 
+          "sebastienl":gtf_EMOTE.sebastienl + " __**Sebastien Loeb**__", 
+          "jannm": gtf_EMOTE.jannm + " __**Jann Mardenborough**__",
+      "jimmyb": gtf_EMOTE.jimmyb + " __**Jimmy Broadbent**__"}[commandmessages[x]["emote"]]
+        }
+        embed.setDescription(character + "\n" + commandmessages[x]["messages"].join("\n\n"));
+        message = commandmessages[x]
+        break;
+        }
+    }
+
+  if (Object.keys(message).length == 0) {
+    return callback()
+  }
+
+  var emojilist = [
+  { emoji: "",
+  emoji_name: "",
+  name: 'OK',
+  extra: " ",
+  button_id: 0,
+  }]
+   var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
+      gtf_DISCORD.send(msg, {embeds: [embed], components:buttons}, acceptmessage)
+   function acceptmessage(msgg) {
+    function accept() {
+      gte_STATS.addMessage(name, message, userdata)
+      gte_STATS.saveEnthu(userdata)
+      msgg.delete({})
+      msg.type = 0
+      callback()
+    }
+
+    var functionlist = [accept]
+      gte_TOOLS.createButtons(buttons, emojilist, functionlist, msgg, userdata)
+  }
+    }
+  }
+
+
+}
 module.exports.checkRewards = function (type, extra, userdata) {
-    var rewards = gte_MAIN.gtfrewards[type]
+  /*
+    var rewards = .gtfrewards[type]
   
   for (var i = 0; i < rewards.length; i++) {
     var f = gte_STATS.triggerReward(rewards[i]["name"], rewards[i], extra, userdata)
@@ -1449,6 +1439,7 @@ module.exports.checkRewards = function (type, extra, userdata) {
     gte_STATS.addItem(rewards[i]["name"], userdata)
     }
   }
+  */
 }
 
 module.exports.raceEventStatus = function (event, userdata) {
@@ -1701,15 +1692,15 @@ module.exports.resumeRace = function (userdata, client) {
       }
       var embed = new EmbedBuilder(msg.embeds[0]);
 
-    gte_CONSOLELOG.reverse();
-    gte_CONSOLELOG.fill(0, 255, 0);
+    gtf_CONSOLELOG.reverse();
+    gtf_CONSOLELOG.fill(0, 255, 0);
       if (userdata["raceinprogress"]["championshipnum"] >= 1) {
  console.log(userdata["id"] + ": Championship Resumed");
       } else {
       console.log(userdata["id"] + ": Race Resumed");
       }
       
-    gte_CONSOLELOG.end();
+    gtf_CONSOLELOG.end();
 
 gte_RACES2.startSession(racesettings, racedetails, finalgrid, [true], embed, msg, userdata);
     });

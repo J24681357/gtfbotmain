@@ -1370,15 +1370,10 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
       if (repair) {
         functionlist.push(repaircar)
       }
-      if (event["eventid"].includes("SEASONAL")) {
-        functionlist.push(function() {
-          require(gte_TOOLS.homedir() + "commands/seasonal").execute(msg, { options: event["eventid"].split("SEASONAL")[1].split("-")[0] }, userdata);
-        })
-      } else {
-        functionlist.push(function() {
+      functionlist.push(function() {
           require(gte_TOOLS.homedir() + "commands/career").execute(msg, { options: event["eventid"].split("-")[0] }, userdata);
         })
-      }
+      
       gte_TOOLS.createButtons(buttons, emojilist, functionlist, msg, userdata)
     }
   }
