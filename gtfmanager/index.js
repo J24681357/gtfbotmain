@@ -183,7 +183,7 @@ client.on("interactionCreate", async interaction => {
       }
   try {
     
-    args = gtf_TOOLS.querymap(args)
+    args = gtf_TOOLS.queryMap(args)
     command.execute(msg, args, userdata);
   } catch (error) {
     if (error == "DONE") {
@@ -207,7 +207,7 @@ client.login(process.env.SECRET2).then(function() {
   gtm_LIST_BOT["executions"] = 0;
   gtm_LIST_BOT["penalty"] = 0
   fs.writeFileSync(
-    gtm_TOOLS.homedir() + "jsonfiles/_botconfig.json",
+    gtm_TOOLS.homeDir() + "jsonfiles/_botconfig.json",
     JSON.stringify(gtm_LIST_BOT),
     function(err, result) {
       if (err) console.log("GTM: error", err);

@@ -170,7 +170,7 @@ module.exports.driftresults = function(racesettings, racedetails, finalgrid, che
   var place2 = "4th"
   var places = ["3rd", "2nd", "1st"]
   var prize = 0
-  let final = require(gte_TOOLS.homedir() + "functions/races/f_races_2ex").driftsection(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata, true);
+  let final = require(gte_TOOLS.homeDir() + "functions/races/f_races_2ex").driftsection(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata, true);
   racesettings["points"] += final[0];
   if (racesettings["points"] >= final[3]) {
     medal = gtf_EMOTE.bronzemedal + " BRONZE";
@@ -687,7 +687,7 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
       gtf_DISCORD.delete(m, { seconds: 2 })
     });
     var e = Math.ceil((parseInt(racesettings["eventid"].split("-")[1])) / 4)
-    var command = require(gte_TOOLS.homedir() + "commands/drivingrevolution");
+    var command = require(gte_TOOLS.homeDir() + "commands/drivingrevolution");
     command.execute(msg, { options: e[0], number: (parseInt(e[1]) + 1) }, userdata);
   }
   if (racesettings["mode"] == "CAREER") {

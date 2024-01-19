@@ -359,7 +359,7 @@ module.exports.checkRegulations = function (gtfcar, racesettings, func, embed, m
       gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, func);
       function func(msg) {
         function gtfdealer() {
-          require(gte_TOOLS.homedir() + "commands/car").execute(
+          require(gte_TOOLS.homeDir() + "commands/car").execute(
             msg,
             { options: "select", manufacturer__custom: makes, type: types, drivetrain: drivetrains, engine: engines, special: specials, country: countries, model: models, fpplimit: fpplimit, powerlimit: powerlimit, weightlimit: weightlimit, title: title },
             userdata
@@ -713,7 +713,7 @@ module.exports.checkRegulationsEnthu = function (gtfcar, racesettings, func, emb
       gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, func);
       function func(msg) {
         function gtfdealer() {
-          require(gte_TOOLS.homedir() + "commands/car").execute(
+          require(gte_TOOLS.homeDir() + "commands/car").execute(
             msg,
             { options: "select", manufacturer__custom: makes, type: types, drivetrain: drivetrains, engine: engines, special: specials, country: countries, model: models, fpplimit: fpplimit, powerlimit: powerlimit, weightlimit: weightlimit, title: title },
             userdata
@@ -844,7 +844,7 @@ module.exports.checkTireRegulations = function (gtfcar, regulations, func, embed
       gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, func);
       function func(msg) {
         function gtfautotires() {
-          require(gte_TOOLS.homedir() + "commands/tune").execute(msg, { options: "tires" }, userdata);
+          require(gte_TOOLS.homeDir() + "commands/tune").execute(msg, { options: "tires" }, userdata);
           return;
         }
         var functionlist = [gtfautotires];
@@ -1071,14 +1071,14 @@ while (gmenulist.length <= 0)
 
         gte_STATS.save(userdata);
         setTimeout(() => {
-          require(gte_TOOLS.homedir() + "commands/" + args["command"]).execute(msg, args["oldquery"], userdata);
+          require(gte_TOOLS.homeDir() + "commands/" + args["command"]).execute(msg, args["oldquery"], userdata);
         }, 1000);
         return;
       } else {
         select = 0;
         index = 0;
         filterlist = setfilter(filterlist, regulations, fav);
-        require(gte_TOOLS.homedir() + "commands/garage").execute(msg, { options: "select", number: int + 1 + 100 * hundredpage, filter: filterlist, extra: "silent" }, userdata);
+        require(gte_TOOLS.homeDir() + "commands/garage").execute(msg, { options: "select", number: int + 1 + 100 * hundredpage, filter: filterlist, extra: "silent" }, userdata);
         if (userdata["settings"]["GARAGESORT"] == "Recently Used") {
           gmenulist.some((item, index) => item["menu_id"] == int && gmenulist.unshift(gmenulist.splice(index, 1)[0]));
           gmenulist = gmenulist.map(function (x, index) {
@@ -1426,7 +1426,7 @@ module.exports.resultsSummaryEnthu = function (racesettings, finalgrid, embed, m
 
   function func(msg) {
     function ok() {
-      var home = gte_TOOLS.homedir()
+      var home = gte_TOOLS.homeDir()
       require(home + "commands/fithusimlife").execute(msg, { options: "list" }, userdata);
     }
 
@@ -1447,7 +1447,7 @@ module.exports.noEnthuPointsScreen = function (embed, msg, userdata) {
 
   function func(msg) {
     function ok() {
-      require(gte_TOOLS.homedir() + "commands/fithusimlife").execute(msg, { options: "list" }, userdata);
+      require(gte_TOOLS.homeDir() + "commands/fithusimlife").execute(msg, { options: "list" }, userdata);
     }
 
     var functionlist = [ok];

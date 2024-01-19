@@ -160,7 +160,7 @@ module.exports.startSession = function(racesettings, racedetails, finalgrid, che
     ///Functions
     function flagstartrace() {
       if (userdata["raceinprogress"]["active"]) {
-        require(gtf_TOOLS.homedir() + "commands/status").execute(msg, { options: "exit" }, userdata);
+        require(gtf_TOOLS.homeDir() + "commands/status").execute(msg, { options: "exit" }, userdata);
         if (racesettings["type"] == "TIMETRIAL") {
           var results2 = gtf_RACEEX.timetrialresults(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata)
           embed.setDescription(results2)
@@ -629,7 +629,7 @@ module.exports.driftresults2 = function(racesettings, racedetails, finalgrid, ch
   }
 
   var medal = "";
-  let final = require(gtf_TOOLS.homedir() + "functions/races/f_races_2ex").driftsection(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata, true);
+  let final = require(gtf_TOOLS.homeDir() + "functions/races/f_races_2ex").driftsection(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata, true);
   racesettings["points"] += final[0];
   if (racesettings["points"] >= final[3]) {
     medal = gtf_EMOTE.bronzemedal + " BRONZE";

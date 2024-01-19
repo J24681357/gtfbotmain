@@ -6,7 +6,7 @@ const { REST } = require('@discordjs/rest');
 
 module.exports.createslashcommands = function() {
   var fs = require("fs")
-  var home = gtf_TOOLS.homedir()
+  var home = gtf_TOOLS.homeDir()
   var slashcommands = JSON.parse(fs.readFileSync(home + "jsonfiles/slashcommands.json", "utf8"))
   
 const rest = new REST({ version: '10' }).setToken(process.env.SECRET);

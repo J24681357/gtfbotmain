@@ -3,7 +3,7 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 var Canvas = require("@napi-rs/canvas");
 
 module.exports.purchase = function (item, type, special, embed, query , msg, userdata) {
-  var dir = gtf_TOOLS.homedir()
+  var dir = gtf_TOOLS.homeDir()
   
   var image = ""
   var info = ""
@@ -407,7 +407,7 @@ var emojilist = [
   }
 };
 module.exports.sell = function (item, type, special, embed, query, msg, userdata) {
-  var dir = gtf_TOOLS.homedir()
+  var dir = gtf_TOOLS.homeDir()
   var results = "";
   if (type == "CAR") {
     var id = item["ID"];

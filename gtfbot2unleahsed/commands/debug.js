@@ -81,7 +81,7 @@ module.exports = {
         }],
         "importuserdata": "",
         "announcenewcars": ["", function (query) {
-           var cars = JSON.parse(fs.readFileSync(gtf_TOOLS.homedir() + "jsonfiles/newcars.json", "utf8"))
+           var cars = JSON.parse(fs.readFileSync(gtf_TOOLS.homeDir() + "jsonfiles/newcars.json", "utf8"))
 
         var newcars = cars.filter(x => !x.includes(" - 1") && !x.includes(" - 2") && !x.includes(" - 3"))
         var newcarsxx = cars.filter(x => x.includes(" - 1") || x.includes(" - 2") || x.includes(" - 3"))
@@ -373,22 +373,22 @@ gtf_SEASONAL.randomLimitedSeasonal()
           return;
         }
         if (query[1].split("-")[0].match(/b/g)) {
-          var races = require(gtf_TOOLS.homedir() + "data/career/races").beginner();
+          var races = require(gtf_TOOLS.homeDir() + "data/career/races").beginner();
         }
         if (query[1].split("-")[0].match(/a/g)) {
-          var races = require(gtf_TOOLS.homedir() + "data/career/races").amateur();
+          var races = require(gtf_TOOLS.homeDir() + "data/career/races").amateur();
         }
         if (query[1].split("-")[0].match(/ic/g)) {
-          var races = require(gtf_TOOLS.homedir() + "data/career/races").icleague();
+          var races = require(gtf_TOOLS.homeDir() + "data/career/races").icleague();
         }
         if (query[1].split("-")[0].match(/ib/g)) {
-          var races = require(gtf_TOOLS.homedir() + "data/career/races").ibleague();
+          var races = require(gtf_TOOLS.homeDir() + "data/career/races").ibleague();
         }
         if (query[1].split("-")[0].match(/ia/g)) {
-          var races = require(gtf_TOOLS.homedir() + "data/career/races").ialeague();
+          var races = require(gtf_TOOLS.homeDir() + "data/career/races").ialeague();
         }
         if (query[1].split("-")[0].match(/s/g)) {
-          var races = require(gtf_TOOLS.homedir() + "data/career/races").sleague();
+          var races = require(gtf_TOOLS.homeDir() + "data/career/races").sleague();
         }
 
         var event = races[Object.keys(races)[query[1].split("-")[1] - 1]];

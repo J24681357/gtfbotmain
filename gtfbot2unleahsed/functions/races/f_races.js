@@ -130,7 +130,7 @@ module.exports.prepRace = function(raceprep, gtfcar, embed, msg, userdata) {
 
         function flagstartrace() {
           if (userdata["raceinprogress"]["active"]) {
-            require(gtf_TOOLS.homedir() +  "commands/status").execute(msg, { options: "exit" }, userdata);
+            require(gtf_TOOLS.homeDir() +  "commands/status").execute(msg, { options: "exit" }, userdata);
           } else {
             embed.spliceFields(0, 1);
             try {
@@ -1321,11 +1321,11 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
       }
       if (event["eventid"].includes("SEASONAL")) {
         functionlist.push(function() {
-          require(gtf_TOOLS.homedir() +  "commands/seasonal").execute(msg, { options: event["eventid"].split("SEASONAL")[1].split("-")[0] }, userdata);
+          require(gtf_TOOLS.homeDir() +  "commands/seasonal").execute(msg, { options: event["eventid"].split("SEASONAL")[1].split("-")[0] }, userdata);
         })
       } else {
         functionlist.push(function() {
-          require(gtf_TOOLS.homedir() +  "commands/career").execute(msg, { options: event["eventid"].split("-")[0] }, userdata);
+          require(gtf_TOOLS.homeDir() +  "commands/career").execute(msg, { options: event["eventid"].split("-")[0] }, userdata);
         })
       }
       gtf_TOOLS.createButtons(buttons, emojilist, functionlist, msg, userdata)

@@ -850,7 +850,7 @@ module.exports.getSite = function (url, type, callback) {
 };
 
 
-module.exports.homedir = function() {
+module.exports.homeDir = function() {
   var dir = __dirname.split("/").slice(0, 4).join("/") + "/"
     if (dir.includes("gtfmanager") || dir.includes("gtfbot2unleahsed") || dir.includes("gtffithusim"))  {
       return __dirname.split("/").slice(0, 4).join("/") + "/"

@@ -7,7 +7,7 @@ const { REST } = require('@discordjs/rest');
 module.exports.createslashcommands = function() {
   var fs = require("fs")
 
-  var home = gte_TOOLS.homedir()
+  var home = gte_TOOLS.homeDir()
   var slashcommands = JSON.parse(fs.readFileSync(home + "jsonfiles/slashcommands.json", "utf8"))
 
 const rest = new REST({ version: '10' }).setToken(process.env.SECRET3);
@@ -72,13 +72,13 @@ for (var i = 0; i < keys.length; i++) {
 rest.put(
   Routes.applicationCommands(gte_USERID),
   { body: commands },
-).then((data) => console.log(`Successfully registered ${commands.length} application global commands.`))
+).then((data) => console.log(`Fithusim: Successfully registered ${commands.length} application global commands.`))
   .catch(console.error)
 
 
   /*
 rest.put(Routes.applicationGuildCommands(gte_USERID, gte_SERVERID), { body: [] })
-  .then((data) => console.log(`Successfully registered ${data.length} application guild commands.`))
+  .then((data) => console.log(`Fithusim: Successfully registered ${data.length} application guild commands.`))
   .catch(console.error)
  */
 }

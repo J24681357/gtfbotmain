@@ -396,7 +396,7 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
       if (!gte_STATS.checkEnthuPoints(embed, msg, userdata)) {
         return;
       }
-      require(gte_TOOLS.homedir() + "commands/garage").execute(msg, {options:"changecar"}, userdata)
+      require(gte_TOOLS.homeDir() + "commands/garage").execute(msg, {options:"changecar"}, userdata)
       return
     }
 
@@ -454,7 +454,7 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
             }
             fpplimit = [308, 388, 468, 548, 618, 9999][number]
             lowerfpp = [0,   319, 389, 469, 549, 619][number]
-            require(gte_TOOLS.homedir() + "commands/garage").execute(msg, {options:"list", fpplimit: fpplimit, lowerfpp:lowerfpp, types: types}, userdata)
+            require(gte_TOOLS.homeDir() + "commands/garage").execute(msg, {options:"list", fpplimit: fpplimit, lowerfpp:lowerfpp, types: types}, userdata)
             return
           }
       }

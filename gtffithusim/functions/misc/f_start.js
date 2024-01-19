@@ -127,7 +127,7 @@ module.exports.introEnthu = function (userdata, command, msg) {
         users.insertOne(userdata, (err, result) => {});
 
         gtf_DISCORD.delete(msg, {seconds:0})
-        var dir = gte_TOOLS.homedir()
+        var dir = gte_TOOLS.homeDir()
         var cmd = require(dir + "commands/home");
         cmd.execute(msg, {}, userdata);
 

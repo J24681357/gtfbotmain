@@ -378,7 +378,7 @@ embed.setDescription("Your **" + gtfcar["name"] + "** does not meet the regulati
 gtf_DISCORD.send(msg, {embeds:[embed], components: buttons}, func)
   function func(msg) {
     function gtfdealer() {
-      require(gtf_TOOLS.homedir() + "commands/car").execute(msg, {options: "select", 
+      require(gtf_TOOLS.homeDir() + "commands/car").execute(msg, {options: "select", 
 manufacturer__custom: makes, 
                     type:types, 
                     drivetrain: drivetrains, 
@@ -507,7 +507,7 @@ embed.setDescription("Your **" + gtfcar["name"] + "** does not meet the regulati
 gtf_DISCORD.send(msg, {embeds:[embed], components: buttons}, func)
   function func(msg) {
     function gtfautotires() {
-      require(gtf_TOOLS.homedir() +  "commands/tune").execute(msg, {options:"tires"}, userdata);
+      require(gtf_TOOLS.homeDir() +  "commands/tune").execute(msg, {options:"tires"}, userdata);
       return
     }
   var functionlist = [gtfautotires]
@@ -744,14 +744,14 @@ while (gmenulist.length <= 0)
 
           gtf_STATS.save(userdata);
           setTimeout(() => {
-            require(gtf_TOOLS.homedir() + "commands/" + args["command"]).execute(msg, args["oldquery"], userdata);
+            require(gtf_TOOLS.homeDir() + "commands/" + args["command"]).execute(msg, args["oldquery"], userdata);
           }, 1000);
           return;
         } else {
           select = 0;
           index = 0;
           filterlist = setfilter(filterlist, regulations, fav)
-          require(gtf_TOOLS.homedir() + "commands/garage").execute(msg, { options: "select", number: int + 1 + (100 * hundredpage), filter: filterlist, extra: "silent" }, userdata);
+          require(gtf_TOOLS.homeDir() + "commands/garage").execute(msg, { options: "select", number: int + 1 + (100 * hundredpage), filter: filterlist, extra: "silent" }, userdata);
           if (userdata["settings"]["GARAGESORT"] == "Recently Used") {
           gmenulist.some((item, index) => item["menu_id"] == (int) &&
   gmenulist.unshift(
@@ -1068,7 +1068,7 @@ var buttons = gtf_TOOLS.prepareButtons(emojilist, msg, userdata);
 
   function func(msg) {
         function ok() {
-          require(gtf_TOOLS.homedir() + "commands/enthusialife").execute(msg, {options:"list"}, userdata)
+          require(gtf_TOOLS.homeDir() + "commands/enthusialife").execute(msg, {options:"list"}, userdata)
         }
 
         var functionlist = [ok]
