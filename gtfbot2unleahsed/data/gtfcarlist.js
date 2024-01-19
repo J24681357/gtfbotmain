@@ -796,7 +796,7 @@ module.exports.audit = async function () {
     
 
     
-    await download2(imagelink, gtf_TOOLS.homeDir() + "gtfbot2unleahsed/images/cars/" + make + "/" + name + "" + oldcar["year"], function () {});
+    await download2(imagelink, gtf_TOOLS.homeDir() + "images/cars/" + make + "/" + name + "" + oldcar["year"], function () {});
 
     //download2(imagelink, "", function () {});
   }
