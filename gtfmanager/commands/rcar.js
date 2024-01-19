@@ -68,7 +68,7 @@ module.exports = {
         imagestyle = 0
       }
     }
-    embed.setDescription(gtf_EMOTE.gtflogo + " **" + car["name"] + " " + car["year"] + "** " + gtm_TOOLS.toEmoji(car["country"]) + " `" + car["type"] + "`\n" + gtf_MATH.numFormat(car["power"]) + " hp | " + gtf_MATH.numFormat(car["weight"]) + " lbs | " + car["drivetrain"] + " | " + car["engine"] + " " + extra);
+    embed.setDescription(gtf_EMOTE.gtflogo + " **" + car["name"] + " " + car["year"] + "** " + gtf_TOOLS.toEmoji(car["country"]) + " `" + car["type"] + "`\n" + gtf_MATH.numFormat(car["power"]) + " hp | " + gtf_MATH.numFormat(car["weight"]) + " lbs | " + car["drivetrain"] + " | " + car["engine"] + " " + extra);
     embed.setImage(car["image"][imagestyle]);
 
     var emojilist = [

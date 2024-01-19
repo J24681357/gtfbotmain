@@ -201,7 +201,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         total = 2
       }
       for (var i = 1; i < total; i++) {
-        var event = gte_TOOLS.randomItem(races, gte_STATS.week(userdata) + i)
+        var event = gtf_TOOLS.randomItem(races, gte_STATS.week(userdata) + i)
         event["eventid"] = event["eventid"].split("-")[0] + "-" + (i)
         
       event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])

@@ -374,7 +374,7 @@ client.login(process.env.SECRET3).then(async function() {
     updatebotstatus();
     
     /*
-    gte_TOOLS.interval(
+    gtf_TOOLS.interval(
       function() {
         gte_STATS.resumeRace(keys[index1], client);
         index1++;
@@ -434,7 +434,7 @@ client.login(process.env.SECRET3).then(async function() {
 var executecommand = function(command, args, msg, userdata) {
   try {
     var saved = userdata["id"] + ": " + args;
-    args = gte_TOOLS.queryMap(args);
+    args = gtf_TOOLS.querymap(args);
     command.execute(msg, args, userdata);
   } catch (error) {
     gte_EMBED.alert({ name: "❌ Unexpected Error", description: "Oops, an unexpected error has occurred.\n" + "**" + error + "**" + "\n\n" + "Check the Known Issues in <#687872420933271577> to see if this is documented.", embed: "", seconds: 0 }, msg, userdata);

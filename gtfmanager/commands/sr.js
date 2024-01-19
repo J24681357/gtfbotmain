@@ -85,7 +85,7 @@ module.exports = {
     gtf_DISCORD.send(msg, { embeds: [embed] }, sr)
 
     function sr(msg) {
-      gtm_TOOLS.interval(
+      gtf_TOOLS.interval(
         function() {
           results = "**Message:** " + content + "\n" + "**Sportsmanship Rating:** " + rating;
           embed.setDescription(results);

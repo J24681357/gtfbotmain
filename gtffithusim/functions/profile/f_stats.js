@@ -438,7 +438,7 @@ module.exports.viewCar = function (gtfcar, embed, userdata) {
     "**Car:** " +
     gtfcar["name"] +
     " `🚘ID:" +
-    gte_TOOLS.index(garage, gtfcar) +
+    gtf_TOOLS.index(garage, gtfcar) +
     "`" +
     " `💧" +
     gtfcar["condition"]["clean"] +

@@ -165,7 +165,7 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
     };
 
     if (!checkpoint[0]) {
-      gte_TOOLS.interval(
+      gtf_TOOLS.interval(
         function () {
           /*
           if (racesettings["mode"] == "CAREER") {
@@ -778,7 +778,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
   var useraccel = racesettings["gridstart"]["position"][1];
   //////
 
-  gte_TOOLS.interval(
+  gtf_TOOLS.interval(
     function () {
       embed.setDescription(results(index) + "\n" + emojilist[userarrow]["emoji"] + " " + (useraccel ? "`Accelerating...`" : "`Braking...`"));
       embed.spliceFields(0, 1);
@@ -876,7 +876,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
           layoutx.push("🔴");
         } else {
           if (dir["0"](x, y)) {
-            layoutx.push(gte_TOOLS.randomItem(racesettings["track"]["pattern"]));
+            layoutx.push(gtf_TOOLS.randomItem(racesettings["track"]["pattern"]));
           } else {
             layoutx.push("⬛");
           }
@@ -910,7 +910,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
           ///START
           if (Object.keys(currpiece).length != 0) {
             if (x == 3 && y == arrowdir[currpiece["arrow"]]) {
-              layoutx[y] = gte_TOOLS.toEmoji({ 0: "left", 1: "topleft", 2: "up", 3: "topright", 4: "right" }[currpiece["arrow"].toString()]);
+              layoutx[y] = gtf_TOOLS.toEmoji({ 0: "left", 1: "topleft", 2: "up", 3: "topright", 4: "right" }[currpiece["arrow"].toString()]);
               continue;
             }
 
@@ -929,7 +929,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
             layoutx[y] = "🔴";
           } else {
             if (dir[currpiece["arrow"]](x, y)) {
-              layoutx[y] = gte_TOOLS.randomItem(racesettings["track"]["pattern"]);
+              layoutx[y] = gtf_TOOLS.randomItem(racesettings["track"]["pattern"]);
             } else {
               layoutx[y] = "⬛";
             }

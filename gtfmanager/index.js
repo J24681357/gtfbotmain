@@ -183,7 +183,7 @@ client.on("interactionCreate", async interaction => {
       }
   try {
     
-    args = gtm_TOOLS.queryMap(args)
+    args = gtf_TOOLS.querymap(args)
     command.execute(msg, args, userdata);
   } catch (error) {
     if (error == "DONE") {

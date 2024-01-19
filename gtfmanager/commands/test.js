@@ -36,7 +36,7 @@ module.exports = {
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
 
     var server = msg.guild
-    gtm_TOOLS.getSite("https://www.kudosprime.com/gt7/carlist.php?range=5000", "https", next)
+    gtf_TOOLS.getsite("https://www.kudosprime.com/gt7/carlist.php?range=5000", "https", next)
     function next(data) {
       var list = data.split(/data-carid=/).slice(1).map(function(x) {
         car = x.split(" alt=\"")[1].split("\"/>")[0]

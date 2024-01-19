@@ -48,7 +48,7 @@ module.exports.updatemanual = function(client) {
   if (index >= size) {
     console.log("GTM: Manual Updated")
   }
-  gtm_TOOLS.interval(
+  gtf_TOOLS.interval(
     function() {
       gtf_DISCORD.autoMessage(client, manual[index]['title'], manual[index]['description'].join('\n\n'), manual[index]['color'], manual[index]['image'], '704114222690336800', [], index + 1);
       index++;
@@ -303,7 +303,7 @@ module.exports.loadfeeds = function(client) {
 
   var i = 0
   
-  gtm_TOOLS.interval(function() {
+  gtf_TOOLS.interval(function() {
     gtm_EXTRA.feed(json[i], client)
     i++
     if (i == json.length) {
@@ -314,7 +314,7 @@ module.exports.loadfeeds = function(client) {
 
   setInterval(function() {
     var i = 0
-  gtm_TOOLS.interval(function() {
+  gtf_TOOLS.interval(function() {
     gtm_EXTRA.feed(json[i], client)
     i++
     if (i == json.length) {
@@ -443,7 +443,7 @@ if (name.includes('photos')) {
          list.push(x._emoji.name)
       })
       var i = 0
-     gtm_TOOLS.interval(function() {
+     gtf_TOOLS.interval(function() {
        var e = emojis[i]
        if (e.includes(":")) {
          e = e.split(":")[1]
@@ -501,7 +501,7 @@ module.exports.feed = function(json, client) {
       });
 
       resp.on('end', () => {
-        var list = gtm_TOOLS.unique(func(data)).slice(0, amount).filter(function(x) {
+        var list = gtf_TOOLS.unique(func(data)).slice(0, amount).filter(function(x) {
           if (x.includes("<html><head>")) {
             console.log("GTM: This may be blocked.")
             return false
@@ -939,7 +939,7 @@ var car = [{
 
     var embed = new EmbedBuilder()
     embed.setTitle("🚘 __**" + "Car Of The Day (" + datetime + ")**__")
-    embed.setDescription(gtm_TOOLS.toEmoji(car["country"]) + " **" + car["name"] + " " + car["year"] + "** " + " `" + car["type"] + "`\n" + gtf_MATH.numFormat(car["power"]) + " hp | " + gtf_MATH.numFormat(car["weight"]) + " lbs | " + car["drivetrain"] + " | " + car["engine"] + theme)
+    embed.setDescription(gtf_TOOLS.toEmoji(car["country"]) + " **" + car["name"] + " " + car["year"] + "** " + " `" + car["type"] + "`\n" + gtf_MATH.numFormat(car["power"]) + " hp | " + gtf_MATH.numFormat(car["weight"]) + " lbs | " + car["drivetrain"] + " | " + car["engine"] + theme)
     embed.setImage(car["image"][0])
     embed.setColor(0x0151b0)
     var channel = client.channels.cache.find(channel => channel.id === cotdchannelid);

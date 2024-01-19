@@ -2,103 +2,6 @@
 const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBuilder, ModalBuilder, TextInputBuilder, TextInputStyle, AttachmentBuilder, StringSelectMenuBuilder, ButtonBuilder, SelectMenuBuilder } = require("discord.js");
 ////////////////////////////////////////////////////
 
-module.exports.shuffle = function (array) {
-  let currentIndex = array.length,
-    randomIndex;
-  while (currentIndex != 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-  }
-
-  return array;
-};
-
-module.exports.randomItem = function (array, seed) {
-  if (typeof seed === "undefined") {
-    return array[Math.floor(Math.random() * array.length)]
-  } else {
-    var index = gtf_MATH.randomIntSeed(0, array.length-1, seed)
-    return array[index]
-  }
-};
-
-module.exports.unique = function (names) {
-  let unique = {};
-  names.forEach(function (i) {
-    if (!unique[i]) {
-      unique[i] = true;
-    }
-  });
-  return Object.keys(unique);
-};
-
-module.exports.interval = function interval(func, wait, times) {
-  var interv = (function (w, t) {
-    return function () {
-      if (typeof t === "undefined" || t-- > 0) {
-        setTimeout(interv, w);
-        try {
-          func.call(null);
-        } catch (e) {
-          t = 0;
-          throw e
-        }
-      }
-    };
-  })(wait, times);
-
-  setTimeout(interv, wait);
-};
-
-module.exports.toEmoji = function (text) {
-  var list = {
-    nlicense: "⬛",
-    blicense: gtf_EMOTE.blicense,
-    alicense: gtf_EMOTE.alicense,
-    iclicense: gtf_EMOTE.iclicense,
-    iblicense: gtf_EMOTE.iblicense,
-    ialicense: gtf_EMOTE.ialicense,
-    slicense: gtf_EMOTE.slicense,
-    blank: gtf_EMOTE.transparent,
-    playercar: gtf_EMOTE.carright,
-    playercarup: gtf_EMOTE.carup,
-    playercardown: gtf_EMOTE.cardown,
-    
-    "N/A": "N/A",
-    austria: "🇦🇹",
-    australia: "🇦🇺",
-    "czech republic": "🇨🇿",
-    "French Polynesia": "🇵🇫",
-    china: "🇨🇳",
-    croatia: "🇭🇷",
-    france: "🇫🇷",
-    brazil: "🇧🇷",
-    monaco: "🇲🇨",
-    netherlands: "🇳🇱",
-    uk: "🇬🇧",
-    spain: "🇪🇸",
-    switzerland: "🇨🇭",
-    germany: "🇩🇪",
-    italy: "🇮🇹",
-    japan: "🇯🇵",
-    "south korea": "🇰🇷",
-    sweden: "🇸🇪",
-    usa: "🇺🇸",
-    canada: "🇨🇦",
-    pdi: gtf_EMOTE.pdiflag,
-    up: "⬆",
-    down: "⬇",
-    left: "⬅",
-    right: "➡",
-    topleft: "↖",
-    topright: "↗"
-    
-  };
-  return list[text.toLowerCase()];
-};
-
 module.exports.formPage = function (args, userdata) {
   if (userdata["settings"]["MENUSELECT"] == 1) {
     args["numbers"] = true;
@@ -133,6 +36,7 @@ module.exports.formPage = function (args, userdata) {
   }
   return list;
 };
+
 module.exports.formPages = async function (args, embed, msg, userdata) {
   
   
@@ -620,16 +524,6 @@ module.exports.formPages = async function (args, embed, msg, userdata) {
     gte_TOOLS.createButtons(buttons, emojilist, functionlist, msg, userdata);
   }
 };
-module.exports.index = function (list, item) {
-  item = JSON.stringify(item);
-  var index = 0;
-  for (; index < list.length; index++) {
-    if (item == JSON.stringify(list[index])) {
-      return index + 1;
-    }
-  }
-  return -1;
-};
 
 module.exports.setupCommands = function (embed, results, query, pageargs, msg, userdata) {
   var embed = new EmbedBuilder();
@@ -855,16 +749,6 @@ module.exports.createButtons = function (buttons, emojilist, functionlist, msg, 
   }
 };
 
-module.exports.queryMap = function (args) {
-  if (typeof obj === "object") {
-    return;
-  }
-  var query = {};
-  for (var i = 0; i < args.length; i++) {
-    query[args[i].trim().split(/=(.+)/)[0]] = args[i].trim().split(/=(.+)/)[1];
-  }
-  return query;
-};
 
 module.exports.updateallsaves = async function (name, json) {
   var i = 0;
@@ -965,193 +849,6 @@ module.exports.getSite = function (url, type, callback) {
   });
 };
 
-module.exports.downloadGTFFiles = function (client) {
-  var fs = require("fs")
-  var urls = [
-"functions/misc/f_datetime.js",
-"functions/misc/f_discord.js",
-  "functions/misc/f_math.js",
-    
-    "jsonfiles/gtfcarlist.json",
-    "jsonfiles/gtftracklist.json",
-    "data/gtfcarlist.js",
-    "data/gtftracklist.js"
-  ]
-  var i = 0
-  var j = 0
-  var k = 0
-  gte_TOOLS.interval(function() {
-    var link = "https://raw.githubusercontent.com/J24681357/gtfbot2unleahsed/master/" + urls[i]
-    gte_TOOLS.getSite(link, "https", function(file) {
-      var directory = link.split("/master/")[1]
-      var name = directory.split("/").pop()
-   fs.writeFileSync(
-    "./" + directory,
-    file,
-    function(err, result) {
-      if (err) console.log("error", err);
-    }
-  )
-})
-   
-    i++
-  }, 2000, urls.length)
-  
-  
-}
-
-module.exports.fetchSite = async function (url, callback) {
-  const res = await fetch(url);
-if (res.ok) {
-  const data = await res.json();
-  return callback(data)
-}
-}
-
-//gte_TOOLS.fetchsite("https://www.gtplanet.net/feed/", function(data) {console.log(data)})
-
-
-module.exports.removeReactions = function(list, msg) {
-  for (var index = 0; index < list.length; index++) {
-    var emoji = msg.reactions.cache.find(r => r.emoji.name === list[index])
-    if (emoji == null) {
-      continue;
-    } else {
-      emoji.remove('565551766624665601');
-    }
-  }
-  gte_TOOLS.interval(function(){
-    for (var index = 0; index < list.length; index++) {
-    var emoji = msg.reactions.cache.find(r => r.emoji.name === list[index])
-    if (emoji == null) {
-      continue;
-    } else {
-      emoji.remove('565551766624665601');
-    }
-  }
-  }, 1000 * list.length, 1)
-}
-
-module.exports.createReactions = function(emojilist, msg, id) {
-  var i = 0;
-  //var reactid = stats.count(id)
-  filter(i)
-  
-  function filter(i) {
-    var emote = emojilist[i][0];
-    if (gtf_EMOTE.includes("<:")) {
-      emote = gtf_EMOTE.split(":")[2]
-      emote = gtf_EMOTE.slice(0, gtf_EMOTE.length-1)
-    }
-    var name = emojilist[i][1];
-    var func = emojilist[i][2];
-    msg.react(emote).then(function(){
-    var Filter1 = (reaction, user) => reaction.emoji.name === name && id === user.id && reactid === stats.count(id);
-
-    const filter11 = msg.createReactionCollector( { Filter1, timer: 10 * 1000 , dispose:true});
-
-      filter11.on("collect", r => {
-        const notbot = r.users.cache
-          .filter(clientuser => clientuser.id == id)
-          .first();
-        if (typeof emojilist[i][3] !== 'undefined') {
-          if (emojilist[i][3] == "Once") {
-            //stats.addcount(id)
-          }
-          
-        }
-        if (typeof emojilist[i][3] !== 'undefined') {
-          if (!isNaN(emojilist[i][3])) {
-              return func(emojilist[i][3])
-          } else {
-              return func()
-          }
-        }
-        return func()
-      });
-      
-            filter11.on("remove", r => {
-        const notbot = r.users.cache
-          .filter(clientuser => clientuser.id == id)
-          .first();
-        if (typeof emojilist[i][3] !== 'undefined') {
-          if (emojilist[i][3] == "Once") {
-            //stats.addcount(id)
-          }
-          
-        }
-        if (typeof emojilist[i][3] !== 'undefined') {
-          if (!isNaN(emojilist[i][3])) {
-              return func(emojilist[i][3])
-          } else {
-              return func()
-          }
-        }
-        return func()
-      });
-      increase()
-    })
-
-  }
-
-  function increase() {
-    i++
-    if (i == emojilist.length) {
-      return
-    } else {
-      filter(i)
-    }
-  }
-}
-module.exports.limitReactions = function(emojis, msg) {
-    if (emojis.length == 0) {
-      return
-    } else {
-      var i = emojis.length - 1
-      gte_TOOLS.interval(function(){
-        msg.react(emojis[i])
-        i--
-      }, 1200 ,emojis.length)
-
-    }
-}
-module.exports.limitRoles = function(roles, role_check, user) {
-    if (roles.length == 0) {
-      return
-    } else {
-      var timer;
-      var i;
-      var check = function() {
-        if (roles.length == 0) {
-          clearInterval(timer)
-          clearInterval(i)
-          gte_MAIN.gtfbotconfig["reactionslimit"] = false
-        }
-      }
-      
-      var repeat = function() {
-        if (gte_MAIN.gtfbotconfig["reactionslimit"] == false) {
-
-        gte_MAIN.gtfbotconfig["reactionslimit"] = true        
-         timer = setInterval(function() {
-            if (emojis.length != 0) {
-              console.log(emojis)
-        msg.react(emojis.pop())
-           }
-        check()
-      }, 1200)
-      
-        }
-      }
-
-      if (gte_MAIN.gtfbotconfig["reactionslimit"] == false) {
-        repeat()
-      } else {
-       i = setInterval(function() {repeat()}, 1000)
-      }
-
-    }
-}
 
 module.exports.homedir = function() {
   var dir = __dirname.split("/").slice(0, 4).join("/") + "/"

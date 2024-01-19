@@ -189,7 +189,7 @@ module.exports.checkRegulations = function (gtfcar, racesettings, func, embed, m
       index++;
     }
     if (!makesuccess) {
-      errors.push("**Makes:** " + car["make"] + " -> " + gte_TOOLS.unique(makes).join(", "));
+      errors.push("**Makes:** " + car["make"] + " -> " + gtf_TOOLS.unique(makes).join(", "));
     }
   }
 
@@ -543,7 +543,7 @@ module.exports.checkRegulationsEnthu = function (gtfcar, racesettings, func, emb
       index++;
     }
     if (!makesuccess) {
-      errors.push("**Makes:** " + car["make"] + " -> " + gte_TOOLS.unique(makes).join(", "));
+      errors.push("**Makes:** " + car["make"] + " -> " + gtf_TOOLS.unique(makes).join(", "));
     }
   }
 
@@ -1203,7 +1203,7 @@ module.exports.giftRoulette = function (title, results, prizes, special, embed, 
       return list.join("\n");
     };
 
-    gte_TOOLS.interval(
+    gtf_TOOLS.interval(
       function () {
         index = Math.floor(Math.random() * count);
         var final = results1(index);
@@ -1278,7 +1278,7 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
     return;
   }
 
-  index = gte_TOOLS.randomItem(indexes);
+  index = gtf_TOOLS.randomItem(indexes);
   var final = results1(index);
   embed.setDescription(final);
   if (racesettings["title"].includes("⭐")) {
@@ -1294,13 +1294,13 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
     var index = 0;
     var reveal = 0;
 
-    gte_TOOLS.interval(
+    gtf_TOOLS.interval(
       function () {
         reveal++;
         if (racesettings["title"].includes("⭐")) {
-          index = gte_TOOLS.randomItem(indexes)
+          index = gtf_TOOLS.randomItem(indexes)
         } else {
-        index = gtf_MATH.randomInt(0, 1) == 1 ? -1 : gte_TOOLS.randomItem(indexes)
+        index = gtf_MATH.randomInt(0, 1) == 1 ? -1 : gtf_TOOLS.randomItem(indexes)
         }
         var final = results1(index);
         embed.setDescription(final);
