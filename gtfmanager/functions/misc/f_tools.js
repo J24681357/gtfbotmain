@@ -187,7 +187,7 @@ embed.setFields([{ name: gtm_STATS.menuFooter(userdata), value: gtm_STATS.curren
   gtf_DISCORD.send(msg, { embeds: [embed], components: buttons, files: files }, createfunctions);
 
   function createfunctions(msg) {
-if (Object.keys(userdata) >= 5) {
+if (Object.keys(userdata).length >= 5) {
     garagemenuvars = gtf_GTF.garageMenuFunctions("", "", args, garagemenuvars, msg, embed, userdata);
 }
 
@@ -866,7 +866,7 @@ module.exports.limitReactions = function(emojis, msg) {
     }
 }
 
-module.exports.homedir = function() {
+module.exports.homeDir = function() {
   var dir = __dirname.split("/").slice(0, 4).join("/") + "/"
     if (dir.includes("gtfmanager") || dir.includes("gtfbot2unleahsed") || dir.includes("gtffithusim"))  {
       return __dirname.split("/").slice(0, 4).join("/") + "/"

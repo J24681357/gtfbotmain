@@ -37,12 +37,13 @@ var timeelapsed = 0;
 
 console.log("Fithusim: Loading...");
 
-
+/*
 setTimeout(function() {
   if (!checklogin) {
     restartbot()
   }
 }, 25000);
+*/
 
 client.on("ready", () => {
 
@@ -70,63 +71,7 @@ console.log("Fithusim: Time elapsed: " + timeelapsed + " " + "ms");
 gtf_CONSOLELOG.end();
 });
 
-/*client.on('messageCreate', msg => {
-   if (msg.channel.type == 'DM') {
-      console.log('Dm recieved!')
-    if(msg.attachments.size) {
-      var fileurl = msg.attachments.first().url;
 
-  var file = ""
-
-      var download = function(url, dest, cb) {
-        file = fs.createWriteStream(dest);
-  var request = require("https").get(url, function(response) {
-    response.pipe(file);
-    file.on('finish', function() {
-      file.close(cb);  // close() is async, call cb after close completes.
-    });
-  }).on('error', function(err) { // Handle errors
-    fs.unlink(dest); // Delete the file async. (But we don't check the result)
-    if (cb) cb(err.message);
-  });
-   };
-   download(fileurl, "./", function() {
-      var userdata = file.extract("userdata.txt", {encoding: "utf8", password:process.env.USERDATAPASSWORD})
-   })
-
-}
-   }
-})*/
-
-client.on("threadMembersUpdate", (addedMembers, removedMembers, thread) => {
-  if (thread.parent.id != "1105413833197113375") {
-    return
-  }
-  if (addedMembers.size == 1) {
-    var member = addedMembers.entries().next().value
-    var id = member[0]
-    var user = member[1]
-    var embed = new EmbedBuilder();
-    results = "ℹ️ **" + "<@" + id + "> has joined the room.**"
-    embed.setColor(0x808080);
-    embed.setDescription(results);
-    gtf_DISCORD.send(thread, { embeds: [embed], type1: "CHANNEL" })
-
-    gte_LOBBY.joinlobby(user, thread)
-  }
-  if (removedMembers.size == 1) {
-    var member = removedMembers.entries().next().value
-    var id = member[0]
-    var user = member[1]
-    var embed = new EmbedBuilder();
-    results = "ℹ️ **" + "<@" + id + "> has left the room.**"
-    embed.setColor(0x808080);
-    embed.setDescription(results);
-    gtf_DISCORD.send(thread, { embeds: [embed], type1: "CHANNEL" })
-    gte_LOBBY.leavelobby(user, thread)
-  }
-
-});
 
 client.on("interactionCreate", async interaction => {
   try {

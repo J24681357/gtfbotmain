@@ -546,7 +546,7 @@ module.exports.feed = function(json, client) {
               list.map(function(x) {
                gtf_DISCORD.send(rsschannel, {content: '>>> ' + emoji + ' | __**' + x[0] + '**__\n' + x[1], type1: "CHANNEL"})
               })
-              console.log(list.length + " news found for " + name + "!");
+              console.log("GTM: " + list.length + " news found for " + name + "!");
               if (list.length == 0) {
                 return 0
               } else {

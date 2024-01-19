@@ -14,12 +14,15 @@ var cooldowns = new Set();
 var checklogin = false
 var minute = 0
 
-
+/*
 setTimeout(function() {
   if (!checklogin) {
     restartbot(client)
   }
 },10000)
+*/
+
+
 
 var listinmaint = [];
 
@@ -34,7 +37,8 @@ for (const file of commandFiles) {
   client.commands[command.name] = command;
 }
 
-var date = new Date();
+var datebot = new Date().getTime();
+var timeelapsed = 0;
 
 // Server Settings
 var executions = 0;
@@ -58,6 +62,15 @@ client.once(Events.ClientReady, c => {
   
   gtm_EXTRA.loadfeeds(c);
   console.log("GTM: Logged In")
+  timeelapsed = parseInt(new Date().getTime()) - parseInt(datebot);
+
+  gtf_CONSOLELOG.reverse();
+  gtf_CONSOLELOG.fill(0, 0, 255);
+
+  console.log("GTM: Time elapsed: " + timeelapsed + " " + "ms");
+  gtf_CONSOLELOG.end();
+  
+
 });
 
 
