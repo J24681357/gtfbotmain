@@ -14,14 +14,6 @@ var cooldowns = new Set();
 var checklogin = false
 var minute = 0
 
-setInterval(function() {
-  minute = minute + 1
-  if (minute >= 2) {
-  }
-  if (minute >= 240) {
-  restartbot(client)
-  }
-}, 60000)
 
 setTimeout(function() {
   if (!checklogin) {

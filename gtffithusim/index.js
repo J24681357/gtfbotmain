@@ -35,7 +35,7 @@ for (const file of commandFiles) {
 var datebot = new Date().getTime();
 var timeelapsed = 0;
 
-console.log("Loading...");
+console.log("Fithusim: Loading...");
 
 
 setTimeout(function() {
@@ -66,9 +66,8 @@ client.on("ready", () => {
 gtf_CONSOLELOG.reverse();
 gtf_CONSOLELOG.fill(0, 0, 255);
 
-console.log("Time elapsed: " + timeelapsed + " " + "ms");
+console.log("Fithusim: Time elapsed: " + timeelapsed + " " + "ms");
 gtf_CONSOLELOG.end();
-  console.log("OK")
 });
 
 /*client.on('messageCreate', msg => {
@@ -394,13 +393,13 @@ client.login(process.env.SECRET3).then(async function() {
         serverApi: ServerApiVersion.v1 
       })
   } catch (error) {
-    console.log("Database error")
+    console.log("Fithusim: Database error")
     restartbot()
   }
   /*
     if (err) {
       restartbot()
-      console.log("Failed to load races.")
+      console.log("Fithusim: Failed to load races.")
       return
     }
     */
@@ -448,7 +447,7 @@ var executecommand = function(command, args, msg, userdata) {
 function updatebotstatus() {
 gtf_CONSOLELOG.reverse();
 gtf_CONSOLELOG.fill(255, 255, 0);
-console.log("Maintenance: " + gte_LIST_BOT["maintenance"]);
+console.log("Fithusim: Maintenance: " + gte_LIST_BOT["maintenance"]);
 gtf_CONSOLELOG.end();
 
   /*

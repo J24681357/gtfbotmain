@@ -12,8 +12,8 @@
     "start": "node main.js"
   },
   "engines": {
-    "node": "v20.10.0",
-    "npm": "v10.2.3"
+    "node": "v20.11.0",
+    "npm": "v10.3.0"
   },
   "dependencies": {
     "@discordjs/rest": "latest",

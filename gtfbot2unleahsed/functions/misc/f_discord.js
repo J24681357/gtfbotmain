@@ -4,12 +4,12 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 
 module.exports.send = function(msg, content, callback, force) {
   var gtfbot = gtf_LIST_EMBEDCOUNTS
-  var channelid = "c" + msg.channel.id
   content["fetchReply"] = true
   if (content["type1"] == "CHANNEL") {             
     msg.send(content)
     return
   } else {
+    var channelid = "c" + msg.channel.id
     if (msg.type == 20 || msg.type == 0) {
       msg.channel.sendTyping() 
     }
