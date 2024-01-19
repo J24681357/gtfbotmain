@@ -21,6 +21,7 @@ setTimeout(function() {
   }
 },10000)
 */
+console.log("GTM: Loading...")
 
 
 
