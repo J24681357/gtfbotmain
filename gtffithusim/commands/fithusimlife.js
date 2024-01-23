@@ -157,7 +157,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
       if (!gte_STATS.checkEnthuPoints(embed, msg, userdata)) {
         return;
       }
-      var allraces = []
+     
       var list = []
       var images = []
       var indexes = []
@@ -183,7 +183,10 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
       if (!gte_STATS.checkLeague(league, embed, msg, userdata)) {
         return;
       }
-      var races = [...gte_FITHUSIMRACES.find({types: [league.toLowerCase()]})]
+      var races = JSON.parse(JSON.stringify(
+        gte_FITHUSIMRACES.find({types: [league.toLowerCase()]})
+      ))
+    
       races = races.filter(function(event) {
         if (event["regulations"]["upperyear"] == 9999) {
 
@@ -201,12 +204,16 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
       } else if (league == "RS") {
         total = 2
       }
+       var allraces = []
       for (var i = 1; i < total; i++) {
-        var event = gtf_TOOLS.randomItem(races, gte_STATS.week(userdata) + i)
+        var event = JSON.parse(JSON.stringify(gtf_TOOLS.randomItem(races, gte_STATS.week(userdata) + i)))
+        //
+
         event["eventid"] = event["eventid"].split("-")[0] + "-" + (i)
+
+         event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
         
-      event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
-          
+        
       event["driver"] = {car: gtfcar}
 
       if (event["title"].includes("One-Make")) {
@@ -232,7 +239,10 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
           "prohibited": []
       }
       }
+
+        
       var finalgrid = gte_RACE.createGridEnthu(event,"", 0)
+        
       var average = gtf_MATH.average(finalgrid.map(function(x) {
           var fpp = x["fpp"]
           if (x["user"]) {
@@ -267,16 +277,17 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
           }
 
         })
-
+      
+        event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
         allraces.push(event)
 
       }
-    allraces = [...allraces.sort(function(x,y) {return y["userodds"] - x["userodds"]})]
+    allraces = allraces.sort(function(x,y) {return y["userodds"] - x["userodds"]})
       
       list = allraces.map(function(event) {
+        console.log(event["tracks"][0])
         var rtrack = gtf_TRACKS.random(event["tracks"][0], 1)[0]
-
-        event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
+        
         var laps = gte_RACE.lapCalc(rtrack['length'], {"RN": 6, "RIV": 6, "RIII": 9, "RII": 10, "RI": 13, "RS": 28}[league])[0]
 
         images.push(rtrack["image"])
@@ -295,16 +306,14 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         //event["eventid"] = event["eventid"].split("-")[0] + "-" + (number)
         event["driver"] = {car: gte_STATS.currentCar(userdata)}
         var points = gte_RACE.creditsCalcEnthu(event).map(x => "**" + x["place"] + "**  " + x["points"] + " pts")
-        console.log(event["tracks"][0]["seed"])
         event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
-        console.log(event["tracks"][0]["seed"])
          var rtrack = gtf_TRACKS.random(event["tracks"][0], 1)[0]
-        event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
 
         event["regulations"]["upperyear"] = [1989, 2005, 9999][userdata["settings"]["GMODE"]]
         event["regulations"]["loweryear"] = [1960, 1990, 2006][userdata["settings"]["GMODE"]]
         
         var finalgrid = gte_RACE.createGridEnthu(event, "", 0)
+         event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
 
         var average = gtf_MATH.average(finalgrid.map(function(x) {
           var fpp = x["fpp"]

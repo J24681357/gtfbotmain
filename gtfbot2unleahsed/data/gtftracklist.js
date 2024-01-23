@@ -169,6 +169,7 @@ module.exports.random = function (args, num) {
       rlist.push(list[gtf_MATH.randomIntSeed(0, list.length-1, seed+i)])
     }
   }
+  args["seed"] = seed
   return rlist;
 };
 
