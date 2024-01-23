@@ -183,7 +183,8 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
       if (!gte_STATS.checkLeague(league, embed, msg, userdata)) {
         return;
       }
-      var races = gte_FITHUSIMRACES.find({types: [league.toLowerCase()]}).filter(function(event) {
+      var races = [...gte_FITHUSIMRACES.find({types: [league.toLowerCase()]})]
+      races = races.filter(function(event) {
         if (event["regulations"]["upperyear"] == 9999) {
 
           event["regulations"]["upperyear"] = [1989, 2005, 9999][userdata["settings"]["GMODE"]]
