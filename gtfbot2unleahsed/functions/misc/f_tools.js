@@ -818,6 +818,7 @@ module.exports.createButtons = function (buttons, emojilist, functionlist, msg, 
         } else {
           value = parseInt(r.customId);
         }
+        console.log(value)
         if (typeof value !== "undefined") {
           if (r.customId != "MENU") {
             if (emojilist[parseInt(value)]["extra"] == "Once") {

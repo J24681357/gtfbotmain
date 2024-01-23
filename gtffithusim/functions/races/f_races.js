@@ -181,34 +181,19 @@ module.exports.prepRace = function(raceprep, gtfcar, embed, msg, userdata) {
             msg.edit({ embeds: [embed], components: buttons });
           }
         }
-        function tirechangen() {
-          if (racesettings["driver"]["tirechange"]) {
-            racesettings["driver"]["tirechange"] = false
-            emojilist[2]["name"] = "Optimal Tire Usage | Off"
-            buttons = gte_TOOLS.prepareButtons(emojilist.filter(x => typeof x["menu_id"] === "undefined"), msg, userdata);
-            buttons.unshift(menu)
-            msg.edit({ embeds: [embed], components: buttons });
-          } else {
-            racesettings["driver"]["tirechange"] = true
-            emojilist[2]["name"] = "Optimal Tire Usage | On"
-            buttons = gte_TOOLS.prepareButtons(emojilist.filter(x => typeof x["menu_id"] === "undefined"), msg, userdata);
-            buttons.unshift(menu)
-            msg.edit({ embeds: [embed], components: buttons });
-          }
-        }
 
         if (racesettings["mode"] == "ONLINE" || racesettings["type"] == "TIMETRIAL") {
           var functionlist = [flagstartrace, trackdetails]
         } else {
-          var functionlist = [flagstartrace, trackdetails, tirechangen]
+          var functionlist = [flagstartrace, trackdetails]
         }
 
         if (true) {
           var functionlist2 = []
           for (var j = 0; j < tmenulist.length; j++) {
-            functionlist2.push(function(int) {
+        functionlist2.push(function(int) {
               userdata["settings"]["MODE"] = tmenulist[int]["name"]
-
+          console.log(userdata["settings"]["MODE"])
             })
           }
           emojilist = emojilist.concat(temojilist)

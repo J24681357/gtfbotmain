@@ -720,17 +720,20 @@ module.exports.createButtons = function (buttons, emojilist, functionlist, msg, 
           if (r.customId == "MENU") {
             if (value == "NEXTPAGE" || value == "PREVPAGE" || value == "FAVORITES") {
             r.deferUpdate()
-              return functionlist[functionlist.length - 1](value);
+            return functionlist[functionlist.length - 1](value);
             } else {
+              
               if (userdata["settings"]["MENUSELECT"] == 1) {
-               
+       
                     r.deferUpdate()
                 return functionlist[functionlist.length - 1](parseInt(value));
               }
+              console.log(functionlist[menuindex + parseInt(value)])
                   r.deferUpdate()
               return functionlist[menuindex + parseInt(value)](parseInt(value));
             }
-          } else {
+          } 
+          else {
               setTimeout(function(){
                r.deferUpdate().then(function(){})
   .catch(console.error)}, 1000)
