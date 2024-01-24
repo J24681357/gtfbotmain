@@ -23,6 +23,6 @@ function restartbot() {
   });
 }
 
-setInterval(function(x){
+setTimeout(function(x){
   restartbot()
 }, 3600000)
