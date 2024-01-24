@@ -125,8 +125,13 @@ module.exports = {
       for (var x = 0; x < keys.length; x++) {
         var track = races[keys[x]][0]["tracks"][0]["name"]
         list.push (
-            "__**" + "Stage " + (x+1) + "**__" + " " + track.split(" - ")[0]
+            "__**" + "Stage " + (2) + "**__" + " " + track.split(" - ")[0]
         )
+        //demo
+        /*
+        list.push (
+            "__**" + "Stage " + (x+1) + "**__" + " " + track.split(" - ")[0]
+        )*/
         pageargs["image"].push(gtf_TRACKS.find({name: [track]})[0]["image"])
       }
       pageargs["selector"] = "stagenumber";

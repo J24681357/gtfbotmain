@@ -1,4 +1,4 @@
-//process.exit(1)
+r//process.exit(1)
 var fs = require("fs")
 process.env["SECRET"] = JSON.parse(fs.readFileSync(__dirname + "/" + ".keys.json", "utf8"))["SECRET"];
 process.env["MONGOURL"] = JSON.parse(fs.readFileSync(__dirname + "/" + ".keys.json", "utf8"))["MONGOURL"];
@@ -460,21 +460,6 @@ gtf_CONSOLELOG.end();
   }
 }
 
-function restartbot() {
-  console.log("Restarting bot...");
-  const { exec } = require("child_process");
 
-  exec("kill 1", (error, stdout, stderr) => {
-    if (error) {
-      console.log(`error: ${error.message}`);
-      return;
-    }
-    if (stderr) {
-      console.log(`stderr: ${stderr}`);
-      return;
-    }
-    console.log(`stdout: ${stdout}`);
-  });
-}
 
 //client.on("debug", console.log).on("warn", console.log)
