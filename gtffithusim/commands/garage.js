@@ -150,7 +150,7 @@ module.exports = {
           if (gte_STATS.currentCarNum(userdata) == index+1)  {
             carname = "**" + name + "**" + " `Lv." + level + "` ` " + gte_PERF.perfEnthu(i, "GARAGE")["class"] + " `" + favorite
           }
-           listsec.push(ocar["year"] + " | " + gtf_MATH.numFormat(ocar["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(ocar["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + ocar["special"].join(", "))
+           listsec.push(ocar["year"] + " | " + gtf_MATH.numFormat(ocar["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(ocar["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + ocar["special"].join(", ").replace("xstarter", ""))
           return carname
       })
       pageargs["list"] = list;
@@ -188,7 +188,7 @@ module.exports = {
           if (gte_STATS.currentCarNum(userdata) == index+1)  {
             carname = "**" + name + "**" + " `Lv." + level + "` ` " + gte_PERF.perfEnthu(i, "GARAGE")["class"] + " `" + favorite
           }
-          listsec.push(ocar["year"] + " | " + gtf_MATH.numFormat(ocar["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(ocar["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + ocar["special"].join(", "))
+          listsec.push(ocar["year"] + " | " + gtf_MATH.numFormat(ocar["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(ocar["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + ocar["special"].join(", ").replace("xstarter", ""))
           return carname
         })
       pageargs["list"] = list;
@@ -315,6 +315,11 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
     
     if (query["options"] == "select") {
       var number = parseInt(query["number"]);
+      if (gte_STATS.currentCarNum(userdata) == number) {
+        gte_EMBED.alert({ name: "❌ Invalid", description: "You are already in this car. Please choose another", embed: "", seconds: 5 }, msg, userdata);
+        return
+      }
+  
       var changecar = gte_STATS.setCurrentCar(number, filterlist, userdata);
       if (changecar == "Invalid") {
         gte_EMBED.alert({ name: "❌ Invalid ID", description: "This ID does not exist in your garage.", embed: "", seconds: 0 }, msg, userdata);
