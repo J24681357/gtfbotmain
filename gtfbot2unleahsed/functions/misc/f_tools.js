@@ -973,41 +973,6 @@ module.exports.getSite = function (url, type, callback) {
   });
 };
 
-module.exports.downloadGTFFiles = function (client) {
-  var fs = require("fs")
-  var urls = [
-"functions/misc/f_datetime.js",
-"functions/misc/f_discord.js",
-  "functions/misc/f_math.js",
-    
-    "jsonfiles/gtfcarlist.json",
-    "jsonfiles/gtftracklist.json",
-    "data/gtfcarlist.js",
-    "data/gtftracklist.js"
-  ]
-  var i = 0
-  var j = 0
-  var k = 0
-  gtf_TOOLS.interval(function() {
-    var link = "https://raw.githubusercontent.com/J24681357/gtfbotmain/master/gtfbot2unleahsed/" + urls[i]
-    gtf_TOOLS.getSite(link, "https", function(file) {
-      var directory = link.split("/master/")[1]
-      var name = directory.split("/").pop()
-   fs.writeFileSync(
-    "./" + directory,
-    file,
-    function(err, result) {
-      if (err) console.log("error", err);
-    }
-  )
-})
-   
-    i++
-  }, 2000, urls.length)
-  
-  
-}
-
 module.exports.homeDir = function() {
   var dir = __dirname.split("/").slice(0, 4).join("/") + "/"
     if (dir.includes("gtfmanager") || dir.includes("gtfbot2unleahsed") || dir.includes("gtffithusim"))  {
