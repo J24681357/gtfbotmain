@@ -792,7 +792,7 @@
     "prize": { "id": -1, "name": "", "type": "CREDITS", "item": 0 }
   },
   "riii-5": {
-    "title": "Intermedaite Match",
+    "title": "Intermediate Match",
     "eventid": "riii-5",
     "positions": [{ "place": "1st", "points": 50 }],
     "startposition": 3,
