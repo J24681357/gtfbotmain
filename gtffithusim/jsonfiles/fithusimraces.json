@@ -576,7 +576,7 @@
     "eventid": "riv-10",
     "positions": [{ "place": "1st", "points": 20 }],
     "startposition": 3,
-    "tracks": [{ "name": ["Tsukuba Circuit"]}],
+    "tracks": [{ "name": ["Tsukuba Circuit"] }],
     "type": "LAPS",
     "time": ["Day"],
     "timeprogression": 0,
