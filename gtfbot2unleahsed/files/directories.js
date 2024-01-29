@@ -6,6 +6,7 @@ global.gtf_SERVERID = "239493425131552778";
 var fs = require("fs")
 
 var home = (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfmanager") || (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfbot2unleahsed") || (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtffithusim") ? __dirname.split("/").slice(0, 4).join("/") + "/" : __dirname.split("/").slice(0, 5).join("/") + "/"
+
 global.gtf_CONSOLELOG = require(home + "files/colors")
 
 global.gtf_WEATHER = require(home + "data/gtfweather");

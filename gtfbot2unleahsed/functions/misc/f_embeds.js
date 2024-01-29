@@ -83,3 +83,15 @@ embed.setAuthor({name: msg.guild.members.cache.get(userdata["id"]).user.displayN
     });
   }
 };
+
+module.exports.maintenance = function (name, msg) {
+  if (name.includes("/gtfbot2unleahsed/")) {
+     var userdata = gtf_GTF.defaultuserdata(msg.author.id);
+      gtf_EMBED.alert({ name: "⚠️️ Maintenance", description: "GTF 2: Unleahsed is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
+    return
+  } else if (name.includes("/gtffithusim/")) {
+       var userdata = gtf_GTF.defaultuserdata(msg.author.id);
+        gtf_EMBED.alert({ name: "⚠️️ Maintenance", description: "GTF: Fithusim is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
+      return
+  }
+}

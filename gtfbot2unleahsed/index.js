@@ -161,8 +161,7 @@ client.on("interactionCreate", async interaction => {
         // Profile
         if (gtf_LIST_BOT["maintenance"]) {
           if (msg.author.id != "237450759233339393" && !command.availinmaint) {
-            userdata = gtf_GTF.defaultuserdata(msg.author.id);
-            gtf_EMBED.alert({ name: "⚠️️ Maintenance", description: "GTF 2: Unleahsed is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
+            gtf_EMBED.maintenance(__dirname, msg);
             return;
           }
         }

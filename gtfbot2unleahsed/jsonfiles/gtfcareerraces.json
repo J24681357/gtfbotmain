@@ -4639,6 +4639,89 @@
 			}
 		}
 	},
+  "testing-1": {
+      "title": "🌶 Road Racers",
+      "eventid": "testing-1",
+      "require": "",
+      "positions": [
+        {
+          "place": "1st",
+          "credits": 20000
+        }
+      ],
+      "startposition": 12,
+      "tracks": [
+        [
+          1,
+          "Silverstone - GP",
+          4
+        ],
+        [
+          2,
+          "Infineon Raceway - Sports Car Course",
+          5
+        ],
+        [
+          3,
+          "Top Gear - Test Track",
+          12
+        ]
+      ],
+      "type": "LAPS",
+      "time": [
+        "R"
+      ],
+      "timeprogression": 1,
+      "weather": [
+        "Clear", "Partly Cloudy", "Cloudy"
+      ],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [
+        16
+      ],
+      "gridstart": "ROLLINGSTART",
+      "difficulty": 30,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "GARAGE",
+      "regulations": {
+        "tires": "Sports: Soft",
+        "fpplimit": 550,
+        "upperfpp": 550,
+        "lowerfpp": 450,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": ["Production", "Aftermarket"],
+        "special": ["Track"],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "Gold Reward",
+        "type": "RANDOMCAR",
+        "item": {
+          "makes": [
+            "Subaru"
+          ],
+          "fullnames": [
+            "Subaru Impreza Rally Car 1999"
+          ]
+        }
+      }
+  },
   "ic6": {
       "title": "🌶 Louise Cup",
       "eventid": "IC-6",
