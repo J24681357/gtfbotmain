@@ -1,4 +1,4 @@
-r//process.exit(1)
+//process.exit(1)
 var fs = require("fs")
 process.env["SECRET"] = JSON.parse(fs.readFileSync(__dirname + "/" + ".keys.json", "utf8"))["SECRET"];
 process.env["MONGOURL"] = JSON.parse(fs.readFileSync(__dirname + "/" + ".keys.json", "utf8"))["MONGOURL"];
