@@ -75,6 +75,7 @@ module.exports.toEmoji = function (text) {
     "N/A": "N/A",
     austria: "🇦🇹",
     australia: "🇦🇺",
+    bahrain: "🇧🇭",
     "czech republic": "🇨🇿",
     "French Polynesia": "🇵🇫",
     china: "🇨🇳",
@@ -854,6 +855,117 @@ module.exports.createButtons = function (buttons, emojilist, functionlist, msg, 
             return functionlist[parseInt(value)](parseInt(value));
           }
         }
+        r.deferUpdate();
+        return functionlist[value]();
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  }
+};
+
+module.exports.createButtonsB = function (buttons, emojilist, functionlist, msg, userdata) {
+  var id = userdata["id"];
+  if (id == "ALL") {
+    var free = true;
+  } else {
+    var free = false;
+    gtf_STATS.addCount(userdata);
+  }
+
+  var reactid = gtf_STATS.count(userdata);
+  var l = require("discord.js-rate-limiter").RateLimiter;
+  var rateLimiter = new l(1, 1000);
+  var loop = functionlist.length;
+  var menuindex = 0;
+
+  for (var j = 0; j < emojilist.length; j++) {
+    if (typeof emojilist[j]["menu_id"] !== "undefined") {
+      menuindex = j;
+      break;
+    }
+  }
+
+  for (var i = 0; i < functionlist.length; i++) {
+    filter(i);
+  }
+
+  function filter(i) {
+    const filter1 = button => {
+      var state = free ? button.customId === i.toString() : button.customId === i.toString() && button.user.id === userdata["id"];
+      return state;
+    };
+
+    var filter11 = msg.createMessageComponentCollector({ filter1, timer: 10 * 1000, dispose: true });
+
+    filter11.on("collect", r => {
+      /////MAINTENANCE
+      if (gtf_LIST_BOT["maintenance"]) {
+        if (userdata["id"] != "237450759233339393") {
+          userdata = gtf_GTF.defaultuserdata(userdata["id"]);
+          gtf_EMBED.alert({ name: "⚠️️ Maintenance", description: "This bot is currently in maintenance. Come back later!", embed: "", seconds: 0 }, msg, userdata);
+          return;
+        }
+      }
+      /////
+
+      if (loop == 1) {
+        let limited = rateLimiter.take(userdata["id"]);
+        if (limited) {
+          loop = functionlist.length;
+          return;
+        } else {
+          go(r);
+        }
+        loop = functionlist.length;
+      } else {
+        loop--;
+        return;
+      }
+    });
+
+    function go(r) {
+      try {
+        if (!free && reactid != gtf_STATS.count(userdata)) {
+          return;
+        }
+
+        if (!free && r.user.id != userdata["id"]) {
+          return;
+        }
+
+        if (r.customId == "MENU") {
+          value = r.values[0];
+          r.deferUpdate();
+          if (value == "NEXTPAGE" || value == "PREVPAGE" || value == "FAVORITES") {
+            return functionlist[functionlist.length - 1](value);
+          } 
+          if (userdata["settings"]["MENUSELECT"] == 1) {
+              return functionlist[functionlist.length - 1](parseInt(value));
+          }
+            return functionlist[menuindex + parseInt(value)](parseInt(value));  
+        }
+
+        value = parseInt(r.customId);
+        if (typeof value !== "undefined") {
+           if (emojilist[parseInt(value)]["extra"] == "Once") {
+              if (reactid != gtf_STATS.count(userdata)) {
+                return;
+              }
+              gtf_STATS.addCount(userdata);
+          }
+
+          setTimeout(function() {
+            r.deferUpdate()
+              .then(function () {})
+              .catch(console.error);
+          }, 1000);
+          if (free) {
+            return functionlist[parseInt(value)]([parseInt(value), r.user.id]);
+          }
+          return functionlist[parseInt(value)](parseInt(value));
+        }
+
         r.deferUpdate();
         return functionlist[value]();
       } catch (error) {

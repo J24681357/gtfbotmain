@@ -1,11 +1,11 @@
 {
 	"version": 1,
-	"maintenance": false,
+	"maintenance": true,
 	"maintenancetime": "",
 	"totalmsg": 0,
 	"msglimit": false,
 	"versiondate": "12/17/2023",
-	"seasonaldate": "292024",
+	"seasonaldate": "332024",
 	"seasonallimitedeventprize": {
 		"id": -1,
 		"name": "",

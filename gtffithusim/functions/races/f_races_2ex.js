@@ -648,7 +648,8 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
       }
     } else {
       racesettings["track"] = gtf_TRACKS.find({
-        name: [trackname]
+        name: [trackname],
+        versions: ["Gran Turismo"]
       })[0]
       racesettings["image"] = racesettings["track"]["image"]
       racesettings["laps"] = laps

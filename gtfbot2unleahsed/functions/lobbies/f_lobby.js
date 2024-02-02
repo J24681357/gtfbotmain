@@ -50,7 +50,7 @@ module.exports.lobbyConfig = function (setting, changes, lobby, pageargs, embed,
     };
     apply = function () {
       var trackname = pageargs["list"][number - 1].split(" `")[0];
-      var track = gtf_TRACKS.find({ name: [trackname] })[0];
+      var track = gtf_TRACKS.find({ name: [trackname], versions: ["Gran Turismo"] })[0];
       lobby["racesettings"]["track"] = track;
       lobby["racesettings"]["km"] = track["length"] * lobby["racesettings"]["laps"];
       lobby["racesettings"]["km"] = Math.round(lobby["racesettings"]["km"] * 100) / 100;

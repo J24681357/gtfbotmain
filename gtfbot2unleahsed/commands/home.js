@@ -233,7 +233,7 @@ function createlist() {
           msg.removeAttachments();
           embed.setTitle(gtf_EMOTE.gtflogo + " __My Home__");
           embed.image = "";
-          var track = gtf_TRACKS.random({}, 1)[0];
+          var track = gtf_TRACKS.random({versions: ["Gran Turismo"]}, 1)[0];
           results =
             "**" +
             track["name"] +

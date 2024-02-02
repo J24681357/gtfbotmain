@@ -127,7 +127,7 @@ module.exports.find = function (args) {
       } else {
         var versions = args["versions"];
         for (var iversion = 0; iversion < versions.length; iversion++) {
-          if (track["version"] == versions[iversion]) {
+          if (track["version"].includes(versions[iversion])) {
             count++;
             break;
           }
@@ -192,7 +192,7 @@ module.exports.audit = async function () {
     gtf_CONSOLELOG.fill(0, 0, 255);
     console.log("Track List Updated");
     gtf_CONSOLELOG.end();
-  require("fs").writeFile("./jsonfiles/gtftracklist.json", require("json-format")(x), function (err) {
+  require("fs").writeFile("./gtfbot2unleahsed/jsonfiles/gtftracklist.json", require("json-format")(x), function (err) {
     if (err) {
       console.log(err);
     }

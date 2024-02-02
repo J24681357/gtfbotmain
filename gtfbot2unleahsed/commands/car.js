@@ -140,7 +140,7 @@ module.exports = {
     var discountindexes = []
 
   for (var num = 0; num < 30; num++) {
-     var rint = parseInt(gtf_MATH.randomIntSeed(0, usedcars.length, (num+100) + day))
+     var rint = parseInt(gtf_MATH.randomIntSeed(0, usedcars.length-1, (num+100) + day))
     var car = usedcars[rint]
     discountindexes.push(
       car["_id"]

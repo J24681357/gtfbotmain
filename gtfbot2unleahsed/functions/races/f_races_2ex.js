@@ -529,7 +529,8 @@ module.exports.timetrialresults = function(racesettings, racedetails, finalgrid,
       gtf_STATS.updateEvent(racesettings, place, userdata);
     } else {
       if (place == "1st" || place == "2nd" || place == "3rd") {
-        if (racesettings["eventid"].includes("gtacademy") || racesettings["eventid"].includes("grandtour")) {
+        
+        if (racesettings["eventid"].includes("gtacademy") || racesettings["eventid"].includes("grandtour") || racesettings["eventid"].includes("SEASONAL")) {
           gtf_STATS.updateEvent(racesettings, place, userdata)
         } else {
           setTimeout(function() {
@@ -678,7 +679,7 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
       }
     } else {
       racesettings["track"] = gtf_TRACKS.find({
-        name: [trackname]
+        name: [trackname], versions: ["Gran Turismo"]
       })[0]
       racesettings["image"] = racesettings["track"]["image"]
       racesettings["laps"] = laps

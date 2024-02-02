@@ -33,8 +33,9 @@ module.exports = {
       other: "",
     }, msg, userdata)
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
-    if (userdata["id"] == "237450759233339393") {
+    if (userdata["id"] != "237450759233339393") {
        gtf_EMBED.alert({ name: "❌ Seasonal Events Unavailable", description: "Seasonal events are currently unavailable in this update.", embed: "", seconds: 0 }, msg, userdata);
+      return
     }
     
     var date = new Date()
@@ -155,6 +156,7 @@ module.exports = {
     for (var i = 0; i < numevents; i++) {
       races.push(gtf_SEASONAL.randomSeasonal({}, query["options"], i+1, (seed+i) * charcode))
     }
+    races.push(gtf_SEASONAL.randomSeasonalTimeTrial({}, query["options"], numevents+1, (seed+numevents) * charcode))
     }
     
     var ids = Object.keys(races);

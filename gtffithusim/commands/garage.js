@@ -33,7 +33,6 @@ module.exports = {
       other: "",
     }, msg, userdata)
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      /l/      //      //
-    console.log(query)
     
     var listsec = []
 

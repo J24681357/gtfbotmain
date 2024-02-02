@@ -101,11 +101,11 @@ module.exports = {
     }
 
     if (query["options"] == "track" || query["options"] == "tracks") {
-      var tracks = gtf_TRACKS.list("names");
+      var tracks = gtf_TRACKS.find({versions: ["Gran Turismo"]}).map(x => x["name"])
       var number = query["number"];
       embed.setTitle(gtf_EMOTE.tracklogo + " __**Track ID Database (" + tracks.length + " Tracks)**__");
       if (gtf_MATH.betweenInt(number, 1, tracks.length)) {
-        var track = gtf_TRACKS.find({ name: [tracks[number - 1]] })[0];
+        var track = gtf_TRACKS.find({ name: [tracks[number - 1]], versions: ["Gran Turismo"] })[0];
         results =
           gtf_TOOLS.toEmoji(track["country"]) + " " + "__**" +
           track["name"] +

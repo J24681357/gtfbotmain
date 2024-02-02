@@ -1659,7 +1659,7 @@ module.exports.resumeRace = function (userdata, client) {
     return;
   }
   var user = {};
-  var server = client.guilds.cache.get(gte_SERVERID);
+  var server = client.guilds.cache.get(gtf_SERVERID);
   var server2 = server.channels.cache.get(userdata["raceinprogress"]["channelid"]);
   var totmembers = server.members.fetch().then(totmembers => {
     user = totmembers.filter(member => member.user.id == userdata["id"]).get(userdata["id"]);

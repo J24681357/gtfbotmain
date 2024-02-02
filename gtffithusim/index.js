@@ -318,7 +318,7 @@ client.login(process.env.SECRET3).then(async function() {
 
     updatebotstatus();
     
-    /*
+    
     gtf_TOOLS.interval(
       function() {
         gte_STATS.resumeRace(keys[index1], client);
@@ -327,7 +327,6 @@ client.login(process.env.SECRET3).then(async function() {
       1000,
       keys.length
     );
-    */
 
     //gtm_EXTRA.checkerrors(client)
   }, 10000);

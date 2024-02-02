@@ -222,7 +222,7 @@ module.exports.setRaceSettings = function(raceprep, gtfcar, embed, msg, userdata
   var carselect = raceprep["car"] == "GARAGE" ? gtfcar : gtf_CARS.addCar(gtf_CARS.find({ fullnames: [raceprep["car"]] })[0], "LOAN")
 
   if (typeof raceprep["track"] == "string") {
-    var track = gtf_TRACKS.find({ name: [raceprep["track"]] })[0];
+    var track = gtf_TRACKS.find({ name: [raceprep["track"]], versions: ["Gran Turismo"] })[0];
     var km = track["length"]
   } else {
     if (typeof raceprep["track"]["layout"] === 'undefined') {
@@ -422,7 +422,7 @@ module.exports.setRaceSettings = function(raceprep, gtfcar, embed, msg, userdata
   else if (raceprep["modearg"] == "R" || raceprep["modearg"] == "ONLINE") {
     var title = "ONLINE LOBBY";
     var type = "LAPS";
-    var track = gtf_TRACKS.random({ types: ["Tarmac"] }, 1)[0];
+    var track = gtf_TRACKS.random({ types: ["Tarmac"], versions: ["Gran Turismo"] }, 1)[0];
     var km = track["length"];
     var limit = 0;
     var time = gtf_TIME.random({}, 1)[0];
