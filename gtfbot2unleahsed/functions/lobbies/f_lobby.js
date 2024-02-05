@@ -564,7 +564,7 @@ module.exports.saveUserdata = function (user, exp, prize, racesettings) {
       .collection("GTF2SAVES")
       .find({ id: user["id"] })
       .forEach(userdata => {
-        if (typeof userdata["id"] === undefined) {
+        if (typeof userdata["id"] === "undefined") {
           return {};
         } else {
           userdata["raceinprogress"] = { active: false, messageid: "", channelid: "", expire: "" };
@@ -593,7 +593,7 @@ module.exports.updateusersraceinprogress = async function (finalgrid, totaltime,
         .collection("GTF2SAVES")
         .find({ id: finalgrid[i]["id"] })
         .forEach(row => {
-          if (typeof row["id"] === undefined) {
+          if (typeof row["id"] === "undefined") {
             return {};
           } else {
             row["raceinprogress"] = { active: true, channelid: msg.channel.id, messageid: msg.id, expire: totaltime };
@@ -619,7 +619,7 @@ module.exports.joinlobby = async function (user, thread) {
         .collection("GTF2SAVES")
         .find({ id: user.id })
         .forEach(row => {
-          if (typeof row["id"] === undefined) {
+          if (typeof row["id"] === "undefined") {
             return {};
           } else {
             userdata = row
@@ -698,7 +698,7 @@ module.exports.leavelobby = async function (user, thread) {
         .collection("GTF2SAVES")
         .find({ id: user.id })
         .forEach(row => {
-          if (typeof row["id"] === undefined) {
+          if (typeof row["id"] === "undefined") {
             return {};
           } else {
             userdata = row

@@ -70,6 +70,20 @@ module.exports.find = function (args) {
       }
     }
 
+    if (args["names"] !== undefined) {
+      if (args["names"].length == 0) {
+        count++;
+      } else {
+        var namess = args["names"];
+        for (var inames = 0; inames < namess.length; inames++) {
+          if (track["name"].includes(namess[inames])) {
+            count++;
+            break;
+          }
+        }
+      }
+    }
+
     if (args["upperlength"] !== undefined) {
         if (args["upperlength"].length == 0) {
           count++;

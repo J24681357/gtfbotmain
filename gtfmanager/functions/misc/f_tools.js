@@ -787,7 +787,7 @@ module.exports.updateallsaves = async function (name, json) {
         .collection(name)
         .find({})
         .forEach(row => {
-          if (typeof row["id"] === undefined) {
+          if (typeof row["id"] === "undefined") {
             return;
           } else {
             var userdata = row;

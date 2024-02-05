@@ -259,7 +259,7 @@ client.on("interactionCreate", async interaction => {
         .collection("FITHUSIMSAVES")
         .find({ id: msg.author.id })
         .forEach(row => {
-          if (typeof row["id"] === undefined) {
+          if (typeof row["id"] === "undefined") {
             return {};
           } else {
             userdata = row;
@@ -352,7 +352,7 @@ client.login(process.env.SECRET3).then(async function() {
     .collection("FITHUSIMSAVES")
     .find({})
     .forEach(row => {
-      if (typeof row["id"] === undefined) {
+      if (typeof row["id"] === "undefined") {
         return;
       } else {
 

@@ -51,7 +51,7 @@ module.exports = {
       .collection("GTF2SAVES")
       .find({})
       .forEach(row => {
-        if (typeof row["id"] === undefined) {
+        if (typeof row["id"] === "undefined") {
           return;
         } else {
           keys.push(row);

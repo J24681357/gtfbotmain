@@ -303,7 +303,7 @@ client.on("interactionCreate", async interaction => {
         .collection("GTF2SAVES")
         .find({ id: msg.author.id })
         .forEach(row => {
-          if (typeof row["id"] === undefined) {
+          if (typeof row["id"] === "undefined") {
             return {};
           } else {
             userdata = row;
@@ -400,7 +400,7 @@ client.destroy().then(function () {
     .collection("GTF2SAVES")
     .find({})
     .forEach(row => {
-      if (typeof row["id"] === undefined) {
+      if (typeof row["id"] === "undefined") {
         return;
       } else {
         if (Object.keys(row).length <= 5) {

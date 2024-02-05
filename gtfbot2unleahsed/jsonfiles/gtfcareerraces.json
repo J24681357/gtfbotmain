@@ -273,7 +273,7 @@
 			],
 			[
 				2,
-				"Indianapolis Road Course",
+				"Indianapolis - Road Course",
 				2
 			],
 			[
@@ -831,7 +831,7 @@
 			],
 			[
 				2,
-				"Grand Valley Speedway",
+				"Grand Valley - Speedway",
 				2
 			],
 			[
@@ -1017,7 +1017,7 @@
 			],
 			[
 				3,
-				"Grand Valley Speedway",
+				"Grand Valley - Speedway",
 				3
 			],
 			[
@@ -2093,7 +2093,7 @@
 		"tracks": [
 			[
 				1,
-				"Nurburgring Sprint",
+				"Nurburgring - Sprint",
 				"32%"
 			]
 		],
@@ -3490,7 +3490,7 @@
 		"tracks": [
 			[
 				1,
-				"Grand Valley Speedway Reverse",
+				"Grand Valley - Speedway Reverse",
 				"35%"
 			]
 		],
@@ -3733,7 +3733,7 @@
 		"tracks": [
 			[
 				1,
-				"Daytona Road Course",
+				"Daytona - Road Course",
 				"100%"
 			]
 		],
@@ -3877,7 +3877,7 @@
 		"tracks": [
 			[
 				1,
-				"Nurburgring GP",
+				"Nurburgring - GP",
 				"100%"
 			]
 		],
@@ -4021,7 +4021,7 @@
 		"tracks": [
 			[
 				1,
-				"Nurburgring Nordschleife",
+				"Nurburgring - Nordschleife",
 				"100%"
 			]
 		],
@@ -4180,7 +4180,7 @@
 			],
 			[
 				2,
-				"Daytona Road Course",
+				"Daytona - Road Course",
 				3
 			],
 			[
@@ -4361,12 +4361,12 @@
 		"tracks": [
 			[
 				1,
-				"Daytona International Speedway",
+				"Daytona - International Speedway",
 				5
 			],
 			[
 				2,
-				"Indianapolis Road Course",
+				"Indianapolis - Road Course",
 				4
 			],
 			[
@@ -4474,7 +4474,7 @@
 			],
 			[
 				4,
-				"Nurburgring Nordschleife",
+				"Nurburgring - Nordschleife",
 				1
 			]
 		],
@@ -4746,7 +4746,7 @@
 			],
 			[
 				3,
-				"Indianapolis Road Course",
+				"Indianapolis - Road Course",
 				5
 			],
 			[
@@ -5292,7 +5292,7 @@
 			],
 			[
 				2,
-				"Nurburgring GP",
+				"Nurburgring - GP",
 				6
 			],
 			[
@@ -5577,7 +5577,7 @@
 		"tracks": [
 			[
 				1,
-				"Nurburgring Sprint",
+				"Nurburgring - Sprint",
 				7
 			],
 			[
@@ -5697,7 +5697,7 @@
 			],
 			[
 				5,
-				"Nurburgring Nordschleife",
+				"Nurburgring - Nordschleife",
 				3
 			]
 		],
@@ -6783,7 +6783,7 @@
 		"tracks": [
 			[
 				1,
-				"Nurburgring Sprint",
+				"Nurburgring - Sprint",
 				"100%"
 			]
 		],
@@ -8840,7 +8840,7 @@
 		"tracks": [
 			[
 				1,
-				"Nurburgring Endurance",
+				"Nurburgring - Endurance",
 				"120m"
 			]
 		],

@@ -955,100 +955,82 @@ var buttons = gtm_TOOLS.prepareButtons(emojilist, channel, { id: gtm_USERID, gar
   }
 }
 
-module.exports.trackoftheweek = function(client) {
-  var totwchannelid = "1077378348512182332"
+module.exports.locationoftheweek = function(client) {
+  var totwchannelid = "480755110453051392"
    var currentdate = new Date();
     var datetime = (currentdate.getUTCMonth() + 1) + "/"
       + currentdate.getUTCDate() + "/"
       + currentdate.getUTCFullYear()
-   var day = currentdate.getDay();
+   var weekday = currentdate.getDay();
 
    var channel = client.channels.cache.find(channel => channel.id === totwchannelid);
    channel.messages.fetch({limit:100}).then(messages => {
     var list = []
 
     var lastmsg = messages.filter(msg => msg.author.id == gtm_USERID).first()
-    /* EMERGENCY
-    var embed = new EmbedBuilder(lastmsg.embeds[0])
-     embed.setTitle("🚘 __**" + "Car Of The Day (" + datetime + ")**__")
-    embed.setDescription("**Volkswagen Schwimmwagen Type 166 1942** `Production`\n" + "25 hp | 2,006 lbs | 4WD | NA")
-embed.setImage("https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/cars/volkswagen/volkswagenschwimmwagentype1661942.png")
-    embed.setColor(0x0151b0)
-    lastmsg.edit({embeds:[embed]})
-    return
-     */
 
       if (typeof lastmsg === 'undefined') {
-          console.log("GTM: New Car Of The Day")
+          console.log("GTM: New Location Of The Week")
             messages.filter(msg => msg.author.id == gtm_USERID).forEach(r => {
-       list.push(r.embeds[0].description.split("**")[1])
+    list.push(r.embeds[0].description.split("**")[1])
      })
-       newcar(list)
+       newlocation(list)
        return
      }
 
     var lastdate = lastmsg.embeds[0].title.split("(")[1].split(")")[0]
-
-     if (lastdate != datetime) {
-       console.log("GTM: New Car Of The Day!")
-            messages.filter(msg => msg.author.id == gtm_USERID).forEach(r => {
-       list.push(r.embeds[0].description.split("**")[1])
+//
+     if (lastdate != datetime && weekday == 0) {
+       console.log("GTM: New Location Of The Week!")
+        messages.filter(msg => msg.author.id == gtm_USERID).forEach(r => {
+    list.push(r.embeds[0].description.split("**")[1])
      })
-       newcar(list)
+       newlocation(list)
      }
    });
 
-  function newcar(prevcarlist) {
+  function newlocation(prevloclist) {
     var options = {}
     var theme = ""
     if (Object.keys(options).length != 0) {
       theme = "\n" + "`Theme: " + Object.values(options).join(", ") + "`"
     }
-    var car = gtf_CARS.random(options,1)[0]
-    /*
-var car = [{
-      "make": "PAL-V",
-      "name": "PAL-V Liberty",
-      "year": "2018",
-      "type": "Production",
-      "country": "Netherlands",
-      "power": 100,
-      "weight": 1464,
-      "tires": "Sports: Hard",
-      "engine": "Other",
-      "drivetrain": "Other",
-      "carcostm": 2,
-      "aerom": 1,
-      "discount": 0,
-      "special": [],
-      "livery": [],
-      "image": [
-        "https://cdn.motor1.com/images/mgl/rbzYX/s3/pal-v-liberty-flying-car-geneva-2018.webp"
-      ],
-      "_id": 1
-}][0]
-    */
-
-    while (prevcarlist.includes(car["name"] + " " + car["year"])) {
-      car = gtf_CARS.random(options,1)[0]
+    
+    var locations = gtf_TOOLS.unique(gtf_TRACKS.find(options).map(function(x) {
+      x = x["name"].split(" - ")[0].split(" (")[0].replace(" Reverse", "")
+      return x
+    }))
+    var name = gtf_TOOLS.randomItem(locations)
+    var track = gtf_TRACKS.find({names:[name]},1).sort((x,y) => y["length"] - x["length"])[0]
+    
+    while (prevloclist.includes(name)) {
+      var locations = gtf_TOOLS.unique(gtf_TRACKS.find(options).map(function(x) {
+        x = x["name"].split(" - ")[0].split(" (")[0].replace(" Reverse", "")
+        return x
+      }))
+      name = gtf_TOOLS.randomItem(locations)
+      track = gtf_TRACKS.find({names:[name]},1).sort((x,y) => y["length"] - x["length"])[0]
     }
 
      var currentdate = new Date();
     var datetime = (currentdate.getUTCMonth() + 1) + "/"
       + currentdate.getUTCDate() + "/"
       + currentdate.getUTCFullYear()
+     var weekday = currentdate.getDay();
 
     var embed = new EmbedBuilder()
-    embed.setTitle("🚘 __**" + "Car Of The Day (" + datetime + ")**__")
-    embed.setDescription(gtf_TOOLS.toEmoji(car["country"]) + " **" + car["name"] + " " + car["year"] + "** " + " `" + car["type"] + "`\n" + gtf_MATH.numFormat(car["power"]) + " hp | " + gtf_MATH.numFormat(car["weight"]) + " lbs | " + car["drivetrain"] + " | " + car["engine"] + theme)
-    embed.setImage(car["image"][0])
+    embed.setTitle(gtf_EMOTE.tracklogo + "__**" + "Location Of The Week (" + datetime + ")**__")
+    embed.setDescription(gtf_TOOLS.toEmoji(track["country"]) + " **" + name + "** " + " `" + track["type"] + "`\n" + gtf_MATH.convertKmToMi(track["length"]) + " mi | " + gtf_MATH.numFormat(track["length"]) + " km" + "\n" +
+"`Corners: " + track["corners"] + "`" 
++ theme)
+    embed.setImage(track["image"])
     embed.setColor(0x0151b0)
-    var channel = client.channels.cache.find(channel => channel.id === cotdchannelid);
+    var channel = client.channels.cache.find(channel => channel.id === totwchannelid);
     var emojilist = [
   { emoji: gtf_EMOTE.google, 
   emoji_name: "google", 
-  name: 'Car Info', 
-  extra: "https://www.google.com/search?q=" + car["name"].replace(/ /ig, "+") + "+" + car["year"],
+  name: 'Track Info', 
+  extra: "https://www.google.com/search?q=" + track["name"].replace(/ /ig, "+"),
   button_id: 0 }
     ]
 var buttons = gtm_TOOLS.prepareButtons(emojilist, channel, { id: gtm_USERID, garage: [], settings: gtm_defaultsettings });

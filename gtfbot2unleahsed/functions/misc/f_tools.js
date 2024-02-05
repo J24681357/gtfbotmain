@@ -16,7 +16,7 @@ module.exports.shuffle = function (array) {
 };
 
 module.exports.randomItem = function (array, seed) {
-  if (typeof seed === undefined) {
+  if (typeof seed === "undefined") {
     return array[Math.floor(Math.random() * array.length)]
   } else {
     var index = gtf_MATH.randomIntSeed(0, array.length-1, seed)
@@ -1000,7 +1000,7 @@ module.exports.updateallsaves = async function (name, json) {
         .collection(name)
         .find({})
         .forEach(row => {
-          if (typeof row["id"] === undefined) {
+          if (typeof row["id"] === "undefined") {
             return;
           } else {
             var userdata = row;
