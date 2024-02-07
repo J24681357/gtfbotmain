@@ -82,7 +82,7 @@ module.exports.toEmoji = function (text) {
     china: "🇨🇳",
     croatia: "🇭🇷",
     france: "🇫🇷",
-    "French Polynesia": "🇵🇫",
+    "french polynesia": "🇵🇫",
     hungary: "🇭🇺",
     monaco: "🇲🇨",
     netherlands: "🇳🇱",
@@ -94,6 +94,7 @@ module.exports.toEmoji = function (text) {
     japan: "🇯🇵",
     "south korea": "🇰🇷",
     sweden: "🇸🇪",
+    "saudi arabia": "🇸🇦",
     usa: "🇺🇸",
     pdi: gtf_EMOTE.pdiflag,
     portugal: "🇵🇹"
