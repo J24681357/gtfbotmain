@@ -76,12 +76,14 @@ module.exports.toEmoji = function (text) {
     austria: "🇦🇹",
     australia: "🇦🇺",
     bahrain: "🇧🇭",
+    brazil: "🇧🇷",
     "czech republic": "🇨🇿",
-    "French Polynesia": "🇵🇫",
+    canada: "🇨🇦",
     china: "🇨🇳",
     croatia: "🇭🇷",
     france: "🇫🇷",
-    brazil: "🇧🇷",
+    "French Polynesia": "🇵🇫",
+    hungary: "🇭🇺",
     monaco: "🇲🇨",
     netherlands: "🇳🇱",
     uk: "🇬🇧",
@@ -93,8 +95,8 @@ module.exports.toEmoji = function (text) {
     "south korea": "🇰🇷",
     sweden: "🇸🇪",
     usa: "🇺🇸",
-    canada: "🇨🇦",
-    pdi: gtf_EMOTE.pdiflag
+    pdi: gtf_EMOTE.pdiflag,
+    portugal: "🇵🇹"
   };
   return list[text.toLowerCase()];
 };

@@ -51,7 +51,7 @@ client.once(Events.ClientReady, c => {
   
     setInterval(function() {
   gtm_EXTRA.gtfstats(c)
-  .//gtm_EXTRA.caroftheday(c)
+  //gtm_EXTRA.caroftheday(c)
   //gtm_EXTRA.locationoftheweek(c)
   gtm_EXTRA.checkgallery(c)
   }, 10 * 60 * 1000)
@@ -233,7 +233,8 @@ client.login(process.env.SECRET2).then(function() {
    setTimeout(function() {
      gtm_EXTRA.checkgallery(client)
   //gtm_EXTRA.caroftheday(client)
-  gtm_EXTRA.locationoftheweek(client)
+  //gtm_EXTRA.locationoftheweek(client)
+  //gtm_EXTRA.locationoftheweekstats(client)
   //gtm_EXTRA.carofthedaystats(client)
  },10000)
 

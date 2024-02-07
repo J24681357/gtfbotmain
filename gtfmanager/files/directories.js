@@ -24,6 +24,7 @@ module.exports.defaultsettings = {
 ///LISTS
 global.gtm_LIST_BOT = JSON.parse(fs.readFileSync( home + "jsonfiles/_botconfig.json", "utf8"));
 global.gtm_LIST_COTD = JSON.parse(fs.readFileSync( home + "jsonfiles/carofthedaylist.json", "utf8"));
+global.gtm_LIST_LOTW = JSON.parse(fs.readFileSync( home + "jsonfiles/locationoftheweeklist.json", "utf8"));
 
 global.gtm_SLASHCOMMANDS = require(home + "functions/misc/f_slashcommands");
 global.gtm_EXTRA = require(home + "functions/misc/f_extras");

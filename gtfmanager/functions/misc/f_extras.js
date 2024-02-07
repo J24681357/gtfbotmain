@@ -376,7 +376,7 @@ module.exports.galleryreacts = function(emojis, msg) {
     emojis.unshift(gtf_EMOTE.downvote)
     return
   }
-  if (channel.includes('car-of-the-day')) {
+  if (channel.includes('car-of-the-day') || channel.includes('location-of-the-week')) {
     emojis.unshift(gtf_EMOTE.upvote)
     emojis.unshift(gtf_EMOTE.middlevote)
     emojis.unshift(gtf_EMOTE.downvote)
@@ -423,7 +423,7 @@ if (name.includes('photos')) {
   if (name.includes('meme-lobby')) {
     addreactions([gtf_EMOTE.upvote,gtf_EMOTE.downvote], channel);
   }
-  if (name.includes('car-of-the-day')) {
+  if (name.includes('car-of-the-day') || name.includes('location-of-the-week')) {
     addreactions([gtf_EMOTE.upvote,gtf_EMOTE.middlevote, gtf_EMOTE.downvote], channel);
   }
   if (name.includes('updates')) {
@@ -1038,16 +1038,16 @@ var buttons = gtm_TOOLS.prepareButtons(emojilist, channel, { id: gtm_USERID, gar
   }
 }
 
-module.exports.carofthedaystats = async function(client) {
+module.exports.locationoftheweekstats = async function(client) {
    var currentdate = new Date();
-   var channel = client.channels.cache.find(channel => channel.id === "1077378348512182332");
+   var channel = client.channels.cache.find(channel => channel.id === "480755110453051392");
    channel.messages.fetch({limit:100}).then(async messages => {
     var list = []
     await messages.filter(msg => msg.author.id == gtm_USERID).forEach(async r => {
       var i = 0
       var vote = {}
       
-      vote["carname"] = r.embeds[0].description.split("**")[1]
+      vote["locationname"] = r.embeds[0].description.split("**")[1]
       vote["date"] = r.embeds[0].title.split("(")[1].split(")")[0]
       vote["lastupdated"] = (currentdate.getUTCMonth() + 1) + "/"
       + currentdate.getUTCDate() + "/"
@@ -1072,7 +1072,7 @@ module.exports.carofthedaystats = async function(client) {
       list.unshift(vote)
      })
      
-     var olist = gtm_LIST_COTD
+     var olist = gtm_LIST_LOTW
      for (var i = 0; i < list.length; i++) {
        if (olist.filter(x => x["date"] == list[i]["date"]).length == 0) {
          olist.push(list[i])
@@ -1082,7 +1082,7 @@ module.exports.carofthedaystats = async function(client) {
        }
      }
 
-      fs.writeFile("./jsonfiles/carofthedaylist.json", JSON.stringify(olist), function (err) {
+      fs.writeFile(gtm_TOOLS.homeDir() +"./jsonfiles/locationoftheweeklist.json", JSON.stringify(olist), function (err) {
     if (err) {
       console.log(err);
     }

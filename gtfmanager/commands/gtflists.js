@@ -2,8 +2,8 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 ////////////////////////////////////////////////////
 
 module.exports = {
-  name: "cotd",
-  title: "GTF Car Of The Day",
+  name: "gtflists",
+  title: "GTF Lists",
   cooldown: 3,
   level: 0,
   license: "N",
@@ -36,6 +36,10 @@ module.exports = {
       other: "",
     }, msg, userdata)
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
+    query["rankinglist"] = parseInt(query["rankinglist"])
+    var list = [gtm_LIST_COTD, gtm_LIST_LOTW][query["rankinglist"] - 1]
+    var title = ["GTF Car Of The Day", "GTF Location Of The Week"][query["rankinglist"] - 1]
+    
     if (query["options"] == "latest_month") {
       var date = new Date()
       var month = date.getUTCMonth() + 1
@@ -64,7 +68,6 @@ module.exports = {
       sort = "highest_rating"
     }
 
-    var list = gtm_LIST_COTD
     if (query["options"] == "info") {
 
       var total = list.length
@@ -72,7 +75,7 @@ module.exports = {
       list.map(function(x) {
         rate[calculaterating(x)[1]]++
       })
-      embed.setTitle("🚘 __**" + "Car Of The Day: Statistics/Info**__")
+      embed.setTitle("🚘 __**" + title + ": Statistics/Info**__")
 
       results = "**Total Days:** " + total + "\n" +
         "__Ratings__" + "\n" +
@@ -91,7 +94,7 @@ module.exports = {
     var sortname = sort.split("_").map(x => x.charAt(0).toUpperCase() + x.slice(1)).join(" ")
     var filtername = (filter == "") ? "" : " **(" + filter + ")**"
 
-    embed.setTitle("🚘" + " __**GTF Car Of The Day:" + monthname + " " + year + " (" + sortname + ")**" + filtername + "__")
+    embed.setTitle("🚘" + " __**" + title + ":" + monthname + " " + year + " (" + sortname + ")**" + filtername + "__")
     list = list.reverse()
     if (sort == "oldest") {
       list = list.sort((x, y) => new Date(x["date"]) - new Date(y["date"]))
@@ -121,9 +124,9 @@ module.exports = {
     }
     if (typeof query["number"] !== "undefined") {
       var select = list[query["number"] - 1]
-      embed.setTitle("🚘 __**" + "Car Of The Day (" + select["date"] + ")**__")
+      embed.setTitle("🚘 __**" + title + " (" + select["date"] + ")**__")
       var rating = calculaterating(select)
-      results = "**Car:** " + select["carname"] + "\n" +
+      results = ["**Car:** " + select["carname"], "**Location:** " + select["locationname"]][query["rankinglist"]-1] + "\n" +
         "**Rating:** " + "⭐ " + rating[0] + "% " + "`" + rating[1] + "`" + "\n\n" +
         "**Upvotes:** " + gtf_EMOTE.upvote + " " + select["upvote"] + "\n" +
         "**Middle:** " + gtf_EMOTE.middlevote + " " + select["middlevote"] + "\n" +
@@ -133,7 +136,7 @@ module.exports = {
       return
     }
 
-    if (query["options"] == "list") {
+    
       delete query["number"]
       delete pageargs["query"]["number"]
 
@@ -143,20 +146,16 @@ module.exports = {
       }
       list = list.map(function(x) {
         var rating = calculaterating(x)
-        return "`" + x["date"] + "` " + "**" + x["carname"] + "**" + "\n" +
+        return "`" + x["date"] + "` " + "**" + [x["carname"], x["locationname"]][query["rankinglist"]-1] + "**" + "\n" +
           gtf_EMOTE.upvote + x["upvote"] + " " + gtf_EMOTE.middlevote + " " + x["middlevote"] + gtf_EMOTE.downvote + x["downvote"] + " `⭐" + rating[0] + "% | " + rating[1] + "`"
       })
 
       pageargs["list"] = list;
-      pageargs["footer"] = "**❓ This is the rankings for the cars featured in Car Of The Day. Ratings are based on upvotes and downvotes. Middle votes can influence the rating in either way.**";
+      pageargs["footer"] = "**❓ This is the rankings for the " + ["cars", "locations"][["query"]["option"] - 1] + " featured in " + title + ". Ratings are based on upvotes and downvotes. Middle votes can influence the rating in either way.**";
       pageargs["selector"] = "number"
       pageargs["text"] = gtm_TOOLS.formPage(pageargs, userdata);
       gtm_TOOLS.formPages(pageargs, embed, msg, userdata);
       return
-    }
-
-
-    gtf_EMBED.alert({ name: "❌ Invalid Arguments", description: "Invalid arguments.", embed: "", seconds: 3 }, msg, userdata);
 
     function calculaterating(x) {
       var percentage = Math.round(

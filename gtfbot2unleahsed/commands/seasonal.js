@@ -46,7 +46,7 @@ module.exports = {
           return
           /*
       gtf_LIST_BOT["seasonaldate"] = gtf_DATETIME.getCurrentDay().toString() + date.getFullYear().toString()
-    require("fs").writeFile("./jsonfiles/_botconfig.json", require("json-format")(gtf_LIST_BOT), function (err) {
+    require("fs").writeFile(gtf_TOOLS.homeDir() + "jsonfiles/_botconfig.json", require("json-format")(gtf_LIST_BOT), function (err) {
     if (err) {
       console.log(err);
     }

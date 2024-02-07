@@ -97,7 +97,7 @@ module.exports.audit = async function () {
     count++
   });
 
-  fs.writeFile("./jsonfiles/fithusimraces.json", JSON.stringify(newlist), function(err) {
+  fs.writeFile(gte_TOOLS.homeDir() + "jsonfiles/fithusimraces.json", JSON.stringify(newlist), function(err) {
     if (err) {
       console.log(err);
     }

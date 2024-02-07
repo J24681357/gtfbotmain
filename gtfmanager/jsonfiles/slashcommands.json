@@ -1,16 +1,28 @@
 {
-  "cotd": {
-    "name": "cotd",
-    "description": "Information and ranking history of the GTF Car of The Day.",
-    "options": [{
-      "name": "options",
-      "description": "Select an option.",
+  "gtflists": {
+    "name": "gtflists",
+    "description": "Information and ranking history of the GTF Car Of The Day & Location Of The Week.",
+    "options": [
+      {
+      "name": "rankinglist",
+      "description": "Select a ranking list.",
       "type": 3,
       "required": true,
       "choices": [{
-            "name": "Show Rankings [sort/month/year]",
-            "value": "list"
+            "name": "Car Of The Day",
+            "value": "1"
       },
+        {
+            "name": "Location Of The Week",
+            "value": "2"
+      }]
+      },
+      {
+      "name": "options",
+      "description": "Select an option.",
+      "type": 3,
+      "required": false,
+      "choices": [
         {
             "name": "Show Rankings (Current Month)",
             "value": "latest_month"
