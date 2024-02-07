@@ -1,6 +1,5 @@
 var fs = require("fs")
-process.env["SECRET3"] = JSON.parse(fs.readFileSync(__dirname + "/" + ".keys.json", "utf8"))["SECRET3"];
-process.env["MONGOURL"] = JSON.parse(fs.readFileSync(__dirname + "/" + ".keys.json", "utf8"))["MONGOURL"];
+process.env["SECRET3"] = JSON.parse(fs.readFileSync(gtf_TOOLS.homeDir() + ".keys.json", "utf8"))["SECRET3"];
 
 const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBuilder, ModalBuilder, TextInputBuilder, TextInputStyle, AttachmentBuilder, StringSelectMenuBuilder, ButtonBuilder, ActivityType, SelectMenuBuilder } = require("discord.js");
 const client = new Client({

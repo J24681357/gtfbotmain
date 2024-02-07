@@ -1,5 +1,6 @@
 var fs = require("fs")
-process.env["SECRET2"] = JSON.parse(fs.readFileSync(__dirname + "/" + ".keys.json", "utf8"))["SECRET2"];
+process.env["SECRET2"] = JSON.parse(fs.readFileSync(gtf_TOOLS.homeDir() + ".keys.json", "utf8"))["SECRET2"];
+//////////////////////
 
 const {  Client, Events, GatewayIntentBits, Discord, EmbedBuilder, ActionRowBuilder, AttachmentBuilder, ButtonBuilder, SelectMenuBuilder } = require("discord.js");
 
