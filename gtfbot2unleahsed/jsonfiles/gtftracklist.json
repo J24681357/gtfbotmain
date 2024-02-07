@@ -3670,6 +3670,40 @@
     ],
     "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/hockenheimring-gp.png",
     "id": 3
+  },
+  "217": {
+    "name": "Jeddah Corniche Circuit - GP",
+    "length": 6.175,
+    "type": "Tarmac - Real",
+    "country": "Saudi Arabia",
+    "corners": 27,
+    "version": "Formula 1 2022",
+    "options": [
+      "Drift"
+    ],
+    "pattern": [
+      "⬜",
+      "⬜"
+    ],
+    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/jeddahcornichecircuit-gp.png",
+    "id": 3
+  },
+  "218": {
+    "name": "Pikes Peak International Hill Climb",
+    "length": 19.988,
+    "type": "Tarmac - Real",
+    "country": "USA",
+    "corners": 156,
+    "version": "Rally",
+    "options": [
+      "Drift", "Sprint"
+    ],
+    "pattern": [
+      "⬜",
+      "⬜"
+    ],
+    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/pikespeakinternationalhillclimb.png",
+    "id": 3
   }
 }
 

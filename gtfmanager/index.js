@@ -24,8 +24,6 @@ setTimeout(function() {
 */
 console.log("GTM: Loading...")
 
-
-
 var listinmaint = [];
 
 client.commands = {}
