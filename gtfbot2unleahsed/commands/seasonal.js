@@ -4,7 +4,7 @@ const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBui
 module.exports = {
   name: "seasonal",
   title: "Seasonal Events",
-  license: "A", 
+  license: "IB", 
   level: 0,
   channels: ["testing", "gtf-2u-game"],
 
@@ -39,24 +39,14 @@ module.exports = {
     }
     
     var date = new Date()
-    var mod = gtf_DATETIME.getCurrentDay() % 3
-    if (mod == 0) {
-        if (typeof gtf_LIST_BOT["seasonaldate"] === 'undefined' || Math.abs((gtf_DATETIME.getCurrentDay() - parseInt( gtf_LIST_BOT["seasonaldate"].slice(0,-4)))) >= 3) {
+    var timeofday = date.getDay()
+    if (timeofday == 0 || Math.abs((gtf_DATETIME.getCurrentDay() - parseInt( gtf_LIST_BOT["seasonaldate"].slice(0,-4)))) >= 7) {
+        if (typeof gtf_LIST_BOT["seasonaldate"] === 'undefined' || Math.abs((gtf_DATETIME.getCurrentDay() - parseInt( gtf_LIST_BOT["seasonaldate"].slice(0,-4)))) >= 7) {
           gtf_EMBED.alert({ name: "⚠️ Seasonal Events Unavailable", description: "Seasonal events are currently in a grace period. Please try again in a few moments.", embed: "", seconds: 0 }, msg, userdata);
-          return
-          /*
-      gtf_LIST_BOT["seasonaldate"] = gtf_DATETIME.getCurrentDay().toString() + date.getFullYear().toString()
-    require("fs").writeFile(gtf_TOOLS.homeDir() + "jsonfiles/_botconfig.json", require("json-format")(gtf_LIST_BOT), function (err) {
-    if (err) {
-      console.log(err);
-    }
-  });
-       */ 
-          return
+      return
   }
     }
 
-    
 
   if (gtf_LIST_BOT["seasonaldate"] != userdata["seasonalcheck"]) {
       userdata["seasonalcheck"] = gtf_LIST_BOT["seasonaldate"]
@@ -72,36 +62,33 @@ module.exports = {
     var seed = parseInt(gtf_MATH.randomIntSeed(0, 1000000, gtf_LIST_BOT["seasonaldate"]))
 
     ///QUERIES
-    if (query["options"] == "a" || query["options"] == "A" || parseInt(query["options"]) == 1) {
-      query["options"] = "A"; 
-      if (!gtf_STATS.checklicense("A", embed, msg, userdata)) {
+    if (query["options"] == "ib" || query["options"] == "IB" || parseInt(query["options"]) == 1) {
+      query["options"] = "IB";
+      if (!gtf_STATS.checklicense("IB", embed, msg, userdata)) {
         return;
       }
       var charcode = 1
-      var numevents = 1
+      var numevents = 2
     }
-    if (query["options"] == "ib" || query["options"] == "IB" || parseInt(query["options"]) == 2) {
-      query["options"] = "IB";
-      if (!gtf_STATS.checklicense("IB", embed, msg, userdata)) {
+    if (query["options"] == "ia" || query["options"] == "IA" || parseInt(query["options"]) == 2) {
+      query["options"] = "IA";
+    if (!gtf_STATS.checklicense("IA", embed, msg, userdata)) {
         return;
       }
       var charcode = 10
       var numevents = 1
     }
-    if (query["options"] == "ia" || query["options"] == "IA" || parseInt(query["options"]) == 3) {
-      query["options"] = "IA";
-    if (!gtf_STATS.checklicense("IA", embed, msg, userdata)) {
+  
+    if (query["options"] == "s" || query["options"] == "S" || parseInt(query["options"]) == 3) {
+      query["options"] = "S";
+      if (!gtf_STATS.checklicense("S", embed, msg, userdata)) {
         return;
       }
       var charcode = 20
       var numevents = 1
     }
-  
-    if (query["options"] == "s" || query["options"] == "S" || parseInt(query["options"]) == 4) {
-      query["options"] = "S";
-      if (!gtf_STATS.checklicense("S", embed, msg, userdata)) {
-        return;
-      }
+    if (query["options"] == "trial" || query["options"] == "TRIAL" || parseInt(query["options"]) == 4) {
+      query["options"] = "TRIAL";
       var charcode = 30
       var numevents = 1
     }
@@ -112,11 +99,15 @@ module.exports = {
     }
     ///
     
-       var now = Math.round(Date.now() / 1000)
-       mod = 3 - mod
-       var timeleft = ((((24) - 1) - (date.getUTCHours())) * 3600) + ((60 - date.getUTCMinutes()) * 60) + (86400 * (mod))
-       var hoursleft = "<t:" + parseInt(now + timeleft) + ":F>" + " (" + "<t:" + parseInt(now + timeleft) + ":R>" + ")"
+    var mod = 7 - timeofday
+    var date = new Date()
+    var timeleft = new Date()
+        timeleft = timeleft.setDate(timeleft.getUTCDate() + mod);
+        timeleft = Math.round(parseInt(timeleft) / 1000)
+    var sub = ((((24) - 1) - (date.getUTCHours())) * 3600) + ((60 - date.getUTCMinutes()) * 60) + (86400 * (0))
+           var hoursleft = "<t:" + parseInt(timeleft+sub) + ":F>" + " (" + "<t:" + parseInt(timeleft+sub) + ":R>" + ")"
 
+    
     ///QUERIES
     if (query["options"] == "list") {
       delete query["number"]
@@ -124,10 +115,10 @@ module.exports = {
        embed.setTitle("🎉" + " __Seasonal Events__");
        var available = (Object.keys(gtf_LIST_SEASONALEX).length >= 1 && gtf_LIST_SEASONALEX["start"] == gtf_LIST_BOT['seasonaldate']) ? " `1 Event Available`" : ""
       results =
-        "__**A Level**__ " + gtf_EMOTE.alicense + "\n" + 
         "__**IB Level**__ " + gtf_EMOTE.iblicense + "\n" +
         "__**IA Level**__ " + gtf_EMOTE.ialicense + "\n" +
         "__**S Level**__ " + gtf_EMOTE.slicense + "\n" +
+        "__**Time Trial / Drift Trial**__ " + "\n" +
         "__**Limited Time Events**__ " + "⭐" + available
         var list = results.split("\n")
       pageargs["list"] = list;
@@ -143,7 +134,13 @@ module.exports = {
       var races = []
 
     //COMMANDS
-    if (query["options"] == "LIMITED") {
+    if (query["options"] == "TRIAL") {
+      var races = [gtf_SEASONAL.randomSeasonalTimeTrial({}, "IB", 0, (seed+numevents) * charcode), gtf_SEASONAL.randomSeasonalDriftTrial({}, "IB", 1, (seed+numevents) * charcode)]
+      races[0]["mode"] = "CAREER"
+      races[0]["positions"] = gtf_RACE.creditsCalc(races[0])
+      races[1]["mode"] = "CAREER"
+      races[1]["positions"] = gtf_RACE.creditsCalc(races[1])
+    } else if (query["options"] == "LIMITED") {
       if (Object.keys(gtf_LIST_SEASONALEX).length == 0 || gtf_LIST_SEASONALEX["start"] != gtf_LIST_BOT['seasonaldate']) {
         gtf_EMBED.alert({ name: "❌ No Limited Time Events", description: "There are currently no limited time events at the moment.", embed: "", seconds: 0 }, msg, userdata);
            return
@@ -156,7 +153,7 @@ module.exports = {
     for (var i = 0; i < numevents; i++) {
       races.push(gtf_SEASONAL.randomSeasonal({}, query["options"], i+1, (seed+i) * charcode))
     }
-    races.push(gtf_SEASONAL.randomSeasonalTimeTrial({}, query["options"], numevents+1, (seed+numevents) * charcode))
+      
     }
     
     var ids = Object.keys(races);

@@ -6,8 +6,6 @@ var fs = require("fs")
 
 var home = (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfmanager") || (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtfbot2unleahsed") || (__dirname.split("/").slice(0, 4).join("/") + "/").includes("gtffithusim") ? __dirname.split("/").slice(0, 4).join("/") + "/" : __dirname.split("/").slice(0, 5).join("/") + "/"
 
-
-
 module.exports.defaultsettings = {
   MODE: "Simulation",
   GARAGESORT: "Oldest Added",
@@ -31,6 +29,13 @@ global.gtm_LIST_LOTW = JSON.parse(fs.readFileSync( home + "jsonfiles/locationoft
 global.gtm_SLASHCOMMANDS = require(home + "functions/misc/f_slashcommands");
 global.gtm_EXTRA = require(home + "functions/misc/f_extras");
 global.gtm_TOOLS = require(home + "functions/misc/f_tools");
+
+var locations = gtf_TOOLS.unique(gtf_TRACKS.find({}).map(function(x) {
+  x = x["name"].split(" - ")[0].split(" (")[0].replace(" Reverse", "")
+  return x
+}))
+console.log(locations.length)
+console.log(locations)
 
 global.gtm_defaultsettings = {
   MODE: "Simulation",

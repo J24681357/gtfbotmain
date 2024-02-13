@@ -57,8 +57,7 @@ module.exports = {
       if (typeof query["stagenumber"] !== "undefined") {
         var number = query['stagenumber'] - 1
         var stage = races[keys[number]]
-        ///DEMO
-        /*
+      
         if (number >= 1) {
           var pstage = races[keys[number-1]]
           var pass = true
@@ -74,8 +73,6 @@ module.exports = {
             return
           }
         }
-
-        */
 
         if (typeof query["racenumber"] !== "undefined") {
           var number = query['racenumber'] - 1

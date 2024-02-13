@@ -90,6 +90,8 @@ client.on("threadMembersUpdate", (addedMembers, removedMembers, thread) => {
 });
 
 client.on("interactionCreate", async interaction => {
+ 
+  
   try {
     if (interaction.type != 2) {
       return;

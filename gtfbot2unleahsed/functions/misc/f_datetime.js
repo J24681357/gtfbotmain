@@ -30,6 +30,26 @@ module.exports.getCurrentDay = function () {
   return day;
 };
 
+module.exports.getCurrentWeekDay = function () {
+  var now = new Date();
+  var day = now.getDay(),
+    diff = now.getDate() - day
+  now = new Date(now.setDate(diff));
+  
+  var start = new Date(now.getFullYear(), 0, 0);
+  var diff = now - start + (start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000;
+  var oneDay = 1000 * 60 * 60 * 24;
+  var day = Math.floor(diff / oneDay);
+  return day;
+};
+
+
+function getSundayWeek(d) {
+
+}
+console.log(getSundayWeek(new Date()));
+
+
 module.exports.getFormattedTime = function (duration) {
   var durationeconds = Math.floor((duration % 1000) / 100),
     seconds = Math.floor((duration / 1000) % 60),

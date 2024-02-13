@@ -187,15 +187,15 @@ module.exports.driftresults = function(racesettings, racedetails, finalgrid, che
     place = 0
     place2 = "1st"
   }
-
+  console.log(racesettings["mode"])
   if (racesettings["mode"] == "CAREER") {
-    var eventid = racesettings["eventid"]
-
+    var eventid = racesettings["eventid"].toLowerCase()
+console.log(eventid)
     if (typeof userdata["careerraces"][eventid] === 'undefined') {
       var current = 0
     } else {
       var current = userdata["careerraces"][eventid][0];
-
+      console.log(current+"EEE")
     }
 
     if (current == 0) {
@@ -231,7 +231,7 @@ module.exports.driftresults = function(racesettings, racedetails, finalgrid, che
 
   if (racesettings["mode"] == "CAREER") {
     if (place2 == "1st" || place2 == "2nd" || place2 == "3rd") {
-      if (racesettings["eventid"].includes("gtacademy") || racesettings["eventid"].includes("testing")) {
+      if (racesettings["eventid"].includes("gtacademy") || racesettings["eventid"].includes("testing") || racesettings["eventid"].toLowerCase().includes("seasonal")) {
         gte_STATS.updateEvent(racesettings, place2, userdata)
       } else {
         /*
@@ -246,7 +246,7 @@ module.exports.driftresults = function(racesettings, racedetails, finalgrid, che
   var mileage = [gtf_MATH.round(racesettings["distance"]["km"], 3), gtf_MATH.round(racesettings["distance"]["mi"], 2)]
 
   var results2 = "**Points: " + gtf_MATH.numFormat(racesettings["points"]) + "pts"
-    + " " + mileage[userdata["settings"]["UNITS"]] + ["km", "mi"][userdata["settings"]["UNITS"]] + gtf_EMOTE.mileage + "**\n" + "**" + medal + " " + "+" + prize + gtf_EMOTE.credits + racemultibonus + "**"
+    + " " + mileage[userdata["settings"]["UNITS"]] + ["km", "mi"][userdata["settings"]["UNITS"]] + gtf_EMOTE.mileage + "**\n" + "**e" + medal + " " + "+" + prize + gtf_EMOTE.credits + racemultibonus + "**"
 
   return results2;
 }

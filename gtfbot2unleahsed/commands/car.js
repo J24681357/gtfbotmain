@@ -41,6 +41,25 @@ module.exports = {
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
 
     var searchname = "";
+    /*
+    if (query["options"] == "search") {
+      var list = [
+        { 
+          name: "Car Search",
+          description: "Test",
+          emoji: "⏭",
+          placeholder: "Submit",
+          extra: "Once"
+        }
+      ]
+      var next = function() {
+        
+      }
+      gtf_DISCORD.sendModal(msg, list, next)
+      return
+    }
+    */
+    
     if (query["options"] == "search") {
       query["options"] = "select";
       if (typeof query["name"] !== "undefined") {

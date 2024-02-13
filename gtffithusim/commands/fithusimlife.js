@@ -165,10 +165,10 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         gte_STATS.loadAvatarImage2(embed, userdata, then2)
         function then2(attachment) {
           pageargs["bimage"].push(attachment)
-         embed.setTitle("__**Leagues**__" + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")///DEMO , "RII `Rank 500`", "RI `Rank 300`", "RS `Rank 50`"
+         embed.setTitle("__**Leagues**__" + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")
         pageargs["selector"] = "type";
         pageargs["query"] = query;
-        pageargs["list"] = ["RN", "RIV `Rank 990`", "RIII `Rank 800`"];
+        pageargs["list"] = ["RN", "RIV `Rank 990`", "RIII `Rank 800`", "RII `Rank 500`", "RI `Rank 300`", "RS `Rank 50`"];
         pageargs["listsec"] = []
         pageargs["image"] = images
 

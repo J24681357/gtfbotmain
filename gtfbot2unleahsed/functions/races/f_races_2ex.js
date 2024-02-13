@@ -190,13 +190,12 @@ module.exports.driftresults = function(racesettings, racedetails, finalgrid, che
   }
 
   if (racesettings["mode"] == "CAREER") {
-    var eventid = racesettings["eventid"]
-
+    var eventid = racesettings["eventid"].toLowerCase()
     if (typeof userdata["careerraces"][eventid] === 'undefined') {
-      var current = 0
-    } else {
+    var current = 0  
+    } 
+    else {
       var current = userdata["careerraces"][eventid][0];
-
     }
 
     if (current == 0) {
@@ -233,7 +232,7 @@ module.exports.driftresults = function(racesettings, racedetails, finalgrid, che
 
   if (racesettings["mode"] == "CAREER") {
     if (place2 == "1st" || place2 == "2nd" || place2 == "3rd") {
-      if (racesettings["eventid"].includes("gtacademy") || racesettings["eventid"].includes("grandtour")) {
+      if (racesettings["eventid"].includes("gtacademy") || racesettings["eventid"].includes("grandtour") || racesettings["eventid"].toLowerCase().includes("seasonal")) {
         gtf_STATS.updateEvent(racesettings, place2, userdata)
       } else {
         /*
@@ -472,7 +471,7 @@ module.exports.timetrialresults = function(racesettings, racedetails, finalgrid,
     }
 
   } else {
-
+    var eventid = racesettings["eventid"].toLowerCase()
     if (typeof userdata["careerraces"][eventid] === 'undefined') {
       var current = 0
     } else {
@@ -480,8 +479,6 @@ module.exports.timetrialresults = function(racesettings, racedetails, finalgrid,
     }
 
   }
-
-
   if (current == 0) {
     current = "4th"
   } else if (current == "✅") {
@@ -530,7 +527,7 @@ module.exports.timetrialresults = function(racesettings, racedetails, finalgrid,
     } else {
       if (place == "1st" || place == "2nd" || place == "3rd") {
         
-        if (racesettings["eventid"].includes("gtacademy") || racesettings["eventid"].includes("grandtour") || racesettings["eventid"].includes("SEASONAL")) {
+        if (racesettings["eventid"].includes("gtacademy") || racesettings["eventid"].includes("grandtour") || racesettings["eventid"].toLowerCase().includes("seasonal")) {
           gtf_STATS.updateEvent(racesettings, place, userdata)
         } else {
           setTimeout(function() {
@@ -572,15 +569,23 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
         var command = require(gtf_TOOLS.homeDir() +  "commands/license")
         command.execute(msg, { options: e[0] }, userdata);
       }
-    } else if (racesettings["mode"] == "CAREER") {
+    } 
+    else if (racesettings["mode"] == "CAREER") {
       var e = racesettings["eventid"].split("-");
-      if (racesettings["title"].includes("Seasonal Event")) {
+      if (racesettings["eventid"].toLowerCase().includes("seasonal")) {
         var command = require(gtf_TOOLS.homeDir() + "commands/seasonal");
+        if (racesettings["type"] == "TIMETRIAL" || racesettings["type"] == "DRIFT") {
+          command.execute(msg,
+            { options: "TRIAL" }, userdata);
+          return
+        }
         command.execute(msg,
           { options: e[0].split("SEASONAL")[1], number: e[1] }, userdata);
+        return
       } else {
         var command = require(gtf_TOOLS.homeDir() + "commands/career");
         command.execute(msg, { options: e[0], number: e[1] }, userdata);
+        return
       }
     }
     else if (racesettings["mode"] == "ARCADE" || racesettings["mode"] == "DRIFT" || racesettings["mode"] == "SSRX") {
@@ -910,19 +915,19 @@ module.exports.updateGrid = function(racesettings, racedetails, finalgrid, check
     x["overtakes"] = x["prevposition"] - x["position"]
 
     if (x["prevposition"] > x["position"] && x["position"] == 1) {
-      if (racesettings["mode"] == "CAREER") {
+      if (racesettings["mode"] == "CAREER" && (racesettings["type"] != "TIMETRIAL" && racesettings["type"] != "DRIFT")) {
         var name = [x["name"].split(" ").slice(0, -1).join(" "), x["drivername"]][userdata["settings"]["GRIDNAME"]]
         message = "\n" + gtf_ANNOUNCER.emote(racesettings["title"]) + " `" + gtf_ANNOUNCER.say({ name1: "race-overtake-1st", name2: name }) + "`"
       }
     }
     if (x["prevposition"] > x["position"] && x["position"] <= 8 && x["overtakes"] >= 2) {
-      if (racesettings["mode"] == "CAREER") {
+      if (racesettings["mode"] == "CAREER" && (racesettings["type"] != "TIMETRIAL" && racesettings["type"] != "DRIFT")) {
         var name = [x["name"].split(" ").slice(0, -1).join(" ") + " " + "(#" + x["position"] + ")", x["drivername"]][userdata["settings"]["GRIDNAME"]]
         message = "\n" + gtf_ANNOUNCER.emote(racesettings["title"]) + " `" + gtf_ANNOUNCER.say({ name1: "race-overtake-fast", name2: name }) + "`"
       }
     }
     if (x["prevposition"] < x["position"] && x["position"] <= 8 && x["overtakes"] <= -2) {
-      if (racesettings["mode"] == "CAREER") {
+      if (racesettings["mode"] == "CAREER" && (racesettings["type"] != "TIMETRIAL" && racesettings["type"] != "DRIFT")) {
         var name = [x["name"].split(" ").slice(0, -1).join(" ") + " " + "(#" + x["position"] + ")", x["drivername"]][userdata["settings"]["GRIDNAME"]]
         message = "\n" + gtf_ANNOUNCER.emote(racesettings["title"]) + " `" + gtf_ANNOUNCER.say({ name1: "race-overtake-bad", name2: name }) + "`"
       }

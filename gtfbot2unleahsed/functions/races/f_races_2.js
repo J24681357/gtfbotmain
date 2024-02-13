@@ -206,7 +206,7 @@ module.exports.startSession = function(racesettings, racedetails, finalgrid, che
     if (!checkpoint[0]) {
       gtf_TOOLS.interval(
         function() {
-          if (racesettings["mode"] == "CAREER") {
+          if (racesettings["mode"] == "CAREER" && (racesettings["type"] != "TIMETRIAL" && racesettings["type"] != "DRIFT")) {
             message = "\n" + gtf_ANNOUNCER.emote(racesettings["title"]) + " `" + gtf_ANNOUNCER.say({ name1: "race-start" }) + "`"
           }
           var starttime = (index == 2) ? racesettings["type"] == "TIMETRIAL" ? "" : message + "\n" + userdata["raceinprogress"]["timehistory"][0]["hour"] + ":" + userdata["raceinprogress"]["timehistory"][0]["minutes"] + " " + racesettings["weather"]["emoji"] + "💧" + racesettings["weather"]["wetsurface"] + "%" + " | " + "⏳" + gtf_DATETIME.getFormattedTime(racelength) + " left |" + gtf_EMOTE.tire + "**" + currentcar["tires"].split(" ").map(function(x) {

@@ -702,7 +702,6 @@ activated == 1;
 
 module.exports.gtfstats = function(client) {
   var server = client.guilds.cache.get(gtm_SERVERID);
-  
   var totmembers = server.members.fetch().then(totmembers =>{
     totmembers = totmembers.filter(member => !member.user.bot)
     var size = totmembers.size

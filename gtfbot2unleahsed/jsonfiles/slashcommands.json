@@ -847,7 +847,7 @@
   },
   "seasonal": {
     "name": "seasonal",
-    "description": "A | 🏁 Participate in limited time & randomized Seasonal events from different levels.",
+    "description": "A | 🏁 Participate in limited time & randomized Seasonal events.",
     "channels": "",
     "options": [
       {
@@ -860,24 +860,25 @@
             "name": "❗ Menu",
             "value": "list"
           },
-          {
-            "name": "A Level | A",
-            "value": "A"
-          },
             {
             "name": "IB Level | IB",
             "value": "IB"
           },
-          
             {
             "name": "IA Level | IA",
             "value": "IA"
           },
-          
-          
+          {
+          "name": "S Level | S",
+          "value": "S"
+          },
             {
-            "name": "S Level | S",
-            "value": "S"
+            "name": "Time Trials / Drift Trials",
+            "value": "TRIAL"
+          },
+          {
+          "name": "Limited Time Events ⭐",
+          "value": "LIMITED"
           }
         ]
       },

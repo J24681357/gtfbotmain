@@ -133,7 +133,7 @@ module.exports = {
           var channel = msg.guild.channels.cache.find(channel => channel.id === "687872420933271577");
           embed.setTitle("⚠️ __Maintenance Notice__")
           embed.setColor(0xffff00)
-          embed.setDescription("The GT Fitness game has a scheduled maintenance: **" + query["string"] + "**. During this time, all commands for the game will be unavailable. The discount page in **/car**, may immediately change after this maintenance." + "\n\n" + "If you are in a championship, please exit the race before the maintenance starts to prevent your championship progress to be lost." + "\n\n" + "**Additional Information:** " + query["string2"])
+          embed.setDescription("GTF 2: Unleahsed has a scheduled maintenance: **" + query["string"] + "**. During this time, all commands for GTF 2: Unleahsed will be unavailable. The discount page in **/car**, may immediately change after this maintenance." + "\n\n" + "⚠️ If you are in a championship, please exit the race before the maintenance starts to prevent your championship progress from being lost." + "\n\n" + "**Additional Information:** " + query["string2"])
           gtf_DISCORD.send(channel, { type1: "CHANNEL", embeds: [embed] })
         }, 2000)
         }],

@@ -14,6 +14,7 @@ module.exports.send = function(msg, content, callback, force) {
       msg.channel.sendTyping() 
     }
   }
+  
   if (typeof callback === "undefined") {
     callback = function() {}
   }
@@ -26,8 +27,7 @@ module.exports.send = function(msg, content, callback, force) {
   }
    if (gtfbot[channelid]["count"] == 0) {
       return
-    } 
-   else {
+  } else {
       var timer;
       var i;
       var check = function() {
@@ -47,9 +47,7 @@ module.exports.send = function(msg, content, callback, force) {
                 callback(msgg)}
               )
               } else {
-                
                 sendtype(msg, force)
-
              }
         }
         check()
@@ -67,25 +65,27 @@ module.exports.send = function(msg, content, callback, force) {
   
   async function sendtype(msg, force) {
     if (force) {
-             try {          
+      /*
+       try {          
        msg.editReply({content: "✅ **Success**"})
        } catch (error) {
+         console.log(error)
        }
+       */
     msg.channel.send(content).then(msgg => { 
             msgg.user = msg.user;
             callback(msgg);
     })
       return
     }
+    
      if (msg.type == 20 || msg.type == 0) {
             msg.channel.send(content).then(msgg => { 
             msgg.user = msg.user;
             callback(msgg);
     })
        } 
-     else { 
-       
-         
+     else {    
        try {
             var msgg = await msg.followUp(content);
          
@@ -94,7 +94,7 @@ module.exports.send = function(msg, content, callback, force) {
        } catch (error) {
          sendtype(msg, true)
        }
-            }
+    }
   }
 }
 
@@ -194,23 +194,22 @@ module.exports.delete = function(msg, content, callback) {
  
 }
 
-module.exports.sendModal = async function(msg) {
-  var gtfbot = gtf_LIST_BOT
+module.exports.sendModal = async function(msg, list, callback) {
       const modal = new ModalBuilder()
 			.setCustomId('modal')
-			.setTitle('My Modal');
-		const favoriteColorInput = new TextInputBuilder()
-			.setCustomId('favoriteColorInput')
-			.setLabel("In the end of a Drift Trial, the total points accumulated and the rating will be shown. Credits earned are based on your rating. Using tires with less grip (Comfort tires) would be the most optimal to earn points.")
+			.setTitle(list[0]["name"]);
+		const input = new TextInputBuilder()
+			.setCustomId('textinput')
+			.setLabel(list[0]["description"])
 			.setStyle(TextInputStyle.Short)
-      .setPlaceholder('Press Submit to continue.');
+      .setPlaceholder(list[0]["placeholder"]);
 
 
-		const firstActionRow = new ActionRowBuilder().addComponents(favoriteColorInput);
+		const firstActionRow = new ActionRowBuilder().addComponents(input);
 
 		modal.addComponents(firstActionRow);
 
-		await msg.showModal(modal);
+		await msg.showModal(modal)
 }
 
 module.exports.role = function(msg, user, role, type, callback) {
