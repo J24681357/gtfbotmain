@@ -203,7 +203,7 @@ module.exports.audit = async function () {
     //await downloadimage2(tracks[i][1], tracks[i][1]["image"], 0);
   }
     gtf_CONSOLELOG.reverse();
-    gtf_CONSOLELOG.fill(0, 0, 255);
+    gtf_CONSOLELOG.fill(100, 100, 255);
     console.log("Track List Updated");
     gtf_CONSOLELOG.end();
   require("fs").writeFile("./gtfbot2unleahsed/jsonfiles/gtftracklist.json", require("json-format")(x), function (err) {

@@ -751,7 +751,8 @@ module.exports.audit = async function () {
     console.log("No new cars.");
   }
   async function downloadimage2(oldcar, imagelink, j) {
-    var { request } = require("undici");
+    var { request, fetch, setGlobalDispatcher, Agent } = require("undici");
+    
     var type = "error";
     var name = oldcar["name"].replace(/ /gi, "").toLowerCase();
     var make = oldcar["make"].replace(/ /gi, "").toLowerCase();
@@ -759,7 +760,7 @@ module.exports.audit = async function () {
     var success = false
     var download2 = async function (uri, filename, callback) {
       try {
-        var { statusCode, headers, trailers, body } = await request(uri);
+        var { statusCode, headers, trailers, body } = await request(uri, {bodyTimeout: 10000, headersTimeout: 10000});
         body = await body.arrayBuffer();
         success = true
       } catch (error) {

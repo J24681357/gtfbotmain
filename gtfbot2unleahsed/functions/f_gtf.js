@@ -15,7 +15,7 @@ module.exports.explimit = 1000000;
 module.exports.commandlist = [
   ['career', "Career Mode", "🏁"],
   ['license', "License Center", "💳"],
-  ['seasonal', "Seasonal Events | A", "🎉"],
+  ['seasonal', "Seasonal Events | IB", "🎉"],
 ['arcade', "Arcade Mode", "🎮"],
 ['customrace', "Custom Race | Lv.40", "♾"],
 ['car', "GTF Car Dealerships", "🏢"],

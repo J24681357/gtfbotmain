@@ -33,10 +33,12 @@ module.exports = {
       other: "",
     }, msg, userdata)
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
+    /*
     if (userdata["id"] != "237450759233339393") {
        gtf_EMBED.alert({ name: "❌ Seasonal Events Unavailable", description: "Seasonal events are currently unavailable in this update.", embed: "", seconds: 0 }, msg, userdata);
       return
     }
+    */
     
     var date = new Date()
     var timeofday = date.getDay()

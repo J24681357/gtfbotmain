@@ -34,8 +34,6 @@ var locations = gtf_TOOLS.unique(gtf_TRACKS.find({}).map(function(x) {
   x = x["name"].split(" - ")[0].split(" (")[0].replace(" Reverse", "")
   return x
 }))
-console.log(locations.length)
-console.log(locations)
 
 global.gtm_defaultsettings = {
   MODE: "Simulation",

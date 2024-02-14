@@ -844,7 +844,7 @@ module.exports.updateallsaves = async function (name, json) {
         })
         .then(x => {
             gtf_CONSOLELOG.reverse();
-            gtf_CONSOLELOG.fill(0, 0, 255);
+            gtf_CONSOLELOG.fill(100, 100, 255);
             console.log("All saves updated", JSON.stringify(json));
             gtf_CONSOLELOG.end();
 

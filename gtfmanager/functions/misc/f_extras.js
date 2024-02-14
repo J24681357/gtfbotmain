@@ -955,7 +955,7 @@ var buttons = gtm_TOOLS.prepareButtons(emojilist, channel, { id: gtm_USERID, gar
 }
 
 module.exports.locationoftheweek = function(client) {
-  var totwchannelid = "480755110453051392"
+  var totwchannelid = "1207183775721721876"
    var currentdate = new Date();
     var datetime = (currentdate.getUTCMonth() + 1) + "/"
       + currentdate.getUTCDate() + "/"
@@ -979,7 +979,7 @@ module.exports.locationoftheweek = function(client) {
 
     var lastdate = lastmsg.embeds[0].title.split("(")[1].split(")")[0]
 //
-     if (lastdate != datetime && weekday == 0) {
+     if (lastdate != datetime && weekday == 5) {
        console.log("GTM: New Location Of The Week!")
         messages.filter(msg => msg.author.id == gtm_USERID).forEach(r => {
     list.push(r.embeds[0].description.split("**")[1])
@@ -1039,7 +1039,7 @@ var buttons = gtm_TOOLS.prepareButtons(emojilist, channel, { id: gtm_USERID, gar
 
 module.exports.locationoftheweekstats = async function(client) {
    var currentdate = new Date();
-   var channel = client.channels.cache.find(channel => channel.id === "480755110453051392");
+   var channel = client.channels.cache.find(channel => channel.id === "1207183775721721876");
    channel.messages.fetch({limit:100}).then(async messages => {
     var list = []
     await messages.filter(msg => msg.author.id == gtm_USERID).forEach(async r => {

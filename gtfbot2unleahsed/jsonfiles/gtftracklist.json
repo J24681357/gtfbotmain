@@ -1,3760 +1,3760 @@
 {
-  "1": {
-    "name": "Albert Park Circuit",
-    "length": 5.278,
-    "type": "Tarmac - Real",
-    "country": "Australia",
-    "corners": 14,
-    "version": "Formula 1 2022",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/albertparkcircuit.png",
-    "id": 2
-  },
-  "2": {
-    "name": "Alsace - Test Course",
-    "length": 2.124,
-    "type": "Tarmac - Original",
-    "country": "France",
-    "corners": 7,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-testcourse.png",
-    "id": 211
-  },
-  "3": {
-    "name": "Alsace - Test Course Reverse",
-    "length": 2.124,
-    "type": "Tarmac - Original",
-    "country": "France",
-    "corners": 7,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-testcoursereverse.png",
-    "id": 210
-  },
-  "4": {
-    "name": "Alsace - Village",
-    "length": 5.423,
-    "type": "Tarmac - Original",
-    "country": "France",
-    "corners": 15,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-village.png",
-    "id": 209
-  },
-  "5": {
-    "name": "Alsace - Village Reverse",
-    "length": 5.423,
-    "type": "Tarmac - Original",
-    "country": "France",
-    "corners": 15,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-villagereverse.png",
-    "id": 208
-  },
-  "6": {
-    "name": "Apricot Hill Raceway",
-    "length": 3.863,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 14,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/apricothillraceway.png",
-    "id": 207
-  },
-  "7": {
-    "name": "Apricot Hill Raceway Reverse",
-    "length": 3.863,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 14,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/apricothillracewayreverse.png",
-    "id": 206
-  },
-  "8": {
-    "name": "Ascari - Full Track",
-    "length": 5.425,
-    "type": "Tarmac - Real",
-    "country": "Spain",
-    "corners": 26,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/ascari-fulltrack.png",
-    "id": 205
-  },
-  "9": {
-    "name": "Autodrome Lago Maggiore - Center",
-    "length": 1.706,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 8,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-center.png",
-    "id": 204
-  },
-  "10": {
-    "name": "Autodrome Lago Maggiore - Center Reverse",
-    "length": 1.706,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 8,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-centerreverse.png",
-    "id": 203
-  },
-  "11": {
-    "name": "Autodrome Lago Maggiore - East",
-    "length": 3.643,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 11,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-east.png",
-    "id": 202
-  },
-  "12": {
-    "name": "Autodrome Lago Maggiore - East End",
-    "length": 2.012,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 8,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-eastend.png",
-    "id": 201
-  },
-  "13": {
-    "name": "Autodrome Lago Maggiore - East End Reverse",
-    "length": 2.012,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 8,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-eastendreverse.png",
-    "id": 200
-  },
-  "14": {
-    "name": "Autodrome Lago Maggiore - East Reverse",
-    "length": 3.643,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 11,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-eastreverse.png",
-    "id": 199
-  },
-  "15": {
-    "name": "Autodrome Lago Maggiore - GP",
-    "length": 5.089,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 17,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-gp.png",
-    "id": 198
-  },
-  "16": {
-    "name": "Autodrome Lago Maggiore - GP Reverse",
-    "length": 5.089,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 17,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-gpreverse.png",
-    "id": 197
-  },
-  "17": {
-    "name": "Autodrome Lago Maggiore - West",
-    "length": 4.168,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 13,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-west.png",
-    "id": 196
-  },
-  "18": {
-    "name": "Autodrome Lago Maggiore - West End",
-    "length": 2.446,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 10,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-westend.png",
-    "id": 195
-  },
-  "19": {
-    "name": "Autodrome Lago Maggiore - West End Reverse",
-    "length": 2.446,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 10,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-westendreverse.png",
-    "id": 194
-  },
-  "20": {
-    "name": "Autodrome Lago Maggiore - West Reverse",
-    "length": 4.168,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 13,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-westreverse.png",
-    "id": 193
-  },
-  "21": {
-    "name": "Autodromo De Interlagos",
-    "length": 4.309,
-    "type": "Tarmac - Real",
-    "country": "Brazil",
-    "corners": 15,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromodeinterlagos.png",
-    "id": 192
-  },
-  "22": {
-    "name": "Autodromo di Imola - GP",
-    "length": 4.909,
-    "type": "Tarmac - Real",
-    "country": "Italy",
-    "corners": 19,
-    "version": "Formula 1 2022",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromodiimola-gp.png",
-    "id": 1
-  },
-  "23": {
-    "name": "Autodromo Nazionale Monza",
-    "length": 5.793,
-    "type": "Tarmac - Real",
-    "country": "Italy",
-    "corners": 11,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromonazionalemonza.png",
-    "id": 191
-  },
-  "24": {
-    "name": "Autodromo Nazionale Monza (1980s)",
-    "length": 5.802,
-    "type": "Tarmac - Real",
-    "country": "Italy",
-    "corners": 8,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromonazionalemonza(1980s).png",
-    "id": 190
-  },
-  "25": {
-    "name": "Autodromo Nazionale Monza (No Chicane)",
-    "length": 5.793,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 9,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromonazionalemonza(nochicane).png",
-    "id": 189
-  },
-  "26": {
-    "name": "Autopolis - Full Course",
-    "length": 4.674,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 18,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autopolis-fullcourse.png",
-    "id": 188
-  },
-  "27": {
-    "name": "Autopolis - Shortcut Course",
-    "length": 3.022,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 11,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autopolis-shortcutcourse.png",
-    "id": 187
-  },
-  "28": {
-    "name": "Autumn Ring",
-    "length": 2.95,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 17,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnring.png",
-    "id": 186
-  },
-  "29": {
-    "name": "Autumn Ring - Mini",
-    "length": 1.281,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 11,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnring-mini.png",
-    "id": 185
-  },
-  "30": {
-    "name": "Autumn Ring - Mini Reverse",
-    "length": 1.281,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 11,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnring-minireverse.png",
-    "id": 184
-  },
-  "31": {
-    "name": "Autumn Ring Reverse",
-    "length": 2.95,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 17,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnringreverse.png",
-    "id": 183
-  },
-  "32": {
-    "name": "Bahrain International Circuit - GP",
-    "length": 5.412,
-    "type": "Tarmac - Real",
-    "country": "Bahrain",
-    "corners": 15,
-    "version": "Formula 1 2022",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bahraininternationalcircuit-gp.png",
-    "id": 182
-  },
-  "33": {
-    "name": "Blue Moon Bay Speedway",
-    "length": 3.2,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 3,
-    "version": "Gran Turismo 7",
-    "options": [
-      "N/A"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway.png",
-    "id": 181
-  },
-  "34": {
-    "name": "Blue Moon Bay Speedway - Infield A",
-    "length": 3.35,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 10,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infielda.png",
-    "id": 180
-  },
-  "35": {
-    "name": "Blue Moon Bay Speedway - Infield A Reverse",
-    "length": 3.35,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 10,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infieldareverse.png",
-    "id": 179
-  },
-  "36": {
-    "name": "Blue Moon Bay Speedway - Infield B",
-    "length": 2.68,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 5,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infieldb.png",
-    "id": 178
-  },
-  "37": {
-    "name": "Blue Moon Bay Speedway - Infield B Reverse",
-    "length": 2.68,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 5,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infieldbreverse.png",
-    "id": 177
-  },
-  "38": {
-    "name": "Blue Moon Bay Speedway Reverse",
-    "length": 3.2,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 3,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedwayreverse.png",
-    "id": 176
-  },
-  "39": {
-    "name": "Brands Hatch - GP",
-    "length": 3.916,
-    "type": "Tarmac - Real",
-    "country": "UK",
-    "corners": 9,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-gp.png",
-    "id": 175
-  },
-  "40": {
-    "name": "Brands Hatch - GP (1980s)",
-    "length": 1.937,
-    "type": "Tarmac - Real",
-    "country": "UK",
-    "corners": 9,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-gp(1980s).png",
-    "id": 174
-  },
-  "41": {
-    "name": "Brands Hatch - Indy",
-    "length": 1.944,
-    "type": "Tarmac - Real",
-    "country": "UK",
-    "corners": 5,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-indy.png",
-    "id": 173
-  },
-  "42": {
-    "name": "Brands Hatch - Indy (1980s)",
-    "length": 1.937,
-    "type": "Tarmac - Real",
-    "country": "UK",
-    "corners": 6,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-indy(1980s).png",
-    "id": 172
-  },
-  "43": {
-    "name": "Broad Bean Raceway",
-    "length": 1.665,
-    "type": "Tarmac - Original",
-    "country": "Japan",
-    "corners": 5,
-    "version": "Gran Turismo 7",
-    "options": [
-      "N/A"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/broadbeanraceway.png",
-    "id": 171
-  },
-  "44": {
-    "name": "Broad Bean Raceway Reverse",
-    "length": 1.665,
-    "type": "Tarmac - Original",
-    "country": "Japan",
-    "corners": 5,
-    "version": "Gran Turismo 7",
-    "options": [
-      "N/A"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/broadbeanracewayreverse.png",
-    "id": 170
-  },
-  "45": {
-    "name": "Cape Ring",
-    "length": 7.07,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 28,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering.png",
-    "id": 169
-  },
-  "46": {
-    "name": "Cape Ring - Inside",
-    "length": 2.475,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 11,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-inside.png",
-    "id": 168
-  },
-  "47": {
-    "name": "Cape Ring - North",
-    "length": 3.839,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 18,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-north.png",
-    "id": 167
-  },
-  "48": {
-    "name": "Cape Ring - Periphery",
-    "length": 4.6,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-periphery.png",
-    "id": 166
-  },
-  "49": {
-    "name": "Cape Ring - South",
-    "length": 3.231,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 12,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-south.png",
-    "id": 165
-  },
-  "50": {
-    "name": "Chamonix - East",
-    "length": 3.219,
-    "type": "Snow - Original",
-    "country": "France",
-    "corners": 10,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-east.png",
-    "id": 164
-  },
-  "51": {
-    "name": "Chamonix - Main",
-    "length": 8.256,
-    "type": "Snow - Original",
-    "country": "France",
-    "corners": 24,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-main.png",
-    "id": 163
-  },
-  "52": {
-    "name": "Chamonix - Mini",
-    "length": 1.593,
-    "type": "Snow - Original",
-    "country": "France",
-    "corners": 6,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-mini.png",
-    "id": 162
-  },
-  "53": {
-    "name": "Chamonix - West",
-    "length": 5.375,
-    "type": "Snow - Original",
-    "country": "France",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-west.png",
-    "id": 161
-  },
-  "54": {
-    "name": "Chamonix (2000s)",
-    "length": 3.23,
-    "type": "Snow - Original",
-    "country": "France",
-    "corners": 27,
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix(2000s).png",
-    "id": 160
-  },
-  "55": {
-    "name": "Circuit de Barcelona-Catalunya - Grand Prix",
-    "length": 4.655,
-    "type": "Tarmac - Real",
-    "country": "Spain",
-    "corners": 16,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-grandprix.png",
-    "id": 159
-  },
-  "56": {
-    "name": "Circuit de Barcelona-Catalunya - Grand Prix (No Chicane)",
-    "length": 4.73,
-    "type": "Tarmac - Real",
-    "country": "Spain",
-    "corners": 14,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-grandprix(nochicane).png",
-    "id": 158
-  },
-  "57": {
-    "name": "Circuit de Barcelona-Catalunya - National Layout",
-    "length": 2.977,
-    "type": "Tarmac - Real",
-    "country": "Spain",
-    "corners": 11,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-nationallayout.png",
-    "id": 157
-  },
-  "58": {
-    "name": "Circuit de Barcelona-Catalunya - Rallycross Layout",
-    "length": 1.133,
-    "type": "Dirt - Real",
-    "country": "Spain",
-    "corners": 13,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-rallycrosslayout.png",
-    "id": 156
-  },
-  "59": {
-    "name": "Circuit de la Sarthe",
-    "length": 13.629,
-    "type": "Tarmac - Real",
-    "country": "France",
-    "corners": 38,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdelasarthe.png",
-    "id": 155
-  },
-  "60": {
-    "name": "Circuit de la Sarthe (No Chicanes)",
-    "length": 13.567,
-    "type": "Tarmac - Real",
-    "country": "France",
-    "corners": 38,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdelasarthe(nochicanes).png",
-    "id": 154
-  },
-  "61": {
-    "name": "Circuit de Sainte-Croix - A",
-    "length": 9.477,
-    "type": "Tarmac - Original",
-    "country": "France",
-    "corners": 19,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-a.png",
-    "id": 153
-  },
-  "62": {
-    "name": "Circuit de Sainte-Croix - A Reverse",
-    "length": 9.477,
-    "type": "Tarmac - Original",
-    "country": "France",
-    "corners": 19,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-areverse.png",
-    "id": 152
-  },
-  "63": {
-    "name": "Circuit de Sainte-Croix - B",
-    "length": 7.062,
-    "type": "Tarmac - Original",
-    "country": "France",
-    "corners": 14,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-b.png",
-    "id": 151
-  },
-  "64": {
-    "name": "Circuit de Sainte-Croix - B Reverse",
-    "length": 7.062,
-    "type": "Tarmac - Original",
-    "country": "France",
-    "corners": 14,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-breverse.png",
-    "id": 150
-  },
-  "65": {
-    "name": "Circuit de Sainte-Croix - C",
-    "length": 10.825,
-    "type": "Tarmac - Original",
-    "country": "France",
-    "corners": 24,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-c.png",
-    "id": 149
-  },
-  "66": {
-    "name": "Circuit de Sainte-Croix - C Reverse",
-    "length": 10.825,
-    "type": "Tarmac - Original",
-    "country": "France",
-    "corners": 24,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-creverse.png",
-    "id": 148
-  },
-  "67": {
-    "name": "Circuit de Spa-Francorchamps",
-    "length": 7.004,
-    "type": "Tarmac - Real",
-    "country": "Belgium",
-    "corners": 21,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdespa-francorchamps.png",
-    "id": 147
-  },
-  "68": {
-    "name": "Circuit de Valencia",
-    "length": 4.051,
-    "type": "Tarmac - Real",
-    "country": "Spain",
-    "corners": 14,
-    "version": "Gran Turismo PSP",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdevalencia.png",
-    "id": 146
-  },
-  "69": {
-    "name": "Circuito de la Sierra",
-    "length": 27,
-    "type": "Tarmac - Original",
-    "country": "Spain",
-    "corners": 45,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodelasierra.png",
-    "id": 145
-  },
-  "70": {
-    "name": "Circuito de Madrid",
-    "length": 3.388,
-    "type": "Tarmac - City",
-    "country": "Spain",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadrid.png",
-    "id": 144
-  },
-  "71": {
-    "name": "Circuito de Madrid - Mini",
-    "length": 2.125,
-    "type": "Tarmac - City",
-    "country": "Spain",
-    "corners": 5,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadrid-mini.png",
-    "id": 143
-  },
-  "72": {
-    "name": "Circuito de Madrid - Mini Reverse",
-    "length": 2.125,
-    "type": "Tarmac - City",
-    "country": "Spain",
-    "corners": 5,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadrid-minireverse.png",
-    "id": 142
-  },
-  "73": {
-    "name": "Circuito de Madrid Reverse",
-    "length": 3.388,
-    "type": "Tarmac - City",
-    "country": "Spain",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadridreverse.png",
-    "id": 141
-  },
-  "74": {
-    "name": "Circuito di Roma",
-    "length": 3.48,
-    "type": "Tarmac - City",
-    "country": "Italy",
-    "corners": 11,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodiroma.png",
-    "id": 140
-  },
-  "75": {
-    "name": "Citta di Aria",
-    "length": 3.4,
-    "type": "Tarmac - City",
-    "country": "Italy",
-    "corners": "N/A",
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/cittadiaria.png",
-    "id": 139
-  },
-  "76": {
-    "name": "Colorado Springs - Lake",
-    "length": 2.99,
-    "type": "Dirt - Original",
-    "country": "USA",
-    "corners": 18,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/coloradosprings-lake.png",
-    "id": 138
-  },
-  "77": {
-    "name": "Colorado Springs - Lake Reverse",
-    "length": 2.99,
-    "type": "Dirt - Original",
-    "country": "USA",
-    "corners": 18,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/coloradosprings-lakereverse.png",
-    "id": 137
-  },
-  "78": {
-    "name": "Complex String",
-    "length": 11.235,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 91,
-    "version": "Gran Turismo 3",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/complexstring.png",
-    "id": 136
-  },
-  "79": {
-    "name": "Costa di Amalfi",
-    "length": 4.07,
-    "type": "Tarmac - City",
-    "country": "Italy",
-    "corners": "N/A",
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/costadiamalfi.png",
-    "id": 135
-  },
-  "80": {
-    "name": "Cote d'Azur",
-    "length": 3.351,
-    "type": "Tarmac - City",
-    "country": "Monaco",
-    "corners": 26,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/coted'azur.png",
-    "id": 134
-  },
-  "81": {
-    "name": "Daytona - International Speedway",
-    "length": 4.023,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 4,
-    "version": "Gran Turismo 7",
-    "options": [
-      null
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/daytona-internationalspeedway.png",
-    "id": 133
-  },
-  "82": {
-    "name": "Daytona - Road Course",
-    "length": 5.729,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 12,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/daytona-roadcourse.png",
-    "id": 132
-  },
-  "83": {
-    "name": "Deep Forest Raceway",
-    "length": 4.249,
-    "type": "Tarmac - Original",
-    "country": "Switzerland",
-    "corners": 18,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestraceway.png",
-    "id": 131
-  },
-  "84": {
-    "name": "Deep Forest Raceway (2010s)",
-    "length": 3.601,
-    "type": "Tarmac - Original",
-    "country": "Switzerland",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestraceway(2010s).png",
-    "id": 130
-  },
-  "85": {
-    "name": "Deep Forest Raceway (2010s) Reverse",
-    "length": 3.601,
-    "type": "Tarmac - Original",
-    "country": "Switzerland",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestraceway(2010s)reverse.png",
-    "id": 129
-  },
-  "86": {
-    "name": "Deep Forest Raceway Reverse",
-    "length": 4.249,
-    "type": "Tarmac - Original",
-    "country": "Switzerland",
-    "corners": 18,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestracewayreverse.png",
-    "id": 128
-  },
-  "87": {
-    "name": "Dragon Trail - Gardens",
-    "length": 4.352,
-    "type": "Tarmac - Original",
-    "country": "Croatia",
-    "corners": 17,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-gardens.png",
-    "id": 127
-  },
-  "88": {
-    "name": "Dragon Trail - Gardens Reverse",
-    "length": 4.352,
-    "type": "Tarmac - Original",
-    "country": "Croatia",
-    "corners": 17,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-gardensreverse.png",
-    "id": 126
-  },
-  "89": {
-    "name": "Dragon Trail - Seaside",
-    "length": 5.209,
-    "type": "Tarmac - Original",
-    "country": "Croatia",
-    "corners": 18,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-seaside.png",
-    "id": 125
-  },
-  "90": {
-    "name": "Dragon Trail - Seaside Reverse",
-    "length": 5.209,
-    "type": "Tarmac - Original",
-    "country": "Croatia",
-    "corners": 18,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-seasidereverse.png",
-    "id": 124
-  },
-  "91": {
-    "name": "Driving Park - Beginner Course",
-    "length": 0.77,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 5,
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/drivingpark-beginnercourse.png",
-    "id": 123
-  },
-  "92": {
-    "name": "Driving Park - Motorland",
-    "length": 1.34,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 9,
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/drivingpark-motorland.png",
-    "id": 122
-  },
-  "93": {
-    "name": "Driving Park - Test Course",
-    "length": 10.35,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 2,
-    "version": "Gran Turismo 4",
-    "options": [
-      "N/A"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/drivingpark-testcourse.png",
-    "id": 121
-  },
-  "94": {
-    "name": "Eiger Nordwand - Short Track",
-    "length": 2.436,
-    "type": "Tarmac - Original",
-    "country": "Switzerland",
-    "corners": 11,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/eigernordwand-shorttrack.png",
-    "id": 120
-  },
-  "95": {
-    "name": "Eiger Nordwand - Short Track Reverse",
-    "length": 2.436,
-    "type": "Tarmac - Original",
-    "country": "Switzerland",
-    "corners": 11,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/eigernordwand-shorttrackreverse.png",
-    "id": 119
-  },
-  "96": {
-    "name": "El Capitan",
-    "length": 4.787,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 20,
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/elcapitan.png",
-    "id": 118
-  },
-  "97": {
-    "name": "Fishermans Ranch",
-    "length": 6.893,
-    "type": "Dirt - Original",
-    "country": "USA",
-    "corners": 40,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fishermansranch.png",
-    "id": 117
-  },
-  "98": {
-    "name": "Fishermans Ranch Reverse",
-    "length": 6.893,
-    "type": "Dirt - Original",
-    "country": "USA",
-    "corners": 40,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fishermansranchreverse.png",
-    "id": 116
-  },
-  "99": {
-    "name": "Fuji International Speedway",
-    "length": 4.563,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 16,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway.png",
-    "id": 115
-  },
-  "100": {
-    "name": "Fuji International Speedway - Short",
-    "length": 4.526,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 14,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway-short.png",
-    "id": 114
-  },
-  "101": {
-    "name": "Fuji International Speedway (1980s)",
-    "length": 4.36,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 8,
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway(1980s).png",
-    "id": 113
-  },
-  "102": {
-    "name": "Fuji International Speedway (1990s)",
-    "length": 4.469,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 12,
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway(1990s).png",
-    "id": 112
-  },
-  "103": {
-    "name": "George V Paris",
-    "length": 2.46,
-    "type": "Tarmac - City",
-    "country": "France",
-    "corners": "N/A",
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/georgevparis.png",
-    "id": 111
-  },
-  "104": {
-    "name": "Goodwood Motor Circuit",
-    "length": 3.809,
-    "type": "Tarmac - Real",
-    "country": "UK",
-    "corners": 7,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/goodwoodmotorcircuit.png",
-    "id": 110
-  },
-  "105": {
-    "name": "Gran Turismo Arena",
-    "length": 0.668,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 9,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/granturismoarena.png",
-    "id": 109
-  },
-  "106": {
-    "name": "Gran Turismo Arena Reverse",
-    "length": 0.668,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 9,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/granturismoarenareverse.png",
-    "id": 108
-  },
-  "107": {
-    "name": "Grand Valley - East",
-    "length": 2.998,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 11,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-east.png",
-    "id": 107
-  },
-  "108": {
-    "name": "Grand Valley - East Reverse",
-    "length": 2.998,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 11,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-eastreverse.png",
-    "id": 102
-  },
-  "109": {
-    "name": "Grand Valley - Highway 1",
-    "length": 5.102,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 18,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-highway1.png",
-    "id": 106
-  },
-  "110": {
-    "name": "Grand Valley - Highway 1 Reverse",
-    "length": 5.102,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 18,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-highway1reverse.png",
-    "id": 105
-  },
-  "111": {
-    "name": "Grand Valley - South",
-    "length": 3.074,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 10,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-south.png",
-    "id": 104
-  },
-  "112": {
-    "name": "Grand Valley - South Reverse",
-    "length": 3.074,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 10,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-southreverse.png",
-    "id": 103
-  },
-  "113": {
-    "name": "Grand Valley - Speedway",
-    "length": 4.945,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 18,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-speedway.png",
-    "id": 101
-  },
-  "114": {
-    "name": "Grand Valley - Speedway Reverse",
-    "length": 4.945,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 18,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-speedwayreverse.png",
-    "id": 100
-  },
-  "115": {
-    "name": "Grindelwald",
-    "length": 3.462,
-    "type": "Tarmac - Original",
-    "country": "Switzerland",
-    "corners": 22,
-    "version": "Gran Turismo 2",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grindelwald.png",
-    "id": 99
-  },
-  "116": {
-    "name": "High Speed Ring",
-    "length": 4.345,
-    "type": "Tarmac - Original",
-    "country": "Japan",
-    "corners": 6,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedring.png",
-    "id": 98
-  },
-  "117": {
-    "name": "High Speed Ring (2010s)",
-    "length": 4,
-    "type": "Tarmac - Original",
-    "country": "Japan",
-    "corners": 6,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedring(2010s).png",
-    "id": 97
-  },
-  "118": {
-    "name": "High Speed Ring (2010s) Reverse",
-    "length": 4,
-    "type": "Tarmac - Original",
-    "country": "Japan",
-    "corners": 6,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedring(2010s)reverse.png",
-    "id": 96
-  },
-  "119": {
-    "name": "High Speed Ring Reverse",
-    "length": 4.345,
-    "type": "Tarmac - Original",
-    "country": "Japan",
-    "corners": 6,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedringreverse.png",
-    "id": 95
-  },
-  "120": {
-    "name": "Hong Kong Circuit",
-    "length": 2.91,
-    "type": "Tarmac - City",
-    "country": "Hong Kong",
-    "corners": "N/A",
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/hongkongcircuit.png",
-    "id": 94
-  },
-  "121": {
-    "name": "Indianapolis - Motor Speedway",
-    "length": 4.023,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 4,
-    "version": "Gran Turismo 6",
-    "options": [
-      "N/A"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/indianapolis-motorspeedway.png",
-    "id": 93
-  },
-  "122": {
-    "name": "Indianapolis - Road Course",
-    "length": 4.192,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 13,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/indianapolis-roadcourse.png",
-    "id": 92
-  },
-  "123": {
-    "name": "Infineon Raceway - Sports Car Course",
-    "length": 4.06,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 12,
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/infineonraceway-sportscarcourse.png",
-    "id": 91
-  },
-  "124": {
-    "name": "Infineon Raceway - Stock Car Course",
-    "length": 3.202,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 10,
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/infineonraceway-stockcarcourse.png",
-    "id": 90
-  },
-  "125": {
-    "name": "Kyoto Driving Park - Full Course",
-    "length": 6.846,
-    "type": "Tarmac - Original",
-    "country": "Japan",
-    "corners": 19,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-fullcourse.png",
-    "id": 89
-  },
-  "126": {
-    "name": "Kyoto Driving Park - Full Course Reverse",
-    "length": 6.846,
-    "type": "Tarmac - Original",
-    "country": "Japan",
-    "corners": 19,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-fullcoursereverse.png",
-    "id": 88
-  },
-  "127": {
-    "name": "Kyoto Driving Park - Miyabi",
-    "length": 1.953,
-    "type": "Tarmac - Original",
-    "country": "Japan",
-    "corners": 7,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-miyabi.png",
-    "id": 87
-  },
-  "128": {
-    "name": "Kyoto Driving Park - Yamagiwa",
-    "length": 4.912,
-    "type": "Tarmac - Original",
-    "country": "Japan",
-    "corners": 15,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-yamagiwa.png",
-    "id": 86
-  },
-  "129": {
-    "name": "Kyoto Driving Park - Yamagiwa Reverse",
-    "length": 4.912,
-    "type": "Tarmac - Original",
-    "country": "Japan",
-    "corners": 7,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-yamagiwareverse.png",
-    "id": 85
-  },
-  "130": {
-    "name": "Lake Louise - Long Track",
-    "length": 3.694,
-    "type": "Snow - Original",
-    "country": "Canada",
-    "corners": 11,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-longtrack.png",
-    "id": 84
-  },
-  "131": {
-    "name": "Lake Louise - Long Track Reverse",
-    "length": 3.694,
-    "type": "Snow - Original",
-    "country": "Canada",
-    "corners": 11,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-longtrackreverse.png",
-    "id": 83
-  },
-  "132": {
-    "name": "Lake Louise - Short Track",
-    "length": 2.577,
-    "type": "Snow - Original",
-    "country": "Canada",
-    "corners": 7,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-shorttrack.png",
-    "id": 82
-  },
-  "133": {
-    "name": "Lake Louise - Short Track Reverse",
-    "length": 2.577,
-    "type": "Snow - Original",
-    "country": "Canada",
-    "corners": 7,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-shorttrackreverse.png",
-    "id": 81
-  },
-  "134": {
-    "name": "Lake Louise - Tri-Oval",
-    "length": 3.068,
-    "type": "Snow - Original",
-    "country": "Canada",
-    "corners": 3,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-tri-oval.png",
-    "id": 80
-  },
-  "135": {
-    "name": "Lake Louise - Tri-Oval Reverse",
-    "length": 3.068,
-    "type": "Snow - Original",
-    "country": "Canada",
-    "corners": 3,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-tri-ovalreverse.png",
-    "id": 79
-  },
-  "136": {
-    "name": "London Circuit",
-    "length": 1.921,
-    "type": "Tarmac - City",
-    "country": "UK",
-    "corners": 8,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/londoncircuit.png",
-    "id": 78
-  },
-  "137": {
-    "name": "London Circuit Reverse",
-    "length": 1.921,
-    "type": "Tarmac - City",
-    "country": "UK",
-    "corners": 8,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/londoncircuitreverse.png",
-    "id": 77
-  },
-  "138": {
-    "name": "Matterhorn - Dristelen",
-    "length": 3.214,
-    "type": "Tarmac - Original",
-    "country": "Switzerland",
-    "corners": 10,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-dristelen.png",
-    "id": 76
-  },
-  "139": {
-    "name": "Matterhorn - Riffelsee",
-    "length": 3.301,
-    "type": "Tarmac - Original",
-    "country": "Switzerland",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-riffelsee.png",
-    "id": 75
-  },
-  "140": {
-    "name": "Matterhorn - Rotenboden",
-    "length": 3.577,
-    "type": "Tarmac - Original",
-    "country": "Switzerland",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-rotenboden.png",
-    "id": 74
-  },
-  "141": {
-    "name": "Matterhorn - Short",
-    "length": 0.771,
-    "type": "Tarmac - Original",
-    "country": "Switzerland",
-    "corners": 6,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-short.png",
-    "id": 73
-  },
-  "142": {
-    "name": "Michelin Raceway Road Atlanta",
-    "length": 4.088,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 12,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/michelinracewayroadatlanta.png",
-    "id": 72
-  },
-  "143": {
-    "name": "Mid-Field Raceway",
-    "length": 3.562,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 14,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/mid-fieldraceway.png",
-    "id": 71
-  },
-  "144": {
-    "name": "Mid-Field Raceway Reverse",
-    "length": 3.562,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 14,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/mid-fieldracewayreverse.png",
-    "id": 70
-  },
-  "145": {
-    "name": "Mount Panorama Circuit",
-    "length": 6.213,
-    "type": "Tarmac - Real",
-    "country": "Australia",
-    "corners": 23,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/mountpanoramacircuit.png",
-    "id": 69
-  },
-  "146": {
-    "name": "New York Circuit",
-    "length": 4.12,
-    "type": "Tarmac - City",
-    "country": "USA",
-    "corners": "N/A",
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/newyorkcircuit.png",
-    "id": 68
-  },
-  "147": {
-    "name": "Northern Isle Speedway",
-    "length": 0.858,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 4,
-    "version": "Gran Turismo 7",
-    "options": [
-      "N/A"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/northernislespeedway.png",
-    "id": 67
-  },
-  "148": {
-    "name": "Nurburgring - 24h",
-    "length": 25.378,
-    "type": "Tarmac - Real",
-    "country": "Germany",
-    "corners": 89,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgring-24h.png",
-    "id": 66
-  },
-  "149": {
-    "name": "Nurburgring - Endurance",
-    "length": 23.867,
-    "type": "Tarmac - Real",
-    "country": "Germany",
-    "corners": 85,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgring-endurance.png",
-    "id": 65
-  },
-  "150": {
-    "name": "Nurburgring - GP",
-    "length": 5.148,
-    "type": "Tarmac - Real",
-    "country": "Germany",
-    "corners": 17,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgring-gp.png",
-    "id": 64
-  },
-  "151": {
-    "name": "Nurburgring - Nordschleife",
-    "length": 20.832,
-    "type": "Tarmac - Real",
-    "country": "Germany",
-    "corners": 73,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgring-nordschleife.png",
-    "id": 63
-  },
-  "152": {
-    "name": "Nurburgring - Sprint",
-    "length": 3.637,
-    "type": "Tarmac - Real",
-    "country": "Germany",
-    "corners": 12,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgring-sprint.png",
-    "id": 62
-  },
-  "153": {
-    "name": "Opera Paris",
-    "length": 2.91,
-    "type": "Tarmac - City",
-    "country": "France",
-    "corners": 18,
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/operaparis.png",
-    "id": 61
-  },
-  "154": {
-    "name": "Red Bull Ring",
-    "length": 4.318,
-    "type": "Tarmac - Real",
-    "country": "Austria",
-    "corners": 10,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/redbullring.png",
-    "id": 60
-  },
-  "155": {
-    "name": "Red Bull Ring - Short Track",
-    "length": 2.336,
-    "type": "Tarmac - Real",
-    "country": "Austria",
-    "corners": 6,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/redbullring-shorttrack.png",
-    "id": 59
-  },
-  "156": {
-    "name": "Red Rock Valley Speedway",
-    "length": 4.1,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 8,
-    "version": "Gran Turismo 2",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/redrockvalleyspeedway.png",
-    "id": 58
-  },
-  "157": {
-    "name": "Rome Circuit",
-    "length": 3.957,
-    "type": "Tarmac - City",
-    "country": "Italy",
-    "corners": 13,
-    "version": "Gran Turismo 3",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/romecircuit.png",
-    "id": 57
-  },
-  "158": {
-    "name": "Sardegna - Road Track A",
-    "length": 5.113,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 15,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtracka.png",
-    "id": 56
-  },
-  "159": {
-    "name": "Sardegna - Road Track A Reverse",
-    "length": 5.113,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 15,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackareverse.png",
-    "id": 55
-  },
-  "160": {
-    "name": "Sardegna - Road Track B",
-    "length": 3.893,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 13,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackb.png",
-    "id": 54
-  },
-  "161": {
-    "name": "Sardegna - Road Track B Reverse",
-    "length": 3.893,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 13,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackbreverse.png",
-    "id": 53
-  },
-  "162": {
-    "name": "Sardegna - Road Track C",
-    "length": 2.661,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 10,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackc.png",
-    "id": 52
-  },
-  "163": {
-    "name": "Sardegna - Road Track C Reverse",
-    "length": 2.661,
-    "type": "Tarmac - Original",
-    "country": "Italy",
-    "corners": 10,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackcreverse.png",
-    "id": 51
-  },
-  "164": {
-    "name": "Sardegna - Windmills",
-    "length": 3.31,
-    "type": "Dirt - Original",
-    "country": "Italy",
-    "corners": 14,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-windmills.png",
-    "id": 50
-  },
-  "165": {
-    "name": "Sardegna - Windmills Reverse",
-    "length": 3.31,
-    "type": "Dirt - Original",
-    "country": "Italy",
-    "corners": 14,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-windmillsreverse.png",
-    "id": 49
-  },
-  "166": {
-    "name": "Seattle - Long Circuit",
-    "length": 3.81,
-    "type": "Tarmac - City",
-    "country": "USA",
-    "corners": "N/A",
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/seattle-longcircuit.png",
-    "id": 47
-  },
-  "167": {
-    "name": "Seattle - Short Circuit",
-    "length": 2.179,
-    "type": "Tarmac - City",
-    "country": "USA",
-    "corners": 11,
-    "version": "Gran Turismo 2",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/seattle-shortcircuit.png",
-    "id": 48
-  },
-  "168": {
-    "name": "Seoul Central",
-    "length": 2.72,
-    "type": "Tarmac - City",
-    "country": "South Korea",
-    "corners": "N/A",
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/seoulcentral.png",
-    "id": 46
-  },
-  "169": {
-    "name": "Silverstone - GP",
-    "length": 3.66,
-    "type": "Tarmac - Real",
-    "country": "UK",
-    "corners": 18,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-gp.png",
-    "id": 45
-  },
-  "170": {
-    "name": "Silverstone - International Circuit",
-    "length": 2.978,
-    "type": "Tarmac - Real",
-    "country": "UK",
-    "corners": 9,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-internationalcircuit.png",
-    "id": 44
-  },
-  "171": {
-    "name": "Silverstone - National Circuit",
-    "length": 2.639,
-    "type": "Tarmac - Real",
-    "country": "UK",
-    "corners": 6,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-nationalcircuit.png",
-    "id": 43
-  },
-  "172": {
-    "name": "Silverstone - Stowe Circuit",
-    "length": 1.738,
-    "type": "Tarmac - Real",
-    "country": "UK",
-    "corners": 9,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-stowecircuit.png",
-    "id": 42
-  },
-  "173": {
-    "name": "Special Stage Route 11",
-    "length": 4.561,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 21,
-    "version": "Gran Turismo 3",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute11.png",
-    "id": 41
-  },
-  "174": {
-    "name": "Special Stage Route 5",
-    "length": 3.787,
-    "type": "Tarmac - City",
-    "country": "PDI",
-    "corners": 16,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5.png",
-    "id": 40
-  },
-  "175": {
-    "name": "Special Stage Route 5 - Clubman",
-    "length": 2.46,
-    "type": "Tarmac - City",
-    "country": "PDI",
-    "corners": 9,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5-clubman.png",
-    "id": 39
-  },
-  "176": {
-    "name": "Special Stage Route 5 - Clubman Reverse",
-    "length": 2.46,
-    "type": "Tarmac - City",
-    "country": "PDI",
-    "corners": 9,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5-clubmanreverse.png",
-    "id": 38
-  },
-  "177": {
-    "name": "Special Stage Route 5 Reverse",
-    "length": 3.787,
-    "type": "Tarmac - City",
-    "country": "PDI",
-    "corners": 16,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5reverse.png",
-    "id": 37
-  },
-  "178": {
-    "name": "Special Stage Route 7",
-    "length": 23.28,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 24,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute7.png",
-    "id": 36
-  },
-  "179": {
-    "name": "Special Stage Route X",
-    "length": 30.283,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 2,
-    "version": "Gran Turismo 7",
-    "options": [
-      "N/A"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroutex.png",
-    "id": 35
-  },
-  "180": {
-    "name": "Super Speedway",
-    "length": 2.406,
-    "type": "Tarmac - Original",
-    "country": "PDI",
-    "corners": 2,
-    "version": "Gran Turismo 3",
-    "options": [
-      "N/A"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/superspeedway.png",
-    "id": 34
-  },
-  "181": {
-    "name": "Suzuka Circuit",
-    "length": 5.807,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 20,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/suzukacircuit.png",
-    "id": 33
-  },
-  "182": {
-    "name": "Suzuka Circuit - East",
-    "length": 2.243,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 9,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/suzukacircuit-east.png",
-    "id": 32
-  },
-  "183": {
-    "name": "Suzuka Circuit - West",
-    "length": 2.243,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 9,
-    "version": "Gran Turismo 4",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/suzukacircuit-west.png",
-    "id": 31
-  },
-  "184": {
-    "name": "Tahiti Road",
-    "length": 3.347,
-    "type": "Tarmac - Original",
-    "country": "Tahiti",
-    "corners": 12,
-    "version": "Gran Turismo 2",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tahitiroad.png",
-    "id": 30
-  },
-  "185": {
-    "name": "Tokyo Expressway - Central Clockwise",
-    "length": 4.405,
-    "type": "Tarmac - City",
-    "country": "Japan",
-    "corners": 13,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-centralclockwise.png",
-    "id": 29
-  },
-  "186": {
-    "name": "Tokyo Expressway - Central Counterclockwise",
-    "length": 4.369,
-    "type": "Tarmac - City",
-    "country": "Japan",
-    "corners": 14,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-centralcounterclockwise.png",
-    "id": 28
-  },
-  "187": {
-    "name": "Tokyo Expressway - East Clockwise",
-    "length": 7.301,
-    "type": "Tarmac - City",
-    "country": "Japan",
-    "corners": 13,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-eastclockwise.png",
-    "id": 27
-  },
-  "188": {
-    "name": "Tokyo Expressway - East Counterclockwise",
-    "length": 7.192,
-    "type": "Tarmac - City",
-    "country": "Japan",
-    "corners": 13,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-eastcounterclockwise.png",
-    "id": 26
-  },
-  "189": {
-    "name": "Tokyo Expressway - South Clockwise",
-    "length": 5.201,
-    "type": "Tarmac - City",
-    "country": "Japan",
-    "corners": 17,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-southclockwise.png",
-    "id": 25
-  },
-  "190": {
-    "name": "Tokyo Expressway - South Counterclockwise",
-    "length": 6.56,
-    "type": "Tarmac - City",
-    "country": "Japan",
-    "corners": 16,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-southcounterclockwise.png",
-    "id": 24
-  },
-  "191": {
-    "name": "Tokyo R246",
-    "length": 5.117,
-    "type": "Tarmac - City",
-    "country": "Japan",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyor246.png",
-    "id": 23
-  },
-  "192": {
-    "name": "Tokyo R246 Reverse",
-    "length": 5.117,
-    "type": "Tarmac - City",
-    "country": "Japan",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyor246reverse.png",
-    "id": 22
-  },
-  "193": {
-    "name": "Top Gear - Test Track",
-    "length": 2.82,
-    "type": "Tarmac - Real",
-    "country": "UK",
-    "corners": 12,
-    "version": "Gran Turismo 5",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/topgear-testtrack.png",
-    "id": 21
-  },
-  "194": {
-    "name": "Toscana",
-    "length": 3.411,
-    "type": "Dirt - Real",
-    "country": "Italy",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/toscana.png",
-    "id": 20
-  },
-  "195": {
-    "name": "Toscana Reverse",
-    "length": 3.411,
-    "type": "Dirt - Real",
-    "country": "Italy",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/toscanareverse.png",
-    "id": 19
-  },
-  "196": {
-    "name": "Trial Mountain Circuit",
-    "length": 5.44,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 15,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuit.png",
-    "id": 18
-  },
-  "197": {
-    "name": "Trial Mountain Circuit (2010s)",
-    "length": 3.983,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuit(2010s).png",
-    "id": 17
-  },
-  "198": {
-    "name": "Trial Mountain Circuit (2010s) Reverse",
-    "length": 3.983,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 15,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuit(2010s)reverse.png",
-    "id": 16
-  },
-  "199": {
-    "name": "Trial Mountain Circuit Reverse",
-    "length": 5.44,
-    "type": "Tarmac - Original",
-    "country": "USA",
-    "corners": 15,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuitreverse.png",
-    "id": 15
-  },
-  "200": {
-    "name": "Tsukuba Circuit",
-    "length": 2.045,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 8,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tsukubacircuit.png",
-    "id": 14
-  },
-  "201": {
-    "name": "Twin Ring Motegi - East",
-    "length": 3.422,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 11,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-east.png",
-    "id": 13
-  },
-  "202": {
-    "name": "Twin Ring Motegi - Road Course",
-    "length": 4.801,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 14,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-roadcourse.png",
-    "id": 12
-  },
-  "203": {
-    "name": "Twin Ring Motegi - Super Speedway",
-    "length": 2.413,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 6,
-    "version": "Gran Turismo 6",
-    "options": [
-      "N/A"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-superspeedway.png",
-    "id": 11
-  },
-  "204": {
-    "name": "Twin Ring Motegi - West",
-    "length": 1.49,
-    "type": "Tarmac - Real",
-    "country": "Japan",
-    "corners": 6,
-    "version": "Gran Turismo 6",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-west.png",
-    "id": 10
-  },
-  "205": {
-    "name": "Watkins Glen International",
-    "length": 5.423,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 11,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/watkinsgleninternational.png",
-    "id": 9
-  },
-  "206": {
-    "name": "Watkins Glen International - Short Course",
-    "length": 3.943,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 7,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/watkinsgleninternational-shortcourse.png",
-    "id": 8
-  },
-  "207": {
-    "name": "WeatherTech Raceway Laguna Seca",
-    "length": 3.602,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 11,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/weathertechracewaylagunaseca.png",
-    "id": 7
-  },
-  "208": {
-    "name": "Willow Springs - Big Willow",
-    "length": 3.951,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 10,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-bigwillow.png",
-    "id": 6
-  },
-  "209": {
-    "name": "Willow Springs - Horse Thief Mile",
-    "length": 1.624,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 11,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-horsethiefmile.png",
-    "id": 5
-  },
-  "210": {
-    "name": "Willow Springs - Horse Thief Mile Reverse",
-    "length": 1.624,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 11,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-horsethiefmilereverse.png",
-    "id": 4
-  },
-  "211": {
-    "name": "Willow Springs - Streets of Willow",
-    "length": 2.675,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 14,
-    "version": "Gran Turismo 7",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-streetsofwillow.png",
-    "id": 3
-  },
-  "212": {
-    "name": "Circuito do Estoril - GP",
-    "length": 4.182,
-    "type": "Tarmac - Real",
-    "country": "Portugal",
-    "corners": 13,
-    "version": "Formula 1 2022",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodoestoril-gp.png",
-    "id": 3
-  },
-  "213": {
-    "name": "Circuit Of The Americas - GP",
-    "length": 5.515,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 20,
-    "version": "Formula 1 2022",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitoftheamericas-gp.png",
-    "id": 3
-  },
-  "214": {
-    "name": "Donington Park - GP",
-    "length": 4.020,
-    "type": "Tarmac - Real",
-    "country": "UK",
-    "corners": 11,
-    "version": "Formula 1 2022",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/doningtonpark-gp.png",
-    "id": 3
-  },
-  "215": {
-    "name": "Hungaroring",
-    "length": 4.020,
-    "type": "Tarmac - Real",
-    "country": "Hungary",
-    "corners": 14,
-    "version": "Formula 1 2022",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/hungaroring.png",
-    "id": 3
-  },
-  "216": {
-    "name": "Hockenheimring - GP",
-    "length": 4.574,
-    "type": "Tarmac - Real",
-    "country": "Germany",
-    "corners": 17,
-    "version": "Formula 1 2022",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/hockenheimring-gp.png",
-    "id": 3
-  },
-  "217": {
-    "name": "Jeddah Corniche Circuit - GP",
-    "length": 6.175,
-    "type": "Tarmac - Real",
-    "country": "Saudi Arabia",
-    "corners": 27,
-    "version": "Formula 1 2022",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/jeddahcornichecircuit-gp.png",
-    "id": 3
-  },
-  "2177": {
-    "name": "Zandvoort Circuit - GP",
-    "length": 4.259,
-    "type": "Tarmac - Real",
-    "country": "Netherlands",
-    "corners": 14,
-    "version": "Formula 1 2022",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/zandvoortcircuit-gp.png",
-    "id": 3
-  },
-  "218": {
-    "name": "Pikes Peak International Hill Climb",
-    "length": 19.988,
-    "type": "Tarmac - Real",
-    "country": "USA",
-    "corners": 156,
-    "version": "Rally",
-    "options": [
-      "Drift", "Sprint"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/pikespeakinternationalhillclimb.png",
-    "id": 3
-  },
-
-   "219": {
-    "name": "Sepang International Circuit",
-    "length": 5.543,
-    "type": "Tarmac - Real",
-    "country": "Malaysia",
-    "corners": 15,
-    "version": "Formula 1 2022",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sepanginternationalcircuit.png",
-    "id": 3
-  },
-   "220": {
-    "name": "Sepang International Circuit - North",
-    "length": 2.706,
-    "type": "Tarmac - Real",
-    "country": "Malaysia",
-    "corners": 9,
-    "version": "Formula 1 2022",
-    "options": [
-      "Drift"
-    ],
-    "pattern": [
-      "⬜",
-      "⬜"
-    ],
-    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sepanginternationalcircuit-north.png",
-    "id": 3
-  }
+	"1": {
+		"name": "Albert Park Circuit",
+		"length": 5.278,
+		"type": "Tarmac - Real",
+		"country": "Australia",
+		"corners": 14,
+		"version": "Formula 1 2022",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/albertparkcircuit.png",
+		"id": 221
+	},
+	"2": {
+		"name": "Alsace - Test Course",
+		"length": 2.124,
+		"type": "Tarmac - Original",
+		"country": "France",
+		"corners": 7,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-testcourse.png",
+		"id": 220
+	},
+	"3": {
+		"name": "Alsace - Test Course Reverse",
+		"length": 2.124,
+		"type": "Tarmac - Original",
+		"country": "France",
+		"corners": 7,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-testcoursereverse.png",
+		"id": 219
+	},
+	"4": {
+		"name": "Alsace - Village",
+		"length": 5.423,
+		"type": "Tarmac - Original",
+		"country": "France",
+		"corners": 15,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-village.png",
+		"id": 218
+	},
+	"5": {
+		"name": "Alsace - Village Reverse",
+		"length": 5.423,
+		"type": "Tarmac - Original",
+		"country": "France",
+		"corners": 15,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/alsace-villagereverse.png",
+		"id": 217
+	},
+	"6": {
+		"name": "Apricot Hill Raceway",
+		"length": 3.863,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 14,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/apricothillraceway.png",
+		"id": 216
+	},
+	"7": {
+		"name": "Apricot Hill Raceway Reverse",
+		"length": 3.863,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 14,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/apricothillracewayreverse.png",
+		"id": 215
+	},
+	"8": {
+		"name": "Ascari - Full Track",
+		"length": 5.425,
+		"type": "Tarmac - Real",
+		"country": "Spain",
+		"corners": 26,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/ascari-fulltrack.png",
+		"id": 214
+	},
+	"9": {
+		"name": "Autodrome Lago Maggiore - Center",
+		"length": 1.706,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 8,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-center.png",
+		"id": 213
+	},
+	"10": {
+		"name": "Autodrome Lago Maggiore - Center Reverse",
+		"length": 1.706,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 8,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-centerreverse.png",
+		"id": 212
+	},
+	"11": {
+		"name": "Autodrome Lago Maggiore - East",
+		"length": 3.643,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 11,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-east.png",
+		"id": 211
+	},
+	"12": {
+		"name": "Autodrome Lago Maggiore - East End",
+		"length": 2.012,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 8,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-eastend.png",
+		"id": 210
+	},
+	"13": {
+		"name": "Autodrome Lago Maggiore - East End Reverse",
+		"length": 2.012,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 8,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-eastendreverse.png",
+		"id": 209
+	},
+	"14": {
+		"name": "Autodrome Lago Maggiore - East Reverse",
+		"length": 3.643,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 11,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-eastreverse.png",
+		"id": 208
+	},
+	"15": {
+		"name": "Autodrome Lago Maggiore - GP",
+		"length": 5.089,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 17,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-gp.png",
+		"id": 207
+	},
+	"16": {
+		"name": "Autodrome Lago Maggiore - GP Reverse",
+		"length": 5.089,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 17,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-gpreverse.png",
+		"id": 206
+	},
+	"17": {
+		"name": "Autodrome Lago Maggiore - West",
+		"length": 4.168,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 13,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-west.png",
+		"id": 205
+	},
+	"18": {
+		"name": "Autodrome Lago Maggiore - West End",
+		"length": 2.446,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 10,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-westend.png",
+		"id": 204
+	},
+	"19": {
+		"name": "Autodrome Lago Maggiore - West End Reverse",
+		"length": 2.446,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 10,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-westendreverse.png",
+		"id": 203
+	},
+	"20": {
+		"name": "Autodrome Lago Maggiore - West Reverse",
+		"length": 4.168,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 13,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromelagomaggiore-westreverse.png",
+		"id": 202
+	},
+	"21": {
+		"name": "Autodromo De Interlagos",
+		"length": 4.309,
+		"type": "Tarmac - Real",
+		"country": "Brazil",
+		"corners": 15,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromodeinterlagos.png",
+		"id": 201
+	},
+	"22": {
+		"name": "Autodromo di Imola - GP",
+		"length": 4.909,
+		"type": "Tarmac - Real",
+		"country": "Italy",
+		"corners": 19,
+		"version": "Formula 1 2022",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromodiimola-gp.png",
+		"id": 200
+	},
+	"23": {
+		"name": "Autodromo Nazionale Monza",
+		"length": 5.793,
+		"type": "Tarmac - Real",
+		"country": "Italy",
+		"corners": 11,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromonazionalemonza.png",
+		"id": 199
+	},
+	"24": {
+		"name": "Autodromo Nazionale Monza (1980s)",
+		"length": 5.802,
+		"type": "Tarmac - Real",
+		"country": "Italy",
+		"corners": 8,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromonazionalemonza(1980s).png",
+		"id": 198
+	},
+	"25": {
+		"name": "Autodromo Nazionale Monza (No Chicane)",
+		"length": 5.793,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 9,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autodromonazionalemonza(nochicane).png",
+		"id": 197
+	},
+	"26": {
+		"name": "Autopolis - Full Course",
+		"length": 4.674,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 18,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autopolis-fullcourse.png",
+		"id": 196
+	},
+	"27": {
+		"name": "Autopolis - Shortcut Course",
+		"length": 3.022,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 11,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autopolis-shortcutcourse.png",
+		"id": 195
+	},
+	"28": {
+		"name": "Autumn Ring",
+		"length": 2.95,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 17,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnring.png",
+		"id": 194
+	},
+	"29": {
+		"name": "Autumn Ring - Mini",
+		"length": 1.281,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 11,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnring-mini.png",
+		"id": 193
+	},
+	"30": {
+		"name": "Autumn Ring - Mini Reverse",
+		"length": 1.281,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 11,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnring-minireverse.png",
+		"id": 192
+	},
+	"31": {
+		"name": "Autumn Ring Reverse",
+		"length": 2.95,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 17,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/autumnringreverse.png",
+		"id": 191
+	},
+	"32": {
+		"name": "Bahrain International Circuit - GP",
+		"length": 5.412,
+		"type": "Tarmac - Real",
+		"country": "Bahrain",
+		"corners": 15,
+		"version": "Formula 1 2022",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bahraininternationalcircuit-gp.png",
+		"id": 190
+	},
+	"33": {
+		"name": "Blue Moon Bay Speedway",
+		"length": 3.2,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 3,
+		"version": "Gran Turismo 7",
+		"options": [
+			"N/A"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway.png",
+		"id": 189
+	},
+	"34": {
+		"name": "Blue Moon Bay Speedway - Infield A",
+		"length": 3.35,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 10,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infielda.png",
+		"id": 188
+	},
+	"35": {
+		"name": "Blue Moon Bay Speedway - Infield A Reverse",
+		"length": 3.35,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 10,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infieldareverse.png",
+		"id": 187
+	},
+	"36": {
+		"name": "Blue Moon Bay Speedway - Infield B",
+		"length": 2.68,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 5,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infieldb.png",
+		"id": 186
+	},
+	"37": {
+		"name": "Blue Moon Bay Speedway - Infield B Reverse",
+		"length": 2.68,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 5,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedway-infieldbreverse.png",
+		"id": 185
+	},
+	"38": {
+		"name": "Blue Moon Bay Speedway Reverse",
+		"length": 3.2,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 3,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/bluemoonbayspeedwayreverse.png",
+		"id": 184
+	},
+	"39": {
+		"name": "Brands Hatch - GP",
+		"length": 3.916,
+		"type": "Tarmac - Real",
+		"country": "UK",
+		"corners": 9,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-gp.png",
+		"id": 183
+	},
+	"40": {
+		"name": "Brands Hatch - GP (1980s)",
+		"length": 1.937,
+		"type": "Tarmac - Real",
+		"country": "UK",
+		"corners": 9,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-gp(1980s).png",
+		"id": 182
+	},
+	"41": {
+		"name": "Brands Hatch - Indy",
+		"length": 1.944,
+		"type": "Tarmac - Real",
+		"country": "UK",
+		"corners": 5,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-indy.png",
+		"id": 181
+	},
+	"42": {
+		"name": "Brands Hatch - Indy (1980s)",
+		"length": 1.937,
+		"type": "Tarmac - Real",
+		"country": "UK",
+		"corners": 6,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/brandshatch-indy(1980s).png",
+		"id": 180
+	},
+	"43": {
+		"name": "Broad Bean Raceway",
+		"length": 1.665,
+		"type": "Tarmac - Original",
+		"country": "Japan",
+		"corners": 5,
+		"version": "Gran Turismo 7",
+		"options": [
+			"N/A"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/broadbeanraceway.png",
+		"id": 179
+	},
+	"44": {
+		"name": "Broad Bean Raceway Reverse",
+		"length": 1.665,
+		"type": "Tarmac - Original",
+		"country": "Japan",
+		"corners": 5,
+		"version": "Gran Turismo 7",
+		"options": [
+			"N/A"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/broadbeanracewayreverse.png",
+		"id": 178
+	},
+	"45": {
+		"name": "Cape Ring",
+		"length": 7.07,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 28,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering.png",
+		"id": 177
+	},
+	"46": {
+		"name": "Cape Ring - Inside",
+		"length": 2.475,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 11,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-inside.png",
+		"id": 176
+	},
+	"47": {
+		"name": "Cape Ring - North",
+		"length": 3.839,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 18,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-north.png",
+		"id": 175
+	},
+	"48": {
+		"name": "Cape Ring - Periphery",
+		"length": 4.6,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-periphery.png",
+		"id": 174
+	},
+	"49": {
+		"name": "Cape Ring - South",
+		"length": 3.231,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 12,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/capering-south.png",
+		"id": 173
+	},
+	"50": {
+		"name": "Chamonix - East",
+		"length": 3.219,
+		"type": "Snow - Original",
+		"country": "France",
+		"corners": 10,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-east.png",
+		"id": 172
+	},
+	"51": {
+		"name": "Chamonix - Main",
+		"length": 8.256,
+		"type": "Snow - Original",
+		"country": "France",
+		"corners": 24,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-main.png",
+		"id": 171
+	},
+	"52": {
+		"name": "Chamonix - Mini",
+		"length": 1.593,
+		"type": "Snow - Original",
+		"country": "France",
+		"corners": 6,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-mini.png",
+		"id": 170
+	},
+	"53": {
+		"name": "Chamonix - West",
+		"length": 5.375,
+		"type": "Snow - Original",
+		"country": "France",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix-west.png",
+		"id": 169
+	},
+	"54": {
+		"name": "Chamonix (2000s)",
+		"length": 3.23,
+		"type": "Snow - Original",
+		"country": "France",
+		"corners": 27,
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/chamonix(2000s).png",
+		"id": 168
+	},
+	"55": {
+		"name": "Circuit de Barcelona-Catalunya - Grand Prix",
+		"length": 4.655,
+		"type": "Tarmac - Real",
+		"country": "Spain",
+		"corners": 16,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-grandprix.png",
+		"id": 167
+	},
+	"56": {
+		"name": "Circuit de Barcelona-Catalunya - Grand Prix (No Chicane)",
+		"length": 4.73,
+		"type": "Tarmac - Real",
+		"country": "Spain",
+		"corners": 14,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-grandprix(nochicane).png",
+		"id": 166
+	},
+	"57": {
+		"name": "Circuit de Barcelona-Catalunya - National Layout",
+		"length": 2.977,
+		"type": "Tarmac - Real",
+		"country": "Spain",
+		"corners": 11,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-nationallayout.png",
+		"id": 165
+	},
+	"58": {
+		"name": "Circuit de Barcelona-Catalunya - Rallycross Layout",
+		"length": 1.133,
+		"type": "Dirt - Real",
+		"country": "Spain",
+		"corners": 13,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdebarcelona-catalunya-rallycrosslayout.png",
+		"id": 164
+	},
+	"59": {
+		"name": "Circuit de la Sarthe",
+		"length": 13.629,
+		"type": "Tarmac - Real",
+		"country": "France",
+		"corners": 38,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdelasarthe.png",
+		"id": 163
+	},
+	"60": {
+		"name": "Circuit de la Sarthe (No Chicanes)",
+		"length": 13.567,
+		"type": "Tarmac - Real",
+		"country": "France",
+		"corners": 38,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdelasarthe(nochicanes).png",
+		"id": 162
+	},
+	"61": {
+		"name": "Circuit de Sainte-Croix - A",
+		"length": 9.477,
+		"type": "Tarmac - Original",
+		"country": "France",
+		"corners": 19,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-a.png",
+		"id": 161
+	},
+	"62": {
+		"name": "Circuit de Sainte-Croix - A Reverse",
+		"length": 9.477,
+		"type": "Tarmac - Original",
+		"country": "France",
+		"corners": 19,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-areverse.png",
+		"id": 160
+	},
+	"63": {
+		"name": "Circuit de Sainte-Croix - B",
+		"length": 7.062,
+		"type": "Tarmac - Original",
+		"country": "France",
+		"corners": 14,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-b.png",
+		"id": 159
+	},
+	"64": {
+		"name": "Circuit de Sainte-Croix - B Reverse",
+		"length": 7.062,
+		"type": "Tarmac - Original",
+		"country": "France",
+		"corners": 14,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-breverse.png",
+		"id": 158
+	},
+	"65": {
+		"name": "Circuit de Sainte-Croix - C",
+		"length": 10.825,
+		"type": "Tarmac - Original",
+		"country": "France",
+		"corners": 24,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-c.png",
+		"id": 157
+	},
+	"66": {
+		"name": "Circuit de Sainte-Croix - C Reverse",
+		"length": 10.825,
+		"type": "Tarmac - Original",
+		"country": "France",
+		"corners": 24,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdesainte-croix-creverse.png",
+		"id": 156
+	},
+	"67": {
+		"name": "Circuit de Spa-Francorchamps",
+		"length": 7.004,
+		"type": "Tarmac - Real",
+		"country": "Belgium",
+		"corners": 21,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdespa-francorchamps.png",
+		"id": 155
+	},
+	"68": {
+		"name": "Circuit de Valencia",
+		"length": 4.051,
+		"type": "Tarmac - Real",
+		"country": "Spain",
+		"corners": 14,
+		"version": "Gran Turismo PSP",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitdevalencia.png",
+		"id": 154
+	},
+	"69": {
+		"name": "Circuit Of The Americas - GP",
+		"length": 5.515,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 20,
+		"version": "Formula 1 2022",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitoftheamericas-gp.png",
+		"id": 9
+	},
+	"70": {
+		"name": "Circuito de la Sierra",
+		"length": 27,
+		"type": "Tarmac - Original",
+		"country": "Spain",
+		"corners": 45,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodelasierra.png",
+		"id": 153
+	},
+	"71": {
+		"name": "Circuito de Madrid",
+		"length": 3.388,
+		"type": "Tarmac - City",
+		"country": "Spain",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadrid.png",
+		"id": 152
+	},
+	"72": {
+		"name": "Circuito de Madrid - Mini",
+		"length": 2.125,
+		"type": "Tarmac - City",
+		"country": "Spain",
+		"corners": 5,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadrid-mini.png",
+		"id": 151
+	},
+	"73": {
+		"name": "Circuito de Madrid - Mini Reverse",
+		"length": 2.125,
+		"type": "Tarmac - City",
+		"country": "Spain",
+		"corners": 5,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadrid-minireverse.png",
+		"id": 150
+	},
+	"74": {
+		"name": "Circuito de Madrid Reverse",
+		"length": 3.388,
+		"type": "Tarmac - City",
+		"country": "Spain",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodemadridreverse.png",
+		"id": 149
+	},
+	"75": {
+		"name": "Circuito di Roma",
+		"length": 3.48,
+		"type": "Tarmac - City",
+		"country": "Italy",
+		"corners": 11,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodiroma.png",
+		"id": 148
+	},
+	"76": {
+		"name": "Circuito do Estoril - GP",
+		"length": 4.182,
+		"type": "Tarmac - Real",
+		"country": "Portugal",
+		"corners": 13,
+		"version": "Formula 1 2022",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/circuitodoestoril-gp.png",
+		"id": 10
+	},
+	"77": {
+		"name": "Citta di Aria",
+		"length": 3.4,
+		"type": "Tarmac - City",
+		"country": "Italy",
+		"corners": "N/A",
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/cittadiaria.png",
+		"id": 147
+	},
+	"78": {
+		"name": "Colorado Springs - Lake",
+		"length": 2.99,
+		"type": "Dirt - Original",
+		"country": "USA",
+		"corners": 18,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/coloradosprings-lake.png",
+		"id": 146
+	},
+	"79": {
+		"name": "Colorado Springs - Lake Reverse",
+		"length": 2.99,
+		"type": "Dirt - Original",
+		"country": "USA",
+		"corners": 18,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/coloradosprings-lakereverse.png",
+		"id": 145
+	},
+	"80": {
+		"name": "Complex String",
+		"length": 11.235,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 91,
+		"version": "Gran Turismo 3",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/complexstring.png",
+		"id": 144
+	},
+	"81": {
+		"name": "Costa di Amalfi",
+		"length": 4.07,
+		"type": "Tarmac - City",
+		"country": "Italy",
+		"corners": "N/A",
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/costadiamalfi.png",
+		"id": 143
+	},
+	"82": {
+		"name": "Cote d'Azur",
+		"length": 3.351,
+		"type": "Tarmac - City",
+		"country": "Monaco",
+		"corners": 26,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/coted'azur.png",
+		"id": 142
+	},
+	"83": {
+		"name": "Daytona - International Speedway",
+		"length": 4.023,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 4,
+		"version": "Gran Turismo 7",
+		"options": [
+			null
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/daytona-internationalspeedway.png",
+		"id": 141
+	},
+	"84": {
+		"name": "Daytona - Road Course",
+		"length": 5.729,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 12,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/daytona-roadcourse.png",
+		"id": 140
+	},
+	"85": {
+		"name": "Deep Forest Raceway",
+		"length": 4.249,
+		"type": "Tarmac - Original",
+		"country": "Switzerland",
+		"corners": 18,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestraceway.png",
+		"id": 139
+	},
+	"86": {
+		"name": "Deep Forest Raceway (2010s)",
+		"length": 3.601,
+		"type": "Tarmac - Original",
+		"country": "Switzerland",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestraceway(2010s).png",
+		"id": 138
+	},
+	"87": {
+		"name": "Deep Forest Raceway (2010s) Reverse",
+		"length": 3.601,
+		"type": "Tarmac - Original",
+		"country": "Switzerland",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestraceway(2010s)reverse.png",
+		"id": 137
+	},
+	"88": {
+		"name": "Deep Forest Raceway Reverse",
+		"length": 4.249,
+		"type": "Tarmac - Original",
+		"country": "Switzerland",
+		"corners": 18,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/deepforestracewayreverse.png",
+		"id": 136
+	},
+	"89": {
+		"name": "Donington Park - GP",
+		"length": 4.02,
+		"type": "Tarmac - Real",
+		"country": "UK",
+		"corners": 11,
+		"version": "Formula 1 2022",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/doningtonpark-gp.png",
+		"id": 8
+	},
+	"90": {
+		"name": "Dragon Trail - Gardens",
+		"length": 4.352,
+		"type": "Tarmac - Original",
+		"country": "Croatia",
+		"corners": 17,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-gardens.png",
+		"id": 135
+	},
+	"91": {
+		"name": "Dragon Trail - Gardens Reverse",
+		"length": 4.352,
+		"type": "Tarmac - Original",
+		"country": "Croatia",
+		"corners": 17,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-gardensreverse.png",
+		"id": 134
+	},
+	"92": {
+		"name": "Dragon Trail - Seaside",
+		"length": 5.209,
+		"type": "Tarmac - Original",
+		"country": "Croatia",
+		"corners": 18,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-seaside.png",
+		"id": 133
+	},
+	"93": {
+		"name": "Dragon Trail - Seaside Reverse",
+		"length": 5.209,
+		"type": "Tarmac - Original",
+		"country": "Croatia",
+		"corners": 18,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/dragontrail-seasidereverse.png",
+		"id": 132
+	},
+	"94": {
+		"name": "Driving Park - Beginner Course",
+		"length": 0.77,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 5,
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/drivingpark-beginnercourse.png",
+		"id": 131
+	},
+	"95": {
+		"name": "Driving Park - Motorland",
+		"length": 1.34,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 9,
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/drivingpark-motorland.png",
+		"id": 130
+	},
+	"96": {
+		"name": "Driving Park - Test Course",
+		"length": 10.35,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 2,
+		"version": "Gran Turismo 4",
+		"options": [
+			"N/A"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/drivingpark-testcourse.png",
+		"id": 129
+	},
+	"97": {
+		"name": "Eiger Nordwand - Short Track",
+		"length": 2.436,
+		"type": "Tarmac - Original",
+		"country": "Switzerland",
+		"corners": 11,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/eigernordwand-shorttrack.png",
+		"id": 128
+	},
+	"98": {
+		"name": "Eiger Nordwand - Short Track Reverse",
+		"length": 2.436,
+		"type": "Tarmac - Original",
+		"country": "Switzerland",
+		"corners": 11,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/eigernordwand-shorttrackreverse.png",
+		"id": 127
+	},
+	"99": {
+		"name": "El Capitan",
+		"length": 4.787,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 20,
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/elcapitan.png",
+		"id": 126
+	},
+	"100": {
+		"name": "Fishermans Ranch",
+		"length": 6.893,
+		"type": "Dirt - Original",
+		"country": "USA",
+		"corners": 40,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fishermansranch.png",
+		"id": 125
+	},
+	"101": {
+		"name": "Fishermans Ranch Reverse",
+		"length": 6.893,
+		"type": "Dirt - Original",
+		"country": "USA",
+		"corners": 40,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fishermansranchreverse.png",
+		"id": 124
+	},
+	"102": {
+		"name": "Fuji International Speedway",
+		"length": 4.563,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 16,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway.png",
+		"id": 123
+	},
+	"103": {
+		"name": "Fuji International Speedway - Short",
+		"length": 4.526,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 14,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway-short.png",
+		"id": 122
+	},
+	"104": {
+		"name": "Fuji International Speedway (1980s)",
+		"length": 4.36,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 8,
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway(1980s).png",
+		"id": 121
+	},
+	"105": {
+		"name": "Fuji International Speedway (1990s)",
+		"length": 4.469,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 12,
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/fujiinternationalspeedway(1990s).png",
+		"id": 120
+	},
+	"106": {
+		"name": "George V Paris",
+		"length": 2.46,
+		"type": "Tarmac - City",
+		"country": "France",
+		"corners": "N/A",
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/georgevparis.png",
+		"id": 119
+	},
+	"107": {
+		"name": "Goodwood Motor Circuit",
+		"length": 3.809,
+		"type": "Tarmac - Real",
+		"country": "UK",
+		"corners": 7,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/goodwoodmotorcircuit.png",
+		"id": 118
+	},
+	"108": {
+		"name": "Gran Turismo Arena",
+		"length": 0.668,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 9,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/granturismoarena.png",
+		"id": 117
+	},
+	"109": {
+		"name": "Gran Turismo Arena Reverse",
+		"length": 0.668,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 9,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/granturismoarenareverse.png",
+		"id": 116
+	},
+	"110": {
+		"name": "Grand Valley - East",
+		"length": 2.998,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 11,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-east.png",
+		"id": 115
+	},
+	"111": {
+		"name": "Grand Valley - East Reverse",
+		"length": 2.998,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 11,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-eastreverse.png",
+		"id": 114
+	},
+	"112": {
+		"name": "Grand Valley - Highway 1",
+		"length": 5.102,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 18,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-highway1.png",
+		"id": 113
+	},
+	"113": {
+		"name": "Grand Valley - Highway 1 Reverse",
+		"length": 5.102,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 18,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-highway1reverse.png",
+		"id": 112
+	},
+	"114": {
+		"name": "Grand Valley - South",
+		"length": 3.074,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 10,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-south.png",
+		"id": 111
+	},
+	"115": {
+		"name": "Grand Valley - South Reverse",
+		"length": 3.074,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 10,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-southreverse.png",
+		"id": 110
+	},
+	"116": {
+		"name": "Grand Valley - Speedway",
+		"length": 4.945,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 18,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-speedway.png",
+		"id": 109
+	},
+	"117": {
+		"name": "Grand Valley - Speedway Reverse",
+		"length": 4.945,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 18,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grandvalley-speedwayreverse.png",
+		"id": 108
+	},
+	"118": {
+		"name": "Grindelwald",
+		"length": 3.462,
+		"type": "Tarmac - Original",
+		"country": "Switzerland",
+		"corners": 22,
+		"version": "Gran Turismo 2",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/grindelwald.png",
+		"id": 107
+	},
+	"119": {
+		"name": "High Speed Ring",
+		"length": 4.345,
+		"type": "Tarmac - Original",
+		"country": "Japan",
+		"corners": 6,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedring.png",
+		"id": 106
+	},
+	"120": {
+		"name": "High Speed Ring (2010s)",
+		"length": 4,
+		"type": "Tarmac - Original",
+		"country": "Japan",
+		"corners": 6,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedring(2010s).png",
+		"id": 105
+	},
+	"121": {
+		"name": "High Speed Ring (2010s) Reverse",
+		"length": 4,
+		"type": "Tarmac - Original",
+		"country": "Japan",
+		"corners": 6,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedring(2010s)reverse.png",
+		"id": 104
+	},
+	"122": {
+		"name": "High Speed Ring Reverse",
+		"length": 4.345,
+		"type": "Tarmac - Original",
+		"country": "Japan",
+		"corners": 6,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/highspeedringreverse.png",
+		"id": 103
+	},
+	"123": {
+		"name": "Hockenheimring - GP",
+		"length": 4.574,
+		"type": "Tarmac - Real",
+		"country": "Germany",
+		"corners": 17,
+		"version": "Formula 1 2022",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/hockenheimring-gp.png",
+		"id": 6
+	},
+	"124": {
+		"name": "Hong Kong Circuit",
+		"length": 2.91,
+		"type": "Tarmac - City",
+		"country": "Hong Kong",
+		"corners": "N/A",
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/hongkongcircuit.png",
+		"id": 102
+	},
+	"125": {
+		"name": "Hungaroring",
+		"length": 4.02,
+		"type": "Tarmac - Real",
+		"country": "Hungary",
+		"corners": 14,
+		"version": "Formula 1 2022",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/hungaroring.png",
+		"id": 7
+	},
+	"126": {
+		"name": "Indianapolis - Motor Speedway",
+		"length": 4.023,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 4,
+		"version": "Gran Turismo 6",
+		"options": [
+			"N/A"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/indianapolis-motorspeedway.png",
+		"id": 101
+	},
+	"127": {
+		"name": "Indianapolis - Road Course",
+		"length": 4.192,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 13,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/indianapolis-roadcourse.png",
+		"id": 100
+	},
+	"128": {
+		"name": "Infineon Raceway - Sports Car Course",
+		"length": 4.06,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 12,
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/infineonraceway-sportscarcourse.png",
+		"id": 99
+	},
+	"129": {
+		"name": "Infineon Raceway - Stock Car Course",
+		"length": 3.202,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 10,
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/infineonraceway-stockcarcourse.png",
+		"id": 98
+	},
+	"130": {
+		"name": "Jeddah Corniche Circuit - GP",
+		"length": 6.175,
+		"type": "Tarmac - Real",
+		"country": "Saudi Arabia",
+		"corners": 27,
+		"version": "Formula 1 2022",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/jeddahcornichecircuit-gp.png",
+		"id": 5
+	},
+	"131": {
+		"name": "Kyoto Driving Park - Full Course",
+		"length": 6.846,
+		"type": "Tarmac - Original",
+		"country": "Japan",
+		"corners": 19,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-fullcourse.png",
+		"id": 97
+	},
+	"132": {
+		"name": "Kyoto Driving Park - Full Course Reverse",
+		"length": 6.846,
+		"type": "Tarmac - Original",
+		"country": "Japan",
+		"corners": 19,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-fullcoursereverse.png",
+		"id": 96
+	},
+	"133": {
+		"name": "Kyoto Driving Park - Miyabi",
+		"length": 1.953,
+		"type": "Tarmac - Original",
+		"country": "Japan",
+		"corners": 7,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-miyabi.png",
+		"id": 95
+	},
+	"134": {
+		"name": "Kyoto Driving Park - Yamagiwa",
+		"length": 4.912,
+		"type": "Tarmac - Original",
+		"country": "Japan",
+		"corners": 15,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-yamagiwa.png",
+		"id": 94
+	},
+	"135": {
+		"name": "Kyoto Driving Park - Yamagiwa Reverse",
+		"length": 4.912,
+		"type": "Tarmac - Original",
+		"country": "Japan",
+		"corners": 7,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/kyotodrivingpark-yamagiwareverse.png",
+		"id": 93
+	},
+	"136": {
+		"name": "Lake Louise - Long Track",
+		"length": 3.694,
+		"type": "Snow - Original",
+		"country": "Canada",
+		"corners": 11,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-longtrack.png",
+		"id": 92
+	},
+	"137": {
+		"name": "Lake Louise - Long Track Reverse",
+		"length": 3.694,
+		"type": "Snow - Original",
+		"country": "Canada",
+		"corners": 11,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-longtrackreverse.png",
+		"id": 91
+	},
+	"138": {
+		"name": "Lake Louise - Short Track",
+		"length": 2.577,
+		"type": "Snow - Original",
+		"country": "Canada",
+		"corners": 7,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-shorttrack.png",
+		"id": 90
+	},
+	"139": {
+		"name": "Lake Louise - Short Track Reverse",
+		"length": 2.577,
+		"type": "Snow - Original",
+		"country": "Canada",
+		"corners": 7,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-shorttrackreverse.png",
+		"id": 89
+	},
+	"140": {
+		"name": "Lake Louise - Tri-Oval",
+		"length": 3.068,
+		"type": "Snow - Original",
+		"country": "Canada",
+		"corners": 3,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-tri-oval.png",
+		"id": 88
+	},
+	"141": {
+		"name": "Lake Louise - Tri-Oval Reverse",
+		"length": 3.068,
+		"type": "Snow - Original",
+		"country": "Canada",
+		"corners": 3,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/lakelouise-tri-ovalreverse.png",
+		"id": 87
+	},
+	"142": {
+		"name": "London Circuit",
+		"length": 1.921,
+		"type": "Tarmac - City",
+		"country": "UK",
+		"corners": 8,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/londoncircuit.png",
+		"id": 86
+	},
+	"143": {
+		"name": "London Circuit Reverse",
+		"length": 1.921,
+		"type": "Tarmac - City",
+		"country": "UK",
+		"corners": 8,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/londoncircuitreverse.png",
+		"id": 85
+	},
+	"144": {
+		"name": "Matterhorn - Dristelen",
+		"length": 3.214,
+		"type": "Tarmac - Original",
+		"country": "Switzerland",
+		"corners": 10,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-dristelen.png",
+		"id": 84
+	},
+	"145": {
+		"name": "Matterhorn - Riffelsee",
+		"length": 3.301,
+		"type": "Tarmac - Original",
+		"country": "Switzerland",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-riffelsee.png",
+		"id": 83
+	},
+	"146": {
+		"name": "Matterhorn - Rotenboden",
+		"length": 3.577,
+		"type": "Tarmac - Original",
+		"country": "Switzerland",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-rotenboden.png",
+		"id": 82
+	},
+	"147": {
+		"name": "Matterhorn - Short",
+		"length": 0.771,
+		"type": "Tarmac - Original",
+		"country": "Switzerland",
+		"corners": 6,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/matterhorn-short.png",
+		"id": 81
+	},
+	"148": {
+		"name": "Michelin Raceway Road Atlanta",
+		"length": 4.088,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 12,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/michelinracewayroadatlanta.png",
+		"id": 80
+	},
+	"149": {
+		"name": "Mid-Field Raceway",
+		"length": 3.562,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 14,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/mid-fieldraceway.png",
+		"id": 79
+	},
+	"150": {
+		"name": "Mid-Field Raceway Reverse",
+		"length": 3.562,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 14,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/mid-fieldracewayreverse.png",
+		"id": 78
+	},
+	"151": {
+		"name": "Mount Panorama Circuit",
+		"length": 6.213,
+		"type": "Tarmac - Real",
+		"country": "Australia",
+		"corners": 23,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/mountpanoramacircuit.png",
+		"id": 77
+	},
+	"152": {
+		"name": "New York Circuit",
+		"length": 4.12,
+		"type": "Tarmac - City",
+		"country": "USA",
+		"corners": "N/A",
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/newyorkcircuit.png",
+		"id": 76
+	},
+	"153": {
+		"name": "Northern Isle Speedway",
+		"length": 0.858,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 4,
+		"version": "Gran Turismo 7",
+		"options": [
+			"N/A"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/northernislespeedway.png",
+		"id": 75
+	},
+	"154": {
+		"name": "Nurburgring - 24h",
+		"length": 25.378,
+		"type": "Tarmac - Real",
+		"country": "Germany",
+		"corners": 89,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgring-24h.png",
+		"id": 74
+	},
+	"155": {
+		"name": "Nurburgring - Endurance",
+		"length": 23.867,
+		"type": "Tarmac - Real",
+		"country": "Germany",
+		"corners": 85,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgring-endurance.png",
+		"id": 73
+	},
+	"156": {
+		"name": "Nurburgring - GP",
+		"length": 5.148,
+		"type": "Tarmac - Real",
+		"country": "Germany",
+		"corners": 17,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgring-gp.png",
+		"id": 72
+	},
+	"157": {
+		"name": "Nurburgring - Nordschleife",
+		"length": 20.832,
+		"type": "Tarmac - Real",
+		"country": "Germany",
+		"corners": 73,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgring-nordschleife.png",
+		"id": 71
+	},
+	"158": {
+		"name": "Nurburgring - Sprint",
+		"length": 3.637,
+		"type": "Tarmac - Real",
+		"country": "Germany",
+		"corners": 12,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/nurburgring-sprint.png",
+		"id": 70
+	},
+	"159": {
+		"name": "Opera Paris",
+		"length": 2.91,
+		"type": "Tarmac - City",
+		"country": "France",
+		"corners": 18,
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/operaparis.png",
+		"id": 69
+	},
+	"160": {
+		"name": "Pikes Peak International Hill Climb",
+		"length": 19.988,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 156,
+		"version": "Rally",
+		"options": [
+			"Drift",
+			"Sprint"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/pikespeakinternationalhillclimb.png",
+		"id": 4
+	},
+	"161": {
+		"name": "Red Bull Ring",
+		"length": 4.318,
+		"type": "Tarmac - Real",
+		"country": "Austria",
+		"corners": 10,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/redbullring.png",
+		"id": 68
+	},
+	"162": {
+		"name": "Red Bull Ring - Short Track",
+		"length": 2.336,
+		"type": "Tarmac - Real",
+		"country": "Austria",
+		"corners": 6,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/redbullring-shorttrack.png",
+		"id": 67
+	},
+	"163": {
+		"name": "Red Rock Valley Speedway",
+		"length": 4.1,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 8,
+		"version": "Gran Turismo 2",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/redrockvalleyspeedway.png",
+		"id": 66
+	},
+	"164": {
+		"name": "Rome Circuit",
+		"length": 3.957,
+		"type": "Tarmac - City",
+		"country": "Italy",
+		"corners": 13,
+		"version": "Gran Turismo 3",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/romecircuit.png",
+		"id": 65
+	},
+	"165": {
+		"name": "Sardegna - Road Track A",
+		"length": 5.113,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 15,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtracka.png",
+		"id": 64
+	},
+	"166": {
+		"name": "Sardegna - Road Track A Reverse",
+		"length": 5.113,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 15,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackareverse.png",
+		"id": 63
+	},
+	"167": {
+		"name": "Sardegna - Road Track B",
+		"length": 3.893,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 13,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackb.png",
+		"id": 62
+	},
+	"168": {
+		"name": "Sardegna - Road Track B Reverse",
+		"length": 3.893,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 13,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackbreverse.png",
+		"id": 61
+	},
+	"169": {
+		"name": "Sardegna - Road Track C",
+		"length": 2.661,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 10,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackc.png",
+		"id": 60
+	},
+	"170": {
+		"name": "Sardegna - Road Track C Reverse",
+		"length": 2.661,
+		"type": "Tarmac - Original",
+		"country": "Italy",
+		"corners": 10,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-roadtrackcreverse.png",
+		"id": 59
+	},
+	"171": {
+		"name": "Sardegna - Windmills",
+		"length": 3.31,
+		"type": "Dirt - Original",
+		"country": "Italy",
+		"corners": 14,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-windmills.png",
+		"id": 58
+	},
+	"172": {
+		"name": "Sardegna - Windmills Reverse",
+		"length": 3.31,
+		"type": "Dirt - Original",
+		"country": "Italy",
+		"corners": 14,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sardegna-windmillsreverse.png",
+		"id": 57
+	},
+	"173": {
+		"name": "Seattle - Long Circuit",
+		"length": 3.81,
+		"type": "Tarmac - City",
+		"country": "USA",
+		"corners": "N/A",
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/seattle-longcircuit.png",
+		"id": 56
+	},
+	"174": {
+		"name": "Seattle - Short Circuit",
+		"length": 2.179,
+		"type": "Tarmac - City",
+		"country": "USA",
+		"corners": 11,
+		"version": "Gran Turismo 2",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/seattle-shortcircuit.png",
+		"id": 55
+	},
+	"175": {
+		"name": "Seoul Central",
+		"length": 2.72,
+		"type": "Tarmac - City",
+		"country": "South Korea",
+		"corners": "N/A",
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/seoulcentral.png",
+		"id": 54
+	},
+	"176": {
+		"name": "Sepang International Circuit",
+		"length": 5.543,
+		"type": "Tarmac - Real",
+		"country": "Malaysia",
+		"corners": 15,
+		"version": "Formula 1 2022",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sepanginternationalcircuit.png",
+		"id": 3
+	},
+	"177": {
+		"name": "Sepang International Circuit - North",
+		"length": 2.706,
+		"type": "Tarmac - Real",
+		"country": "Malaysia",
+		"corners": 9,
+		"version": "Formula 1 2022",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sepanginternationalcircuit-north.png",
+		"id": 2
+	},
+	"178": {
+		"name": "Silverstone - GP",
+		"length": 3.66,
+		"type": "Tarmac - Real",
+		"country": "UK",
+		"corners": 18,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-gp.png",
+		"id": 53
+	},
+	"179": {
+		"name": "Silverstone - International Circuit",
+		"length": 2.978,
+		"type": "Tarmac - Real",
+		"country": "UK",
+		"corners": 9,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-internationalcircuit.png",
+		"id": 52
+	},
+	"180": {
+		"name": "Silverstone - National Circuit",
+		"length": 2.639,
+		"type": "Tarmac - Real",
+		"country": "UK",
+		"corners": 6,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-nationalcircuit.png",
+		"id": 51
+	},
+	"181": {
+		"name": "Silverstone - Stowe Circuit",
+		"length": 1.738,
+		"type": "Tarmac - Real",
+		"country": "UK",
+		"corners": 9,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/silverstone-stowecircuit.png",
+		"id": 50
+	},
+	"182": {
+		"name": "Special Stage Route 11",
+		"length": 4.561,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 21,
+		"version": "Gran Turismo 3",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute11.png",
+		"id": 49
+	},
+	"183": {
+		"name": "Special Stage Route 5",
+		"length": 3.787,
+		"type": "Tarmac - City",
+		"country": "PDI",
+		"corners": 16,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5.png",
+		"id": 48
+	},
+	"184": {
+		"name": "Special Stage Route 5 - Clubman",
+		"length": 2.46,
+		"type": "Tarmac - City",
+		"country": "PDI",
+		"corners": 9,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5-clubman.png",
+		"id": 47
+	},
+	"185": {
+		"name": "Special Stage Route 5 - Clubman Reverse",
+		"length": 2.46,
+		"type": "Tarmac - City",
+		"country": "PDI",
+		"corners": 9,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5-clubmanreverse.png",
+		"id": 46
+	},
+	"186": {
+		"name": "Special Stage Route 5 Reverse",
+		"length": 3.787,
+		"type": "Tarmac - City",
+		"country": "PDI",
+		"corners": 16,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute5reverse.png",
+		"id": 45
+	},
+	"187": {
+		"name": "Special Stage Route 7",
+		"length": 23.28,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 24,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute7.png",
+		"id": 44
+	},
+	"188": {
+		"name": "Special Stage Route X",
+		"length": 30.283,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 2,
+		"version": "Gran Turismo 7",
+		"options": [
+			"N/A"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroutex.png",
+		"id": 43
+	},
+	"189": {
+		"name": "Super Speedway",
+		"length": 2.406,
+		"type": "Tarmac - Original",
+		"country": "PDI",
+		"corners": 2,
+		"version": "Gran Turismo 3",
+		"options": [
+			"N/A"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/superspeedway.png",
+		"id": 42
+	},
+	"190": {
+		"name": "Suzuka Circuit",
+		"length": 5.807,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 20,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/suzukacircuit.png",
+		"id": 41
+	},
+	"191": {
+		"name": "Suzuka Circuit - East",
+		"length": 2.243,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 9,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/suzukacircuit-east.png",
+		"id": 40
+	},
+	"192": {
+		"name": "Suzuka Circuit - West",
+		"length": 2.243,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 9,
+		"version": "Gran Turismo 4",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/suzukacircuit-west.png",
+		"id": 39
+	},
+	"193": {
+		"name": "Tahiti Road",
+		"length": 3.347,
+		"type": "Tarmac - Original",
+		"country": "Tahiti",
+		"corners": 12,
+		"version": "Gran Turismo 2",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tahitiroad.png",
+		"id": 38
+	},
+	"194": {
+		"name": "Tokyo Expressway - Central Clockwise",
+		"length": 4.405,
+		"type": "Tarmac - City",
+		"country": "Japan",
+		"corners": 13,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-centralclockwise.png",
+		"id": 37
+	},
+	"195": {
+		"name": "Tokyo Expressway - Central Counterclockwise",
+		"length": 4.369,
+		"type": "Tarmac - City",
+		"country": "Japan",
+		"corners": 14,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-centralcounterclockwise.png",
+		"id": 36
+	},
+	"196": {
+		"name": "Tokyo Expressway - East Clockwise",
+		"length": 7.301,
+		"type": "Tarmac - City",
+		"country": "Japan",
+		"corners": 13,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-eastclockwise.png",
+		"id": 35
+	},
+	"197": {
+		"name": "Tokyo Expressway - East Counterclockwise",
+		"length": 7.192,
+		"type": "Tarmac - City",
+		"country": "Japan",
+		"corners": 13,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-eastcounterclockwise.png",
+		"id": 34
+	},
+	"198": {
+		"name": "Tokyo Expressway - South Clockwise",
+		"length": 5.201,
+		"type": "Tarmac - City",
+		"country": "Japan",
+		"corners": 17,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-southclockwise.png",
+		"id": 33
+	},
+	"199": {
+		"name": "Tokyo Expressway - South Counterclockwise",
+		"length": 6.56,
+		"type": "Tarmac - City",
+		"country": "Japan",
+		"corners": 16,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyoexpressway-southcounterclockwise.png",
+		"id": 32
+	},
+	"200": {
+		"name": "Tokyo R246",
+		"length": 5.117,
+		"type": "Tarmac - City",
+		"country": "Japan",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyor246.png",
+		"id": 31
+	},
+	"201": {
+		"name": "Tokyo R246 Reverse",
+		"length": 5.117,
+		"type": "Tarmac - City",
+		"country": "Japan",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tokyor246reverse.png",
+		"id": 30
+	},
+	"202": {
+		"name": "Top Gear - Test Track",
+		"length": 2.82,
+		"type": "Tarmac - Real",
+		"country": "UK",
+		"corners": 12,
+		"version": "Gran Turismo 5",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/topgear-testtrack.png",
+		"id": 29
+	},
+	"203": {
+		"name": "Toscana",
+		"length": 3.411,
+		"type": "Dirt - Real",
+		"country": "Italy",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/toscana.png",
+		"id": 28
+	},
+	"204": {
+		"name": "Toscana Reverse",
+		"length": 3.411,
+		"type": "Dirt - Real",
+		"country": "Italy",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/toscanareverse.png",
+		"id": 27
+	},
+	"205": {
+		"name": "Trial Mountain Circuit",
+		"length": 5.44,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 15,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuit.png",
+		"id": 26
+	},
+	"206": {
+		"name": "Trial Mountain Circuit (2010s)",
+		"length": 3.983,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuit(2010s).png",
+		"id": 25
+	},
+	"207": {
+		"name": "Trial Mountain Circuit (2010s) Reverse",
+		"length": 3.983,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 15,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuit(2010s)reverse.png",
+		"id": 24
+	},
+	"208": {
+		"name": "Trial Mountain Circuit Reverse",
+		"length": 5.44,
+		"type": "Tarmac - Original",
+		"country": "USA",
+		"corners": 15,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/trialmountaincircuitreverse.png",
+		"id": 23
+	},
+	"209": {
+		"name": "Tsukuba Circuit",
+		"length": 2.045,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 8,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/tsukubacircuit.png",
+		"id": 22
+	},
+	"210": {
+		"name": "Twin Ring Motegi - East",
+		"length": 3.422,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 11,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-east.png",
+		"id": 21
+	},
+	"211": {
+		"name": "Twin Ring Motegi - Road Course",
+		"length": 4.801,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 14,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-roadcourse.png",
+		"id": 20
+	},
+	"212": {
+		"name": "Twin Ring Motegi - Super Speedway",
+		"length": 2.413,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 6,
+		"version": "Gran Turismo 6",
+		"options": [
+			"N/A"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-superspeedway.png",
+		"id": 19
+	},
+	"213": {
+		"name": "Twin Ring Motegi - West",
+		"length": 1.49,
+		"type": "Tarmac - Real",
+		"country": "Japan",
+		"corners": 6,
+		"version": "Gran Turismo 6",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/twinringmotegi-west.png",
+		"id": 18
+	},
+	"214": {
+		"name": "Watkins Glen International",
+		"length": 5.423,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 11,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/watkinsgleninternational.png",
+		"id": 17
+	},
+	"215": {
+		"name": "Watkins Glen International - Short Course",
+		"length": 3.943,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 7,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/watkinsgleninternational-shortcourse.png",
+		"id": 16
+	},
+	"216": {
+		"name": "WeatherTech Raceway Laguna Seca",
+		"length": 3.602,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 11,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/weathertechracewaylagunaseca.png",
+		"id": 15
+	},
+	"217": {
+		"name": "Willow Springs - Big Willow",
+		"length": 3.951,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 10,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-bigwillow.png",
+		"id": 14
+	},
+	"218": {
+		"name": "Willow Springs - Horse Thief Mile",
+		"length": 1.624,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 11,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-horsethiefmile.png",
+		"id": 13
+	},
+	"219": {
+		"name": "Willow Springs - Horse Thief Mile Reverse",
+		"length": 1.624,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 11,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-horsethiefmilereverse.png",
+		"id": 12
+	},
+	"220": {
+		"name": "Willow Springs - Streets of Willow",
+		"length": 2.675,
+		"type": "Tarmac - Real",
+		"country": "USA",
+		"corners": 14,
+		"version": "Gran Turismo 7",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/willowsprings-streetsofwillow.png",
+		"id": 11
+	},
+	"221": {
+		"name": "Zandvoort Circuit - GP",
+		"length": 4.259,
+		"type": "Tarmac - Real",
+		"country": "Netherlands",
+		"corners": 14,
+		"version": "Formula 1 2022",
+		"options": [
+			"Drift"
+		],
+		"pattern": [
+			"⬜",
+			"⬜"
+		],
+		"image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/zandvoortcircuit-gp.png",
+		"id": 1
+	}
 }

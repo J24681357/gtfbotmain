@@ -475,7 +475,7 @@ module.exports.audit = async function() {
 
   }
   gtf_CONSOLELOG.reverse();
-  gtf_CONSOLELOG.fill(0, 0, 255);
+  gtf_CONSOLELOG.fill(100, 100, 255);
   console.log("Parts updated.")
   gtf_CONSOLELOG.end();
   fs.writeFile("./jsonfiles/gtfpartlist.json", require("json-format")(parts), function(err) {

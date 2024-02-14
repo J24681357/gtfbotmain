@@ -53,7 +53,7 @@ client.on("ready", () => {
   }
 
 gtf_CONSOLELOG.reverse();
-gtf_CONSOLELOG.fill(0, 0, 255);
+  gtf_CONSOLELOG.fill(100, 100, 255);
 
 console.log("Time elapsed: " + timeelapsed + " " + "ms");
 gtf_CONSOLELOG.end();
