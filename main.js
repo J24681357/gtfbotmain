@@ -1,5 +1,5 @@
 //Functions
-require(__dirname + "/gtfbot2unleahsed/" + "files/directories.js");
+require(__dirname + "/gtfbot2unleahsed/" + "files/directories");
 require(__dirname + "/gtfmanager/" + "files/directories");
 
 require(__dirname + "/gtfbot2unleahsed/index.js");

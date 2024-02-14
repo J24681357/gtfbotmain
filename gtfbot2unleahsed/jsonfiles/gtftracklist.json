@@ -3721,6 +3721,40 @@
     ],
     "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/pikespeakinternationalhillclimb.png",
     "id": 3
+  },
+
+   "219": {
+    "name": "Sepang International Circuit",
+    "length": 5.543,
+    "type": "Tarmac - Real",
+    "country": "Malaysia",
+    "corners": 15,
+    "version": "Formula 1 2022",
+    "options": [
+      "Drift"
+    ],
+    "pattern": [
+      "⬜",
+      "⬜"
+    ],
+    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sepanginternationalcircuit.png",
+    "id": 3
+  },
+   "220": {
+    "name": "Sepang International Circuit - North",
+    "length": 2.706,
+    "type": "Tarmac - Real",
+    "country": "Malaysia",
+    "corners": 9,
+    "version": "Formula 1 2022",
+    "options": [
+      "Drift"
+    ],
+    "pattern": [
+      "⬜",
+      "⬜"
+    ],
+    "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/sepanginternationalcircuit-north.png",
+    "id": 3
   }
 }
-

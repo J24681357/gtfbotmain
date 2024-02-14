@@ -39,7 +39,7 @@ module.exports.lobbyConfig = function (setting, changes, lobby, pageargs, embed,
 
   if (setting.includes("track")) {
     pageargs["list"] = gtf_TRACKS
-      .find({})
+      .find({versions: ["Gran Turismo"]})
       .map(x => x["name"] + " `" + x["type"] + "`");
     listapply = function () {
       embed.setTitle("__Tracks (" + pageargs["list"].length + " Tracks)__");
