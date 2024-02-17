@@ -180,6 +180,10 @@ module.exports = {
       } else if (percentage >= 90) {
         rating = "Sub-Zero"
       }
+
+      if (isNaN(percentage)) {
+        percentage = 0
+      }
       return [percentage, rating]
     }
 
