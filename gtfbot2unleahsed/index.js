@@ -47,10 +47,7 @@ client.on("ready", () => {
   //gtf_TOOLS.updateallsaves("GTF2SAVES", {"fppupdate": true})
   timeelapsed = parseInt(new Date().getTime()) - parseInt(datebot);
   
-  if (timeelapsed >= 20000) {
-    restartbot()
-    //console.log(keep);
-  }
+
 
 gtf_CONSOLELOG.reverse();
   gtf_CONSOLELOG.fill(100, 100, 255);

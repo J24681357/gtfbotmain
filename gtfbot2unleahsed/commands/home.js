@@ -99,7 +99,7 @@ module.exports = {
             name: "News / Announcements",
             extra: "",
             button_id: 0
-      });
+    });
 
     var buttons = gtf_TOOLS.prepareButtons(emojilist, msg, userdata);
     ///

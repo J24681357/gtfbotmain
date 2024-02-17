@@ -36,74 +36,142 @@ module.exports = {
 
     embed.setTitle("⚙ __GTF Settings__");
 
-    if (query["options"] == "list") {
-      delete query["number"]
-        var units = ["Kilometers", "Miles"];
-        var enabled = ["Disabled", "Enabled"]
-        var menutype = ["Arrows", "Numbers"]
-        var gridname = ["Car", "Driver"]
-      var list = [
-         "__**Embed Color**__ " + "`" + userdata["settings"]["COLOR"] + "`",
-        "__**Dealership Catalog Sort**__ " + "`" + userdata["settings"]["DEALERSORT"] + "`",
-        "__**Garage Sort**__ " + "`" + userdata["settings"]["GARAGESORT"] + "`",
-        "__**Grid Display Names**__ " + "`" + gridname[userdata["settings"]["GRIDNAME"]] + "`",
-        "__**Menu Icons**__ " + userdata["settings"]["ICONS"]["select"] + " " + userdata["settings"]["ICONS"]["bar"].join(" "),
-        "__**Menu Selector**__ " + 
- "`" + menutype[userdata["settings"]["MENUSELECT"]] + "`",
-        "__**Metric Units**__ " + "`" + units[userdata["settings"]["UNITS"]] + "`",
-        "__**Daily Workout - Time Zone Offset**__ " + "`"+ userdata["settings"]["TIMEOFFSET"] + "`",
-        "__**Messages**__ " + 
-"`" + enabled[userdata["settings"]["MESSAGES"]] + "`",
-        "🔁 __**Reset To Default Settings**__ ",
-        "⭕ __**Delete Save Data**__ ",
-  ];
+        var settingslist = [
+          {
+          name: "Embed Color",
+          emoji: "⚙",
+          extra: "",
+          description: "Select a color for embeds.",
+          menu_id: 0
+  },
+    {
+          name: "GTF Dealership Sort",
+          emoji: "⚙",
+          extra: "",
+          description: "Select a global setting for sorting car lists in dealership menus.",
+          menu_id: 1
+          },
 
-      pageargs["list"] = list;
-      if (typeof query["extra"] !== "undefined") {
-        pageargs["footer"] = "✅ " + query["extra"]
-        query["extra"] = ""
-      }
-      pageargs["text"] = gtf_TOOLS.formPage(pageargs, userdata);
-      pageargs["selector"] = "options"
-      pageargs["query"] = query
-      gtf_TOOLS.formPages(pageargs, embed, msg, userdata);
-      return;
-    }
+          {
+            name: "GTF Garage Sort",
+            emoji: "⚙",
+            extra: "",
+            description: "Select a global setting for sorting your garage in the GTF garage.",
+            menu_id: 2
+            },
 
-    if (!isNaN(query["options"])) {
-  query["options"] = ["color", "dealersort", "garagesort", "displaygrid", "icons", "menuselect", "units", "time", "messages", "reset", "deletesavedata"][parseInt(query["options"]) - 1]
-    }
-      if (query["options"] == "deletesavedata") {
-      var emojilist = [
-  { emoji: gtf_EMOTE.yes, 
-  emoji_name: 'Yes', 
-  name: 'Confirm', 
-  extra: "Once",
-  button_id: 0 }]
-    var buttons = gtf_TOOLS.prepareButtons(emojilist, msg, userdata);
+          {
+            name: "Metric Units",
+            emoji: "⚙",
+            extra: "",
+            description: "Select metric units.",
+            menu_id: 3
+            },
+          {
+            name: "Grid Display Names",
+            emoji: "⚙",
+            extra: "",
+            description: "Select the type of names to display for AI opponents.",
+            menu_id: 4
+            },
+          {
+            name: "Menu Icons",
+            emoji: "⚙",
+            extra: "",
+            description: "Select theme icons that as a menu selector and progress bars.",
+            menu_id: 5
+            },
+          {
+            name: "Navigation Menu Type",
+            emoji: "⚙",
+            extra: "",
+            description: "Select a button method to navigate through most menus.",
+            menu_id: 6
+            },
+          {
+            name: "Set Time Zone",
+            emoji: "⚙",
+            extra: "",
+            description: "Select a time zone corresponding to your current time (Military).",
+            menu_id: 7
+            },
+          {
+            name: "Career/Info Messages",
+            emoji: "⚙",
+            extra: "",
+            description: "Enable or disable messages from commands & main characters.",
+            menu_id: 8
+            },
+          {
+            name: "Reset To Default Settings",
+            emoji: "🔄",
+            extra: "",
+            description: "Reset all settings to default.",
+            menu_id: 9
+            },
+          {
+            name: "Delete Save Data",
+            emoji: "🔴",
+            extra: "",
+            description: "⚠ Delete your save data. Note that this is permanent.",
+            menu_id: 10
+            }
+        ]
+        var gmenulistselect = [];
 
-        embed.setDescription("❌ Delete your save data for GTF 2: Unleahsed? This is permanent.");
-        embed.setColor(0xff0000);
-        gtf_DISCORD.send(msg, {embeds:[embed], components:buttons}, next)
-        
-        function next(msg) {
-          function deletesave() {
-            gtf_STATS.save(userdata, "DELETE");
-            gtf_EMBED.alert({ name: "✅ Success", description: "Save data deleted.", embed: embed, seconds: 0 }, msg, userdata);
+        var menupage = 0;
+
+        var menu = gtf_TOOLS.prepareMenu("Settings", settingslist, [], msg, userdata);
+
+        ///emojilist
+        var emojilist = [];
+
+        //var buttons = gtf_TOOLS.prepareButtons(emojilist, msg, userdata);
+        ///
+        buttons = [menu]
+        embed.fields = [];
+
+        embed.setFields([{ name: gtf_STATS.menuFooter(userdata), value: gtf_STATS.currentCarFooter(userdata) }]);
+
+        gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, homefunc);
+        var currsetting = ""
+
+        function homefunc(msg) {
+          var functionlist = [];
+          for (var i = 0; i <= 10; i++) {
+          functionlist.push(function(num) {
+            if (num == 9) {
+              currsetting = "reset"
+            }
+
+            
+            if (currsetting.length == 0) {
+              currsetting = ["color", "dealersort", "garagesort", "displaygrid", "icons", "menuselect", "units", "time", "messages", "reset", "deletesavedata"][num]
+              var [menulist, func] = gtf_SETTINGS.settingsMenub(currsetting, embed, msg, userdata)
+              if (num == 10) {
+                return
+              }
+            var menu = gtf_TOOLS.prepareMenu(settingslist[num]["name"], menulist, [], msg, userdata);
+              buttons = [menu]
+
+              embed.fields = [];
+              embed.setFields([{ name: gtf_STATS.menuFooter(userdata), value: gtf_STATS.currentCarFooter(userdata) }]);
+              gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, homefunc)
+            } else {
+              var [menulist, func] = gtf_SETTINGS.settingsMenub(currsetting, embed, msg, userdata)
+              var message = func(num)
+              var menu = gtf_TOOLS.prepareMenu("Settings", settingslist, [], msg, userdata);
+                buttons = [menu]
+              currsetting = ""
+                embed.setDescription(message + "\n" + "**❗ Recent changes will be applied after the next slash command.**");
+                embed.fields = [];
+                embed.setFields([{ name: gtf_STATS.menuFooter(userdata), value: gtf_STATS.currentCarFooter(userdata) }]);
+              gtf_STATS.save(userdata)
+                gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, homefunc)
+            }
+          })
           }
-          var functionlist = [deletesave]
-
-          gtf_TOOLS.createButtons(buttons, emojilist, functionlist, msg, userdata)
+          gtf_TOOLS.createButtons(menu, emojilist, functionlist, msg, userdata);
         }
-      return
-    }
-
-    var results = gtf_SETTINGS.settingsMenu(query, pageargs, embed, msg, userdata)
-
-      if (results == "✅") {
-        return;
-      } else {
-    gtf_EMBED.alert({ name: "❌ Error", description: "Invalid arguments.", embed: embed, seconds: 0 }, msg, userdata);
-      }
   }
 };
