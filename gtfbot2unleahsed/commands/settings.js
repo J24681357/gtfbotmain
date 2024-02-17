@@ -41,65 +41,66 @@ module.exports = {
           name: "Embed Color",
           emoji: "⚙",
           extra: "",
-          description: "Select a color for embeds.",
+          description: "Selects a color for embeds.",
           menu_id: 0
   },
+
+          {
+            name: "Menu Icons",
+            emoji: "⚙",
+            extra: "",
+            description: "Selects theme icons that as a menu selector and progress bars.",
+            menu_id: 1
+            },
     {
           name: "GTF Dealership Sort",
           emoji: "⚙",
           extra: "",
-          description: "Select a sorting type for car lists in Dealerships.",
-          menu_id: 1
+          description: "Selects a sorting type for car lists in Dealerships.",
+          menu_id: 2
           },
 
           {
             name: "GTF Garage Sort",
             emoji: "⚙",
             extra: "",
-            description: "Select a sorting type for your GTF garage.",
-            menu_id: 2
+            description: "Selects a sorting type for your GTF garage.",
+            menu_id: 3
             },
 
           {
             name: "Metric Units",
             emoji: "⚙",
             extra: "",
-            description: "Select metric units.",
-            menu_id: 3
+            description: "Selects metric units (Metric/Imperial).",
+            menu_id: 4
             },
           {
             name: "Grid Display Names",
             emoji: "⚙",
             extra: "",
-            description: "Select the type of names to display for AI opponents.",
-            menu_id: 4
-            },
-          {
-            name: "Menu Icons",
-            emoji: "⚙",
-            extra: "",
-            description: "Select theme icons that as a menu selector and progress bars.",
+            description: "Toggles the type of names to display for AI opponents.",
             menu_id: 5
             },
           {
             name: "Navigation Menu Type",
             emoji: "⚙",
             extra: "",
-            description: "Select a button method to navigate through most menus.",
+            description: "Selects a button method to navigate through most menus.",
             menu_id: 6
             },
           {
-            name: "Set Time Zone",
+            name: "Set Time Zone (Daily Workouts)",
             emoji: "⚙",
             extra: "",
-            description: "Select a time zone corresponding to your current time (Military).",
+            description: "Selects a time zone corresponding to your current time (Military).",
             menu_id: 7
             },
           {
             name: "Career/Info Messages",
             emoji: "⚙",
             extra: "",
-            description: "Toggle messages from commands & main characters.",
+            description: "Toggles messages from commands & main characters.",
             menu_id: 8
             },
           {
@@ -118,10 +119,6 @@ module.exports = {
             }
         ]
     
-        var gmenulistselect = [];
-
-        var menupage = 0;
-
         var menu = gtf_TOOLS.prepareMenu("Choose A Setting", settingslist, [], msg, userdata);
 
         ///emojilist
@@ -144,10 +141,14 @@ module.exports = {
             if (num == 9) {
               currsetting = "reset"
             }
-
             
             if (currsetting.length == 0) {
-              currsetting = ["color", "dealersort", "garagesort",  "units", "displaygrid", "icons", "menuselect","time", "messages", "reset", "deletesavedata"][num]
+              currsetting = ["color",
+                    "icons",
+              "dealersort", 
+              "garagesort", 
+              "units", 
+              "displaygrid", "menuselect","time", "messages", "reset", "deletesavedata"][num]
               var [menulist, func] = gtf_SETTINGS.settingsMenu(currsetting, embed, msg, userdata)
               if (num == 10) {
                 return

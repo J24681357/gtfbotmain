@@ -1,7 +1,7 @@
 # GT Fitness 2: Unleahsed Game Manual
 [<img src="https://raw.githubusercontent.com/J24681357/gtfbotmain/master/gtfbot2unleahsed/images/logo/gtfgamelogo.png" width="500"/>]()
 
-Last Updated: October 9th, 2023
+Last Updated: February 17th, 2024
 - Manual
 {:toc}
 
@@ -37,7 +37,7 @@ Last Updated: October 9th, 2023
     - Cost
     - Car name
     - FPP
-      - 💡 If you want the list sorted in a different order, you may change this in `/settings options:Dealership Sorting Type`.
+      - 💡 If you want the list sorted in a different order, you may change this in the `/settings`.
 
 4. Cars that you've already own will be labeled with a ✅.
 
@@ -158,14 +158,16 @@ Last Updated: October 9th, 2023
 
 ## Seasonal Events - /seasonal
 
-1. In Seasonal Events, they are randomized events ordered by level, from Beginner events (B) to Extreme events (S). For each event, similar to Career races, there are the license requirements for each level.
+1. In Seasonal Events, they are randomized events ordered by level, from Intermediate events (IB) to Extreme events (S). For each event, similar to Career races, there are the license requirements for each level.
 
 2. In the Seasonal Events menu, there is a timestamp of the next rotation cycle. After the timestamp has passed, a new batch of seasonal events will be created.
 	- 💡 Every time when seasonal events are refreshed, any progress in those events are cleared.
 
 3. Similarly to Career events, there are a set of races to compete with other opponents. Gold rewards are typically more rewarding than in Career mode. However, they are slightly more challenging to win.
 
-4. In limited time events, these can be used as a way to promote new cars, events, etc. Theses will typically last after one cycle.
+4. In each rotation cycle, there is also one Drift Trial and one Time Trial that can be only completed and rewarded once.
+   
+5. In limited time events, these can be used as a way to promote new cars, events, etc. Theses will typically last after one cycle.
 
 ## Arcade Mode - /arcade
 
@@ -262,7 +264,7 @@ Single Race & Drift Trial Only
 ## GTF Garage - /garage
 
 1. The garage contains all owned cars. ID numbers (🚘) are associated with the order of your garage list based on your settings.
-   - 💡 You can change the sorting in `/settings options:Garage Sorting Type`.
+   - 💡 You can change the sorting in `/settings`.
 2. Once you reach the garage limit in your garage, you will be unable to purchase new cars.
      - 💡💡 Prize cars will still be added to your garage even if garage limit is reached; however, you will be unable to purchase cars until you are under the threshold.
 4. Selecting a car in this menu will open up the car's details, performance specs, damage conditions, and other details. As detailed, the following are displayed under the embed:
@@ -381,7 +383,7 @@ Single Race & Drift Trial Only
 ## Daily Workout - /daily
 1. You can redeem Daily Workouts every day after driving at least 26.2mi or 41.1km. 
     - 💡 Your Daily Workout gift may contain either credits or a random car from the roulette. 
-2. Your daily mileage resets every 24 hours in UTC time. You can set the time zone for Daily Workouts in `/settings options:Time Zone` to match with your time zone.
+2. Your daily mileage resets every 24 hours in UTC time. You can set the time zone for Daily Workouts in `/settings` to match with your time zone.
   - ⚠️ Note that Daily Workouts work differently from gifts.
 
 ## Gifts - /gifts
@@ -433,14 +435,15 @@ Single Race & Drift Trial Only
 ## Settings - /settings
 
 1. In GTF 2: Unleahsed, the following settings can be configured:
-   - Embed color: Changes the embed color
-   - Dealership Catalog Sort: Sorts list in the GTF Dealerships (`/car`)
-   - Garage Sort: Sorts list in your garage (`/garage`)
-   - Grid Display Names: Toggles between car and driver names in a session
-   - Menu Icons: Icons used when selecting options
-   - Menu Selector (Arrows/Numbers)
-   - Metric Units: Units used in GTF2U (Metric/Imperial)
-   - Daily Workout: Time Zone offset for refreshing the Daily Workouts
+   - Embed Color: Selects a color for embeds
+   - Menu Icons: Selects theme icons that as a menu selector and progress bars
+   - GTF Dealership Sort: Selects a sorting type for car lists in Dealerships.
+   - GTF Garage Sort: Selects a sorting type for your GTF garage.
+   - Metric Units: Selects metric units (Metric/Imperial)
+   - Grid Display Names: Toggles the type of names to display for AI opponents.
+   - Navigation Menu Type: Selects a button method to navigate through most menus.
+   - Set Time Zone (Daily Workouts): Selects a time zone corresponding to your current time (Military).
+   - Career/Info Messages: Toggles messages from commands & main characters.
 
 2. It is possible to reset your settings to default by selecting "🔁 Reset To Default Settings" in the Settings menu.
 
