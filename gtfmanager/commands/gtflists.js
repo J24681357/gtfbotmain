@@ -39,6 +39,7 @@ module.exports = {
     query["rankinglist"] = parseInt(query["rankinglist"])
     var list = [gtm_LIST_COTD, gtm_LIST_LOTW][query["rankinglist"] - 1]
     var title = ["GTF Car Of The Day", "GTF Location Of The Week"][query["rankinglist"] - 1]
+    var emoji = ["🚘", gtf_EMOTE.tracklogo][query["rankinglist"] - 1]
     
     if (query["options"] == "latest_month") {
       var date = new Date()
@@ -75,7 +76,7 @@ module.exports = {
       list.map(function(x) {
         rate[calculaterating(x)[1]]++
       })
-      embed.setTitle("🚘 __**" + title + ": Statistics/Info**__")
+      embed.setTitle(emoji + " __**" + title + ": Statistics/Info**__")
 
       results = "**Total Days:** " + total + "\n" +
         "__Ratings__" + "\n" +
@@ -94,7 +95,7 @@ module.exports = {
     var sortname = sort.split("_").map(x => x.charAt(0).toUpperCase() + x.slice(1)).join(" ")
     var filtername = (filter == "") ? "" : " **(" + filter + ")**"
 
-    embed.setTitle("🚘" + " __**" + title + ":" + monthname + " " + year + " (" + sortname + ")**" + filtername + "__")
+    embed.setTitle(emoji + " __**" + title + ":" + monthname + " " + year + " (" + sortname + ")**" + filtername + "__")
     list = list.reverse()
     if (sort == "oldest") {
       list = list.sort((x, y) => new Date(x["date"]) - new Date(y["date"]))
@@ -124,7 +125,7 @@ module.exports = {
     }
     if (typeof query["number"] !== "undefined") {
       var select = list[query["number"] - 1]
-      embed.setTitle("🚘 __**" + title + " (" + select["date"] + ")**__")
+      embed.setTitle(emoji + " __**" + title + " (" + select["date"] + ")**__")
       var rating = calculaterating(select)
       results = ["**Car:** " + select["carname"], "**Location:** " + select["locationname"]][query["rankinglist"]-1] + "\n" +
         "**Rating:** " + "⭐ " + rating[0] + "% " + "`" + rating[1] + "`" + "\n\n" +
