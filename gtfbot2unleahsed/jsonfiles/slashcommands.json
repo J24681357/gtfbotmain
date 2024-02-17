@@ -894,66 +894,7 @@
     "name": "settings",
     "description": "🏁 Configure settings for GT Fitness 2: Unleahsed game.",
     "channels": "",
-    "options": [
-      {
-        "name": "options",
-        "description": "Select an option.",
-        "type": 3,
-        "required": true,
-        "choices": [
-          {
-            "name": "❗ Open My Settings",
-            "value": "list"
-          },
-          {
-            "name": "Embed Color",
-            "value": "1"
-          },
-          {
-            "name": "Dealership Sorting Type",
-            "value": "2"
-          },
-          {
-            "name": "Garage Sorting Type",
-            "value": "3"
-          },
-          {
-            "name": "Grid Display Names",
-            "value": "4"
-          },
-          {
-            "name": "Menu Icons",
-            "value": "5"
-          },
-          {
-            "name": "Menu Selector",
-            "value": "6"
-          },
-          {
-            "name": "Metric Units",
-            "value": "7"
-          },
-          {
-            "name": "Time Zone Setting",
-            "value": "8"
-          },
-          {
-            "name": "Messages",
-            "value": "9"
-          },
-          {
-            "name": "🔁 Reset To Default Settings",
-            "value": "10"
-          }
-        ]
-      },
-      {
-        "name": "number",
-        "description": "Pick a number associated with setting's list in the menu.",
-        "type": 4,
-        "required": false
-      }
-    ]
+    "options": []
   },
   "setup": {
     "name": "setup",

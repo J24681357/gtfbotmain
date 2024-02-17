@@ -48,7 +48,7 @@ module.exports = {
           name: "GTF Dealership Sort",
           emoji: "⚙",
           extra: "",
-          description: "Select a global setting for sorting car lists in dealership menus.",
+          description: "Select a sorting type for car lists in Dealerships.",
           menu_id: 1
           },
 
@@ -56,7 +56,7 @@ module.exports = {
             name: "GTF Garage Sort",
             emoji: "⚙",
             extra: "",
-            description: "Select a global setting for sorting your garage in the GTF garage.",
+            description: "Select a sorting type for your GTF garage.",
             menu_id: 2
             },
 
@@ -99,14 +99,14 @@ module.exports = {
             name: "Career/Info Messages",
             emoji: "⚙",
             extra: "",
-            description: "Enable or disable messages from commands & main characters.",
+            description: "Toggle messages from commands & main characters.",
             menu_id: 8
             },
           {
             name: "Reset To Default Settings",
             emoji: "🔄",
             extra: "",
-            description: "Reset all settings to default.",
+            description: "Reset all settings to Default. (One Time Click)",
             menu_id: 9
             },
           {
@@ -117,11 +117,12 @@ module.exports = {
             menu_id: 10
             }
         ]
+    
         var gmenulistselect = [];
 
         var menupage = 0;
 
-        var menu = gtf_TOOLS.prepareMenu("Settings", settingslist, [], msg, userdata);
+        var menu = gtf_TOOLS.prepareMenu("Choose A Setting", settingslist, [], msg, userdata);
 
         ///emojilist
         var emojilist = [];
@@ -146,8 +147,8 @@ module.exports = {
 
             
             if (currsetting.length == 0) {
-              currsetting = ["color", "dealersort", "garagesort", "displaygrid", "icons", "menuselect", "units", "time", "messages", "reset", "deletesavedata"][num]
-              var [menulist, func] = gtf_SETTINGS.settingsMenub(currsetting, embed, msg, userdata)
+              currsetting = ["color", "dealersort", "garagesort",  "units", "displaygrid", "icons", "menuselect","time", "messages", "reset", "deletesavedata"][num]
+              var [menulist, func] = gtf_SETTINGS.settingsMenu(currsetting, embed, msg, userdata)
               if (num == 10) {
                 return
               }
@@ -158,9 +159,9 @@ module.exports = {
               embed.setFields([{ name: gtf_STATS.menuFooter(userdata), value: gtf_STATS.currentCarFooter(userdata) }]);
               gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, homefunc)
             } else {
-              var [menulist, func] = gtf_SETTINGS.settingsMenub(currsetting, embed, msg, userdata)
+              var [menulist, func] = gtf_SETTINGS.settingsMenu(currsetting, embed, msg, userdata)
               var message = func(num)
-              var menu = gtf_TOOLS.prepareMenu("Settings", settingslist, [], msg, userdata);
+              var menu = gtf_TOOLS.prepareMenu("Choose A Setting", settingslist, [], msg, userdata);
                 buttons = [menu]
               currsetting = ""
                 embed.setDescription(message + "\n" + "**❗ Recent changes will be applied after the next slash command.**");
