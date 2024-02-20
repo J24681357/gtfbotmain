@@ -105,7 +105,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
           var image = list[i]["image"][0];
           
           carlist.push(gtf_CARS.shortName(name) + " ` " + classs + " `");
-          listsec.push(list[i]["year"] + " | " + gtf_MATH.numFormat(list[i]["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(list[i]["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + list[i]["special"].join(", "))
+          listsec.push(list[i]["year"] + " | " + gtf_MATH.numFormat(list[i]["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(list[i]["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + list[i]["special"].join(", ").replace("xstarter", ""))
           pageargs["image"].push(image);
         }
       if (query["number"] !== undefined) {
@@ -116,7 +116,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
             var number = parseInt(query["number"]) - 1;
             var car = list[number];
             userdata["week"] = 1
-            gte_CARS.addCarEnthu(car, "SORT", userdata);
+            gte_CARS.addCarEnthu(car, "FORCECHANGE", userdata);
             require(__filename.split(".")[0]).execute(msg, {options:"list", extra: "New car!"}, userdata)
             return
           }

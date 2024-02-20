@@ -80,9 +80,7 @@ module.exports = {
     
     var gemojilist = [];
     var menu = gte_TOOLS.prepareMenu("Select", gmenulistselect, [], msg, userdata);
-
-    ///emojilist
-    ///DEMO
+    
     var emojilist = [];
         emojilist.push({
             emoji: "📋",
@@ -92,11 +90,12 @@ module.exports = {
             button_id: 0
       });
      var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
-    ///
    buttons.unshift(menu);
-///DEMO + "\n" + "__**Generation Select**__" + "\n" + "__**Settings**__";
     var car = gtf_CARS.random({}, 1)[0];
-    results = "__**Fithusim Life**__" + "\n" + "__**Driving Revolution**__"
+    results = "__**Fithusim Life**__" + "\n" + 
+      "__**Driving Revolution**__" + "\n" +
+      "__**Generation Select**__" + "\n" +
+      "__**Settings**__"
     embed.setDescription(message + results);
     embed.setThumbnail("https://github.com/J24681357/gtfbotfithusim/raw/master/images/logo/fithusimlogo.png")
     embed.fields = [];

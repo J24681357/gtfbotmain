@@ -1,19 +1,18 @@
 //process.exit(1)
-var fs = require("fs")
+var fs = require("fs");
 process.env["SECRET"] = JSON.parse(fs.readFileSync(__dirname + "/" + ".keys.json", "utf8"))["SECRET"];
 process.env["MONGOURL"] = JSON.parse(fs.readFileSync(__dirname + "/" + ".keys.json", "utf8"))["MONGOURL"];
-    
+
 const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBuilder, ModalBuilder, TextInputBuilder, TextInputStyle, AttachmentBuilder, StringSelectMenuBuilder, ButtonBuilder, ActivityType, SelectMenuBuilder } = require("discord.js");
 const client = new Client({
   intents: 3276799,
-  partials: [Partials.Message, Partials.Channel, Partials.Reaction]
+  partials: [Partials.Message, Partials.Channel, Partials.Reaction],
 });
 ////////////////////////////////////////////////////
 var fs = require("fs");
 /////
-var checklogin = false;
 var cooldowns = new Set();
-var { MongoClient, ServerApiVersion } = require('mongodb');
+var { MongoClient, ServerApiVersion } = require("mongodb");
 
 var listinmaint = [];
 client.commands = {};
@@ -31,64 +30,50 @@ var datebot = new Date().getTime();
 var date = new Date();
 var timeelapsed = 0;
 
-/*
-setTimeout(function() {
-  if (!checklogin) {
-    restartbot()
-  }
-}, 30000);
-*/
-
 client.on("ready", () => {
-  
   gtf_SLASHCOMMANDS.createslashcommands();
-  global.gtf_SERVERGUILD = client.guilds.cache.get(gtf_SERVERID)
-  
+  global.gtf_SERVERGUILD = client.guilds.cache.get(gtf_SERVERID);
+
   //gtf_TOOLS.updateallsaves("GTF2SAVES", {"fppupdate": true})
   timeelapsed = parseInt(new Date().getTime()) - parseInt(datebot);
-  
 
-
-gtf_CONSOLELOG.reverse();
+  gtf_CONSOLELOG.reverse();
   gtf_CONSOLELOG.fill(100, 100, 255);
 
-console.log("Time elapsed: " + timeelapsed + " " + "ms");
-gtf_CONSOLELOG.end();
+  console.log("Time elapsed: " + timeelapsed + " " + "ms");
+  gtf_CONSOLELOG.end();
 });
 
 client.on("threadMembersUpdate", (addedMembers, removedMembers, thread) => {
   if (thread.parent.id != "1105413833197113375") {
-    return
+    return;
   }
   if (addedMembers.size == 1) {
-    var member = addedMembers.entries().next().value
-    var id = member[0]
-    var user = member[1]
+    var member = addedMembers.entries().next().value;
+    var id = member[0];
+    var user = member[1];
     var embed = new EmbedBuilder();
-    results = "ℹ️ **" + "<@" + id + "> has joined the room.**"
+    results = "ℹ️ **" + "<@" + id + "> has joined the room.**";
     embed.setColor(0x808080);
     embed.setDescription(results);
-    gtf_DISCORD.send(thread, { embeds: [embed], type1: "CHANNEL" })
+    gtf_DISCORD.send(thread, { embeds: [embed], type1: "CHANNEL" });
 
-    gtf_LOBBY.joinlobby(user, thread)
+    gtf_LOBBY.joinlobby(user, thread);
   }
   if (removedMembers.size == 1) {
-    var member = removedMembers.entries().next().value
-    var id = member[0]
-    var user = member[1]
+    var member = removedMembers.entries().next().value;
+    var id = member[0];
+    var user = member[1];
     var embed = new EmbedBuilder();
-    results = "ℹ️ **" + "<@" + id + "> has left the room.**"
+    results = "ℹ️ **" + "<@" + id + "> has left the room.**";
     embed.setColor(0x808080);
     embed.setDescription(results);
-    gtf_DISCORD.send(thread, { embeds: [embed], type1: "CHANNEL" })
-    gtf_LOBBY.leavelobby(user, thread)
+    gtf_DISCORD.send(thread, { embeds: [embed], type1: "CHANNEL" });
+    gtf_LOBBY.leavelobby(user, thread);
   }
-
 });
 
 client.on("interactionCreate", async interaction => {
- 
-  
   try {
     if (interaction.type != 2) {
       return;
@@ -100,25 +85,26 @@ client.on("interactionCreate", async interaction => {
       }
       */
 
-
     const args = interaction.options._hoistedOptions;
     const commandName = interaction.commandName;
 
     if (cooldowns.has(interaction.author.id)) {
       interaction.reply({ content: "**⏲ Cooldown! Please try again.**", ephemeral: true });
-      return
+      return;
     } else {
       cooldowns.add(interaction.author.id);
       setTimeout(() => {
         cooldowns.delete(interaction.author.id);
       }, 5000);
     }
-    await interaction.deferReply({}).then(function(){}).catch(console.error)
+    await interaction
+      .deferReply({})
+      .then(function () {})
+      .catch(console.error);
     if (args.length == 0) {
       interaction.content = commandName;
-    }
-    else {
-      interaction.content = args.map(function(x) {
+    } else {
+      interaction.content = args.map(function (x) {
         if (x["type"] == 11) {
           return x["name"] + "=" + x.attachment["url"];
         } else {
@@ -130,12 +116,8 @@ client.on("interactionCreate", async interaction => {
     }
     var embed = new EmbedBuilder();
     embed.setColor(0x0151b0);
-
-    var command = client.commands[commandName] || client.commands.filter(cmd => cmd.aliases && cmd.aliases.includes(commandName));
-
     try {
       load_msg(interaction);
-
     } catch (error) {
       embed = new EmbedBuilder();
       gtf_EMBED.alert({ name: "Unexpected Error", description: "Oops, an unexpected error has occurred.\n" + "**" + error + "**" + "\n\n" + "Check the Known Issues in <#687872420933271577> to see if this is documented.", embed: "", seconds: 0 }, interaction, { id: interaction.author.id });
@@ -149,7 +131,7 @@ client.on("interactionCreate", async interaction => {
       if (userdata === undefined) {
         userdata = gtf_GTF.defaultuserdata(msg.author.id);
       }
-      var next = function() {
+      var next = function () {
         var args = msg.content.split(/\*\*\*+/);
         var commandName = args.shift().toLowerCase();
 
@@ -166,22 +148,21 @@ client.on("interactionCreate", async interaction => {
         }
         if (command.channels.length >= 1) {
           if (msg.channel != null) {
-          if (msg.channel.type == 11) {
-            if (!command.channels.some(name => msg.channel.parent.name.includes(name))) {
-              userdata = gtf_GTF.defaultuserdata(msg.author.id);
-              gtf_EMBED.alert({ name: "❌ Incorrect Channel", description: "Commands are not allowed in this channel.", embed: "", seconds: 0 }, msg, userdata);
-              return;
-            }
-          } 
-          else {
-            if (msg.channel.type != 1) {
-              if (!command.channels.some(name => msg.channel.name.includes(name))) {
+            if (msg.channel.type == 11) {
+              if (!command.channels.some(name => msg.channel.parent.name.includes(name))) {
                 userdata = gtf_GTF.defaultuserdata(msg.author.id);
                 gtf_EMBED.alert({ name: "❌ Incorrect Channel", description: "Commands are not allowed in this channel.", embed: "", seconds: 0 }, msg, userdata);
                 return;
               }
+            } else {
+              if (msg.channel.type != 1) {
+                if (!command.channels.some(name => msg.channel.name.includes(name))) {
+                  userdata = gtf_GTF.defaultuserdata(msg.author.id);
+                  gtf_EMBED.alert({ name: "❌ Incorrect Channel", description: "Commands are not allowed in this channel.", embed: "", seconds: 0 }, msg, userdata);
+                  return;
+                }
+              }
             }
-          }
           }
         }
         var check = require(__dirname + "/" + "functions/misc/f_start").intro(userdata, command.name, msg);
@@ -213,7 +194,6 @@ client.on("interactionCreate", async interaction => {
         //Checks if in a race
         if (!command.usedduringrace) {
           if (userdata["raceinprogress"]["expire"] < new Date()) {
-  
             userdata["raceinprogress"] = { active: false, messageid: "", channelid: "", expire: undefined };
           }
           if (userdata["raceinprogress"]["active"]) {
@@ -236,7 +216,6 @@ client.on("interactionCreate", async interaction => {
             return;
           }
         }
-
 
         if (!gtf_EXP.checkLevel(command.level, embed, msg, userdata)) {
           return;
@@ -274,11 +253,9 @@ client.on("interactionCreate", async interaction => {
         }
         try {
           gtf_STATS.checkRewards("general", "", userdata);
-        
-          
-          gtf_STATS.checkMessages(command, execute, msg, userdata)
-          function execute() {
 
+          gtf_STATS.checkMessages(command, execute, msg, userdata);
+          function execute() {
             executecommand(command, args, msg, userdata);
           }
         } catch (error) {
@@ -290,12 +267,12 @@ client.on("interactionCreate", async interaction => {
       var userdata;
       try {
         var db = await MongoClient.connect(process.env.MONGOURL, {
-          serverApi: ServerApiVersion.v1 
-        })
+          serverApi: ServerApiVersion.v1,
+        });
       } catch (err) {
         gtf_EMBED.alert({ name: "❌ Save Data Failed", description: "Oops, save data has failed to load. Try again next time.\n" + "**" + err + "**", embed: "", seconds: 0 }, msg, userdata);
-        restartbot()
-        return
+        restartbot();
+        return;
       }
       var dbo = db.db("GTFitness");
       dbo
@@ -314,11 +291,8 @@ client.on("interactionCreate", async interaction => {
 
           next();
         });
-
     }
-
-  }
-  catch (error) {
+  } catch (error) {
     if (error) {
       //gtf_EMBED.alert({ name: "Interaction Error", description: "An interaction error has occurred. Please try again.\n" + "**" + error + "**", embed: "", seconds: 0 }, interaction, { id: interaction.author.id });
       console.error(error);
@@ -329,98 +303,72 @@ client.on("interactionCreate", async interaction => {
 });
 
 client.destroy().then(function () {
-  client.login(process.env.SECRET).then(async function() {
-  //require("replit-dis-uniter")(client)
-  checklogin = true;
-  var keys = [];
+  client.login(process.env.SECRET).then(async function () {
+    var keys = [];
 
-  var index1 = 0;
-  client.rest.on("rateLimited", info => {
-    gtf_LIST_BOT["msgtimeout"] = info["timeout"];
+    var index1 = 0;
+    client.rest.on("rateLimited", info => {
+      gtf_LIST_BOT["msgtimeout"] = info["timeout"];
+      console.log("RATE LIMIT");
+    });
+    setTimeout(function () {
+      gtf_SEASONAL.checkseasonals();
+      setInterval(function () {
+        gtf_SEASONAL.checkseasonals();
+      }, 5000 * 60);
 
+      updatebotstatus();
+      //gtf_CARS.changecardiscounts();
+      gtf_TOOLS.interval(
+        function () {
+          gtf_STATS.resumeRace(keys[index1], client);
+          index1++;
+        },
+        1000,
+        keys.length
+      );
+
+      //gtm_EXTRA.checkerrors(client)
+    }, 20000);
+
+    try {
+      var db = await MongoClient.connect(process.env.MONGOURL, {
+        serverApi: ServerApiVersion.v1,
+      });
+      console.log("DB good!");
+    } catch (error) {
+      console.log("Database error");
+      restartbot();
+    }
     /*
-    if (info["path"].includes("messages")) {
-      var channelid = info["path"].split("/channels/")[1].split("/")[0];
-      var messageid = info["path"].split("/messages/")[1].split("/")[0];
-    } 
-    else {
-      channelid = "";
-      messageid = "";
-    }
-    if (typeof client.guilds.cache.get(gtf_SERVERID).members.cache.get("237450759233339393") == "undefined") {
-    } 
-    else {
-      client.guilds.cache
-        .get(gtf_SERVERID)
-        .members.cache.get("237450759233339393")
-        .send({ content: "**RATE LIMIT DETECTED**" + "\n\n" + "**Timeout:** " + gtf_DATETIME.getFormattedTime(info["timeout"]) + "\n" + "**Message:** " + "https://discord.com/channels/" + gtf_SERVERID + "/" + channelid + "/" + messageid + "\n\n" + JSON.stringify(info) });
-    }
-    */
-  });
-  setTimeout(function() {
-    gtf_SEASONAL.checkseasonals()
-    setInterval(function() {
-      gtf_SEASONAL.checkseasonals()
-    }, 5000 * 60)
-
-    //gtf_TRACKS.audit()
-    updatebotstatus();
-    //gtf_CARS.changecardiscounts();
-    gtf_TOOLS.interval(
-      function() {
-        gtf_STATS.resumeRace(keys[index1], client);
-        index1++;
-      },
-      1000,
-      keys.length
-    );
-
-    //gtm_EXTRA.checkerrors(client)
-  }, 20000);
-
-  try {
-    var db = await MongoClient.connect(process.env.MONGOURL, {
-      serverApi: ServerApiVersion.v1 
-    })
-    console.log("DB good!")
-  } catch (error) {
-    console.log("Database error")
-    restartbot()
-  }
-  /*
     if (err) {
       restartbot()
       console.log("Failed to load races.")
       return
     }
     */
-  var dbo = db.db("GTFitness");
-  dbo
-    .collection("GTF2SAVES")
-    .find({})
-    .forEach(row => {
-      if (typeof row["id"] === "undefined") {
-        return;
-      } else {
-        if (Object.keys(row).length <= 5) {
-          return
-        }
-        if (!row["raceinprogress"]["active"] || row["raceinprogress"]["channelid"].length == 0 || row["raceinprogress"]["messageid"] == 0) {
+    var dbo = db.db("GTFitness");
+    dbo
+      .collection("GTF2SAVES")
+      .find({})
+      .forEach(row => {
+        if (typeof row["id"] === "undefined") {
           return;
-  }
-        
-        keys.push(row);
-      }
+        } else {
+          if (Object.keys(row).length <= 5) {
+            return;
+          }
+          if (!row["raceinprogress"]["active"] || row["raceinprogress"]["channelid"].length == 0 || row["raceinprogress"]["messageid"] == 0) {
+            return;
+          }
 
-
-    });
-
+          keys.push(row);
+        }
+      });
+  });
 });
-})
 
-
-
-var executecommand = function(command, args, msg, userdata) {
+var executecommand = function (command, args, msg, userdata) {
   try {
     var saved = userdata["id"] + ": " + args;
     args = gtf_TOOLS.queryMap(args);
@@ -433,31 +381,37 @@ var executecommand = function(command, args, msg, userdata) {
 
 ///FUNCTIONS
 
-
-
 function updatebotstatus() {
-gtf_CONSOLELOG.reverse();
-gtf_CONSOLELOG.fill(255, 255, 0);
-console.log("Maintenance: " + gtf_LIST_BOT["maintenance"]);
-gtf_CONSOLELOG.end();
- 
+  gtf_CONSOLELOG.reverse();
+  gtf_CONSOLELOG.fill(255, 255, 0);
+  console.log("Maintenance: " + gtf_LIST_BOT["maintenance"]);
+  gtf_CONSOLELOG.end();
+
   if (gtf_LIST_BOT["maintenance"] && typeof gtf_LIST_BOT["maintenance"] === "boolean") {
-    client.user.setPresence({ activities: [{ 
-      type: ActivityType.Custom,
-      name: "The bot is under maintenance. Commands are not available at the time.",
-      state: "The bot is under maintenance. Commands are not available at the time."
-    }], status: "dnd" });
-    client.guilds.cache.get(gtf_SERVERID).members.cache.get(gtf_USERID).setNickname("🛠 In Maintenance 🛠");
+    client.user.setPresence({
+      activities: [
+        {
+          type: ActivityType.Custom,
+          name: "The bot is under maintenance. Commands are not available at the time.",
+          state: "The bot is under maintenance. Commands are not available at the time.",
+        },
+      ],
+      status: "dnd",
+    });
+    //client.guilds.cache.get(gtf_SERVERID).members.cache.get(gtf_USERID).setNickname("🛠 In Maintenance 🛠");
   } else {
-    client.user.setPresence({ activities: [{
-      type: ActivityType.Custom,
-      name: "The bot for the game, GT Fitness 2: Unleahsed. This bot uses slash commands.",
-      state:  "The bot for the game, GT Fitness 2: Unleahsed. This bot uses slash commands."
-    }], status: "purple" });
-    client.guilds.cache.get(gtf_SERVERID).members.cache.get(gtf_USERID).setNickname("GT Fitness 2: Unleahsed");
+    client.user.setPresence({
+      activities: [
+        {
+          type: ActivityType.Custom,
+          name: "The bot for the game, GT Fitness 2: Unleahsed. This bot uses slash commands.",
+          state: "The bot for the game, GT Fitness 2: Unleahsed. This bot uses slash commands.",
+        },
+      ],
+      status: "purple",
+    });
+    //client.guilds.cache.get(gtf_SERVERID).members.cache.get(gtf_USERID).setNickname("GT Fitness 2: Unleahsed");
   }
 }
-
-
 
 //client.on("debug", console.log).on("warn", console.log)

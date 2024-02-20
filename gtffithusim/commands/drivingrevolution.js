@@ -69,7 +69,7 @@ module.exports = {
             }
           })
           if (!pass) {
-            gte_EMBED.alert({ name: "❌ Invalid Number", description: "You must earn at least a C score in Stage " + (number-1) + "in order to proceed.", embed: "", seconds: 0 }, msg, userdata);
+            gte_EMBED.alert({ name: "❌ Invalid Number", description: "You must earn at least a __**C**__ score in **Stage " + (number) + "** in order to proceed.", embed: "", seconds: 0 }, msg, userdata);
             return
           }
         }
@@ -122,13 +122,8 @@ module.exports = {
       for (var x = 0; x < keys.length; x++) {
         var track = races[keys[x]][0]["tracks"][0]["name"]
         list.push (
-            "__**" + "Stage " + (2) + "**__" + " " + track.split(" - ")[0]
-        )
-        //demo
-        /*
-        list.push (
             "__**" + "Stage " + (x+1) + "**__" + " " + track.split(" - ")[0]
-        )*/
+        )
         pageargs["image"].push(gtf_TRACKS.find({name: [track], versions: ["Gran Turismo"]})[0]["image"])
       }
       pageargs["selector"] = "stagenumber";

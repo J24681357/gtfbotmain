@@ -1390,9 +1390,9 @@ module.exports.createRaceHistory = function(racesettings, racedetails, finalgrid
 
 module.exports.resumeRace = function(userdata, client) {
   if (userdata["racedetails"].length == 0) {
-    console.log("EMPTY")
     return;
   }
+  
   var user = {};
   var server = client.guilds.cache.get(gtf_SERVERID);
   var server2 = server.channels.cache.get(userdata["raceinprogress"]["channelid"]);

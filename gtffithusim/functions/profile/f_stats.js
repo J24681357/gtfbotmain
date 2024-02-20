@@ -1293,7 +1293,7 @@ skillpoints:Math.round(skillpoints),
   gte_STATS.addSkillPoints(Math.round(skillpoints - (0.8 * damage)), userdata)
   gte_STATS.addTuningPoints(Math.round(skillpoints - (0.8 * damage)), userdata)
 }
-///DEMO 800
+
 module.exports.checkRanking = function (userdata) {
   
   userdata["rankingpoints"] = gtf_MATH.sum(userdata["rankinghistory"].map(x => x["points"]).slice(0).slice(-12).sort(function(a, b) {
@@ -1319,12 +1319,8 @@ module.exports.checkRanking = function (userdata) {
   if (userdata["ranking"] <= 1) {
     userdata["ranking"] = 1
   }
-  if (userdata["ranking"] <= 800) {
-    userdata["ranking"] = 800
-  }
   
 }
-///DEMO Skilllevel 6
 module.exports.checkSkillLevel = function (userdata) {
   var nextskillpoints = 0
   var levelup = false
@@ -1342,9 +1338,6 @@ module.exports.checkSkillLevel = function (userdata) {
   userdata["totalenthupoints"] = ((userdata["level"]-1) * 15) + 300
   if (userdata["level"] >= 99) {
     userdata["level"] = 99
-  }
-  if (userdata["level"] >= 6) {
-    userdata["level"] = 6
   }
   return [levelup, levelo, userdata["level"], userdata["skillpoints"]]
 }

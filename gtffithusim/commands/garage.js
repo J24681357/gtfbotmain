@@ -315,7 +315,7 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
     if (query["options"] == "select") {
       var number = parseInt(query["number"]);
       if (gte_STATS.currentCarNum(userdata) == number) {
-        gte_EMBED.alert({ name: "❌ Invalid", description: "You are already in this car. Please choose another", embed: "", seconds: 5 }, msg, userdata);
+        gte_EMBED.alert({ name: "❌ Invalid", description: "You are already in this car. Please choose another car.", embed: "", seconds: 5 }, msg, userdata);
         return
       }
   

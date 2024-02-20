@@ -215,18 +215,7 @@ client.on("interactionCreate", async interaction => {
 
 client.destroy().then(function () {
 client.login(process.env.SECRET2).then(function() {
- //require("replit-dis-uniter")(client)
   checklogin = true
-
-  gtm_LIST_BOT["executions"] = 0;
-  gtm_LIST_BOT["penalty"] = 0
-  fs.writeFileSync(
-    gtm_TOOLS.homeDir() + "jsonfiles/_botconfig.json",
-    JSON.stringify(gtm_LIST_BOT),
-    function(err, result) {
-      if (err) console.log("GTM: error", err);
-    }
-  );
     //gtm_EXTRA.test(client.guilds.cache.get("239493425131552778"))
   
    setTimeout(function() {
@@ -250,11 +239,11 @@ client.login(process.env.SECRET2).then(function() {
   */
 
 //manual update
-  /*
+  
     setTimeout(function() {
       gtm_EXTRA.updatemanual(client)
     }, 10000)
-    */
+    
   /*
   setTimeout(function() {
     client.rest.on('rateLimited', (info) => {

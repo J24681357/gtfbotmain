@@ -34,7 +34,7 @@ global.gtf_COURSEMAKER = require(home + "functions/coursemaker/f_course");
 ///
 global.gtf_LIST_EMBEDCOUNTS = {};
 global.gtf_LIST_BOT = JSON.parse(fs.readFileSync(home + "jsonfiles/_botconfig.json", "utf8")); 
-global.gtf_LIST_ANNOUNCER = JSON.parse(fs.readFileSync(home + "jsonfiles/announcer.json", "utf8")); 
+global.gtf_LIST_ANNOUNCER = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfannouncer.json", "utf8")); 
 global.gtf_LIST_CARS = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfcarlist.json", "utf8")); 
 global.gtf_LIST_TRACKS = JSON.parse(fs.readFileSync(home + "jsonfiles/gtftracklist.json", "utf8")); 
 global.gtf_LIST_WEATHER = JSON.parse(fs.readFileSync(home + "jsonfiles/gtfweather.json", "utf8")); 

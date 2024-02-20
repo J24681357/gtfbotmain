@@ -88,6 +88,7 @@ module.exports.toEmoji = function (text) {
     malaysia: "🇲🇾",
     netherlands: "🇳🇱",
     uk: "🇬🇧",
+    "south africa": "🇿🇦",
     spain: "🇪🇸",
     switzerland: "🇨🇭",
     germany: "🇩🇪",

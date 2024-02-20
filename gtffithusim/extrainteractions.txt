@@ -1,3 +1,0 @@
-npm init -y && npm i --save-dev node@18 && npm config set prefix=$(pwd)/node_modules/node && export PATH=$(pwd)/node_modules/node/bin:$PATH && rm -rf ./node_modules && npm install
-
-curl -I https://discordapp.com/api/v7/gateway

@@ -85,6 +85,11 @@ module.exports.addCarEnthu = function (car, arg, userdata) {
     if (arg == "SORT") {
       userdata["garage"] = gte_STATS.sortGarage(userdata);
     }
+    if (arg == "FORCECHANGE") {
+      userdata["currentcar"]++;
+      gte_STATS.setCurrentCar(userdata["currentcar"], [function(x){return !x["favorite"]}], userdata);
+      userdata["garage"] = gte_STATS.sortGarage(userdata);
+    }
     gte_STATS.saveEnthu(userdata);
     return;
   }

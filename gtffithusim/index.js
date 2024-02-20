@@ -1,5 +1,6 @@
 var fs = require("fs")
 process.env["SECRET3"] = JSON.parse(fs.readFileSync(gtf_TOOLS.homeDir() + ".keys.json", "utf8"))["SECRET3"];
+process.env["MONGOURL"] = JSON.parse(fs.readFileSync(gtf_TOOLS.homeDir() + ".keys.json", "utf8"))["MONGOURL"];
 
 const { Client, GatewayIntentBits, Partials, Discord, EmbedBuilder, ActionRowBuilder, ModalBuilder, TextInputBuilder, TextInputStyle, AttachmentBuilder, StringSelectMenuBuilder, ButtonBuilder, ActivityType, SelectMenuBuilder } = require("discord.js");
 const client = new Client({
@@ -51,7 +52,6 @@ client.on("ready", () => {
   //gte_FITHUSIMRACES.audit()
 
   gte_SLASHCOMMANDS.createslashcommands();
-  global.gte_SERVERGUILD = client.guilds.cache.get(gte_SERVERID)
  
   
   //gte_TOOLS.updateallsaves("FITHUSIMSAVES", {"fppupdate": true})
@@ -64,7 +64,7 @@ client.on("ready", () => {
   */
 
 gtf_CONSOLELOG.reverse();
-gtf_CONSOLELOG.fill(0, 0, 255);
+gtf_CONSOLELOG.fill(100, 100, 255);
 
 console.log("Fithusim: Time elapsed: " + timeelapsed + " " + "ms");
 gtf_CONSOLELOG.end();
