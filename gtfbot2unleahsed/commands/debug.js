@@ -38,7 +38,6 @@ module.exports = {
       gtf_EMBED.alert({ name: "❌ Error", description: "This command is for adminstrators only.", embed: embed, seconds: 0 }, msg, userdata);
       return
     }
-    var deletee = false;
 
     var keys = [];
 
@@ -72,9 +71,6 @@ module.exports = {
       }
       var extra = "";
 
-      var success = false;
-      var id = userdata["id"];
-      
       var debugcommandslist = {
         "updateallsaves": ["", function (query) {
          gtf_TOOLS.updateallsaves("GTF2SAVES", {})
@@ -330,17 +326,6 @@ gtf_SEASONAL.randomLimitedSeasonal()
 
       
       /*
-      if (query["args"] == "importuserdata") {
-        success = true
-      
-        var text = Buffer.from(JSON.stringify(userdata), 'utf8')
-        var mz = new Minizip();
-        mz.append("userdata.txt", text, {password: process.env.USERDATAPASSWORD});
-        const attachment = new AttachmentBuilder( new Buffer(mz.zip()), {name: "GTFITNESSGAME-USERDATA.zip"});
-        gtf_DISCORD.send(msg, {files:[attachment]})
-        
-        return;
-      }
       if (query["args"] == "parts_update") {
 
       for (var i = 0; i < userdata["garage"].length; i++) {

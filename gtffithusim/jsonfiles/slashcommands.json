@@ -39,7 +39,62 @@
       }
     ]
   },
-  "drivingrevolution": {
+  "debug": {
+    "name": "debug",
+    "description": "🔒 Debug for admins only.",
+    "channels": "",
+    "options": [
+      {
+        "name": "args",
+        "description": "None",
+        "type": 3,
+        "required": true
+      },
+      {
+        "name": "user",
+        "description": "None",
+        "type": 6,
+        "required": true
+      },
+      {
+        "name": "options",
+        "description": "None",
+        "type": 3,
+        "required": false,
+        "choices": [
+          {
+            "name": "restartbot",
+            "value": "restartbot"
+          }
+        ]
+      },
+      {
+        "name": "string",
+        "description": "None",
+        "type": 3,
+        "required": false
+      },
+      {
+        "name": "string2",
+        "description": "None",
+        "type": 3,
+        "required": false
+      },
+      {
+        "name": "number",
+        "description": "None",
+        "type": 3,
+        "required": false
+      },
+      {
+        "name": "object",
+        "description": "None",
+        "type": 4,
+        "required": false
+      }
+    ]
+  },
+"drivingrevolution": {
     "name": "drivingrevolution",
     "description": "🎌 (DEMO) Driving Revolution: Drive in interactive stages to hone your skills.",
     "channels": "",
