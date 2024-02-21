@@ -184,6 +184,7 @@ module.exports = {
 
       if (isNaN(percentage)) {
         percentage = 0
+        rating = "Inconclusive"
       }
       return [percentage, rating]
     }

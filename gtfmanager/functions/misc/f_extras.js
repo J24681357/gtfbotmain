@@ -979,7 +979,7 @@ module.exports.locationoftheweek = function(client) {
 
     var lastdate = lastmsg.embeds[0].title.split("(")[1].split(")")[0]
 //
-     if (lastdate != datetime && weekday == 5) {
+     if (lastdate != datetime && weekday == 0) {
        console.log("GTM: New Location Of The Week!")
         messages.filter(msg => msg.author.id == gtm_USERID).forEach(r => {
     list.push(r.embeds[0].description.split("**")[1])

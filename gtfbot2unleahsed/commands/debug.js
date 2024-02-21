@@ -111,20 +111,18 @@ module.exports = {
         }, 2000)
         }], 
         "announceseasonal": ["", function (query) {
-          var event = gtf_LIST_MESSAGES
-        var car = gtf_CARS.get({make: event["prize"]["item"]["makes"][0], fullname: event["prize"]["item"]["fullnames"][0]})
-        var message = "In Seasonal Events (**/seasonal**), complete all races in the limited time event in the upcoming rotation to earn the " + "**" + car["name"] + " " + car["year"] + "**" + " in your garage!" 
+          var event = gtf_LIST_SEASONALEX
+            var car = gtf_CARS.get({make: event["prize"]["item"]["makes"][0], fullname: event["prize"]["item"]["fullnames"][0]})
+                var message = "In Seasonal Events (**/seasonal**), complete all races in the limited time event to earn the " + "**" + car["name"] + " " + car["year"] + "**" + " in your garage!" 
 
-        setTimeout(function() {
-          var string = query["string"]
-          var embed = new EmbedBuilder()
-          var channel = msg.guild.channels.cache.find(channel => channel.id === "687872420933271577");
-          embed.setTitle("🎉 __New Limited Time Event__")
-          embed.setColor(0x0151b0)
-          embed.setDescription(message)
-          embed.setImage(car["image"][0])
-          gtf_DISCORD.send(channel, { type1: "CHANNEL", embeds: [embed] })
-        }, 2000)
+                  var embed = new EmbedBuilder()
+                  var channel = gtf_SERVERGUILD.channels.cache.find(channel => channel.id === "687872420933271577");
+                  embed.setTitle("🎉 __New Limited Time Event Available__")
+                  embed.setColor(0x0151b0)
+                  embed.setDescription(message)
+                  embed.setImage(car["image"][0])
+                  gtf_DISCORD.send(channel, { type1: "CHANNEL", embeds: [embed] })
+          
         }],
         "announceupdate": ["string", function (query){
            setTimeout(function() {

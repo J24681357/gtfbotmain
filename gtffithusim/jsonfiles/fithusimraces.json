@@ -1236,7 +1236,7 @@
     "eventid": "ri-1",
     "positions": [{ "place": "1st", "points": 200 }],
     "startposition": 3,
-    "tracks": [{ "versions": ["Gran Turismo"], "name": "Circuit de Sainte-Croix - C", "upperlength": 14 }],
+    "tracks": [{ "versions": ["Gran Turismo"], "name": ["Circuit de Sainte-Croix - C"], "upperlength": 14 }],
     "type": "LAPS",
     "time": ["R"],
     "timeprogression": 0,

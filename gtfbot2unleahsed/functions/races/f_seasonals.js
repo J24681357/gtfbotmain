@@ -727,7 +727,7 @@ event["eventid"] = "SEASONALLIMITED-1"
 event["title"] = "🚘 Limited Time Event"
 event["start"] = 0
 event["prize"] = gtf_LIST_BOT["seasonallimitedeventprize"]
-  fs.writeFile("./jsonfiles/seasonallimitedevent_temp.json", require("json-format")(event), function (err) {
+  fs.writeFile(gtf_TOOLS.homeDir() + "jsonfiles/seasonallimitedevent_temp.json", require("json-format")(event), function (err) {
     if (err) {
       console.log(err);
     }
@@ -745,7 +745,6 @@ module.exports.checkseasonals = function() {
       console.log("NEWROTATION")
        if ((Object.keys(gtf_LIST_SEASONALEX).length >= 1 && gtf_LIST_SEASONALEX["start"] == gtf_LIST_BOT['seasonaldate']) && gtf_LIST_SEASONALEX["start"] != 0) {
          console.log("NEWSEASONAL")
-         announceseasonal()
     //
        }
 require("fs").writeFile(gtf_TOOLS.homeDir() + "jsonfiles/_botconfig.json", require("json-format")(gtf_LIST_BOT), function (err) {

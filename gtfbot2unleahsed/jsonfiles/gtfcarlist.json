@@ -1101,6 +1101,30 @@
     },
     {
       "make": "Aston-Martin",
+      "name": "Aston Martin Vantage",
+      "year": "2025",
+      "type": "Production",
+      "country": "UK",
+      "power": 656,
+      "weight": 3538,
+      "tires": "Sports: Hard",
+      "engine": "TB",
+      "drivetrain": "FR",
+      "carcostm": 0,
+      "aerom": 1,
+      "discount": 0,
+      "special": [
+        "Super", "x8"
+      ],
+      "offroad": 0,
+      "livery": [],
+      "image": [
+        "https://cdn.discordapp.com/attachments/1008527480707104848/1209744885100576878/2025-aston-martin-vantage-coupe-carbuzz-1228914-840x560-wp.png?ex=65e809b8&is=65d594b8&hm=5a0ef00c8b9d372349d046740d08fdd4dcadf42248486ffc14a0b09445028d47&"
+      ],
+      "_id": 44
+    },
+    {
+      "make": "Aston-Martin",
       "name": "Aston Martin Vantage GT3",
       "year": "2019",
       "type": "Race Car: GT3",

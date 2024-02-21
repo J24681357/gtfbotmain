@@ -179,10 +179,11 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         return
       }
       var league = ["RN", "RIV", "RIII", "RII", "RI", "RS"][query["type"]-1]
-      
+      /*
       if (!gte_STATS.checkLeague(league, embed, msg, userdata)) {
         return;
       }
+      */
       var races = JSON.parse(JSON.stringify(
         gte_FITHUSIMRACES.find({types: [league.toLowerCase()]})
       ))
@@ -285,6 +286,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
     allraces = allraces.sort(function(x,y) {return y["userodds"] - x["userodds"]})
       
       list = allraces.map(function(event) {
+        console.log(event["tracks"][0])
         var rtrack = gtf_TRACKS.random(event["tracks"][0], 1)[0]
         
         var laps = gte_RACE.lapCalc(rtrack['length'], {"RN": 6, "RIV": 6, "RIII": 9, "RII": 10, "RI": 13, "RS": 28}[league])[0]
