@@ -1242,9 +1242,13 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
 
   var select = [];
   var embed = new EmbedBuilder();
+  var place = ""
   var results1 = function (index) {
     var list = [];
     for (var j = 0; j < finalgrid.length; j++) {
+      if (finalgrid[j]["user"]) {
+        place = finalgrid[j]["place"]
+      }
       if (j == index) {
         list.push("⬜" + " __" + finalgrid[j]["name"] + "__");
       } else {
@@ -1257,7 +1261,10 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
     }
     return list.join("\n");
   };
-  if (indexes.length == 0) {
+  console.log(place)
+  if (indexes.length == 0 || 
+      (place == "4th" || place == "5th" || place == "6th") || 
+      (finalgrid.length == 2 && place == "2nd")) {
     embed.setTitle("__NO CARS UNLOCKED...__");
 
     var emojilist = [{ emoji: "⭐", emoji_name: "⭐", name: "OK", extra: "", button_id: 0 }];
@@ -1268,7 +1275,7 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
 
     function func(msg) {
       function ok() {
-        gte_GTF.resultsSummaryEnthu(racesettings, finalgrid, embed, msg, userdata);
+        gte_GTF.resultsSummaryEnthu(racesettings, "", embed, msg, userdata);
       }
 
       var functionlist = [ok];
@@ -1354,7 +1361,7 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
   }
 };
 
-module.exports.resultsSummaryEnthu = function (racesettings, finalgrid, embed, msg, userdata) {
+module.exports.resultsSummaryEnthu = function (racesettings, extra, embed, msg, userdata) {
   var embed = new EmbedBuilder();
   var history = gte_STATS.rankingHistory(userdata);
   var latestrace = history[history.length - 1];
@@ -1366,15 +1373,19 @@ module.exports.resultsSummaryEnthu = function (racesettings, finalgrid, embed, m
   gte_STATS.checkRanking(userdata);
 
   //recoveryrate
+  if (extra != "NOPOINTS") {
   if (racesettings["title"] == "REST") {
     var recoverypoints = userdata["totalenthupoints"];
     gte_STATS.addEnthuPoints(userdata["totalenthupoints"], userdata);
-  } else if (racesettings["title"] == "CHANGECAR") {
+  } 
+  else if (racesettings["title"] == "CHANGECAR") {
     var recoverypoints = 180 + 9 * (userdata["level"] - 1);
     gte_STATS.addEnthuPoints(recoverypoints, userdata);
-  } else {
+  } 
+  else {
     var recoverypoints = 60 + 3 * (userdata["level"] - 1);
     gte_STATS.addEnthuPoints(recoverypoints, userdata);
+  }
   }
 
   if (carlevelup[0]) {
@@ -1446,7 +1457,8 @@ module.exports.noEnthuPointsScreen = function (embed, msg, userdata) {
 
   function func(msg) {
     function ok() {
-      require(gte_TOOLS.homeDir() + "commands/fithusimlife").execute(msg, { options: "list" }, userdata);
+      gte_GTF.resultsSummaryEnthu(racesettings, "NOPOINTS", embed, msg, userdata)
+      //require(gte_TOOLS.homeDir() + "commands/fithusimlife").execute(msg, { options: "list" }, userdata);
     }
 
     var functionlist = [ok];

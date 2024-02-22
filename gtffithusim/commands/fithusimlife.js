@@ -39,7 +39,7 @@ module.exports = {
       userdata
     );
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
-    /*
+    
   var racecheck = Object.keys(userdata["races"]).filter(function(key){
     if (userdata["races"][key] == 3) {
     return true
@@ -47,6 +47,7 @@ module.exports = {
     return false
     }
   })
+    console.log(racecheck)
     
   if (racecheck.length >= 1) {
     userdata["races"][racecheck[0]] = 4
@@ -60,7 +61,7 @@ module.exports = {
 gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
     return
     }
-    */
+  
 
 
     ////CHECK NEW GAME
@@ -439,7 +440,7 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
           skillpoints:0
            })
               userdata["week"]++
-            gte_GTF.resultsSummaryEnthu(racesettings, {}, embed, msg, userdata)
+            gte_GTF.resultsSummaryEnthu(racesettings, "", embed, msg, userdata)
           }
 
           var functionlist = [ok]

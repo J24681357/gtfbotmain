@@ -344,7 +344,7 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
                             skillpoints:0
                      })
                         userdata["week"]++
-                      gte_GTF.resultsSummaryEnthu(racesettings, {}, embed, msg, userdata)
+                      gte_GTF.resultsSummaryEnthu(racesettings, "", embed, msg, userdata)
         }
       }
       

@@ -56,8 +56,8 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
         weatheri = gtf_WEATHER.advanceWeather(weatheri, racesettings["distance"]["km"]);
         userdata["raceinprogress"]["weatherhistory"].push(JSON.parse(JSON.stringify(weatheri)));
       }
-
-      var racelength = gte_RACEEX.raceLengthCalc(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata);
+var racelength = 10000
+      //var racelength = gte_RACEEX.raceLengthCalc(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata);
       if (racesettings["type"] == "DRIFT") {
         racesettings["sectors"] = racesettings["originalsectors"];
         racesettings["points"] = 0;

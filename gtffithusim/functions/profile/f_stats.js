@@ -946,9 +946,6 @@ module.exports.checkEnthuPoints = function (embed, msg, userdata) {
     return true;
   } else {
     if (embed != "") {
-      /// 
-      /// 
-      /// 
     gte_EMBED.alert({ name: "❌ No Enthu Points", description: "**You have lost all Enthu Points.**\nYou cannot earn skill points since you have no Enthu points.\nYou cannot join the next race.", embed: "", seconds: 0 }, msg, userdata);
     }
     return false;
