@@ -47,11 +47,10 @@ module.exports = {
     return false
     }
   })
-    console.log(racecheck)
     
   if (racecheck.length >= 1) {
     userdata["races"][racecheck[0]] = 4
-    var finalgrid = gtf_CARS.random({types: ["Rally Car", "Race Car"], upperyear: [1989, 2005, 9999][userdata["settings"]["GMODE"]],
+    var finalgrid = gte_CARS.randomEnthu({types: ["Rally Car", "Race Car"], upperyear: [1989, 2005, 9999][userdata["settings"]["GMODE"]],
                                       loweryear: [1960, 1990, 2006][userdata["settings"]["GMODE"]]}, 6).map(function(x) {
       return {
         "name": x["name"] + " " + x["year"]}
@@ -95,13 +94,12 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
 
     if (query["options"] == "new_game") {
        embed.setTitle("__New Game - Select Your First Car__");
-       var list = gtf_CARS.find({ 
+       var list = gte_CARS.findEnthu({ 
          upperyear: [1989, 2005, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2006][userdata["settings"]["GMODE"]], special: ["xstarter"] });
        var carlist = [];
        var listsec = []
         for (var i = 0; i < list.length; i++) {
           var classs = gte_PERF.perfEnthu(list[i], "DEALERSHIP")["class"];
-         
           var name = list[i]["name"];
           var image = list[i]["image"][0];
           
@@ -118,6 +116,10 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
             var car = list[number];
             userdata["week"] = 1
             gte_CARS.addCarEnthu(car, "FORCECHANGE", userdata);
+            list = list.filter(function(x,i){return i != number})
+            for (var j = 0; j < list.length; j++) {
+              gte_CARS.addCarEnthu(list[j], "SORT", userdata);
+            }
             require(__filename.split(".")[0]).execute(msg, {options:"list", extra: "New car!"}, userdata)
             return
           }
@@ -161,7 +163,6 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
      
       var list = []
       var images = []
-      var indexes = []
       if (typeof query["type"] === "undefined") {
         gte_STATS.loadAvatarImage2(embed, userdata, then2)
         function then2(attachment) {
@@ -207,6 +208,10 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         total = 2
       }
        var allraces = []
+      if (races.length == 0) {
+        gte_EMBED.alert({ name: "❌ No Races Available", description: "There are no races available in this class.", embed: "", seconds: 0 }, msg, userdata);
+        return
+      }
       for (var i = 1; i < total; i++) {
         var event = JSON.parse(JSON.stringify(gtf_TOOLS.randomItem(races, gte_STATS.week(userdata) + i)))
         //
@@ -219,7 +224,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
       event["driver"] = {car: gtfcar}
 
       if (event["title"].includes("One-Make")) {
-        var car = gtf_CARS.find({fullnames: [gtfcar["name"]]})[0]
+        var car = gte_CARS.findEnthu({fullnames: [gtfcar["name"]]})[0]
         event["regulations"] = {
           "tires": "Racing: Soft",
           "fpplimit": 9999,
@@ -287,14 +292,13 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
     allraces = allraces.sort(function(x,y) {return y["userodds"] - x["userodds"]})
       
       list = allraces.map(function(event) {
-        console.log(event["tracks"][0])
         var rtrack = gtf_TRACKS.random(event["tracks"][0], 1)[0]
         
         var laps = gte_RACE.lapCalc(rtrack['length'], {"RN": 6, "RIV": 6, "RIII": 9, "RII": 10, "RI": 13, "RS": 28}[league])[0]
 
         images.push(rtrack["image"])
         
-      return "__**" + event["title"] + "**__" + " " + rtrack["name"].replace(" Reverse", " 🔄") +
+      return "__**" + event["title"] + "**__" + " " + rtrack["name"].replace(" Reverse", " 🔄") + " " + gte_STATS.checkRaceComplete(event["title"] + " " + league, userdata) +
           "/n" + "`" + event["userodds"] + "` " + rtrack["length"] + " km. \\ " + event["grid"][0] + " CARS \\ " + laps + " LAPS"
     })
         
@@ -310,6 +314,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         var points = gte_RACE.creditsCalcEnthu(event).map(x => "**" + x["place"] + "**  " + x["points"] + " pts")
         event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
          var rtrack = gtf_TRACKS.random(event["tracks"][0], 1)[0]
+        
 
         event["regulations"]["upperyear"] = [1989, 2005, 9999][userdata["settings"]["GMODE"]]
         event["regulations"]["loweryear"] = [1960, 1990, 2006][userdata["settings"]["GMODE"]]
@@ -383,6 +388,8 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
           other: []
         };
         raceprep["racesettings"]["positions"] = gte_RACE.creditsCalcEnthu(raceprep["racesettings"], raceprep)
+        raceprep["racesettings"]["laps"] = gte_RACE.lapCalc(rtrack['length'], {"RN": 6, "RIV": 6, "RIII": 9, "RII": 10, "RI": 13, "RS": 28}[league])[0]
+         console.log(raceprep["racesettings"])
        
       gte_RACE.prepRace(raceprep, gtfcar, embed, msg, userdata);
   

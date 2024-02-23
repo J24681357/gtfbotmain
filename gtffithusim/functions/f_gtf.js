@@ -1261,7 +1261,6 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
     }
     return list.join("\n");
   };
-  console.log(place)
   if (indexes.length == 0 || 
       (place == "4th" || place == "5th" || place == "6th") || 
       (finalgrid.length == 2 && place == "2nd")) {
@@ -1275,7 +1274,12 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
 
     function func(msg) {
       function ok() {
+        if (racesettings["title"] == "⭐") {
+          var home = gte_TOOLS.homeDir()
+          require(home + "commands/fithusimlife").execute(msg, { options: "list" }, userdata);
+        } else {
         gte_GTF.resultsSummaryEnthu(racesettings, "", embed, msg, userdata);
+        }
       }
 
       var functionlist = [ok];
@@ -1337,7 +1341,7 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
         return;
       }
       var item = finalgrid[index];
-      var car = gtf_CARS.find({ fullnames: [item["name"]] })[0];
+      var car = gte_CARS.findEnthu({ fullnames: [item["name"]] })[0];
       gte_CARS.addCarEnthu(car, "SORT", userdata);
       embed.setDescription("You can now select a new car!" + "\n" + "**" + item["name"] + "**");
       embed.setImage(car["image"][0]);

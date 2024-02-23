@@ -86,7 +86,7 @@ module.exports = {
             gtf_STATS.addTotalMileage(query["number"], userdata)
         }],
         "addrandomcars": ["number", function (query) {
-           var cars = gtf_CARS.random({}, parseInt(query["number"]));
+           var cars = gte_CARS.randomEnthu({}, parseInt(query["number"]));
         for (var i = 0; i < cars.length; i++) {
           gtf_CARS.addCarEnthu(cars[i], "SORT", userdata);
         }

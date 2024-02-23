@@ -766,7 +766,7 @@ module.exports.redeemGift = function (title, gift, embed, msg, userdata) {
   } else if (gift["type"] == "RANDOMCAR") {
     userdata["gifts"] = userdata["gifts"].filter(x => x["id"] !== gift["id"]);
     delete gift["id"];
-    var prizes = gtf_CARS.random(gift["item"], 4).map(function(x) {
+    var prizes = gte_CARS.randomEnthu(gift["item"], 4).map(function(x) {
       x = {id: -1,
            type:"CAR",
            name: x["name"] + " " + x["year"],
@@ -779,7 +779,7 @@ module.exports.redeemGift = function (title, gift, embed, msg, userdata) {
   }
   else if (gift["type"] == "CAR") {
     var car = gift["item"];
-    var ocar = gtf_CARS.find({ makes: [car["make"]], fullnames: [car["name"] + " " + car["year"]] })[0];
+    var ocar = gte_CARS.findEnthu({ makes: [car["make"]], fullnames: [car["name"] + " " + car["year"]] })[0];
     gte_CARS.addCarEnthu(car, "SORT", userdata);
     userdata["gifts"] = userdata["gifts"].filter(x => x["id"] !== gift["id"]);
     gte_STATS.saveEnthu(userdata);
@@ -1217,6 +1217,20 @@ context.fillText("  " + userdata["enthupoints"] + " / " + userdata["totalenthupo
   await callback(attachment)
 }
 
+module.exports.checkRaceComplete = function (name, userdata) {
+  if (typeof userdata["races"][name] === "undefined") {
+    return ""
+  } else {
+    var num = userdata["races"][name]
+  
+    if (num >= 4) {
+      return "⭐"
+    } else {
+      return ""
+    }
+  }
+
+};
 ///RACEINPROGRESS
 module.exports.getRaceCompletion = function (racesettings, raceid, userdata) {
   eventid = racesettings["eventid"].toLowerCase();
@@ -1264,9 +1278,10 @@ module.exports.addRankingRace = function (racesettings, place, points, damage, u
     userdata["races"] = {}
   }
 var league = racesettings["eventid"].split("-")[0].toUpperCase()
+  if (place == "1st") {
   if ((league == "RII" || league == "RI")) {
     if (typeof userdata["races"][racesettings["title"] + " " + league] !== "undefined") {
-      if (userdata["races"][racesettings["title"] + " " + league] == 3) {
+      if (userdata["races"][racesettings["title"] + " " + league] >= 3) {
         userdata["races"][racesettings["title"] + " " + league] = 4
       } else {
         userdata["races"][racesettings["title"] + " " + league]++
@@ -1274,6 +1289,7 @@ var league = racesettings["eventid"].split("-")[0].toUpperCase()
     } else {
     userdata["races"][racesettings["title"] + " " + league] = 1
     }
+  }
   }
   
   userdata["rankinghistory"].push({title:racesettings["title"],
@@ -1311,7 +1327,6 @@ module.exports.checkRanking = function (userdata) {
   }
   if (userdata["rankingpoints"] >= 4500) {
     userdata["ranking"] = Math.round(((-2/225) * userdata["rankingpoints"]) + 90)
-    userdata["ranking"] = 50
   }
   if (userdata["ranking"] <= 1) {
     userdata["ranking"] = 1

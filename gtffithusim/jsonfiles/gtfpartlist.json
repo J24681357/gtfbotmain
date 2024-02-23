@@ -134,7 +134,7 @@
       "type": "Suspension",
       "name": "Stage 1",
       "cost": 2500,
-      "percent": 150,
+      "percent": 10,
       "models": [],
       "engines": [
         "NA",
@@ -159,7 +159,7 @@
       "type": "Suspension",
       "name": "Stage 2",
       "cost": 5000,
-      "percent": 300,
+      "percent": 25,
       "models": [],
       "engines": [
         "NA",
@@ -182,7 +182,7 @@
       "type": "Suspension",
       "name": "Stage 3",
       "cost": 8000,
-      "percent": 400,
+      "percent": 50,
       "models": [],
       "engines": [
         "NA",

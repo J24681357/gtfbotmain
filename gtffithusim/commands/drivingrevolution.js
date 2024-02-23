@@ -95,7 +95,7 @@ module.exports = {
 
       for (var x = 0; x < stage.length; x++) {
         var track = stage[x]["tracks"][0]["name"]
-        var car = gtf_CARS.find({ fullnames: [stage[x]["car"]] })[0]
+        var car = gte_CARS.findEnthu({ fullnames: [stage[x]["car"]] })[0]
         list.push(
             "__**" + stage[x]["title"] + "**__" + " " + "` " + gte_STATS.DRStageStatus(stage[x], userdata) + " `" + "\n" +
           "**Car:** " + stage[x]["car"] + "\n" +

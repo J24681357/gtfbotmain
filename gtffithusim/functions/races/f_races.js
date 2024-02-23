@@ -207,7 +207,7 @@ module.exports.prepRace = function(raceprep, gtfcar, embed, msg, userdata) {
 
 module.exports.setRaceSettings = function(raceprep, gtfcar, embed, msg, userdata) {
 
-  var carselect = raceprep["car"] == "GARAGE" ? gtfcar : gte_CARS.addCarEnthu(gtf_CARS.find({ fullnames: [raceprep["car"]] })[0], "LOAN")
+  var carselect = raceprep["car"] == "GARAGE" ? gtfcar : gte_CARS.addCarEnthu(gte_CARS.findEnthu({ fullnames: [raceprep["car"]] })[0], "LOAN")
 
   if (typeof raceprep["track"] == "string") {
     var track = gtf_TRACKS.find({ name: [raceprep["track"]], versions: ["Gran Turismo"] })[0];
@@ -455,12 +455,12 @@ module.exports.createGridEnthu = function(racesettings, special) {
 
 
   if (racesettings["mode"] == "ARCADE") {
-    var test = gtf_CARS.find(object)
+    var test = gte_CARS.findEnthu(object)
     while (object["lowerfpp"] >= 0) {
       if (test.length == 1 || test.length == 0) {
         object["upperfpp"] = object["upperfpp"] + 30
         object["lowerfpp"] = object["lowerfpp"] - 50
-        test = gtf_CARS.find(object)
+        test = gte_CARS.findEnthu(object)
       }
       if (test.length >= 2) {
         break;
@@ -468,19 +468,19 @@ module.exports.createGridEnthu = function(racesettings, special) {
     }
   }
   if (racesettings["mode"] == "CAREER") {
-    var test = gtf_CARS.find(object)
+    var test = gte_CARS.findEnthu(object)
     while (object["lowerfpp"] >= 0) {
       if (test.length >= 1) {
         break;
       }
       if (test.length == 0) {
         object["lowerfpp"] = object["lowerfpp"] - 50
-        test = gtf_CARS.find(object)
+        test = gte_CARS.findEnthu(object)
       }
     }
   }
   object["seed"] = racesettings["tracks"][0]["seed"]
-  var randomcars = gtf_CARS.random(object, count);
+  var randomcars = gte_CARS.randomEnthu(object, count);
 
 
   var finalgrid = [];
@@ -534,7 +534,7 @@ module.exports.createGridEnthu = function(racesettings, special) {
         object2["seed"] = racesettings["tracks"][0]["seed"]
         object2["lowerfpp"] = object2["lowerfpp"]
         object2["upperfpp"] = object2["upperfpp"] + 30
-        ccc = gtf_CARS.random(object2, count)[0]
+        ccc = gte_CARS.randomEnthu(object2, count)[0]
       }
 
       var temp = gte_PERF.perfEnthu(ccc, "DEALERSHIP")

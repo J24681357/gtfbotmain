@@ -149,7 +149,7 @@ module.exports.perfEnthu = function (gtfcar, condition) {
     }
     if (suspension !== undefined) {
       var suspp = suspension["percent"] / 100;
-      aero = aero * suspp;
+      aero = aero + suspp;
       value += suspension["cost"]
       sell += gtf_GTFAUTO.sellCalc(suspension["cost"]);
     }
@@ -283,6 +283,8 @@ module.exports.perfEnthu = function (gtfcar, condition) {
       if (ocar["type"].includes("Race Car") || ocar["type"].includes("Rally Car")) {
         classs = "R"
       }
+    console.log(classs)
+    console.log(Math.round(nnfpp))
 
     return { fpp: Math.round(nnfpp),
             class: classs,

@@ -348,7 +348,7 @@ module.exports.costCalc = function (part, gtfcar, ocar) {
     return part["cost"]
   }
   if (part["type"] == "Car Engine") {
-    var car = gtf_CARS.find({ fullnames: [part["name"]] })[0]
+    var car = gte_CARS.findEnthu({ fullnames: [part["name"]] })[0]
     var cost = gtf_MATH.round(gtf_CARS.costCalcRaw(car, gte_PERF.perfEnthu(car, "DEALERSHIP")["fpp"])/1.5, 1);
     if (cost >= 150000) {
       return 150000

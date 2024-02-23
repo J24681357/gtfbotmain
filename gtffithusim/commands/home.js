@@ -91,7 +91,7 @@ module.exports = {
       });
      var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
    buttons.unshift(menu);
-    var car = gtf_CARS.random({}, 1)[0];
+    var car = gte_CARS.randomEnthu({}, 1)[0];
     results = "__**Fithusim Life**__" + "\n" + 
       "__**Driving Revolution**__" + "\n" +
       "__**Generation Select**__" + "\n" +

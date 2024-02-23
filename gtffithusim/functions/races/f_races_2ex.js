@@ -339,7 +339,7 @@ module.exports.licensecheck = function(racesettings, racedetails, finalgrid, emb
     }
     gte_STATS.setLicense(option.toUpperCase(), userdata);
     var args = licenses[ids[total]]["prize"]["item"]
-    var car = gtf_CARS.random(args, 1)[0];
+    var car = gte_CARS.randomEnthu(args, 1)[0];
     gte_STATS.addGift({
       id: -1, type: "CAR", name: "License " + option.toUpperCase() + ": All Gold Reward", item: car, author: "GT FITNESS", inventory: true
     }, userdata)
@@ -619,7 +619,7 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
 
     racesettings = { ...gte_LIST_FITHUSIMRACES[racesettings["eventid"].toLowerCase().replace("-", "")] }
 
-    var carselect = racesettings["car"] == "GARAGE" ? gte_STATS.currentCar(userdata) : gte_CARS.addCarEnthu(gtf_CARS.find({ fullnames: [racesettings["car"]] })[0], "LOAN")
+    var carselect = racesettings["car"] == "GARAGE" ? gte_STATS.currentCar(userdata) : gte_CARS.addCarEnthu(gte_CARS.findEnthu({ fullnames: [racesettings["car"]] })[0], "LOAN")
 
     if (typeof msg.user === 'undefined') {
       racesettings["driver"] = { name: msg.guild.members.cache.get(userdata["id"]).user.displayName, car: carselect, otires: carselect["perf"]["tires"]["current"].slice(), tirechange: true }

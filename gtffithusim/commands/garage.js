@@ -139,7 +139,7 @@ module.exports = {
         list = cars.map(function(i, index) {
           var favorite = i["favorite"] ? " ⭐" : ""
           
-          var ocar = gtf_CARS.find({fullnames: [i["name"]]})[0]
+          var ocar = gte_CARS.findEnthu({fullnames: [i["name"]]})[0]
           var image = ocar["image"][0]
          pageargs["image"].push(image)
           
@@ -177,7 +177,7 @@ module.exports = {
         list = cars.map(function(i, index) {
           var favorite = i["favorite"] ? " ⭐" : ""
 
-          var ocar = gtf_CARS.find({fullnames: [i["name"]]})[0]
+          var ocar = gte_CARS.findEnthu({fullnames: [i["name"]]})[0]
           var image = ocar["image"][0]
          pageargs["image"].push(image)
 
