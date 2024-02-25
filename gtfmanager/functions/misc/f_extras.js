@@ -42,7 +42,7 @@ module.exports.caremotes = function(client) {
 }
 
 module.exports.updatemanual = function(client) {
-  var manual = JSON.parse(fs.readFileSync('./jsonfiles/manual.json', 'utf8'))['manual'];
+  var manual = JSON.parse(fs.readFileSync(gte_TOOLS.homeDir() + 'jsonfiles/manual.json', 'utf8'))['manual'];
   var size = manual.length;
   var index = 0;
   if (index >= size) {
