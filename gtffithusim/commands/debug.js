@@ -76,14 +76,17 @@ module.exports = {
          gtf_TOOLS.updateallsaves("FITHUSIMSAVES", {})
         }],
         "importuserdata": "",
+        "auditfithusimraces": ["", function (query) {
+          gte_FITHUSIMRACES.audit()
+        }],
         "addexp": ["number", function (query) {
-            gtf_STATS.addExp(parseInt(query["number"]), userdata);
+            gte_STATS.addExp(parseInt(query["number"]), userdata);
         }],
         "addmileage": ["number", function (query) {
-            gtf_STATS.addMileage(query["number"], userdata)
+            gte_STATS.addMileage(query["number"], userdata)
         }],
         "addtotalmileage": ["number", function (query) {
-            gtf_STATS.addTotalMileage(query["number"], userdata)
+            gte_STATS.addTotalMileage(query["number"], userdata)
         }],
         "addrandomcars": ["number", function (query) {
            var cars = gte_CARS.randomEnthu({}, parseInt(query["number"]));
@@ -92,7 +95,7 @@ module.exports = {
         }
         }],
         "exitrace": ["", function (query) {
-            gtf_STATS.clearRaceInProgress(userdata)
+            gte_STATS.clearRaceInProgress(userdata)
         }],
         "clearitems": ["", function (query) {
             userdata["items"] = [];
@@ -147,7 +150,7 @@ module.exports = {
         userdata["licenses"] = licenses
         }],
         "resetuserdata": ["DELETE", function (query) {
-          gtf_STATS.save(userdata, "DELETE");
+          gte_STATS.save(userdata, "DELETE");
         }],
         "restartbot": ["", function (query) {
           process.exit(1);
@@ -168,7 +171,7 @@ module.exports = {
           }
         }
         command[1](query)
-        gtf_STATS.save(userdata);
+        gte_STATS.save(userdata);
         results = "`" + query["args"] + "` successful!\n" + "**User:** " + msg.guild.members.cache.get(userdata["id"]).user.displayName + "." + extra
         gtf_EMBED.alert({ name: "✅ Success", description: results, embed: "", seconds: 0 }, msg, userdata);
         return

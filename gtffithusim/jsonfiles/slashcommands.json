@@ -6,7 +6,7 @@
   },
 "fithusimlife": {
     "name": "fithusimlife",
-    "description": "🎌 (DEMO) Fithusim Life: Participate in leagues & rank up to the top.",
+    "description": "🎌 Fithusim Life: Participate in leagues & rank up to the top.",
     "channels": "",
     "options": [
       {
@@ -39,7 +39,7 @@
       }
     ]
   },
-  "debug": {
+"debug": {
     "name": "debug",
     "description": "🔒 Debug for admins only.",
     "channels": "",
@@ -96,7 +96,7 @@
   },
 "drivingrevolution": {
     "name": "drivingrevolution",
-    "description": "🎌 (DEMO) Driving Revolution: Drive in interactive stages to hone your skills.",
+    "description": "🎌 Driving Revolution: Drive in interactive stages to hone your skills.",
     "channels": "",
     "options": [
       {

@@ -757,7 +757,7 @@ module.exports.audit = async function () {
     var type = "error";
     var name = oldcar["name"].replace(/ /gi, "").toLowerCase();
     var make = oldcar["make"].replace(/ /gi, "").toLowerCase();
-    console.log(name)
+
     var success = false
     var download2 = async function (uri, filename, callback) {
       try {

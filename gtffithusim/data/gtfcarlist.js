@@ -16,7 +16,7 @@ module.exports.findEnthu = function (args) {
 
   var total = Object.keys(args).length;
   var final = [];
-  var makes = [ 'alfa-romeo', 'alpine', 'aston-martin', 'audi','bmw', 'bugatti', 'cadillac', 'caterham', 'chevrolet', 'chrysler', 'citroen', 'daihatsu', 'de-tomaso', 'dodge',  'fiat', 'ford', 'honda', 'hyundai', 'jaguar', 'lancia', 'land-rover', 'lotus', 'mazda', 'mercedes-benz', 'mini', 'mitsubishi', 'nismo', 'nissan','opel', 'peugeot', 'pontiac', 'porsche', 'renault', 'ruf',  'shelby', 'smart', 'subaru', 'suzuki',  'tommykaira', 'toyota', 'tvr', 'volkswagen', 'volvo' ]
+  var makes = [ 'alfa-romeo', 'alpine', 'aston-martin', 'audi','bmw', 'bugatti', 'cadillac', 'caterham', 'chevrolet', 'chrysler', 'citroen', 'daihatsu', 'de-tomaso', 'dodge',  'fiat', 'ford', 'honda', 'hyundai', 'jaguar', 'lancia', 'land-rover', 'lotus', 'mazda', 'mercedes-benz', 'mini', 'mitsubishi', 'nismo', 'nissan','opel', 'peugeot', 'pontiac', 'renault', 'ruf',  'shelby', 'smart', 'subaru', 'suzuki',  'tommykaira', 'toyota', 'tvr', 'volkswagen', 'volvo' ]
 
   var carid = 0;
 

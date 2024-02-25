@@ -1242,6 +1242,7 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
 
   var select = [];
   var embed = new EmbedBuilder();
+  embed.setColor(userdata["settings"]["COLOR"])
   var place = ""
   var results1 = function (index) {
     var list = [];
@@ -1261,32 +1262,28 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
     }
     return list.join("\n");
   };
-  if (indexes.length == 0 || 
-      (place == "4th" || place == "5th" || place == "6th") || 
-      (finalgrid.length == 2 && place == "2nd")) {
-    embed.setTitle("__NO CARS UNLOCKED...__");
-
-    var emojilist = [{ emoji: "⭐", emoji_name: "⭐", name: "OK", extra: "", button_id: 0 }];
-
-    var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
-    gte_STATS.saveEnthu(userdata);
-    gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, func);
-
-    function func(msg) {
-      function ok() {
-        if (racesettings["title"] == "⭐") {
-          var home = gte_TOOLS.homeDir()
-          require(home + "commands/fithusimlife").execute(msg, { options: "list" }, userdata);
-        } else {
-        gte_GTF.resultsSummaryEnthu(racesettings, "", embed, msg, userdata);
-        }
-      }
-
-      var functionlist = [ok];
-      gte_TOOLS.createButtons(buttons, emojilist, functionlist, msg, userdata);
-    }
-    return;
+  if (indexes.length == 0) {
+    stop()
+    return
+  } 
+  if (place == "5th" || place == "6th") {
+    stop()
+    return
   }
+  if (finalgrid.length == 2 && place == "2nd") {
+    stop()
+    return
+  }
+
+    function stop() {
+      embed.setTitle("__NO CARS UNLOCKED...__");
+
+      var emojilist = [{ emoji: "⭐", emoji_name: "⭐", name: "OK", extra: "", button_id: 0 }];
+
+      var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
+      gte_STATS.saveEnthu(userdata);
+      gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, func);
+    }
 
   index = gtf_TOOLS.randomItem(indexes);
   var final = results1(index);
@@ -1367,6 +1364,7 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
 
 module.exports.resultsSummaryEnthu = function (racesettings, extra, embed, msg, userdata) {
   var embed = new EmbedBuilder();
+  embed.setColor(userdata["settings"]["COLOR"])
   var history = gte_STATS.rankingHistory(userdata);
   var latestrace = history[history.length - 1];
   var enthupointso = parseInt(userdata["enthupoints"]);

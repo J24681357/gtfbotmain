@@ -1244,5 +1244,132 @@
         "item": 0
       }
     }
-  ]
+  ], 
+  "stage-4": [{
+    "title": "Stage 4-1",
+    "eventid": "dr-13",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 0
+      }
+    ],
+    "tracks": [
+      {
+        "name": "Autumn Ring",
+        "difficulty": 0,
+        "pattern": [
+          {
+            "arrow": 2,
+            "brake": false,
+            "score": ""
+          },
+          {
+            "arrow": 2,
+            "brake": false,
+            "score": ""
+          },
+          {
+            "arrow": 2,
+            "brake": true,
+            "score": ""
+          },
+          {
+            "arrow": 4,
+            "brake": true,
+            "score": ""
+          },
+          {
+            "arrow": 4,
+
+            "brake": false,
+            "score": ""
+          },
+          {
+            "arrow": 2,
+
+            "brake": false,
+            "score": ""
+          },
+          {
+            "arrow": 0,
+
+            "brake": false,
+            "score": ""
+          },
+          {
+            "arrow": 2,
+
+            "brake": false,
+            "score": ""
+          },
+          {
+            "arrow": 2,
+
+            "brake": false,
+            "score": ""
+          },
+          {
+            "arrow": 3,
+
+            "brake": false,
+            "score": ""
+          },
+          {
+            "arrow": 1,
+
+            "brake": false,
+            "score": ""
+          },
+          {
+            "arrow": 3,
+
+            "brake": false,
+            "score": ""
+          }
+        ]
+      }
+    ],
+    "type": "LAPS",
+    "time": ["R"],
+    "timeprogression": 0,
+    "weather": ["Clear"],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [6],
+    "gridstart": { "start": [5, 5], "position": [2, true] },
+    "difficulty": 100,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "Renault Sport Clio R.S. 220 EDC Trophy 2016",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 9999,
+      "upperfpp": 9999,
+      "lowerfpp": 0,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [],
+      "special": [],
+      "prohibited": []
+    },
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  }]
 }

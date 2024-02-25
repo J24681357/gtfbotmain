@@ -1433,18 +1433,6 @@ module.exports.checkMessages = function(command, callback, msg, userdata) {
 
 }
 module.exports.checkRewards = function (type, extra, userdata) {
-  /*
-    var rewards = .gtfrewards[type]
-  
-  for (var i = 0; i < rewards.length; i++) {
-    var f = gte_STATS.triggerReward(rewards[i]["name"], rewards[i], extra, userdata)
-    if (f) {
-    var item = rewards[i]["item"]
-    gte_STATS.addGift(item, userdata)
-    gte_STATS.addItem(rewards[i]["name"], userdata)
-    }
-  }
-  */
 }
 
 module.exports.raceEventStatus = function (event, userdata) {

@@ -35,6 +35,7 @@ module.exports = {
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
 
     embed.setTitle("⚙ __GTF Settings__");
+    embed.setDescription("**❓ Select an option in the drop down menu.**")
 
         var settingslist = [
           {

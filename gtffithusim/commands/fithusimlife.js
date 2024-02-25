@@ -93,6 +93,10 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
 
 
     if (query["options"] == "new_game") {
+      if (gte_STATS.garage(userdata) != 0) {
+        require(gte_TOOLS.homeDir() + "commands/garage").execute(msg, {options:"changecar"}, userdata)
+        return
+      }
        embed.setTitle("__New Game - Select Your First Car__");
        var list = gte_CARS.findEnthu({ 
          upperyear: [1989, 2005, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2006][userdata["settings"]["GMODE"]], special: ["xstarter"] });
@@ -192,7 +196,6 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
     
       races = races.filter(function(event) {
         if (event["regulations"]["upperyear"] == 9999) {
-
           event["regulations"]["upperyear"] = [1989, 2005, 9999][userdata["settings"]["GMODE"]]
           event["regulations"]["loweryear"] = [1960, 1990, 2006][userdata["settings"]["GMODE"]]
         }
@@ -234,8 +237,8 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
           "lowerpower": 0,
           "upperweight": 9999,
           "lowerweight": 0,
-          "upperyear": 9999,
-          "loweryear": 0,
+          "upperyear": car["year"],
+          "loweryear": car["year"],
           "countries": [],
           "makes": [car["make"]],
           "models": [car["name"]],
@@ -314,10 +317,12 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         var points = gte_RACE.creditsCalcEnthu(event).map(x => "**" + x["place"] + "**  " + x["points"] + " pts")
         event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
          var rtrack = gtf_TRACKS.random(event["tracks"][0], 1)[0]
-        
 
-        event["regulations"]["upperyear"] = [1989, 2005, 9999][userdata["settings"]["GMODE"]]
-        event["regulations"]["loweryear"] = [1960, 1990, 2006][userdata["settings"]["GMODE"]]
+        
+        if (event["regulations"]["upperyear"] == 9999) {
+          event["regulations"]["upperyear"] = [1989, 2005, 9999][userdata["settings"]["GMODE"]]
+          event["regulations"]["loweryear"] = [1960, 1990, 2006][userdata["settings"]["GMODE"]]
+        }
         
         var finalgrid = gte_RACE.createGridEnthu(event, "", 0)
          event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
@@ -389,7 +394,6 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
         };
         raceprep["racesettings"]["positions"] = gte_RACE.creditsCalcEnthu(raceprep["racesettings"], raceprep)
         raceprep["racesettings"]["laps"] = gte_RACE.lapCalc(rtrack['length'], {"RN": 6, "RIV": 6, "RIII": 9, "RII": 10, "RI": 13, "RS": 28}[league])[0]
-         console.log(raceprep["racesettings"])
        
       gte_RACE.prepRace(raceprep, gtfcar, embed, msg, userdata);
   

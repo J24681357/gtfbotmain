@@ -15,10 +15,8 @@ var cooldowns = new Set();
 var { MongoClient, ServerApiVersion } = require('mongodb');
 
 var gtfexp = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfexp.json", "utf8"));
-var gtfrewards = JSON.parse(fs.readFileSync(__dirname + "/" + "jsonfiles/gtfrewards.json", "utf8"));
 
 module.exports.gtfexp = gtfexp;
-module.exports.gtfrewards = gtfrewards
 
 var listinmaint = [];
 client.commands = {};
@@ -49,7 +47,7 @@ client.on("ready", () => {
 
   require(__dirname + "/" + "files/directories");
 
-  //gte_FITHUSIMRACES.audit()
+  
 
   gte_SLASHCOMMANDS.createslashcommands();
  
@@ -113,7 +111,6 @@ client.on("interactionCreate", async interaction => {
       interaction.content = interaction.content.join("***");
     }
     var embed = new EmbedBuilder();
-    embed.setColor(0x0151b0);
 
     var command = client.commands[commandName] || client.commands.filter(cmd => cmd.aliases && cmd.aliases.includes(commandName));
 

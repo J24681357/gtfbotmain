@@ -41,6 +41,10 @@ module.exports = {
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
 
     ///SHORTCUTS
+    if (query["options"] == 'generationselect') {
+      var cmd = require(__dirname + "/" + "settings");
+      return cmd.execute(msg, {options:"generationselect"}, userdata);
+    }
     if (typeof query["options"] !== 'undefined') {
       var cmd = require(__dirname + "/" + query["options"]);
       return cmd.execute(msg, {}, userdata);
