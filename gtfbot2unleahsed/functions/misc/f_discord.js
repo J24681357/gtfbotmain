@@ -261,7 +261,7 @@ module.exports.role = function(msg, user, role, type, callback) {
 
 module.exports.autoMessage = function(client, title, text, color, image, channelid, elist, number) {
   var gtfbot = gtf_LIST_BOT
-  var server = client.guilds.cache.get(gtf_SERVERIDex);
+  var server = client.guilds.cache.get(gtf_SERVERID);
   var channel = server.channels.cache.get(channelid);
   var embed = new EmbedBuilder();
   var description = text;

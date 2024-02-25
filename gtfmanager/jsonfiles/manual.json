@@ -10,14 +10,14 @@
         "Main Invite link: https://discord.gg/rxfRYQTgvh",
         "❗ We also have a Playstation message group for voice chats & media sharing. If you want to join the Playstation group, send your PSN name."
       ],
-      "color": "0x0151b0"
+      "color": "#0151b0"
     },
     {
       "title": "__**Reminder: This Is A Gran Turismo Server**__",
       "description": [
         "If you do not have interest in Gran Turismo, racing games, or cars, you will be asked to leave the server."
       ],
-      "color": "0xFF0000"
+      "color": "#FF0000"
     },
     {
       "title": "__**FAQs**__",
@@ -27,7 +27,7 @@
         "**How can I get roles?**",
         "1. Find them in the Channels & Roles option on top of the server."
       ],
-      "color": "0x0151b0"
+      "color": "#0151b0"
     },
      {
       "title": "__**FAQs - Part 2**__",
@@ -41,7 +41,7 @@
         "**Have any more questions/suggestions/issues?**",
         "1. Create a post in <#1022368959900692500>!"
       ],
-      "color": "0x0151b0"
+      "color": "#0151b0"
     },
     {
       "title": "__**License Rewards**__",
@@ -54,7 +54,7 @@
         "__**GTF License | 40,000pts**__\n<#429025543329939476>\nAccess to Audit Log in server settings",
         "__**GTF Veteran | 100,000pts**__\nHappiness"
       ],
-      "color": "0x0151b0"
+      "color": "#0151b0"
     },
    {"title": "__**Rules**__",
       "description": [
@@ -67,7 +67,7 @@
         ":seven: __Role Pings__\nOnce you have gaming or car roles, you commit of any pings by GTF members. Remove them if it bothers you.\n:warning: Do not spam mention roles either because Rule 4.",
         ":eight: __Drama__\nLimit the amount of drama in lobbies. Any disrespect or ignorance against the rules will be consequenced."
       ],
-      "color": "0x0151b0"
+      "color": "#0151b0"
     },
         {
       "title": "__**Rules - Part 2**__",
@@ -81,7 +81,7 @@
         ":one::five: __Discord Community Guildlines Apply Here!__\n:warning: You will be kicked/banned from the server if you are under the age requirements for Discord.",
         ":question: **Violating important GTF rules may result first with some warnings. If any more problems continues, this may result in a mute, kick, ban, or other consequences.**"
       ],
-      "color": "0x0151b0"
+      "color": "#0151b0"
     },
       {"title": "__**Want to be a GT Fitness Moderator?**__",
       "description": [
@@ -89,21 +89,21 @@
         "- You must have at least an **S License** to show your engagement in the server.\n- You must DM a request an administrator and answer in a few sentences about why you want to be a GTF moderator.",
  "❗ **The admins and moderators will then inform the person whether the request is accepted or denied.**"
       ],
-      "color": "0x0151b0"
+      "color": "#0151b0"
     },
     {
       "title": "__**Etiquettes**__",
       "description": [
         "<#508820132513054720>\nIn this lobby, generally many memes such as edgy, dank, funny content can be posted here except for the following:\n- NSFW content (belongs in #freedom-lobby)\n- Dark humor (especially involving death or intentional hatred against a certain group) (belongs in #freedom-lobby)\n- Sensitive/Offensive Content (belongs practically nowhere)\n\n:warning: If a certain meme gets too controversial from others, mods are allowed to delete the meme and/or provide warnings.", "<#778712498006261780><#367099991862411265>\nDo not send any data mined cars/tracks for Gran Turismo 7 in the channel (even if it's a spoiler). This will be lifted when its live service support has ended."
       ],
-      "color": "0x0151b0"
+      "color": "#0151b0"
     },
         {
       "title": "__**Youtube Channels**__",
       "description": [
         "[GT Fitness Racing Team](https://www.youtube.com/channel/UC8djG5nPff-GeaD_Z0re3_g)", "**JOIN THE FITNESS RACE!**"
       ],
-      "color": "0x0151b0"
+      "color": "#0151b0"
     }
   ]
 }
