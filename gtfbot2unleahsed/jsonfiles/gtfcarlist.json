@@ -2833,6 +2833,37 @@
   "cadillac": [
     {
       "make": "Cadillac",
+      "name": "Cadillac V-Series R",
+      "year": "2023",
+      "type": "Race Car: LMH",
+      "country": "USA",
+      "power": 671,
+      "weight": 2436,
+      "tires": "Racing: Medium",
+      "engine": "NA",
+      "drivetrain": "MR",
+      "carcostm": 50,
+      "aerom": 8,
+      "discount": 0,
+      "special": [
+        "Hybrid",
+        "x2"
+      ],
+      "offroad": 0,
+      "livery": [
+       "Cadillac Racing",
+     "Cadillac Racing (2)",
+        "Whelen Engineering"
+      ],
+      "image": [
+    "https://www.autoracing1.com/wp-content/uploads/2023/sportscars/laguna-seca/01cadillac1.jpg",
+    "https://media.discordapp.net/attachments/1008527480707104848/1211811103416258642/cadillac-v-series-r-wec-2023-v0-v01pi62l558b1.png?ex=65ef8e09&is=65dd1909&hm=0a1e3853a948e6a24e2ce9c14d81976e93dd1698af14551ecb083256e015b727&=&format=webp&quality=lossless&width=643&height=362",
+        "https://www.imsa.com/wp-content/uploads/sites/32/2019/09/22/2024_IWSC_WhelenCadillacRacing_31_1200x800_1-960x510.jpg"
+      ],
+      "_id": 691
+    },
+    {
+      "make": "Cadillac",
       "name": "Cadillac ATS-VR GT3",
       "year": "2015",
       "type": "Race Car: GT3",
