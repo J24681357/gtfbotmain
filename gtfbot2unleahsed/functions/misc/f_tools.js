@@ -71,6 +71,11 @@ module.exports.toEmoji = function (text) {
     curbturnleftup: gtf_EMOTE.curbturnleftup,
     curbturnupright: gtf_EMOTE.curbturnupright,
     curbturndownright: gtf_EMOTE.curbturndownright,
+    left: "⬅",
+    topleft: "↖",
+    top: "⬆",
+    topright: "↗",
+    right: "➡",
     
     "N/A": "N/A",
     austria: "🇦🇹",

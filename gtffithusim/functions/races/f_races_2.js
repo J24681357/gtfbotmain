@@ -910,7 +910,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
           ///START
           if (Object.keys(currpiece).length != 0) {
             if (x == 3 && y == arrowdir[currpiece["arrow"]]) {
-              layoutx[y] = gtf_TOOLS.toEmoji({ 0: "left", 1: "topleft", 2: "up", 3: "topright", 4: "right" }[currpiece["arrow"].toString()]);
+              layoutx[y] = gtf_TOOLS.toEmoji(["left", "topleft", "top","topright","right"][parseInt(currpiece["arrow"])]);
               continue;
             }
 
@@ -925,19 +925,17 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
             }
           }
 
-          if (settings["start"][0] - 1 == y && settings["start"][1] - 1 == x) {
-            layoutx[y] = "🔴";
-          } else {
-            if (dir[currpiece["arrow"]](x, y)) {
+
+       if (dir[currpiece["arrow"]](x, y)) {
               layoutx[y] = gtf_TOOLS.randomItem(racesettings["track"]["pattern"]);
             } else {
               layoutx[y] = "⬛";
             }
-          }
           //START
         }
         layout[x] = layoutx;
       }
+      
 
       var final = final + layout.map(x => x.join(" ")).join("\n") + "\n" + emojilist[userarrow]["emoji"] + " " + (useraccel ? "`Accelerating...`" : "`Braking...`");
 
@@ -1009,14 +1007,10 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
           gte_STATS.saveEnthu(userdata);
 
           embed.setDescription("__**FINISH**__ " + "Rank: " + rank + "\n\n" + racedetails);
-          /*
-            var field2 = (racesettings["driver"]["car"] == "") ? gtf_EMOTE.transparent : gtf_CARS.shortName(racesettings["driver"]["car"]["name"]) +
-        " " + "**" + racesettings["driver"]["car"]["fpp"] + gtf_EMOTE.fpp + "**"
-
-        var user = msg.user
-        */
+          embed.setThumbnail(racesettings["track"]["image"])
+ 
           var ping = "<@" + userdata["id"] + ">";
-          //embed.setFields([{name:gte_STATS.menuFooterEnthu(userdata), value: field2}]);
+          
           var emojilist = [
             {
               emoji: "⏭",
