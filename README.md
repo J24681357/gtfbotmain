@@ -1,5 +1,5 @@
 [GT Fitness 2: Unleahsed Game Manual](https://j24681357.github.io/gtfbotmain/)
-[GT Fitness: Fithusim Game Manual](https://j24681357.github.io/gtfbotmain/READMEN_FITHUSIM)
+[GT Fitness: Fithusim Game Manual](https://j24681357.github.io/gtfbotmain/README_FITHUSIM)
 
 # GT Fitness 2: Unleahsed Game Manual
 [<img src="https://raw.githubusercontent.com/J24681357/gtfbotmain/master/gtfbot2unleahsed/images/logo/gtfgamelogo.png" width="400"/>]()
