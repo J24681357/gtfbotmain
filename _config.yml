@@ -1,7 +1,7 @@
-name: GTF 2 Unleahsed Game Manual
+name: GTF Game Manuals
 title: null
 author:
-  name: J24681357 
+  name: J24681357
 remote_theme: jekyll/minima
 minima:
   skin: dark
@@ -20,6 +20,7 @@ relative_links:
   collections: true
 include:
   - README.md
+  - README_FITHUSIM.md
 header_pages:
   - README.md
 
