@@ -774,7 +774,7 @@ module.exports.redeemGift = function (title, gift, embed, msg, userdata) {
           }
       return x
     })
-    var description = gte_GTF.giftRoulette(title, "**" + title + "**", prizes, "", embed, msg, userdata);
+    var description = gte_GTF.giftRouletteEnthu(title, "**" + title + "**", prizes, "", embed, msg, userdata);
     return description
   }
   else if (gift["type"] == "CAR") {
@@ -1226,7 +1226,7 @@ module.exports.checkRaceComplete = function (name, userdata) {
     if (num >= 4) {
       return "⭐"
     } else {
-      return ""
+      return 3 - num
     }
   }
 

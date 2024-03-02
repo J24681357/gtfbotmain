@@ -283,8 +283,6 @@ module.exports.perfEnthu = function (gtfcar, condition) {
       if (ocar["type"].includes("Race Car") || ocar["type"].includes("Rally Car")) {
         classs = "R"
       }
-    console.log(classs)
-    console.log(Math.round(nnfpp))
 
     return { fpp: Math.round(nnfpp),
             class: classs,

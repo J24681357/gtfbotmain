@@ -101,16 +101,14 @@ module.exports = {
       "__**Generation Select**__" + "\n" +
       "__**Settings**__"
     embed.setDescription(message + results);
-    embed.setThumbnail("https://github.com/J24681357/gtfbotfithusim/raw/master/images/logo/fithusimlogo.png")
+    embed.setThumbnail("https://github.com/J24681357/gtfbotmain/raw/master/gtffithusim/images/logo/fithusimlogo.png")
     embed.fields = [];
 
-    //embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: gte_STATS.currentCarFooterEnthu(userdata) }]);
 
     gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, homefunc);
 
     function homefunc(msg) {
       var functionlist = [];
-      var indexn = 0
       for (var j = 0; j < menulist.length; j++) {
         functionlist.push(function (int) {
           if (int == "NEXTPAGE") {

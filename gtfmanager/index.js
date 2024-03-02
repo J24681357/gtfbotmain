@@ -240,9 +240,7 @@ client.login(process.env.SECRET2).then(function() {
 
 //manual update
   
-    setTimeout(function() {
-      gtm_EXTRA.updatemanual(client)
-    }, 10000)
+  //gtm_EXTRA.updatemanual(client)
     
   /*
   setTimeout(function() {

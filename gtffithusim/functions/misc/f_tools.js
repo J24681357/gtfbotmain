@@ -590,7 +590,7 @@ module.exports.prepareButtons = function (emojilist, msg, userdata) {
       finalindex++;
       newlist = new ActionRowBuilder();
     }
-    if (emojilist[i]["emoji"] == gtf_EMOTE.fithusimlogo || emojilist[i]["name"].includes("OK"))  {
+    if (emojilist[i]["emoji"] == gtf_EMOTE.fithusimlogo || emojilist[i]["name"].includes("OK") ||emojilist[i]["name"].includes("Join"))  {
       color = 4;
     } else if (emojilist[i]["emoji"] == gtf_EMOTE.flag) {
       color = 4;

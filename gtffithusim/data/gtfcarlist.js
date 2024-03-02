@@ -14,9 +14,54 @@ module.exports.findEnthu = function (args) {
     delete args["sort"];
   }
 
+ 
+
   var total = Object.keys(args).length;
   var final = [];
-  var makes = [ 'alfa-romeo', 'alpine', 'aston-martin', 'audi','bmw', 'bugatti', 'cadillac', 'caterham', 'chevrolet', 'chrysler', 'citroen', 'daihatsu', 'de-tomaso', 'dodge',  'fiat', 'ford', 'honda', 'hyundai', 'jaguar', 'lancia', 'land-rover', 'lotus', 'mazda', 'mercedes-benz', 'mini', 'mitsubishi', 'nismo', 'nissan','opel', 'peugeot', 'pontiac', 'renault', 'ruf',  'shelby', 'smart', 'subaru', 'suzuki',  'tommykaira', 'toyota', 'tvr', 'volkswagen', 'volvo' ]
+  var makes = [
+    "alfa-romeo",
+    "alpine",
+    "aston-martin",
+    "audi",
+    "bmw",
+    "bugatti",
+    "cadillac",
+    "caterham",
+    "chevrolet",
+    "chrysler",
+    "citroen",
+    "daihatsu",
+    "de-tomaso",
+    "dodge",
+    "fiat",
+    "ford",
+    "honda",
+    "hyundai",
+    "jaguar",
+    "lancia",
+    "land-rover",
+    "lotus",
+    "mazda",
+    "mercedes-benz",
+    "mini",
+    "mitsubishi",
+    "nismo",
+    "nissan",
+    "opel",
+    "peugeot",
+    "pontiac",
+    "renault",
+    "ruf",
+    "shelby",
+    "smart",
+    "subaru",
+    "suzuki",
+    "tommykaira",
+    "toyota",
+    "tvr",
+    "volkswagen",
+    "volvo",
+  ];
 
   var carid = 0;
 
@@ -299,8 +344,11 @@ module.exports.findEnthu = function (args) {
   if (final.length == 0) {
     return "";
   }
-
+  final = final.filter(function(x){
+    return (x["type"] == "Production" || x["type"] == "Aftermarket" || x["type"].includes("Race Car") || x["type"].includes("Rally Car"))
+  })
   ///sorting
+
   final.sort(function (a, b) {
     if (typeof sort !== "undefined") {
       if (sort == "alphabet" || sort == "Alphabetical Order") {
@@ -335,7 +383,7 @@ module.exports.findEnthu = function (args) {
   });
   final.map(function (x, i) {
     x["id"] = i;
-  });
+  })
 
   return JSON.parse(JSON.stringify(final));
 };
@@ -364,10 +412,10 @@ module.exports.addCarEnthu = function (car, arg, userdata) {
   if (arg != "LOAN") {
     if (gte_STATS.garage(userdata).length == 0) {
       gte_STATS.setCurrentCar(1, undefined, userdata);
-      userdata["currentcar"]++;
+      userdata["currentcar"] = 1
     }
   }
-  car["condition"] = 100
+  car["condition"] = 100;
 
   var tires = { current: car["tires"], list: [car["tires"]], tuning: [0, 0, 0] };
   if (car["tires"].includes("Racing")) {
@@ -394,7 +442,7 @@ module.exports.addCarEnthu = function (car, arg, userdata) {
   var brakes = { current: "Default", list: [], tuning: [-999, -999, -999] };
   var aerokits = { current: "Default", list: [], tuning: [-999, -999, -999] };
 
-  var condition = {oil:car["condition"], clean:car["condition"], engine:car["condition"], transmission: car["condition"], suspension:car["condition"], body:car["condition"]}
+  var condition = { oil: car["condition"], clean: car["condition"], engine: car["condition"], transmission: car["condition"], suspension: car["condition"], body: car["condition"] };
 
   var fpp = gte_PERF.perfEnthu(car, "DEALERSHIP")["fpp"];
 
@@ -410,7 +458,7 @@ module.exports.addCarEnthu = function (car, arg, userdata) {
     make: car["make"],
     year: car["year"],
     color: { current: "Default" },
-    livery: { current: "Default"},
+    livery: { current: "Default" },
     fpp: fpp,
     perf: {
       level: 1,
@@ -424,15 +472,14 @@ module.exports.addCarEnthu = function (car, arg, userdata) {
       aerokits: aerokits,
       brakes: brakes,
       carengine: { current: "Default", list: [], tuning: [-999, -999, -999] },
-      nitrous: { current: "Default", tuning: [-999, -999, -999]},
-      items: []
+      nitrous: { current: "Default", tuning: [-999, -999, -999] },
+      items: [],
     },
     rims: { current: "Default", list: [], tuning: [-999, -999, -999] },
     condition: condition,
-    totalmileage: 0
+    totalmileage: 0,
   };
   newcar["fpp"] = gte_PERF.perfEnthu(newcar, "GARAGE")["fpp"];
-
 
   if (arg == "ITEM" || arg == "LOAN") {
     return newcar;
@@ -442,12 +489,26 @@ module.exports.addCarEnthu = function (car, arg, userdata) {
       userdata["garage"] = gte_STATS.sortGarage(userdata);
     }
     if (arg == "FORCECHANGE") {
-
-      userdata["currentcar"]++;
-      gte_STATS.setCurrentCar(userdata["currentcar"], [function(x){return !x["favorite"]}], userdata);
+      userdata["currentcar"] = userdata["garage"].filter(function(x) {
+          var year = gtf_CARS.get({ make: x["make"], fullname: x["name"]})["year"]
+          var upperyear = [1989, 2009, 9999][userdata["settings"]["GMODE"]]
+          var loweryear = [1960, 1990, 2010][userdata["settings"]["GMODE"]]
+          return (loweryear <= year && upperyear >= year)
+      }).length
+      gte_STATS.setCurrentCar(
+        userdata["currentcar"],
+        [
+          function (x) {
+            var year = gtf_CARS.get({ make: x["make"], fullname: x["name"] })["year"];
+            var upperyear = [1989, 2009, 9999][userdata["settings"]["GMODE"]];
+            var loweryear = [1960, 1990, 2010][userdata["settings"]["GMODE"]];
+            return loweryear <= year && upperyear >= year;
+          }
+        ],
+        userdata
+      );
       //userdata["garage"] = gte_STATS.sortGarage(userdata);
     }
-    gte_STATS.saveEnthu(userdata);
     return;
   }
 };

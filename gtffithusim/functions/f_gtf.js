@@ -1164,72 +1164,6 @@ module.exports.lengthAlpha = function (fpp, weather, track) {
   return (percentage - weatherx * 40) * offroad;
 };
 
-module.exports.giftRoulette = function (title, results, prizes, special, embed, msg, userdata) {
-  var count = prizes.length;
-  if (special == "silent") {
-    index = Math.floor(Math.random() * count);
-    if (prizes[index]["type"] == "CREDITS") {
-      var item = prizes[index];
-
-      return gte_STATS.redeemGift("🎉 " + item["name"], item, embed, msg, userdata);
-    } else if (prizes[index]["type"] == "CAR") {
-      var item = prizes[index];
-
-      return gte_STATS.redeemGift("🎉 " + item["name"], item, embed, msg, userdata);
-    } else if (prizes[index]["type"] == "RANDOMCAR") {
-      var gift = prizes[index];
-      gift = { id: -1, type: "CAR", name: gift["name"], item: gift["item"], author: "", inventory: false };
-
-      return gte_STATS.redeemGift("🎉 " + gift["name"], gift, embed, msg, userdata);
-    }
-  }
-  var select = [];
-  embed.fields = [];
-  embed.setTitle("__" + title + "__");
-
-  embed.setDescription(results);
-  gtf_DISCORD.send(msg, { embeds: [embed] }, giftsfunc);
-
-  function giftsfunc(msg) {
-    var index = 0;
-
-    var results1 = function (index) {
-      var list = [];
-      for (var j = 0; j < count; j++) {
-        var emote = j == index ? gtf_EMOTE.rightarrow : gtf_EMOTE.transparent;
-        list.push(emote + " ||" + prizes[j]["name"] + "||");
-      }
-      return list.join("\n");
-    };
-
-    gtf_TOOLS.interval(
-      function () {
-        index = Math.floor(Math.random() * count);
-        var final = results1(index);
-        embed.setDescription(final);
-        msg.edit({ embeds: [embed] });
-      },
-      2000,
-      4
-    );
-
-    setTimeout(function () {
-      if (prizes[index]["type"] == "CREDITS") {
-        var item = prizes[index];
-
-        gte_STATS.redeemGift("🎉 " + item["name"], item, embed, msg, userdata);
-      } else if (prizes[index]["type"] == "CAR") {
-        var item = prizes[index];
-
-        gte_STATS.redeemGift("🎉 " + item["name"], item, embed, msg, userdata);
-      } else if (prizes[index]["type"] == "RANDOMCAR") {
-        var gift = prizes[index];
-        gift = { id: -1, type: "CAR", name: gift["name"], item: gift["item"], author: "", inventory: false };
-        gte_STATS.redeemGift("🎉 " + gift["name"], gift, embed, msg, userdata);
-      }
-    }, 9000);
-  }
-};
 
 module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg, userdata) {
   //finalgrid = finalgrid.sort()
@@ -1244,11 +1178,13 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
   var embed = new EmbedBuilder();
   embed.setColor(userdata["settings"]["COLOR"])
   var place = ""
+  var position = ""
   var results1 = function (index) {
     var list = [];
     for (var j = 0; j < finalgrid.length; j++) {
       if (finalgrid[j]["user"]) {
         place = finalgrid[j]["place"]
+        position = finalgrid[j]["position"]
       }
       if (j == index) {
         list.push("⬜" + " __" + finalgrid[j]["name"] + "__");
@@ -1266,27 +1202,36 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
     stop()
     return
   } 
-  if (place == "5th" || place == "6th") {
-    stop()
-    return
-  }
-  if (finalgrid.length == 2 && place == "2nd") {
-    stop()
-    return
-  }
 
-    function stop() {
+
+   var stop = function() {
       embed.setTitle("__NO CARS UNLOCKED...__");
 
       var emojilist = [{ emoji: "⭐", emoji_name: "⭐", name: "OK", extra: "", button_id: 0 }];
+     
+      var func = function(msg) {
+        function ok() {
+          gte_GTF.resultsSummaryEnthu(racesettings, finalgrid, embed, msg, userdata);
+        }
+
+        var functionlist = [ok];
+        gte_TOOLS.createButtons(buttons, emojilist, functionlist, msg, userdata);
+      }
 
       var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
-      gte_STATS.saveEnthu(userdata);
       gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, func);
     }
 
   index = gtf_TOOLS.randomItem(indexes);
   var final = results1(index);
+  if (position == 5 || position == 6) {
+    stop()
+    return
+  }
+  if (finalgrid.length == 2 && position == 2) {
+    stop()
+    return
+  }
   embed.setDescription(final);
   if (racesettings["title"].includes("⭐")) {
     embed.setTitle("__Special Car Raffle__");
@@ -1324,10 +1269,9 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
         var emojilist = [{ emoji: "⭐", emoji_name: "⭐", name: "OK", extra: "", button_id: 0 }];
 
         var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
-        gte_STATS.saveEnthu(userdata);
         gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, func);
 
-        function func(msg) {
+      function func(msg) {
           function ok() {
             gte_GTF.resultsSummaryEnthu(racesettings, finalgrid, embed, msg, userdata);
           }
@@ -1347,7 +1291,6 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
       var emojilist = [{ emoji: gtf_EMOTE.fithusimlogo, emoji_name: "fithusimlogo", name: "OK", extra: "", button_id: 0 }];
 
       var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
-      gte_STATS.saveEnthu(userdata);
       gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, func);
 
       function func(msg) {
@@ -1427,17 +1370,21 @@ module.exports.resultsSummaryEnthu = function (racesettings, extra, embed, msg, 
   var emojilist = [{ emoji: gtf_EMOTE.fithusimlogo, emoji_name: "fithusimlogo", name: "OK", extra: "", button_id: 0 }];
 
   var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
-  gte_STATS.saveEnthu(userdata);
   gte_STATS.loadAvatarImage2(embed, userdata, then2);
   function then2(attachment) {
     var files = [attachment];
     embed.setImage("attachment://bimage.png");
     embed.setColor(0xFFFFFF)
     gtf_DISCORD.send(msg, { embeds: [embed], components: buttons, files: files }, func);
+     userdata["raceinprogress"] = { active: false, messageid: "", channelid: "", expire: 0, gridhistory: [], timehistory: [], weatherhistory: [], msghistory: [], championshipnum: 0 };
+    gte_STATS.saveEnthu(userdata);
   }
 
   function func(msg) {
     function ok() {
+      if (latestrace["week"] == 0) {
+        userdata["rankinghistory"] = []
+      }
       var home = gte_TOOLS.homeDir()
       require(home + "commands/fithusimlife").execute(msg, { options: "list" }, userdata);
     }
@@ -1454,13 +1401,11 @@ module.exports.noEnthuPointsScreen = function (embed, msg, userdata) {
   var emojilist = [{ emoji: gtf_EMOTE.fithusimlogo, emoji_name: "fithusimlogo", name: "OK", extra: "", button_id: 0 }];
 
   var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
-  gte_STATS.saveEnthu(userdata);
   gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, func);
 
   function func(msg) {
     function ok() {
       gte_GTF.resultsSummaryEnthu(racesettings, "NOPOINTS", embed, msg, userdata)
-      //require(gte_TOOLS.homeDir() + "commands/fithusimlife").execute(msg, { options: "list" }, userdata);
     }
 
     var functionlist = [ok];

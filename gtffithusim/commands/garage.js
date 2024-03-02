@@ -100,8 +100,8 @@ module.exports = {
 
     filterlist.push(function(x) {
       var year = gtf_CARS.get({ make: x["make"], fullname: x["name"]})["year"]
-      var upperyear = [1989, 2005, 9999][userdata["settings"]["GMODE"]]
-      var loweryear = [1960, 1990, 2006][userdata["settings"]["GMODE"]]
+      var upperyear = [1989, 2009, 9999][userdata["settings"]["GMODE"]]
+      var loweryear = [1960, 1990, 2010][userdata["settings"]["GMODE"]]
       return (loweryear <= year && upperyear >= year)
   })
     
@@ -134,7 +134,8 @@ module.exports = {
           gte_EMBED.alert({ name: "❌ No Cars", description: "There are no cars with this type in your garage.", embed: "", seconds: 5 }, msg, userdata);
         return;
         }
-      embed.setTitle("__Change Car__ " + cars.length + "/" + gte_CARS.findEnthu({upperyear: [1989, 2005, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2006][userdata["settings"]["GMODE"]]}).length + " Cars (" + userdata["settings"]["GARAGESORT"] + ")" + makee + country + type + drivetrain + engine + special + name);
+      var titlen = userdata["week"] == 0 ? "Select Starter Car From Garage":"Change Car"
+      embed.setTitle("__" + titlen + "__ " + cars.length + "/" + gte_CARS.findEnthu({upperyear: [1989, 2009, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2010][userdata["settings"]["GMODE"]]}).length + " Cars (" + userdata["settings"]["GARAGESORT"] + ")" + makee + country + type + drivetrain + engine + special + name);
       pageargs["image"] = []
         list = cars.map(function(i, index) {
           var favorite = i["favorite"] ? " ⭐" : ""
@@ -146,7 +147,7 @@ module.exports = {
           var name = gtf_CARS.shortName(i["name"]).split(" ").slice(0, -1).join(" ")
            var level = i["perf"]["level"]
           carname = name + " `Lv." + level + "` ` " + gte_PERF.perfEnthu(i, "GARAGE")["class"] + " `" + favorite
-          if (gte_STATS.currentCarNum(userdata) == index+1)  {
+          if (gte_STATS.currentCarNum(userdata) == index+1 && userdata["week"] != 0)  {
             carname = "**" + name + "**" + " `Lv." + level + "` ` " + gte_PERF.perfEnthu(i, "GARAGE")["class"] + " `" + favorite
           }
            listsec.push(ocar["year"] + " | " + gtf_MATH.numFormat(ocar["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(ocar["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + ocar["special"].join(", ").replace("xstarter", ""))
@@ -172,7 +173,7 @@ module.exports = {
           gte_EMBED.alert({ name: "❌ No Cars", description: "There are no cars with this type in your garage.", embed: "", seconds: 5 }, msg, userdata);
         return;
         }
-      embed.setTitle("__Garage__ " + cars.length + "/" + gte_CARS.findEnthu({upperyear: [1989, 2005, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2006][userdata["settings"]["GMODE"]]}).length + " Cars (" + userdata["settings"]["GARAGESORT"] + ")" + makee + country + type + drivetrain + engine + special + name);
+      embed.setTitle("__Garage__ " + cars.length + "/" + gte_CARS.findEnthu({upperyear: [1989, 2009, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2010][userdata["settings"]["GMODE"]]}).length + " Cars (" + userdata["settings"]["GARAGESORT"] + ")" + makee + country + type + drivetrain + engine + special + name);
       pageargs["image"] = []
         list = cars.map(function(i, index) {
           var favorite = i["favorite"] ? " ⭐" : ""
@@ -314,11 +315,12 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
     
     if (query["options"] == "select") {
       var number = parseInt(query["number"]);
+      
       if (gte_STATS.currentCarNum(userdata) == number) {
         gte_EMBED.alert({ name: "❌ Invalid", description: "You are already in this car. Please choose another car.", embed: "", seconds: 5 }, msg, userdata);
         return
       }
-  
+
       var changecar = gte_STATS.setCurrentCar(number, filterlist, userdata);
       if (changecar == "Invalid") {
         gte_EMBED.alert({ name: "❌ Invalid ID", description: "This ID does not exist in your garage.", embed: "", seconds: 0 }, msg, userdata);

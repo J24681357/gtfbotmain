@@ -62,8 +62,8 @@ module.exports.prepRace = function(raceprep, gtfcar, embed, msg, userdata) {
   var screen = true
   var emojilist = [
     {
-      emoji: gtf_EMOTE.flag,
-      emoji_name: 'flag',
+      emoji: gtf_EMOTE.fithusimlogo,
+      emoji_name: 'fithusimlogo',
       name: 'Start',
       extra: "",
       button_id: 0
@@ -138,6 +138,7 @@ module.exports.prepRace = function(raceprep, gtfcar, embed, msg, userdata) {
           } else {
             embed.spliceFields(0, 1);
             try {
+              gte_STATS.saveEnthu(userdata)
               gte_RACES2.startSession(racesettings, racedetails, finalgrid, [false, null], embed, msg, userdata);
             } catch (error) {
               embed = new EmbedBuilder();
@@ -232,7 +233,7 @@ module.exports.setRaceSettings = function(raceprep, gtfcar, embed, msg, userdata
 
     racesettings["track"] = track
     racesettings["image"] = track["image"]
-    racesettings["driver"] = { name: msg.user.username, car: carselect, otires: carselect["perf"]["tires"]["current"].slice(), tirechange: true }
+    racesettings["driver"] = { name: "Player", car: carselect, otires: carselect["perf"]["tires"]["current"].slice(), tirechange: true }
     if (racesettings["type"] == "TIME") {
       racesettings["distance"] = { km: "N/A", mi: "N/A" }
     }
@@ -300,7 +301,7 @@ module.exports.setRaceSettings = function(raceprep, gtfcar, embed, msg, userdata
         "lowerpower": 0,
         "upperweight": 9999,
         "lowerweight": 0,
-        "upperyear": 2005,
+        "upperyear": 2009,
         "loweryear": 0,
         "countries": [],
         "makes": [],
@@ -1292,7 +1293,7 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
 
         embed.setDescription(results + "\n\n" + "✅ Car repaired. **" + gtf_MATH.numFormat(repaircost) + gtf_EMOTE.credits + "**")
         embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: gte_STATS.currentCarFooterEnthu(userdata) }])
-        gte_STATS.saveEnthu(userdata)
+        //gte_STATS.saveEnthu(userdata)
         repaircost = 0
         msg.edit({ embeds: [embed] })
       }

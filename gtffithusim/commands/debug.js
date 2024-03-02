@@ -150,7 +150,7 @@ module.exports = {
         userdata["licenses"] = licenses
         }],
         "resetuserdata": ["DELETE", function (query) {
-          gte_STATS.save(userdata, "DELETE");
+          gte_STATS.saveEnthu(userdata, "DELETE");
         }],
         "restartbot": ["", function (query) {
           process.exit(1);
@@ -171,7 +171,7 @@ module.exports = {
           }
         }
         command[1](query)
-        gte_STATS.save(userdata);
+        gte_STATS.saveEnthu(userdata);
         results = "`" + query["args"] + "` successful!\n" + "**User:** " + msg.guild.members.cache.get(userdata["id"]).user.displayName + "." + extra
         gtf_EMBED.alert({ name: "✅ Success", description: results, embed: "", seconds: 0 }, msg, userdata);
         return

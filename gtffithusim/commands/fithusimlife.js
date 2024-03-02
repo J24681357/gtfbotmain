@@ -39,9 +39,9 @@ module.exports = {
       userdata
     );
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
-    
+
   var racecheck = Object.keys(userdata["races"]).filter(function(key){
-    if (userdata["races"][key] == 3) {
+    if (userdata["races"][key] >= 3) {
     return true
     } else {
     return false
@@ -49,9 +49,8 @@ module.exports = {
   })
     
   if (racecheck.length >= 1) {
-    userdata["races"][racecheck[0]] = 4
-    var finalgrid = gte_CARS.randomEnthu({types: ["Rally Car", "Race Car"], upperyear: [1989, 2005, 9999][userdata["settings"]["GMODE"]],
-                                      loweryear: [1960, 1990, 2006][userdata["settings"]["GMODE"]]}, 6).map(function(x) {
+    userdata["races"][racecheck[0]] = 0
+    var finalgrid = gte_CARS.randomEnthu({types: ["Rally Car", "Race Car"], upperyear: [1989, 2009, 9999][userdata["settings"]["GMODE"]],loweryear: [1960, 1990, 2010][userdata["settings"]["GMODE"]]}, 6).map(function(x) {
       return {
         "name": x["name"] + " " + x["year"]}
     })
@@ -60,32 +59,95 @@ module.exports = {
 gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
     return
     }
-  
+
+    ///Check Complete
+  var gencomplete = Object.keys(userdata["races"]).filter(function(key) {
+      if (key == "🌟 The King Of The Road" || key == "🌟 The King Of The Track") {
+        if (userdata["races"][key] == 1) {
+          return true
+        } else {
+      return false
+        }
+      } else {
+      return false
+      }
+  })
+    //
+    if (gencomplete.length >= 1) {
+      userdata["races"]["🌟 The King Of The Road"] = 2
+      userdata["races"]["🌟 The King Of The Track"] = 2
+      gte_STATS.addItem("Generation " + (userdata["settings"]["GMODE"]+1), userdata);
+      gte_STATS.saveEnthu(userdata)
+      results = "🏆 __**Generation " + (userdata["settings"]["GMODE"]+1) + " Champion**__ 🏆" + "\n\n" + 
+        "**You've won the final race of Generation " + (userdata["settings"]["GMODE"]+1) + "!**" + "\n" + 
+        "You may continue racing in Generation "+ (userdata["settings"]["GMODE"]+1) + " or choose a new Generation."
+      embed.setDescription(retsults);
+      embed.setThumbnail("https://github.com/J24681357/gtfbotmain/raw/master/gtffithusim/images/logo/fithusimlogo.png")
+              var emojilist = [
+      { emoji: "", 
+      emoji_name: "", 
+      name: "Return to Fithusim Life", 
+      extra: "Once",
+      button_id: 0 },
+                { emoji: "", 
+                emoji_name: "", 
+                name: "Generation Select", 
+                extra: "Once",
+                button_id: 1 }
+      ]
+      var buttons = gtf_TOOLS.prepareButtons(emojilist, msg, userdata);
+      gtf_DISCORD.send(msg, {embeds:[embed], components:buttons}, next)
+
+      function next(msg) {
+        function a() {
+          require(gte_TOOLS.homeDir() + "commands/fithusimlife").execute(msg, {options:"list"}, userdata)
+          return;
+        }
+        function b() {
+          require(gte_TOOLS.homeDir() + "commands/settings").execute(msg, {options:"generationselect"}, userdata)
+          return;
+        }
+         var functionlist = [a, b];
+      gtf_TOOLS.createButtons(buttons, emojilist, functionlist, msg, userdata)
+      } 
+      return
+    }
 
 
     ////CHECK NEW GAME
-    if (gte_STATS.garage(userdata) == 0 || userdata["week"] == 0) {
+    
+    //check garage
+     var garageb = gte_STATS.garage(userdata).filter(function(x) {
+        var year = gtf_CARS.get({ make: x["make"], fullname: x["name"]})["year"]
+        var upperyear = [1989, 2009, 9999][userdata["settings"]["GMODE"]]
+        var loweryear = [1960, 1990, 2010][userdata["settings"]["GMODE"]]
+        return (loweryear <= year && upperyear >= year)
+    }).length
+    var bool1 = garageb != 0
+    var bool2 = garageb == 0
+
+    if (bool2 || userdata["week"] == 0) {
       query["options"] = "new_game" 
     }
     
-    if (query["number"] == 1 && gte_STATS.garage(userdata) != 0 && userdata["week"] != 0) {
+    if (query["number"] == 1 && bool1 && userdata["week"] != 0) {
       query = {options:"races"}
-    }
+  }
 
     ////CHANGE CAR//
-    if (query["number"] == 2 && gte_STATS.garage(userdata) != 0 && userdata["week"] != 0) {
+    if (query["number"] == 2 && bool1 && userdata["week"] != 0) {
       query = {options:"changecar"}
     }
 
-    if (query["number"] == 3 && gte_STATS.garage(userdata) != 0 && userdata["week"] != 0) {
+    if (query["number"] == 3 && bool1 && userdata["week"] != 0) {
       query = {options:"rest"}
     }
 
-    if (query["number"] == 4 && gte_STATS.garage(userdata) != 0 && userdata["week"] != 0) {
+    if (query["number"] == 4 && bool1 && userdata["week"] != 0) {
       query = {options:"garage"}
     }
     
-    if (query["number"] == 5 && gte_STATS.garage(userdata) != 0 && userdata["week"] != 0) {
+    if (query["number"] == 5 && bool1 && userdata["week"] != 0) {
           query = {options:"records"}
     }
     
@@ -93,13 +155,15 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
 
 
     if (query["options"] == "new_game") {
-      if (gte_STATS.garage(userdata) != 0) {
-        require(gte_TOOLS.homeDir() + "commands/garage").execute(msg, {options:"changecar"}, userdata)
+      if (bool1 && userdata["week"] == 0) {
+        fpplimit = [308, 388, 468, 548, 618, 9999][1]
+        lowerfpp = [0,   319, 389, 469, 549, 619][0]
+        require(gte_TOOLS.homeDir() + "commands/garage").execute(msg, {options:"changecar", fpplimit: fpplimit, lowerfpp:lowerfpp}, userdata)
         return
       }
        embed.setTitle("__New Game - Select Your First Car__");
        var list = gte_CARS.findEnthu({ 
-         upperyear: [1989, 2005, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2006][userdata["settings"]["GMODE"]], special: ["xstarter"] });
+         upperyear: [1989, 2009, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2010][userdata["settings"]["GMODE"]], special: ["xstarter"] });
        var carlist = [];
        var listsec = []
         for (var i = 0; i < list.length; i++) {
@@ -124,7 +188,8 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
             for (var j = 0; j < list.length; j++) {
               gte_CARS.addCarEnthu(list[j], "SORT", userdata);
             }
-            require(__filename.split(".")[0]).execute(msg, {options:"list", extra: "New car!"}, userdata)
+            
+            require(__filename.split(".")[0]).execute(msg, { options: "list", extra: "New car!"}, userdata)
             return
           }
       }
@@ -163,7 +228,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
     if (query["options"] == "races" || query["options"] == 1) {
       if (!gte_STATS.checkEnthuPoints(embed, msg, userdata)) {
         return;
-      }
+    }
      
       var list = []
       var images = []
@@ -196,8 +261,8 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
     
       races = races.filter(function(event) {
         if (event["regulations"]["upperyear"] == 9999) {
-          event["regulations"]["upperyear"] = [1989, 2005, 9999][userdata["settings"]["GMODE"]]
-          event["regulations"]["loweryear"] = [1960, 1990, 2006][userdata["settings"]["GMODE"]]
+          event["regulations"]["upperyear"] = [1989, 2009, 9999][userdata["settings"]["GMODE"]]
+          event["regulations"]["loweryear"] = [1960, 1990, 2010][userdata["settings"]["GMODE"]]
         }
 
       return gte_GTF.checkRegulationsEnthu(gtfcar, event, "", embed, msg, userdata)[0] && event["era"].indexOf(userdata["settings"]["GMODE"]+1) >= 0
@@ -208,15 +273,36 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
       if (league == "RN") {
         total = 5
       } else if (league == "RS") {
+        if (false) {
+          total = 3
+        } else {
         total = 2
-      }
+        }
+      } 
+      
+      //l && userdata["ranking"] <= 6 && gte_DATETIME.getFormattedWeekEnthu(userdata["week"]).split("/").pop() == "04"
        var allraces = []
       if (races.length == 0) {
         gte_EMBED.alert({ name: "❌ No Races Available", description: "There are no races available in this class.", embed: "", seconds: 0 }, msg, userdata);
         return
       }
+      var done = false
       for (var i = 1; i < total; i++) {
+        if (league == "RS" && !done) {
+          done = true
+          var keys = Object.keys(races)
+          
+          var event = races.filter(function(x,i) {
+            return races[keys[i]]["title"] == "🌟 The King Of The Track" || races[keys[i]]["title"] == "🌟 The King Of The Road"
+          })[0]
+          
+          races = races.filter(function(x,i) {
+            return races[keys[i]]["title"] != "🌟 The King Of The Road" && races[keys[i]]["title"] != "🌟 The King Of The Track"
+          })
+        } else {
+
         var event = JSON.parse(JSON.stringify(gtf_TOOLS.randomItem(races, gte_STATS.week(userdata) + i)))
+        }
         //
 
         event["eventid"] = event["eventid"].split("-")[0] + "-" + (i)
@@ -301,7 +387,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
 
         images.push(rtrack["image"])
         
-      return "__**" + event["title"] + "**__" + " " + rtrack["name"].replace(" Reverse", " 🔄") + " " + gte_STATS.checkRaceComplete(event["title"] + " " + league, userdata) +
+      return "__**" + event["title"] + "**__" + " " + rtrack["name"].replace(" Reverse", " 🔄") + " " +
           "/n" + "`" + event["userodds"] + "` " + rtrack["length"] + " km. \\ " + event["grid"][0] + " CARS \\ " + laps + " LAPS"
     })
         
@@ -320,8 +406,8 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
 
         
         if (event["regulations"]["upperyear"] == 9999) {
-          event["regulations"]["upperyear"] = [1989, 2005, 9999][userdata["settings"]["GMODE"]]
-          event["regulations"]["loweryear"] = [1960, 1990, 2006][userdata["settings"]["GMODE"]]
+          event["regulations"]["upperyear"] = [1989, 2009, 9999][userdata["settings"]["GMODE"]]
+          event["regulations"]["loweryear"] = [1960, 1990, 2010][userdata["settings"]["GMODE"]]
         }
         
         var finalgrid = gte_RACE.createGridEnthu(event, "", 0)
@@ -352,7 +438,10 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         })
         var userodds = finalgrid.filter(x => x["user"] == true)[0]["odds"]
         var points = gte_RACE.creditsCalcEnthu(event).map(x => "**" + x["place"] + "**  " + Math.round(x["points"] * userodds) + " pts")
-        var results = "**" + event["title"] + "**" + "\n" + points.slice(0,4).join("\n") + "\n\n" + finalgrid.map(function(x) {
+        var extra = (league == "RII" || league == "RI") ? "`Win 1st in " + gte_STATS.checkRaceComplete(event["title"] + " " + league, userdata) + " more races to earn a special car.`" : ""
+        var results = "**" + event["title"] + "**" + "\n" + points.slice(0,4).join("\n") + "\n" + 
+          extra
+          + "\n\n" + finalgrid.map(function(x) {
           if (x["user"]) {
             return "**" + x["name"] + " `" + x["odds"] + "`" + "**"
           } else {
@@ -495,7 +584,7 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
       embed.setTitle("__**Records**__" + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + " " + gtf_EMOTE.transparent + gte_DATETIME.getFormattedWeekEnthu(userdata["week"]) + " WEEK")
       var list = gte_STATS.rankingHistory(userdata).reverse().map(x => 
         x["week"] + " WEEK **" + x["points"] + " pts**" + " `" + x["place"] + "`\n" + 
-        x["title"] + " " + x["league"] + "\n" +
+        "__" + x["title"] + "__ " + x["league"] + "\n" +
         x["car"])
 
       pageargs["selector"] = "";

@@ -187,15 +187,13 @@ module.exports.driftresults = function(racesettings, racedetails, finalgrid, che
     place = 0
     place2 = "1st"
   }
-  console.log(racesettings["mode"])
   if (racesettings["mode"] == "CAREER") {
     var eventid = racesettings["eventid"].toLowerCase()
-console.log(eventid)
     if (typeof userdata["careerraces"][eventid] === 'undefined') {
       var current = 0
     } else {
       var current = userdata["careerraces"][eventid][0];
-      console.log(current+"EEE")
+
     }
 
     if (current == 0) {

@@ -39,7 +39,7 @@ client.on("ready", () => {
 
   gtf_CONSOLELOG.reverse();
   gtf_CONSOLELOG.fill(100, 100, 255);
-
+  console.log("Logged in GTF 2: Unleahsed")
   console.log("Time elapsed: " + timeelapsed + " " + "ms");
   gtf_CONSOLELOG.end();
 });

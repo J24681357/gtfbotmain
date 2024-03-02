@@ -197,10 +197,13 @@ client.on("interactionCreate", async interaction => {
         //Checks if in a race
         if (!command.usedduringrace) {
           if (userdata["raceinprogress"]["expire"] < new Date()) {
-            userdata["raceinprogress"] = { active: false, messageid: "", channelid: "", expire: undefined };
+            //userdata["raceinprogress"] = { active: false, messageid: "", channelid: "", expire: undefined };
           }
+          embed.setColor(userdata["settings"]["COLOR"])
+          embed.setTitle("__**Session In Progress**__")
           if (userdata["raceinprogress"]["active"]) {
-            require(__dirname + "/" + "commands/status").execute(msg, { options: "view" }, userdata);
+          embed.addFields([{name:"Session in Progress", value: "[Message Link](https://discord.com/channels/" + "239493425131552778" + "/" + userdata["raceinprogress"]["channelid"] + "/" + userdata["raceinprogress"]["messageid"] + ")", inline: true}, {name:"Time Remaining", value: (gtf_DATETIME.getFormattedTime(userdata["raceinprogress"]["expire"] - new Date().getTime())) + " minutes", inline: true}])
+                    gtf_DISCORD.send(msg, {embeds: [embed]})
             return;
           }
         }

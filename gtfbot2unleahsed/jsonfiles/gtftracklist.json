@@ -3173,7 +3173,6 @@
       "Drift"
     ],
     "pattern": [
-      "⬜",
       "⬜"
     ],
     "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroute7.png",
@@ -3190,8 +3189,7 @@
       "N/A"
     ],
     "pattern": [
-      "⬜",
-      "⬜"
+      "✈", "🟫", "🟫", "🟫", "🟫", "🟫", "🟫", "🟫", "🟫", "🟫"
     ],
     "image": "https://raw.githubusercontent.com/J24681357/gtfbotimages777/master/images/tracks/specialstageroutex.png",
     "id": 43

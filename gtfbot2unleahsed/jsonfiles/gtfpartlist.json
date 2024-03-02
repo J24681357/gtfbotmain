@@ -1062,6 +1062,27 @@
       "fpplimit": 9999,
       "lowerweight": 0
     },
+   {
+      "type": "Car Engine",
+      "name": "Lexus LFA 2010",
+      "cost": 0,
+      "percent": 552,
+      "weight": 0.05,
+      "models": [
+        "Alphard",
+        "GR Supra",
+    "NSX-R",
+    "Legacy B4"
+      ],
+      "engines": [],
+      "types": [
+        "Production"
+      ],
+      "special": [],
+      "prohibited": [],
+      "fpplimit": 9999,
+      "lowerweight": 0
+    },
     {
       "type": "Car Engine",
       "name": "Lexus SC430 GT500 2008",

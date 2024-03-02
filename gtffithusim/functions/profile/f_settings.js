@@ -5,14 +5,17 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
   pageargs["rows"] = 10;
 
   if (query["options"] == "generationselect") {
-    pageargs["footer"] = "❓ **Select a generation that you would want to switch to. Note that when you switch to a different generation, your ranking, week, enthu points, and starter car will be reset. Any collected cars will still be remained.**";
+    pageargs["footer"] = "❓ **Select a generation that you would want to switch to. Note that when switching different generations, Ranking, Week, Enthu Points, and starter car will be reset. Any collected cars will still be remained and can be still used when applicable.**";
     pageargs["list"] = [
       "Generation 1 (1960 - 1989)",
-      "Generation 2 (1990 - 2005)",
-      "Generation 3 (2006 - Present)"
+      "Generation 2 (1990 - 2009)",
+      "Generation 3 (2010 - Present)"
     ].map(function(x, i) {
       if (userdata["settings"]["GMODE"] == i) {
-        return "**" + x + "**"
+          x = "**" + x + "**"
+      }
+      if (gte_STATS.checkItem("Generation " + (i+1), userdata)) {
+        x = x + " `Complete`"
       }
       return x
     })
@@ -31,7 +34,7 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
       userdata["weekseed"] = gtf_MATH.randomInt(0,9).toString() + gtf_MATH.randomInt(0,9).toString() +gtf_MATH.randomInt(0,9).toString() + gtf_MATH.randomInt(0,9).toString() + gtf_MATH.randomInt(0,9).toString()
       userdata["enthupoints"] = 300
       userdata["totalenthupoints"] = 300
-      require(gte_TOOLS.homeDir() + "commands/settings").execute(msg, {options:"list", extra:"Mode has been changed to **" + pageargs["list"][query["number"] - 1] + "**." + " " + "Ranking, week, Enthu points, and starter car has been reset."}, userdata);
+      require(gte_TOOLS.homeDir() + "commands/settings").execute(msg, {options:"list", extra:"Mode has been changed to **" + pageargs["list"][query["number"] - 1] + "**." + " " + "Ranking, Week, Enthu points, and starter car will be reset when starting Fithusim Life."}, userdata);
       return "✅";
     };
   }

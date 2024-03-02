@@ -26,7 +26,7 @@ module.exports.introEnthu = function (userdata, command, msg) {
 
     embed.setTitle("⚠ __**" + "Before You Start" + "**__ ⚠");
     embed.setThumbnail("https://github.com/J24681357/gtfbotmain/raw/master/gtffithusim/images/logo/fithusimlogo.png");
-    embed.setDescription("Welcome to Fithusim! This game is heavily inspired by the 2005 video game, Enthusia Professional Racing. Those who are familiar with Enthusia would find the gameplay of GTF: Fithusim more comfortable." + "\n**❗ This is the DEMO version of GTF: Fithusim. Demo saves will not be transferable in the full version.**" +
+    embed.setDescription("Welcome to Fithusim! This game is heavily inspired by the 2005 video game, Enthusia Professional Racing. Those who are familiar with Enthusia would find the gameplay of GTF: Fithusim more comfortable."  +
     "\n\n**❗ Click the " + gtf_EMOTE.fithusimlogo + " button to create your save.**");
 
      var emojilist = [{ emoji: gtf_EMOTE.fithusimlogo, 
