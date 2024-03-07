@@ -410,7 +410,7 @@
   "25": {
     "name": "Autodromo Nazionale Monza (No Chicane)",
     "length": 5.793,
-    "type": "Tarmac - Original",
+    "type": "Tarmac - Real",
     "country": "Italy",
     "corners": 9,
     "version": "Gran Turismo 7",
@@ -3080,7 +3080,7 @@
   "182": {
     "name": "Special Stage Route 11",
     "length": 4.561,
-    "type": "Tarmac - Original",
+    "type": "Tarmac - City",
     "country": "PDI",
     "corners": 21,
     "version": "Gran Turismo 3",
@@ -3165,7 +3165,7 @@
   "187": {
     "name": "Special Stage Route 7",
     "length": 23.28,
-    "type": "Tarmac - Original",
+    "type": "Tarmac - City",
     "country": "PDI",
     "corners": 24,
     "version": "Gran Turismo 6",

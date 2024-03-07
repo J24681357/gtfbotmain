@@ -39,11 +39,11 @@ module.exports.send = function(msg, content, callback, force) {
       var repeat = function() {
         if (gtfbot[channelid]["msglimit"] == false) {
         gtfbot[channelid]["msglimit"] = true        
-         timer = setInterval(function() {
+         timer = setInterval(async function() {
             if (gtfbot[channelid]["count"] != 0) {
               gtfbot[channelid]["count"]--
               if (content["type1"] == "CHANNEL") {        
-              msg.editReply(content).then(msgg => {
+              await msg.editReply(content).then(msgg => {
                 callback(msgg)}
               )
               } else {
@@ -237,11 +237,9 @@ module.exports.role = function(msg, user, role, type, callback) {
            
             if (gtfbot["totalrole"] != 0) {
               gtfbot["totalrole"]--
-              if (type == "ADD") {
-              //gtf_DISCORD.reply(msg, {content: "✅ " + "**" + role.name + "** role" + " " + "added."})             
+              if (type == "ADD") {           
               user.roles.add(role).catch(console.error);
-              } else if (type == "REMOVE") {
-              //   gtf_DISCORD.reply(msg, {content: "✅ " + "**" + role.name + "** role" + " " + "removed."}) 
+              } else if (type == "REMOVE") { 
               user.roles.remove(role).catch(console.error);
               }
         }

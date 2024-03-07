@@ -16683,6 +16683,30 @@
       ],
       "_id": 657
     },
+   {
+      "make": "Subaru",
+      "name": "Subaru WRX TR",
+      "year": "2024",
+      "type": "Production",
+      "country": "Japan",
+      "power": 271,
+      "weight": 3430,
+      "tires": "Sports: Hard",
+      "engine": "TB",
+      "drivetrain": "4WD",
+      "carcostm": 0,
+      "aerom": 1,
+      "discount": 0,
+      "special": [
+        "Sports", "x3"
+      ],
+      "offroad": 1,
+      "livery": [],
+      "image": [
+        "https://cdn.discordapp.com/attachments/1008527480707104848/1215040732499415160/015-2024-subaru-wrx-tr.png?ex=65fb4ddc&is=65e8d8dc&hm=854c9ac1ff810231d5f618562234d6c1d68bf1e897f80d733a869af5ed2aec51&"
+      ],
+      "_id": 658
+    },
     {
       "make": "Subaru",
       "name": "Subaru Legacy B4 Blitzen",

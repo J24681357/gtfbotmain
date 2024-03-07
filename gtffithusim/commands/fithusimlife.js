@@ -381,7 +381,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
     allraces = allraces.sort(function(x,y) {return y["userodds"] - x["userodds"]})
       
       list = allraces.map(function(event) {
-        var rtrack = gtf_TRACKS.random(event["tracks"][0], 1)[0]
+        var rtrack = gte_TRACKS.randomEnthu(event["tracks"][0], 1)[0]
         
         var laps = gte_RACE.lapCalc(rtrack['length'], {"RN": 6, "RIV": 6, "RIII": 9, "RII": 10, "RI": 13, "RS": 28}[league])[0]
 
@@ -402,7 +402,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         event["driver"] = {car: gte_STATS.currentCar(userdata)}
         var points = gte_RACE.creditsCalcEnthu(event).map(x => "**" + x["place"] + "**  " + x["points"] + " pts")
         event["tracks"][0]["seed"] = gte_STATS.week(userdata) + parseInt(event["eventid"].split("-")[1])
-         var rtrack = gtf_TRACKS.random(event["tracks"][0], 1)[0]
+         var rtrack = gte_TRACKS.randomEnthu(event["tracks"][0], 1)[0]
 
         
         if (event["regulations"]["upperyear"] == 9999) {

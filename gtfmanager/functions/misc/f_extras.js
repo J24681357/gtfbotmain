@@ -855,7 +855,7 @@ module.exports.gtcolors = function(client) {
 }
 
 module.exports.caroftheday = function(client) {
-  var cotdchannelid = "1077378348512182332"
+  var cotdchannelid = "1207183521760809000"
    var currentdate = new Date();
     var datetime = (currentdate.getUTCMonth() + 1) + "/"
       + currentdate.getUTCDate() + "/"
@@ -1087,6 +1087,61 @@ module.exports.locationoftheweekstats = async function(client) {
     }
   
         
+  });
+
+  })
+}
+
+module.exports.carofthedaystats = async function(client) {
+   var currentdate = new Date();
+   var channel = client.channels.cache.find(channel => channel.id === "1207183521760809000");
+   channel.messages.fetch({limit:100}).then(async messages => {
+    var list = []
+    await messages.filter(msg => msg.author.id == gtm_USERID).forEach(async r => {
+      var i = 0
+      var vote = {}
+
+      vote["carname"] = r.embeds[0].description.split("**")[1]
+      vote["date"] = r.embeds[0].title.split("(")[1].split(")")[0]
+      vote["lastupdated"] = (currentdate.getUTCMonth() + 1) + "/"
+      + currentdate.getUTCDate() + "/"
+      + currentdate.getUTCFullYear()
+      await r.reactions.cache.forEach(function(x){
+        if (i == 0) {
+          vote["upvote"] = x.count - 1
+        }
+        if (i == 1) {
+          if (x._emoji.name == "middlevote") {
+          vote["middlevote"] = x.count - 1
+          } else {
+          vote["middlevote"] = 0
+          i++
+          }
+        }
+        if (i == 2) {
+          vote["downvote"] = x.count - 1
+        }
+        i++
+      })
+      list.unshift(vote)
+     })
+
+     var olist = gtm_LIST_COTD
+     for (var i = 0; i < list.length; i++) {
+       if (olist.filter(x => x["date"] == list[i]["date"]).length == 0) {
+         olist.push(list[i])
+       } else {
+         var index = olist.indexOf(olist.filter(x => x["date"] == list[i]["date"])[0])
+         olist[index] = list[i]
+       }
+     }
+
+      fs.writeFile(gtm_TOOLS.homeDir() +"./jsonfiles/carofthedaylist.json", JSON.stringify(olist), function (err) {
+    if (err) {
+      console.log(err);
+    }
+
+
   });
 
   })

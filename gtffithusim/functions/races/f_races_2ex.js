@@ -645,7 +645,7 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
         continuenextrace()
       }
     } else {
-      racesettings["track"] = gtf_TRACKS.find({
+      racesettings["track"] = gte_TRACKS.findEnthu({
         name: [trackname],
         versions: ["Gran Turismo"]
       })[0]

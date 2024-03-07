@@ -126,7 +126,7 @@ module.exports = {
         list.push (
             "__**" + "Stage " + (x+1) + "**__" + " " + track.split(" - ")[0]
         )
-        pageargs["image"].push(gtf_TRACKS.find({name: [track], versions: ["Gran Turismo"]})[0]["image"])
+        pageargs["image"].push(gte_TRACKS.findEnthu({name: [track], versions: ["Gran Turismo"]})[0]["image"])
       }
       pageargs["selector"] = "stagenumber";
       pageargs["query"] = query;

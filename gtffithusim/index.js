@@ -87,7 +87,7 @@ client.on("interactionCreate", async interaction => {
     const commandName = interaction.commandName;
 
     if (cooldowns.has(interaction.author.id)) {
-      interaction.reply({ content: "**⏲ Cooldown! Please try again.**", ephemeral: true });
+      await interaction.reply({ content: "**⏲ Cooldown! Please try again.**", ephemeral: true });
       return
     } else {
       cooldowns.add(interaction.author.id);

@@ -211,11 +211,11 @@ module.exports.setRaceSettings = function(raceprep, gtfcar, embed, msg, userdata
   var carselect = raceprep["car"] == "GARAGE" ? gtfcar : gte_CARS.addCarEnthu(gte_CARS.findEnthu({ fullnames: [raceprep["car"]] })[0], "LOAN")
 
   if (typeof raceprep["track"] == "string") {
-    var track = gtf_TRACKS.find({ name: [raceprep["track"]], versions: ["Gran Turismo"] })[0];
+    var track = gte_TRACKS.findEnthu({ name: [raceprep["track"]], versions: ["Gran Turismo"] })[0];
     var km = track["length"]
   } else {
     if (typeof raceprep["track"]["layout"] === 'undefined') {
-      var track = gtf_TRACKS.random(raceprep["track"], 1)[0];
+      var track = gte_TRACKS.randomEnthu(raceprep["track"], 1)[0];
       var km = track["length"];
     } else {
       var track = raceprep["track"]
