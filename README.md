@@ -89,7 +89,7 @@ Last Updated: February 17th, 2024
 3. There are special events in Career Mode that can be unlocked by obtaining new licenses and increasing your driver level. Here is the following special events in GTF2U:
     - GTF Karting Experience
     - Rally
-    - GTF Grand Tour (in a future update)
+    - GTF Grand Tour
     - GT Academy 
     - Formula
 

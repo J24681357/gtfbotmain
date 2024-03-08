@@ -28,8 +28,8 @@
    - Generation 1 (1960 - 1989)
    - Generation 2 (1990 - 2009)
    - Generation 3 (2010 - Present)
-You may switch between Generations in the `/home` slash command and select "Generation Select".
-   - 💡 Note that when switching Generations, your ranking, week, enthu points, and starter car will be reset. However, any collected cars and tuning levels will remain form each Generation, and you will be selectable as a starter car.
+     - You may switch between Generations in the `/home` slash command and select "Generation Select".
+     - 💡 Note that when switching Generations, your ranking, week, enthu points, and starter car will be reset. However, any collected cars and tuning levels will remain form each Generation, and you will be selectable as a starter car.
      
 2. In the main menu for Fithusim Life, here are brief descriptions of each options:
     - Go Race: Participate in league races to increase your ranking & skill points
@@ -72,8 +72,9 @@ You may switch between Generations in the `/home` slash command and select "Gene
 
 ### Rival Car Raffle
 1. Finishing a race in 4th place or better (or 1st place in a 2 car grid) will give you a Rival Car Raffle where a random car can be rewarded from the grid. When you unlocked a new car, it will be added to your garage and can be selectable as a new car.
-2. - 💡 There is also a random chance that no car will be unlocked from the shuffle. 
+  - 💡 There is also a random chance that no car will be unlocked from the shuffle. 
 
+### Rival Car Raffle
 
 <style>
   .footer {
