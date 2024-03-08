@@ -38,7 +38,7 @@ You may switch between Generations in the `/home` slash command and select "Gene
     - Garage: View collected cars in a Generation by class
     - Records: View records of past races in Fithusim Life
 
-## Leagues
+### Leagues
 1. In the Go Race section, events are categorized by Race Gades (from RN to RIV-RI to RS). Your ranking/ranking points determine on eligible race grades that you can enter. The higher the race grade, the longer the races & harder AI opponents are in each race grade.
 
 2. In the menu for each Race Grade, there are a list of races you can participate it. The races are sorted by odds from each of the grids. The higher the odds, the better ranking you can earn.
@@ -52,31 +52,28 @@ You may switch between Generations in the `/home` slash command and select "Gene
     - The Starting Grid
         - Relative to the grid, faster cars will have smaller odds and vice versa. Use odds as an advantage in determining whether to participate in the race.  
 
-## Pre Race And Pre Session Screen
+### Pre Race And Pre Session Screen
  1. In the pre-session menu, buttons and menus can be seen before staring the session. As detailed, these are the following options:
     - Driver Pace (Drop-down menu): Selects a driver pace that determines the race strategy. There are 3 options:
         - Passive: A slower pace where the driver drives more passively, thus reducing driving performance. This pace decreases the amount of damage & mistakes during the race; however, you will earn more Skill points.
         - Neutral: A balanced pace between aggression and caution.
         - Aggressive: An aggressive pace with optimal driving performance but prone to reckless driving. You will earn less Skill points from damages; however, driving performance improves.
     - Start: Starts the race/session. You can not restart the race while it is in session.
-    - Grid/Session Details: Toggles between the grid details and the track information screen
-    - Optimal Tire Usage: Auto equips the most suitable tires in appropriate weather conditions. 
-⚠️ Note that if this option is off, the tire grade will be unchanged throughout the whole session.
+    - Grid: Toggles between the grid details and the track information screen
 
 2. When you start, there will be a timer to wait until the session finishes and return your results.
     - 💡 The timer progresses in real time.
 3. While the race/session is in progress, you can view the race information in the embed including the grid, current position, and track information.
    - 💡 You can also view the status of your session by using `/status`, to receive the message link and time remaining of the session.
 4. When a race/session is completed, you will be notified via ping and the results will appear containing:
-   - Final position
-   - Points earned (Championships & Drift Trials only)
-   - Total points (Championships only)
-   - Credits earned
-   - EXP earned
-   - Mileage driven
+   - Finishing position
+   - Total Ranking points earned
+   - Total amount of Enthu points lost due to collisions and offroading 
 
+### Rival Car Raffle
+1. Finishing a race in 4th place or better (or 1st place in a 2 car grid) will give you a Rival Car Raffle where a random car can be rewarded from the grid. When you unlocked a new car, it will be added to your garage and can be selectable as a new car.
+2. - 💡 There is also a random chance that no car will be unlocked from the shuffle. 
 
-5. Credits & EXP are valued more in Career and Seasonal Events than other modes. On the contrary, license tests are valued significantly less.
 
 <style>
   .footer {
