@@ -66,28 +66,6 @@ Last Updated: February 17th, 2024
 5. As you race in Career mode, your garage cars' damage are dynamic over time. The longer the races are, the more probability of damages cars will take, so maintain and/or repair caes overtime.
     - 💡 As your driving level increases, the amount of damage taken will be reduced.
 
-## Pre Race And Pre Session Screen
- 1. In the pre-session menu, buttons and menus can be seen before staring the session. As detailed, these are the following options:
-    - Change Tires (Drop-down menu): Selects eligible tires from your garage car to use
-    - Start: Starts the race/session. (Pressing the button twice will exit from the session)
-    - Grid/Session Details: Toggles between the grid details and the track information screen
-    - Optimal Tire Usage: Auto equips the most suitable tires in appropriate weather conditions. 
-⚠️ Note that if this option is off, the tire grade will be unchanged throughout the whole session.
-
-2. When you start, there will be a timer to wait until the session finishes and return your results.
-    - 💡 The timer progresses in real time.
-3. While the race/session is in progress, you can view the race information in the embed including the grid, current position, and track information.
-   - 💡 You can also view the status of your session by using `/status`, to receive the message link and time remaining of the session.
-4. When a race/session is completed, you will be notified via ping and the results will appear containing:
-   - Final position
-   - Points earned (Championships & Drift Trials only)
-   - Total points (Championships only)
-   - Credits earned
-   - EXP earned
-   - Mileage driven
-
-
-5. Credits & EXP are valued more in Career and Seasonal Events than other modes. On the contrary, license tests are valued significantly less.
 
 ## Experience Points System
 1. Throughout GTF2U, you can earn Experience Points (EXP) from different modes such as Career, Arcade, License Tests, Seasonal Events, and others.

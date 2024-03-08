@@ -14,42 +14,69 @@
 
 2. Each menu will generally have directional buttons and confirm buttons for navigation.
 
+3. Cars in Fithusim are ranked by class. Cars are rated based on performance: F, E, D, C, B, A (from lowest to highest). The R class represents race cars and rally cars regardless of performance (similarly to Enthusia)
+
 ### Starting Fithusim Life
 3. You may start the main game by selecting the Fithusim Life mode in the `/home` menu, or enter the slash command, `/fithusimlife`. When you start a new game for the first time in a Generation, you must select a starter car in order to continue.
    💡 You may change cars at any time; however, changing cars will advance the calender by 1 week.
 
 ## Fithusim Life - /fithusimlife
-1. In Fithusim Life, the goal of this mode is to reach for the Top 6 rank in order to be eligible for one of the King races. To complete Fithusim Life for one Generation, you must win the race. There are a total of 3 Generations and must be completed in chronological order.
-   - 💡 Just like the 2005 game, Enthusia Profressional Racing, having a very fast car may not influence your rank quickly. 
+1. In Fithusim Life, you will start at the bottom of the rankings, 1000. The goal of is to reach for the Top 6 rank in order to be eligible for one of the King races. To complete Fithusim Life for one Generation, you must win at least one King race. There are a total of 3 Generations and must be completed in chronological order.
+   - 💡 Just like the Enthusia, having a very fast car may influence less of your rank compared to slower cars. 
 
 3. In Fithusim Life, each generation consists of races with cars throughout a certain time period:
    - Generation 1 (1960 - 1989)
    - Generation 2 (1990 - 2009)
    - Generation 3 (2010 - Present)
 You may switch between Generations in the `/home` slash command and select "Generation Select".
-   - 💡 Note that when switching Generations, your ranking, week, enthu points, and starter car will be reset. However, any collected cars and tuning levels will remain when applicable.
+   - 💡 Note that when switching Generations, your ranking, week, enthu points, and starter car will be reset. However, any collected cars and tuning levels will remain form each Generation, and you will be selectable as a starter car.
      
 2. In the main menu for Fithusim Life, here are brief descriptions of each options:
     - Go Race: Participate in league races to increase your ranking & skill points
-    - Change Car: Change to collected cars from a Generation
-    - 
+    - Change Car: Change from collected cars in a Generation and restore some Enthu points (advances one week)
+    - Rest: Fully restores Enthu points and advances one week
+    - Garage: View collected cars in a Generation by class
+    - Records: View records of past races in Fithusim Life
 
-4. Special events have special prizes and new ways to gain more credits, cars, and EXP points. 
-5. Special events must be completed in order. In order to progress through special events, you must achieve an average of 3rd place or Bronze from each set of races/time trials.
+## Leagues
+1. In the Go Race section, events are categorized by Race Gades (from RN to RIV-RI to RS). Your ranking/ranking points determine on eligible race grades that you can enter. The higher the race grade, the longer the races & harder AI opponents are in each race grade.
 
-6. As detailed, each career event has different regulations/settings in the following:
-    - Set of races or championship
-    - FPP limit, power limit, & weight limit
-    - Maximum tire grade
-    - Manufacturer, model, car type, etc
-    - BOP (Balance of Performance)
-    - Dynamic weather: Weather change over time with a certain probability
-7. In the Career Event screen, you can select from different races that you want to participate in. As detailed, the following are shown:
-    - Race list (Use the buttons to select the race associated with the list)
-    - Standings: Toggles the credit rewards screen
-    - Exit: Returns to the previous screen
-      - 💡 If the event is regulated with BOP, all cars will have similar performance regardless of tuning for fair gameplay.
-      - 💡 If the event is a championship, all races must be completed in order to earn credits. When you start a session, you will be `pinged` for every race completed, followed by the points standings (the transition is automated every 20 seconds).
+2. In the menu for each Race Grade, there are a list of races you can participate it. The races are sorted by odds from each of the grids. The higher the odds, the better ranking you can earn.
+   
+4. When you select a race, you are presented race details for the event. In the order from top to bottom:
+    - Track
+    - Event Name
+    - The amount of ranking points for finishing in each position
+        - Ranking points earned is determined by the odds of your current car (Race Grade x Odds x Race Result).
+        - Unlike in Enthusia, you will still ranking points for placing in 5th and 6th place, but they are not displayed.
+    - The Starting Grid
+        - Relative to the grid, faster cars will have smaller odds and vice versa. Use odds as an advantage in determining whether to participate in the race.  
+
+## Pre Race And Pre Session Screen
+ 1. In the pre-session menu, buttons and menus can be seen before staring the session. As detailed, these are the following options:
+    - Driver Pace (Drop-down menu): Selects a driver pace that determines the race strategy. There are 3 options:
+        - Passive: A slower pace where the driver drives more passively, thus reducing driving performance. This pace decreases the amount of damage & mistakes during the race; however, you will earn more Skill points.
+        - Neutral: A balanced pace between aggression and caution.
+        - Aggressive: An aggressive pace with optimal driving performance but prone to reckless driving. You will earn less Skill points from damages; however, driving performance improves.
+    - Start: Starts the race/session. You can not restart the race while it is in session.
+    - Grid/Session Details: Toggles between the grid details and the track information screen
+    - Optimal Tire Usage: Auto equips the most suitable tires in appropriate weather conditions. 
+⚠️ Note that if this option is off, the tire grade will be unchanged throughout the whole session.
+
+2. When you start, there will be a timer to wait until the session finishes and return your results.
+    - 💡 The timer progresses in real time.
+3. While the race/session is in progress, you can view the race information in the embed including the grid, current position, and track information.
+   - 💡 You can also view the status of your session by using `/status`, to receive the message link and time remaining of the session.
+4. When a race/session is completed, you will be notified via ping and the results will appear containing:
+   - Final position
+   - Points earned (Championships & Drift Trials only)
+   - Total points (Championships only)
+   - Credits earned
+   - EXP earned
+   - Mileage driven
+
+
+5. Credits & EXP are valued more in Career and Seasonal Events than other modes. On the contrary, license tests are valued significantly less.
 
 <style>
   .footer {

@@ -150,7 +150,7 @@ module.exports.findEnthu = function (args) {
       'Indianapolis - Motor Speedway',
       'Nurburgring - Nordschleife',
     ]
-  var gtftracks = gtf_LIST_TRACKS.filter(x => enthulist.includes(x))
+  var gtftracks = Object.fromEntries(Object.entries(gtf_LIST_TRACKS).filter(x => enthulist.includes(x[1]["name"])))
   var final = [];
   var ids = Object.keys(gtftracks);
 
@@ -285,14 +285,14 @@ module.exports.findEnthu = function (args) {
   return JSON.parse(JSON.stringify(final));
 };
 
-module.exports.randomEntu = function (args, num) {
+module.exports.randomEnthu = function (args, num) {
   var seed = -1
   if (typeof args["seed"] !== "undefined") {
     seed = args["seed"]
     delete args["seed"]
   }
   var rlist = [];
-  var list = gte_TRACKS.findEnthuENthu(args);
+  var list = gte_TRACKS.findEnthu(args);
   for (var i = 0; i < num; i++) {
     if (seed == -1) {
     rlist.push(list[Math.floor(Math.random() * list.length)]);

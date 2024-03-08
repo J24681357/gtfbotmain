@@ -13,6 +13,7 @@ var home =
 global.gte_FITHUSIMRACES = require(home + "data/gtfcareerlist");
 global.gte_PARTS = require(home + "data/gtfpartlist");
 global.gte_CARS = require(home + "data/gtfcarlist");
+global.gte_TRACKS = require(home + "data/gtftracklist");
 
 global.gte_PERF = require(home + "functions/gtfauto/f_perf");
 global.gte_CONDITION = require(home + "functions/gtfauto/f_condition");
