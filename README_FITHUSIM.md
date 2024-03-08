@@ -72,9 +72,23 @@
 
 ### Rival Car Raffle
 1. Finishing a race in 4th place or better (or 1st place in a 2 car grid) will give you a Rival Car Raffle where a random car can be rewarded from the grid. When you unlocked a new car, it will be added to your garage and can be selectable as a new car.
-  - 💡 There is also a random chance that no car will be unlocked from the shuffle. 
+  - 💡 There is also a random chance that no car will be unlocked from the shuffle.
+    
+2. When you have no Enthu points after a race, you can not earn a Rival Car Raffle.
 
-### Rival Car Raffle
+### Results Summary
+1. This screen displays a summary of your progress after finishing a race, changing cars, or resting.
+2. The following are displayed in the results summary:
+   - Race & ranking points history (past 12 weeks)
+   - Skill Points: The amount of Skill Points earned based on Race Grade, total length of the race, etc. Skill points can deducted based on the amount of collisions and offroading.
+   - Driver (Skill Points): The total amount of skill points for the driver.
+     - 💡 Like in Enthusia, when the driver level increases, the total amount of Enthu points and recovery rate of Enthu Points increases.
+  - Car (Skill Points): The total amount of skill points for the current.
+     - 💡 Like in Enthusia, when the car level increases, a performance part of the car increases. The maximum level of a car is 10. Increasing a car's performance does not affect the odds in a race.
+  - Enthu Points: The amount of Enthu points recovered after a race
+    
+3. Your ranking increases or decreases depending on the amount of ranking points won from the best 9 races out of the past 12 weeks. Keep in mind that changing cars or resting too much may negatively impact your ranking in Fithusim Life.
+
 
 <style>
   .footer {
