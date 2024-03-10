@@ -31,7 +31,7 @@ module.exports.purchase = function (item, type, special, embed, query , msg, use
 var emojilist = [
   { emoji: gtf_EMOTE.yes,
   emoji_name: "Yes",
-  name: 'Purchase',
+  name: 'Purchase | ' + gtf_MATH.numFormat(mcost) + " cr",
   extra: "Once",
   button_id: 0,
   },
