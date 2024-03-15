@@ -1198,17 +1198,12 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
     }
     return list.join("\n");
   };
-  if (indexes.length == 0) {
-    stop()
-    return
-  } 
-
 
    var stop = function() {
       embed.setTitle("__NO CARS UNLOCKED...__");
 
-      var emojilist = [{ emoji: "⭐", emoji_name: "⭐", name: "OK", extra: "", button_id: 0 }];
-     
+      var emojilist = [{ emoji: gtf_EMOTE.fithusimlogo, emoji_name: "fithusimlogo", name: "OK", extra: "", button_id: 0 }];
+
       var func = function(msg) {
         function ok() {
           gte_GTF.resultsSummaryEnthu(racesettings, finalgrid, embed, msg, userdata);
@@ -1221,6 +1216,12 @@ module.exports.giftRouletteEnthu = function (finalgrid, racesettings, embed, msg
       var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
       gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, func);
     }
+  if (indexes.length == 0) {
+    stop()
+    return
+  } 
+
+
 
   index = gtf_TOOLS.randomItem(indexes);
   var final = results1(index);

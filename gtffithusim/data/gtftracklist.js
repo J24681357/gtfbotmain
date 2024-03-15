@@ -149,6 +149,7 @@ module.exports.findEnthu = function (args) {
       'Fuji International Speedway',
       'Indianapolis - Motor Speedway',
       'Nurburgring - Nordschleife',
+      "Silverstone - GP"
     ]
   var gtftracks = Object.fromEntries(Object.entries(gtf_LIST_TRACKS).filter(x => enthulist.includes(x[1]["name"])))
   var final = [];

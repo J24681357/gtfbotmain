@@ -22,8 +22,15 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
     embed.setTitle("__Generation Select (" + pageargs["list"].length + " Modes)__");
 
     var applysetting = function () {
+      if (query["number"] != 1) {
+      if (!gte_STATS.checkItem("Generation " + (query["number"]-1), userdata)) {
+        gte_EMBED.alert({ name: "❌ Generation Locked", description: "You must complete **Generation " + (query["number"] - 1) + "** " + "in order to proceed." , embed: "", seconds: 0 }, msg, userdata);
+          return "ERROR"
+        }
+      }
       userdata["settings"] = gte_GTF.defaultsettings
       userdata["settings"]["GMODE"] = query["number"] - 1;
+      userdata["currentcar"] = -1
       userdata["ranking"] = 1000
       userdata["rankinghistory"] = []
       userdata["rankingpoints"] = 0

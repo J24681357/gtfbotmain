@@ -11,7 +11,7 @@
       ],
       "tracks": [
         {
-          "name": "Special Stage Route X",
+          "name": "Indianapolis - Motor Speedway",
           "difficulty": 0,
           "pattern": [
             {
@@ -99,7 +99,7 @@
       ],
       "tracks": [
         {
-          "name": "Special Stage Route X",
+          "name": "Indianapolis - Motor Speedway",
           "difficulty": 0,
           "pattern": [
             {
@@ -187,7 +187,7 @@
       ],
       "tracks": [
         {
-          "name": "Special Stage Route X",
+          "name": "Indianapolis - Motor Speedway",
           "difficulty": 0,
           "pattern": [
             {
@@ -275,7 +275,7 @@
       ],
       "tracks": [
         {
-          "name": "Special Stage Route X",
+          "name": "Indianapolis - Motor Speedway",
           "difficulty": 0,
           "pattern": [
             {
@@ -1717,7 +1717,7 @@
   "stage-5": [
     {
       "title": "Stage 5-1",
-      "eventid": "dr-13",
+      "eventid": "dr-17",
       "positions": [
         {
           "place": "1st",
@@ -1789,7 +1789,126 @@
       "damage": true,
       "bop": false,
       "championship": false,
-      "car": "Ford Focus WRC 1999",
+      "car": "Mitsubishi Pajero Evolution Rally Raid Car 2003",
+      "regulations": {
+        "tires": "Racing: Soft",
+        "fpplimit": 9999,
+        "upperfpp": 9999,
+        "lowerfpp": 0,
+        "upperpower": 9999,
+        "lowerpower": 0,
+        "upperweight": 9999,
+        "lowerweight": 0,
+        "upperyear": 9999,
+        "loweryear": 0,
+        "countries": [],
+        "makes": [],
+        "models": [],
+        "engines": [],
+        "drivetrains": [],
+        "types": [],
+        "special": [],
+        "prohibited": []
+      },
+      "prize": {
+        "id": -1,
+        "name": "",
+        "type": "CREDITS",
+        "item": 0
+      }
+    },
+    {
+      "title": "Stage 5-2",
+      "eventid": "dr-18",
+      "positions": [
+        {
+          "place": "1st",
+          "points": 0
+        }
+      ],
+      "tracks": [
+        {
+          "name": "Colorado Springs - Lake",
+          "difficulty": 0,
+          "pattern": [
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 1,
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 3,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 4,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 0,
+              "brake": true,
+              "score": ""
+            },
+            {
+              "arrow": 0,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 4,
+              "brake": false,
+              "score": ""
+            },
+            {
+              "arrow": 2,
+              "brake": false,
+              "score": ""
+            }
+          ]
+        }
+      ],
+      "type": "LAPS",
+      "time": ["R"],
+      "timeprogression": 0,
+      "weather": ["Clear"],
+      "weatherwetsurface": "R",
+      "weatherchange": 0,
+      "tireconsumption": 0,
+      "fuelconsumption": 0,
+      "grid": [6],
+      "gridstart": { "start": [5, 5], "position": [2, true] },
+      "difficulty": 100,
+      "damage": true,
+      "bop": false,
+      "championship": false,
+      "car": "Mitsubishi Pajero Evolution Rally Raid Car 2003",
       "regulations": {
         "tires": "Racing: Soft",
         "fpplimit": 9999,

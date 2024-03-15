@@ -56,8 +56,8 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
         weatheri = gtf_WEATHER.advanceWeather(weatheri, racesettings["distance"]["km"]);
         userdata["raceinprogress"]["weatherhistory"].push(JSON.parse(JSON.stringify(weatheri)));
       }
-      var racelength = 10000;
-      //var racelength = gte_RACEEX.raceLengthCalc(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata);
+      //var racelength = 10000;
+      var racelength = gte_RACEEX.raceLengthCalc(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata);
       if (racesettings["type"] == "DRIFT") {
         racesettings["sectors"] = racesettings["originalsectors"];
         racesettings["points"] = 0;
@@ -540,8 +540,8 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
                   extra: "",
                 },
                 {
-                  emoji: gtf_EMOTE.fithusimlogo,
-                  emoji_name: "fithusimlogo",
+                  emoji: "🔙",
+                  emoji_name: "🔙",
                   name: "Exit",
                   extra: "Once",
                 },
@@ -782,6 +782,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
     function () {
       embed.setDescription(results(index) + "\n" + emojilist[userarrow]["emoji"] + " " + (useraccel ? "`Accelerating...`" : "`Braking...`"));
       embed.spliceFields(0, 1);
+      embed.setFields([{ name: "Car", value: racesettings["car"] }]);
       gtf_DISCORD.edit(msg, { content: "ㅤ", embeds: [embed], components: buttons });
       index++;
     },
@@ -888,11 +889,12 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
 
     function updatelayout(layout, embed) {
       var final = "";
+      var extra = ""
 
       //// layout
 
       if (Object.keys(currpiece).length != 0 && scorepiece) {
-        final = currpiece["score"] + "\n";
+        extra = "**" + currpiece["score"] + "**"+ "\n\n";
         scorepiece = false;
       }
       scorepiece = true;
@@ -935,7 +937,7 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
         layout[x] = layoutx;
       }
 
-      var final = final + layout.map(x => x.join(" ")).join("\n") + "\n" + emojilist[userarrow]["emoji"] + " " + (useraccel ? "`Accelerating...`" : "`Braking...`");
+      var final = final + layout.map(x => x.join(" ")).join("\n") + "\n" + extra + emojilist[userarrow]["emoji"] + " " + (useraccel ? "`Accelerating...`" : "`Braking...`");
 
       embed.setDescription(final);
     }
@@ -1003,24 +1005,19 @@ module.exports.startDRevolution = function (racesettings, racedetails, finalgrid
           gte_STATS.updateEventEnthu(racesettings, place, userdata);
           gte_STATS.saveEnthu(userdata);
 
-          embed.setDescription("__**FINISH**__ " + "Rank: " + rank + "\n\n" + racedetails);
+          embed.setDescription("__**FINISH**__ " + "`Rank: " + rank + " `\n\n" + racedetails);
+          embed.setFields([{ name: "Car", value: racesettings["car"] }]);
           embed.setThumbnail(racesettings["track"]["image"]);
 
           var ping = "<@" + userdata["id"] + ">";
 
           var emojilist = [
             {
-              emoji: "⏭",
-              emoji_name: "⏭",
-              name: "Continue",
-              extra: "Once",
-            },
-            {
-              emoji: gtf_EMOTE.exit,
-              emoji_name: "gtfexit",
+              emoji: "🔙",
+              emoji_name: "🔙",
               name: "Exit",
               extra: "Once",
-            },
+            }
           ];
 
           emojilist = emojilist.map(function (x, index) {

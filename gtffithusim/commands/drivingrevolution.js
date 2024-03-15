@@ -68,12 +68,12 @@ module.exports = {
               return
             }
           })
-          /*
+          
           if (!pass) {
-            gte_EMBED.alert({ name: "❌ Invalid Number", description: "You must earn at least a __**C**__ score in **Stage " + (number) + "** in order to proceed.", embed: "", seconds: 0 }, msg, userdata);
+            gte_EMBED.alert({ name: "❌ Invalid Number", description: "You must earn at least a __**C**__ score in all tests in **Stage " + (number) + "** in order to proceed.", embed: "", seconds: 0 }, msg, userdata);
             return
           }
-          */
+        
         }
 
         if (typeof query["racenumber"] !== "undefined") {

@@ -211,7 +211,7 @@ module.exports.rankingPoints = function (userdata) {
 }
 ///CURRENTCAR
 module.exports.currentCar = function (userdata) {
-  if (userdata["garage"].length == 0) {
+  if (userdata["garage"].length == 0 || userdata["currentcar"] == -1) {
     return {};
   }
   return gte_STATS.garage(userdata)[gte_STATS.currentCarNum(userdata) - 1];
@@ -1219,7 +1219,7 @@ context.fillText("  " + userdata["enthupoints"] + " / " + userdata["totalenthupo
 
 module.exports.checkRaceComplete = function (name, userdata) {
   if (typeof userdata["races"][name] === "undefined") {
-    return ""
+    return 3
   } else {
     var num = userdata["races"][name]
   

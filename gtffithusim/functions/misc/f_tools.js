@@ -399,7 +399,7 @@ module.exports.formPages = async function (args, embed, msg, userdata) {
       var b = (value == "No car.") ? 0 : 0
       embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: value }]);
 
-      buttons[b].components[0].setLabel(args["page"] + 1 + "/" + Math.ceil(args["list"].length / args["rows"]).toString());
+      buttons[b].components[0].setLabel("OK | " + (args["page"] + 1) + "/" + Math.ceil(args["list"].length / args["rows"]).toString());
       if (userdata["settings"]["MENUSELECT"] == 1) {
         buttons.map(function (button, i) {
           if (i == 0) {
@@ -594,7 +594,7 @@ module.exports.prepareButtons = function (emojilist, msg, userdata) {
       color = 4;
     } else if (emojilist[i]["emoji"] == gtf_EMOTE.flag) {
       color = 4;
-    } else if (emojilist[i]["emoji"] == gtf_EMOTE.exit) {
+    } else if (emojilist[i]["emoji"] == "🔙") {
       color = 4;
     } else {
       color = 2;

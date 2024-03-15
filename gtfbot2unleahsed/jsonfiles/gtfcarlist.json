@@ -3911,6 +3911,30 @@
 			"_id": 155
 		}
 	],
+	"cizeta": [
+	{
+			"make": "Cizeta",
+			"name": "Cizeta V16T",
+			"year": "1994",
+			"type": "Production",
+			"country": "Italy",
+			"power": 589,
+			"weight": 3616,
+			"tires": "Sports: Hard",
+			"engine": "NA",
+			"drivetrain": "MR",
+			"carcostm": 0,
+			"aerom": 1,
+			"discount": 0,
+			"special": ["x30"],
+			"offroad": 0,
+			"livery": [],
+			"image": [
+			"https://www.supercarworld.com/images/fullpics/079.jpg"
+			],
+			"_id": 162
+		}
+	],
 	"daihatsu": [
 		{
 			"make": "Daihatsu",

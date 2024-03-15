@@ -687,12 +687,12 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
     });
     var e = Math.ceil((parseInt(racesettings["eventid"].split("-")[1])) / 4)
     var command = require(gte_TOOLS.homeDir() + "commands/drivingrevolution");
-    command.execute(msg, { options: e[0], number: (parseInt(e[1]) + 1) }, userdata);
+    command.execute(msg, { options: "list", stagenumber: e.toString()}, userdata);
   }
   if (racesettings["mode"] == "CAREER") {
       var functionlist = [sessiondetails, goback]
   } else if (racesettings["mode"] == "DRIVINGREVOLUTION") {
-      var functionlist = [continuedr, goback]
+      var functionlist = [continuedr]
   } else {
     var functionlist = [sessiondetails, goback]
   }

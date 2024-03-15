@@ -150,7 +150,7 @@ module.exports = {
           if (gte_STATS.currentCarNum(userdata) == index+1 && userdata["week"] != 0)  {
             carname = "**" + name + "**" + " `Lv." + level + "` ` " + gte_PERF.perfEnthu(i, "GARAGE")["class"] + " `" + favorite
           }
-           listsec.push(ocar["year"] + " | " + gtf_MATH.numFormat(ocar["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(ocar["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + ocar["special"].join(", ").replace("xstarter", ""))
+           listsec.push(ocar["year"] + " | " + gtf_MATH.numFormat(ocar["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(ocar["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + ocar["special"].join(", ").replace(", xstarter", ""))
           return carname
       })
       pageargs["list"] = list;
@@ -188,7 +188,7 @@ module.exports = {
           if (gte_STATS.currentCarNum(userdata) == index+1)  {
             carname = "**" + name + "**" + " `Lv." + level + "` ` " + gte_PERF.perfEnthu(i, "GARAGE")["class"] + " `" + favorite
           }
-          listsec.push(ocar["year"] + " | " + gtf_MATH.numFormat(ocar["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(ocar["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + ocar["special"].join(", ").replace("xstarter", ""))
+          listsec.push(ocar["year"] + " | " + gtf_MATH.numFormat(ocar["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(ocar["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + ocar["special"].join(", ").replace(", xstarter", ""))
           return carname
         })
       pageargs["list"] = list;
