@@ -10,7 +10,6 @@ const client = new Client({
 ////////////////////////////////////////////////////
 var fs = require("fs");
 /////
-var checklogin = false;
 var cooldowns = new Set();
 var { MongoClient, ServerApiVersion } = require('mongodb');
 
@@ -33,38 +32,16 @@ for (const file of commandFiles) {
 var datebot = new Date().getTime();
 var timeelapsed = 0;
 
-console.log("Fithusim: Loading...");
-
-/*
-setTimeout(function() {
-  if (!checklogin) {
-    restartbot()
-  }
-}, 25000);
-*/
-
 client.on("ready", () => {
-
   require(__dirname + "/" + "files/directories");
-
-  
-
   gte_SLASHCOMMANDS.createslashcommands();
- 
-  
+
   //gte_TOOLS.updateallsaves("FITHUSIMSAVES", {"fppupdate": true})
   timeelapsed = parseInt(new Date().getTime()) - parseInt(datebot);
-  /*
-  if (timeelapsed >= 7000) {
-    restartbot()
-    //console.log(keep);
-  }
-  */
-
 gtf_CONSOLELOG.reverse();
 gtf_CONSOLELOG.fill(100, 100, 255);
 
-console.log("Fithusim: Time elapsed: " + timeelapsed + " " + "ms");
+console.log("Fithusim: Logged In (" + timeelapsed + " " + "ms)");
 gtf_CONSOLELOG.end();
 });
 
@@ -250,7 +227,6 @@ client.on("interactionCreate", async interaction => {
         })
       } catch (err) {
         gte_EMBED.alert({ name: "❌ Save Data Failed", description: "Oops, save data has failed to load. Try again next time.\n" + "**" + err + "**", embed: "", seconds: 0 }, msg, userdata);
-        restartbot()
         return
       }
       var dbo = db.db("GTFitness");
@@ -284,95 +260,104 @@ client.on("interactionCreate", async interaction => {
   }
 });
 
-client.login(process.env.SECRET3).then(async function() {
-  checklogin = true;
-  var keys = [];
+///LOGIN
 
-  var index1 = 0;
-  client.rest.on("rateLimited", info => {
-    gte_LIST_BOT["msgtimeout"] = info["timeout"];
+var login = function(client) {
+  console.log("Fithusim: Loading...");
+  client.login(process.env.SECRET3).then(async function() {
 
-    /*
-    if (info["path"].includes("messages")) {
-      var channelid = info["path"].split("/channels/")[1].split("/")[0];
-      var messageid = info["path"].split("/messages/")[1].split("/")[0];
-    } 
-    else {
-      channelid = "";
-      messageid = "";
-    }
-    if (typeof client.guilds.cache.get(gte_SERVERID).members.cache.get("237450759233339393") == "undefined") {
-    } 
-    else {
-      client.guilds.cache
-        .get(gte_SERVERID)
-        .members.cache.get("237450759233339393")
-        .send({ content: "**RATE LIMIT DETECTED**" + "\n\n" + "**Timeout:** " + gtf_DATETIME.getFormattedTime(info["timeout"]) + "\n" + "**Message:** " + "https://discord.com/channels/" + gte_SERVERID + "/" + channelid + "/" + messageid + "\n\n" + JSON.stringify(info) });
-    }
-    */
-  });
-  setTimeout(function() {
+    var keys = [];
 
-    
+    var index1 = 0;
+    client.rest.on("rateLimited", info => {
+      gte_LIST_BOT["msgtimeout"] = info["timeout"];
 
-    updatebotstatus();
-    
-    
-    gtf_TOOLS.interval(
-      function() {
-        gte_STATS.resumeRace(keys[index1], client);
-        index1++;
-      },
-      1000,
-      keys.length
-    );
-
-    //gtm_EXTRA.checkerrors(client)
-  }, 10000);
-
-  try {
-    var db = await MongoClient.connect(process.env.MONGOURL,
-      {
-        serverApi: ServerApiVersion.v1 
-      })
-  } catch (error) {
-    console.log("Fithusim: Database error")
-    restartbot()
-  }
-  /*
-    if (err) {
-      restartbot()
-      console.log("Fithusim: Failed to load races.")
-      return
-    }
-    */
-  var dbo = db.db("GTFitness");
-  dbo
-    .collection("FITHUSIMSAVES")
-    .find({})
-    .forEach(row => {
-      if (typeof row["id"] === "undefined") {
-        return;
-      } else {
-
-        if (row["racedetails"] === undefined) {
-          return;
-        }
-
-        if (row["racedetails"].length == 0) {
-          return;
-        }
-
-        if (!row["raceinprogress"]["active"] || row["raceinprogress"]["channelid"] === undefined || row["raceinprogress"]["messageid"] === undefined) {
-          return;
-        }
-        keys.push(row);
+      /*
+      if (info["path"].includes("messages")) {
+        var channelid = info["path"].split("/channels/")[1].split("/")[0];
+        var messageid = info["path"].split("/messages/")[1].split("/")[0];
+      } 
+      else {
+        channelid = "";
+        messageid = "";
       }
-
-
+      if (typeof client.guilds.cache.get(gte_SERVERID).members.cache.get("237450759233339393") == "undefined") {
+      } 
+      else {
+        client.guilds.cache
+          .get(gte_SERVERID)
+          .members.cache.get("237450759233339393")
+          .send({ content: "**RATE LIMIT DETECTED**" + "\n\n" + "**Timeout:** " + gtf_DATETIME.getFormattedTime(info["timeout"]) + "\n" + "**Message:** " + "https://discord.com/channels/" + gte_SERVERID + "/" + channelid + "/" + messageid + "\n\n" + JSON.stringify(info) });
+      }
+      */
     });
+    setTimeout(function() {
+      updatebotstatus();
+      gtf_TOOLS.interval(
+        function() {
+          gte_STATS.resumeRace(keys[index1], client);
+          index1++;
+        },
+        1000,
+        keys.length
+      );
 
-});
+      //gtm_EXTRA.checkerrors(client)
+    }, 10000);
+
+    try {
+      var db = await MongoClient.connect(process.env.MONGOURL,
+        {
+          serverApi: ServerApiVersion.v1 
+        })
+    } catch (error) {
+      console.log("Fithusim: Database error")
+    }
+    /*
+      if (err) {
+        console.log("Fithusim: Failed to load races.")
+        return
+      }
+      */
+    var dbo = db.db("GTFitness");
+    dbo
+      .collection("FITHUSIMSAVES")
+      .find({})
+      .forEach(row => {
+        if (typeof row["id"] === "undefined") {
+          return;
+        } else {
+
+          if (row["racedetails"] === undefined) {
+            return;
+          }
+
+          if (row["racedetails"].length == 0) {
+            return;
+          }
+
+          if (!row["raceinprogress"]["active"] || row["raceinprogress"]["channelid"] === undefined || row["raceinprogress"]["messageid"] === undefined) {
+            return;
+          }
+          keys.push(row);
+        }
+
+
+      });
+
+  });
+}
+login(client)
+var begin = setInterval(function() {
+    if (!client.isReady()) {
+      console.log("Fithusim: Restarting...")
+      client.destroy().then(function() {login(client)})
+    } else {
+      clearInterval(begin)
+    }
+}, 20000)
+
+///FUNCTIONS
 
 var executecommand = function(command, args, msg, userdata) {
   try {
@@ -384,8 +369,6 @@ var executecommand = function(command, args, msg, userdata) {
     console.error(error);
   }
 };
-
-///FUNCTIONS
 
 function updatebotstatus() {
 gtf_CONSOLELOG.reverse();
@@ -411,22 +394,3 @@ gtf_CONSOLELOG.end();
   }
   */
 }
-
-function restartbot() {
-  console.log("Restarting bot...");
-  const { exec } = require("child_process");
-
-  exec("kill 1", (error, stdout, stderr) => {
-    if (error) {
-      console.log(`error: ${error.message}`);
-      return;
-    }
-    if (stderr) {
-      console.log(`stderr: ${stderr}`);
-      return;
-    }
-    console.log(`stdout: ${stdout}`);
-  });
-}
-
-//client.on("debug", console.log).on("warn", console.log)

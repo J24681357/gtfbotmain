@@ -43,13 +43,6 @@ module.exports.getCurrentWeekDay = function () {
   return day;
 };
 
-
-function getSundayWeek(d) {
-
-}
-console.log(getSundayWeek(new Date()));
-
-
 module.exports.getFormattedTime = function (duration) {
   var durationeconds = Math.floor((duration % 1000) / 100),
     seconds = Math.floor((duration / 1000) % 60),

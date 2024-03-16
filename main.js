@@ -3,14 +3,12 @@ require(__dirname + "/gtfbot2unleahsed/" + "files/directories");
 require(__dirname + "/gtfmanager/" + "files/directories");
 
 //require(__dirname + "/gtfbot2unleahsed/index.js");
-//require(__dirname + "/gtfmanager/index.js");
-require(__dirname + "/gtffithusim/index.js");
+require(__dirname + "/gtfmanager/index.js");
+//require(__dirname + "/gtffithusim/index.js");
 //restartbot()
 
-console.log(gtf_TRACKS.find({ versions: ["Gran Turismo"], types: ["Tarmac - Real"] }).map(x => x["name"]))
-
 function restartbot() {
-  console.log("Restarting bot...");
+  console.log("Restarting Node JS...");
   const { exec } = require("child_process");
 
   exec("kill 1", (error, stdout, stderr) => {
@@ -26,7 +24,7 @@ function restartbot() {
   });
 }
 
-setTimeout(function(x){
+setTimeout(function(x) {
   restartbot()
 }, 3600000)
 
@@ -35,9 +33,6 @@ var util = require('util');
 var log_file = fs.createWriteStream(__dirname + '/debug.log', {flags : 'w'});
 var log_stdout = process.stdout;
 console.log = function(d) { //
-
   log_file.write(util.format(d) + '\n');
-
   log_stdout.write(util.format(d) + '\n');
-
 };

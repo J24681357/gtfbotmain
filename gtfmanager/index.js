@@ -10,20 +10,8 @@ var client = new Client({
 
 ////////////////////////////////////////////////////
 var fs = require("fs");
+/////
 var cooldowns = new Set();
-
-var checklogin = false
-var minute = 0
-
-/*
-setTimeout(function() {
-  if (!checklogin) {
-    restartbot(client)
-  }
-},10000)
-*/
-console.log("GTM: Loading...")
-
 var listinmaint = [];
 
 client.commands = {}
@@ -40,13 +28,8 @@ for (const file of commandFiles) {
 var datebot = new Date().getTime();
 var timeelapsed = 0;
 
-// Server Settings
-var executions = 0;
-
-
 client.once(Events.ClientReady, c => {
   gtm_SLASHCOMMANDS.createslashcommands()
-  updatebotstatus()
   
     setInterval(function() {
   gtm_EXTRA.gtfstats(c)
@@ -58,22 +41,17 @@ client.once(Events.ClientReady, c => {
   //gtm_EXTRA.rainbowcolors(c)
   //gtm_EXTRA.gtcolors(c)
   
-  
   //gtm_TOOLS.downloadGTFFiles(client)
-  
   gtm_EXTRA.loadfeeds(c);
-  console.log("GTM: Logged In")
+  
   timeelapsed = parseInt(new Date().getTime()) - parseInt(datebot);
-
   gtf_CONSOLELOG.reverse();
   gtf_CONSOLELOG.fill(100, 100, 255);
 
-  console.log("GTM: Time elapsed: " + timeelapsed + " " + "ms");
+  console.log("GTM: Logged In (" + timeelapsed + " " + "ms)");
   gtf_CONSOLELOG.end();
-  
 
 });
-
 
 client.on("messageCreate", msg => {
   function activate() {
@@ -109,7 +87,6 @@ client.on("messageCreate", msg => {
  activate()
 
 });
-
 
 client.on("interactionCreate", async interaction => {
   interaction.author = interaction.user
@@ -213,24 +190,36 @@ client.on("interactionCreate", async interaction => {
 
 //client.on("debug", console.log).on("warn", console.log)
 
-client.destroy().then(function () {
-client.login(process.env.SECRET2).then(function() {
-  checklogin = true
-    //gtm_EXTRA.test(client.guilds.cache.get("239493425131552778"))
-  
-   setTimeout(function() {
-     gtm_EXTRA.checkgallery(client)
-  gtm_EXTRA.caroftheday(client)
-  gtm_EXTRA.locationoftheweek(client)
-  gtm_EXTRA.locationoftheweekstats(client)
-  gtm_EXTRA.carofthedaystats(client)
- },10000)
 
 
-});
-})
 
-    
+///LOGIN
+var login = function(client) {
+  console.log("GTM: Loading...");
+  client.login(process.env.SECRET2).then(function() {
+//gtm_EXTRA.test(client.guilds.cache.get("239493425131552778"))
+
+     setTimeout(function() {
+    gtm_EXTRA.checkgallery(client)
+    gtm_EXTRA.caroftheday(client)
+    gtm_EXTRA.locationoftheweek(client)
+    gtm_EXTRA.locationoftheweekstats(client)
+    gtm_EXTRA.carofthedaystats(client)
+   },10000)
+  });
+}
+
+login(client)
+var begin = setInterval(function() {
+    if (!client.isReady()) {
+      console.log("GTM: Restarting...")
+      client.destroy().then(function() {login(client)})
+    } else {
+      clearInterval(begin)
+    }
+}, 20000)
+
+/////FUNCTIONS 
   /*
   setTimeout(function() {
     //gtm_SERVER.savechannels(client)
@@ -239,7 +228,6 @@ client.login(process.env.SECRET2).then(function() {
   */
 
 //manual update
-  
   //gtm_EXTRA.updatemanual(client)
     
   /*
@@ -248,27 +236,5 @@ client.login(process.env.SECRET2).then(function() {
   }, 15 * 1000)
   */
 
-///EMOJIS
-
-
 function updatebotstatus() {
-  //console.log("GTM: Maintenance: " + gtfbot["maintenance"]);
-}
-
-function restartbot(client) {
-  console.log("GTM: Restarting bot...");
-  
-    const { exec } = require("child_process");
-
-    exec("kill 1", (error, stdout, stderr) => {
-      if (error) {
-        console.log(`error: ${error.message}`);
-        return;
-      }
-      if (stderr) {
-        console.log(`stderr: ${stderr}`);
-        return;
-      }
-      console.log(`stdout: ${stdout}`);
-    });
 }
