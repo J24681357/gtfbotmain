@@ -271,7 +271,6 @@ client.on("interactionCreate", async interaction => {
         });
       } catch (err) {
         gtf_EMBED.alert({ name: "❌ Save Data Failed", description: "Oops, save data has failed to load. Try again next time.\n" + "**" + err + "**", embed: "", seconds: 0 }, msg, userdata);
-        restartbot();
         return;
       }
       var dbo = db.db("GTFitness");
@@ -339,11 +338,9 @@ var login = function() {
       console.log("DB good!");
     } catch (error) {
       console.log("Database error");
-      restartbot();
     }
     /*
     if (err) {
-      restartbot()
       console.log("Failed to load races.")
       return
     }
