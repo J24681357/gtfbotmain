@@ -45,8 +45,6 @@ console.log("Fithusim: Logged In (" + timeelapsed + " " + "ms)");
 gtf_CONSOLELOG.end();
 });
 
-
-
 client.on("interactionCreate", async interaction => {
   try {
     if (interaction.type != 2) {

@@ -36,12 +36,12 @@ client.on("ready", () => {
 
   //gtf_TOOLS.updateallsaves("GTF2SAVES", {"fppupdate": true})
   timeelapsed = parseInt(new Date().getTime()) - parseInt(datebot);
-
   gtf_CONSOLELOG.reverse();
   gtf_CONSOLELOG.fill(100, 100, 255);
-  console.log("Logged in GTF 2: Unleahsed")
-  console.log("Time elapsed: " + timeelapsed + " " + "ms");
+
+  console.log("GTF: Logged In (" + timeelapsed + " " + "ms)");
   gtf_CONSOLELOG.end();
+
 });
 
 client.on("threadMembersUpdate", (addedMembers, removedMembers, thread) => {
@@ -302,7 +302,8 @@ client.on("interactionCreate", async interaction => {
   }
 });
 
-client.destroy().then(function () {
+var login = function() { 
+  console.log("GTF: Loading...");
   client.login(process.env.SECRET).then(async function () {
     var keys = [];
 
@@ -366,7 +367,19 @@ client.destroy().then(function () {
         }
       });
   });
-});
+}
+
+login(client)
+var begin = setInterval(function() {
+    if (!client.isReady()) {
+      console.log("GTF: Restarting...")
+      client.destroy().then(function() {login(client)})
+    } else {
+      clearInterval(begin)
+    }
+}, 20000)
+
+///FUNCTIONS
 
 var executecommand = function (command, args, msg, userdata) {
   try {
