@@ -1,11 +1,11 @@
 {
-  "rn-1": {
-    "title": "Novice Challenge",
-    "eventid": "rn-1",
+  "ri-1": {
+    "title": "American Car Limited Race",
+    "eventid": "ri-1",
     "positions": [
       {
         "place": "1st",
-        "points": 10
+        "points": 200
       }
     ],
     "startposition": 3,
@@ -14,21 +14,16 @@
         "versions": [
           "Gran Turismo"
         ],
-        "types": [
-          "Tarmac"
-        ],
-        "upperlength": 3
+        "upperlength": 14
       }
     ],
     "type": "LAPS",
     "time": [
-      "Day"
+      "R"
     ],
     "timeprogression": 0,
     "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
+      "R"
     ],
     "weatherwetsurface": "R",
     "weatherchange": 0,
@@ -38,16 +33,397 @@
       6
     ],
     "gridstart": "STANDING",
-    "difficulty": 100,
+    "difficulty": 80,
     "damage": true,
     "bop": false,
     "championship": false,
     "car": "GARAGE",
     "regulations": {
       "tires": "Racing: Soft",
-      "fpplimit": 340,
-      "upperfpp": 340,
-      "lowerfpp": 150,
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [
+        "USA"
+      ],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "ri-2": {
+    "title": "Chamonix Challenge",
+    "eventid": "ri-2",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 200
+      }
+    ],
+    "startposition": 2,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "name": [
+          "Chamonix - Main"
+        ]
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Overcast"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      2
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 80,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "ri-3": {
+    "title": "German Car Limited Race",
+    "eventid": "ri-3",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 200
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 14
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "R"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 80,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [
+        "Germany"
+      ],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "ri-4": {
+    "title": "High-Speed Battle",
+    "eventid": "ri-4",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 200
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "name": [
+          "Indianapolis - Motor Speedway"
+        ]
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "R"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 80,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [
+        "Super"
+      ],
+      "prohibited": []
+    },
+    "era": [
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "ri-5": {
+    "title": "Nurburgring Challenge",
+    "eventid": "ri-5",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 200
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "name": [
+          "Nurburgring - Nordschleife"
+        ]
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 80,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "ri-6": {
+    "title": "One-Make Race",
+    "eventid": "ri-6",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 200
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 14
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "R"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 80,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
       "upperpower": 9999,
       "lowerpower": 0,
       "upperweight": 9999,
@@ -78,13 +454,13 @@
       "item": 0
     }
   },
-  "rn-2": {
-    "title": "Novice Challenge",
-    "eventid": "rn-2",
+  "ri-7": {
+    "title": "Over 4000 Match",
+    "eventid": "ri-7",
     "positions": [
       {
         "place": "1st",
-        "points": 10
+        "points": 200
       }
     ],
     "startposition": 3,
@@ -93,21 +469,16 @@
         "versions": [
           "Gran Turismo"
         ],
-        "types": [
-          "Tarmac"
-        ],
-        "upperlength": 3
+        "upperlength": 14
       }
     ],
     "type": "LAPS",
     "time": [
-      "Day"
+      "R"
     ],
     "timeprogression": 0,
     "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
+      "R"
     ],
     "weatherwetsurface": "R",
     "weatherchange": 0,
@@ -117,16 +488,93 @@
       6
     ],
     "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": false,
+    "difficulty": 80,
+    "damage": true,
     "bop": false,
     "championship": false,
     "car": "GARAGE",
     "regulations": {
       "tires": "Racing: Soft",
-      "fpplimit": 340,
-      "upperfpp": 340,
-      "lowerfpp": 150,
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 4000,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "ri-8": {
+    "title": "Red Rock Challenge",
+    "eventid": "ri-8",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 200
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "name": [
+          "Red Rock Valley Speedway"
+        ],
+        "upperlength": 14
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 80,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
       "upperpower": 9999,
       "lowerpower": 0,
       "upperweight": 9999,
@@ -157,13 +605,13 @@
       "item": 0
     }
   },
-  "rn-3": {
-    "title": "Novice Challenge",
-    "eventid": "rn-3",
+  "ri-9": {
+    "title": "Seattle Challenge",
+    "eventid": "ri-9",
     "positions": [
       {
         "place": "1st",
-        "points": 10
+        "points": 200
       }
     ],
     "startposition": 3,
@@ -172,21 +620,19 @@
         "versions": [
           "Gran Turismo"
         ],
-        "types": [
-          "Tarmac"
+        "name": [
+          "Seattle - Long Circuit"
         ],
-        "upperlength": 3
+        "upperlength": 14
       }
     ],
     "type": "LAPS",
     "time": [
-      "Day"
+      "R"
     ],
     "timeprogression": 0,
     "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
+      "Clear"
     ],
     "weatherwetsurface": "R",
     "weatherchange": 0,
@@ -196,16 +642,16 @@
       6
     ],
     "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": false,
+    "difficulty": 80,
+    "damage": true,
     "bop": false,
     "championship": false,
     "car": "GARAGE",
     "regulations": {
       "tires": "Racing: Soft",
-      "fpplimit": 340,
-      "upperfpp": 340,
-      "lowerfpp": 150,
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
       "upperpower": 9999,
       "lowerpower": 0,
       "upperweight": 9999,
@@ -236,13 +682,13 @@
       "item": 0
     }
   },
-  "rn-4": {
-    "title": "Novice Challenge",
-    "eventid": "rn-4",
+  "ri-10": {
+    "title": "Suzuka Challenge",
+    "eventid": "ri-10",
     "positions": [
       {
         "place": "1st",
-        "points": 10
+        "points": 200
       }
     ],
     "startposition": 3,
@@ -251,15 +697,1173 @@
         "versions": [
           "Gran Turismo"
         ],
-        "types": [
-          "Tarmac"
+        "name": [
+          "Suzuka Circuit"
         ],
-        "upperlength": 3
+        "upperlength": 14
       }
     ],
     "type": "LAPS",
     "time": [
-      "Day"
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "R"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 80,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "ri-11": {
+    "title": "TC And SC Limited Race",
+    "eventid": "ri-11",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 200
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 14
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "R"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 80,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [
+        "TB",
+        "SC"
+      ],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "ri-12": {
+    "title": "The GT-R Race",
+    "eventid": "ri-12",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 200
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 14
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "R"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 80,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [
+        "Nissan"
+      ],
+      "models": [
+        "GT-R"
+      ],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "ri-13": {
+    "title": "Tsukuba Circuit Challenge",
+    "eventid": "ri-13",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 200
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "name": [
+          "Tsukuba Circuit"
+        ]
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "R"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 80,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "ri-14": {
+    "title": "Tuning Car Limited Race",
+    "eventid": "ri-14",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 200
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 14
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "R"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 80,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "ri-15": {
+    "title": "Ultimate Match",
+    "eventid": "ri-15",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 200
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 14
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "R"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 80,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 550,
+      "upperfpp": 550,
+      "lowerfpp": 280,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-1": {
+    "title": "Advanced Match",
+    "eventid": "rii-1",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy",
+      "Rain"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 250,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-2": {
+    "title": "American Car Limited Race",
+    "eventid": "rii-2",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy",
+      "Rain"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 250,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [
+        "USA"
+      ],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-3": {
+    "title": "Carrozzeria Meeting",
+    "eventid": "rii-3",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy",
+      "Rain"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 460,
+      "upperfpp": 460,
+      "lowerfpp": 250,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [
+        "Italy"
+      ],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-4": {
+    "title": "French Car Limited Race",
+    "eventid": "rii-4",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy",
+      "Rain"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 275,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [
+        "France"
+      ],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-5": {
+    "title": "Grand Valley Speedway Challenge",
+    "eventid": "rii-5",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "name": [
+          "Grand Valley - Speedway"
+        ]
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "R"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 250,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-6": {
+    "title": "Honda Cup",
+    "eventid": "rii-6",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy",
+      "Rain"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 275,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [
+        "Honda"
+      ],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-7": {
+    "title": "Japanese Car Limited Race",
+    "eventid": "rii-7",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy",
+      "Rain"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 250,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [
+        "Japan"
+      ],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-8": {
+    "title": "Lancia Cup",
+    "eventid": "rii-8",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy",
+      "Rain"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 275,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [
+        "Lancia"
+      ],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-9": {
+    "title": "Mercedes-Benz Cup",
+    "eventid": "rii-9",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy",
+      "Rain"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 275,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [
+        "Mercedes-Benz"
+      ],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-10": {
+    "title": "Midship Meeting",
+    "eventid": "rii-10",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
     ],
     "timeprogression": 0,
     "weather": [
@@ -275,16 +1879,16 @@
       6
     ],
     "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": false,
+    "difficulty": 90,
+    "damage": true,
     "bop": false,
     "championship": false,
     "car": "GARAGE",
     "regulations": {
       "tires": "Racing: Soft",
-      "fpplimit": 340,
-      "upperfpp": 340,
-      "lowerfpp": 150,
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 250,
       "upperpower": 9999,
       "lowerpower": 0,
       "upperweight": 9999,
@@ -292,6 +1896,2011 @@
       "upperyear": 9999,
       "loweryear": 0,
       "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [
+        "MR"
+      ],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-11": {
+    "title": "Real Sports Car Match",
+    "eventid": "rii-11",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy",
+      "Night"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 250,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [
+        "Sports"
+      ],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-12": {
+    "title": "RWD Limited Race",
+    "eventid": "rii-12",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy",
+      "Rain"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 250,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [
+        "FR",
+        "MR",
+        "RR"
+      ],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-13": {
+    "title": "Subaru Cup",
+    "eventid": "rii-13",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy",
+      "Rain"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 275,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [
+        "Subaru"
+      ],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-14": {
+    "title": "Trial Mountain Challenge",
+    "eventid": "rii-14",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "name": [
+          "Trial Mountain Circuit"
+        ]
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "R"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 250,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "rii-15": {
+    "title": "Under 2500 Race",
+    "eventid": "rii-15",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 100
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "upperlength": 7
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy",
+      "Rain"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 510,
+      "upperfpp": 510,
+      "lowerfpp": 250,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 2500,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-1": {
+    "title": "4WD Limited Race",
+    "eventid": "riii-1",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [
+        "4WD"
+      ],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-2": {
+    "title": "90s Cup",
+    "eventid": "riii-2",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 1999,
+      "loweryear": 1990,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      2
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-3": {
+    "title": "English Sports Car Meeting",
+    "eventid": "riii-3",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": false,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [
+        "UK"
+      ],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [
+        "Sports"
+      ],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-4": {
+    "title": "FWD Limited Race",
+    "eventid": "riii-4",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": false,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [
+        "FF"
+      ],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-5": {
+    "title": "German Car Limited Race",
+    "eventid": "riii-5",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [
+        "Germany"
+      ],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-6": {
+    "title": "Intermediate Match",
+    "eventid": "riii-6",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-7": {
+    "title": "Lotus Cup",
+    "eventid": "riii-7",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [
+        "Lotus"
+      ],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-8": {
+    "title": "Mazda Cup",
+    "eventid": "riii-8",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [
+        "Mazda"
+      ],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-10": {
+    "title": "Mitsubishi Cup",
+    "eventid": "riii-10",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [
+        "Mitsubishi"
+      ],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-11": {
+    "title": "NA Limited Race",
+    "eventid": "riii-11",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [
+        "NA"
+      ],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-13": {
+    "title": "RWD Limited Race",
+    "eventid": "riii-13",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [
+        "FR",
+        "MR",
+        "RR"
+      ],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-14": {
+    "title": "Toyota Cup",
+    "eventid": "riii-14",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [
+        "Toyota"
+      ],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-15": {
+    "title": "Under 2000 Race",
+    "eventid": "riii-15",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 2000,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-16": {
+    "title": "Tsukuba Circuit Challenge",
+    "eventid": "riii-16",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "name": [
+          "Tsukuba Circuit"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-17": {
+    "title": "Rome Challenge",
+    "eventid": "riii-17",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "name": [
+          "Rome Circuit"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-18": {
+    "title": "Italian Car Limited Race",
+    "eventid": "riii-18",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [
+        "Italy"
+      ],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-20": {
+    "title": "Fishermans Ranch Challenge",
+    "eventid": "riii-20",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 2,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "name": [
+          "Fishermans Ranch"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      2
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [
+        "FF"
+      ],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-21": {
+    "title": "Under 3000 Race",
+    "eventid": "riii-21",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 3000,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-22": {
+    "title": "One-Make Race",
+    "eventid": "riii-22",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [],
+      "makes": [],
+      "models": [],
+      "engines": [],
+      "drivetrains": [],
+      "types": [
+        "Production",
+        "Aftermarket"
+      ],
+      "special": [],
+      "prohibited": []
+    },
+    "era": [
+      1,
+      2,
+      3
+    ],
+    "prize": {
+      "id": -1,
+      "name": "",
+      "type": "CREDITS",
+      "item": 0
+    }
+  },
+  "riii-23": {
+    "title": "French Car Limited Race",
+    "eventid": "riii-24",
+    "positions": [
+      {
+        "place": "1st",
+        "points": 50
+      }
+    ],
+    "startposition": 3,
+    "tracks": [
+      {
+        "versions": [
+          "Gran Turismo"
+        ],
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 4.5
+      }
+    ],
+    "type": "LAPS",
+    "time": [
+      "R"
+    ],
+    "timeprogression": 0,
+    "weather": [
+      "Clear",
+      "Partly Cloudy",
+      "Cloudy"
+    ],
+    "weatherwetsurface": "R",
+    "weatherchange": 0,
+    "tireconsumption": 0,
+    "fuelconsumption": 0,
+    "grid": [
+      6
+    ],
+    "gridstart": "STANDING",
+    "difficulty": 90,
+    "damage": true,
+    "bop": false,
+    "championship": false,
+    "car": "GARAGE",
+    "regulations": {
+      "tires": "Racing: Soft",
+      "fpplimit": 430,
+      "upperfpp": 430,
+      "lowerfpp": 200,
+      "upperpower": 9999,
+      "lowerpower": 0,
+      "upperweight": 9999,
+      "lowerweight": 0,
+      "upperyear": 9999,
+      "loweryear": 0,
+      "countries": [
+        "France"
+      ],
       "makes": [],
       "models": [],
       "engines": [],
@@ -1957,13 +5566,13 @@
       "item": 0
     }
   },
-  "riii-1": {
-    "title": "4WD Limited Race",
-    "eventid": "riii-1",
+  "rn-1": {
+    "title": "Novice Challenge",
+    "eventid": "rn-1",
     "positions": [
       {
         "place": "1st",
-        "points": 50
+        "points": 10
       }
     ],
     "startposition": 3,
@@ -1972,12 +5581,15 @@
         "versions": [
           "Gran Turismo"
         ],
-        "upperlength": 4.5
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 3
       }
     ],
     "type": "LAPS",
     "time": [
-      "R"
+      "Day"
     ],
     "timeprogression": 0,
     "weather": [
@@ -2000,9 +5612,9 @@
     "car": "GARAGE",
     "regulations": {
       "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
+      "fpplimit": 340,
+      "upperfpp": 340,
+      "lowerfpp": 150,
       "upperpower": 9999,
       "lowerpower": 0,
       "upperweight": 9999,
@@ -2013,9 +5625,7 @@
       "makes": [],
       "models": [],
       "engines": [],
-      "drivetrains": [
-        "4WD"
-      ],
+      "drivetrains": [],
       "types": [
         "Production",
         "Aftermarket"
@@ -2035,13 +5645,13 @@
       "item": 0
     }
   },
-  "riii-2": {
-    "title": "90s Cup",
-    "eventid": "riii-2",
+  "rn-2": {
+    "title": "Novice Challenge",
+    "eventid": "rn-2",
     "positions": [
       {
         "place": "1st",
-        "points": 50
+        "points": 10
       }
     ],
     "startposition": 3,
@@ -2050,81 +5660,10 @@
         "versions": [
           "Gran Turismo"
         ],
-        "upperlength": 4.5
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 1999,
-      "loweryear": 1990,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      2
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "riii-3": {
-    "title": "English Sports Car Meeting",
-    "eventid": "riii-3",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 50
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
+        "types": [
+          "Tarmac"
         ],
-        "upperlength": 4.5
+        "upperlength": 3
       }
     ],
     "type": "LAPS",
@@ -2152,18 +5691,16 @@
     "car": "GARAGE",
     "regulations": {
       "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
+      "fpplimit": 340,
+      "upperfpp": 340,
+      "lowerfpp": 150,
       "upperpower": 9999,
       "lowerpower": 0,
       "upperweight": 9999,
       "lowerweight": 0,
       "upperyear": 9999,
       "loweryear": 0,
-      "countries": [
-        "UK"
-      ],
+      "countries": [],
       "makes": [],
       "models": [],
       "engines": [],
@@ -2187,13 +5724,13 @@
       "item": 0
     }
   },
-  "riii-4": {
-    "title": "FWD Limited Race",
-    "eventid": "riii-4",
+  "rn-3": {
+    "title": "Novice Challenge",
+    "eventid": "rn-3",
     "positions": [
       {
         "place": "1st",
-        "points": 50
+        "points": 10
       }
     ],
     "startposition": 3,
@@ -2205,12 +5742,12 @@
         "types": [
           "Tarmac"
         ],
-        "upperlength": 4.5
+        "upperlength": 3
       }
     ],
     "type": "LAPS",
     "time": [
-      "R"
+      "Day"
     ],
     "timeprogression": 0,
     "weather": [
@@ -2233,9 +5770,9 @@
     "car": "GARAGE",
     "regulations": {
       "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
+      "fpplimit": 340,
+      "upperfpp": 340,
+      "lowerfpp": 150,
       "upperpower": 9999,
       "lowerpower": 0,
       "upperweight": 9999,
@@ -2246,9 +5783,7 @@
       "makes": [],
       "models": [],
       "engines": [],
-      "drivetrains": [
-        "FWD"
-      ],
+      "drivetrains": [],
       "types": [
         "Production",
         "Aftermarket"
@@ -2268,13 +5803,13 @@
       "item": 0
     }
   },
-  "riii-5": {
-    "title": "German Car Limited Race",
-    "eventid": "riii-5",
+  "rn-4": {
+    "title": "Novice Challenge",
+    "eventid": "rn-4",
     "positions": [
       {
         "place": "1st",
-        "points": 50
+        "points": 10
       }
     ],
     "startposition": 3,
@@ -2283,12 +5818,15 @@
         "versions": [
           "Gran Turismo"
         ],
-        "upperlength": 4.5
+        "types": [
+          "Tarmac"
+        ],
+        "upperlength": 3
       }
     ],
     "type": "LAPS",
     "time": [
-      "R"
+      "Day"
     ],
     "timeprogression": 0,
     "weather": [
@@ -2305,3109 +5843,15 @@
     ],
     "gridstart": "STANDING",
     "difficulty": 100,
-    "damage": true,
+    "damage": false,
     "bop": false,
     "championship": false,
     "car": "GARAGE",
     "regulations": {
       "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [
-        "Germany"
-      ],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "riii-6": {
-    "title": "Intermediate Match",
-    "eventid": "riii-6",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 50
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 4.5
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "riii-7": {
-    "title": "Lotus Cup",
-    "eventid": "riii-7",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 50
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 4.5
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [
-        "Lotus"
-      ],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "riii-8": {
-    "title": "Mazda Cup",
-    "eventid": "riii-8",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 50
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 4.5
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [
-        "Mazda"
-      ],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "riii-9": {
-    "title": "Mazda Cup",
-    "eventid": "riii-9",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 50
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 4.5
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [
-        "Mazda"
-      ],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "riii-10": {
-    "title": "Mitsubishi Cup",
-    "eventid": "riii-10",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 50
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 4.5
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [
-        "Mitsubishi"
-      ],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "riii-11": {
-    "title": "NA Limited Race",
-    "eventid": "riii-11",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 50
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 4.5
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [
-        "NA"
-      ],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "riii-12": {
-    "title": "NA Limited Race",
-    "eventid": "riii-12",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 50
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 4.5
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [
-        "NA"
-      ],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "riii-13": {
-    "title": "RWD Limited Race",
-    "eventid": "riii-13",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 50
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 4.5
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [
-        "FR",
-        "MR",
-        "RR"
-      ],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "riii-14": {
-    "title": "Toyota Cup",
-    "eventid": "riii-14",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 50
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 4.5
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [
-        "Toyota"
-      ],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "riii-15": {
-    "title": "Under 2000 Race",
-    "eventid": "riii-15",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 50
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 4.5
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 100,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 430,
-      "upperfpp": 430,
-      "lowerfpp": 200,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 2000,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-1": {
-    "title": "Advanced Match",
-    "eventid": "rii-1",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy",
-      "Rain"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 250,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-2": {
-    "title": "American Car Limited Race",
-    "eventid": "rii-2",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy",
-      "Rain"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 250,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [
-        "USA"
-      ],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-3": {
-    "title": "Carrozzeria Meeting",
-    "eventid": "rii-3",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy",
-      "Rain"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 460,
-      "upperfpp": 460,
-      "lowerfpp": 250,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [
-        "Italy"
-      ],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-4": {
-    "title": "French Car Limited Race",
-    "eventid": "rii-4",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy",
-      "Rain"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 275,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [
-        "France"
-      ],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-5": {
-    "title": "Grand Valley Speedway Challenge",
-    "eventid": "rii-5",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "name": [
-          "Grand Valley - Speedway"
-        ]
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 250,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-6": {
-    "title": "Honda Cup",
-    "eventid": "rii-6",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy",
-      "Rain"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 275,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [
-        "Honda"
-      ],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-7": {
-    "title": "Japanese Car Limited Race",
-    "eventid": "rii-7",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy",
-      "Rain"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 250,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [
-        "Japan"
-      ],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-8": {
-    "title": "Lancia Cup",
-    "eventid": "rii-8",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy",
-      "Rain"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 275,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [
-        "Lancia"
-      ],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-9": {
-    "title": "Mercedes-Benz Cup",
-    "eventid": "rii-9",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy",
-      "Rain"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 275,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [
-        "Mercedes-Benz"
-      ],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-10": {
-    "title": "Midship Meeting",
-    "eventid": "rii-10",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 250,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [
-        "MR"
-      ],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-11": {
-    "title": "Real Sports Car Match",
-    "eventid": "rii-11",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy",
-      "Night"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 250,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [
-        "Sports"
-      ],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-12": {
-    "title": "RWD Limited Race",
-    "eventid": "rii-12",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy",
-      "Rain"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 250,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [
-        "FR",
-        "MR",
-        "RR"
-      ],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-13": {
-    "title": "Subaru Cup",
-    "eventid": "rii-13",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy",
-      "Rain"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 275,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [
-        "Subaru"
-      ],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-14": {
-    "title": "Trial Mountain Challenge",
-    "eventid": "rii-14",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "name": [
-          "Trial Mountain Circuit"
-        ]
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 250,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "rii-15": {
-    "title": "Under 2500 Race",
-    "eventid": "rii-15",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 100
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 7
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Cloudy",
-      "Rain"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 90,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 510,
-      "upperfpp": 510,
-      "lowerfpp": 250,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 2500,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-1": {
-    "title": "American Car Limited Race",
-    "eventid": "ri-1",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 14
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [
-        "USA"
-      ],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-2": {
-    "title": "Chamonix Challenge",
-    "eventid": "ri-2",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 2,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "name": [
-          "Chamonix - Main"
-        ]
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear",
-      "Partly Cloudy",
-      "Overcast"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      2
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-3": {
-    "title": "German Car Limited Race",
-    "eventid": "ri-3",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 14
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [
-        "Germany"
-      ],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-4": {
-    "title": "High-Speed Battle",
-    "eventid": "ri-4",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "name": [
-          "Indianapolis - Motor Speedway"
-        ]
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [
-        "Super"
-      ],
-      "prohibited": []
-    },
-    "era": [
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-5": {
-    "title": "Nurburgring Challenge",
-    "eventid": "ri-5",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "name": [
-          "Nurburgring - Nordschleife"
-        ]
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Cloudy"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-6": {
-    "title": "One-Make Race",
-    "eventid": "ri-6",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 14
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-7": {
-    "title": "Over 4000 Match",
-    "eventid": "ri-7",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 14
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 4000,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-8": {
-    "title": "Red Rock Challenge",
-    "eventid": "ri-8",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "name": [
-          "Red Rock Valley Speedway"
-        ],
-        "upperlength": 14
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-9": {
-    "title": "Seattle Challenge",
-    "eventid": "ri-9",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "name": [
-          "Seattle - Long Circuit"
-        ],
-        "upperlength": 14
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "Clear"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-10": {
-    "title": "Suzuka Challenge",
-    "eventid": "ri-10",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "name": [
-          "Suzuka Circuit"
-        ],
-        "upperlength": 14
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-11": {
-    "title": "TC And SC Limited Race",
-    "eventid": "ri-11",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 14
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [
-        "TB",
-        "SC"
-      ],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-12": {
-    "title": "The GT-R Race",
-    "eventid": "ri-12",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 14
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [
-        "Nissan"
-      ],
-      "models": [
-        "GT-R"
-      ],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-13": {
-    "title": "Tsukuba Circuit Challenge",
-    "eventid": "ri-13",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "name": [
-          "Tsukuba Circuit"
-        ]
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Production",
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-14": {
-    "title": "Tuning Car Limited Race",
-    "eventid": "ri-14",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 14
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
-      "upperpower": 9999,
-      "lowerpower": 0,
-      "upperweight": 9999,
-      "lowerweight": 0,
-      "upperyear": 9999,
-      "loweryear": 0,
-      "countries": [],
-      "makes": [],
-      "models": [],
-      "engines": [],
-      "drivetrains": [],
-      "types": [
-        "Aftermarket"
-      ],
-      "special": [],
-      "prohibited": []
-    },
-    "era": [
-      1,
-      2,
-      3
-    ],
-    "prize": {
-      "id": -1,
-      "name": "",
-      "type": "CREDITS",
-      "item": 0
-    }
-  },
-  "ri-15": {
-    "title": "Ultimate Match",
-    "eventid": "ri-15",
-    "positions": [
-      {
-        "place": "1st",
-        "points": 200
-      }
-    ],
-    "startposition": 3,
-    "tracks": [
-      {
-        "versions": [
-          "Gran Turismo"
-        ],
-        "upperlength": 14
-      }
-    ],
-    "type": "LAPS",
-    "time": [
-      "R"
-    ],
-    "timeprogression": 0,
-    "weather": [
-      "R"
-    ],
-    "weatherwetsurface": "R",
-    "weatherchange": 0,
-    "tireconsumption": 0,
-    "fuelconsumption": 0,
-    "grid": [
-      6
-    ],
-    "gridstart": "STANDING",
-    "difficulty": 80,
-    "damage": true,
-    "bop": false,
-    "championship": false,
-    "car": "GARAGE",
-    "regulations": {
-      "tires": "Racing: Soft",
-      "fpplimit": 550,
-      "upperfpp": 550,
-      "lowerfpp": 280,
+      "fpplimit": 340,
+      "upperfpp": 340,
+      "lowerfpp": 150,
       "upperpower": 9999,
       "lowerpower": 0,
       "upperweight": 9999,
