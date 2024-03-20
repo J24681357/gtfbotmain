@@ -93,7 +93,6 @@ module.exports = {
   
     pageargs["image"].push( "https://github.com/J24681357/gtfbotmain/raw/master/gtfbot2unleahsed/images/career/" + query["options"].toUpperCase() + "_level.png")
     if (userdata["id"] == "237450759233339393") {
-      query["options"] = "TESTING"
     }
 
     
