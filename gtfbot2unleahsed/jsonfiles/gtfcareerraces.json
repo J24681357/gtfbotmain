@@ -680,8 +680,8 @@
     "car": "GARAGE",
     "regulations": {
       "tires": "Sports: Soft",
-      "fpplimit": 350,
-      "upperfpp": 350,
+      "fpplimit": 340,
+      "upperfpp": 340,
       "lowerfpp": 200,
       "upperpower": 9999,
       "lowerpower": 0,
