@@ -5,7 +5,7 @@ module.exports = {
   name: "manual",
   license: "N",
   level: 0,
-  channels: ["testing", "gtf-2u-game","gtf-demo"],
+  channels: ["gtf-fithusim-game","testing"],
 
   availinmaint: false,
   requirecar: false,
@@ -34,18 +34,18 @@ module.exports = {
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
 
     /* Setup */
-    embed.setTitle("📝 GTF 2 Unleahsed Game Manual");
+    embed.setTitle("📝 GTF Fithusim Game Manual");
     embed.setDescription("**❓ Click the link button below to access the manual.**")
     var emojilist = [
-  { emoji: gtf_EMOTE.gtlogoblue,
-  emoji_name: "gtlogoblue",
+  { emoji: gtf_EMOTE.fithusimlogo,
+  emoji_name: "fithusimlogo",
   name: 'Manual',
-  extra: "https://j24681357.github.io/gtfbotmain/README",
+  extra: "https://j24681357.github.io/gtfbotmain/README_FITHUSIM",
   button_id: 0 }
 ]
-    
+
   var buttons = gtf_TOOLS.prepareButtons(emojilist, msg, userdata);
-   
+
     gtf_DISCORD.send(msg, {embeds:[embed], components: buttons})
     return
     }

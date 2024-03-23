@@ -43,7 +43,7 @@ module.exports.intro = function (userdata, command, msg) {
   { emoji: gtf_EMOTE.gtlogoblue,
   emoji_name: "gtlogoblue",
   name: 'Manual',
-  extra: "https://j24681357.github.io/gtfbotmain/",
+  extra: "https://j24681357.github.io/gtfbotmain/README",
   button_id: 1 }             
   ]
     var buttons = gtf_TOOLS.prepareButtons(emojilist, msg, userdata);
@@ -201,7 +201,7 @@ module.exports.introEnthu = function (userdata, command, msg) {
   { emoji: gtf_EMOTE.fithusimlogo,
   emoji_name: "fithusimlogo",
   name: 'Manual',
-  extra: "https://j24681357.github.io/gtfbotmain/",
+  extra: "https://j24681357.github.io/gtfbotmain/README",
   button_id: 1 }             
   ]
     var buttons = gtf_TOOLS.prepareButtons(emojilist, msg, userdata);

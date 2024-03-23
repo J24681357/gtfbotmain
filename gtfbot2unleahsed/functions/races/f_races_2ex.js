@@ -389,7 +389,7 @@ module.exports.timetriallap = function(racesettings, racedetails, finalgrid, che
   var rfail = 5 + (35 *
     ((100 - racesettings["difficulty"]) / 100)
   ) - (35 *
-    ((50 - gtf_STATS.level(userdata)) / 100)
+    ((gtf_STATS.level(userdata)) / 100)
     )
   if (rfail <= 5) {
     rfail = 5

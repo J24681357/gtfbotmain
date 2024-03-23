@@ -285,6 +285,7 @@ module.exports.checkMessages = function(command, callback, msg, userdata) {
           } else {
             var character = {
               "gtfitness": " __**GT Fitness**__",
+              "fithusimlogo": " __**Welcome**__",
               "lewish": gtf_EMOTE.lewish + " __**Lewis Hamilton**__",
               "igorf": gtf_EMOTE.igorf + " __**Igor Fraga**__",
               "sebastienl": gtf_EMOTE.sebastienl + " __**Sebastien Loeb**__",

@@ -365,7 +365,6 @@ var value = (racelength * 0.94) + ((racelength * 0.94) * (jstat.gamma.mean(11, b
   list.push(value)
 }
 
-  console.log("Level " + level + " Expected: " + gtf_DATETIME.getFormattedLapTime(gtf_MATH.median(list)))
 
   })
   */
@@ -390,6 +389,7 @@ module.exports.timetriallap = function(racesettings, racedetails, finalgrid, che
   ) - (35 *
     ((50 - gte_STATS.level(userdata)) / 100)
     )
+  console.log(rfail)
   if (rfail <= 5) {
     rfail = 5
   } else if (rfail >= 40) {

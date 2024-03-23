@@ -431,14 +431,12 @@ choose = choose[indexr]
   var prize = startingprize * creditsmulti;
   date = month + day + year;
 
-if (cartypes.includes("Production")) {
     var prizec = {
         "id": -1,
         "name": "Gold Reward",
         "type": "CREDITS",
         "item": 20000
-      }
-} 
+    }
 
   var time = [gtf_TOOLS.randomItem(["Day", "Sunrise", "Sunset", "Night"], seed)]
   var weather = [gtf_TOOLS.randomItem(["Clear", "Partly Cloudy", "Overcast", "Rain"], seed)]

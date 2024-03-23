@@ -934,7 +934,7 @@ module.exports.checkLeague = function (league, embed, msg, userdata) {
     return true;
   } else {
     if (embed != "") {
-    gte_EMBED.alert({ name: "❌ " + "Ranking " + ranks[league] + " Required", description: "🔒 Your Ranking must be **" + ranks[league] + "** or better to participate in " + "**" + league.toUpperCase() + "**" + ".", embed: "", seconds: 0 }, msg, userdata);
+    gte_EMBED.alert({ name: "❌ " + "Ranking " + ranks[league] + " Required", description: "🔒 Your Ranking must be **" + ranks[league] + "** or better to participate in " + "**" + league.toUpperCase() + "**" + ".", embed: "", seconds: 5 }, msg, userdata);
     }
     return false;
   }
@@ -1390,6 +1390,7 @@ module.exports.checkMessages = function(command, callback, msg, userdata) {
           } else {
         var character = {
           "gtfitness":" __**GT Fitness**__",
+          "fithusimlogo":gtf_EMOTE.fithusimlogo + " __**Welcome**__",
           "lewish":gtf_EMOTE.lewish + " __**Lewis Hamilton**__", 
           "igorf":gtf_EMOTE.igorf + " __**Igor Fraga**__", 
           "sebastienl":gtf_EMOTE.sebastienl + " __**Sebastien Loeb**__", 

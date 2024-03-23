@@ -37,7 +37,7 @@ module.exports.introEnthu = function (userdata, command, msg) {
   { emoji: gtf_EMOTE.fithusimlogo,
   emoji_name: "fithusimlogo",
   name: 'Manual',
-  extra: "https://j24681357.github.io/gtfbotfithusim/",
+  extra: "https://j24681357.github.io/gtfbotfithusim/README_FITHUSIM",
   button_id: 1 }             
   ]
     var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);

@@ -107,5 +107,17 @@
         "choices": []
       }
     ]
+  },
+"manual": {
+    "name": "manual",
+    "description": "🎌 Open the link to the manual for GT Fitness: Fithusim.",
+    "channels": "",
+    "options": []
+},
+"settings": {
+    "name": "settings",
+    "description": "🎌 Configure settings for GT Fitness: Fithusim.",
+    "channels": "",
+    "options": []
   }
 }

@@ -5,7 +5,7 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
   pageargs["rows"] = 10;
 
   if (query["options"] == "generationselect") {
-    pageargs["footer"] = "❓ **Select a generation that you would want to switch to. Note that when switching different generations, Ranking, Week, Enthu Points, and starter car will be reset. Any collected cars will still be remained and can be still used when applicable.**";
+    pageargs["footer"] = "⚠ Selecting a Generation will reset your Fithusim Life except for your garage!\n❓ **Select a generation that you would want to switch to. Note that when switching different generations, Ranking, Week, Enthu Points, and starter car will be reset. Any collected cars will still be remained and can be still used when applicable.**";
     pageargs["list"] = [
       "Generation 1 (1960 - 1989)",
       "Generation 2 (1990 - 2009)",
@@ -27,6 +27,7 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
         gte_EMBED.alert({ name: "❌ Generation Locked", description: "You must complete **Generation " + (query["number"] - 1) + "** " + "in order to proceed." , embed: "", seconds: 0 }, msg, userdata);
           return "ERROR"
         }
+        
       }
       userdata["settings"] = gte_GTF.defaultsettings
       userdata["settings"]["GMODE"] = query["number"] - 1;

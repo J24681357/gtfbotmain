@@ -172,7 +172,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
           var image = list[i]["image"][0];
           
           carlist.push(gtf_CARS.shortName(name) + " ` " + classs + " `");
-          listsec.push(list[i]["year"] + " | " + gtf_MATH.numFormat(list[i]["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(list[i]["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + list[i]["special"].join(", ").replace("xstarter", ""))
+          listsec.push(list[i]["year"] + " | " + gtf_MATH.numFormat(list[i]["power"]) + " hp" + " | " + gtf_MATH.numFormat(gte_STATS.weightUser(list[i]["weight"], userdata)) + " " + gte_STATS.weightUnits(userdata) + " | " + list[i]["special"].join(", ").replace(", xstarter", ""))
           pageargs["image"].push(image);
         }
       if (query["number"] !== undefined) {
@@ -250,11 +250,11 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
         return
       }
       var league = ["RN", "RIV", "RIII", "RII", "RI", "RS"][query["type"]-1]
-      /*
+      
       if (!gte_STATS.checkLeague(league, embed, msg, userdata)) {
         return;
       }
-      */
+      
       var races = JSON.parse(JSON.stringify(
         gte_FITHUSIMRACES.find({types: [league.toLowerCase()]})
       ))
@@ -482,7 +482,7 @@ var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
           other: []
         };
         raceprep["racesettings"]["positions"] = gte_RACE.creditsCalcEnthu(raceprep["racesettings"], raceprep)
-        raceprep["racesettings"]["laps"] = gte_RACE.lapCalc(rtrack['length'], {"RN": 6, "RIV": 6, "RIII": 9, "RII": 10, "RI": 13, "RS": 28}[league])[0]
+        raceprep["racesettings"]["laps"] = gte_RACE.lapCalc(rtrack['length'], {"RN": 5, "RIV": 5, "RIII": 8, "RII": 10, "RI": 13, "RS": 28}[league])[0]
        
       gte_RACE.prepRace(raceprep, gtfcar, embed, msg, userdata);
   

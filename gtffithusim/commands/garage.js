@@ -135,7 +135,7 @@ module.exports = {
         return;
         }
       var titlen = userdata["week"] == 0 ? "Select Starter Car From Garage":"Change Car"
-      embed.setTitle("__" + titlen + "__ " + cars.length + "/" + gte_CARS.findEnthu({upperyear: [1989, 2009, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2010][userdata["settings"]["GMODE"]]}).length + " Cars (" + userdata["settings"]["GARAGESORT"] + ")" + makee + country + type + drivetrain + engine + special + name);
+      embed.setTitle("__" + titlen + "__ " + cars.length + "/" + gte_CARS.findEnthu({upperyear: [1989, 2009, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2010][userdata["settings"]["GMODE"]]}).length + " Cars" + makee + country + type + drivetrain + engine + special + name);
       pageargs["image"] = []
         list = cars.map(function(i, index) {
           var favorite = i["favorite"] ? " ⭐" : ""
@@ -173,7 +173,7 @@ module.exports = {
           gte_EMBED.alert({ name: "❌ No Cars", description: "There are no cars with this type in your garage.", embed: "", seconds: 5 }, msg, userdata);
         return;
         }
-      embed.setTitle("__Garage__ " + cars.length + "/" + gte_CARS.findEnthu({upperyear: [1989, 2009, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2010][userdata["settings"]["GMODE"]]}).length + " Cars (" + userdata["settings"]["GARAGESORT"] + ")" + makee + country + type + drivetrain + engine + special + name);
+      embed.setTitle("__Garage__ " + cars.length + "/" + gte_CARS.findEnthu({upperyear: [1989, 2009, 9999][userdata["settings"]["GMODE"]], loweryear: [1960, 1990, 2010][userdata["settings"]["GMODE"]]}).length + " Cars" + makee + country + type + drivetrain + engine + special + name);
       pageargs["image"] = []
         list = cars.map(function(i, index) {
           var favorite = i["favorite"] ? " ⭐" : ""

@@ -413,7 +413,7 @@ module.exports.setRaceSettings = function(raceprep, gtfcar, embed, msg, userdata
     limit = 0.01
   }
   if (!isNaN(limit)) {
-    var distance = gte_RACE.lapCalc(km, {"RN": 6, "RIV": 6, "RIII": 9, "RII": 10, "RI": 13, "RS": 28}[racesettings["eventid"].split("-")[0].toUpperCase()]);
+    var distance = gte_RACE.lapCalc(km, {"RN": 5, "RIV": 5, "RIII": 8, "RII": 10, "RI": 13, "RS": 28}[racesettings["eventid"].split("-")[0].toUpperCase()]);
   } else {
     distance = [limit, "N/A"];
   }
