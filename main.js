@@ -10,7 +10,6 @@ require(__dirname + "/gtffithusim/index.js");
 function restartbot() {
   console.log("Restarting Node JS...");
   const { exec } = require("child_process");
-
   exec("kill 1", (error, stdout, stderr) => {
     if (error) {
       console.log(`error: ${error.message}`);
@@ -24,9 +23,11 @@ function restartbot() {
   });
 }
 
+
 setTimeout(function(x) {
   restartbot()
-}, 3600000)
+}, 3600000 * 2)
+
 
 var fs = require('fs');
 var util = require('util');
@@ -36,4 +37,3 @@ console.log = function(d) { //
   log_file.write(util.format(d) + '\n');
   log_stdout.write(util.format(d) + '\n');
 };
-

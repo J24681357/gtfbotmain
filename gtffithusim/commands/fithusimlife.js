@@ -437,6 +437,7 @@ gte_GTF.giftRouletteEnthu(finalgrid, racesettings, embed, msg, userdata)
           return x
         })
         var userodds = finalgrid.filter(x => x["user"] == true)[0]["odds"]
+        console.log()
         var points = gte_RACE.creditsCalcEnthu(event).map(x => "**" + x["place"] + "**  " + Math.round(x["points"] * userodds) + " pts")
         var extra = (league == "RII" || league == "RI") ? "`Win 1st in " + gte_STATS.checkRaceComplete(event["title"] + " " + league, userdata) + " more races to earn a special car.`" : ""
         var results = "**" + event["title"] + "**" + "\n" + points.slice(0,4).join("\n") + "\n" + 

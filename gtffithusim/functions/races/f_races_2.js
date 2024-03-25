@@ -571,8 +571,8 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
                   extra: "",
                 },
                 {
-                  emoji: gtf_EMOTE.exit,
-                  emoji_name: "gtfexit",
+                  emoji: gtf_EMOTE.fithusimlogo,
+                  emoji_name: "fithusimlogo",
                   name: "Exit",
                   extra: "Once",
                 },

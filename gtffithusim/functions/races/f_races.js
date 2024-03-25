@@ -925,8 +925,10 @@ module.exports.start = function(racesettings, racedetails, finalgrid, userdata) 
 
   //////CAREER/////
   var odds = user["odds"]
+    
+  
 
-  var points = Math.round(positions[position - 1]["points"] * odds)
+  var points = Math.round(positions[position - 1]["points"] * odds * (1 + ((racesettings["distance"]["km"]/2) / 25)))
 
   var exp = Math.round(prize / 20);
   if (racesettings["mode"] == "CAREER") {
@@ -1238,8 +1240,8 @@ module.exports.careerRaceselect = function(event, query, callback, embed, msg, u
       index++
     }
     emojilist.push({
-      emoji: gtf_EMOTE.exit,
-      emoji_name: "gtfexit",
+      emoji: gtf_EMOTE.fithusimlogo,
+      emoji_name: "fithusimlogo",
       name: "Back",
       extra: "Once",
       button_id: index

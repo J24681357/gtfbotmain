@@ -293,7 +293,7 @@ var login = function(client) {
       updatebotstatus();
       gtf_TOOLS.interval(
         function() {
-          gte_STATS.resumeRace(keys[index1], client);
+          //gte_STATS.resumeRace(keys[index1], client);
           index1++;
         },
         1000,
