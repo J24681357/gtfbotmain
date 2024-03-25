@@ -555,7 +555,7 @@ module.exports.createRaceButtons = function(racesettings, racedetails, finalgrid
     userdata["raceinprogress"] = { active: false, messageid: "", channelid: "", expire: '', gridhistory: [], timehistory: [], weatherhistory: [], msghistory: [], championshipnum: 0 }
     
     if (userdata["enthupoints"] <= 0) {
-      gte_GTF.noEnthuPointsScreen(embed, msg, userdata)
+      gte_GTF.noEnthuPointsScreen(racesettings, embed, msg, userdata)
     } else {
     gte_GTF.giftRouletteEnthu(finalgrid, racesettings, "", msg, userdata)
     }

@@ -125,9 +125,13 @@ module.exports = {
           var string = query["string"]
           var embed = new EmbedBuilder()
           var channel = msg.guild.channels.cache.find(channel => channel.id === "687872420933271577");
-          embed.setTitle("⚠️ __Maintenance Notice__")
+          embed.setTitle("⚠️ __Maintenance Notice__ ⚠️")
           embed.setColor(0xffff00)
-          embed.setDescription("GTF 2: Unleahsed has a scheduled maintenance: **" + query["string"] + "**. During this time, all commands for GTF 2: Unleahsed will be unavailable. The discount page in **/car**, may immediately change after this maintenance." + "\n\n" + "⚠️ If you are in a championship, please exit the race before the maintenance starts to prevent your championship progress from being lost." + "\n\n" + "**Additional Information:** " + query["string2"])
+          embed.setDescription("GTF 2: Unleahsed & GTF Fithusim has a scheduled maintenance: **" + query["string"] + "**. During this time, all commands for GTF 2: Unleahsed & GTF Fithusim will be unavailable." + "\n\n" + 
+   "__GTF 2: Unleahsed__" + "\n" + 
+"The discount page in **/car**, may immediately change after this maintenance." + "\n" + 
+"⚠️ If you are in a championship, please exit the race before the maintenance starts to prevent your championship progress from being lost." + "\n\n" + "__GTF Fithusim__" + "\n" + "⚠️ If you are in a race, please exit the race before the maintenance starts to prevent any progress lost or ping loops." + "\n\n" +
+    "**Additional Information:** " + query["string2"])
           gtf_DISCORD.send(channel, { type1: "CHANNEL", embeds: [embed] })
         }, 2000)
         }],

@@ -1395,7 +1395,7 @@ module.exports.resultsSummaryEnthu = function (racesettings, extra, embed, msg, 
   }
 };
 
-module.exports.noEnthuPointsScreen = function (embed, msg, userdata) {
+module.exports.noEnthuPointsScreen = function (racesettings, embed, msg, userdata) {
   embed.setDescription("You cannot earn skill points since you have no Enthu points.\nYou cannot join the next race.");
   embed.setTitle("__**You have lost all Enthu Points.**__");
 
