@@ -1258,7 +1258,7 @@ module.exports.addRankingRace = function (racesettings, place, points, damage, u
 
   var skillpoints = 50 ///base
   
-  skillpoints += Math.round((racesettings["distance"]["km"] * 1094)/150) ///track distance
+  skillpoints += Math.round((racesettings["distance"]["km"] * 1094)/150) ///track distanceo
   ///ranking
   if (racesettings["positions"].length == 2) {
     skillpoints = skillpoints + {"1st": 10, "2nd": 1}[place]

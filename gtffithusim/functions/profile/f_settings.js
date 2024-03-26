@@ -47,102 +47,23 @@ module.exports.settingsMenu = function (query, pageargs, embed, msg, userdata) {
     };
   }
 
-  if (query["options"] == "color") {
-    pageargs["footer"] = "❓ **Select a color for embeds.**";
+
+  if (query["options"] == "summarysort") {
+    pageargs["footer"] = "❓ **Select a sorting type for the race history in the race results summary.**";
     pageargs["list"] = [
-    "Default | #0151b0",
-    "White | #F2F2F2",
-    "Black | #383838",
-    "Red | #E81224",
-    "Orange | #F7630C",
-    "Yellow | #FFF100",
-    "Green | #16C60C",
-    "Blue | #0078D7",
-    "Purple | #886CE4",
-    "Brown | #8E562E"
+      "Week",
+      "Highest Ranking Points"
     ].map(function(x, i) {
-      if (userdata["settings"]["COLOR"] == x.split(" | ")[1]) {
+      if (userdata["settings"]["SUMMARYSORT"] == i) {
         return x + " " + "✅"
       }
       return x
     })
-    embed.setTitle("⚙ __GTF Settings - Embed Color (" + pageargs["list"].length + " Items)__");
-    var applysetting = function () {
-      userdata["settings"]["COLOR"] = pageargs["list"][query["number"] - 1].split(" | ")[1]
-      require(gte_TOOLS.homeDir() + "commands/settings").execute(msg, {options:"list", extra:"Your **Embed Color** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
-
-      return "✅";
-    };
-  }
-
-  if (query["options"] == "dealersort") {
-    pageargs["footer"] = "❓ **Select a global setting for sorting dealerships in the menus.**";
-    pageargs["list"] = [
-      "Alphabetical Order",
-      "Lowest Price",
-      "Highest Price",
-      "Highest FPP",
-      "Lowest FPP",
-      "Highest Power",
-      "Lowest Power"
-    ].map(function(x, i) {
-      if (userdata["settings"]["DEALERSORT"] == x) {
-        return x + " " + "✅"
-      }
-      return x
-    })
-    embed.setTitle("⚙ __GTF Settings - Dealership Catalog Sort (" + pageargs["list"].length + " Items)__");
-    var applysetting = function () {
-      userdata["settings"]["DEALERSORT"] = pageargs["list"][query["number"] - 1]
-      require(gte_TOOLS.homeDir() + "commands/settings").execute(msg, {options:"list", extra:"Your **Dealership Sort** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
-
-      return "✅";
-    };
-  }
-
-  if (query["options"] == "garagesort") {
-    pageargs["footer"] = "❓ **Select a global setting for sorting your garage in the menus.**";
-    pageargs["list"] = [
-      "Alphabetical Order",
-      "Recently Used",
-      "Oldest Added",
-      "Newest Added",
-      "Highest FPP",
-      "Lowest FPP",
-      "Highest Power",
-      "Lowest Power"
-    ].map(function(x, i) {
-      if (userdata["settings"]["GARAGESORT"] == x) {
-        return x + " " + "✅"
-      }
-      return x
-    })
-    embed.setTitle("⚙ __GTF Settings - Garage Catalog Sort (" + pageargs["list"].length + " Items)__");
-    var applysetting = function () {
-      userdata["settings"]["GARAGESORT"] = pageargs["list"][query["number"] - 1]
-      gte_STATS.sortGarage(userdata)    
-      require(gte_TOOLS.homeDir() + "commands/settings").execute(msg, {options:"list", extra:"Your **Garage Sort** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
-
-      return "✅";
-    };
-  } 
-
-  if (query["options"] == "units") {
-    pageargs["footer"] = "❓ **Select units corresponding from the list above.**";
-    pageargs["list"] = [
-      "Kilometers (KM)",
-      "Miles (MI)"
-    ].map(function(x, i) {
-      if (userdata["settings"]["UNITS"] == i) {
-        return x + " " + "✅"
-      }
-      return x
-    })
-    embed.setTitle("⚙ __GTF Settings - Metric Units (" + pageargs["list"].length + " Items)__");
+    embed.setTitle("⚙ __Fithusim Life - Race Summary Sort (" + pageargs["list"].length + " Items)__");
 
     var applysetting = function () {
       userdata["settings"]["UNITS"] = query["number"] - 1;
-      require(gte_TOOLS.homeDir() + "commands/settings").execute(msg, {options:"list", extra:"Your **Metric Units** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
+      require(gte_TOOLS.homeDir() + "commands/settings").execute(msg, {options:"list", extra:"Your **Race Summary Sort** has been set to **" + pageargs["list"][query["number"] - 1] + "**."}, userdata);
       return "✅";
     };
   }
