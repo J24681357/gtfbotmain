@@ -831,6 +831,40 @@ module.exports.updateallsaves = async function (name, json) {
         });
     
   }
+
+  if (name == "FITHUSIMSAVES") {
+    var db = await MongoClient.connect(process.env.MONGOURL,
+    {
+      serverApi: ServerApiVersion.v1 
+    })
+      var dbo = db.db("GTFitness");
+      dbo
+        .collection(name)
+        .find({})
+        .forEach(row => {
+          if (typeof row["id"] === "undefined") {
+            return;
+          } else {
+            var userdata = row;
+            if (typeof userdata["garage"] === "undefined") {
+              return;
+            }
+            userdata["settings"]["SUMMARYSORT"] = 0
+
+            console.log("Saved for " + userdata["id"]);
+            dbo.collection(name).replaceOne({ id: userdata["id"] }, userdata);
+            return;
+          }
+        })
+        .then(x => {
+            gtf_CONSOLELOG.reverse();
+            gtf_CONSOLELOG.fill(100, 100, 255);
+            console.log("All saves updated", JSON.stringify(json));
+            gtf_CONSOLELOG.end();
+
+        });
+
+  }
 };
 
 module.exports.getSite = function (url, type, callback) {

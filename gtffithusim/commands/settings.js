@@ -34,60 +34,83 @@ module.exports = {
     }, msg, userdata)
     //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //      //
 
-    embed.setTitle("__Settings__");
+    if (query["options"] == "generationselect") {
+      var results = gte_SETTINGS.settingsMenu("generationselect", embed, msg, userdata)
 
-    if (query["options"] == "list") {
-      delete query["number"]
-      var list = [
-        "⭕ __**Delete Save Data**__ ",
-  ];
-
-      pageargs["list"] = list;
-      if (typeof query["extra"] !== "undefined") {
-        pageargs["footer"] = "✅ " + query["extra"]
-        query["extra"] = ""
+        if (results == "✅") {
+          return;
+        } else {
+      gte_EMBED.alert({ name: "❌ Error", description: "Invalid arguments.", embed: embed, seconds: 0 }, msg, userdata);
       }
-      pageargs["text"] = gte_TOOLS.formPage(pageargs, userdata);
-      pageargs["selector"] = "options"
-      pageargs["query"] = query
-      gte_TOOLS.formPages(pageargs, embed, msg, userdata);
-      return;
     }
+    embed.setTitle("⚙ __GTF Fithusim Settings__");
+      embed.setDescription("**❓ Select an option in the drop down menu.**")
 
-    if (!isNaN(query["options"])) {
-  query["options"] = ["deletesavedata"][parseInt(query["options"]) - 1]
-    }
-      if (query["options"] == "deletesavedata") {
-      var emojilist = [
-  { emoji: gtf_EMOTE.fithusimlogo, 
-  emoji_name: 'Yes', 
-  name: 'Confirm', 
-  extra: "Once",
-  button_id: 0 }]
-    var buttons = gte_TOOLS.prepareButtons(emojilist, msg, userdata);
+          var settingslist = [
+            {
+            name: "Race Summary Sort",
+            emoji: "⚙",
+            extra: "",
+            description: "Sorts the race history in the race results screen in Fithusim Life.",
+            menu_id: 0
+    },
+            {
+              name: "Delete Save Data",
+              emoji: "🔴",
+              extra: "",
+              description: "⚠ Delete your save data for GTF Fithusim. Note that this is permanent.",
+              menu_id: 1
+              }
+          ]
 
-        embed.setDescription("❌ Delete your save data for the game? This is permanent.");
-        embed.setColor(0xff0000);
-        gtf_DISCORD.send(msg, {embeds:[embed], components:buttons}, next)
+          var menu = gte_TOOLS.prepareMenu("Choose A Setting", settingslist, [], msg, userdata);
 
-        function next(msg) {
-          function deletesave() {
-            gte_STATS.saveEnthu(userdata, "DELETE");
-            gte_EMBED.alert({ name: "✅ Success", description: "Save data deleted.", embed: embed, seconds: 0 }, msg, userdata);
+          var emojilist = [];
+
+          buttons = [menu]
+          embed.fields = [];
+
+          embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: gte_STATS.currentCarFooterEnthu(userdata) }]);
+
+          gtf_DISCORD.send(msg, { embeds: [embed], components: buttons }, homefunc);
+          var currsetting = ""
+
+          function homefunc(msg) {
+            var functionlist = [];
+            for (var i = 0; i <= 2; i++) {
+            functionlist.push(function(num) {
+              if (num == 10) {
+                currsetting = "reset"
+              }
+
+              if (currsetting.length == 0) {
+                currsetting = ["summarysort", "deletesavedata"][num]
+                var [menulist, func] = gte_SETTINGS.settingsMenu(currsetting, embed, msg, userdata)
+                if (num == 1) {
+                  return
+                }
+              var menu = gte_TOOLS.prepareMenu(settingslist[num]["name"], menulist, [], msg, userdata);
+                buttons = [menu]
+
+                embed.fields = [];
+                embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: gte_STATS.currentCarFooterEnthu(userdata) }]);
+                gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, homefunc)
+              } else {
+                var [menulist, func] = gte_SETTINGS.settingsMenu(currsetting, embed, msg, userdata)
+                var message = func(num)
+                var menu = gte_TOOLS.prepareMenu("Choose A Setting", settingslist, [], msg, userdata);
+                  buttons = [menu]
+                currsetting = ""
+                  embed.setDescription(message + "\n" + "**❗ Recent changes will be applied after the next slash command.**");
+                  embed.fields = [];
+                  embed.setFields([{ name: gte_STATS.menuFooterEnthu(userdata), value: gte_STATS.currentCarFooterEnthu(userdata) }]);
+                gte_STATS.saveEnthu(userdata)
+                  gtf_DISCORD.edit(msg, { embeds: [embed], components: buttons }, homefunc)
+              }
+            })
+            }
+            gte_TOOLS.createButtons(menu, emojilist, functionlist, msg, userdata);
           }
-          var functionlist = [deletesave]
 
-          gte_TOOLS.createButtons(buttons, emojilist, functionlist, msg, userdata)
-        }
-      return
-    }
-
-    var results = gte_SETTINGS.settingsMenu(query, pageargs, embed, msg, userdata)
-
-      if (results == "✅") {
-        return;
-      } else {
-    gte_EMBED.alert({ name: "❌ Error", description: "Invalid arguments.", embed: embed, seconds: 0 }, msg, userdata);
-      }
   }
 };

@@ -21,6 +21,7 @@ module.exports.defaultsettings = {
   GMODE: 0,
   GARAGESORT: "Highest FPP",
   DEALERSORT: "Lowest Price",
+  SUMMARYSORT: 0,
   RACEDM: 0,
   UNITS: 0,
   TIMEOFFSET: 0,
@@ -1354,7 +1355,13 @@ module.exports.resultsSummaryEnthu = function (racesettings, extra, embed, msg, 
     ranking = "improved by " + "**" + Math.abs(userdata["ranking"] - rankingo) + "**.";
   }
 
-  var list = history.map(function (x) {
+  
+  var list = history.sort(function(x,y) {
+    if (userdata["settings"]["SUMMARYSORT"] == 1) {
+      return y["points"] - x["points"]
+    }
+    return undefined
+  }).map(function (x) {
     if (x["title"] == "REST" || x["title"] == "CHANGECAR") {
       return gte_DATETIME.getFormattedWeekEnthu(x["week"]) + " WEEK" + " **" + "---" + " `+" + x["skillpoints"] + " SP`" + "** ||--------------------||";
     } else {

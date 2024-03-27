@@ -36,7 +36,7 @@ client.on("ready", () => {
   require(__dirname + "/" + "files/directories");
   gte_SLASHCOMMANDS.createslashcommands();
 
-  //gte_TOOLS.updateallsaves("FITHUSIMSAVES", {"fppupdate": true})
+  //gte_TOOLS.updateallsaves("FITHUSIMSAVES", {})
   timeelapsed = parseInt(new Date().getTime()) - parseInt(datebot);
 gtf_CONSOLELOG.reverse();
 gtf_CONSOLELOG.fill(100, 100, 255);

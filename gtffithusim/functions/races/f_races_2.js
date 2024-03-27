@@ -56,8 +56,9 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
         weatheri = gtf_WEATHER.advanceWeather(weatheri, racesettings["distance"]["km"]);
         userdata["raceinprogress"]["weatherhistory"].push(JSON.parse(JSON.stringify(weatheri)));
       }
-      //var racelength = 10000;
+      
       var racelength = gte_RACEEX.raceLengthCalc(racesettings, racedetails, finalgrid, checkpoint, embed, msg, userdata);
+      var racelength = 10000;
       if (racesettings["type"] == "DRIFT") {
         racesettings["sectors"] = racesettings["originalsectors"];
         racesettings["points"] = 0;
@@ -629,8 +630,8 @@ module.exports.startSession = function (racesettings, racedetails, finalgrid, ch
                 extra: "",
               },
               {
-                emoji: gtf_EMOTE.exit,
-                emoji_name: "gtfexit",
+                emoji: gtf_EMOTE.fithusimlogo,
+                emoji_name: "fithusimlogo",
                 name: "Exit",
                 extra: "Once",
               },
